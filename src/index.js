@@ -15,7 +15,7 @@ function Navigation() {
 
 function Dashboard() {
     return (
-        <main>Wonka</main>
+        <main>Wonka Bonka</main>
     )
 }
 
