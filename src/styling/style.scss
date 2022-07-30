@@ -1,4 +1,41 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+html {
+    margin: none;
+    padding: none;
+}
+
+#userHeader {
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 40px;
+    z-index: 2;
+}
+
+#userNav {
+    background: white;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 26px;
+    height: 26px;
+    z-index: 4;
+    border-radius: 5px;
+}
+
+#userDash {
+    background: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 0;
 }

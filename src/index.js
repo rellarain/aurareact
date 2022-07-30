@@ -1,29 +1,45 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './styling/reset.css';
+import './styling/style.css';
 
 function Header() {
     return (
-        <header className="userHeader"> Ooga </header>
+        <header id="userHeader"></header>
     )
 }
 
 function Navigation() {
     return (
-        <nav className='userNav'>Booga</nav>
+        <nav id='userNav'></nav>
     )
 }
 
 function Dashboard() {
     return (
-        <main>Wonka Bonka</main>
+        <main id="userDash"></main>
     )
 }
 
+function Footer() {
+    return (
+        <main id="footer"></main>
+    )
+}
 
-ReactDom.render(
+ReactDom.createRoot(document.getElementById('root')).render(
     <div>
         <Header />
         <Navigation />
         <Dashboard />
-    </div>,
-    document.getElementById('root'));
+        <Footer />
+    </div>
+)
+// ReactDom.render(
+//     <div>
+//         <Header />
+//         <Navigation />
+//         <Dashboard />
+//         <Footer />
+//     </div>,
+//     document.getElementById('root'));
