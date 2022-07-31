@@ -1,45 +1,28 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDom from 'react-dom/client';
 import './styling/reset.css';
 import './styling/style.css';
 
-function Header() {
-    return (
-        <header id="userHeader"></header>
-    )
-}
+// Component Imports
 
-function Navigation() {
-    return (
-        <nav id='userNav'></nav>
-    )
-}
+import Header from "./components/Header";
+import Dashboard from "./components/Dash";
+import Navigation from "./components/Nav";
+import Sidebar from "./components/Sidebar";
 
-function Dashboard() {
-    return (
-        <main id="userDash"></main>
-    )
-}
 
-function Footer() {
-    return (
-        <main id="footer"></main>
-    )
-}
+
+
+
+
+
 
 ReactDom.createRoot(document.getElementById('root')).render(
     <div>
         <Header />
         <Navigation />
         <Dashboard />
-        <Footer />
+        <Sidebar />
     </div>
 )
-// ReactDom.render(
-//     <div>
-//         <Header />
-//         <Navigation />
-//         <Dashboard />
-//         <Footer />
-//     </div>,
-//     document.getElementById('root'));
+
