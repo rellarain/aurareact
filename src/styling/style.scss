@@ -2,11 +2,14 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 html {
     margin: none;
     padding: none;
 }
+
 
 // Z-Index Guide 
 
@@ -22,43 +25,118 @@ html {
 //  1. Dash:
 //  0. Quick Tools: 
 
+
+// 
+
 #userHeader {
     background: red;
     position: absolute;
     top: 0;
     right: 0;
     width: 100vw;
-    height: 40px;
+    height: 48px;
     z-index: 5;
+
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 20px 20px 8px;
+    grid-template-areas:  "thumbnail userName" "thumbnail userID" "userProgress userProgress";
+
+    img {
+        height: 40px;
+        width: 40px;
+        grid-area: thumbnail;
+        background-color: gray;
+        overflow: hidden;
+    }
+    #userName {
+        grid-area: userName;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 4px 0 0 5px;
+        font-weight: 500;
+        color: white;
+    }
+    #userID {
+        grid-area: userID;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 3px 0 3px 10px;
+        color: rgb(255, 202, 202);
+        span {
+            margin: 0 2px;
+        }
+    }
+    #userProgress {
+        grid-area: userProgress;
+        background-color: rgb(144, 0, 0);
+    }
 }
 
-#navAnchor {
-    background: white;
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    width: 26px;
-    height: 26px;
-    z-index: 5;
+
+#navCrop {
+    overflow: hidden;
     border-radius: 5px;
-
-}
-#navButton {
     position: absolute;
-    margin: 3px;
-    width: 20px;
-    height: 20px;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
 
+    // Closed
+    width: 30px;
+    height: 30px;
+
+    // Navigation Panel
+    // width: 300px;
+    // height: calc(100% - 10px);
+
+    // Page Navigation
+    // width: 300px;
+    // height: 30px;
+
+
+    #navPanel {
+        background: white;
+        width: 300px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 270px 30px;
+        grid-template-rows: 30px auto;
+        grid-template-areas: "navPage navButton" "navBody navBody";
+    
+    }
+    #navButton {
+        position: absolute;
+        margin: 4px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        grid-area: navButton;
+    
+    }
+    #navPage {
+        grid-area: navPage;
+        height: 22px;
+        padding: 0 0 0 5px;
+        margin: 4px 0 4px 4px;
+        background-color: blue;
+        border-radius: 4px;
+        border: none;
+        position: absolute;
+        left: 30px;
+        width: 231px;
+    }
 }
+
 
 #userDash {
     background: green;
     position: absolute;
-    top: 40px;
+    top: 48px;
     left: 0;
     // width: calc(100vw - 320px);
     width: 100vw;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 48px);
     margin: 0;
     z-index: 1;
 }
@@ -68,8 +146,8 @@ html {
     position: absolute;
     display: block;
     width: 320px;
-    height: calc(100vh - 40px);
-    top: 40px;
+    height: calc(100vh - 48px);
+    top: 48px;
     right: 0;
     z-index: 0;
 }

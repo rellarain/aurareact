@@ -1,21 +1,7 @@
 import React from 'react';
 
-function NavigationPanel() { return (
-    <main id="navPanel">
-
-    </main>
-)}
-
-function NavigationPage() { return (
-    <input id="navPage"></input>
-)}
-
-function NavigationButton() { return (
-    <button id="navButton"></button>
-)}
-
 export default function Navigation() {return (
-    <nav id='navAnchor'>
+    <nav id='navCrop'>
             {/* Nav Button
                 
                 Navigation Console: 
@@ -23,22 +9,43 @@ export default function Navigation() {return (
                 
 
             */}
-            <NavigationButton />
             <NavigationPanel />
-            <NavigationPage />
-            {/* Page Tool
-                
-                Text-Input:
-                    Page:
-                    Subpage: 
 
-                Close-Page: 
-                    Animation:
-                    Console Close: 
 
-            */}
     </nav>
 )}
+
+function NavigationPanel() { return (
+    <main id="navPanel">
+        
+            <NavigationPage />
+            <NavigationButton />
+
+    </main>
+)}
+
+function NavigationPage() { return (
+    <input id="navPage" placeholder='Search'>
+        {/* Page Tool
+                
+            Text-Input:
+                Page:
+                Subpage: 
+            Close-Page: 
+                Animation:
+                Console Close: 
+
+        */}
+    </input>
+)}
+
+function NavigationButton() { return (
+    <button id="navButton">
+        
+    </button>
+)}
+
+
 
 
 
