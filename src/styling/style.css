@@ -12,13 +12,15 @@ html {
 }
 
 #userHeader {
-  background: red;
+  background: #664d3d;
   position: absolute;
   top: 0;
   right: 0;
   width: 100vw;
   height: 48px;
   z-index: 5;
+  -webkit-box-shadow: -1px 4px 4px #664d3d;
+          box-shadow: -1px 4px 4px #664d3d;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px auto;
@@ -35,7 +37,7 @@ html {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: thumbnail;
-  background-color: gray;
+  background-color: #c9b3a6;
   overflow: hidden;
 }
 
@@ -46,7 +48,18 @@ html {
   font-size: 16px;
   line-height: 16px;
   margin: 4px 0 0 5px;
-  font-weight: 500;
+  font-weight: 600;
+  color: #d9c9bf;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  letter-spacing: 1px;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+#userHeader #userName:hover {
   color: white;
 }
 
@@ -55,13 +68,23 @@ html {
   -ms-grid-column: 2;
   grid-area: userID;
   font-size: 14px;
-  font-weight: 400;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #ffcaca;
+  color: #ba9e8c;
 }
 
 #userHeader #userID span {
+  cursor: pointer;
   margin: 0 2px;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+#userHeader #userID span:hover {
+  color: #d9c9bf;
 }
 
 #userHeader #userProgress {
@@ -69,13 +92,58 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #900000;
+  background-color: #33261f;
+  width: 100vw;
+}
+
+#userHeader #userProgress td:nth-child(70) {
+  background-color: #0e83be;
+}
+
+#userHeader #userProgress td:nth-child(71) {
+  background-color: #0e83be;
+}
+
+#userHeader #userProgress td:nth-child(72) {
+  background-color: #0e83be;
+}
+
+#userHeader #userProgress td:nth-child(73) {
+  background-color: #7accf5;
+}
+
+#userHeader #userProgress td:nth-child(74) {
+  background-color: #7accf5;
+}
+
+#userHeader #userProgress td:nth-child(76) {
+  background-color: #23a993;
+}
+
+#userHeader #userProgress td:nth-child(77) {
+  background-color: #45d9c0;
+}
+
+#userHeader #userProgress td:nth-child(89) {
+  background-color: #45d9c0;
+}
+
+#userHeader #userProgress td:nth-child(90) {
+  background-color: #45d9c0;
+}
+
+#userHeader #userProgress td:nth-child(91) {
+  background-color: #2eafef;
+}
+
+#userHeader #userProgress td:nth-child(92) {
+  background-color: #2eafef;
 }
 
 #navCrop {
-  overflow: hidden;
+  overflow: clip;
   border-radius: 5px;
-  position: absolute;
+  position: fixed;
   top: 5px;
   right: 5px;
   z-index: 5;
@@ -84,9 +152,9 @@ html {
 }
 
 #navCrop #navPanel {
-  background: white;
+  background: #aaeee2;
   width: 300px;
-  height: 100%;
+  height: calc(100vh - 10px);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 270px 30px;
@@ -94,17 +162,34 @@ html {
   -ms-grid-rows: 30px auto;
       grid-template-rows: 30px auto;
       grid-template-areas: "navPage navButton" "navBody navBody";
+  z-index: 7;
 }
 
 #navCrop #navButton {
-  position: absolute;
-  margin: 4px;
-  right: 0;
+  position: fixed;
+  background-color: #156658;
+  right: 9px;
+  top: 9px;
   width: 22px;
   height: 22px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: navButton;
+  z-index: 9;
+  display: block;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: background .4s, -webkit-box-shadow .4s;
+  transition: background .4s, -webkit-box-shadow .4s;
+  transition: background .4s, box-shadow .4s;
+  transition: background .4s, box-shadow .4s, -webkit-box-shadow .4s;
+}
+
+#navCrop #navButton:hover {
+  background-color: #23a993;
+  -webkit-box-shadow: 0 0 8px #aaeee2;
+          box-shadow: 0 0 8px #aaeee2;
 }
 
 #navCrop #navPage {
@@ -112,18 +197,119 @@ html {
   -ms-grid-column: 1;
   grid-area: navPage;
   height: 22px;
+  line-height: 22px;
   padding: 0 0 0 5px;
-  margin: 4px 0 4px 4px;
-  background-color: blue;
+  background-color: #2acbb0;
   border-radius: 4px;
   border: none;
-  position: absolute;
-  left: 30px;
-  width: 231px;
+  position: fixed;
+  right: 40px;
+  top: 9px;
+  width: 280px;
+  z-index: 7;
+  color: #0e443b;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+#navCrop #navPage::-webkit-input-placeholder {
+  color: white;
+}
+
+#navCrop #navPage:-ms-input-placeholder {
+  color: white;
+}
+
+#navCrop #navPage::-ms-input-placeholder {
+  color: white;
+}
+
+#navCrop #navPage::placeholder {
+  color: white;
+}
+
+#navCrop #navPage:hover {
+  background-color: #45d9c0;
+}
+
+#navCrop #navPageClose {
+  position: fixed;
+  z-index: 8;
+  background-color: #1c8776;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+  color: white;
+  font-weight: 700;
+  top: 9px;
+  right: 40px;
+  height: 22px;
+  width: 22px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+#navCrop #navPageClose:hover {
+  background-color: #23a993;
+}
+
+#navCrop #navBody {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: navBody;
+  width: 285px;
+  height: calc(100% - 20px);
+  margin-top: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+#navCrop #navBody section {
+  background-color: #67e0cc;
+  height: 1200px;
+  display: block;
+  width: 265px;
+  border-radius: 4px;
+  background-position-x: right;
+}
+
+#navCrop #navBody::-webkit-scrollbar {
+  border-radius: 6px;
+  width: 20px;
+  overflow-x: visible;
+}
+
+#navCrop #navBody::-webkit-scrollbar-track {
+  width: 10px;
+}
+
+#navCrop #navBody::-webkit-scrollbar-button {
+  background-color: none;
+}
+
+#navCrop #navBody::-webkit-scrollbar-corner {
+  background-color: yellow;
+}
+
+#navCrop #navBody::-webkit-scrollbar-thumb {
+  background-color: #23a993;
+  border-radius: 6px;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+#navCrop #navBody::-webkit-scrollbar-thumb:hover {
+  background-color: #45d9c0;
 }
 
 #userDash {
-  background: green;
+  background: #ba9e8c;
   position: absolute;
   top: 48px;
   left: 0;
@@ -134,7 +320,7 @@ html {
 }
 
 #sidebar {
-  background: yellow;
+  background: #07221d;
   position: absolute;
   display: block;
   width: 320px;

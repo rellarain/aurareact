@@ -1,25 +1,29 @@
 import React from 'react';
+import MemberNav from "./MemberNav";
+
 
 export default function Navigation() {return (
     <nav id='navCrop'>
-            {/* Nav Button
+        {/* Nav Button
                 
-                Navigation Console: 
+            Navigation Console: 
                 
                 
 
-            */}
-            <NavigationPanel />
-
+        */}
+        <NavigationPanel />
+        <NavigationPage />
+        <NavigationPageClose />
+        <NavigationButton />
 
     </nav>
 )}
 
 function NavigationPanel() { return (
     <main id="navPanel">
+        <NavigationBody />
         
-            <NavigationPage />
-            <NavigationButton />
+
 
     </main>
 )}
@@ -38,13 +42,26 @@ function NavigationPage() { return (
         */}
     </input>
 )}
-
-function NavigationButton() { return (
-    <button id="navButton">
-        
+function NavigationPageClose() { return (
+    <button id="navPageClose">
+        X
     </button>
 )}
 
+function NavigationButton() { return (
+    <button id="navButton">
+
+    </button>
+)}
+
+function NavigationBody() { return (
+    <div id="navBody">
+        <MemberNav />
+
+        
+
+    </div>
+)}
 
 
 

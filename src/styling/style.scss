@@ -1,3 +1,47 @@
+// Theme Colors
+$t0: hsl(23, 25%, 8%);
+$t1: hsl(23, 25%, 16%);
+$t2: hsl(23, 25%, 24%);
+$t3: hsl(23, 25%, 32%);
+$t4: hsl(23, 25%, 40%);
+$t5: hsl(23, 25%, 48%);
+$t6: hsl(23, 25%, 56%);
+$t7: hsl(23, 25%, 64%);
+$t8: hsl(23, 25%, 72%);
+$t9: hsl(23, 25%, 80%);
+
+// Accent Colors
+
+$a0: hsl(170, 66%, 8%);
+$a1: hsl(170, 66%, 16%);
+$a2: hsl(170, 66%, 24%);
+$a3: hsl(170, 66%, 32%);
+$a4: hsl(170, 66%, 40%);
+$a5: hsl(170, 66%, 48%);
+$a6: hsl(170, 66%, 56%);
+$a7: hsl(170, 66%, 64%);
+$a8: hsl(170, 66%, 72%);
+$a9: hsl(170, 66%, 80%);
+
+// Alert Colors
+$at0: hsl(200, 86%, 8%);
+$at1: hsl(200, 86%, 16%);
+$at2: hsl(200, 86%, 24%);
+$at3: hsl(200, 86%, 32%);
+$at4: hsl(200, 86%, 40%);
+$at5: hsl(200, 86%, 48%);
+$at6: hsl(200, 86%, 56%);
+$at7: hsl(200, 86%, 64%);
+$at8: hsl(200, 86%, 72%);
+$at9: hsl(200, 86%, 80%);
+
+
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -12,12 +56,12 @@ html {
 
 
 // Z-Index Guide 
-
-// 10. Demand Popup:
-//  9. Screen Barrier:
-//  8. Nav Button: 
-//  7. Nav Panel:
-//  6. Page Tool: 
+// 11. Demand Popup:
+// 10. Screen Barrier:
+//  9. Nav Button: 
+//  8. Page Tool Close:
+//  7. Page Tool:
+//  6. Nav Panel: 
 //  5. Header: 
 //  4. Screen: 
 //  3. Dash Popup: 
@@ -26,17 +70,15 @@ html {
 //  0. Quick Tools: 
 
 
-// 
-
 #userHeader {
-    background: red;
+    background: $t3;
     position: absolute;
     top: 0;
     right: 0;
     width: 100vw;
     height: 48px;
     z-index: 5;
-
+    box-shadow: -1px 4px 4px $t3;
     display: grid;
     grid-template-columns: 40px auto;
     grid-template-rows: 20px 20px 8px;
@@ -46,7 +88,7 @@ html {
         height: 40px;
         width: 40px;
         grid-area: thumbnail;
-        background-color: gray;
+        background-color: $t8;
         overflow: hidden;
     }
     #userName {
@@ -54,30 +96,56 @@ html {
         font-size: 16px;
         line-height: 16px;
         margin: 4px 0 0 5px;
-        font-weight: 500;
+        font-weight: 600;
+        color: $t9;
+        width: max-content;
+        cursor: pointer;
+        letter-spacing: 1px;
+        transition: color .4s;
+    }
+    #userName:hover {
         color: white;
     }
     #userID {
         grid-area: userID;
         font-size: 14px;
-        font-weight: 400;
+        width: max-content;
+        font-weight: 600;
         margin: 3px 0 3px 10px;
-        color: rgb(255, 202, 202);
+        color: $t7;
         span {
+            cursor: pointer;
             margin: 0 2px;
+            transition: color .4s;
+        }
+        span:hover {
+            color: $t9;
         }
     }
     #userProgress {
         grid-area: userProgress;
-        background-color: rgb(144, 0, 0);
+        background-color: $t1;
+        width: 100vw;
+
+        td:nth-child(70) {background-color: $at4;}
+        td:nth-child(71) {background-color: $at4;}
+        td:nth-child(72) {background-color: $at4;}
+        td:nth-child(73) {background-color: $at8;}
+        td:nth-child(74) {background-color: $at8;}
+        td:nth-child(76) {background-color: $a4;}
+        td:nth-child(77) {background-color: $a6;}
+        td:nth-child(89) {background-color: $a6;}
+        td:nth-child(90) {background-color: $a6;}
+        td:nth-child(91) {background-color: $at6;}
+        td:nth-child(92) {background-color: $at6;}
     }
 }
 
 
 #navCrop {
-    overflow: hidden;
+    overflow: clip;
     border-radius: 5px;
-    position: absolute;
+    position: fixed;
     top: 5px;
     right: 5px;
     z-index: 5;
@@ -90,47 +158,130 @@ html {
     // width: 300px;
     // height: calc(100% - 10px);
 
-    // Page Navigation
-    // width: 300px;
-    // height: 30px;
-
 
     #navPanel {
-        background: white;
+        background: $a9;
         width: 300px;
-        height: 100%;
+        height: calc(100vh - 10px);
         display: grid;
         grid-template-columns: 270px 30px;
         grid-template-rows: 30px auto;
         grid-template-areas: "navPage navButton" "navBody navBody";
-    
+        z-index: 7;
     }
     #navButton {
-        position: absolute;
-        margin: 4px;
-        right: 0;
+        position: fixed;
+        background-color: $a2;
+        right: 9px;
+        top: 9px;
         width: 22px;
         height: 22px;
         grid-area: navButton;
-    
+        z-index: 9;
+        display: block;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+        transition: background .4s, box-shadow .4s;
+    }
+    #navButton:hover {
+        background-color: $a4;
+        box-shadow: 0 0 8px $a9;
     }
     #navPage {
         grid-area: navPage;
         height: 22px;
+        line-height: 22px;
         padding: 0 0 0 5px;
-        margin: 4px 0 4px 4px;
-        background-color: blue;
+        background-color: $a5;
         border-radius: 4px;
         border: none;
-        position: absolute;
-        left: 30px;
-        width: 231px;
+        position: fixed;
+        right: 40px;
+        top: 9px;
+        width: 280px;
+        z-index: 7;
+        color: $a1;
+        letter-spacing: 1px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: background .4s;
+    }
+    #navPage::placeholder {
+        color: white;
+    }
+    #navPage:hover {
+        background-color: $a6;
+    }
+    #navPageClose {
+        position: fixed;
+        z-index: 8;
+        background-color: $a3;
+        transition: background .4s;
+        color: white;
+        font-weight: 700;
+        top: 9px;
+        right: 40px;
+        height: 22px;
+        width: 22px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        line-height: 21px;
+        cursor: pointer;
+    
+    
+    }
+    #navPageClose:hover {
+        background-color: $a4;
+    }
+
+    #navBody {
+        grid-area: navBody;
+        width: 285px;
+        height: calc(100% - 20px);
+        margin-top: 5px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 5px;
+
+        section {
+            background-color: $a7;
+            height: 1200px;
+            display: block;
+            width: 265px;
+            border-radius: 4px;
+            background-position-x: right;
+        }
+    }
+    #navBody::-webkit-scrollbar {
+        border-radius: 6px;
+        width: 20px;
+        overflow-x: visible;
+    }
+    #navBody::-webkit-scrollbar-track {
+        // background-color: blue;
+        width: 10px;
+    }
+    #navBody::-webkit-scrollbar-button {
+        background-color: none;
+    }
+    
+    #navBody::-webkit-scrollbar-corner {
+        background-color: yellow;
+    }
+    #navBody::-webkit-scrollbar-thumb {
+        background-color: $a4;
+        border-radius: 6px;
+        transition: background .4s;
+    }
+    #navBody::-webkit-scrollbar-thumb:hover {
+        background-color: $a6;
     }
 }
 
 
 #userDash {
-    background: green;
+    background: $t7;
     position: absolute;
     top: 48px;
     left: 0;
@@ -141,8 +292,9 @@ html {
     z-index: 1;
 }
 
+
 #sidebar {
-    background: yellow;
+    background: $a0;
     position: absolute;
     display: block;
     width: 320px;
