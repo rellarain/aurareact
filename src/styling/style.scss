@@ -1,39 +1,39 @@
 // Theme Colors
-$t0: hsl(23, 25%, 8%);
-$t1: hsl(23, 25%, 16%);
-$t2: hsl(23, 25%, 24%);
-$t3: hsl(23, 25%, 32%);
-$t4: hsl(23, 25%, 40%);
-$t5: hsl(23, 25%, 48%);
-$t6: hsl(23, 25%, 56%);
-$t7: hsl(23, 25%, 64%);
-$t8: hsl(23, 25%, 72%);
-$t9: hsl(23, 25%, 80%);
+$t0: hsl(310, 30%, 8%);
+$t1: hsl(310, 30%, 16%);
+$t2: hsl(310, 30%, 24%);
+$t3: hsl(310, 30%, 32%);
+$t4: hsl(310, 30%, 40%);
+$t5: hsl(310, 30%, 48%);
+$t6: hsl(310, 30%, 56%);
+$t7: hsl(310, 30%, 64%);
+$t8: hsl(310, 30%, 72%);
+$t9: hsl(310, 30%, 80%);
 
 // Accent Colors
 
-$a0: hsl(170, 66%, 8%);
-$a1: hsl(170, 66%, 16%);
-$a2: hsl(170, 66%, 24%);
-$a3: hsl(170, 66%, 32%);
-$a4: hsl(170, 66%, 40%);
-$a5: hsl(170, 66%, 48%);
-$a6: hsl(170, 66%, 56%);
-$a7: hsl(170, 66%, 64%);
-$a8: hsl(170, 66%, 72%);
-$a9: hsl(170, 66%, 80%);
+$a0: hsl(220, 60%, 8%);
+$a1: hsl(220, 60%, 16%);
+$a2: hsl(220, 60%, 24%);
+$a3: hsl(220, 60%, 32%);
+$a4: hsl(220, 60%, 40%);
+$a5: hsl(220, 60%, 48%);
+$a6: hsl(220, 60%, 56%);
+$a7: hsl(220, 60%, 64%);
+$a8: hsl(220, 60%, 72%);
+$a9: hsl(220, 60%, 80%);
 
 // Alert Colors
-$at0: hsl(200, 86%, 8%);
-$at1: hsl(200, 86%, 16%);
-$at2: hsl(200, 86%, 24%);
-$at3: hsl(200, 86%, 32%);
-$at4: hsl(200, 86%, 40%);
-$at5: hsl(200, 86%, 48%);
-$at6: hsl(200, 86%, 56%);
-$at7: hsl(200, 86%, 64%);
-$at8: hsl(200, 86%, 72%);
-$at9: hsl(200, 86%, 80%);
+$at0: hsl(20, 86%, 8%);
+$at1: hsl(20, 86%, 16%);
+$at2: hsl(20, 86%, 24%);
+$at3: hsl(20, 86%, 32%);
+$at4: hsl(20, 86%, 40%);
+$at5: hsl(20, 86%, 48%);
+$at6: hsl(20, 86%, 56%);
+$at7: hsl(20, 86%, 64%);
+$at8: hsl(20, 86%, 72%);
+$at9: hsl(20, 86%, 80%);
 
 
 
@@ -48,6 +48,7 @@ body {
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
+    background-color: $a0;
 }
 html {
     margin: none;
@@ -71,14 +72,14 @@ html {
 
 
 #userHeader {
-    background: $t3;
-    position: absolute;
+    background: $t2;
+    position: fixed;
     top: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     height: 48px;
     z-index: 5;
-    box-shadow: -1px 4px 4px $t3;
+    box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.572);
     display: grid;
     grid-template-columns: 40px auto;
     grid-template-rows: 20px 20px 8px;
@@ -124,20 +125,60 @@ html {
     }
     #userProgress {
         grid-area: userProgress;
-        background-color: $t1;
-        width: 100vw;
+        background-color: $t0;
+        width: 100%;
 
+        td:nth-child(65) {background-color: $at8;}
+        td:nth-child(66) {background-color: $at4;}
+        td:nth-child(67) {background-color: $at6;}
+        td:nth-child(68) {background-color: $at6;}
+        td:nth-child(69) {background-color: $at6;}
         td:nth-child(70) {background-color: $at4;}
         td:nth-child(71) {background-color: $at4;}
         td:nth-child(72) {background-color: $at4;}
         td:nth-child(73) {background-color: $at8;}
         td:nth-child(74) {background-color: $at8;}
+        td:nth-child(75) {background-color: $at8;}
         td:nth-child(76) {background-color: $a4;}
         td:nth-child(77) {background-color: $a6;}
+        td:nth-child(78) {background-color: $a6;}
+        td:nth-child(79) {background-color: $a6;}
+        td:nth-child(80) {background-color: $t3;}
+        td:nth-child(81) {background-color: $t3;}
+        td:nth-child(82) {background-color: $t3;}
+        td:nth-child(83) {background-color: $t3;}
+        td:nth-child(84) {background-color: $t3;}
+        td:nth-child(85) {background-color: $t3;}
+        td:nth-child(86) {background-color: $t3;}
+        td:nth-child(87) {background-color: $t3;}
+        td:nth-child(88) {background-color: $a6;}
         td:nth-child(89) {background-color: $a6;}
-        td:nth-child(90) {background-color: $a6;}
+        td:nth-child(90) {background-color: $at6;}
         td:nth-child(91) {background-color: $at6;}
         td:nth-child(92) {background-color: $at6;}
+        td:nth-child(93) {background-color: $at8;}
+        td:nth-child(94) {background-color: $at8;}
+        td:nth-child(95) {background-color: $at8;}
+        td:nth-child(96) {background-color: $a4;}
+        td:nth-child(97) {background-color: $a6;}
+        td:nth-child(98) {background-color: $a6;}
+        td:nth-child(99) {background-color: $a6;}
+        td:nth-child(100) {background-color: white;}
+        td:nth-child(115) {background-color: $t6;}
+        td:nth-child(116) {background-color: $t6;}
+        td:nth-child(117) {background-color: $t6;}
+        td:nth-child(118) {background-color: $t6;}
+        td:nth-child(119) {background-color: $t6;}
+        td:nth-child(120) {background-color: $t6;}
+        td:nth-child(121) {background-color: $t6;}
+        td:nth-child(122) {background-color: $t6;}
+        td:nth-child(123) {background-color: $t6;}
+        td:nth-child(124) {background-color: $t6;}
+        td:nth-child(125) {background-color: $t6;}
+        td:nth-child(126) {background-color: $t6;}
+        td:nth-child(127) {background-color: $t6;}
+        td:nth-child(128) {background-color: $t6;}
+        td:nth-child(129) {background-color: $t6;}
     }
 }
 
@@ -149,6 +190,7 @@ html {
     top: 5px;
     right: 5px;
     z-index: 5;
+    transition: height 1s, width 1.5s;
 
     // Closed
     width: 30px;
@@ -199,13 +241,14 @@ html {
         position: fixed;
         right: 40px;
         top: 9px;
+        top: -30px;
         width: 280px;
         z-index: 7;
         color: $a1;
         letter-spacing: 1px;
         font-size: 12px;
         font-weight: 600;
-        transition: background .4s;
+        transition: background .4s, top .5s;
     }
     #navPage::placeholder {
         color: white;
@@ -217,10 +260,11 @@ html {
         position: fixed;
         z-index: 8;
         background-color: $a3;
-        transition: background .4s;
+        transition: background .4s, top .5s;
         color: white;
         font-weight: 700;
         top: 9px;
+        top: -30px;
         right: 40px;
         height: 22px;
         width: 22px;
@@ -228,8 +272,6 @@ html {
         border-radius: 0 4px 4px 0;
         line-height: 21px;
         cursor: pointer;
-    
-    
     }
     #navPageClose:hover {
         background-color: $a4;
@@ -246,16 +288,18 @@ html {
 
         section {
             background-color: $a7;
-            height: 1200px;
+            height: 1100px;
             display: block;
-            width: 265px;
+            width: 260px;
+            margin-left: 10px;
             border-radius: 4px;
             background-position-x: right;
+            margin-bottom: 10px;
         }
     }
     #navBody::-webkit-scrollbar {
-        border-radius: 6px;
-        width: 20px;
+        border-radius: 4px;
+        width: 15px;
         overflow-x: visible;
     }
     #navBody::-webkit-scrollbar-track {
@@ -266,12 +310,10 @@ html {
         background-color: none;
     }
     
-    #navBody::-webkit-scrollbar-corner {
-        background-color: yellow;
-    }
+
     #navBody::-webkit-scrollbar-thumb {
         background-color: $a4;
-        border-radius: 6px;
+        border-radius: 4px;
         transition: background .4s;
     }
     #navBody::-webkit-scrollbar-thumb:hover {
@@ -281,26 +323,199 @@ html {
 
 
 #userDash {
-    background: $t7;
-    position: absolute;
+    background: $t6;
+    position: fixed;
     top: 48px;
-    left: 0;
-    // width: calc(100vw - 320px);
-    width: 100vw;
+    right: 0;
+    width: calc(100vw - 320px);
+    width: 100%;
     height: calc(100vh - 48px);
     margin: 0;
     z-index: 1;
+    transition: width 1s;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.579);
+
+    #userConsole {
+        display: grid;
+        position: absolute;
+        overflow: hidden;
+        height: calc(100% - 10px); 
+        width: calc(100% - 10px);
+        border-radius: 5px;
+        transition: bottom 1s;
+        bottom: 5px;
+        bottom: -100vh;
+        left: 5px;
+        grid-template-rows: 40px 40px auto;
+        grid-template-areas: "consoleHead" "consoleTabs" "consoleBody";
+        #userConsoleHead {
+            background-color: $a0;
+            grid-area: consoleHead;
+            display: grid;
+            grid-template-columns: calc(60% - 63px) 20% 20% 30px 30px 3px;
+            grid-template-rows: 30px 10px;
+            grid-template-areas: "consoleTitle consoleHelpCount consoleUserCount consoleHelp consoleClose none" "consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress";
+            #userConsoleTitle {
+                grid-area: consoleTitle;
+                color: white;
+                line-height: 32px;
+                padding-left: 10px;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            #userConsoleHelpers {
+                grid-area: consoleHelpCount;
+                background-color: $a6;
+                border-radius: 4px;
+                margin: 3px;
+                font-size: 14px;
+                line-height: 24px;
+                color: $a1;
+                font-weight: 600;
+                cursor: pointer;
+                letter-spacing: 1px;
+                text-align: center;
+                transition: background .4s;
+
+            }
+            #userConsoleHelpers:hover {background-color: $a8;}
+            #userConsoleUsers {
+                grid-area: consoleUserCount;
+                background-color: $at6;
+                border-radius: 4px;
+                margin: 3px;
+                font-size: 14px;
+                line-height: 24px;
+                color: $at1;
+                font-weight: 600;
+                cursor: pointer;
+                letter-spacing: 1px;
+                text-align: center;
+                transition: background .4s;
+            }
+            #userConsoleUsers:hover {background-color: $at8;}
+            #userConsoleHelp {
+                grid-area: consoleHelp;
+                background-color: $a3;
+                width: 24px;
+                border-radius: 4px;
+                height: 24px;
+                margin: 3px;
+                border: none;
+                color: white;
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+                line-height: 24px;
+                transition: background .4s;
+            }
+            #userConsoleHelp:hover {background-color: $a5;}
+            #userConsoleClose {
+                grid-area: consoleClose;
+                background-color: $at3;
+                width: 24px;
+                border-radius: 4px;
+                height: 24px;
+                margin: 3px;
+                border: none;
+                color: white;
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+                line-height: 24px;
+                transition: background .4s;
+            }
+            #userConsoleClose:hover {background-color: $at5;}
+            #userConsoleProgress {
+                grid-area: consoleProgress;
+                background-color: $a2;
+            }
+        }
+        #userConsoleTabs {
+            background-color: $a5;
+            grid-area: consoleTabs;
+
+        }
+        #userConsoleBody {
+            background-color: $a9;
+            grid-area: consoleBody;
+
+        }
+    }
 }
 
 
 #sidebar {
-    background: $a0;
     position: absolute;
     display: block;
     width: 320px;
     height: calc(100vh - 48px);
     top: 48px;
-    right: 0;
+    left: 0;
     z-index: 0;
+    overflow: hidden;
+
+    #quickTools {
+        display: grid;
+        position: absolute;
+        background-color: $at8;
+        width: calc(100% - 10px);
+        top: 5px;
+        height: calc(100% - 10px);
+        border-radius: 4px;
+        overflow: hidden;
+        left: 5px;
+        grid-template-rows: 40px 30px auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.582);
+        grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
+
+        #quickToolsHead {
+            grid-area: QTtabs;
+            background-color: $a8;
+            overflow: hidden;
+            padding: 5px 0 0 5px;
+            display: flex;
+            span {
+                height: 35px;
+                width: 30px;
+                display: inline-block;
+                background-color: $a3;
+                position: relative;
+                bottom: -5px;
+                margin-right: 5px;
+                border-radius: 4px 4px 0 0;
+                overflow: hidden;
+                transition: background .4s;
+                cursor: pointer;
+            }
+            span:hover {
+                background-color: $a5;
+            }
+            .openTab {
+                background-color: $at3;
+                bottom: 0;
+                width: 30px;
+                transition: background .4s;
+            }
+            .openTab:hover {
+                background-color: $at5;
+            }
+        }
+        #quickToolsTitle {
+            grid-area: QTtitle;
+            background-color: $at3;
+            line-height: 30px;
+            padding: 0 0 0 5px;
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        #quickToolsBody {
+            grid-area: QTpanel;
+
+        }
+    }
 }
 

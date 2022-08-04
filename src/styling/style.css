@@ -4,6 +4,7 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
+  background-color: #081021;
 }
 
 html {
@@ -12,15 +13,15 @@ html {
 }
 
 #userHeader {
-  background: #664d3d;
-  position: absolute;
+  background: #502b49;
+  position: fixed;
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 100%;
   height: 48px;
   z-index: 5;
-  -webkit-box-shadow: -1px 4px 4px #664d3d;
-          box-shadow: -1px 4px 4px #664d3d;
+  -webkit-box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.572);
+          box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.572);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px auto;
@@ -37,7 +38,7 @@ html {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: thumbnail;
-  background-color: #c9b3a6;
+  background-color: #cda2c6;
   overflow: hidden;
 }
 
@@ -49,7 +50,7 @@ html {
   line-height: 16px;
   margin: 4px 0 0 5px;
   font-weight: 600;
-  color: #d9c9bf;
+  color: #dbbdd6;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -73,7 +74,7 @@ html {
   width: max-content;
   font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #ba9e8c;
+  color: #bf88b6;
 }
 
 #userHeader #userID span {
@@ -84,7 +85,7 @@ html {
 }
 
 #userHeader #userID span:hover {
-  color: #d9c9bf;
+  color: #dbbdd6;
 }
 
 #userHeader #userProgress {
@@ -92,52 +93,212 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #33261f;
-  width: 100vw;
+  background-color: #1b0e18;
+  width: 100%;
+}
+
+#userHeader #userProgress td:nth-child(65) {
+  background-color: #f5a37a;
+}
+
+#userHeader #userProgress td:nth-child(66) {
+  background-color: #be490e;
+}
+
+#userHeader #userProgress td:nth-child(67) {
+  background-color: #ef6f2e;
+}
+
+#userHeader #userProgress td:nth-child(68) {
+  background-color: #ef6f2e;
+}
+
+#userHeader #userProgress td:nth-child(69) {
+  background-color: #ef6f2e;
 }
 
 #userHeader #userProgress td:nth-child(70) {
-  background-color: #0e83be;
+  background-color: #be490e;
 }
 
 #userHeader #userProgress td:nth-child(71) {
-  background-color: #0e83be;
+  background-color: #be490e;
 }
 
 #userHeader #userProgress td:nth-child(72) {
-  background-color: #0e83be;
+  background-color: #be490e;
 }
 
 #userHeader #userProgress td:nth-child(73) {
-  background-color: #7accf5;
+  background-color: #f5a37a;
 }
 
 #userHeader #userProgress td:nth-child(74) {
-  background-color: #7accf5;
+  background-color: #f5a37a;
+}
+
+#userHeader #userProgress td:nth-child(75) {
+  background-color: #f5a37a;
 }
 
 #userHeader #userProgress td:nth-child(76) {
-  background-color: #23a993;
+  background-color: #2952a3;
 }
 
 #userHeader #userProgress td:nth-child(77) {
-  background-color: #45d9c0;
+  background-color: #4b78d2;
+}
+
+#userHeader #userProgress td:nth-child(78) {
+  background-color: #4b78d2;
+}
+
+#userHeader #userProgress td:nth-child(79) {
+  background-color: #4b78d2;
+}
+
+#userHeader #userProgress td:nth-child(80) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(81) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(82) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(83) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(84) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(85) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(86) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(87) {
+  background-color: #6a3962;
+}
+
+#userHeader #userProgress td:nth-child(88) {
+  background-color: #4b78d2;
 }
 
 #userHeader #userProgress td:nth-child(89) {
-  background-color: #45d9c0;
+  background-color: #4b78d2;
 }
 
 #userHeader #userProgress td:nth-child(90) {
-  background-color: #45d9c0;
+  background-color: #ef6f2e;
 }
 
 #userHeader #userProgress td:nth-child(91) {
-  background-color: #2eafef;
+  background-color: #ef6f2e;
 }
 
 #userHeader #userProgress td:nth-child(92) {
-  background-color: #2eafef;
+  background-color: #ef6f2e;
+}
+
+#userHeader #userProgress td:nth-child(93) {
+  background-color: #f5a37a;
+}
+
+#userHeader #userProgress td:nth-child(94) {
+  background-color: #f5a37a;
+}
+
+#userHeader #userProgress td:nth-child(95) {
+  background-color: #f5a37a;
+}
+
+#userHeader #userProgress td:nth-child(96) {
+  background-color: #2952a3;
+}
+
+#userHeader #userProgress td:nth-child(97) {
+  background-color: #4b78d2;
+}
+
+#userHeader #userProgress td:nth-child(98) {
+  background-color: #4b78d2;
+}
+
+#userHeader #userProgress td:nth-child(99) {
+  background-color: #4b78d2;
+}
+
+#userHeader #userProgress td:nth-child(100) {
+  background-color: white;
+}
+
+#userHeader #userProgress td:nth-child(115) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(116) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(117) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(118) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(119) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(120) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(121) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(122) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(123) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(124) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(125) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(126) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(127) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(128) {
+  background-color: #b06da5;
+}
+
+#userHeader #userProgress td:nth-child(129) {
+  background-color: #b06da5;
 }
 
 #navCrop {
@@ -147,12 +308,14 @@ html {
   top: 5px;
   right: 5px;
   z-index: 5;
+  -webkit-transition: height 1s, width 1.5s;
+  transition: height 1s, width 1.5s;
   width: 30px;
   height: 30px;
 }
 
 #navCrop #navPanel {
-  background: #aaeee2;
+  background: #adc2eb;
   width: 300px;
   height: calc(100vh - 10px);
   display: -ms-grid;
@@ -167,7 +330,7 @@ html {
 
 #navCrop #navButton {
   position: fixed;
-  background-color: #156658;
+  background-color: #183162;
   right: 9px;
   top: 9px;
   width: 22px;
@@ -187,9 +350,9 @@ html {
 }
 
 #navCrop #navButton:hover {
-  background-color: #23a993;
-  -webkit-box-shadow: 0 0 8px #aaeee2;
-          box-shadow: 0 0 8px #aaeee2;
+  background-color: #2952a3;
+  -webkit-box-shadow: 0 0 8px #adc2eb;
+          box-shadow: 0 0 8px #adc2eb;
 }
 
 #navCrop #navPage {
@@ -199,20 +362,21 @@ html {
   height: 22px;
   line-height: 22px;
   padding: 0 0 0 5px;
-  background-color: #2acbb0;
+  background-color: #3162c4;
   border-radius: 4px;
   border: none;
   position: fixed;
   right: 40px;
   top: 9px;
+  top: -30px;
   width: 280px;
   z-index: 7;
-  color: #0e443b;
+  color: #102141;
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: 600;
-  -webkit-transition: background .4s;
-  transition: background .4s;
+  -webkit-transition: background .4s, top .5s;
+  transition: background .4s, top .5s;
 }
 
 #navCrop #navPage::-webkit-input-placeholder {
@@ -232,18 +396,19 @@ html {
 }
 
 #navCrop #navPage:hover {
-  background-color: #45d9c0;
+  background-color: #4b78d2;
 }
 
 #navCrop #navPageClose {
   position: fixed;
   z-index: 8;
-  background-color: #1c8776;
-  -webkit-transition: background .4s;
-  transition: background .4s;
+  background-color: #214183;
+  -webkit-transition: background .4s, top .5s;
+  transition: background .4s, top .5s;
   color: white;
   font-weight: 700;
   top: 9px;
+  top: -30px;
   right: 40px;
   height: 22px;
   width: 22px;
@@ -254,7 +419,7 @@ html {
 }
 
 #navCrop #navPageClose:hover {
-  background-color: #23a993;
+  background-color: #2952a3;
 }
 
 #navCrop #navBody {
@@ -271,17 +436,19 @@ html {
 }
 
 #navCrop #navBody section {
-  background-color: #67e0cc;
-  height: 1200px;
+  background-color: #6c91da;
+  height: 1100px;
   display: block;
-  width: 265px;
+  width: 260px;
+  margin-left: 10px;
   border-radius: 4px;
   background-position-x: right;
+  margin-bottom: 10px;
 }
 
 #navCrop #navBody::-webkit-scrollbar {
-  border-radius: 6px;
-  width: 20px;
+  border-radius: 4px;
+  width: 15px;
   overflow-x: visible;
 }
 
@@ -293,40 +460,277 @@ html {
   background-color: none;
 }
 
-#navCrop #navBody::-webkit-scrollbar-corner {
-  background-color: yellow;
-}
-
 #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: #23a993;
-  border-radius: 6px;
+  background-color: #2952a3;
+  border-radius: 4px;
   -webkit-transition: background .4s;
   transition: background .4s;
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb:hover {
-  background-color: #45d9c0;
+  background-color: #4b78d2;
 }
 
 #userDash {
-  background: #ba9e8c;
-  position: absolute;
+  background: #b06da5;
+  position: fixed;
   top: 48px;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  width: calc(100vw - 320px);
+  width: 100%;
   height: calc(100vh - 48px);
   margin: 0;
   z-index: 1;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  -webkit-box-shadow: -2px 0 4px rgba(0, 0, 0, 0.579);
+          box-shadow: -2px 0 4px rgba(0, 0, 0, 0.579);
+}
+
+#userDash #userConsole {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  overflow: hidden;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  border-radius: 5px;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  bottom: 5px;
+  bottom: -100vh;
+  left: 5px;
+  -ms-grid-rows: 40px 40px auto;
+      grid-template-rows: 40px 40px auto;
+      grid-template-areas: "consoleHead" "consoleTabs" "consoleBody";
+}
+
+#userDash #userConsole #userConsoleHead {
+  background-color: #081021;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: consoleHead;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc(60% - 63px) 20% 20% 30px 30px 3px;
+      grid-template-columns: calc(60% - 63px) 20% 20% 30px 30px 3px;
+  -ms-grid-rows: 30px 10px;
+      grid-template-rows: 30px 10px;
+      grid-template-areas: "consoleTitle consoleHelpCount consoleUserCount consoleHelp consoleClose none" "consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress";
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: consoleTitle;
+  color: white;
+  line-height: 32px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleHelpers {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: consoleHelpCount;
+  background-color: #4b78d2;
+  border-radius: 4px;
+  margin: 3px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #102141;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleHelpers:hover {
+  background-color: #8da9e2;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleUsers {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: consoleUserCount;
+  background-color: #ef6f2e;
+  border-radius: 4px;
+  margin: 3px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4c1d06;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleUsers:hover {
+  background-color: #f5a37a;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleHelp {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: consoleHelp;
+  background-color: #214183;
+  width: 24px;
+  border-radius: 4px;
+  height: 24px;
+  margin: 3px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 24px;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleHelp:hover {
+  background-color: #3162c4;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleClose {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: consoleClose;
+  background-color: #983a0b;
+  width: 24px;
+  border-radius: 4px;
+  height: 24px;
+  margin: 3px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 24px;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleClose:hover {
+  background-color: #e45711;
+}
+
+#userDash #userConsole #userConsoleHead #userConsoleProgress {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: consoleProgress;
+  background-color: #183162;
+}
+
+#userDash #userConsole #userConsoleTabs {
+  background-color: #3162c4;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: consoleTabs;
+}
+
+#userDash #userConsole #userConsoleBody {
+  background-color: #adc2eb;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: consoleBody;
 }
 
 #sidebar {
-  background: #07221d;
   position: absolute;
   display: block;
   width: 320px;
   height: calc(100vh - 48px);
   top: 48px;
-  right: 0;
+  left: 0;
   z-index: 0;
+  overflow: hidden;
+}
+
+#sidebar #quickTools {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  background-color: #f5a37a;
+  width: calc(100% - 10px);
+  top: 5px;
+  height: calc(100% - 10px);
+  border-radius: 4px;
+  overflow: hidden;
+  left: 5px;
+  -ms-grid-rows: 40px 30px auto;
+      grid-template-rows: 40px 30px auto;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.582);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.582);
+      grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
+}
+
+#sidebar #quickTools #quickToolsHead {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: QTtabs;
+  background-color: #8da9e2;
+  overflow: hidden;
+  padding: 5px 0 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sidebar #quickTools #quickToolsHead span {
+  height: 35px;
+  width: 30px;
+  display: inline-block;
+  background-color: #214183;
+  position: relative;
+  bottom: -5px;
+  margin-right: 5px;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+  cursor: pointer;
+}
+
+#sidebar #quickTools #quickToolsHead span:hover {
+  background-color: #3162c4;
+}
+
+#sidebar #quickTools #quickToolsHead .openTab {
+  background-color: #983a0b;
+  bottom: 0;
+  width: 30px;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+#sidebar #quickTools #quickToolsHead .openTab:hover {
+  background-color: #e45711;
+}
+
+#sidebar #quickTools #quickToolsTitle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: QTtitle;
+  background-color: #983a0b;
+  line-height: 30px;
+  padding: 0 0 0 5px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#sidebar #quickTools #quickToolsBody {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: QTpanel;
 }
 /*# sourceMappingURL=style.css.map */
