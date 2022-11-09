@@ -1,75 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+//------------------------------------------------------------------------------------------------------
+
+
 // Theme Colors
-$t0: hsl(310, 30%, 8%);
-$t1: hsl(310, 30%, 16%);
-$t2: hsl(310, 30%, 24%);
-$t3: hsl(310, 30%, 32%);
-$t4: hsl(310, 30%, 40%);
-$t5: hsl(310, 30%, 48%);
-$t6: hsl(310, 30%, 56%);
-$t7: hsl(310, 30%, 64%);
-$t8: hsl(310, 30%, 72%);
-$t9: hsl(310, 30%, 80%);
+$t0: hsl(180, 17%, 8%);
+$t1: hsl(180, 17%, 16%);
+$t2: hsl(180, 17%, 24%);
+$t3: hsl(180, 17%, 32%);
+$t4: hsl(180, 17%, 40%);
+$t5: hsl(180, 17%, 48%);
+$t6: hsl(180, 17%, 56%);
+$t7: hsl(180, 17%, 64%);
+$t8: hsl(180, 17%, 72%);
+$t9: hsl(180, 17%, 80%);
 
 // Accent Colors
 
-$a0: hsl(220, 60%, 8%);
-$a1: hsl(220, 60%, 16%);
-$a2: hsl(220, 60%, 24%);
-$a3: hsl(220, 60%, 32%);
-$a4: hsl(220, 60%, 40%);
-$a5: hsl(220, 60%, 48%);
-$a6: hsl(220, 60%, 56%);
-$a7: hsl(220, 60%, 64%);
-$a8: hsl(220, 60%, 72%);
-$a9: hsl(220, 60%, 80%);
+$a0: hsl(33, 45%, 8%);
+$a1: hsl(33, 45%, 16%);
+$a2: hsl(33, 45%, 24%);
+$a3: hsl(33, 45%, 32%);
+$a4: hsl(33, 45%, 40%);
+$a5: hsl(33, 45%, 48%);
+$a6: hsl(33, 45%, 56%);
+$a7: hsl(33, 45%, 64%);
+$a8: hsl(33, 45%, 72%);
+$a9: hsl(33, 45%, 80%);
 
 // Alert Colors
-$at0: hsl(20, 86%, 8%);
-$at1: hsl(20, 86%, 16%);
-$at2: hsl(20, 86%, 24%);
-$at3: hsl(20, 86%, 32%);
-$at4: hsl(20, 86%, 40%);
-$at5: hsl(20, 86%, 48%);
-$at6: hsl(20, 86%, 56%);
-$at7: hsl(20, 86%, 64%);
-$at8: hsl(20, 86%, 72%);
-$at9: hsl(20, 86%, 80%);
+$at0: hsl(200, 75%, 8%);
+$at1: hsl(200, 75%, 16%);
+$at2: hsl(200, 75%, 24%);
+$at3: hsl(200, 75%, 32%);
+$at4: hsl(200, 75%, 40%);
+$at5: hsl(200, 75%, 48%);
+$at6: hsl(200, 75%, 56%);
+$at7: hsl(200, 75%, 64%);
+$at8: hsl(200, 75%, 72%);
+$at9: hsl(200, 75%, 80%);
 
 
-
-
-
-
+// Z-Index Guide 
+// 13. Total Popup
+// 12. Total Barrier:
+// 11. Navigation:
+// 10. Nav Anchor:
+//  9. Header:
+//  8. Screens:
+//  7. Dash Popup:
+//  6. Dash Barrier:
+//  5. Help Desk: 
+//  4. Consoles:
+//  3. Dash Content:
+//  2. Dashboard:
+//  1. Toolkit:
+//  0. Viewport:
 
 
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $a0;
-}
-html {
-    margin: none;
-    padding: none;
+    background-color: $a3;
 }
 
-
-// Z-Index Guide 
-// 11. Demand Popup:
-// 10. Screen Barrier:
-//  9. Nav Button: 
-//  8. Page Tool Close:
-//  7. Page Tool:
-//  6. Nav Panel: 
-//  5. Header: 
-//  4. Screen: 
-//  3. Dash Popup: 
-//  2. Dash Barrier: 
-//  1. Dash:
-//  0. Quick Tools: 
-
+//---------------------------------------------------------------------------------------------------------------------
 
 #userHeader {
     background: $t2;
@@ -78,8 +126,8 @@ html {
     right: 0;
     width: 100%;
     height: 48px;
-    z-index: 5;
-    box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.572);
+    z-index: 9;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.459);
     display: grid;
     grid-template-columns: 40px auto;
     grid-template-rows: 20px 20px 8px;
@@ -89,7 +137,7 @@ html {
         height: 40px;
         width: 40px;
         grid-area: thumbnail;
-        background-color: $t8;
+        background-color: $a8;
         overflow: hidden;
     }
     #userName {
@@ -128,6 +176,27 @@ html {
         background-color: $t0;
         width: 100%;
 
+        .progressNow {box-shadow: inset 0 0 0 2px white;}
+
+        td:nth-child(37) {background-color: $a8;}
+        td:nth-child(38) {background-color: $a8;}
+        td:nth-child(39) {background-color: $a8;}
+        td:nth-child(40) {background-color: $a8;}
+        td:nth-child(41) {background-color: $a8;}
+        td:nth-child(42) {background-color: $t4;}
+        td:nth-child(43) {background-color: $t4;}
+        td:nth-child(44) {background-color: $t4;}
+        td:nth-child(45) {background-color: $t4;}
+        td:nth-child(46) {background-color: $t4;}
+        td:nth-child(56) {background-color: $at6;}
+        td:nth-child(57) {background-color: $at6;}
+        td:nth-child(58) {background-color: $at6;}
+        td:nth-child(59) {background-color: $at6;}
+        td:nth-child(60) {background-color: $at6;}
+        td:nth-child(61) {background-color: $at4;}
+        td:nth-child(62) {background-color: $at4;}
+        td:nth-child(63) {background-color: $at4;}
+        td:nth-child(64) {background-color: $at4;}
         td:nth-child(65) {background-color: $at8;}
         td:nth-child(66) {background-color: $at4;}
         td:nth-child(67) {background-color: $at6;}
@@ -142,17 +211,13 @@ html {
         td:nth-child(76) {background-color: $a4;}
         td:nth-child(77) {background-color: $a6;}
         td:nth-child(78) {background-color: $a6;}
-        td:nth-child(79) {background-color: $a6;}
-        td:nth-child(80) {background-color: $t3;}
-        td:nth-child(81) {background-color: $t3;}
-        td:nth-child(82) {background-color: $t3;}
-        td:nth-child(83) {background-color: $t3;}
-        td:nth-child(84) {background-color: $t3;}
-        td:nth-child(85) {background-color: $t3;}
-        td:nth-child(86) {background-color: $t3;}
-        td:nth-child(87) {background-color: $t3;}
+        td:nth-child(79) {background-color: $a8;}
+        td:nth-child(80) {background-color: $a8;}
+        td:nth-child(81) {background-color: $a6;}
+        td:nth-child(82) {background-color: $a8;}
+        td:nth-child(83) {background-color: $a6;}
         td:nth-child(88) {background-color: $a6;}
-        td:nth-child(89) {background-color: $a6;}
+        td:nth-child(89) {background-color: $a8;}
         td:nth-child(90) {background-color: $at6;}
         td:nth-child(91) {background-color: $at6;}
         td:nth-child(92) {background-color: $at6;}
@@ -162,23 +227,22 @@ html {
         td:nth-child(96) {background-color: $a4;}
         td:nth-child(97) {background-color: $a6;}
         td:nth-child(98) {background-color: $a6;}
-        td:nth-child(99) {background-color: $a6;}
-        td:nth-child(100) {background-color: white;}
-        td:nth-child(115) {background-color: $t6;}
-        td:nth-child(116) {background-color: $t6;}
-        td:nth-child(117) {background-color: $t6;}
-        td:nth-child(118) {background-color: $t6;}
-        td:nth-child(119) {background-color: $t6;}
-        td:nth-child(120) {background-color: $t6;}
-        td:nth-child(121) {background-color: $t6;}
-        td:nth-child(122) {background-color: $t6;}
-        td:nth-child(123) {background-color: $t6;}
-        td:nth-child(124) {background-color: $t6;}
-        td:nth-child(125) {background-color: $t6;}
-        td:nth-child(126) {background-color: $t6;}
-        td:nth-child(127) {background-color: $t6;}
-        td:nth-child(128) {background-color: $t6;}
-        td:nth-child(129) {background-color: $t6;}
+        td:nth-child(99) {background-color: $a8;}
+        td:nth-child(115) {background-color: $t8;}
+        td:nth-child(116) {background-color: $t8;}
+        td:nth-child(117) {background-color: $t8;}
+        td:nth-child(118) {background-color: $t8;}
+        td:nth-child(119) {background-color: $t8;}
+        td:nth-child(120) {background-color: $t8;}
+        td:nth-child(121) {background-color: $t8;}
+        td:nth-child(122) {background-color: $t8;}
+        td:nth-child(123) {background-color: $t8;}
+        td:nth-child(124) {background-color: $t8;}
+        td:nth-child(125) {background-color: $t8;}
+        td:nth-child(126) {background-color: $t8;}
+        td:nth-child(127) {background-color: $t8;}
+        td:nth-child(128) {background-color: $t8;}
+        td:nth-child(129) {background-color: $t8;}
     }
 }
 
@@ -189,7 +253,7 @@ html {
     position: fixed;
     top: 5px;
     right: 5px;
-    z-index: 5;
+    z-index: 10;
     transition: height 1s, width 1.5s;
 
     // Closed
@@ -239,10 +303,10 @@ html {
         border-radius: 4px;
         border: none;
         position: fixed;
-        right: 40px;
+        right: 35px;
         top: 9px;
         top: -30px;
-        width: 280px;
+        width: 261px;
         z-index: 7;
         color: $a1;
         letter-spacing: 1px;
@@ -331,120 +395,72 @@ html {
     width: 100%;
     height: calc(100vh - 48px);
     margin: 0;
-    z-index: 1;
-    transition: width 1s;
-    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.579);
+    z-index: 2;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 1s, left 1s;
+    box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.579);
 
     #userConsole {
-        display: grid;
+        display: block;
+        // display: none;
         position: absolute;
         overflow: hidden;
-        height: calc(100% - 10px); 
-        width: calc(100% - 10px);
+        height: calc(100% - 60px); 
+        width: calc(100% - 20px);
         border-radius: 5px;
-        transition: bottom 1s;
-        bottom: 5px;
-        bottom: -100vh;
-        left: 5px;
-        grid-template-rows: 40px 40px auto;
-        grid-template-areas: "consoleHead" "consoleTabs" "consoleBody";
-        #userConsoleHead {
-            background-color: $a0;
-            grid-area: consoleHead;
-            display: grid;
-            grid-template-columns: calc(60% - 63px) 20% 20% 30px 30px 3px;
-            grid-template-rows: 30px 10px;
-            grid-template-areas: "consoleTitle consoleHelpCount consoleUserCount consoleHelp consoleClose none" "consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress";
-            #userConsoleTitle {
-                grid-area: consoleTitle;
-                color: white;
-                line-height: 32px;
-                padding-left: 10px;
-                font-weight: 600;
-                font-size: 16px;
-                letter-spacing: 1px;
-            }
-            #userConsoleHelpers {
-                grid-area: consoleHelpCount;
-                background-color: $a6;
-                border-radius: 4px;
-                margin: 3px;
-                font-size: 14px;
-                line-height: 24px;
-                color: $a1;
-                font-weight: 600;
-                cursor: pointer;
-                letter-spacing: 1px;
-                text-align: center;
-                transition: background .4s;
+        transition: bottom 2s;
+        bottom: 50px;
+        bottom: -100%;
+        left: 10px;
+        z-index: 4;
+        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
+        background-color: $a3;
 
-            }
-            #userConsoleHelpers:hover {background-color: $a8;}
-            #userConsoleUsers {
-                grid-area: consoleUserCount;
-                background-color: $at6;
-                border-radius: 4px;
-                margin: 3px;
-                font-size: 14px;
-                line-height: 24px;
-                color: $at1;
-                font-weight: 600;
-                cursor: pointer;
-                letter-spacing: 1px;
-                text-align: center;
-                transition: background .4s;
-            }
-            #userConsoleUsers:hover {background-color: $at8;}
-            #userConsoleHelp {
-                grid-area: consoleHelp;
-                background-color: $a3;
-                width: 24px;
-                border-radius: 4px;
-                height: 24px;
-                margin: 3px;
-                border: none;
-                color: white;
-                font-weight: 600;
-                font-size: 16px;
-                cursor: pointer;
-                line-height: 24px;
-                transition: background .4s;
-            }
-            #userConsoleHelp:hover {background-color: $a5;}
-            #userConsoleClose {
-                grid-area: consoleClose;
-                background-color: $at3;
-                width: 24px;
-                border-radius: 4px;
-                height: 24px;
-                margin: 3px;
-                border: none;
-                color: white;
-                font-weight: 600;
-                font-size: 16px;
-                cursor: pointer;
-                line-height: 24px;
-                transition: background .4s;
-            }
-            #userConsoleClose:hover {background-color: $at5;}
-            #userConsoleProgress {
-                grid-area: consoleProgress;
-                background-color: $a2;
-            }
+        // metaconsole: under the desk, buttons, and title; details the department and project activity
+        #userConsoleDesk {
+            display: block;
+            height: 100%;
+            margin: 0 0 0 300px;
+            width: calc(100% - 295px);
+            width: calc(100% - 10px);
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: width 1s;
+            background-color: $a7;
+            border-radius: 4px;
+            cursor: default;
+
         }
-        #userConsoleTabs {
+        #userConsoleMeta {
+            display: block;
+            height: calc(100% - 10px);
+            width: 280px;
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            border-radius: 4px;
             background-color: $a5;
-            grid-area: consoleTabs;
-
+            cursor: default;
         }
-        #userConsoleBody {
-            background-color: $a9;
-            grid-area: consoleBody;
+        // console: title of console, help button, close button, and desk which changes widths
 
-        }
     }
 }
 
+#helpDesk {
+    background-color: $a2;
+    height: 40px;
+    display: block;
+    width: 100vw;
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    bottom: -60px;
+    transition: bottom 1s;
+    box-shadow: -2px 0 6px 2px rgba(0, 0, 0, 0.699);
+}
 
 #sidebar {
     position: absolute;
@@ -453,26 +469,26 @@ html {
     height: calc(100vh - 48px);
     top: 48px;
     left: 0;
-    z-index: 0;
+    z-index: 1;
     overflow: hidden;
 
     #quickTools {
         display: grid;
         position: absolute;
-        background-color: $at8;
+        background-color: $a8;
         width: calc(100% - 10px);
         top: 5px;
-        height: calc(100% - 10px);
+        height: calc(100% - 50px);
         border-radius: 4px;
         overflow: hidden;
         left: 5px;
         grid-template-rows: 40px 30px auto;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.582);
+        box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.582);
         grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
 
         #quickToolsHead {
             grid-area: QTtabs;
-            background-color: $a8;
+            background-color: $a6;
             overflow: hidden;
             padding: 5px 0 0 5px;
             display: flex;
@@ -480,31 +496,31 @@ html {
                 height: 35px;
                 width: 30px;
                 display: inline-block;
-                background-color: $a3;
+                background-color: $a1;
                 position: relative;
                 bottom: -5px;
-                margin-right: 5px;
+                margin-right: 4px;
                 border-radius: 4px 4px 0 0;
                 overflow: hidden;
                 transition: background .4s;
                 cursor: pointer;
             }
             span:hover {
-                background-color: $a5;
+                background-color: $a3;
             }
             .openTab {
-                background-color: $at3;
+                background-color: $a4;
                 bottom: 0;
                 width: 30px;
                 transition: background .4s;
             }
             .openTab:hover {
-                background-color: $at5;
+                background-color: $a4;
             }
         }
         #quickToolsTitle {
             grid-area: QTtitle;
-            background-color: $at3;
+            background-color: $a4;
             line-height: 30px;
             padding: 0 0 0 5px;
             font-size: 16px;
@@ -518,4 +534,13 @@ html {
         }
     }
 }
+
+// KEYFRAMES---------------------------------------------------------------------------------------------------------------------------
+
+// @media only screen and (max-width: 640px) {
+//     #userDash {
+//         width: 320px;
+//         left: 320px;
+//     }
+// }
 

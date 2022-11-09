@@ -11,13 +11,15 @@ export default function Sidebar() {return (
 function QuickTools() {return (
     <div id="quickTools">
         <div id='quickToolsHead'>
-            <span src='' alt='X'></span>
-            <span src='' alt='X' className='openTab'></span>
-            <span src='' alt='X'></span>
-            <span src='' alt='X'></span>
-            <span src='' alt='X'></span>
-            <span src='' alt='X'></span>
-            <span src='' alt='X'></span>
+            <span alt='Agenda' className='openTab'></span>
+            <span alt='Tracking'></span>
+            <span alt='Library'></span>
+            <span alt='X'></span>
+            <span alt='X'></span>
+            <span alt='X'></span>
+            <span alt='Break Time'></span>
+            <span alt='Simulator'></span>
+            <span alt='Settings'></span>
         </div>
         <div id='quickToolsTitle'>Quick Tools</div>
         <div id='quickToolsBody'></div>

@@ -127,7 +127,7 @@ export default function Header() {return (
                 <td alt="4:00 PM"></td>
                 <td alt="4:10 PM"></td>
                 <td alt="4:20 PM"></td>
-                <td alt="4:30 PM"></td>
+                <td alt="4:30 PM" className='progressNow'></td>
                 <td alt="4:40 PM"></td>
                 <td alt="4:50 PM"></td>
                 <td alt="5:00 PM"></td>

@@ -1,27 +1,78 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #081021;
-}
-
-html {
-  margin: none;
-  padding: none;
+  background-color: #76552d;
 }
 
 #userHeader {
-  background: #502b49;
+  background: #334848;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 48px;
-  z-index: 5;
-  -webkit-box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.572);
-          box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.572);
+  z-index: 9;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.459);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.459);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px auto;
@@ -38,7 +89,7 @@ html {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: thumbnail;
-  background-color: #cda2c6;
+  background-color: #d8bb97;
   overflow: hidden;
 }
 
@@ -50,7 +101,7 @@ html {
   line-height: 16px;
   margin: 4px 0 0 5px;
   font-weight: 600;
-  color: #dbbdd6;
+  color: #c3d5d5;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -74,7 +125,7 @@ html {
   width: max-content;
   font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #bf88b6;
+  color: #94b3b3;
 }
 
 #userHeader #userID span {
@@ -85,7 +136,7 @@ html {
 }
 
 #userHeader #userID span:hover {
-  color: #dbbdd6;
+  color: #c3d5d5;
 }
 
 #userHeader #userProgress {
@@ -93,212 +144,273 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #1b0e18;
+  background-color: #111818;
   width: 100%;
 }
 
+#userHeader #userProgress .progressNow {
+  -webkit-box-shadow: inset 0 0 0 2px white;
+          box-shadow: inset 0 0 0 2px white;
+}
+
+#userHeader #userProgress td:nth-child(37) {
+  background-color: #d8bb97;
+}
+
+#userHeader #userProgress td:nth-child(38) {
+  background-color: #d8bb97;
+}
+
+#userHeader #userProgress td:nth-child(39) {
+  background-color: #d8bb97;
+}
+
+#userHeader #userProgress td:nth-child(40) {
+  background-color: #d8bb97;
+}
+
+#userHeader #userProgress td:nth-child(41) {
+  background-color: #d8bb97;
+}
+
+#userHeader #userProgress td:nth-child(42) {
+  background-color: #557777;
+}
+
+#userHeader #userProgress td:nth-child(43) {
+  background-color: #557777;
+}
+
+#userHeader #userProgress td:nth-child(44) {
+  background-color: #557777;
+}
+
+#userHeader #userProgress td:nth-child(45) {
+  background-color: #557777;
+}
+
+#userHeader #userProgress td:nth-child(46) {
+  background-color: #557777;
+}
+
+#userHeader #userProgress td:nth-child(56) {
+  background-color: #3babe3;
+}
+
+#userHeader #userProgress td:nth-child(57) {
+  background-color: #3babe3;
+}
+
+#userHeader #userProgress td:nth-child(58) {
+  background-color: #3babe3;
+}
+
+#userHeader #userProgress td:nth-child(59) {
+  background-color: #3babe3;
+}
+
+#userHeader #userProgress td:nth-child(60) {
+  background-color: #3babe3;
+}
+
+#userHeader #userProgress td:nth-child(61) {
+  background-color: #1a80b3;
+}
+
+#userHeader #userProgress td:nth-child(62) {
+  background-color: #1a80b3;
+}
+
+#userHeader #userProgress td:nth-child(63) {
+  background-color: #1a80b3;
+}
+
+#userHeader #userProgress td:nth-child(64) {
+  background-color: #1a80b3;
+}
+
 #userHeader #userProgress td:nth-child(65) {
-  background-color: #f5a37a;
+  background-color: #82c9ed;
 }
 
 #userHeader #userProgress td:nth-child(66) {
-  background-color: #be490e;
+  background-color: #1a80b3;
 }
 
 #userHeader #userProgress td:nth-child(67) {
-  background-color: #ef6f2e;
+  background-color: #3babe3;
 }
 
 #userHeader #userProgress td:nth-child(68) {
-  background-color: #ef6f2e;
+  background-color: #3babe3;
 }
 
 #userHeader #userProgress td:nth-child(69) {
-  background-color: #ef6f2e;
+  background-color: #3babe3;
 }
 
 #userHeader #userProgress td:nth-child(70) {
-  background-color: #be490e;
+  background-color: #1a80b3;
 }
 
 #userHeader #userProgress td:nth-child(71) {
-  background-color: #be490e;
+  background-color: #1a80b3;
 }
 
 #userHeader #userProgress td:nth-child(72) {
-  background-color: #be490e;
+  background-color: #1a80b3;
 }
 
 #userHeader #userProgress td:nth-child(73) {
-  background-color: #f5a37a;
+  background-color: #82c9ed;
 }
 
 #userHeader #userProgress td:nth-child(74) {
-  background-color: #f5a37a;
+  background-color: #82c9ed;
 }
 
 #userHeader #userProgress td:nth-child(75) {
-  background-color: #f5a37a;
+  background-color: #82c9ed;
 }
 
 #userHeader #userProgress td:nth-child(76) {
-  background-color: #2952a3;
+  background-color: #946b38;
 }
 
 #userHeader #userProgress td:nth-child(77) {
-  background-color: #4b78d2;
+  background-color: #c1945c;
 }
 
 #userHeader #userProgress td:nth-child(78) {
-  background-color: #4b78d2;
+  background-color: #c1945c;
 }
 
 #userHeader #userProgress td:nth-child(79) {
-  background-color: #4b78d2;
+  background-color: #d8bb97;
 }
 
 #userHeader #userProgress td:nth-child(80) {
-  background-color: #6a3962;
+  background-color: #d8bb97;
 }
 
 #userHeader #userProgress td:nth-child(81) {
-  background-color: #6a3962;
+  background-color: #c1945c;
 }
 
 #userHeader #userProgress td:nth-child(82) {
-  background-color: #6a3962;
+  background-color: #d8bb97;
 }
 
 #userHeader #userProgress td:nth-child(83) {
-  background-color: #6a3962;
-}
-
-#userHeader #userProgress td:nth-child(84) {
-  background-color: #6a3962;
-}
-
-#userHeader #userProgress td:nth-child(85) {
-  background-color: #6a3962;
-}
-
-#userHeader #userProgress td:nth-child(86) {
-  background-color: #6a3962;
-}
-
-#userHeader #userProgress td:nth-child(87) {
-  background-color: #6a3962;
+  background-color: #c1945c;
 }
 
 #userHeader #userProgress td:nth-child(88) {
-  background-color: #4b78d2;
+  background-color: #c1945c;
 }
 
 #userHeader #userProgress td:nth-child(89) {
-  background-color: #4b78d2;
+  background-color: #d8bb97;
 }
 
 #userHeader #userProgress td:nth-child(90) {
-  background-color: #ef6f2e;
+  background-color: #3babe3;
 }
 
 #userHeader #userProgress td:nth-child(91) {
-  background-color: #ef6f2e;
+  background-color: #3babe3;
 }
 
 #userHeader #userProgress td:nth-child(92) {
-  background-color: #ef6f2e;
+  background-color: #3babe3;
 }
 
 #userHeader #userProgress td:nth-child(93) {
-  background-color: #f5a37a;
+  background-color: #82c9ed;
 }
 
 #userHeader #userProgress td:nth-child(94) {
-  background-color: #f5a37a;
+  background-color: #82c9ed;
 }
 
 #userHeader #userProgress td:nth-child(95) {
-  background-color: #f5a37a;
+  background-color: #82c9ed;
 }
 
 #userHeader #userProgress td:nth-child(96) {
-  background-color: #2952a3;
+  background-color: #946b38;
 }
 
 #userHeader #userProgress td:nth-child(97) {
-  background-color: #4b78d2;
+  background-color: #c1945c;
 }
 
 #userHeader #userProgress td:nth-child(98) {
-  background-color: #4b78d2;
+  background-color: #c1945c;
 }
 
 #userHeader #userProgress td:nth-child(99) {
-  background-color: #4b78d2;
-}
-
-#userHeader #userProgress td:nth-child(100) {
-  background-color: white;
+  background-color: #d8bb97;
 }
 
 #userHeader #userProgress td:nth-child(115) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(116) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(117) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(118) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(119) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(120) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(121) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(122) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(123) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(124) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(125) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(126) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(127) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(128) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #userHeader #userProgress td:nth-child(129) {
-  background-color: #b06da5;
+  background-color: #abc4c4;
 }
 
 #navCrop {
@@ -307,7 +419,7 @@ html {
   position: fixed;
   top: 5px;
   right: 5px;
-  z-index: 5;
+  z-index: 10;
   -webkit-transition: height 1s, width 1.5s;
   transition: height 1s, width 1.5s;
   width: 30px;
@@ -315,7 +427,7 @@ html {
 }
 
 #navCrop #navPanel {
-  background: #adc2eb;
+  background: #e3ceb5;
   width: 300px;
   height: calc(100vh - 10px);
   display: -ms-grid;
@@ -330,7 +442,7 @@ html {
 
 #navCrop #navButton {
   position: fixed;
-  background-color: #183162;
+  background-color: #594022;
   right: 9px;
   top: 9px;
   width: 22px;
@@ -350,9 +462,9 @@ html {
 }
 
 #navCrop #navButton:hover {
-  background-color: #2952a3;
-  -webkit-box-shadow: 0 0 8px #adc2eb;
-          box-shadow: 0 0 8px #adc2eb;
+  background-color: #946b38;
+  -webkit-box-shadow: 0 0 8px #e3ceb5;
+          box-shadow: 0 0 8px #e3ceb5;
 }
 
 #navCrop #navPage {
@@ -362,16 +474,16 @@ html {
   height: 22px;
   line-height: 22px;
   padding: 0 0 0 5px;
-  background-color: #3162c4;
+  background-color: #b18043;
   border-radius: 4px;
   border: none;
   position: fixed;
-  right: 40px;
+  right: 35px;
   top: 9px;
   top: -30px;
-  width: 280px;
+  width: 261px;
   z-index: 7;
-  color: #102141;
+  color: #3b2b16;
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: 600;
@@ -396,13 +508,13 @@ html {
 }
 
 #navCrop #navPage:hover {
-  background-color: #4b78d2;
+  background-color: #c1945c;
 }
 
 #navCrop #navPageClose {
   position: fixed;
   z-index: 8;
-  background-color: #214183;
+  background-color: #76552d;
   -webkit-transition: background .4s, top .5s;
   transition: background .4s, top .5s;
   color: white;
@@ -419,7 +531,7 @@ html {
 }
 
 #navCrop #navPageClose:hover {
-  background-color: #2952a3;
+  background-color: #946b38;
 }
 
 #navCrop #navBody {
@@ -436,7 +548,7 @@ html {
 }
 
 #navCrop #navBody section {
-  background-color: #6c91da;
+  background-color: #cda77a;
   height: 1100px;
   display: block;
   width: 260px;
@@ -461,18 +573,18 @@ html {
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: #2952a3;
+  background-color: #946b38;
   border-radius: 4px;
   -webkit-transition: background .4s;
   transition: background .4s;
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb:hover {
-  background-color: #4b78d2;
+  background-color: #c1945c;
 }
 
 #userDash {
-  background: #b06da5;
+  background: #7ca2a2;
   position: fixed;
   top: 48px;
   right: 0;
@@ -480,167 +592,74 @@ html {
   width: 100%;
   height: calc(100vh - 48px);
   margin: 0;
-  z-index: 1;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-  -webkit-box-shadow: -2px 0 4px rgba(0, 0, 0, 0.579);
-          box-shadow: -2px 0 4px rgba(0, 0, 0, 0.579);
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: width 1s, left 1s;
+  transition: width 1s, left 1s;
+  -webkit-box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.579);
+          box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.579);
 }
 
 #userDash #userConsole {
-  display: -ms-grid;
-  display: grid;
+  display: block;
   position: absolute;
   overflow: hidden;
-  height: calc(100% - 10px);
-  width: calc(100% - 10px);
+  height: calc(100% - 60px);
+  width: calc(100% - 20px);
   border-radius: 5px;
+  -webkit-transition: bottom 2s;
+  transition: bottom 2s;
+  bottom: 50px;
+  bottom: -100%;
+  left: 10px;
+  z-index: 4;
+  -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
+          box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
+  background-color: #76552d;
+}
+
+#userDash #userConsole #userConsoleDesk {
+  display: block;
+  height: 100%;
+  margin: 0 0 0 300px;
+  width: calc(100% - 295px);
+  width: calc(100% - 10px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  background-color: #cda77a;
+  border-radius: 4px;
+  cursor: default;
+}
+
+#userDash #userConsole #userConsoleMeta {
+  display: block;
+  height: calc(100% - 10px);
+  width: 280px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  border-radius: 4px;
+  background-color: #b18043;
+  cursor: default;
+}
+
+#helpDesk {
+  background-color: #594022;
+  height: 40px;
+  display: block;
+  width: 100vw;
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  bottom: -60px;
   -webkit-transition: bottom 1s;
   transition: bottom 1s;
-  bottom: 5px;
-  bottom: -100vh;
-  left: 5px;
-  -ms-grid-rows: 40px 40px auto;
-      grid-template-rows: 40px 40px auto;
-      grid-template-areas: "consoleHead" "consoleTabs" "consoleBody";
-}
-
-#userDash #userConsole #userConsoleHead {
-  background-color: #081021;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: consoleHead;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: calc(60% - 63px) 20% 20% 30px 30px 3px;
-      grid-template-columns: calc(60% - 63px) 20% 20% 30px 30px 3px;
-  -ms-grid-rows: 30px 10px;
-      grid-template-rows: 30px 10px;
-      grid-template-areas: "consoleTitle consoleHelpCount consoleUserCount consoleHelp consoleClose none" "consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress consoleProgress";
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleTitle {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: consoleTitle;
-  color: white;
-  line-height: 32px;
-  padding-left: 10px;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleHelpers {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: consoleHelpCount;
-  background-color: #4b78d2;
-  border-radius: 4px;
-  margin: 3px;
-  font-size: 14px;
-  line-height: 24px;
-  color: #102141;
-  font-weight: 600;
-  cursor: pointer;
-  letter-spacing: 1px;
-  text-align: center;
-  -webkit-transition: background .4s;
-  transition: background .4s;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleHelpers:hover {
-  background-color: #8da9e2;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleUsers {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: consoleUserCount;
-  background-color: #ef6f2e;
-  border-radius: 4px;
-  margin: 3px;
-  font-size: 14px;
-  line-height: 24px;
-  color: #4c1d06;
-  font-weight: 600;
-  cursor: pointer;
-  letter-spacing: 1px;
-  text-align: center;
-  -webkit-transition: background .4s;
-  transition: background .4s;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleUsers:hover {
-  background-color: #f5a37a;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleHelp {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: consoleHelp;
-  background-color: #214183;
-  width: 24px;
-  border-radius: 4px;
-  height: 24px;
-  margin: 3px;
-  border: none;
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  line-height: 24px;
-  -webkit-transition: background .4s;
-  transition: background .4s;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleHelp:hover {
-  background-color: #3162c4;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleClose {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: consoleClose;
-  background-color: #983a0b;
-  width: 24px;
-  border-radius: 4px;
-  height: 24px;
-  margin: 3px;
-  border: none;
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  line-height: 24px;
-  -webkit-transition: background .4s;
-  transition: background .4s;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleClose:hover {
-  background-color: #e45711;
-}
-
-#userDash #userConsole #userConsoleHead #userConsoleProgress {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: consoleProgress;
-  background-color: #183162;
-}
-
-#userDash #userConsole #userConsoleTabs {
-  background-color: #3162c4;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: consoleTabs;
-}
-
-#userDash #userConsole #userConsoleBody {
-  background-color: #adc2eb;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: consoleBody;
+  -webkit-box-shadow: -2px 0 6px 2px rgba(0, 0, 0, 0.699);
+          box-shadow: -2px 0 6px 2px rgba(0, 0, 0, 0.699);
 }
 
 #sidebar {
@@ -650,7 +669,7 @@ html {
   height: calc(100vh - 48px);
   top: 48px;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -658,17 +677,17 @@ html {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  background-color: #f5a37a;
+  background-color: #d8bb97;
   width: calc(100% - 10px);
   top: 5px;
-  height: calc(100% - 10px);
+  height: calc(100% - 50px);
   border-radius: 4px;
   overflow: hidden;
   left: 5px;
   -ms-grid-rows: 40px 30px auto;
       grid-template-rows: 40px 30px auto;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.582);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.582);
+  -webkit-box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.582);
+          box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.582);
       grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
 }
 
@@ -676,7 +695,7 @@ html {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: QTtabs;
-  background-color: #8da9e2;
+  background-color: #c1945c;
   overflow: hidden;
   padding: 5px 0 0 5px;
   display: -webkit-box;
@@ -688,10 +707,10 @@ html {
   height: 35px;
   width: 30px;
   display: inline-block;
-  background-color: #214183;
+  background-color: #3b2b16;
   position: relative;
   bottom: -5px;
-  margin-right: 5px;
+  margin-right: 4px;
   border-radius: 4px 4px 0 0;
   overflow: hidden;
   -webkit-transition: background .4s;
@@ -700,11 +719,11 @@ html {
 }
 
 #sidebar #quickTools #quickToolsHead span:hover {
-  background-color: #3162c4;
+  background-color: #76552d;
 }
 
 #sidebar #quickTools #quickToolsHead .openTab {
-  background-color: #983a0b;
+  background-color: #946b38;
   bottom: 0;
   width: 30px;
   -webkit-transition: background .4s;
@@ -712,14 +731,14 @@ html {
 }
 
 #sidebar #quickTools #quickToolsHead .openTab:hover {
-  background-color: #e45711;
+  background-color: #946b38;
 }
 
 #sidebar #quickTools #quickToolsTitle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: QTtitle;
-  background-color: #983a0b;
+  background-color: #946b38;
   line-height: 30px;
   padding: 0 0 0 5px;
   font-size: 16px;
