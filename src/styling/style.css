@@ -60,11 +60,11 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #76552d;
+  background-color: #762d4b;
 }
 
 #userHeader {
-  background: #334848;
+  background: #373c43;
   position: fixed;
   top: 0;
   right: 0;
@@ -89,7 +89,7 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: thumbnail;
-  background-color: #d8bb97;
+  background-color: #d897b2;
   overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ body {
   line-height: 16px;
   margin: 4px 0 0 5px;
   font-weight: 600;
-  color: #c3d5d5;
+  color: #c7cbd1;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -125,7 +125,7 @@ body {
   width: max-content;
   font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #94b3b3;
+  color: #9aa2ac;
 }
 
 #userHeader #userID span {
@@ -136,7 +136,7 @@ body {
 }
 
 #userHeader #userID span:hover {
-  color: #c3d5d5;
+  color: #c7cbd1;
 }
 
 #userHeader #userProgress {
@@ -144,7 +144,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #111818;
+  background-color: #121416;
   width: 100%;
 }
 
@@ -154,43 +154,43 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(37) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(38) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(39) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(40) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(41) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(42) {
-  background-color: #557777;
+  background-color: #5c6470;
 }
 
 #userHeader #userProgress td:nth-child(43) {
-  background-color: #557777;
+  background-color: #5c6470;
 }
 
 #userHeader #userProgress td:nth-child(44) {
-  background-color: #557777;
+  background-color: #5c6470;
 }
 
 #userHeader #userProgress td:nth-child(45) {
-  background-color: #557777;
+  background-color: #5c6470;
 }
 
 #userHeader #userProgress td:nth-child(46) {
-  background-color: #557777;
+  background-color: #5c6470;
 }
 
 #userHeader #userProgress td:nth-child(56) {
@@ -274,43 +274,43 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(76) {
-  background-color: #946b38;
+  background-color: #94385e;
 }
 
 #userHeader #userProgress td:nth-child(77) {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userHeader #userProgress td:nth-child(78) {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userHeader #userProgress td:nth-child(79) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(80) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(81) {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userHeader #userProgress td:nth-child(82) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(83) {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userHeader #userProgress td:nth-child(88) {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userHeader #userProgress td:nth-child(89) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(90) {
@@ -338,79 +338,79 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(96) {
-  background-color: #946b38;
+  background-color: #94385e;
 }
 
 #userHeader #userProgress td:nth-child(97) {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userHeader #userProgress td:nth-child(98) {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userHeader #userProgress td:nth-child(99) {
-  background-color: #d8bb97;
+  background-color: #d897b2;
 }
 
 #userHeader #userProgress td:nth-child(115) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(116) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(117) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(118) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(119) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(120) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(121) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(122) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(123) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(124) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(125) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(126) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(127) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(128) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #userHeader #userProgress td:nth-child(129) {
-  background-color: #abc4c4;
+  background-color: #b0b6bf;
 }
 
 #navCrop {
@@ -427,7 +427,7 @@ body {
 }
 
 #navCrop #navPanel {
-  background: #e3ceb5;
+  background: #e3b5c8;
   width: 300px;
   height: calc(100vh - 10px);
   display: -ms-grid;
@@ -442,7 +442,7 @@ body {
 
 #navCrop #navButton {
   position: fixed;
-  background-color: #594022;
+  background-color: #592239;
   right: 9px;
   top: 9px;
   width: 22px;
@@ -462,9 +462,9 @@ body {
 }
 
 #navCrop #navButton:hover {
-  background-color: #946b38;
-  -webkit-box-shadow: 0 0 8px #e3ceb5;
-          box-shadow: 0 0 8px #e3ceb5;
+  background-color: #94385e;
+  -webkit-box-shadow: 0 0 8px #e3b5c8;
+          box-shadow: 0 0 8px #e3b5c8;
 }
 
 #navCrop #navPage {
@@ -474,7 +474,7 @@ body {
   height: 22px;
   line-height: 22px;
   padding: 0 0 0 5px;
-  background-color: #b18043;
+  background-color: #b14371;
   border-radius: 4px;
   border: none;
   position: fixed;
@@ -483,7 +483,7 @@ body {
   top: -30px;
   width: 261px;
   z-index: 7;
-  color: #3b2b16;
+  color: #3b1626;
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: 600;
@@ -508,13 +508,13 @@ body {
 }
 
 #navCrop #navPage:hover {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #navCrop #navPageClose {
   position: fixed;
   z-index: 8;
-  background-color: #76552d;
+  background-color: #762d4b;
   -webkit-transition: background .4s, top .5s;
   transition: background .4s, top .5s;
   color: white;
@@ -531,7 +531,7 @@ body {
 }
 
 #navCrop #navPageClose:hover {
-  background-color: #946b38;
+  background-color: #94385e;
 }
 
 #navCrop #navBody {
@@ -548,7 +548,7 @@ body {
 }
 
 #navCrop #navBody section {
-  background-color: #cda77a;
+  background-color: #cd7a9c;
   height: 1100px;
   display: block;
   width: 260px;
@@ -573,18 +573,18 @@ body {
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: #946b38;
+  background-color: #94385e;
   border-radius: 4px;
   -webkit-transition: background .4s;
   transition: background .4s;
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb:hover {
-  background-color: #c1945c;
+  background-color: #c15c86;
 }
 
 #userDash {
-  background: #7ca2a2;
+  background: #848d9a;
   position: fixed;
   top: 48px;
   right: 0;
@@ -594,7 +594,6 @@ body {
   margin: 0;
   z-index: 2;
   overflow: hidden;
-  cursor: pointer;
   -webkit-transition: width 1s, left 1s;
   transition: width 1s, left 1s;
   -webkit-box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.579);
@@ -608,29 +607,29 @@ body {
   height: calc(100% - 60px);
   width: calc(100% - 20px);
   border-radius: 5px;
-  -webkit-transition: bottom 2s;
-  transition: bottom 2s;
+  -webkit-transition: bottom 2s, background 1s;
+  transition: bottom 2s, background 1s;
   bottom: 50px;
   bottom: -100%;
   left: 10px;
   z-index: 4;
+  cursor: pointer;
   -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
           box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
-  background-color: #76552d;
+  background-color: #592239;
 }
 
 #userDash #userConsole #userConsoleDesk {
   display: block;
   height: 100%;
-  margin: 0 0 0 300px;
   width: calc(100% - 295px);
-  width: calc(100% - 10px);
+  width: calc(100% - 15px);
   position: absolute;
   right: 0;
   top: 0;
   -webkit-transition: width 1s;
   transition: width 1s;
-  background-color: #cda77a;
+  background-color: #cd7a9c;
   border-radius: 4px;
   cursor: default;
 }
@@ -638,20 +637,85 @@ body {
 #userDash #userConsole #userConsoleMeta {
   display: block;
   height: calc(100% - 10px);
-  width: 280px;
+  width: 275px;
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 5px;
   border-radius: 4px;
-  background-color: #b18043;
+  background-color: #762d4b;
   cursor: default;
 }
 
+#userDash #userConsole:hover {
+  background-color: #94385e;
+}
+
 #helpDesk {
-  background-color: #594022;
+  z-index: 5;
+}
+
+#helpDesk .helpChatWindow {
+  background-color: #94385e;
+  display: -ms-grid;
+  display: grid;
+  width: 200px;
+  height: calc(100vh - 108px);
+  right: 15px;
+  bottom: 40px;
+  bottom: -100vh;
+  -webkit-transition: bottom 1s,background 1s;
+  transition: bottom 1s,background 1s;
+  position: absolute;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.579);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.579);
+  z-index: 5;
+  overflow: hidden;
+  -ms-grid-rows: 80px 3fr 4fr;
+      grid-template-rows: 80px 3fr 4fr;
+  -ms-grid-columns: 200px;
+      grid-template-columns: 200px;
+      grid-template-areas: "head" "chat" "tool";
+}
+
+#helpDesk .helpChatWindow section:nth-child(1) {
+  display: block;
+  background-color: #592239;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: head;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  cursor: pointer;
+}
+
+#helpDesk .helpChatWindow section:nth-child(1):hover {
+  background-color: #94385e;
+}
+
+#helpDesk .helpChatWindow section:nth-child(2) {
+  display: block;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: chat;
+}
+
+#helpDesk .helpChatWindow section:nth-child(3) {
+  display: block;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tool;
+}
+
+#helpDesk .helpChatWindow:hover {
+  background-color: #c15c86;
+}
+
+#helpDesk #helpDeskFooter {
+  background-color: #592239;
   height: 40px;
   display: block;
-  width: 100vw;
+  width: 100%;
   z-index: 5;
   position: fixed;
   bottom: 0;
@@ -665,8 +729,8 @@ body {
 #sidebar {
   position: absolute;
   display: block;
-  width: 320px;
   height: calc(100vh - 48px);
+  width: 100%;
   top: 48px;
   left: 0;
   z-index: 1;
@@ -677,8 +741,8 @@ body {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  background-color: #d8bb97;
-  width: calc(100% - 10px);
+  background-color: #d897b2;
+  width: 310px;
   top: 5px;
   height: calc(100% - 50px);
   border-radius: 4px;
@@ -695,7 +759,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: QTtabs;
-  background-color: #c1945c;
+  background-color: #c15c86;
   overflow: hidden;
   padding: 5px 0 0 5px;
   display: -webkit-box;
@@ -707,7 +771,7 @@ body {
   height: 35px;
   width: 30px;
   display: inline-block;
-  background-color: #3b2b16;
+  background-color: #3b1626;
   position: relative;
   bottom: -5px;
   margin-right: 4px;
@@ -719,11 +783,11 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead span:hover {
-  background-color: #76552d;
+  background-color: #762d4b;
 }
 
 #sidebar #quickTools #quickToolsHead .openTab {
-  background-color: #946b38;
+  background-color: #94385e;
   bottom: 0;
   width: 30px;
   -webkit-transition: background .4s;
@@ -731,14 +795,14 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead .openTab:hover {
-  background-color: #946b38;
+  background-color: #94385e;
 }
 
 #sidebar #quickTools #quickToolsTitle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: QTtitle;
-  background-color: #946b38;
+  background-color: #94385e;
   line-height: 30px;
   padding: 0 0 0 5px;
   font-size: 16px;
