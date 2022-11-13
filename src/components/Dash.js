@@ -1,35 +1,26 @@
 import React from 'react';
+import AdminConsole from './AdminConsole';
 
 export default function Dashboard() {return (
     <main id="userDash">
         <UserConsole />
+        <AdminConsole />
     </main>
 )}
 
-
 function UserConsole() {return (
-    <div id='userConsole'>
-        <div id='userConsoleMeta'>
-            <br/>
-            Department title <br/>
-            <br/>
-            News: birthdays, updates, reminders <br/>
-            Online: employees, supervisors, team <br/>
-            Teams: rosters <br/>
-            Schedule: <br/>
-            Projects: tasks<br/>
-            Feedback: pending, processing, processed<br/>
-            Bulletin: discussions, polls<br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+    <main id="userConsole">
+        <div id='userConsoleHead'>
+            <div id='userConsoleProgress'></div>
+            <div id='userConsoleTitle'>Title</div>
+            <div id='userConsolePause'></div>
+            <div id='userConsoleHelp'>?</div>
+            <div id='userConsoleClose'></div>
         </div>
-        <div id='userConsoleDesk'></div>
-
-            
-    </div>
+        <div id='userConsoleTabs'></div>
+        <div id='userConsoleInfo'></div>
+        <div id="userConsoleDesk"></div>
+    </main>
 )}
 
 

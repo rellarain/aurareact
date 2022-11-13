@@ -60,19 +60,19 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #762d4b;
+  background-color: #2b4950;
 }
 
 #userHeader {
-  background: #373c43;
+  background: #433d37;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 48px;
   z-index: 9;
-  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.459);
-          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.459);
+  -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.4);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px auto;
@@ -89,7 +89,7 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: thumbnail;
-  background-color: #d897b2;
+  background-color: #a2c6cd;
   overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ body {
   line-height: 16px;
   margin: 4px 0 0 5px;
   font-weight: 600;
-  color: #c7cbd1;
+  color: #d1ccc7;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -125,7 +125,7 @@ body {
   width: max-content;
   font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #9aa2ac;
+  color: #aca39a;
 }
 
 #userHeader #userID span {
@@ -136,7 +136,7 @@ body {
 }
 
 #userHeader #userID span:hover {
-  color: #c7cbd1;
+  color: #d1ccc7;
 }
 
 #userHeader #userProgress {
@@ -144,7 +144,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #121416;
+  background-color: #161412;
   width: 100%;
 }
 
@@ -154,266 +154,268 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(37) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(38) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(39) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(40) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(41) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(42) {
-  background-color: #5c6470;
+  background-color: #70655c;
 }
 
 #userHeader #userProgress td:nth-child(43) {
-  background-color: #5c6470;
+  background-color: #70655c;
 }
 
 #userHeader #userProgress td:nth-child(44) {
-  background-color: #5c6470;
+  background-color: #70655c;
 }
 
 #userHeader #userProgress td:nth-child(45) {
-  background-color: #5c6470;
+  background-color: #70655c;
 }
 
 #userHeader #userProgress td:nth-child(46) {
-  background-color: #5c6470;
+  background-color: #70655c;
 }
 
 #userHeader #userProgress td:nth-child(56) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(57) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(58) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(59) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(60) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(61) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(62) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(63) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(64) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(65) {
-  background-color: #82c9ed;
+  background-color: #dfd290;
 }
 
 #userHeader #userProgress td:nth-child(66) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(67) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(68) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(69) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(70) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(71) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(72) {
-  background-color: #1a80b3;
+  background-color: #9e8b2e;
 }
 
 #userHeader #userProgress td:nth-child(73) {
-  background-color: #82c9ed;
+  background-color: #dfd290;
 }
 
 #userHeader #userProgress td:nth-child(74) {
-  background-color: #82c9ed;
+  background-color: #dfd290;
 }
 
 #userHeader #userProgress td:nth-child(75) {
-  background-color: #82c9ed;
+  background-color: #dfd290;
 }
 
 #userHeader #userProgress td:nth-child(76) {
-  background-color: #94385e;
+  background-color: #477a85;
 }
 
 #userHeader #userProgress td:nth-child(77) {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #userHeader #userProgress td:nth-child(78) {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #userHeader #userProgress td:nth-child(79) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(80) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(81) {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #userHeader #userProgress td:nth-child(82) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(83) {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #userHeader #userProgress td:nth-child(88) {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #userHeader #userProgress td:nth-child(89) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(90) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(91) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(92) {
-  background-color: #3babe3;
+  background-color: #cdb851;
 }
 
 #userHeader #userProgress td:nth-child(93) {
-  background-color: #82c9ed;
+  background-color: #dfd290;
 }
 
 #userHeader #userProgress td:nth-child(94) {
-  background-color: #82c9ed;
+  background-color: #dfd290;
 }
 
 #userHeader #userProgress td:nth-child(95) {
-  background-color: #82c9ed;
+  background-color: #dfd290;
 }
 
 #userHeader #userProgress td:nth-child(96) {
-  background-color: #94385e;
+  background-color: #477a85;
 }
 
 #userHeader #userProgress td:nth-child(97) {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #userHeader #userProgress td:nth-child(98) {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #userHeader #userProgress td:nth-child(99) {
-  background-color: #d897b2;
+  background-color: #a2c6cd;
 }
 
 #userHeader #userProgress td:nth-child(115) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(116) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(117) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(118) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(119) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(120) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(121) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(122) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(123) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(124) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(125) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(126) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(127) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(128) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #userHeader #userProgress td:nth-child(129) {
-  background-color: #b0b6bf;
+  background-color: #bfb7b0;
 }
 
 #navCrop {
+  width: 30px;
+  height: 30px;
   overflow: clip;
   border-radius: 5px;
   position: fixed;
@@ -422,12 +424,10 @@ body {
   z-index: 10;
   -webkit-transition: height 1s, width 1.5s;
   transition: height 1s, width 1.5s;
-  width: 30px;
-  height: 30px;
 }
 
 #navCrop #navPanel {
-  background: #e3b5c8;
+  background: #a2c6cd;
   width: 300px;
   height: calc(100vh - 10px);
   display: -ms-grid;
@@ -442,7 +442,7 @@ body {
 
 #navCrop #navButton {
   position: fixed;
-  background-color: #592239;
+  background-color: #2b4950;
   right: 9px;
   top: 9px;
   width: 22px;
@@ -462,28 +462,27 @@ body {
 }
 
 #navCrop #navButton:hover {
-  background-color: #94385e;
-  -webkit-box-shadow: 0 0 8px #e3b5c8;
-          box-shadow: 0 0 8px #e3b5c8;
+  background-color: #477a85;
+  -webkit-box-shadow: 0 0 8px 2px #bdd6db;
+          box-shadow: 0 0 8px 2px #bdd6db;
 }
 
 #navCrop #navPage {
+  top: 4px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: navPage;
   height: 22px;
   line-height: 22px;
   padding: 0 0 0 5px;
-  background-color: #b14371;
+  background-color: #56939f;
   border-radius: 4px;
   border: none;
-  position: fixed;
-  right: 35px;
-  top: 9px;
-  top: -30px;
+  position: absolute;
+  right: 30px;
   width: 261px;
   z-index: 7;
-  color: #3b1626;
+  color: #bdd6db;
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: 600;
@@ -492,29 +491,29 @@ body {
 }
 
 #navCrop #navPage::-webkit-input-placeholder {
-  color: white;
+  color: #bdd6db;
 }
 
 #navCrop #navPage:-ms-input-placeholder {
-  color: white;
+  color: #bdd6db;
 }
 
 #navCrop #navPage::-ms-input-placeholder {
-  color: white;
+  color: #bdd6db;
 }
 
 #navCrop #navPage::placeholder {
-  color: white;
+  color: #bdd6db;
 }
 
 #navCrop #navPage:hover {
-  background-color: #c15c86;
+  background-color: #6da5b0;
 }
 
 #navCrop #navPageClose {
   position: fixed;
   z-index: 8;
-  background-color: #762d4b;
+  background-color: #39626a;
   -webkit-transition: background .4s, top .5s;
   transition: background .4s, top .5s;
   color: white;
@@ -531,7 +530,7 @@ body {
 }
 
 #navCrop #navPageClose:hover {
-  background-color: #94385e;
+  background-color: #477a85;
 }
 
 #navCrop #navBody {
@@ -539,68 +538,245 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: navBody;
-  width: 285px;
-  height: calc(100% - 20px);
-  margin-top: 5px;
+  width: 295px;
+  height: calc(100% - 5px);
   overflow-y: scroll;
   overflow-x: hidden;
-  padding: 5px;
+  padding: 0;
 }
 
 #navCrop #navBody section {
-  background-color: #cd7a9c;
-  height: 1100px;
+  background-color: #88b6bf;
+  height: 100px;
   display: block;
-  width: 260px;
-  margin-left: 10px;
+  width: 270px;
+  margin-left: 5px;
   border-radius: 4px;
   background-position-x: right;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+#navCrop #navBody section:last-child {
+  margin-bottom: 0;
 }
 
 #navCrop #navBody::-webkit-scrollbar {
   border-radius: 4px;
   width: 15px;
   overflow-x: visible;
+  cursor: pointer;
 }
 
 #navCrop #navBody::-webkit-scrollbar-track {
+  background-color: #88b6bf;
   width: 10px;
 }
 
 #navCrop #navBody::-webkit-scrollbar-button {
-  background-color: none;
+  background-color: #88b6bf;
+  border-radius: 4px 4px 0 0;
+}
+
+#navCrop #navBody::-webkit-scrollbar-button:vertical:decrement {
+  border-radius: 4px 4px 0 0;
+}
+
+#navCrop #navBody::-webkit-scrollbar-button:vertical:increment {
+  border-radius: 0 0 4px 4px;
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: #94385e;
+  background-color: #477a85;
   border-radius: 4px;
-  -webkit-transition: background .4s;
-  transition: background .4s;
-}
-
-#navCrop #navBody::-webkit-scrollbar-thumb:hover {
-  background-color: #c15c86;
+  -webkit-transition: background 1s;
+  transition: background 1s;
 }
 
 #userDash {
-  background: #848d9a;
+  background: #9a8e84;
   position: fixed;
   top: 48px;
   right: 0;
   width: calc(100vw - 320px);
   width: 100%;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 38px);
   margin: 0;
   z-index: 2;
   overflow: hidden;
   -webkit-transition: width 1s, left 1s;
   transition: width 1s, left 1s;
-  -webkit-box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.579);
-          box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.579);
+  -webkit-box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
 }
 
-#userDash #userConsole {
+#userConsole {
+  top: 0;
+  top: -100vh;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  z-index: 4;
+  width: calc(100vw - 10px);
+  height: calc(100vh - 63px);
+  margin: 10px 5px 5px 5px;
+  border-radius: 4px;
+  overflow: clip;
+  background-color: #2d2925;
+  -webkit-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
+  -webkit-transition: top 1s, background 1s;
+  transition: top 1s, background 1s;
+  cursor: pointer;
+  -ms-grid-columns: 40px calc(100% - 40px);
+      grid-template-columns: 40px calc(100% - 40px);
+  -ms-grid-rows: 40px calc(100% - 40px);
+      grid-template-rows: 40px calc(100% - 40px);
+      grid-template-areas: "consoleHead consoleHead" "consoleTabs consoleInfo";
+}
+
+#userConsole:hover {
+  background-color: #433d37;
+}
+
+#userConsole #userConsoleHead {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: consoleHead;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 8px 32px;
+      grid-template-rows: 8px 32px;
+  -ms-grid-columns: calc(100% - 96px) 32px 32px 32px;
+      grid-template-columns: calc(100% - 96px) 32px 32px 32px;
+      grid-template-areas: "progress progress progress progress" "title pause help close";
+}
+
+#userConsole #userConsoleHead #userConsoleProgress {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: progress;
+  background-color: #6da5b0;
+  width: 69%;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+#userConsole #userConsoleHead #userConsoleTitle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: title;
+  line-height: 40px;
+  font-size: 20px;
+  vertical-align: middle;
+  color: #d1ccc7;
+  font-weight: 700;
+  margin-left: 5px;
+  letter-spacing: 2px;
+}
+
+#userConsole #userConsoleHead #userConsolePause {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pause;
+  height: 27px;
+  width: 27px;
+  margin: 5px 5px 0 0;
+  background-color: #56939f;
+  border-radius: 4px;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+#userConsole #userConsoleHead #userConsolePause:hover {
+  background-color: #88b6bf;
+}
+
+#userConsole #userConsoleHead #userConsoleHelp {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: help;
+  height: 27px;
+  width: 27px;
+  margin: 5px 5px 0 0;
+  background-color: #56939f;
+  border-radius: 4px;
+  line-height: 27px;
+  font-size: 20px;
+  color: #0e181b;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+#userConsole #userConsoleHead #userConsoleHelp:hover {
+  background-color: #88b6bf;
+}
+
+#userConsole #userConsoleHead #userConsoleClose {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: close;
+  height: 27px;
+  width: 27px;
+  margin: 5px 5px 0 0;
+  background-color: #39626a;
+  border-radius: 4px;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+#userConsole #userConsoleHead #userConsoleClose:hover {
+  background-color: #56939f;
+}
+
+#userConsole #userConsoleTabs {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: consoleTabs;
+  width: 30px;
+  margin: 20px 5px 5px 5px;
+  background-color: #70655c;
+  border-radius: 4px;
+  cursor: default;
+}
+
+#userConsole #userConsoleInfo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: consoleInfo;
+  width: calc(100% - 5px);
+  height: calc(100% - 50px);
+  margin: 10px 5px 5px 0;
+  background-color: #5a5149;
+  border-radius: 4px;
+  cursor: default;
+}
+
+#userConsole #userConsoleDesk {
+  height: calc(100% - 50px);
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: calc(100% - 45px);
+  background-color: #877a6e;
+  z-index: 4;
+  -webkit-transition: background 1s, height 1s;
+  transition: background 1s, height 1s;
+  cursor: default;
+}
+
+#userConsole #userConsoleDesk:hover {
+  background-color: #9a8e84;
+}
+
+#adminConsole {
+  bottom: 50px;
+  bottom: -100%;
   display: block;
   position: absolute;
   overflow: hidden;
@@ -609,32 +785,39 @@ body {
   border-radius: 5px;
   -webkit-transition: bottom 2s, background 1s;
   transition: bottom 2s, background 1s;
-  bottom: 50px;
-  bottom: -100%;
   left: 10px;
   z-index: 4;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
-          box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
-  background-color: #592239;
+  -webkit-box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
+  background-color: #2b4950;
 }
 
-#userDash #userConsole #userConsoleDesk {
+#adminConsole:hover {
+  background-color: #477a85;
+}
+
+#adminConsole #adminConsoleDesk {
   display: block;
-  height: 100%;
-  width: calc(100% - 295px);
-  width: calc(100% - 15px);
+  height: calc(100% - 10px);
+  width: calc(100% - 300px);
+  width: calc(100% - 20px);
+  margin: 5px;
   position: absolute;
   right: 0;
   top: 0;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-  background-color: #cd7a9c;
+  -webkit-transition: width 1s, background 1s;
+  transition: width 1s, background 1s;
+  background-color: #6da5b0;
   border-radius: 4px;
   cursor: default;
 }
 
-#userDash #userConsole #userConsoleMeta {
+#adminConsole #adminConsoleDesk:hover {
+  background-color: #88b6bf;
+}
+
+#adminConsole #adminConsoleMeta {
   display: block;
   height: calc(100% - 10px);
   width: 275px;
@@ -642,45 +825,42 @@ body {
   left: 15px;
   top: 5px;
   border-radius: 4px;
-  background-color: #762d4b;
+  background-color: #39626a;
   cursor: default;
 }
 
-#userDash #userConsole:hover {
-  background-color: #94385e;
-}
-
-#helpDesk {
+#helperDesk {
+  display: none;
   z-index: 5;
+  overflow: hidden;
 }
 
-#helpDesk .helpChatWindow {
-  background-color: #94385e;
+#helperDesk .helperChatWindow {
+  background-color: #477a85;
   display: -ms-grid;
   display: grid;
   width: 200px;
-  height: calc(100vh - 108px);
+  height: calc(100vh - 98px);
   right: 15px;
-  bottom: 40px;
-  bottom: -100vh;
+  bottom: 30px;
   -webkit-transition: bottom 1s,background 1s;
   transition: bottom 1s,background 1s;
   position: absolute;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.579);
-          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.579);
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
   z-index: 5;
   overflow: hidden;
-  -ms-grid-rows: 80px 3fr 4fr;
-      grid-template-rows: 80px 3fr 4fr;
+  -ms-grid-rows: 80px 4fr 5fr;
+      grid-template-rows: 80px 4fr 5fr;
   -ms-grid-columns: 200px;
       grid-template-columns: 200px;
       grid-template-areas: "head" "chat" "tool";
 }
 
-#helpDesk .helpChatWindow section:nth-child(1) {
+#helperDesk .helperChatWindow section:nth-child(1) {
   display: block;
-  background-color: #592239;
+  background-color: #2b4950;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: head;
@@ -689,41 +869,62 @@ body {
   cursor: pointer;
 }
 
-#helpDesk .helpChatWindow section:nth-child(1):hover {
-  background-color: #94385e;
+#helperDesk .helperChatWindow section:nth-child(1):hover {
+  background-color: #477a85;
 }
 
-#helpDesk .helpChatWindow section:nth-child(2) {
+#helperDesk .helperChatWindow section:nth-child(2) {
   display: block;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: chat;
 }
 
-#helpDesk .helpChatWindow section:nth-child(3) {
+#helperDesk .helperChatWindow section:nth-child(3) {
   display: block;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: tool;
 }
 
-#helpDesk .helpChatWindow:hover {
-  background-color: #c15c86;
+#helperDesk .helperChatWindow:hover {
+  background-color: #6da5b0;
 }
 
-#helpDesk #helpDeskFooter {
-  background-color: #592239;
-  height: 40px;
+#helperDesk #helperDeskFooter {
+  background-color: #2b4950;
+  height: 30px;
   display: block;
   width: 100%;
   z-index: 5;
   position: fixed;
   bottom: 0;
-  bottom: -60px;
   -webkit-transition: bottom 1s;
   transition: bottom 1s;
-  -webkit-box-shadow: -2px 0 6px 2px rgba(0, 0, 0, 0.699);
-          box-shadow: -2px 0 6px 2px rgba(0, 0, 0, 0.699);
+  -webkit-box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+#helperDesk #helperDeskMenu {
+  bottom: 5px;
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
+  transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
+  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
+  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s, -webkit-box-shadow 1s;
+  position: absolute;
+  left: 5px;
+  background-color: #9e8b2e;
+  z-index: 6;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#helperDesk #helperDeskMenu:hover {
+  background-color: #d6c571;
 }
 
 #sidebar {
@@ -741,17 +942,17 @@ body {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  background-color: #d897b2;
+  background-color: #a2c6cd;
   width: 310px;
   top: 5px;
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
   border-radius: 4px;
   overflow: hidden;
   left: 5px;
   -ms-grid-rows: 40px 30px auto;
       grid-template-rows: 40px 30px auto;
-  -webkit-box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.582);
-          box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.582);
+  -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
       grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
 }
 
@@ -759,7 +960,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: QTtabs;
-  background-color: #c15c86;
+  background-color: #6da5b0;
   overflow: hidden;
   padding: 5px 0 0 5px;
   display: -webkit-box;
@@ -771,7 +972,7 @@ body {
   height: 35px;
   width: 30px;
   display: inline-block;
-  background-color: #3b1626;
+  background-color: #1d3135;
   position: relative;
   bottom: -5px;
   margin-right: 4px;
@@ -783,11 +984,11 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead span:hover {
-  background-color: #762d4b;
+  background-color: #39626a;
 }
 
 #sidebar #quickTools #quickToolsHead .openTab {
-  background-color: #94385e;
+  background-color: #477a85;
   bottom: 0;
   width: 30px;
   -webkit-transition: background .4s;
@@ -795,14 +996,14 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead .openTab:hover {
-  background-color: #94385e;
+  background-color: #477a85;
 }
 
 #sidebar #quickTools #quickToolsTitle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: QTtitle;
-  background-color: #94385e;
+  background-color: #477a85;
   line-height: 30px;
   padding: 0 0 0 5px;
   font-size: 16px;

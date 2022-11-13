@@ -52,41 +52,41 @@ table {
 
 
 // Theme Colors
-$t0: hsl(215, 10%, 8%);
-$t1: hsl(215, 10%, 16%);
-$t2: hsl(215, 10%, 24%);
-$t3: hsl(215, 10%, 32%);
-$t4: hsl(215, 10%, 40%);
-$t5: hsl(215, 10%, 48%);
-$t6: hsl(215, 10%, 56%);
-$t7: hsl(215, 10%, 64%);
-$t8: hsl(215, 10%, 72%);
-$t9: hsl(215, 10%, 80%);
+$t0: hsl(28, 10%, 8%);
+$t1: hsl(28, 10%, 16%);
+$t2: hsl(28, 10%, 24%);
+$t3: hsl(28, 10%, 32%);
+$t4: hsl(28, 10%, 40%);
+$t5: hsl(28, 10%, 48%);
+$t6: hsl(28, 10%, 56%);
+$t7: hsl(28, 10%, 64%);
+$t8: hsl(28, 10%, 72%);
+$t9: hsl(28, 10%, 80%);
 
 // Accent Colors
 
-$a0: hsl(335, 45%, 8%);
-$a1: hsl(335, 45%, 16%);
-$a2: hsl(335, 45%, 24%);
-$a3: hsl(335, 45%, 32%);
-$a4: hsl(335, 45%, 40%);
-$a5: hsl(335, 45%, 48%);
-$a6: hsl(335, 45%, 56%);
-$a7: hsl(335, 45%, 64%);
-$a8: hsl(335, 45%, 72%);
-$a9: hsl(335, 45%, 80%);
+$a0: hsl(190, 30%, 8%);
+$a1: hsl(190, 30%, 16%);
+$a2: hsl(190, 30%, 24%);
+$a3: hsl(190, 30%, 32%);
+$a4: hsl(190, 30%, 40%);
+$a5: hsl(190, 30%, 48%);
+$a6: hsl(190, 30%, 56%);
+$a7: hsl(190, 30%, 64%);
+$a8: hsl(190, 30%, 72%);
+$a9: hsl(190, 30%, 80%);
 
 // Alert Colors
-$at0: hsl(200, 75%, 8%);
-$at1: hsl(200, 75%, 16%);
-$at2: hsl(200, 75%, 24%);
-$at3: hsl(200, 75%, 32%);
-$at4: hsl(200, 75%, 40%);
-$at5: hsl(200, 75%, 48%);
-$at6: hsl(200, 75%, 56%);
-$at7: hsl(200, 75%, 64%);
-$at8: hsl(200, 75%, 72%);
-$at9: hsl(200, 75%, 80%);
+$at0: hsl(50, 55%, 8%);
+$at1: hsl(50, 55%, 16%);
+$at2: hsl(50, 55%, 24%);
+$at3: hsl(50, 55%, 32%);
+$at4: hsl(50, 55%, 40%);
+$at5: hsl(50, 55%, 48%);
+$at6: hsl(50, 55%, 56%);
+$at7: hsl(50, 55%, 64%);
+$at8: hsl(50, 55%, 72%);
+$at9: hsl(50, 55%, 80%);
 
 
 // Z-Index Guide 
@@ -95,7 +95,7 @@ $at9: hsl(200, 75%, 80%);
 // 11. Navigation:
 // 10. Nav Anchor:
 //  9. Header:
-//  8. Screens:
+//  8. Screens: help screen
 //  7. Dash Popup:
 //  6. Dash Barrier:
 //  5. Help Desk: 
@@ -114,7 +114,7 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $a3;
+    background-color: $a2;
 }
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ body {
     width: 100%;
     height: 48px;
     z-index: 9;
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.459);
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.4);
     display: grid;
     grid-template-columns: 40px auto;
     grid-template-rows: 20px 20px 8px;
@@ -248,6 +248,21 @@ body {
 
 
 #navCrop {
+    // Closed
+    width: 30px;
+    height: 30px;
+
+    // Nav Tool
+    // width: 300px;
+    // height: 30px;
+
+    // Navigation Panel
+    // width: 300px;
+    // height: calc(100% - 10px);
+
+
+
+
     overflow: clip;
     border-radius: 5px;
     position: fixed;
@@ -256,17 +271,9 @@ body {
     z-index: 10;
     transition: height 1s, width 1.5s;
 
-    // Closed
-    width: 30px;
-    height: 30px;
-
-    // Navigation Panel
-    // width: 300px;
-    // height: calc(100% - 10px);
-
 
     #navPanel {
-        background: $a9;
+        background: $a8;
         width: 300px;
         height: calc(100vh - 10px);
         display: grid;
@@ -274,6 +281,7 @@ body {
         grid-template-rows: 30px auto;
         grid-template-areas: "navPage navButton" "navBody navBody";
         z-index: 7;
+
     }
     #navButton {
         position: fixed;
@@ -292,9 +300,16 @@ body {
     }
     #navButton:hover {
         background-color: $a4;
-        box-shadow: 0 0 8px $a9;
+        box-shadow: 0 0 8px 2px $a9;
     }
     #navPage {
+        
+        // Open
+        top: 4px;
+
+        // Closed
+        // top: -30px;
+        
         grid-area: navPage;
         height: 22px;
         line-height: 22px;
@@ -302,20 +317,18 @@ body {
         background-color: $a5;
         border-radius: 4px;
         border: none;
-        position: fixed;
-        right: 35px;
-        top: 9px;
-        top: -30px;
+        position: absolute;
+        right: 30px;
         width: 261px;
         z-index: 7;
-        color: $a1;
+        color: $a9;
         letter-spacing: 1px;
         font-size: 12px;
         font-weight: 600;
         transition: background .4s, top .5s;
     }
     #navPage::placeholder {
-        color: white;
+        color: $a9;
     }
     #navPage:hover {
         background-color: $a6;
@@ -343,46 +356,54 @@ body {
 
     #navBody {
         grid-area: navBody;
-        width: 285px;
-        height: calc(100% - 20px);
-        margin-top: 5px;
+        width: 295px;
+        height: calc(100% - 5px);
         overflow-y: scroll;
         overflow-x: hidden;
-        padding: 5px;
+        padding: 0;
 
         section {
             background-color: $a7;
-            height: 1100px;
+            height: 100px;
             display: block;
-            width: 260px;
-            margin-left: 10px;
+            width: 270px;
+            margin-left: 5px;
             border-radius: 4px;
             background-position-x: right;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        section:last-child {
+            margin-bottom: 0;
         }
     }
     #navBody::-webkit-scrollbar {
         border-radius: 4px;
         width: 15px;
         overflow-x: visible;
+        cursor: pointer;
     }
     #navBody::-webkit-scrollbar-track {
-        // background-color: blue;
+        background-color: $a7;
         width: 10px;
     }
     #navBody::-webkit-scrollbar-button {
-        background-color: none;
+        background-color: $a7;
+        border-radius: 4px 4px 0 0 ;
+    }
+    #navBody::-webkit-scrollbar-button:vertical:decrement {
+        border-radius: 4px 4px 0 0;
+    }
+    #navBody::-webkit-scrollbar-button:vertical:increment {
+        border-radius: 0 0 4px 4px;
     }
     
 
     #navBody::-webkit-scrollbar-thumb {
         background-color: $a4;
         border-radius: 4px;
-        transition: background .4s;
+        transition: background 1s;
     }
-    #navBody::-webkit-scrollbar-thumb:hover {
-        background-color: $a6;
-    }
+
 }
 
 
@@ -393,79 +414,213 @@ body {
     right: 0;
     width: calc(100vw - 320px);
     width: 100%;
-    height: calc(100vh - 48px);
+    height: calc(100vh - 38px);
     margin: 0;
     z-index: 2;
     overflow: hidden;
     transition: width 1s, left 1s;
-    box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.579);
+    box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
 
-    #userConsole {
-        display: block;
-        // display: none;
-        position: absolute;
-        overflow: hidden;
-        height: calc(100% - 60px); 
-        width: calc(100% - 20px);
-        border-radius: 5px;
-        transition: bottom 2s, background 1s;
-        bottom: 50px;
-        bottom: -100%;
-        left: 10px;
-        z-index: 4;
-        cursor: pointer;
-        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.726);
-        background-color: $a2;
+}
+#userConsole {
+    
+    // Open
+    top: 0;
 
-        #userConsoleDesk {
-            display: block;
-            height: 100%;
-            width: calc(100% - 295px);
-            width: calc(100% - 15px);
-            position: absolute;
-            right: 0;
-            top: 0;
+    // Closed
+    top: -100vh;
+    
+    display: grid;
+    position: absolute;
+    z-index: 4;
+    width: calc(100vw - 10px);
+    height: calc(100vh - 63px);
+    margin: 10px 5px 5px 5px;
+    border-radius: 4px;
+    overflow: clip;
+    background-color: $t1;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
+    transition: top 1s, background 1s;
+    cursor: pointer;
+    grid-template-columns: 40px calc(100% - 40px);
+    grid-template-rows: 40px calc(100% - 40px);
+    grid-template-areas: "consoleHead consoleHead" "consoleTabs consoleInfo";
+
+    &:hover {background-color: $t2;}
+    
+    #userConsoleHead {
+        grid-area: consoleHead;
+        display: grid;
+        grid-template-rows: 8px 32px;
+        grid-template-columns: calc(100% - 96px) 32px 32px 32px;
+        grid-template-areas: "progress progress progress progress" "title pause help close";
+
+        #userConsoleProgress {
+            grid-area: progress;
+            background-color: $a6;
+            width: 69%;
             transition: width 1s;
-            background-color: $a7;
-            border-radius: 4px;
-            cursor: default;
 
         }
-        #userConsoleMeta {
-            display: block;
-            height: calc(100% - 10px);
-            width: 275px;
-            position: absolute;
-            left: 15px;
-            top: 5px;
-            border-radius: 4px;
-            background-color: $a3;
-            cursor: default;
+        #userConsoleTitle {
+            grid-area: title;
+            line-height: 40px;
+            font-size: 20px;
+            vertical-align: middle;
+            color: $t9;
+            font-weight: 700;
+            margin-left: 5px;
+            letter-spacing: 2px;
         }
+        #userConsolePause {
+            grid-area: pause;
+            height: 27px;
+            width: 27px;
+            margin: 5px 5px 0 0;
+            background-color: $a5;
+            border-radius: 4px;
+            transition: background 1s;
+            &:hover {background-color: $a7;}
+        }
+        #userConsoleHelp {
+            grid-area: help;
+            height: 27px;
+            width: 27px;
+            margin: 5px 5px 0 0;
+            background-color: $a5;
+            border-radius: 4px;
+            line-height: 27px;
+            font-size: 20px;
+            color: $a0;
+            font-weight: 700;
+            text-align: center;
+            transition: background 1s;
+            &:hover {background-color: $a7;}
+        }
+        #userConsoleClose {
+            grid-area: close;
+            height: 27px;
+            width: 27px;
+            margin: 5px 5px 0 0;
+            background-color: $a3;
+            border-radius: 4px;
+            transition: background 1s;
+            &:hover {background-color: $a5;}
+        }
+
     }
-    #userConsole:hover {
-        background-color: $a4;
+    #userConsoleTabs {
+        grid-area: consoleTabs;
+        width: 30px;
+        margin: 20px 5px 5px 5px;
+        background-color: $t4;
+        border-radius: 4px;
+        cursor: default;
+    }
+    #userConsoleInfo {
+        grid-area: consoleInfo;
+        width: calc(100% - 5px);
+        height: calc(100% - 50px);
+        margin: 10px 5px 5px 0;
+        background-color: $t3;
+        border-radius: 4px;
+        cursor: default;
+    }
+    #userConsoleDesk {
+
+        // Max
+        height: calc(100% - 50px);
+
+        // Mini
+        // height: 30px;        
+       
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: calc(100% - 45px);
+        background-color: $t5;
+        z-index: 4;
+        transition: background 1s, height 1s;
+        cursor: default;
+        &:hover {background-color: $t6;}
     }
 }
 
-#helpDesk {
+// ADMIN--------------------------------------------------------------------------------------------------------------------------------
+#adminConsole {
+    bottom: 50px;
+    bottom: -100%;
+
+
+    display: block;
+    // display: none;
+    position: absolute;
+    overflow: hidden;
+    height: calc(100% - 60px); 
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    transition: bottom 2s, background 1s;
+    left: 10px;
+    z-index: 4;
+    cursor: pointer;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
+    background-color: $a2;
+
+    &:hover {background-color: $a4;}
+
+    #adminConsoleDesk {
+        display: block;
+        height: calc(100% - 10px);
+        width: calc(100% - 300px);
+        width: calc(100% - 20px);
+        margin: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: width 1s, background 1s;
+        background-color: $a6;
+        border-radius: 4px;
+        cursor: default;
+    }
+    #adminConsoleDesk:hover {
+        background-color: $a7;
+    }
+    #adminConsoleMeta {
+        display: block;
+        height: calc(100% - 10px);
+        width: 275px;
+        position: absolute;
+        left: 15px;
+        top: 5px;
+        border-radius: 4px;
+        background-color: $a3;
+        cursor: default;
+    }
+}
+#helperDesk {
+    display: none;
+
+
     z-index: 5;
-    .helpChatWindow {
+    overflow: hidden;
+    .helperChatWindow {
         background-color: $a4;
         display: grid;
         width: 200px;
-        height: calc(100vh - 108px);
+        height: calc(100vh - 98px);
         right: 15px;
-        bottom: 40px;
-        // bottom: calc(-100vh + 228px);
-        bottom: -100vh;
+        bottom: 30px;
+        // bottom: calc(-100vh + 208px);
+        // bottom: -100vh;
         transition: bottom 1s,background 1s;
         position: absolute;
-        border-radius: 4px;
-        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.579);
+        border-radius: 4px 4px 0 0 ;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
         z-index: 5;
         overflow: hidden;
-        grid-template-rows: 80px 3fr 4fr;
+        grid-template-rows: 80px 4fr 5fr;
         grid-template-columns: 200px;
         grid-template-areas: "head" "chat" "tool";
         section:nth-child(1) {
@@ -489,23 +644,48 @@ body {
 
         
     }
-    .helpChatWindow:hover {
+    .helperChatWindow:hover {
         background-color: $a6;
     }
-    #helpDeskFooter {
+    #helperDeskFooter {
         background-color: $a2;
-        height: 40px;
+        height: 30px;
         display: block;
         width: 100%;
         z-index: 5;
         position: fixed;
         bottom: 0;
-        bottom: -60px;
+        // bottom: -60px;
         transition: bottom 1s;
-        box-shadow: -2px 0 6px 2px rgba(0, 0, 0, 0.699);
+        box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
+    }
+    #helperDeskMenu {
+
+        bottom: 5px;
+        // bottom: -60px;
+
+        // Closed
+        width: 20px;
+        height: 20px;
+        box-shadow: none;
+
+        // Open
+        // width: calc(100vw - 20px);
+        // height: calc(100vh - 68px);
+        // box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
+
+        transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
+        position: absolute;
+        left: 5px;
+        background-color: $at4;
+        z-index: 6;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    #helperDeskMenu:hover {
+        background-color: $at7;
     }
 }
-
 #sidebar {
     position: absolute;
     display: block;
@@ -523,12 +703,12 @@ body {
         background-color: $a8;
         width: 310px;
         top: 5px;
-        height: calc(100% - 50px);
+        height: calc(100% - 40px);
         border-radius: 4px;
         overflow: hidden;
         left: 5px;
         grid-template-rows: 40px 30px auto;
-        box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.582);
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
         grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
 
         #quickToolsHead {

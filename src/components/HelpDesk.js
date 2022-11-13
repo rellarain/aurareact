@@ -1,15 +1,16 @@
 import React from 'react';
 
 export default function HelpDesk() {return (
-    <div id="helpDesk"> 
-        <div className='helpChatWindow'>
+    <div id="helperDesk"> 
+        <div className='helperChatWindow'>
             <section></section>
             <section></section>
             <section></section>
         </div>
         
-        <div id='helpDeskFooter'>
-
+        <div id='helperDeskFooter'></div>
+        <div id='helperDeskMenu'>
+            
         </div>
     </div>)}
 

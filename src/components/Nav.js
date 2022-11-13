@@ -1,5 +1,4 @@
 import React from 'react';
-import MemberNav from "./MemberNav";
 
 
 export default function Navigation() {return (
@@ -12,7 +11,6 @@ export default function Navigation() {return (
 
         */}
         <NavigationPanel />
-        <NavigationPage />
         <NavigationPageClose />
         <NavigationButton />
 
@@ -22,6 +20,7 @@ export default function Navigation() {return (
 function NavigationPanel() { return (
     <main id="navPanel">
         <NavigationBody />
+        <NavigationPage />
         
 
 
@@ -55,8 +54,21 @@ function NavigationButton() { return (
 
 function NavigationBody() { return (
     <div id="navBody">
-        <MemberNav />
+        <section id="MemberNav">
+        
 
+
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
         
 
     </div>
