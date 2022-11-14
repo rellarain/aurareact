@@ -20,6 +20,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+    border-collapse: collapse;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -52,41 +53,41 @@ table {
 
 
 // Theme Colors
-$t0: hsl(28, 10%, 8%);
-$t1: hsl(28, 10%, 16%);
-$t2: hsl(28, 10%, 24%);
-$t3: hsl(28, 10%, 32%);
-$t4: hsl(28, 10%, 40%);
-$t5: hsl(28, 10%, 48%);
-$t6: hsl(28, 10%, 56%);
-$t7: hsl(28, 10%, 64%);
-$t8: hsl(28, 10%, 72%);
-$t9: hsl(28, 10%, 80%);
+$t0: hsl(120, 10%,  4%);
+$t1: hsl(120, 10%, 12%);
+$t2: hsl(120, 10%, 20%);
+$t3: hsl(120, 10%, 28%);
+$t4: hsl(120, 10%, 36%);
+$t5: hsl(120, 10%, 44%);
+$t6: hsl(120, 10%, 52%);
+$t7: hsl(120, 10%, 60%);
+$t8: hsl(120, 10%, 68%);
+$t9: hsl(120, 10%, 76%);
 
 // Accent Colors
 
-$a0: hsl(190, 30%, 8%);
-$a1: hsl(190, 30%, 16%);
-$a2: hsl(190, 30%, 24%);
-$a3: hsl(190, 30%, 32%);
-$a4: hsl(190, 30%, 40%);
-$a5: hsl(190, 30%, 48%);
-$a6: hsl(190, 30%, 56%);
-$a7: hsl(190, 30%, 64%);
-$a8: hsl(190, 30%, 72%);
-$a9: hsl(190, 30%, 80%);
+$a0: hsl(190, 30%,  4%);
+$a1: hsl(190, 30%, 12%);
+$a2: hsl(190, 30%, 20%);
+$a3: hsl(190, 30%, 28%);
+$a4: hsl(190, 30%, 36%);
+$a5: hsl(190, 30%, 44%);
+$a6: hsl(190, 30%, 52%);
+$a7: hsl(190, 30%, 60%);
+$a8: hsl(190, 30%, 68%);
+$a9: hsl(190, 30%, 76%);
 
 // Alert Colors
-$at0: hsl(50, 55%, 8%);
-$at1: hsl(50, 55%, 16%);
-$at2: hsl(50, 55%, 24%);
-$at3: hsl(50, 55%, 32%);
-$at4: hsl(50, 55%, 40%);
-$at5: hsl(50, 55%, 48%);
-$at6: hsl(50, 55%, 56%);
-$at7: hsl(50, 55%, 64%);
-$at8: hsl(50, 55%, 72%);
-$at9: hsl(50, 55%, 80%);
+$at0: hsl(50, 55%,  4%);
+$at1: hsl(50, 55%, 12%);
+$at2: hsl(50, 55%, 20%);
+$at3: hsl(50, 55%, 28%);
+$at4: hsl(50, 55%, 36%);
+$at5: hsl(50, 55%, 44%);
+$at6: hsl(50, 55%, 52%);
+$at7: hsl(50, 55%, 60%);
+$at8: hsl(50, 55%, 68%);
+$at9: hsl(50, 55%, 76%);
 
 
 // Z-Index Guide 
@@ -117,8 +118,7 @@ body {
     background-color: $a2;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
-
+// MEMBER -------------------------------------------------------------------------------------------------------------------------------
 #userHeader {
     background: $t2;
     position: fixed;
@@ -150,10 +150,12 @@ body {
         width: max-content;
         cursor: pointer;
         letter-spacing: 1px;
-        transition: color .4s;
-    }
-    #userName:hover {
-        color: white;
+        text-shadow: none;
+        transition: color .4s, text-shadow 1s;
+        &:hover {
+            color: white;
+            text-shadow: 0 0 4px 2px $a9;
+        }
     }
     #userID {
         grid-area: userID;
@@ -161,14 +163,14 @@ body {
         width: max-content;
         font-weight: 600;
         margin: 3px 0 3px 10px;
-        color: $t7;
+        color: $t6;
         span {
             cursor: pointer;
             margin: 0 2px;
             transition: color .4s;
-        }
-        span:hover {
-            color: $t9;
+            &:hover {
+                color: $t8;
+            }
         }
     }
     #userProgress {
@@ -245,8 +247,6 @@ body {
         td:nth-child(129) {background-color: $t8;}
     }
 }
-
-
 #navCrop {
     // Closed
     width: 30px;
@@ -261,8 +261,6 @@ body {
     // height: calc(100% - 10px);
 
 
-
-
     overflow: clip;
     border-radius: 5px;
     position: fixed;
@@ -270,7 +268,6 @@ body {
     right: 5px;
     z-index: 10;
     transition: height 1s, width 1.5s;
-
 
     #navPanel {
         background: $a8;
@@ -297,10 +294,10 @@ body {
         border-radius: 4px;
         border: none;
         transition: background .4s, box-shadow .4s;
-    }
-    #navButton:hover {
-        background-color: $a4;
-        box-shadow: 0 0 8px 2px $a9;
+        &:hover {
+            background-color: $a4;
+            box-shadow: 0 0 8px 2px $a9;
+        }
     }
     #navPage {
         
@@ -314,7 +311,7 @@ body {
         height: 22px;
         line-height: 22px;
         padding: 0 0 0 5px;
-        background-color: $a5;
+        background-color: $a3;
         border-radius: 4px;
         border: none;
         position: absolute;
@@ -326,34 +323,12 @@ body {
         font-size: 12px;
         font-weight: 600;
         transition: background .4s, top .5s;
-    }
-    #navPage::placeholder {
-        color: $a9;
-    }
-    #navPage:hover {
-        background-color: $a6;
-    }
-    #navPageClose {
-        position: fixed;
-        z-index: 8;
-        background-color: $a3;
-        transition: background .4s, top .5s;
-        color: white;
-        font-weight: 700;
-        top: 9px;
-        top: -30px;
-        right: 40px;
-        height: 22px;
-        width: 22px;
-        border: none;
-        border-radius: 0 4px 4px 0;
-        line-height: 21px;
-        cursor: pointer;
-    }
-    #navPageClose:hover {
-        background-color: $a4;
-    }
+        &:hover {background-color: $a4;}
+        &::placeholder {
+            color: $a9;
+        }
 
+    }
     #navBody {
         grid-area: navBody;
         width: 295px;
@@ -363,7 +338,7 @@ body {
         padding: 0;
 
         section {
-            background-color: $a7;
+            background-color: $a6;
             height: 100px;
             display: block;
             width: 270px;
@@ -375,45 +350,44 @@ body {
         section:last-child {
             margin-bottom: 0;
         }
-    }
-    #navBody::-webkit-scrollbar {
-        border-radius: 4px;
-        width: 15px;
-        overflow-x: visible;
-        cursor: pointer;
-    }
-    #navBody::-webkit-scrollbar-track {
-        background-color: $a7;
-        width: 10px;
-    }
-    #navBody::-webkit-scrollbar-button {
-        background-color: $a7;
-        border-radius: 4px 4px 0 0 ;
-    }
-    #navBody::-webkit-scrollbar-button:vertical:decrement {
-        border-radius: 4px 4px 0 0;
-    }
-    #navBody::-webkit-scrollbar-button:vertical:increment {
-        border-radius: 0 0 4px 4px;
-    }
-    
 
-    #navBody::-webkit-scrollbar-thumb {
-        background-color: $a4;
-        border-radius: 4px;
-        transition: background 1s;
+        &::-webkit-scrollbar {
+            border-radius: 4px;
+            width: 15px;
+            overflow-x: visible;
+            cursor: pointer;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: $a5;
+            width: 10px;
+        }
+        &::-webkit-scrollbar-button {
+            background-color: $a4;
+            border-radius: 4px 4px 0 0 ;
+        }
+        &::-webkit-scrollbar-button:vertical:decrement {
+            border-radius: 4px 4px 0 0;
+        }
+        &::-webkit-scrollbar-button:vertical:increment {
+            border-radius: 0 0 4px 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $a3;
+            border-radius: 4px;
+            transition: background 1s;
+        }
+
     }
 
 }
-
-
 #userDash {
+    width: calc(100vw - 320px);
+    width: 100%;
+
     background: $t6;
     position: fixed;
     top: 48px;
     right: 0;
-    width: calc(100vw - 320px);
-    width: 100%;
     height: calc(100vh - 38px);
     margin: 0;
     z-index: 2;
@@ -526,6 +500,8 @@ body {
         border-radius: 4px;
         cursor: default;
     }
+
+
     #userConsoleDesk {
 
         // Max
@@ -548,7 +524,9 @@ body {
     }
 }
 
-// ADMIN--------------------------------------------------------------------------------------------------------------------------------
+
+
+// ADMIN --------------------------------------------------------------------------------------------------------------------------------
 #adminConsole {
     bottom: 50px;
     bottom: -100%;
@@ -566,15 +544,16 @@ body {
     z-index: 4;
     cursor: pointer;
     box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-    background-color: $a2;
+    background-color: $a1;
 
-    &:hover {background-color: $a4;}
+    &:hover {background-color: $a2;}
 
     #adminConsoleDesk {
-        display: block;
-        height: calc(100% - 10px);
         width: calc(100% - 300px);
         width: calc(100% - 20px);
+
+        display: block;
+        height: calc(100% - 10px);
         margin: 5px;
         position: absolute;
         right: 0;
@@ -583,9 +562,9 @@ body {
         background-color: $a6;
         border-radius: 4px;
         cursor: default;
-    }
-    #adminConsoleDesk:hover {
-        background-color: $a7;
+        &:hover {
+            background-color: $a7;
+        }
     }
     #adminConsoleMeta {
         display: block;
@@ -600,20 +579,21 @@ body {
     }
 }
 #helperDesk {
-    display: none;
+    // display: none;
 
 
     z-index: 5;
     overflow: hidden;
     .helperChatWindow {
+        bottom: 30px;
+        bottom: calc(-100vh + 208px);
+        bottom: -100vh;
+
         background-color: $a4;
         display: grid;
         width: 200px;
         height: calc(100vh - 98px);
-        right: 15px;
-        bottom: 30px;
-        // bottom: calc(-100vh + 208px);
-        // bottom: -100vh;
+        right: 5px;
         transition: bottom 1s,background 1s;
         position: absolute;
         border-radius: 4px 4px 0 0 ;
@@ -629,9 +609,9 @@ body {
             grid-area: head;
             transition: background 1s;
             cursor: pointer;
-        }
-        section:nth-child(1):hover {
-            background-color: $a4;
+            &:nth-child(1):hover {
+                background-color: $a3;
+            }
         }
         section:nth-child(2) {
             display: block;
@@ -641,28 +621,29 @@ body {
             display: block;
             grid-area: tool;
         }
+        &:hover {
+            background-color: $a5;
+        }
 
         
     }
-    .helperChatWindow:hover {
-        background-color: $a6;
-    }
     #helperDeskFooter {
-        background-color: $a2;
+        bottom: 0;
+        bottom: -60px;
+
+    
+        background-color: $a1;
         height: 30px;
         display: block;
         width: 100%;
         z-index: 5;
-        position: fixed;
-        bottom: 0;
-        // bottom: -60px;
+        position: absolute;
         transition: bottom 1s;
         box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
     }
     #helperDeskMenu {
-
-        bottom: 5px;
-        // bottom: -60px;
+        bottom: -60px;
+        // bottom: 5px;
 
         // Closed
         width: 20px;
@@ -670,8 +651,8 @@ body {
         box-shadow: none;
 
         // Open
-        // width: calc(100vw - 20px);
-        // height: calc(100vh - 68px);
+        // width: calc(100vw - 15px);
+        // height: calc(100vh - 63px);
         // box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
 
         transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
@@ -681,9 +662,9 @@ body {
         z-index: 6;
         cursor: pointer;
         border-radius: 4px;
-    }
-    #helperDeskMenu:hover {
-        background-color: $at7;
+        &:hover {
+            background-color: $at6;
+        }
     }
 }
 #sidebar {
@@ -713,7 +694,7 @@ body {
 
         #quickToolsHead {
             grid-area: QTtabs;
-            background-color: $a6;
+            background-color: $a5;
             overflow: hidden;
             padding: 5px 0 0 5px;
             display: flex;
@@ -731,21 +712,21 @@ body {
                 cursor: pointer;
             }
             span:hover {
-                background-color: $a3;
+                background-color: $a2;
             }
             .openTab {
-                background-color: $a4;
+                background-color: $a3;
                 bottom: 0;
                 width: 30px;
                 transition: background .4s;
             }
             .openTab:hover {
-                background-color: $a4;
+                background-color: $a3;
             }
         }
         #quickToolsTitle {
             grid-area: QTtitle;
-            background-color: $a4;
+            background-color: $a3;
             line-height: 30px;
             padding: 0 0 0 5px;
             font-size: 16px;
@@ -760,12 +741,33 @@ body {
     }
 }
 
-// KEYFRAMES---------------------------------------------------------------------------------------------------------------------------
 
-// @media only screen and (max-width: 640px) {
-//     #userDash {
-//         width: 320px;
-//         left: 320px;
-//     }
-// }
 
+// KEYFRAMES ----------------------------------------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 320px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+    // #userDash {
+    //     width: 320px;
+    //     left: 320px;
+    // }
+}
+
+@media only screen and (max-width: 960px) {
+    
+}
+
+@media only screen and (max-width: 1280px) {
+    
+}
+
+@media only screen and (max-width: 1600px) {
+    
+}
+
+@media only screen and (max-width: 1920px) {
+    
+}

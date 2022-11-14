@@ -11,7 +11,6 @@ export default function Navigation() {return (
 
         */}
         <NavigationPanel />
-        <NavigationPageClose />
         <NavigationButton />
 
     </nav>
@@ -41,11 +40,7 @@ function NavigationPage() { return (
         */}
     </input>
 )}
-function NavigationPageClose() { return (
-    <button id="navPageClose">
-        X
-    </button>
-)}
+
 
 function NavigationButton() { return (
     <button id="navButton" >
