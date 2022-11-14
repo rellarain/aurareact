@@ -19,7 +19,18 @@ export default function AdminConsole() {return (
             <br/>
             <br/>
         </div>
-        <div id='adminConsoleDesk'></div>
+        <div id='adminConsoleDesk'>
+            Training: <br/>
+            Management: <br/>
+            Break Time: <br/>
+            Designer: <br/>
+            Instructor: <br/>            
+            Studios: <br/>
+            Committee: <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
 
             
     </div>

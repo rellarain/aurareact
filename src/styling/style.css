@@ -61,11 +61,11 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #243d42;
+  background-color: #473d1f;
 }
 
 #userHeader {
-  background: #2e382e;
+  background: #29363d;
   position: fixed;
   top: 0;
   right: 0;
@@ -90,7 +90,7 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: thumbnail;
-  background-color: #95bec6;
+  background-color: #cebe8d;
   overflow: hidden;
 }
 
@@ -102,7 +102,7 @@ body {
   line-height: 16px;
   margin: 4px 0 0 5px;
   font-weight: 600;
-  color: #bcc8bc;
+  color: #b6c6ce;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -115,7 +115,7 @@ body {
 
 #userHeader #userName:hover {
   color: white;
-  text-shadow: 0 0 4px 2px #afced4;
+  text-shadow: 0 0 4px 2px #dacea9;
 }
 
 #userHeader #userID {
@@ -128,7 +128,7 @@ body {
   width: max-content;
   font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #789178;
+  color: #6c8d9d;
 }
 
 #userHeader #userID span {
@@ -139,7 +139,7 @@ body {
 }
 
 #userHeader #userID span:hover {
-  color: #a5b6a5;
+  color: #9db3be;
 }
 
 #userHeader #userProgress {
@@ -147,7 +147,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #090b09;
+  background-color: #080b0c;
   width: 100%;
 }
 
@@ -157,268 +157,276 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(37) {
-  background-color: #95bec6;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(38) {
-  background-color: #95bec6;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(39) {
-  background-color: #95bec6;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(40) {
-  background-color: #95bec6;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(41) {
-  background-color: #95bec6;
+  background-color: #b69d54;
 }
 
 #userHeader #userProgress td:nth-child(42) {
-  background-color: #536553;
+  background-color: #972084;
 }
 
 #userHeader #userProgress td:nth-child(43) {
-  background-color: #536553;
+  background-color: #972084;
 }
 
 #userHeader #userProgress td:nth-child(44) {
-  background-color: #536553;
+  background-color: #972084;
 }
 
 #userHeader #userProgress td:nth-child(45) {
-  background-color: #536553;
+  background-color: #972084;
 }
 
-#userHeader #userProgress td:nth-child(46) {
-  background-color: #536553;
+#userHeader #userProgress td:nth-child(49) {
+  background-color: #816e37;
+}
+
+#userHeader #userProgress td:nth-child(50) {
+  background-color: #816e37;
+}
+
+#userHeader #userProgress td:nth-child(51) {
+  background-color: #b69d54;
+}
+
+#userHeader #userProgress td:nth-child(52) {
+  background-color: #b69d54;
+}
+
+#userHeader #userProgress td:nth-child(53) {
+  background-color: #b69d54;
+}
+
+#userHeader #userProgress td:nth-child(54) {
+  background-color: #b69d54;
+}
+
+#userHeader #userProgress td:nth-child(55) {
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(56) {
-  background-color: #c8b141;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(57) {
-  background-color: #c8b141;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(58) {
-  background-color: #c8b141;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(59) {
-  background-color: #c8b141;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(60) {
-  background-color: #c8b141;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(61) {
-  background-color: #8e7d29;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(62) {
-  background-color: #8e7d29;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(63) {
-  background-color: #8e7d29;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(64) {
-  background-color: #8e7d29;
+  background-color: #b69d54;
 }
 
 #userHeader #userProgress td:nth-child(65) {
-  background-color: #dacb81;
+  background-color: #b69d54;
 }
 
 #userHeader #userProgress td:nth-child(66) {
-  background-color: #8e7d29;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(67) {
-  background-color: #c8b141;
-}
-
-#userHeader #userProgress td:nth-child(68) {
-  background-color: #c8b141;
-}
-
-#userHeader #userProgress td:nth-child(69) {
-  background-color: #c8b141;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(70) {
-  background-color: #8e7d29;
+  background-color: #e278d1;
 }
 
 #userHeader #userProgress td:nth-child(71) {
-  background-color: #8e7d29;
+  background-color: #e278d1;
 }
 
 #userHeader #userProgress td:nth-child(72) {
-  background-color: #8e7d29;
+  background-color: #e278d1;
 }
 
 #userHeader #userProgress td:nth-child(73) {
-  background-color: #dacb81;
-}
-
-#userHeader #userProgress td:nth-child(74) {
-  background-color: #dacb81;
-}
-
-#userHeader #userProgress td:nth-child(75) {
-  background-color: #dacb81;
-}
-
-#userHeader #userProgress td:nth-child(76) {
-  background-color: #406e77;
-}
-
-#userHeader #userProgress td:nth-child(77) {
-  background-color: #609da9;
-}
-
-#userHeader #userProgress td:nth-child(78) {
-  background-color: #609da9;
+  background-color: #e278d1;
 }
 
 #userHeader #userProgress td:nth-child(79) {
-  background-color: #95bec6;
+  background-color: #541249;
 }
 
 #userHeader #userProgress td:nth-child(80) {
-  background-color: #95bec6;
+  background-color: #541249;
 }
 
 #userHeader #userProgress td:nth-child(81) {
-  background-color: #609da9;
+  background-color: #541249;
 }
 
 #userHeader #userProgress td:nth-child(82) {
-  background-color: #95bec6;
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(83) {
-  background-color: #609da9;
+  background-color: #816e37;
+}
+
+#userHeader #userProgress td:nth-child(84) {
+  background-color: #b69d54;
+}
+
+#userHeader #userProgress td:nth-child(85) {
+  background-color: #b69d54;
+}
+
+#userHeader #userProgress td:nth-child(86) {
+  background-color: #816e37;
+}
+
+#userHeader #userProgress td:nth-child(87) {
+  background-color: #816e37;
 }
 
 #userHeader #userProgress td:nth-child(88) {
-  background-color: #609da9;
+  background-color: #b69d54;
 }
 
 #userHeader #userProgress td:nth-child(89) {
-  background-color: #95bec6;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(90) {
-  background-color: #c8b141;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(91) {
-  background-color: #c8b141;
+  background-color: #473d1f;
 }
 
 #userHeader #userProgress td:nth-child(92) {
-  background-color: #c8b141;
+  background-color: #6c8d9d;
 }
 
 #userHeader #userProgress td:nth-child(93) {
-  background-color: #dacb81;
+  background-color: #6c8d9d;
 }
 
 #userHeader #userProgress td:nth-child(94) {
-  background-color: #dacb81;
+  background-color: #6c8d9d;
 }
 
 #userHeader #userProgress td:nth-child(95) {
-  background-color: #dacb81;
+  background-color: #6c8d9d;
 }
 
 #userHeader #userProgress td:nth-child(96) {
-  background-color: #406e77;
+  background-color: #6c8d9d;
 }
 
 #userHeader #userProgress td:nth-child(97) {
-  background-color: #609da9;
+  background-color: #6c8d9d;
 }
 
 #userHeader #userProgress td:nth-child(98) {
-  background-color: #609da9;
+  background-color: #6c8d9d;
 }
 
 #userHeader #userProgress td:nth-child(99) {
-  background-color: #95bec6;
+  background-color: #6c8d9d;
 }
 
-#userHeader #userProgress td:nth-child(115) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(100) {
+  background-color: #6c8d9d;
 }
 
-#userHeader #userProgress td:nth-child(116) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(133) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(117) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(134) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(118) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(135) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(119) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(136) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(120) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(137) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(121) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(138) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(122) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(139) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(123) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(140) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(124) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(141) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(125) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(142) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(126) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(143) {
+  background-color: #e278d1;
 }
 
-#userHeader #userProgress td:nth-child(127) {
-  background-color: #a5b6a5;
-}
-
-#userHeader #userProgress td:nth-child(128) {
-  background-color: #a5b6a5;
-}
-
-#userHeader #userProgress td:nth-child(129) {
-  background-color: #a5b6a5;
+#userHeader #userProgress td:nth-child(144) {
+  background-color: #e278d1;
 }
 
 #navCrop {
   width: 30px;
   height: 30px;
+  width: 300px;
+  height: 30px;
+  width: 300px;
+  height: calc(100% - 10px);
   overflow: clip;
   border-radius: 5px;
   position: fixed;
@@ -430,7 +438,7 @@ body {
 }
 
 #navCrop #navPanel {
-  background: #95bec6;
+  background: #c2ad70;
   width: 300px;
   height: calc(100vh - 10px);
   display: -ms-grid;
@@ -441,11 +449,17 @@ body {
       grid-template-rows: 30px auto;
       grid-template-areas: "navPage navButton" "navBody navBody";
   z-index: 7;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+#navCrop #navPanel:hover {
+  background-color: #cebe8d;
 }
 
 #navCrop #navButton {
   position: fixed;
-  background-color: #243d42;
+  background-color: #473d1f;
   right: 9px;
   top: 9px;
   width: 22px;
@@ -465,9 +479,9 @@ body {
 }
 
 #navCrop #navButton:hover {
-  background-color: #406e77;
-  -webkit-box-shadow: 0 0 8px 2px #afced4;
-          box-shadow: 0 0 8px 2px #afced4;
+  background-color: #816e37;
+  -webkit-box-shadow: 0 0 8px 2px #dacea9;
+          box-shadow: 0 0 8px 2px #dacea9;
 }
 
 #navCrop #navPage {
@@ -478,39 +492,39 @@ body {
   height: 22px;
   line-height: 22px;
   padding: 0 0 0 5px;
-  background-color: #32565d;
+  background-color: #64562b;
   border-radius: 4px;
   border: none;
   position: absolute;
   right: 30px;
   width: 261px;
   z-index: 7;
-  color: #afced4;
+  color: #dacea9;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   -webkit-transition: background .4s, top .5s;
   transition: background .4s, top .5s;
 }
 
 #navCrop #navPage:hover {
-  background-color: #406e77;
+  background-color: #816e37;
 }
 
 #navCrop #navPage::-webkit-input-placeholder {
-  color: #afced4;
+  color: #dacea9;
 }
 
 #navCrop #navPage:-ms-input-placeholder {
-  color: #afced4;
+  color: #dacea9;
 }
 
 #navCrop #navPage::-ms-input-placeholder {
-  color: #afced4;
+  color: #dacea9;
 }
 
 #navCrop #navPage::placeholder {
-  color: #afced4;
+  color: #dacea9;
 }
 
 #navCrop #navBody {
@@ -523,20 +537,73 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0;
+  right: 0;
 }
 
-#navCrop #navBody section {
-  background-color: #609da9;
-  height: 100px;
+#navCrop #navBody ul {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #816e37;
   display: block;
-  width: 270px;
+  width: 260px;
   margin-left: 5px;
   border-radius: 4px;
   background-position-x: right;
   margin-bottom: 5px;
+  padding: 5px;
+  overflow: clip;
+  -webkit-transition: background 1s, height 1s;
+  transition: background 1s, height 1s;
 }
 
-#navCrop #navBody section:last-child {
+#navCrop #navBody ul:hover {
+  background-color: #9d8743;
+}
+
+#navCrop #navBody ul li {
+  width: 240px;
+  margin: 5px 5px 5px 10px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #64562b;
+  font-weight: 700;
+  color: #cebe8d;
+  vertical-align: middle;
+  cursor: pointer;
+  letter-spacing: 1px;
+  -webkit-transition: background 1s, color 1s;
+  transition: background 1s, color 1s;
+}
+
+#navCrop #navBody ul li:hover {
+  background-color: #473d1f;
+  color: #dacea9;
+}
+
+#navCrop #navBody ul li:first-child {
+  width: 250px;
+  background-color: #473d1f;
+  color: #cebe8d;
+  margin: 0;
+  font-weight: 8px;
+  letter-spacing: 2px;
+  -webkit-transition: background 1s, color 1s;
+  transition: background 1s, color 1s;
+}
+
+#navCrop #navBody ul li:first-child:hover {
+  background-color: #2b2512;
+  color: #dacea9;
+}
+
+#navCrop #navBody ul li:last-child {
+  margin-bottom: 0;
+}
+
+#navCrop #navBody ul:last-child {
   margin-bottom: 0;
 }
 
@@ -548,12 +615,12 @@ body {
 }
 
 #navCrop #navBody::-webkit-scrollbar-track {
-  background-color: #4f8792;
+  background-color: #9d8743;
   width: 10px;
 }
 
 #navCrop #navBody::-webkit-scrollbar-button {
-  background-color: #406e77;
+  background-color: #816e37;
   border-radius: 4px 4px 0 0;
 }
 
@@ -566,7 +633,7 @@ body {
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: #32565d;
+  background-color: #64562b;
   border-radius: 4px;
   -webkit-transition: background 1s;
   transition: background 1s;
@@ -575,7 +642,7 @@ body {
 #userDash {
   width: calc(100vw - 320px);
   width: 100%;
-  background: #789178;
+  background: #6c8d9d;
   position: fixed;
   top: 48px;
   right: 0;
@@ -592,16 +659,16 @@ body {
 #userConsole {
   top: 0;
   top: -100vh;
+  width: calc(100vw - 10px);
   display: -ms-grid;
   display: grid;
   position: absolute;
   z-index: 4;
-  width: calc(100vw - 10px);
   height: calc(100vh - 63px);
   margin: 10px 5px 5px 5px;
   border-radius: 4px;
   overflow: clip;
-  background-color: #1c221c;
+  background-color: #182125;
   -webkit-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
   -webkit-transition: top 1s, background 1s;
@@ -615,7 +682,7 @@ body {
 }
 
 #userConsole:hover {
-  background-color: #2e382e;
+  background-color: #29363d;
 }
 
 #userConsole #userConsoleHead {
@@ -637,7 +704,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: progress;
-  background-color: #609da9;
+  background-color: #d435ba;
   width: 69%;
   -webkit-transition: width 1s;
   transition: width 1s;
@@ -650,7 +717,7 @@ body {
   line-height: 40px;
   font-size: 20px;
   vertical-align: middle;
-  color: #bcc8bc;
+  color: #b6c6ce;
   font-weight: 700;
   margin-left: 5px;
   letter-spacing: 2px;
@@ -663,14 +730,14 @@ body {
   height: 27px;
   width: 27px;
   margin: 5px 5px 0 0;
-  background-color: #4f8792;
+  background-color: #9d8743;
   border-radius: 4px;
   -webkit-transition: background 1s;
   transition: background 1s;
 }
 
 #userConsole #userConsoleHead #userConsolePause:hover {
-  background-color: #7aadb8;
+  background-color: #c2ad70;
 }
 
 #userConsole #userConsoleHead #userConsoleHelp {
@@ -680,11 +747,11 @@ body {
   height: 27px;
   width: 27px;
   margin: 5px 5px 0 0;
-  background-color: #4f8792;
+  background-color: #9d8743;
   border-radius: 4px;
   line-height: 27px;
   font-size: 20px;
-  color: #070c0d;
+  color: #0e0c06;
   font-weight: 700;
   text-align: center;
   -webkit-transition: background 1s;
@@ -692,7 +759,7 @@ body {
 }
 
 #userConsole #userConsoleHead #userConsoleHelp:hover {
-  background-color: #7aadb8;
+  background-color: #c2ad70;
 }
 
 #userConsole #userConsoleHead #userConsoleClose {
@@ -702,14 +769,14 @@ body {
   height: 27px;
   width: 27px;
   margin: 5px 5px 0 0;
-  background-color: #32565d;
+  background-color: #64562b;
   border-radius: 4px;
   -webkit-transition: background 1s;
   transition: background 1s;
 }
 
 #userConsole #userConsoleHead #userConsoleClose:hover {
-  background-color: #4f8792;
+  background-color: #9d8743;
 }
 
 #userConsole #userConsoleTabs {
@@ -717,8 +784,9 @@ body {
   -ms-grid-column: 1;
   grid-area: consoleTabs;
   width: 30px;
-  margin: 20px 5px 5px 5px;
-  background-color: #536553;
+  height: calc(100% - 65px);
+  margin: 25px 5px 5px 5px;
+  background-color: #9d8743;
   border-radius: 4px;
   cursor: default;
 }
@@ -730,38 +798,40 @@ body {
   width: calc(100% - 5px);
   height: calc(100% - 50px);
   margin: 10px 5px 5px 0;
-  background-color: #404f40;
+  background-color: #394c56;
   border-radius: 4px;
   cursor: default;
 }
 
 #userConsole #userConsoleDesk {
-  height: calc(100% - 50px);
+  width: calc(100% - 20px);
+  bottom: 5px;
+  width: calc(100% - 55px);
+  height: calc(100% - 60px);
   border-radius: 4px;
   display: block;
   position: absolute;
-  bottom: 5px;
   right: 5px;
-  width: calc(100% - 45px);
-  background-color: #657b65;
+  background-color: #5a7887;
+  padding: 5px;
   z-index: 4;
-  -webkit-transition: background 1s, height 1s;
-  transition: background 1s, height 1s;
+  -webkit-transition: background 1s, height 1s, bottom 1s, width 1s;
+  transition: background 1s, height 1s, bottom 1s, width 1s;
   cursor: default;
 }
 
 #userConsole #userConsoleDesk:hover {
-  background-color: #789178;
+  background-color: #6c8d9d;
 }
 
 #adminConsole {
   bottom: 50px;
-  bottom: -100%;
   display: block;
   position: absolute;
   overflow: hidden;
-  height: calc(100% - 60px);
-  width: calc(100% - 20px);
+  padding: 5px;
+  height: calc(100% - 70px);
+  width: calc(100% - 30px);
   border-radius: 5px;
   -webkit-transition: bottom 2s, background 1s;
   transition: bottom 2s, background 1s;
@@ -770,11 +840,11 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-  background-color: #152528;
+  background-color: #2b2512;
 }
 
 #adminConsole:hover {
-  background-color: #243d42;
+  background-color: #473d1f;
 }
 
 #adminConsole #adminConsoleDesk {
@@ -788,13 +858,13 @@ body {
   top: 0;
   -webkit-transition: width 1s, background 1s;
   transition: width 1s, background 1s;
-  background-color: #609da9;
+  background-color: #b69d54;
   border-radius: 4px;
   cursor: default;
 }
 
 #adminConsole #adminConsoleDesk:hover {
-  background-color: #7aadb8;
+  background-color: #c2ad70;
 }
 
 #adminConsole #adminConsoleMeta {
@@ -805,7 +875,7 @@ body {
   left: 15px;
   top: 5px;
   border-radius: 4px;
-  background-color: #32565d;
+  background-color: #64562b;
   cursor: default;
 }
 
@@ -818,7 +888,7 @@ body {
   bottom: 30px;
   bottom: calc(-100vh + 208px);
   bottom: -100vh;
-  background-color: #406e77;
+  background-color: #816e37;
   display: -ms-grid;
   display: grid;
   width: 200px;
@@ -841,7 +911,7 @@ body {
 
 #helperDesk .helperChatWindow section:nth-child(1) {
   display: block;
-  background-color: #243d42;
+  background-color: #473d1f;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: head;
@@ -851,7 +921,7 @@ body {
 }
 
 #helperDesk .helperChatWindow section:nth-child(1):nth-child(1):hover {
-  background-color: #32565d;
+  background-color: #64562b;
 }
 
 #helperDesk .helperChatWindow section:nth-child(2) {
@@ -869,13 +939,13 @@ body {
 }
 
 #helperDesk .helperChatWindow:hover {
-  background-color: #4f8792;
+  background-color: #9d8743;
 }
 
 #helperDesk #helperDeskFooter {
   bottom: 0;
   bottom: -60px;
-  background-color: #152528;
+  background-color: #2b2512;
   height: 30px;
   display: block;
   width: 100%;
@@ -899,14 +969,14 @@ body {
   transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s, -webkit-box-shadow 1s;
   position: absolute;
   left: 5px;
-  background-color: #8e7d29;
+  background-color: #972084;
   z-index: 6;
   cursor: pointer;
   border-radius: 4px;
 }
 
 #helperDesk #helperDeskMenu:hover {
-  background-color: #c8b141;
+  background-color: #d435ba;
 }
 
 #sidebar {
@@ -924,7 +994,7 @@ body {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  background-color: #95bec6;
+  background-color: #cebe8d;
   width: 310px;
   top: 5px;
   height: calc(100% - 40px);
@@ -942,7 +1012,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: QTtabs;
-  background-color: #4f8792;
+  background-color: #9d8743;
   overflow: hidden;
   padding: 5px 0 0 5px;
   display: -webkit-box;
@@ -954,7 +1024,7 @@ body {
   height: 35px;
   width: 30px;
   display: inline-block;
-  background-color: #152528;
+  background-color: #2b2512;
   position: relative;
   bottom: -5px;
   margin-right: 4px;
@@ -966,11 +1036,11 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead span:hover {
-  background-color: #243d42;
+  background-color: #473d1f;
 }
 
 #sidebar #quickTools #quickToolsHead .openTab {
-  background-color: #32565d;
+  background-color: #64562b;
   bottom: 0;
   width: 30px;
   -webkit-transition: background .4s;
@@ -978,14 +1048,14 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead .openTab:hover {
-  background-color: #32565d;
+  background-color: #64562b;
 }
 
 #sidebar #quickTools #quickToolsTitle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: QTtitle;
-  background-color: #32565d;
+  background-color: #64562b;
   line-height: 30px;
   padding: 0 0 0 5px;
   font-size: 16px;

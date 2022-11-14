@@ -51,43 +51,51 @@ table {
 
 //------------------------------------------------------------------------------------------------------
 
+// Color Harmonies
+
+// Split Complimentary: 
+// 2 analogous hues, 1 compliment to midpoint
+// Analogous: 
+// 3 hues existing within 180 degrees
+// Triadic:
+// 3 hues roughly separated by ~120 degrees
 
 // Theme Colors
-$t0: hsl(120, 10%,  4%);
-$t1: hsl(120, 10%, 12%);
-$t2: hsl(120, 10%, 20%);
-$t3: hsl(120, 10%, 28%);
-$t4: hsl(120, 10%, 36%);
-$t5: hsl(120, 10%, 44%);
-$t6: hsl(120, 10%, 52%);
-$t7: hsl(120, 10%, 60%);
-$t8: hsl(120, 10%, 68%);
-$t9: hsl(120, 10%, 76%);
+$t0: hsl(200, 20%,  4%);
+$t1: hsl(200, 20%, 12%);
+$t2: hsl(200, 20%, 20%);
+$t3: hsl(200, 20%, 28%);
+$t4: hsl(200, 20%, 36%);
+$t5: hsl(200, 20%, 44%);
+$t6: hsl(200, 20%, 52%);
+$t7: hsl(200, 20%, 60%);
+$t8: hsl(200, 20%, 68%);
+$t9: hsl(200, 20%, 76%);
 
 // Accent Colors
 
-$a0: hsl(190, 30%,  4%);
-$a1: hsl(190, 30%, 12%);
-$a2: hsl(190, 30%, 20%);
-$a3: hsl(190, 30%, 28%);
-$a4: hsl(190, 30%, 36%);
-$a5: hsl(190, 30%, 44%);
-$a6: hsl(190, 30%, 52%);
-$a7: hsl(190, 30%, 60%);
-$a8: hsl(190, 30%, 68%);
-$a9: hsl(190, 30%, 76%);
+$a0: hsl(45, 40%,  4%);
+$a1: hsl(45, 40%, 12%);
+$a2: hsl(45, 40%, 20%);
+$a3: hsl(45, 40%, 28%);
+$a4: hsl(45, 40%, 36%);
+$a5: hsl(45, 40%, 44%);
+$a6: hsl(45, 40%, 52%);
+$a7: hsl(45, 40%, 60%);
+$a8: hsl(45, 40%, 68%);
+$a9: hsl(45, 40%, 76%);
 
 // Alert Colors
-$at0: hsl(50, 55%,  4%);
-$at1: hsl(50, 55%, 12%);
-$at2: hsl(50, 55%, 20%);
-$at3: hsl(50, 55%, 28%);
-$at4: hsl(50, 55%, 36%);
-$at5: hsl(50, 55%, 44%);
-$at6: hsl(50, 55%, 52%);
-$at7: hsl(50, 55%, 60%);
-$at8: hsl(50, 55%, 68%);
-$at9: hsl(50, 55%, 76%);
+$at0: hsl(310, 65%,  4%);
+$at1: hsl(310, 65%, 12%);
+$at2: hsl(310, 65%, 20%);
+$at3: hsl(310, 65%, 28%);
+$at4: hsl(310, 65%, 36%);
+$at5: hsl(310, 65%, 44%);
+$at6: hsl(310, 65%, 52%);
+$at7: hsl(310, 65%, 60%);
+$at8: hsl(310, 65%, 68%);
+$at9: hsl(310, 65%, 76%);
 
 
 // Z-Index Guide 
@@ -180,71 +188,86 @@ body {
 
         .progressNow {box-shadow: inset 0 0 0 2px white;}
 
-        td:nth-child(37) {background-color: $a8;}
-        td:nth-child(38) {background-color: $a8;}
-        td:nth-child(39) {background-color: $a8;}
-        td:nth-child(40) {background-color: $a8;}
-        td:nth-child(41) {background-color: $a8;}
-        td:nth-child(42) {background-color: $t4;}
-        td:nth-child(43) {background-color: $t4;}
-        td:nth-child(44) {background-color: $t4;}
-        td:nth-child(45) {background-color: $t4;}
-        td:nth-child(46) {background-color: $t4;}
-        td:nth-child(56) {background-color: $at6;}
-        td:nth-child(57) {background-color: $at6;}
-        td:nth-child(58) {background-color: $at6;}
-        td:nth-child(59) {background-color: $at6;}
-        td:nth-child(60) {background-color: $at6;}
-        td:nth-child(61) {background-color: $at4;}
-        td:nth-child(62) {background-color: $at4;}
-        td:nth-child(63) {background-color: $at4;}
-        td:nth-child(64) {background-color: $at4;}
-        td:nth-child(65) {background-color: $at8;}
-        td:nth-child(66) {background-color: $at4;}
-        td:nth-child(67) {background-color: $at6;}
-        td:nth-child(68) {background-color: $at6;}
-        td:nth-child(69) {background-color: $at6;}
-        td:nth-child(70) {background-color: $at4;}
-        td:nth-child(71) {background-color: $at4;}
-        td:nth-child(72) {background-color: $at4;}
+        td:nth-child(37) {background-color: $a4;}
+        td:nth-child(38) {background-color: $a2;}
+        td:nth-child(39) {background-color: $a4;}
+        td:nth-child(40) {background-color: $a4;}
+        td:nth-child(41) {background-color: $a6;}
+        td:nth-child(42) {background-color: $at4;}
+        td:nth-child(43) {background-color: $at4;}
+        td:nth-child(44) {background-color: $at4;}
+        td:nth-child(45) {background-color: $at4;}
+        // td:nth-child(X) {background-color: $X;}
+        // td:nth-child(X) {background-color: $X;}
+
+        td:nth-child(49) {background-color: $a4;}
+        td:nth-child(50) {background-color: $a4;}
+        td:nth-child(51) {background-color: $a6;}
+        td:nth-child(52) {background-color: $a6;}
+        td:nth-child(53) {background-color: $a6;}
+        td:nth-child(54) {background-color: $a6;}
+        td:nth-child(55) {background-color: $a2;}
+        td:nth-child(56) {background-color: $a2;}
+        td:nth-child(57) {background-color: $a2;}
+        td:nth-child(58) {background-color: $a2;}
+        td:nth-child(59) {background-color: $a4;}
+        td:nth-child(60) {background-color: $a4;}
+        td:nth-child(61) {background-color: $a4;}
+        td:nth-child(62) {background-color: $a2;}
+        td:nth-child(63) {background-color: $a4;}
+        td:nth-child(64) {background-color: $a6;}
+        td:nth-child(65) {background-color: $a6;}
+        td:nth-child(66) {background-color: $a4;}
+        td:nth-child(67) {background-color: $a2;}
+
+        td:nth-child(70) {background-color: $at8;}
+        td:nth-child(71) {background-color: $at8;}
+        td:nth-child(72) {background-color: $at8;}
         td:nth-child(73) {background-color: $at8;}
-        td:nth-child(74) {background-color: $at8;}
-        td:nth-child(75) {background-color: $at8;}
-        td:nth-child(76) {background-color: $a4;}
-        td:nth-child(77) {background-color: $a6;}
-        td:nth-child(78) {background-color: $a6;}
-        td:nth-child(79) {background-color: $a8;}
-        td:nth-child(80) {background-color: $a8;}
-        td:nth-child(81) {background-color: $a6;}
-        td:nth-child(82) {background-color: $a8;}
-        td:nth-child(83) {background-color: $a6;}
+
+        td:nth-child(79) {background-color: $at2;}
+        td:nth-child(80) {background-color: $at2;}
+        td:nth-child(81) {background-color: $at2;}
+        td:nth-child(82) {background-color: $a4;}
+        td:nth-child(83) {background-color: $a4;}
+        td:nth-child(84) {background-color: $a6;}
+        td:nth-child(85) {background-color: $a6;}
+        td:nth-child(86) {background-color: $a4;}
+        td:nth-child(87) {background-color: $a4;}
         td:nth-child(88) {background-color: $a6;}
-        td:nth-child(89) {background-color: $a8;}
-        td:nth-child(90) {background-color: $at6;}
-        td:nth-child(91) {background-color: $at6;}
-        td:nth-child(92) {background-color: $at6;}
-        td:nth-child(93) {background-color: $at8;}
-        td:nth-child(94) {background-color: $at8;}
-        td:nth-child(95) {background-color: $at8;}
-        td:nth-child(96) {background-color: $a4;}
-        td:nth-child(97) {background-color: $a6;}
-        td:nth-child(98) {background-color: $a6;}
-        td:nth-child(99) {background-color: $a8;}
-        td:nth-child(115) {background-color: $t8;}
-        td:nth-child(116) {background-color: $t8;}
-        td:nth-child(117) {background-color: $t8;}
-        td:nth-child(118) {background-color: $t8;}
-        td:nth-child(119) {background-color: $t8;}
-        td:nth-child(120) {background-color: $t8;}
-        td:nth-child(121) {background-color: $t8;}
-        td:nth-child(122) {background-color: $t8;}
-        td:nth-child(123) {background-color: $t8;}
-        td:nth-child(124) {background-color: $t8;}
-        td:nth-child(125) {background-color: $t8;}
-        td:nth-child(126) {background-color: $t8;}
-        td:nth-child(127) {background-color: $t8;}
-        td:nth-child(128) {background-color: $t8;}
-        td:nth-child(129) {background-color: $t8;}
+        td:nth-child(89) {background-color: $a2;}
+        td:nth-child(90) {background-color: $a2;}
+        td:nth-child(91) {background-color: $a2;}
+        td:nth-child(92) {background-color: $t6;}
+        td:nth-child(93) {background-color: $t6;}
+        td:nth-child(94) {background-color: $t6;}
+        td:nth-child(95) {background-color: $t6;}
+        td:nth-child(96) {background-color: $t6;}
+        td:nth-child(97) {background-color: $t6;}
+        td:nth-child(98) {background-color: $t6;}
+        td:nth-child(99) {background-color: $t6;}
+        td:nth-child(100) {background-color: $t6;}
+        // td:nth-child(X) {background-color: $X;}
+        // td:nth-child(X) {background-color: $X;}
+        // td:nth-child(X) {background-color: $X;}
+        // td:nth-child(X) {background-color: $X;}
+        // td:nth-child(X) {background-color: $X;}
+        // td:nth-child(X) {background-color: $X;}
+
+        td:nth-child(133) {background-color: $at8;}
+        td:nth-child(134) {background-color: $at8;}
+        td:nth-child(135) {background-color: $at8;}
+        td:nth-child(136) {background-color: $at8;}
+        td:nth-child(137) {background-color: $at8;}
+        td:nth-child(138) {background-color: $at8;}
+        td:nth-child(139) {background-color: $at8;}
+        td:nth-child(140) {background-color: $at8;}
+        td:nth-child(141) {background-color: $at8;}
+        td:nth-child(142) {background-color: $at8;}
+        td:nth-child(143) {background-color: $at8;}
+        td:nth-child(144) {background-color: $at8;}
+        
+        // 10 hour shift: 6h40m work (64), 3h20m break (32)
     }
 }
 #navCrop {
@@ -253,12 +276,12 @@ body {
     height: 30px;
 
     // Nav Tool
-    // width: 300px;
-    // height: 30px;
+    width: 300px;
+    height: 30px;
 
     // Navigation Panel
-    // width: 300px;
-    // height: calc(100% - 10px);
+    width: 300px;
+    height: calc(100% - 10px);
 
 
     overflow: clip;
@@ -270,7 +293,7 @@ body {
     transition: height 1s, width 1.5s;
 
     #navPanel {
-        background: $a8;
+        background: $a7;
         width: 300px;
         height: calc(100vh - 10px);
         display: grid;
@@ -278,7 +301,8 @@ body {
         grid-template-rows: 30px auto;
         grid-template-areas: "navPage navButton" "navBody navBody";
         z-index: 7;
-
+        transition: background 1s;
+        &:hover {background-color: $a8;}
     }
     #navButton {
         position: fixed;
@@ -320,7 +344,7 @@ body {
         z-index: 7;
         color: $a9;
         letter-spacing: 1px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
         transition: background .4s, top .5s;
         &:hover {background-color: $a4;}
@@ -336,18 +360,54 @@ body {
         overflow-y: scroll;
         overflow-x: hidden;
         padding: 0;
+        right: 0;
 
-        section {
-            background-color: $a6;
-            height: 100px;
+        ul {
+            // height: 30px;
+
+            appearance: none;
+            background-color: $a4;
             display: block;
-            width: 270px;
+            width: 260px;
             margin-left: 5px;
             border-radius: 4px;
             background-position-x: right;
             margin-bottom: 5px;
+            padding: 5px;
+            overflow: clip;
+            transition: background 1s, height 1s;
+            &:hover {background-color: $a5;}
+            li {
+                width: 240px;
+                margin: 5px 5px 5px 10px;
+                padding: 5px;
+                border-radius: 4px;
+                font-size: 14px;
+                line-height: 20px;
+                background-color: $a3;
+                font-weight: 700;
+                color: $a8;
+                vertical-align: middle;
+                cursor: pointer;
+                letter-spacing: 1px;
+                transition: background 1s, color 1s;
+                &:hover {background-color: $a2; color: $a9;}
+                &:first-child {
+                    width: 250px;
+                    background-color: $a2;
+                    color: $a8;
+                    margin: 0;
+                    font-weight: 8px;
+                    letter-spacing: 2px;
+                    transition: background 1s, color 1s;
+                    &:hover {background-color: $a1; color: $a9;}
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
-        section:last-child {
+        ul:last-child {
             margin-bottom: 0;
         }
 
@@ -403,11 +463,11 @@ body {
 
     // Closed
     top: -100vh;
-    
+
+    width: calc(100vw - 10px);
     display: grid;
     position: absolute;
     z-index: 4;
-    width: calc(100vw - 10px);
     height: calc(100vh - 63px);
     margin: 10px 5px 5px 5px;
     border-radius: 4px;
@@ -431,7 +491,7 @@ body {
 
         #userConsoleProgress {
             grid-area: progress;
-            background-color: $a6;
+            background-color: $at6;
             width: 69%;
             transition: width 1s;
 
@@ -486,8 +546,9 @@ body {
     #userConsoleTabs {
         grid-area: consoleTabs;
         width: 30px;
-        margin: 20px 5px 5px 5px;
-        background-color: $t4;
+        height: calc(100% - 65px);
+        margin: 25px 5px 5px 5px;
+        background-color: $a5;
         border-radius: 4px;
         cursor: default;
     }
@@ -503,22 +564,24 @@ body {
 
 
     #userConsoleDesk {
+        width: calc(100% - 20px);
+        bottom: 5px;
 
-        // Max
-        height: calc(100% - 50px);
+        // Minimized
+        // bottom: calc(-100% + 85px);
 
-        // Mini
-        // height: 30px;        
-       
+        // Tabs
+        width: calc(100% - 55px);
+        
+        height: calc(100% - 60px);
         border-radius: 4px;
         display: block;
         position: absolute;
-        bottom: 5px;
         right: 5px;
-        width: calc(100% - 45px);
         background-color: $t5;
+        padding: 5px;
         z-index: 4;
-        transition: background 1s, height 1s;
+        transition: background 1s, height 1s, bottom 1s, width 1s;
         cursor: default;
         &:hover {background-color: $t6;}
     }
@@ -529,15 +592,16 @@ body {
 // ADMIN --------------------------------------------------------------------------------------------------------------------------------
 #adminConsole {
     bottom: 50px;
-    bottom: -100%;
+    // bottom: -100%;
 
 
     display: block;
     // display: none;
     position: absolute;
     overflow: hidden;
-    height: calc(100% - 60px); 
-    width: calc(100% - 20px);
+    padding: 5px;
+    height: calc(100% - 70px); 
+    width: calc(100% - 30px);
     border-radius: 5px;
     transition: bottom 2s, background 1s;
     left: 10px;

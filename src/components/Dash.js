@@ -19,7 +19,19 @@ function UserConsole() {return (
         </div>
         <div id='userConsoleTabs'></div>
         <div id='userConsoleInfo'></div>
-        <div id="userConsoleDesk"></div>
+        <div id="userConsoleDesk">
+            Training: <br/>
+            Application: <br/>
+            Assessment: <br/>
+            <br/>
+            <br/>
+            <br/>            
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
     </main>
 )}
 
