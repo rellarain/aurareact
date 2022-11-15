@@ -61,7 +61,7 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #473d1f;
+  background-color: #dacea9;
 }
 
 #userHeader {
@@ -657,7 +657,7 @@ body {
   display: grid;
   top: 0;
   top: -100vh;
-  width: calc(100vw - 10px);
+  width: calc(100% - 10px);
   position: absolute;
   z-index: 4;
   height: calc(100vh - 63px);
@@ -802,6 +802,7 @@ body {
 #userConsole #userConsoleDesk {
   width: calc(100% - 20px);
   bottom: 5px;
+  bottom: calc(-100% + 85px);
   width: calc(100% - 55px);
   height: calc(100% - 60px);
   border-radius: 4px;
@@ -823,6 +824,7 @@ body {
 #adminConsole {
   display: block;
   bottom: 50px;
+  bottom: -100%;
   position: absolute;
   overflow: hidden;
   height: calc(100% - 60px);
@@ -896,8 +898,6 @@ body {
 
 #helperDesk .helperChatWindow {
   bottom: 30px;
-  bottom: calc(-100vh + 208px);
-  bottom: -100vh;
   background-color: #816e37;
   display: -ms-grid;
   display: grid;
@@ -952,43 +952,6 @@ body {
   background-color: #9d8743;
 }
 
-#helperDesk #helperDeskFooter {
-  bottom: 0;
-  bottom: -60px;
-  background-color: #2b2512;
-  height: 30px;
-  display: block;
-  width: 100%;
-  z-index: 5;
-  position: absolute;
-  -webkit-transition: bottom 1s;
-  transition: bottom 1s;
-  -webkit-box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
-}
-
-#helperDesk #helperDeskMenu {
-  bottom: -60px;
-  width: 20px;
-  height: 20px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
-  transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
-  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
-  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s, -webkit-box-shadow 1s;
-  position: absolute;
-  left: 5px;
-  background-color: #972084;
-  z-index: 6;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-#helperDesk #helperDeskMenu:hover {
-  background-color: #d435ba;
-}
-
 #sidebar {
   position: absolute;
   display: block;
@@ -1004,7 +967,7 @@ body {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  background-color: #cebe8d;
+  background-color: #b69d54;
   width: 310px;
   top: 5px;
   height: calc(100% - 40px);
@@ -1016,13 +979,19 @@ body {
   -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
       grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+#sidebar #quickTools:hover {
+  background-color: #c2ad70;
 }
 
 #sidebar #quickTools #quickToolsHead {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: QTtabs;
-  background-color: #9d8743;
+  background-color: #816e37;
   overflow: hidden;
   padding: 5px 0 0 5px;
   display: -webkit-box;
@@ -1050,7 +1019,7 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead .openTab {
-  background-color: #64562b;
+  background-color: #473d1f;
   bottom: 0;
   width: 30px;
   -webkit-transition: background .4s;
@@ -1058,14 +1027,14 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead .openTab:hover {
-  background-color: #64562b;
+  background-color: #473d1f;
 }
 
 #sidebar #quickTools #quickToolsTitle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: QTtitle;
-  background-color: #64562b;
+  background-color: #473d1f;
   line-height: 30px;
   padding: 0 0 0 5px;
   font-size: 16px;
@@ -1078,5 +1047,42 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: QTpanel;
+}
+
+#helperDeskFooter {
+  bottom: 0;
+  background-color: #2b2512;
+  height: 30px;
+  display: block;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  -webkit-box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+#helperDeskMenu {
+  bottom: -60px;
+  bottom: 5px;
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
+  transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
+  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
+  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s, -webkit-box-shadow 1s;
+  position: absolute;
+  left: 5px;
+  background-color: #db57c5;
+  z-index: 6;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#helperDeskMenu:hover {
+  background-color: #ea9adc;
 }
 /*# sourceMappingURL=style.css.map */

@@ -115,7 +115,7 @@ $at9: hsl(310, 65%, 76%);
 //  0. Viewport:
 
 
-body {
+body {  
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -123,7 +123,7 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $a2;
+    background-color: $a9;
 }
 
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
@@ -467,7 +467,7 @@ body {
     // Closed
     top: -100vh;
 
-    width: calc(100vw - 10px);
+    width: calc(100% - 10px);
     position: absolute;
     z-index: 4;
     height: calc(100vh - 63px);
@@ -570,7 +570,7 @@ body {
         bottom: 5px;
 
         // Minimized
-        // bottom: calc(-100% + 85px);
+        bottom: calc(-100% + 85px);
 
         // Tabs
         width: calc(100% - 55px);
@@ -597,7 +597,7 @@ body {
     // display: none;
 
     bottom: 50px;
-    // bottom: -100%;
+    bottom: -100%;
 
     position: absolute;
     overflow: hidden;
@@ -657,8 +657,8 @@ body {
     overflow: hidden;
     .helperChatWindow {
         bottom: 30px;
-        bottom: calc(-100vh + 208px);
-        bottom: -100vh;
+        // bottom: calc(-100vh + 208px);
+        // bottom: -100vh;
 
         background-color: $a4;
         display: grid;
@@ -698,45 +698,7 @@ body {
 
         
     }
-    #helperDeskFooter {
-        bottom: 0;
-        bottom: -60px;
 
-    
-        background-color: $a1;
-        height: 30px;
-        display: block;
-        width: 100%;
-        z-index: 5;
-        position: absolute;
-        transition: bottom 1s;
-        box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
-    }
-    #helperDeskMenu {
-        bottom: -60px;
-        // bottom: 5px;
-
-        // Closed
-        width: 20px;
-        height: 20px;
-        box-shadow: none;
-
-        // Open
-        // width: calc(100vw - 15px);
-        // height: calc(100vh - 63px);
-        // box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
-
-        transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
-        position: absolute;
-        left: 5px;
-        background-color: $at4;
-        z-index: 6;
-        cursor: pointer;
-        border-radius: 4px;
-        &:hover {
-            background-color: $at6;
-        }
-    }
 }
 #sidebar {
     position: absolute;
@@ -752,7 +714,7 @@ body {
         display: grid;
         // display: none;
         position: absolute;
-        background-color: $a8;
+        background-color: $a6;
         width: 310px;
         top: 5px;
         height: calc(100% - 40px);
@@ -762,10 +724,11 @@ body {
         grid-template-rows: 40px 30px auto;
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
         grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
-
+        transition: background 1s;
+        &:hover {background-color: $a7;}
         #quickToolsHead {
             grid-area: QTtabs;
-            background-color: $a5;
+            background-color: $a4;
             overflow: hidden;
             padding: 5px 0 0 5px;
             display: flex;
@@ -781,23 +744,23 @@ body {
                 overflow: hidden;
                 transition: background .4s;
                 cursor: pointer;
-            }
-            span:hover {
-                background-color: $a2;
+                &:hover {
+                    background-color: $a2;
+                }
             }
             .openTab {
-                background-color: $a3;
+                background-color: $a2;
                 bottom: 0;
                 width: 30px;
                 transition: background .4s;
-            }
-            .openTab:hover {
-                background-color: $a3;
+                &:hover {
+                    background-color: $a2;
+                }
             }
         }
         #quickToolsTitle {
             grid-area: QTtitle;
-            background-color: $a3;
+            background-color: $a2;
             line-height: 30px;
             padding: 0 0 0 5px;
             font-size: 16px;
@@ -812,7 +775,45 @@ body {
     }
 }
 
+#helperDeskFooter {
+        bottom: 0;
+        // bottom: -60px;
 
+    
+        background-color: $a1;
+        height: 30px;
+        display: block;
+        width: 100%;
+        z-index: 5;
+        position: absolute;
+        transition: bottom 1s;
+        box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
+}
+#helperDeskMenu {
+        bottom: -60px;
+        bottom: 5px;
+
+        // Closed
+        width: 20px;
+        height: 20px;
+        box-shadow: none;
+
+        // Open
+        // width: calc(100vw - 15px);
+        // height: calc(100vh - 63px);
+        // box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
+
+        transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
+        position: absolute;
+        left: 5px;
+        background-color: $at7;
+        z-index: 6;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover {
+            background-color: $at9;
+        }
+}
 
 // KEYFRAMES ----------------------------------------------------------------------------------------------------------------------------
 
@@ -842,3 +843,34 @@ body {
 @media only screen and (max-width: 1920px) {
     
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+// To Do List:
+// - create Help Screen
+// - separate the admin footer to be its own component
+// - help desk as a flex box for chats
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+
