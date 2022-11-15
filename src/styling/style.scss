@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,31 +69,32 @@ $t9: hsl(200, 20%, 76%);
 
 // Accent Colors
 
-$a0: hsl(45, 40%,  4%);
-$a1: hsl(45, 40%, 12%);
-$a2: hsl(45, 40%, 20%);
-$a3: hsl(45, 40%, 28%);
-$a4: hsl(45, 40%, 36%);
-$a5: hsl(45, 40%, 44%);
-$a6: hsl(45, 40%, 52%);
-$a7: hsl(45, 40%, 60%);
-$a8: hsl(45, 40%, 68%);
-$a9: hsl(45, 40%, 76%);
+$a0: hsl(300, 40%,  4%);
+$a1: hsl(300, 40%, 12%);
+$a2: hsl(300, 40%, 20%);
+$a3: hsl(300, 40%, 28%);
+$a4: hsl(300, 40%, 36%);
+$a5: hsl(300, 40%, 44%);
+$a6: hsl(300, 40%, 52%);
+$a7: hsl(300, 40%, 60%);
+$a8: hsl(300, 40%, 68%);
+$a9: hsl(300, 40%, 76%);
 
 // Alert Colors
-$at0: hsl(310, 65%,  4%);
-$at1: hsl(310, 65%, 12%);
-$at2: hsl(310, 65%, 20%);
-$at3: hsl(310, 65%, 28%);
-$at4: hsl(310, 65%, 36%);
-$at5: hsl(310, 65%, 44%);
-$at6: hsl(310, 65%, 52%);
-$at7: hsl(310, 65%, 60%);
-$at8: hsl(310, 65%, 68%);
-$at9: hsl(310, 65%, 76%);
+$at0: hsl(190, 55%,  4%);
+$at1: hsl(190, 55%, 12%);
+$at2: hsl(190, 55%, 20%);
+$at3: hsl(190, 55%, 28%);
+$at4: hsl(190, 55%, 36%);
+$at5: hsl(190, 55%, 44%);
+$at6: hsl(190, 55%, 52%);
+$at7: hsl(190, 55%, 60%);
+$at8: hsl(190, 55%, 68%);
+$at9: hsl(190, 55%, 76%);
 
 
 // Z-Index Guide 
+// 14. 
 // 13. Total Popup
 // 12. Total Barrier:
 // 11. Navigation:
@@ -188,17 +184,27 @@ body {
 
         .progressNow {box-shadow: inset 0 0 0 2px white;}
 
+        // 0- THEME(base color, progress bar)
+        // 4- THEME(missed scheduled time)     
+        // 8- THEME(future scheduled time)
+
+        // 4- ACCENT(more than average work actions, +3)     
+        // 6- ACCENT(average work actions, +2)      
+        // 8- ACCENT(less than average work actions, +1)
+
+        // 5- ALERT(multiple break actions)     
+        // 7- ALERT(one break action)      
+        // 9- ALERT(no break action)
+
         td:nth-child(37) {background-color: $a4;}
         td:nth-child(38) {background-color: $a2;}
         td:nth-child(39) {background-color: $a4;}
         td:nth-child(40) {background-color: $a4;}
         td:nth-child(41) {background-color: $a6;}
-        td:nth-child(42) {background-color: $at4;}
-        td:nth-child(43) {background-color: $at4;}
-        td:nth-child(44) {background-color: $at4;}
-        td:nth-child(45) {background-color: $at4;}
-        // td:nth-child(X) {background-color: $X;}
-        // td:nth-child(X) {background-color: $X;}
+        td:nth-child(42) {background-color: $at7;}
+        td:nth-child(43) {background-color: $at7;}
+        td:nth-child(44) {background-color: $at7;}
+        td:nth-child(45) {background-color: $at7;}
 
         td:nth-child(49) {background-color: $a4;}
         td:nth-child(50) {background-color: $a4;}
@@ -220,14 +226,14 @@ body {
         td:nth-child(66) {background-color: $a4;}
         td:nth-child(67) {background-color: $a2;}
 
-        td:nth-child(70) {background-color: $at8;}
-        td:nth-child(71) {background-color: $at8;}
-        td:nth-child(72) {background-color: $at8;}
-        td:nth-child(73) {background-color: $at8;}
+        td:nth-child(70) {background-color: $at5;}
+        td:nth-child(71) {background-color: $at5;}
+        td:nth-child(72) {background-color: $at5;}
+        td:nth-child(73) {background-color: $at5;}
 
-        td:nth-child(79) {background-color: $at2;}
-        td:nth-child(80) {background-color: $at2;}
-        td:nth-child(81) {background-color: $at2;}
+        td:nth-child(79) {background-color: $at5;}
+        td:nth-child(80) {background-color: $at5;}
+        td:nth-child(81) {background-color: $at5;}
         td:nth-child(82) {background-color: $a4;}
         td:nth-child(83) {background-color: $a4;}
         td:nth-child(84) {background-color: $a6;}
@@ -247,25 +253,19 @@ body {
         td:nth-child(98) {background-color: $t6;}
         td:nth-child(99) {background-color: $t6;}
         td:nth-child(100) {background-color: $t6;}
-        // td:nth-child(X) {background-color: $X;}
-        // td:nth-child(X) {background-color: $X;}
-        // td:nth-child(X) {background-color: $X;}
-        // td:nth-child(X) {background-color: $X;}
-        // td:nth-child(X) {background-color: $X;}
-        // td:nth-child(X) {background-color: $X;}
 
-        td:nth-child(133) {background-color: $at8;}
-        td:nth-child(134) {background-color: $at8;}
-        td:nth-child(135) {background-color: $at8;}
-        td:nth-child(136) {background-color: $at8;}
-        td:nth-child(137) {background-color: $at8;}
-        td:nth-child(138) {background-color: $at8;}
-        td:nth-child(139) {background-color: $at8;}
-        td:nth-child(140) {background-color: $at8;}
-        td:nth-child(141) {background-color: $at8;}
-        td:nth-child(142) {background-color: $at8;}
-        td:nth-child(143) {background-color: $at8;}
-        td:nth-child(144) {background-color: $at8;}
+        td:nth-child(133) {background-color: $at9;}
+        td:nth-child(134) {background-color: $at9;}
+        td:nth-child(135) {background-color: $at9;}
+        td:nth-child(136) {background-color: $at9;}
+        td:nth-child(137) {background-color: $at9;}
+        td:nth-child(138) {background-color: $at9;}
+        td:nth-child(139) {background-color: $at9;}
+        td:nth-child(140) {background-color: $at9;}
+        td:nth-child(141) {background-color: $at9;}
+        td:nth-child(142) {background-color: $at9;}
+        td:nth-child(143) {background-color: $at9;}
+        td:nth-child(144) {background-color: $at9;}
         
         // 10 hour shift: 6h40m work (64), 3h20m break (32)
     }
@@ -588,7 +588,66 @@ body {
         &:hover {background-color: $t6;}
     }
 }
+#helpScreen {
+    top: 48px;
+    top: -100%;
 
+    width: 250px;
+    height: 45vh;
+    background-color: $a6;
+    position: absolute;
+    right: 5px;
+    z-index: 8;
+    display: grid;
+    grid-template-rows: 30px calc(45vh - 30px);
+    grid-template-areas: "head" "body";
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+    transition: background 1s,  top 1s;
+    &:hover {background-color: $a8;}
+    section:nth-child(1) {
+        grid-area: head;
+        background-color: $a4;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30px calc(100% - 60px) 30px;
+        grid-template-rows: 30px;
+        grid-template-areas: "help element x";
+        cursor: pointer;
+        div {line-height: 30px; text-align: center;}
+        div:nth-child(1) {
+            grid-area: help; 
+            font-size: 20px; 
+            color: $a9; 
+            font-weight: 800;
+        }
+        div:nth-child(2) {
+            grid-area: element;  
+            font-size: 14px; 
+            color: white; 
+            letter-spacing: .5px; 
+            font-weight: 600; 
+            text-align: left;
+        }
+        div:nth-child(3) {
+            grid-area: x; 
+            font-size: 14px; 
+            color: $at1; 
+            font-weight: 600; 
+            line-height: 20px;
+            width: 20px; 
+            height: 20px;
+            background-color: $at6;
+            border-radius: 4px;
+            margin: 5px;
+            transition: background 1s;
+            &:hover {background-color: $at7;}
+        }
+    }
+    section:nth-child(2) {
+        grid-area: body;
+        width: 100%;
+    }
+}
 
 
 // ADMIN --------------------------------------------------------------------------------------------------------------------------------
@@ -774,46 +833,58 @@ body {
         }
     }
 }
-
-#helperDeskFooter {
-        bottom: 0;
-        // bottom: -60px;
+#adminFooter {
+    bottom: 0;
+    // bottom: -60px;
 
     
-        background-color: $a1;
-        height: 30px;
-        display: block;
-        width: 100%;
-        z-index: 5;
-        position: absolute;
-        transition: bottom 1s;
-        box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
-}
-#helperDeskMenu {
-        bottom: -60px;
-        bottom: 5px;
-
+    background-color: $at1;
+    height: 30px;
+    display: block;
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    transition: bottom 1s;
+    box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
+    #adminFooterMenu {
+                
         // Closed
         width: 20px;
         height: 20px;
         box-shadow: none;
-
+        
         // Open
         // width: calc(100vw - 15px);
         // height: calc(100vh - 63px);
         // box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
-
+        
+        bottom: 5px;
         transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
         position: absolute;
         left: 5px;
-        background-color: $at7;
-        z-index: 6;
+        background-color: $at4;
         cursor: pointer;
         border-radius: 4px;
-        &:hover {
-            background-color: $at9;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: calc(100% - 40px) 40px;
+        grid-template-areas: "content" "button";
+        &:hover {background-color: $at5;}
+
+        #adminFooterMenuContent {
+            background-color: $at8;
+            grid-area: content;
+            border-radius: 4px 4px 0 0;
+            transition: background 1s;
+            cursor: default;
+            overflow: hidden;
+            box-shadow: inset 0 -2px 6px 2px rgba(0, 0, 0, 0.4);
+            z-index: inherit;
+            &:hover {background-color: $at9;}
         }
+    }
 }
+
 
 // KEYFRAMES ----------------------------------------------------------------------------------------------------------------------------
 
@@ -846,8 +917,6 @@ body {
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 // To Do List:
-// - create Help Screen
-// - separate the admin footer to be its own component
 // - help desk as a flex box for chats
 // 
 // 

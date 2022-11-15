@@ -8,10 +8,8 @@ export default function HelpDesk() {return (
             <section></section>
         </div>
         
-        <div id='helperDeskFooter'></div>
-        <div id='helperDeskMenu'>
             
-        </div>
+    
     </div>)}
 
 
