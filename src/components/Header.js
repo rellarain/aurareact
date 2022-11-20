@@ -1,31 +1,29 @@
 import React from 'react';
 
-export default function Header() {return (
+export default function Header() {
+    
+    const displayName = "Rain Walker";
+    const regionID = "1600";
+    const districtID = "0000";
+    const communityID = "0000";
+    const clusterID = "0000";
+    
+    
+    
+    return (
     <header id="userHeader">
-        {/* image element, thumbnail for profile */}
-        <img src="" alt='User Thumbnail'/>
-        {/* display name, shows the selected way to refer to the user */}
-        <div id='userName'>Display Name</div>
-
-        {/* ID Link: 0000-0000-0000-0000
-                First 4: Links the academy roster which lists regions or all included users
-                Second 4: links the region roster which lists communities or all included users
-                Third 4: Links the community roster which lists clusters or all included users
-                Final 4: Links the cluster roster which lists all included users
-        */}
+        <img src="" alt={displayName}/>
+        <div id='userName'>{displayName}</div>
         <div id='userID'>
-            <span>0000</span>-
-            <span>0000</span>-
-            <span>0000</span>-
-            <span>0000</span>
+            <span>{regionID}</span>-
+            {/* academy link: academy info and region list */}
+            <span>{districtID}</span>-
+            {/* region link: region info and district list */}
+            <span>{communityID}</span>-
+            {/* district link: district info and community list */}
+            <span>{clusterID}</span>
+            {/* community link: community info and member list */}
         </div>
-
-
-        {/* Progress: 
-            Percentage portions: table columns that represent information on a segmented line
-                Work Day: 
-                Progress (Assessment): 
-        */}
         <table id='userProgress'>
             <tr>
                 <td alt="12:00 AM"></td>

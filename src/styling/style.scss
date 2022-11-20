@@ -56,16 +56,16 @@ table {
 // 3 hues roughly separated by ~120 degrees
 
 // Theme Colors
-$t0: hsl(200, 20%,  4%);
-$t1: hsl(200, 20%, 12%);
-$t2: hsl(200, 20%, 20%);
-$t3: hsl(200, 20%, 28%);
-$t4: hsl(200, 20%, 36%);
-$t5: hsl(200, 20%, 44%);
-$t6: hsl(200, 20%, 52%);
-$t7: hsl(200, 20%, 60%);
-$t8: hsl(200, 20%, 68%);
-$t9: hsl(200, 20%, 76%);
+$t0: hsl(210, 20%,  4%);
+$t1: hsl(210, 20%, 12%);
+$t2: hsl(210, 20%, 20%);
+$t3: hsl(210, 20%, 28%);
+$t4: hsl(210, 20%, 36%);
+$t5: hsl(210, 20%, 44%);
+$t6: hsl(210, 20%, 52%);
+$t7: hsl(210, 20%, 60%);
+$t8: hsl(210, 20%, 68%);
+$t9: hsl(210, 20%, 76%);
 
 // Accent Colors
 
@@ -81,16 +81,16 @@ $a8: hsl(300, 40%, 68%);
 $a9: hsl(300, 40%, 76%);
 
 // Alert Colors
-$at0: hsl(190, 55%,  4%);
-$at1: hsl(190, 55%, 12%);
-$at2: hsl(190, 55%, 20%);
-$at3: hsl(190, 55%, 28%);
-$at4: hsl(190, 55%, 36%);
-$at5: hsl(190, 55%, 44%);
-$at6: hsl(190, 55%, 52%);
-$at7: hsl(190, 55%, 60%);
-$at8: hsl(190, 55%, 68%);
-$at9: hsl(190, 55%, 76%);
+$at0: hsl(75, 55%,  4%);
+$at1: hsl(75, 55%, 12%);
+$at2: hsl(75, 55%, 20%);
+$at3: hsl(75, 55%, 28%);
+$at4: hsl(75, 55%, 36%);
+$at5: hsl(75, 55%, 44%);
+$at6: hsl(75, 55%, 52%);
+$at7: hsl(75, 55%, 60%);
+$at8: hsl(75, 55%, 68%);
+$at9: hsl(75, 55%, 76%);
 
 
 // Z-Index Guide 
@@ -570,22 +570,22 @@ body {
         bottom: 5px;
 
         // Minimized
-        bottom: calc(-100% + 85px);
+        // bottom: calc(-100% + 85px);
 
         // Tabs
-        width: calc(100% - 55px);
+        // width: calc(100% - 55px);
         
         height: calc(100% - 60px);
         border-radius: 4px;
         display: block;
         position: absolute;
         right: 5px;
-        background-color: $t5;
+        background-color: $t6;
         padding: 5px;
         z-index: 4;
         transition: background 1s, height 1s, bottom 1s, width 1s;
         cursor: default;
-        &:hover {background-color: $t6;}
+        &:hover {background-color: $t8;}
     }
 }
 #helpScreen {
@@ -835,7 +835,7 @@ body {
 }
 #adminFooter {
     bottom: 0;
-    // bottom: -60px;
+    bottom: -60px;
 
     
     background-color: $at1;
