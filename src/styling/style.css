@@ -57,7 +57,7 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #daa9da;
+  background-color: #b654b6;
 }
 
 #userHeader {
@@ -419,14 +419,14 @@ body {
 #navCrop {
   width: 30px;
   height: 30px;
+  -webkit-transition: height 1s, width 1s 1s;
+  transition: height 1s, width 1s 1s;
   overflow: clip;
   border-radius: 5px;
   position: fixed;
   top: 5px;
   right: 5px;
   z-index: 10;
-  -webkit-transition: height 1s, width 1.5s;
-  transition: height 1s, width 1.5s;
 }
 
 #navCrop #navPanel {
@@ -632,8 +632,7 @@ body {
 }
 
 #userDash {
-  width: calc(100vw - 320px);
-  width: 100%;
+  width: calc(100vw - 325px);
   background: #6c859d;
   position: fixed;
   top: 48px;
@@ -909,7 +908,6 @@ body {
 #adminConsole {
   display: block;
   bottom: 50px;
-  bottom: -100%;
   position: absolute;
   overflow: hidden;
   height: calc(100% - 60px);
@@ -936,7 +934,6 @@ body {
 
 #adminConsole #adminConsoleDesk {
   width: calc(100% - 290px);
-  width: calc(100% - 30px);
   display: block;
   height: calc(100% - 20px);
   position: absolute;
@@ -971,7 +968,7 @@ body {
   left: 15px;
   top: 5px;
   border-radius: 4px;
-  background-color: #642b64;
+  color: #daa9da;
   cursor: default;
 }
 
@@ -1052,7 +1049,7 @@ body {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  background-color: #b654b6;
+  background-color: #c270c2;
   width: 310px;
   top: 5px;
   height: calc(100% - 40px);
@@ -1069,14 +1066,14 @@ body {
 }
 
 #sidebar #quickTools:hover {
-  background-color: #c270c2;
+  background-color: #ce8dce;
 }
 
 #sidebar #quickTools #quickToolsHead {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: QTtabs;
-  background-color: #813781;
+  background-color: #c270c2;
   overflow: hidden;
   padding: 5px 0 0 5px;
   display: -webkit-box;
@@ -1088,7 +1085,7 @@ body {
   height: 35px;
   width: 30px;
   display: inline-block;
-  background-color: #2b122b;
+  background-color: #471f47;
   position: relative;
   bottom: -5px;
   margin-right: 4px;
@@ -1100,11 +1097,11 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead span:hover {
-  background-color: #471f47;
+  background-color: #642b64;
 }
 
 #sidebar #quickTools #quickToolsHead .openTab {
-  background-color: #471f47;
+  background-color: #642b64;
   bottom: 0;
   width: 30px;
   -webkit-transition: background .4s;
@@ -1112,14 +1109,14 @@ body {
 }
 
 #sidebar #quickTools #quickToolsHead .openTab:hover {
-  background-color: #471f47;
+  background-color: #642b64;
 }
 
 #sidebar #quickTools #quickToolsTitle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: QTtitle;
-  background-color: #471f47;
+  background-color: #642b64;
   line-height: 30px;
   padding: 0 0 0 5px;
   font-size: 16px;
@@ -1136,7 +1133,6 @@ body {
 
 #adminFooter {
   bottom: 0;
-  bottom: -60px;
   background-color: #272f0e;
   height: 30px;
   display: block;
@@ -1168,8 +1164,8 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: calc(100% - 40px) 40px;
-      grid-template-rows: calc(100% - 40px) 40px;
+  -ms-grid-rows: calc(100% - 30px) 30px;
+      grid-template-rows: calc(100% - 30px) 30px;
       grid-template-areas: "content" "button";
 }
 
