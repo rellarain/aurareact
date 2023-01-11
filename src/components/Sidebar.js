@@ -14,7 +14,7 @@ function QuickTools() {return (
             <span alt='Agenda' className='openTab'></span>
             <span alt='Tracking'></span>
             <span alt='Library'></span>
-            <span alt='X'></span>
+            <span alt='Training'></span>
             <span alt='X'></span>
             <span alt='X'></span>
             <span alt='Break Time'></span>

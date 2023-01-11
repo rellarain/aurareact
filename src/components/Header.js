@@ -15,11 +15,11 @@ export default function Header() {
         <img src="" alt={displayName}/>
         <div id='userName'>{displayName}</div>
         <div id='userID'>
-            <span>{regionID}</span>-
+            <span>{regionID}</span>.
             {/* academy link: academy info and region list */}
-            <span>{districtID}</span>-
+            <span>{districtID}</span>.
             {/* region link: region info and district list */}
-            <span>{communityID}</span>-
+            <span>{communityID}</span>.
             {/* district link: district info and community list */}
             <span>{clusterID}</span>
             {/* community link: community info and member list */}

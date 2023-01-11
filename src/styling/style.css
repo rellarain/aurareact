@@ -57,19 +57,19 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #b654b6;
+  background-color: #471f47;
 }
 
 #userHeader {
-  background: #29333d;
+  background: #6e5849;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 48px;
   z-index: 9;
-  -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px auto;
@@ -98,20 +98,20 @@ body {
   line-height: 16px;
   margin: 4px 0 0 5px;
   font-weight: 600;
-  color: #b6c2ce;
+  color: #251d18;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
   letter-spacing: 1px;
   text-shadow: none;
-  -webkit-transition: color .4s, text-shadow 1s;
-  transition: color .4s, text-shadow 1s;
+  -webkit-transition: color .4s, text-shadow .4s;
+  transition: color .4s, text-shadow .4s;
 }
 
 #userHeader #userName:hover {
-  color: white;
-  text-shadow: 0 0 4px 2px #daa9da;
+  color: #cebfb6;
+  text-shadow: 0 0 3px #3d3129;
 }
 
 #userHeader #userID {
@@ -124,18 +124,19 @@ body {
   width: max-content;
   font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #6c859d;
+  color: #3d3129;
 }
 
 #userHeader #userID span {
   cursor: pointer;
   margin: 0 2px;
-  -webkit-transition: color .4s;
-  transition: color .4s;
+  -webkit-transition: color .4s, text-shadow .4s;
+  transition: color .4s, text-shadow .4s;
 }
 
 #userHeader #userID span:hover {
-  color: #9dadbe;
+  color: #ad9585;
+  text-shadow: 0 0 2px #3d3129;
 }
 
 #userHeader #userProgress {
@@ -143,7 +144,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #080a0c;
+  background-color: #3d3129;
   width: 100%;
 }
 
@@ -152,268 +153,280 @@ body {
           box-shadow: inset 0 0 0 2px white;
 }
 
+#userHeader #userProgress td:nth-child(34) {
+  background-color: #9d806c;
+}
+
+#userHeader #userProgress td:nth-child(35) {
+  background-color: #9d806c;
+}
+
+#userHeader #userProgress td:nth-child(36) {
+  background-color: #9d806c;
+}
+
 #userHeader #userProgress td:nth-child(37) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(38) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(39) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(40) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(41) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(42) {
-  background-color: #b5d161;
+  background-color: #d47535;
 }
 
 #userHeader #userProgress td:nth-child(43) {
-  background-color: #b5d161;
+  background-color: #d47535;
 }
 
 #userHeader #userProgress td:nth-child(44) {
-  background-color: #b5d161;
+  background-color: #d47535;
 }
 
 #userHeader #userProgress td:nth-child(45) {
-  background-color: #b5d161;
+  background-color: #d47535;
 }
 
 #userHeader #userProgress td:nth-child(49) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(50) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(51) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(52) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(53) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(54) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(55) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(56) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(57) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(58) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(59) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(60) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(61) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(62) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(63) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(64) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(65) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(66) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(67) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(70) {
-  background-color: #8fae32;
+  background-color: #e2a378;
 }
 
 #userHeader #userProgress td:nth-child(71) {
-  background-color: #8fae32;
+  background-color: #e2a378;
 }
 
 #userHeader #userProgress td:nth-child(72) {
-  background-color: #8fae32;
+  background-color: #e2a378;
 }
 
 #userHeader #userProgress td:nth-child(73) {
-  background-color: #8fae32;
+  background-color: #e2a378;
 }
 
 #userHeader #userProgress td:nth-child(79) {
-  background-color: #8fae32;
+  background-color: #e2a378;
 }
 
 #userHeader #userProgress td:nth-child(80) {
-  background-color: #8fae32;
+  background-color: #e2a378;
 }
 
 #userHeader #userProgress td:nth-child(81) {
-  background-color: #8fae32;
+  background-color: #e2a378;
 }
 
 #userHeader #userProgress td:nth-child(82) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(83) {
-  background-color: #813781;
+  background-color: #b654b6;
 }
 
 #userHeader #userProgress td:nth-child(84) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(85) {
-  background-color: #b654b6;
+  background-color: #ce8dce;
 }
 
 #userHeader #userProgress td:nth-child(86) {
-  background-color: #813781;
-}
-
-#userHeader #userProgress td:nth-child(87) {
-  background-color: #813781;
-}
-
-#userHeader #userProgress td:nth-child(88) {
   background-color: #b654b6;
 }
 
+#userHeader #userProgress td:nth-child(87) {
+  background-color: #b654b6;
+}
+
+#userHeader #userProgress td:nth-child(88) {
+  background-color: #ce8dce;
+}
+
 #userHeader #userProgress td:nth-child(89) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(90) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(91) {
-  background-color: #471f47;
+  background-color: #813781;
 }
 
 #userHeader #userProgress td:nth-child(92) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(93) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(94) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(95) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(96) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(97) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(98) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(99) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(100) {
-  background-color: #6c859d;
+  background-color: #beaa9d;
 }
 
 #userHeader #userProgress td:nth-child(133) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(134) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(135) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(136) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(137) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(138) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(139) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(140) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(141) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(142) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(143) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #userHeader #userProgress td:nth-child(144) {
-  background-color: #d3e3a0;
+  background-color: #975020;
 }
 
 #navCrop {
@@ -483,6 +496,7 @@ body {
   grid-area: navPage;
   height: 22px;
   line-height: 22px;
+  vertical-align: middle;
   padding: 0 0 0 5px;
   background-color: #642b64;
   border-radius: 4px;
@@ -497,26 +511,6 @@ body {
   font-weight: 600;
   -webkit-transition: background .4s, top .5s;
   transition: background .4s, top .5s;
-}
-
-#navCrop #navPage:hover {
-  background-color: #813781;
-}
-
-#navCrop #navPage::-webkit-input-placeholder {
-  color: #daa9da;
-}
-
-#navCrop #navPage:-ms-input-placeholder {
-  color: #daa9da;
-}
-
-#navCrop #navPage::-ms-input-placeholder {
-  color: #daa9da;
-}
-
-#navCrop #navPage::placeholder {
-  color: #daa9da;
 }
 
 #navCrop #navBody {
@@ -603,25 +597,14 @@ body {
   border-radius: 4px;
   width: 15px;
   overflow-x: visible;
-  cursor: pointer;
-}
-
-#navCrop #navBody::-webkit-scrollbar-track {
   background-color: #9d439d;
-  width: 10px;
+  cursor: pointer;
 }
 
 #navCrop #navBody::-webkit-scrollbar-button {
   background-color: #813781;
   border-radius: 4px 4px 0 0;
-}
-
-#navCrop #navBody::-webkit-scrollbar-button:vertical:decrement {
-  border-radius: 4px 4px 0 0;
-}
-
-#navCrop #navBody::-webkit-scrollbar-button:vertical:increment {
-  border-radius: 0 0 4px 4px;
+  height: 0;
 }
 
 #navCrop #navBody::-webkit-scrollbar-thumb {
@@ -632,8 +615,9 @@ body {
 }
 
 #userDash {
-  width: calc(100vw - 325px);
-  background: #6c859d;
+  width: calc(100vw - 330px);
+  width: 100%;
+  background: #beaa9d;
   position: fixed;
   top: 48px;
   right: 0;
@@ -647,176 +631,9 @@ body {
           box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
 }
 
-#userConsole {
-  display: -ms-grid;
-  display: grid;
-  top: 0;
-  top: -100vh;
-  width: calc(100% - 10px);
-  position: absolute;
-  z-index: 4;
-  height: calc(100vh - 63px);
-  margin: 10px 5px 5px 5px;
-  border-radius: 4px;
-  overflow: clip;
-  background-color: #181f25;
-  -webkit-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.4);
-  -webkit-transition: top 1s, background 1s;
-  transition: top 1s, background 1s;
-  cursor: pointer;
-  -ms-grid-columns: 40px calc(100% - 40px);
-      grid-template-columns: 40px calc(100% - 40px);
-  -ms-grid-rows: 40px calc(100% - 40px);
-      grid-template-rows: 40px calc(100% - 40px);
-      grid-template-areas: "consoleHead consoleHead" "consoleTabs consoleInfo";
-}
-
-#userConsole:hover {
-  background-color: #29333d;
-}
-
-#userConsole #userConsoleHead {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: consoleHead;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 8px 32px;
-      grid-template-rows: 8px 32px;
-  -ms-grid-columns: calc(100% - 96px) 32px 32px 32px;
-      grid-template-columns: calc(100% - 96px) 32px 32px 32px;
-      grid-template-areas: "progress progress progress progress" "title pause help close";
-}
-
-#userConsole #userConsoleHead #userConsoleProgress {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: progress;
-  background-color: #a6c841;
-  width: 69%;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-}
-
-#userConsole #userConsoleHead #userConsoleTitle {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: title;
-  line-height: 40px;
-  font-size: 20px;
-  vertical-align: middle;
-  color: #b6c2ce;
-  font-weight: 700;
-  margin-left: 5px;
-  letter-spacing: 2px;
-}
-
-#userConsole #userConsoleHead #userConsolePause {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: pause;
-  height: 27px;
-  width: 27px;
-  margin: 5px 5px 0 0;
-  background-color: #9d439d;
-  border-radius: 4px;
-  -webkit-transition: background 1s;
-  transition: background 1s;
-}
-
-#userConsole #userConsoleHead #userConsolePause:hover {
-  background-color: #c270c2;
-}
-
-#userConsole #userConsoleHead #userConsoleHelp {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: help;
-  height: 27px;
-  width: 27px;
-  margin: 5px 5px 0 0;
-  background-color: #9d439d;
-  border-radius: 4px;
-  line-height: 27px;
-  font-size: 20px;
-  color: #0e060e;
-  font-weight: 700;
-  text-align: center;
-  -webkit-transition: background 1s;
-  transition: background 1s;
-}
-
-#userConsole #userConsoleHead #userConsoleHelp:hover {
-  background-color: #c270c2;
-}
-
-#userConsole #userConsoleHead #userConsoleClose {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: close;
-  height: 27px;
-  width: 27px;
-  margin: 5px 5px 0 0;
-  background-color: #642b64;
-  border-radius: 4px;
-  -webkit-transition: background 1s;
-  transition: background 1s;
-}
-
-#userConsole #userConsoleHead #userConsoleClose:hover {
-  background-color: #9d439d;
-}
-
-#userConsole #userConsoleTabs {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: consoleTabs;
-  width: 30px;
-  height: calc(100% - 65px);
-  margin: 25px 5px 5px 5px;
-  background-color: #9d439d;
-  border-radius: 4px;
-  cursor: default;
-}
-
-#userConsole #userConsoleInfo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: consoleInfo;
-  width: calc(100% - 5px);
-  height: calc(100% - 50px);
-  margin: 10px 5px 5px 0;
-  background-color: #394756;
-  border-radius: 4px;
-  cursor: default;
-}
-
-#userConsole #userConsoleDesk {
-  width: calc(100% - 20px);
-  bottom: 5px;
-  height: calc(100% - 60px);
-  border-radius: 4px;
-  display: block;
-  position: absolute;
-  right: 5px;
-  background-color: #6c859d;
-  padding: 5px;
-  z-index: 4;
-  -webkit-transition: background 1s, height 1s, bottom 1s, width 1s;
-  transition: background 1s, height 1s, bottom 1s, width 1s;
-  cursor: default;
-}
-
-#userConsole #userConsoleDesk:hover {
-  background-color: #9dadbe;
-}
-
 #helpScreen {
   top: 48px;
-  top: -100%;
+  top: -80vh;
   width: 250px;
   height: 45vh;
   background-color: #b654b6;
@@ -859,10 +676,10 @@ body {
 
 #helpScreen section:nth-child(1) div:nth-child(1) {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: help;
   font-size: 20px;
-  color: #daa9da;
+  color: white;
   font-weight: 800;
 }
 
@@ -871,7 +688,7 @@ body {
   -ms-grid-column: 2;
   grid-area: element;
   font-size: 14px;
-  color: white;
+  color: #daa9da;
   letter-spacing: .5px;
   font-weight: 600;
   text-align: left;
@@ -882,12 +699,12 @@ body {
   -ms-grid-column: 3;
   grid-area: x;
   font-size: 14px;
-  color: #272f0e;
+  color: #2b122b;
   font-weight: 600;
   line-height: 20px;
   width: 20px;
   height: 20px;
-  background-color: #a6c841;
+  background-color: #c270c2;
   border-radius: 4px;
   margin: 5px;
   -webkit-transition: background 1s;
@@ -895,7 +712,7 @@ body {
 }
 
 #helpScreen section:nth-child(1) div:nth-child(3):hover {
-  background-color: #b5d161;
+  background-color: #daa9da;
 }
 
 #helpScreen section:nth-child(2) {
@@ -905,97 +722,232 @@ body {
   width: 100%;
 }
 
-#adminConsole {
+#userConsole {
+  bottom: 20px;
+  bottom: -100%;
   display: block;
-  bottom: 50px;
   position: absolute;
   overflow: hidden;
-  height: calc(100% - 60px);
-  width: calc(100% - 20px);
+  height: calc(100% - 40px);
+  width: calc(100% - 30px);
   border-radius: 5px;
-  -webkit-transition: bottom 2s, background 1s, -webkit-box-shadow 1s;
-  transition: bottom 2s, background 1s, -webkit-box-shadow 1s;
-  transition: bottom 2s, background 1s, box-shadow 1s;
-  transition: bottom 2s, background 1s, box-shadow 1s, -webkit-box-shadow 1s;
+  -webkit-transition: bottom 1s, background 1s, -webkit-box-shadow 1s;
+  transition: bottom 1s, background 1s, -webkit-box-shadow 1s;
+  transition: bottom 1s, background 1s, box-shadow 1s;
+  transition: bottom 1s, background 1s, box-shadow 1s, -webkit-box-shadow 1s;
   left: 10px;
   font-size: 14px;
   z-index: 4;
   cursor: pointer;
-  -webkit-box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #2b122b;
-          box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #2b122b;
-  background-color: #2b122b;
+  -webkit-box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #3d3129;
+          box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #3d3129;
+  padding: 5px;
+  background-color: #3d3129;
 }
 
-#adminConsole:hover {
-  background-color: #471f47;
-  -webkit-box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #471f47;
-          box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #471f47;
+#userConsole #userConsoleProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  background-color: #b96227;
+  height: 8px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
-#adminConsole #adminConsoleDesk {
-  width: calc(100% - 290px);
+#userConsole #userConsoleTitle {
+  display: -ms-grid;
+  display: grid;
+  width: calc(100% - 30px);
+  color: #cebfb6;
+  top: 13px;
+  right: 5px;
+  position: absolute;
+  height: 25px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+#userConsole #userConsoleDesk {
+  width: calc(100% - 30px);
+  height: calc(100% - 68px);
   display: block;
-  height: calc(100% - 20px);
   position: absolute;
   right: 5px;
   padding: 5px;
-  -webkit-box-shadow: inset 0 0 0 5px #b654b6;
-          box-shadow: inset 0 0 0 5px #b654b6;
-  overflow: hidden;
-  top: 5px;
-  -webkit-transition: width 1s, background 1s, -webkit-box-shadow 1s;
-  transition: width 1s, background 1s, -webkit-box-shadow 1s;
-  transition: width 1s, background 1s, box-shadow 1s;
-  transition: width 1s, background 1s, box-shadow 1s, -webkit-box-shadow 1s;
-  background-color: #b654b6;
+  -webkit-box-shadow: inset 0 0 0 5px #9d806c;
+          box-shadow: inset 0 0 0 5px #9d806c;
+  bottom: 5px;
+  -webkit-transition: width 1s, background .4s, height 1s, -webkit-box-shadow .4s;
+  transition: width 1s, background .4s, height 1s, -webkit-box-shadow .4s;
+  transition: width 1s, background .4s, box-shadow .4s, height 1s;
+  transition: width 1s, background .4s, box-shadow .4s, height 1s, -webkit-box-shadow .4s;
+  background-color: #9d806c;
   border-radius: 4px;
   cursor: default;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 5;
 }
 
-#adminConsole #adminConsoleDesk:hover {
-  background-color: #c270c2;
-  -webkit-box-shadow: inset 0 0 0 5px #c270c2;
-          box-shadow: inset 0 0 0 5px #c270c2;
+#userConsole #userConsoleDesk::-webkit-scrollbar {
+  display: none;
 }
 
-#adminConsole #adminConsoleMeta {
+#userConsole #userConsoleDesk:hover {
+  background-color: #cebfb6;
+  -webkit-box-shadow: inset 0 0 0 5px #cebfb6;
+          box-shadow: inset 0 0 0 5px #cebfb6;
+}
+
+#userConsole #userConsoleMeta {
   display: block;
-  height: calc(100% - 20px);
-  width: calc(100% - 30px);
+  height: calc(100% - 103px);
+  width: 240px;
   padding: 5px;
-  overflow: hidden;
   position: absolute;
-  left: 15px;
-  top: 5px;
+  left: 20px;
+  bottom: 40px;
   border-radius: 4px;
-  color: #daa9da;
+  background-color: #6e5849;
+  color: #cebfb6;
   cursor: default;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#userConsole #userConsoleMeta::-webkit-scrollbar {
+  display: none;
+}
+
+#userConsole #userConsoleHelp {
+  height: 20px;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+  width: 240px;
+  background-color: #ce8dce;
+  border-radius: 4px;
+  z-index: inherit;
+  overflow: hidden;
+  padding: 5px;
+  cursor: default;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: calc(100% - 20px) 30px;
+      grid-template-rows: calc(100% - 20px) 30px;
+      grid-template-areas: "content" "button";
+}
+
+#userConsole #userConsoleHelp #userConsoleHelpContent {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: content;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+}
+
+#userConsole #userConsoleHelp #userConsoleHelpContent::-webkit-scrollbar {
+  display: none;
+}
+
+#userConsole #userConsoleHelp #userConsoleHelpButton {
+  background-color: #813781;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: button;
+  position: absolute;
+  width: 240px;
+  height: 20px;
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 5px #ce8dce;
+          box-shadow: 0 0 0 5px #ce8dce;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  -ms-grid-columns: 20px 235px;
+      grid-template-columns: 20px 235px;
+      grid-template-areas: "? help";
+}
+
+#userConsole #userConsoleHelp #userConsoleHelpButton:hover {
+  background-color: #9d439d;
+}
+
+#userConsole #userConsoleHelp #userConsoleHelpButton span {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#userConsole #userConsoleHelp #userConsoleHelpButton span:nth-child(1) {
+  text-align: center;
+  font-size: 18px;
+  color: #c270c2;
+}
+
+#userConsole #userConsoleHelp #userConsoleHelpButton span:nth-child(2) {
+  text-align: left;
+  color: #daa9da;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#userConsole #userConsoleClose {
+  top: 13px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background-color: #9d439d;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+#userConsole #userConsoleClose:hover {
+  background-color: #c270c2;
 }
 
 #helperDesk {
-  display: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  right: -1890px;
+  position: absolute;
+  top: 58px;
+  height: calc(100vh - 68px);
+  width: 1895px;
+  -webkit-transition: right 1s;
+  transition: right 1s;
   z-index: 5;
-  overflow: hidden;
 }
 
 #helperDesk .helperChatWindow {
-  bottom: 30px;
   background-color: #813781;
   display: -ms-grid;
   display: grid;
   width: 200px;
-  height: calc(100vh - 98px);
-  right: 5px;
-  -webkit-transition: bottom 1s,background 1s;
-  transition: bottom 1s,background 1s;
-  position: absolute;
-  border-radius: 4px 4px 0 0;
-  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
+  height: calc(100vh - 68px);
+  bottom: 10px;
+  -webkit-transition: right 1s,background 1s;
+  transition: right 1s,background 1s;
+  position: relative;
+  border-radius: 4px;
   z-index: 5;
+  margin: 10px 5px 10px 5px;
   overflow: hidden;
-  -ms-grid-rows: 80px 4fr 5fr;
-      grid-template-rows: 80px 4fr 5fr;
+  -ms-grid-rows: 80px 4fr 6fr;
+      grid-template-rows: 80px 4fr 6fr;
   -ms-grid-columns: 200px;
       grid-template-columns: 200px;
       grid-template-areas: "head" "chat" "tool";
@@ -1003,7 +955,7 @@ body {
 
 #helperDesk .helperChatWindow section:nth-child(1) {
   display: block;
-  background-color: #471f47;
+  background-color: #642b64;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: head;
@@ -1013,7 +965,7 @@ body {
 }
 
 #helperDesk .helperChatWindow section:nth-child(1):nth-child(1):hover {
-  background-color: #642b64;
+  background-color: #9d439d;
 }
 
 #helperDesk .helperChatWindow section:nth-child(2) {
@@ -1049,24 +1001,18 @@ body {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  background-color: #c270c2;
+  background-color: #ce8dce;
   width: 310px;
-  top: 5px;
-  height: calc(100% - 40px);
+  top: 10px;
+  height: calc(100% - 20px);
   border-radius: 4px;
   overflow: hidden;
-  left: 5px;
+  left: 10px;
   -ms-grid-rows: 40px 30px auto;
       grid-template-rows: 40px 30px auto;
   -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
       grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
-  -webkit-transition: background 1s;
-  transition: background 1s;
-}
-
-#sidebar #quickTools:hover {
-  background-color: #ce8dce;
 }
 
 #sidebar #quickTools #quickToolsHead {
@@ -1129,66 +1075,5 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: QTpanel;
-}
-
-#adminFooter {
-  bottom: 0;
-  background-color: #272f0e;
-  height: 30px;
-  display: block;
-  width: 100%;
-  z-index: 4;
-  position: absolute;
-  -webkit-transition: bottom 1s;
-  transition: bottom 1s;
-  -webkit-box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.4);
-}
-
-#adminFooter #adminFooterMenu {
-  width: 20px;
-  height: 20px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  bottom: 5px;
-  -webkit-transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
-  transition: width 1s, height 1s, background 1s, bottom 1s, -webkit-box-shadow 1s;
-  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s;
-  transition: width 1s, height 1s, background 1s, bottom 1s, box-shadow 1s, -webkit-box-shadow 1s;
-  position: absolute;
-  left: 5px;
-  background-color: #758e29;
-  cursor: pointer;
-  border-radius: 4px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: calc(100% - 30px) 30px;
-      grid-template-rows: calc(100% - 30px) 30px;
-      grid-template-areas: "content" "button";
-}
-
-#adminFooter #adminFooterMenu:hover {
-  background-color: #8fae32;
-}
-
-#adminFooter #adminFooterMenu #adminFooterMenuContent {
-  background-color: #c4da81;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: content;
-  border-radius: 4px 4px 0 0;
-  -webkit-transition: background 1s;
-  transition: background 1s;
-  cursor: default;
-  overflow: hidden;
-  -webkit-box-shadow: inset 0 -2px 6px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: inset 0 -2px 6px 2px rgba(0, 0, 0, 0.4);
-  z-index: inherit;
-}
-
-#adminFooter #adminFooterMenu #adminFooterMenuContent:hover {
-  background-color: #d3e3a0;
 }
 /*# sourceMappingURL=style.css.map */

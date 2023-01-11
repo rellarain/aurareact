@@ -27,7 +27,8 @@ function NavigationPanel() { return (
 )}
 
 function NavigationPage() { return (
-    <input id="navPage" placeholder='Search'>
+    <div id="navPage" placeholder='Search'>
+        Social / 1600.0000.0000.0000
         {/* Page Tool
                 
             Text-Input:
@@ -38,7 +39,7 @@ function NavigationPage() { return (
                 Console Close: 
 
         */}
-    </input>
+    </div>
 )}
 
 
