@@ -13,30 +13,62 @@ export default function UserConsole() {return (
             <br/>
             Department title <br/>
             <br/>
-            News: birthdays, updates, reminders <br/>
-            Online: employees, supervisors, team <br/>
-            Teams: rosters <br/>
-            Schedule: team hours, supervisor hours<br/>
-            Projects: tasks<br/>
-            Feedback: pending, processing, processed<br/>
-            Bulletin: discussions, polls<br/>
-            Calendar: week, month, quarter, year<br/>
+            
             <br/>
-            Steps: in assessments or submissions, there is a component detailing the steps of the process, and what step you're on<br/>
             <br/>
             To-Do:<br/>
             <br/>
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <ul>
+                <li>ORGANIZATIONAL</li>
+                <li>
+                    DEPARTMENT<br/>
+                    News: birthdays, updates, reminders <br/>
+                    Bulletin: discussions, polls <br/>
+                    Online: employees, supervisors, team <br/>
+                </li>
+                <li>
+                    TEAMS <br/>
+                    Roster: <br/>
+                    Calendar: week, month, quarter, year <br/>
+                    Schedule: team hours, supervisor hours <br/>
+                    Queues: feedback, <br/>
+                    Assignments: projects, tasks <br/>
+                    Productivity: pending, processed, awaiting <br/>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>ASSESSMENTS</li>
+                <li>Progress: previous steps, the step you are on, next steps</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>g</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>g</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>g</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
         <div id='userConsoleDesk'>
-            Training: <br/>
+            Training: assessments, reading, projects, <br/>
+            <br/>
             Management: <br/>
             Break Time: <br/>
             Designer: <br/>
@@ -51,7 +83,7 @@ export default function UserConsole() {return (
             To-Do:<br/>
             - add window actions: pause, close<br/>
             - add tabs for steps in a process<br/>
-            <br/>
+            - <br/>
             <br/>
             <br/>
             <br/>
@@ -107,6 +139,14 @@ function ConsoleHelp() {return(
             <br/>
             <br/>
             Chat: contacting an employee trained on this topic<br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
         <div id='userConsoleHelpButton'>
             <span>?</span>

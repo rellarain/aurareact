@@ -61,7 +61,7 @@ body {
 }
 
 #userHeader {
-  background: #6e5849;
+  background: #6a614e;
   position: fixed;
   top: 0;
   right: 0;
@@ -98,7 +98,7 @@ body {
   line-height: 16px;
   margin: 4px 0 0 5px;
   font-weight: 600;
-  color: #251d18;
+  color: #23201a;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -110,8 +110,8 @@ body {
 }
 
 #userHeader #userName:hover {
-  color: #cebfb6;
-  text-shadow: 0 0 3px #3d3129;
+  color: #cbc5b9;
+  text-shadow: 0 0 3px #3b362b;
 }
 
 #userHeader #userID {
@@ -124,7 +124,7 @@ body {
   width: max-content;
   font-weight: 600;
   margin: 3px 0 3px 10px;
-  color: #3d3129;
+  color: #3b362b;
 }
 
 #userHeader #userID span {
@@ -135,8 +135,8 @@ body {
 }
 
 #userHeader #userID span:hover {
-  color: #ad9585;
-  text-shadow: 0 0 2px #3d3129;
+  color: #a89f8a;
+  text-shadow: 0 0 2px #3b362b;
 }
 
 #userHeader #userProgress {
@@ -144,7 +144,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: userProgress;
-  background-color: #3d3129;
+  background-color: #3b362b;
   width: 100%;
 }
 
@@ -154,15 +154,15 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(34) {
-  background-color: #9d806c;
+  background-color: #978c72;
 }
 
 #userHeader #userProgress td:nth-child(35) {
-  background-color: #9d806c;
+  background-color: #978c72;
 }
 
 #userHeader #userProgress td:nth-child(36) {
-  background-color: #9d806c;
+  background-color: #978c72;
 }
 
 #userHeader #userProgress td:nth-child(37) {
@@ -186,19 +186,19 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(42) {
-  background-color: #d47535;
+  background-color: #dab82f;
 }
 
 #userHeader #userProgress td:nth-child(43) {
-  background-color: #d47535;
+  background-color: #dab82f;
 }
 
 #userHeader #userProgress td:nth-child(44) {
-  background-color: #d47535;
+  background-color: #dab82f;
 }
 
 #userHeader #userProgress td:nth-child(45) {
-  background-color: #d47535;
+  background-color: #dab82f;
 }
 
 #userHeader #userProgress td:nth-child(49) {
@@ -278,31 +278,31 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(70) {
-  background-color: #e2a378;
+  background-color: #e7d074;
 }
 
 #userHeader #userProgress td:nth-child(71) {
-  background-color: #e2a378;
+  background-color: #e7d074;
 }
 
 #userHeader #userProgress td:nth-child(72) {
-  background-color: #e2a378;
+  background-color: #e7d074;
 }
 
 #userHeader #userProgress td:nth-child(73) {
-  background-color: #e2a378;
+  background-color: #e7d074;
 }
 
 #userHeader #userProgress td:nth-child(79) {
-  background-color: #e2a378;
+  background-color: #e7d074;
 }
 
 #userHeader #userProgress td:nth-child(80) {
-  background-color: #e2a378;
+  background-color: #e7d074;
 }
 
 #userHeader #userProgress td:nth-child(81) {
-  background-color: #e2a378;
+  background-color: #e7d074;
 }
 
 #userHeader #userProgress td:nth-child(82) {
@@ -346,87 +346,87 @@ body {
 }
 
 #userHeader #userProgress td:nth-child(92) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(93) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(94) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(95) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(96) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(97) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(98) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(99) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(100) {
-  background-color: #beaa9d;
+  background-color: #bab2a1;
 }
 
 #userHeader #userProgress td:nth-child(133) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(134) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(135) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(136) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(137) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(138) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(139) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(140) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(141) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(142) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(143) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #userHeader #userProgress td:nth-child(144) {
-  background-color: #975020;
+  background-color: #9c821c;
 }
 
 #navCrop {
@@ -434,6 +434,8 @@ body {
   height: 30px;
   -webkit-transition: height 1s, width 1s 1s;
   transition: height 1s, width 1s 1s;
+  width: 300px;
+  height: 30px;
   overflow: clip;
   border-radius: 5px;
   position: fixed;
@@ -617,7 +619,7 @@ body {
 #userDash {
   width: calc(100vw - 330px);
   width: 100%;
-  background: #beaa9d;
+  background: #bab2a1;
   position: fixed;
   top: 48px;
   right: 0;
@@ -724,7 +726,6 @@ body {
 
 #userConsole {
   bottom: 20px;
-  bottom: -100%;
   display: block;
   position: absolute;
   overflow: hidden;
@@ -739,18 +740,18 @@ body {
   font-size: 14px;
   z-index: 4;
   cursor: pointer;
-  -webkit-box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #3d3129;
-          box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #3d3129;
+  -webkit-box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #3b362b;
+          box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 5px #3b362b;
   padding: 5px;
-  background-color: #3d3129;
+  background-color: #3b362b;
 }
 
 #userConsole #userConsoleProgress {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
-  background-color: #b96227;
+  width: 40%;
+  background-color: #bf9f22;
   height: 8px;
   -webkit-transition: width 1s;
   transition: width 1s;
@@ -760,7 +761,7 @@ body {
   display: -ms-grid;
   display: grid;
   width: calc(100% - 30px);
-  color: #cebfb6;
+  color: #cbc5b9;
   top: 13px;
   right: 5px;
   position: absolute;
@@ -774,19 +775,20 @@ body {
 
 #userConsole #userConsoleDesk {
   width: calc(100% - 30px);
+  width: calc(100% - 290px);
   height: calc(100% - 68px);
   display: block;
   position: absolute;
   right: 5px;
   padding: 5px;
-  -webkit-box-shadow: inset 0 0 0 5px #9d806c;
-          box-shadow: inset 0 0 0 5px #9d806c;
+  -webkit-box-shadow: inset 0 0 0 5px #978c72;
+          box-shadow: inset 0 0 0 5px #978c72;
   bottom: 5px;
   -webkit-transition: width 1s, background .4s, height 1s, -webkit-box-shadow .4s;
   transition: width 1s, background .4s, height 1s, -webkit-box-shadow .4s;
   transition: width 1s, background .4s, box-shadow .4s, height 1s;
   transition: width 1s, background .4s, box-shadow .4s, height 1s, -webkit-box-shadow .4s;
-  background-color: #9d806c;
+  background-color: #978c72;
   border-radius: 4px;
   cursor: default;
   overflow-x: hidden;
@@ -799,9 +801,9 @@ body {
 }
 
 #userConsole #userConsoleDesk:hover {
-  background-color: #cebfb6;
-  -webkit-box-shadow: inset 0 0 0 5px #cebfb6;
-          box-shadow: inset 0 0 0 5px #cebfb6;
+  background-color: #cbc5b9;
+  -webkit-box-shadow: inset 0 0 0 5px #cbc5b9;
+          box-shadow: inset 0 0 0 5px #cbc5b9;
 }
 
 #userConsole #userConsoleMeta {
@@ -813,8 +815,8 @@ body {
   left: 20px;
   bottom: 40px;
   border-radius: 4px;
-  background-color: #6e5849;
-  color: #cebfb6;
+  background-color: #6a614e;
+  color: #cbc5b9;
   cursor: default;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -822,6 +824,33 @@ body {
 
 #userConsole #userConsoleMeta::-webkit-scrollbar {
   display: none;
+}
+
+#userConsole #userConsoleMeta ul {
+  width: 230px;
+  padding: 5px;
+  background-color: #978c72;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+#userConsole #userConsoleMeta ul li:nth-child(1) {
+  background-color: #524c3d;
+  margin: 0;
+  color: #cbc5b9;
+  padding: 5px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#userConsole #userConsoleMeta ul li {
+  background-color: #cbc5b9;
+  font-size: 12px;
+  line-height: 12px;
+  color: #524c3d;
+  padding: 4px;
+  margin-top: 5px;
+  border-radius: 4px;
 }
 
 #userConsole #userConsoleHelp {
@@ -902,7 +931,7 @@ body {
 }
 
 #userConsole #userConsoleClose {
-  top: 13px;
+  top: 18px;
   right: 10px;
   height: 25px;
   width: 25px;
@@ -997,28 +1026,30 @@ body {
   overflow: hidden;
 }
 
-#sidebar #quickTools {
+#sidebar #toolkit {
+  height: calc(100% - 20px);
   display: -ms-grid;
   display: grid;
   position: absolute;
   background-color: #ce8dce;
   width: 310px;
   top: 10px;
-  height: calc(100% - 20px);
   border-radius: 4px;
   overflow: hidden;
   left: 10px;
-  -ms-grid-rows: 40px 30px auto;
-      grid-template-rows: 40px 30px auto;
+  -ms-grid-rows: 40px 30px 8px auto;
+      grid-template-rows: 40px 30px 8px auto;
   -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
-      grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
+  -webkit-transition: height .75s;
+  transition: height .75s;
+      grid-template-areas: "TKtabs" "TKtitle" "TKprogress" "TKpanel";
 }
 
-#sidebar #quickTools #quickToolsHead {
+#sidebar #toolkit #toolkitHead {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: QTtabs;
+  grid-area: TKtabs;
   background-color: #c270c2;
   overflow: hidden;
   padding: 5px 0 0 5px;
@@ -1027,7 +1058,7 @@ body {
   display: flex;
 }
 
-#sidebar #quickTools #quickToolsHead span {
+#sidebar #toolkit #toolkitHead span {
   height: 35px;
   width: 30px;
   display: inline-block;
@@ -1042,11 +1073,11 @@ body {
   cursor: pointer;
 }
 
-#sidebar #quickTools #quickToolsHead span:hover {
+#sidebar #toolkit #toolkitHead span:hover {
   background-color: #642b64;
 }
 
-#sidebar #quickTools #quickToolsHead .openTab {
+#sidebar #toolkit #toolkitHead .openTab {
   background-color: #642b64;
   bottom: 0;
   width: 30px;
@@ -1054,14 +1085,14 @@ body {
   transition: background .4s;
 }
 
-#sidebar #quickTools #quickToolsHead .openTab:hover {
+#sidebar #toolkit #toolkitHead .openTab:hover {
   background-color: #642b64;
 }
 
-#sidebar #quickTools #quickToolsTitle {
+#sidebar #toolkit #toolkitTitle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: QTtitle;
+  grid-area: TKtitle;
   background-color: #642b64;
   line-height: 30px;
   padding: 0 0 0 5px;
@@ -1071,9 +1102,25 @@ body {
   letter-spacing: 1px;
 }
 
-#sidebar #quickTools #quickToolsBody {
+#sidebar #toolkit #toolkitProgress {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: QTpanel;
+  grid-area: TKprogress;
+  background-color: #813781;
+}
+
+#sidebar #toolkit #toolkitProgress #toolkitProgressBar {
+  position: absolute;
+  display: block;
+  height: 8px;
+  left: 0;
+  width: 40%;
+  background-color: #dab82f;
+}
+
+#sidebar #toolkit #toolkitBody {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: TKpanel;
 }
 /*# sourceMappingURL=style.css.map */

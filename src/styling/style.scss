@@ -56,16 +56,16 @@ table {
 // 3 hues roughly separated by ~120 degrees
 
 // Theme Colors
-$t0: hsl(24, 20%,  4%);
-$t1: hsl(24, 20%, 12%);
-$t2: hsl(24, 20%, 20%);
-$t3: hsl(24, 20%, 28%);
-$t4: hsl(24, 20%, 36%);
-$t5: hsl(24, 20%, 44%);
-$t6: hsl(24, 20%, 52%);
-$t7: hsl(24, 20%, 60%);
-$t8: hsl(24, 20%, 68%);
-$t9: hsl(24, 20%, 76%);
+$t0: hsl(42, 15%,  4%);
+$t1: hsl(42, 15%, 12%);
+$t2: hsl(42, 15%, 20%);
+$t3: hsl(42, 15%, 28%);
+$t4: hsl(42, 15%, 36%);
+$t5: hsl(42, 15%, 44%);
+$t6: hsl(42, 15%, 52%);
+$t7: hsl(42, 15%, 60%);
+$t8: hsl(42, 15%, 68%);
+$t9: hsl(42, 15%, 76%);
 
 // Accent Colors
 
@@ -81,16 +81,16 @@ $a8: hsl(300, 40%, 68%);
 $a9: hsl(300, 40%, 76%);
 
 // Alert Colors
-$at0: hsl(24, 65%,  4%);
-$at1: hsl(24, 65%, 12%);
-$at2: hsl(24, 65%, 20%);
-$at3: hsl(24, 65%, 28%);
-$at4: hsl(24, 65%, 36%);
-$at5: hsl(24, 65%, 44%);
-$at6: hsl(24, 65%, 52%);
-$at7: hsl(24, 65%, 60%);
-$at8: hsl(24, 65%, 68%);
-$at9: hsl(24, 65%, 76%);
+$at0: hsl(48, 70%,  4%);
+$at1: hsl(48, 70%, 12%);
+$at2: hsl(48, 70%, 20%);
+$at3: hsl(48, 70%, 28%);
+$at4: hsl(48, 70%, 36%);
+$at5: hsl(48, 70%, 44%);
+$at6: hsl(48, 70%, 52%);
+$at7: hsl(48, 70%, 60%);
+$at8: hsl(48, 70%, 68%);
+$at9: hsl(48, 70%, 76%);
 
 
 // Z-Index Guide 
@@ -282,8 +282,8 @@ body {
     transition: height 1s, width 1s 1s;
 
     // Nav Tool
-    // width: 300px;
-    // height: 30px;
+    width: 300px;
+    height: 30px;
 
     // Navigation Panel
     // width: 300px;
@@ -508,7 +508,7 @@ body {
 }
 #userConsole {
     bottom: 20px;
-    bottom: -100%;
+    //bottom: -100%;
         
     display: block;
     position: absolute;
@@ -529,7 +529,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 30%;
+        width: 40%;
         background-color: $at5;
         height: 8px; transition: width 1s;
     }
@@ -553,7 +553,7 @@ body {
         width: calc(100% - 30px);
         
         // Console Meta Open
-        // width: calc(100% - 290px);
+        width: calc(100% - 290px);
         
         height: calc(100% - 68px);
         display: block;
@@ -590,6 +590,31 @@ body {
         overflow-x: hidden;
         overflow-y: scroll;
         &::-webkit-scrollbar {display: none;}
+
+        ul {
+            width: 230px;
+            padding: 5px;
+            background-color: $t6;
+            margin-top: 5px;
+            border-radius: 4px;
+            li:nth-child(1) {
+                background-color: $t3;
+                margin: 0;
+                color: $t9;
+                padding: 5px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+            li {
+                background-color: $t9;
+                font-size: 12px;
+                line-height: 12px;
+                color: $t3;
+                padding: 4px;
+                margin-top: 5px;
+                border-radius: 4px;
+            }
+        }
     }
     #userConsoleHelp {
         // Closed
@@ -652,7 +677,7 @@ body {
         }
     }
     #userConsoleClose {
-        top: 13px;
+        top: 18px;
         right: 10px;
         height: 25px;
         width: 25px;
@@ -742,22 +767,26 @@ body {
     z-index: 1;
     overflow: hidden;
 
-    #quickTools {
+    #toolkit {
+        height: calc(100% - 20px);
+        // height: 78px;
+
+
         display: grid;
         // display: none;
         position: absolute;
         background-color: $a8;
         width: 310px;
         top: 10px;
-        height: calc(100% - 20px);
         border-radius: 4px;
         overflow: hidden;
         left: 10px;
-        grid-template-rows: 40px 30px auto;
+        grid-template-rows: 40px 30px 8px auto;
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
-        grid-template-areas: "QTtabs" "QTtitle" "QTpanel";
-        #quickToolsHead {
-            grid-area: QTtabs;
+        transition: height .75s;
+        grid-template-areas: "TKtabs" "TKtitle" "TKprogress" "TKpanel";
+        #toolkitHead {
+            grid-area: TKtabs;
             background-color: $a7;
             overflow: hidden;
             padding: 5px 0 0 5px;
@@ -788,8 +817,8 @@ body {
                 }
             }
         }
-        #quickToolsTitle {
-            grid-area: QTtitle;
+        #toolkitTitle {
+            grid-area: TKtitle;
             background-color: $a3;
             line-height: 30px;
             padding: 0 0 0 5px;
@@ -798,8 +827,20 @@ body {
             font-weight: 600;
             letter-spacing: 1px;
         }
-        #quickToolsBody {
-            grid-area: QTpanel;
+        #toolkitProgress {
+            grid-area: TKprogress;
+            background-color: $a4;
+            #toolkitProgressBar {
+                position: absolute;
+                display: block;
+                height: 8px;
+                left: 0;
+                width: 40%;
+                background-color: $at6;
+            }
+        }
+        #toolkitBody {
+            grid-area: TKpanel;
 
         }
     }
