@@ -69,16 +69,16 @@ $t9: hsl(42, 15%, 76%);
 
 // Accent Colors
 
-$a0: hsl(300, 40%,  4%);
-$a1: hsl(300, 40%, 12%);
-$a2: hsl(300, 40%, 20%);
-$a3: hsl(300, 40%, 28%);
-$a4: hsl(300, 40%, 36%);
-$a5: hsl(300, 40%, 44%);
-$a6: hsl(300, 40%, 52%);
-$a7: hsl(300, 40%, 60%);
-$a8: hsl(300, 40%, 68%);
-$a9: hsl(300, 40%, 76%);
+$a0: hsl(320, 40%,  4%);
+$a1: hsl(320, 40%, 12%);
+$a2: hsl(320, 40%, 20%);
+$a3: hsl(320, 40%, 28%);
+$a4: hsl(320, 40%, 36%);
+$a5: hsl(320, 40%, 44%);
+$a6: hsl(320, 40%, 52%);
+$a7: hsl(320, 40%, 60%);
+$a8: hsl(320, 40%, 68%);
+$a9: hsl(320, 40%, 76%);
 
 // Alert Colors
 $at0: hsl(48, 70%,  4%);
@@ -222,7 +222,7 @@ body {
         td:nth-child(57) {background-color: $a4;}
         td:nth-child(58) {background-color: $a4;}
         td:nth-child(59) {background-color: $a6;}
-        td:nth-child(60) {background-color: $a6;}
+        td:nth-child(60) {background-color: $at6;}
         td:nth-child(61) {background-color: $a6;}
         td:nth-child(62) {background-color: $a4;}
         td:nth-child(63) {background-color: $a6;}
@@ -600,7 +600,7 @@ body {
             li:nth-child(1) {
                 background-color: $t3;
                 margin: 0;
-                color: $t9;
+                color: white;
                 padding: 5px;
                 font-weight: 600;
                 letter-spacing: 2px;
@@ -611,8 +611,34 @@ body {
                 line-height: 12px;
                 color: $t3;
                 padding: 4px;
-                margin-top: 5px;
+                margin-top: 10px;
                 border-radius: 4px;
+                h5 {
+                    appearance: none;
+                    font-size: 12px;
+                    padding: 2px;
+                    background-color: $t4;
+                    border-radius: 2px;
+                    color: white;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    line-height: 14px;
+                    vertical-align: middle;
+                    margin: 5px 0 5px 0;
+                }
+                h6 {
+                    appearance: none;
+                    font-size: 12px;
+                    padding: 2px;
+                    background-color: $t7;
+                    border-radius: 2px;
+                    color: $t1;
+                    font-weight: 600;
+                    letter-spacing: .5px;
+                    line-height: 14px;
+                    vertical-align: middle;
+                    margin: 5px 0 5px 0;
+                }
             }
         }
     }
