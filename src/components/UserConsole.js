@@ -1,116 +1,355 @@
 import React from 'react';
 
 export default function UserConsole() {return (
-    <div id='userConsole'>
+    <div id='userConsole' className='userConsoleMax'>
         <div id='userConsoleProgress'></div>
         <ConsoleTitle/>
         <div id='userConsoleClose'></div>
-        <div id='userConsoleMeta'>
+        <div id='userConsoleSidebar'>
             <TeamSchedule/>
             <TeamBdays/>
 
             
-            <br/>
-            Department title <br/>
-            <br/>
-            
-            <br/>
-            <br/>
-            To-Do:<br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <ul>
-                <li>PORTFOLIO</li>
-                <li>
-                    <h5>PROFILE</h5>
-                    Name: <br/>
-                    Role: <br/>
-                    <br/>
-                    <br/>
-                </li> 
-                <li>
-                    <h5>RESULTS</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li> 
-                <li>
-                    <h5>CERTIFICATIONS</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li> 
-                <li></li>
+                <li>Console Sidebar</li>
             </ul>
             <br/>
             <ul>
-                <li>CONNECTION CONSOLE</li>
+                <li>To-Do List</li>
                 <li>
-                    <h5></h5>
+                    <h5>Draft Console's Basic Layout</h5>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>
+                    <br/>
+                    <h6>Portfolio</h6>
+                    Title: user's display name<br/>
+                    Sidebar: interactions () <br/>
+                    Desk: profile (bio, picture), results ()<br/>
+                    Help: interpreters ()<br/>                    
+                    <br/>
+                    <h6>Connections</h6>
+                    Title: Connections <br/>
+                    Sidebar: Groups (# of users, % access, group name), add group <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Management</h6>
+                    Progress: achievement (shows percentage of assigned work load)<br/>
+                    Title: support/attendant/manager/director<br/>
+                    Sidebar: links (), department (active), queues (users in queue, cases in queue), <br/>
+                    Desk: forum (), bulletin (news, upcoming, ), members (), manage (support, attendants, managers), feedback processing ()<br/>
+                    Help: <br/>                    
+                    <br/>
+
+
+                    {/* 
+                    <h6>Bulletin</h6>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>
+                    <br/>
+                    <h6>Forum</h6>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Assessments</h6>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Training</h6>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Break Time</h6>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                                    
+                    <br/>
+                    <h6>Designer</h6>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Instructor</h6>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Studios</h6>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Developer</h6>
+                    Progress: <br/>
+                    Title: <br/>
+                    Sidebar: <br/>
+                    Desk: <br/>
+                    Help: <br/>                    
+                    <br/>
+                    <h6>Committee</h6>
+                    <br/>
+                    <br/>
+                    <h6>Feedback Processing</h6>
                     <br/>
                     <br/>
                     <br/>
-                    <br/>
-                </li> 
-                <li>
-                    <h5></h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li> 
+                    
+                    */}
+                </li>
                 <li></li>
                 <li></li>
-            </ul>  
-            <br/> 
-              {/* Community */}
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <br/>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            {/* BASIC COMPONENTS */}
             <ul>
-                <li>COMMUNITY CONSOLE</li>
+                <li>BASIC COMPONENTS</li>
                 <li>
-                    <h5>COMMUNITY METACONSOLE</h5>
+                    <h5>Header</h5>
                     <br/>
-                    <h6>DETAILS</h6>
+                    <h6>Picture</h6>
+                    square thumbnail of active user<br/>
+                    <br/>
+                    (blank for visitors)<br/>
+                    <h6>Display Name</h6>
+                    Brings up Portfolio/Profile component<br/>
+                    <br/>
+                    (only members)<br/>
+                    <h6>User ID</h6>
+                    Set of links that bring up collective pages<br/>
+                    +  Academy Page: first 4; academy bulletin, list of regions starting with your own<br/>
+                    +  Region Page: second 4; region bulletin, list of districts starting with your own<br/>
+                    +  District Page: third 4; district bulletin, list of communities starting with your own<br/>
+                    +  Community Page: end 4; community bulletin, list of members starting with you<br/>
+                    <br/>
+                    (only members)<br/>
+                    <h6>Clock</h6>
+                    Shows current time with a white square; connects to selected time zone<br/>
+                    Shows active time, or time spent using tools, with accent squares<br/>
+                    <br/>
+                    For employees, accent time is for worktime and alert is for breaktime<br/>
+                    <br/>
+                    (only members)<br/>
+                </li>
+                <li>
+                    <h5>Navigation</h5>
+                </li>
+                <li>
+                    <h5>Help Screen</h5>
+                </li>
+                <li>
+                    <h5>Consoles</h5>
+                    <br/>
+                    <br/>
+                    <h6>Title</h6>
+                    Console Name: <br/>
+                    Progress Meter: <br/>
+                    Close: <br/>
+                    <br/>
+                    <h6>Desk</h6>
+                    <br/>
+                    <br/>
+                    <h6>Sidebar</h6>
+                    <br/>
+                    <br/>
+                    <h6>Help</h6>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                </li>
+                <li>
+                    <h5></h5>
+                </li>
+            </ul>
+            <br/>
+            {/* Applications */}
+            <ul>
+                <li>APPLICATIONS</li>
+                <li>
+                    <h5>Membership</h5>
+                    <br/>
+                </li> 
+                <li>
+                    <h5>Scholarship</h5>
+                    <br/>
+                </li>
+                <li>
+                    <h5>Support</h5>
+                    <br/>
+                </li>
+                <li>
+                    <h5>Roles</h5>
+                    <br/>
+                </li>
+                <li>
+                    <h5>Management</h5>
+                    -Checking for training requirements automatically<br/>
+                    -Checking for collective management portfolio<br/>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                    <br/>
+                </li>
+            </ul>
+            <br/>
+
+            {/* VISITOR COMPONENTS */}
+            <ul>
+                <li>VISITOR COMPONENTS</li>
+                <li></li>
+            </ul>
+            <br/>
+            <br/>
+
+            {/* MEMBER COMPONENTS */}
+            <ul>
+                <li>MEMBER COMPONENTS</li>
+                {/* Portfolio */}
+                <li>These elements are limited to users with Aura Academy accounts.</li>
+                <li>
+                    <h5>Portfolio Console</h5>
+                    <br/>
+                    <h6>Profile (Sidebar)</h6>
+                    Name: <br/>
+                    Role: <br/>
+                    Biography: <br/>
+                    <br/>
+                    <h6>Results</h6>
+                    <br/>
+                    <h6>Training</h6>
+                    Certifications:<br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                </li>
+                {/* Connections */}
+                <li>
+                    <h5>Connections Console</h5>
+                    <h6>Groups</h6>
+                    <br/>
+                </li>
+                {/* Community */}
+                <li>
+                    <h5>Community Console</h5>
+                    <h6>Metaconsole</h6>
                     Leadership: <br/>
                     Tags: <br/>
-                    Population: <br/>
-                    Roster: <br/>
+                    Population: number of people in community<br/>
+                    Roster: listed with thumbnails<br/>
                     <br/>
-                    <br/>
-                    <h6>CALENDAR</h6>
-                    Dates: due dates, holidays<br/>
-                    Schedule: <br/>
-                    <br/>
-                    <br/>
-                </li> 
-                <li>
-                    <h5>BULLETIN</h5>
-                    News: Academy, Division, Department<br/>
-                    Changes: <br/>
+                    Calendar:<br/>
+                    + Dates: deadlines, holidays, birthdays<br/>
+                    <h6>Bulletin</h6>
+                    News: Academy, Regional, District, Community<br/>
+                    Changes: policy, tools, features, etc.<br/>
                     Reminders: <br/>
                     <br/>
-                </li> 
-                <li>
-                    <h5>FORUM</h5>
-                    Discussions: <br/>
+                    <h6>Forum</h6>
+                    Discussions:<br/>
                     Polls: <br/>
+                    <h6>Aggreport</h6>
+                    Frequency Maps: <br/>
+                    Analytics: <br/>
+                    Reflections: relating to the user's data<br/>
                     <br/>
                     <br/>
-                </li> 
+                </li>
                 <li>
-                    <h5>AGGREPORT</h5>
-                    - Frequency Map: <br/>
-                    - Analytics: <br/>
-                    - Reflections: relating <br/>
+                    <h5></h5>
+                    <h6></h6>
                     <br/>
-                </li> 
-                <li></li>
-                <li></li>
-            </ul> 
+                </li>
+                <li>
+                    <h5></h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+
+            </ul>
+
+            <br/>
+            <br/>
+            <br/>
             <br/> 
+            <br/>
+
+
+            {/* TESTING COMPONENTS */}
+            <ul>
+                <li>TESTING COMPONENTS</li>
+                <li>
+                    <h5>Introduction</h5>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <br/>
+                </li>
+            </ul>
+            <br/>
             {/* Assessment */}
             <ul>
                 <li>ASSESSMENT CONSOLE</li>
@@ -139,77 +378,117 @@ export default function UserConsole() {return (
                 <li></li>
             </ul>      
             <br/>  
-            {/* Training */}
+            <br/>
+
+
+            {/* OFFICE COMPONENTS */}
             <ul>
-                <li>TRAINING CONSOLE</li>
+                <li>Office Components</li>
+                {/* Dashboard */}
                 <li>
-                    <h5>ASSIGNMENTS</h5>
-                    - Quizzes: <br/>
-                    - Essay: <br/>
+                    <h5>Dashboard</h5>
+                    This is what appears when no other screen is active.<br/>
+                    <h6>WorkDay</h6>
                     <br/>
+                    <h6>WorkPlace</h6>
+                    News: <br/>
+                    Message Board: <br/>
+                    + Channels: <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
                     <br/>
                 </li>
+                {/* Training */}
                 <li>
-                    <h5>LIBRARY</h5>
-                    - Reading Assignments:<br/>
-                    - Comprehension Check:<br/>
-                    - Articles: <br/>
+                    <h5>Training</h5>
                     <br/>
+                    <h6>Assignments</h6>
+                    Quizzes: small tests over resources<br/>
+                    Discussion: responses to a prompt with a paragraph or less<br/>
+                    Essay: responses to a prompt with multiple paragraphs<br/>
+                    <br/>
+                    <h6>Resources</h6>
+                    Reading Assignments: <br/>
+                    Comprehension Check: <br/>
+                    Articles: <br/>
+                    Annotations: <br/>
+                    <br/>
+                    <h6>Projects</h6>
+                    <br/>
+                    <h6></h6>
                     <br/>
                 </li>
+                {/* Office Clock */}
                 <li>
-                    <h5>PROJECTS</h5>
+                    <h5>Office Clock: </h5>
+                    Accrual: for every 2 average worktime intervals, 1 break interval is earned; all breaktime must be used by week's end; if accrued breaktime reaches maximum work hours, the office will be locked until the next week<br/>
+
+                    <h5>WorkTime </h5>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+
+                    <h5>BreakTime </h5>
+                    Autofill: accrued breaktime fills in for missed scheduled worktime<br/>
                     <br/>
                     <br/>
+                    <h6>BreakRoom</h6>
+                    Chat: <br/>
+                    Current Activities: <br/>
                     <br/>
+                    <h6>Pastimes</h6>
+                    <br/>
+                    <h6>Self-Care</h6>
+                    <br/>
+                    <h6>Practice</h6>
+                    <br/>
+                    <h6>Project</h6>
+                    <br/>
+
+
+
+                    
+                </li>
+                {/* WorkDay */}
+                <li>
+                    <h5>WorkDay</h5>
+                    <h6></h6>
+                    <br/>
+                    <h5></h5>
+                    <h6>Actions: number of actions submitted in a day</h6>
+                    <h6>Contribution: expected percentage of assigned pools completed based on number of people working each pool</h6>
+                    <h5>WorkWeek</h5>
+                    <h6>Breakdown: </h6>
+                    <h6>Seasonal: </h6>
+                    <h6>Annual: </h6>
+                    <h6></h6>
+                </li>
+                {/* WorkPlace */}
+                <li>
+                    <h5>WorkPlace</h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+
+                <li>
+                    <h5></h5>
+                    <h6></h6>
                     <br/>
                 </li>
                 <li>
                     <h5></h5>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <h6></h6>
                     <br/>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> 
-            <br/>
-            {/* Break Time */}
-            <ul>
-                <li>BREAK TIME</li>
-                <li>
-                    <h5>PROJECTS</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>PRACTICE</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>SELF-CARE</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>PASTIMES</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li></li>
-                <li></li>
             </ul>
+
             <br/>
             {/* Management */}
             <ul>
@@ -235,77 +514,96 @@ export default function UserConsole() {return (
                     <br/>
 
                 </li>              
-                <li>
-                    <h5>COMMUNITY ATTENDANT</h5>
-                    - Hours: 20-30/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: community (), community support (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: ATTENDANTS (), COMMUNITY SUPPORT (), MEMBERS ()<br/>
-                    <br/>
-                    <h6>ADVANCED COMMUNITY SUPPORT</h6>
-                    - Hours: 15-25/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: community (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: COMMUNITY SUPPORT (), MEMBERS (portfolio, account, profile, most assessments, socials)<br/>
-                    <br/>
-                    <h6>COMMUNITY SUPPORT</h6>
-                    - Hours: 10-20/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: community (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: MEMBERS (portfolio, account, profile, some assessments, connections, community), VISITORS ()<br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>DISTRICT MANAGER</h5>
-                    - Hours: 30-40/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: district (), community (), district support (), community attendants (), community support (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: district managers, district support, community attendants<br/>
-                    <br/>
-                    <h6>ADVANCED DISTRICT SUPPORT</h6>
-                    - Hours: 25-35/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: district (), community (), community attendants (), community support (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: district support, community attendants, community support<br/>
-                    <br/>
-                    <h6>DISTRICT SUPPORT</h6>
-                    - Hours: 20-30/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: district (), community (), community support (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: community attendants, community support, members <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>REGION DIRECTOR</h5>
-                    - Hours: 40-50/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: region (), district (), community (), directors (), region support (), district managers (), district support (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: directors, region support, district managers, <br/>
-                    <br/>
-                    <h6>ADVANCED REGION SUPPORT</h6>
-                    - Hours: 35-45/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: region (), district (), community (), region support (), district managers (), district support (), attendants (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: region support, district managers, district support<br/>
-                    <br/>
-                    <h6>REGION SUPPORT</h6>
-                    - Hours: 30-40/wk<br/>
-                    - Tasks: listed by priority, include due dates<br/>
-                    - Schedule: role, cases, help desk, training<br/>
-                    - Cases: region (), district (), community (), district managers (), district support (), community attendants (), community support (), members (), forum (), bulletin (), feedback ()<br/>
-                    - Help Desk: district managers, district support, community attendants<br/>
-                    <br/>
-                </li>
             </ul>
             <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            {/* ROLE COMPONENTS */}
+            <ul>
+                <li>ROLE COMPONENTS</li>
+                <li>
+                    <h5>MANAGEMENT--------------------</h5>
+                    <h6></h6>
+                    <h5>Community</h5>
+                    <h6></h6>
+                    <h5>District</h5>
+                    <h6></h6>
+                    <h5>Region</h5>
+                    <h6></h6>
+                    <h5>Academy</h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+                <li>
+                    <h5>DESIGNERS<br/></h5>
+                    Some of the tools for these positions include:
+                    <h6>Introduction Editor</h6>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    + Warnings: <br/>
+                    + Further Reading: <br/>
+                    <h6>Assessment Editor</h6>
+                    <br/>
+                    <br/>
+                    <h6>Results Editor</h6>
+                    <br/>
+                    <h6>Assessment Editor</h6>
+                    <br/>
+                    <h5></h5>
+                    <br/>
+                    <h5></h5>
+                    <br/>
+                    <br/>
+                    <h5></h5>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                </li>
+                <li>
+                    <h5>DEVELOPERS-------------------</h5>
+                    <h6></h6>
+                    <h6></h6>
+                    <h6></h6>
+                    <h6></h6>
+                    <h6></h6>
+                    <h6></h6>
+                    <h6></h6>
+                    <h5>Architects</h5>
+                    <h5>Devs</h5>
+                    <h5>Dev Support</h5>
+                    <h5>QA</h5>
+                    <h5>QA Support</h5>
+                    <h5>Developer Liaison</h5>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+
+
             {/* Designer */}
             <ul>
                 <li>DESIGNER CONSOLE</li>
@@ -428,19 +726,6 @@ export default function UserConsole() {return (
                 <li></li>
             </ul>
             <br/>
-            <ul>
-                <li>g</li>
-                <li>
-                    <h5></h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li> 
-                <li></li>
-                <li></li>
-            </ul>
-            <br/>
             {/* Committee */}
             <ul>
                 <li>COMMITTEE CONSOLE</li>
@@ -449,12 +734,80 @@ export default function UserConsole() {return (
                 <li></li>
             </ul>
             <br/>
+            {/* Work Day */}
+            <ul>
+                <li>Work Day</li>
+                <li>
+                    <h5>Clock</h5>
+                    A strip of boxes on the header that indicate time spent working that day.
+                    <h6>Worktime</h6>
+                    intervals where work actions were submitted<br/>
+                    ACCENT COLOR: dark for more than average, medium for average, light for less than average
+                    <h6>Breaktime</h6>
+                    intervals where no work activity was submitted (optional: intervals where break activity was submitted)<br/>
+                    ALERT COLOR: dark for multiple break actions, medium for one break action, light for no break action
+                    <h6>Upcoming</h6>
+                    intervals where the user is scheduled to work later in the day<br/>
+                    LIGHT THEME COLOR
+                    <h6>Missed</h6>
+                    intervals where the user was absent during scheduled worktime earlier in the day<br/>
+                    MEDIUM THEME COLOR
+                    <h6>Unscheduled</h6>
+                    intervals where the user submitted no action and was not scheduled to work<br/>
+                    DARK THEME COLOR
+                </li>
+                <li>
+                    <h5>Beginning</h5>
+                    Schedule: <br/>
+                    Goals: case #, pool % <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li> 
+                <li>
+                    <h5>Worktime</h5>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5>Breaktime</h5>
+                    -Accrual: break time is earned from work time; see Performance Bonus section<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5>Meetings</h5>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5>Closing</h5>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li>
+                <li>
+                    <h5></h5>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li>
+            </ul>
+            <br/>
             {/* Subscription Revenue */}
             <ul>
-                <li>SUBSCRIPTION REVENUE</li>
+                <li>REVENUE</li>
                 <li>
                     <h5>PERFORMANCE BONUS: 0-30%  </h5>
-                    The performance bonus is calculated from a general productivity score. The ceiling of the score is 100% with 5 categories worth 20% each. An optional bonus 20% can be earned with an accountability score, but 100% remains the highest score.<br/>
+                    The performance bonus is calculated from a general productivity score. The ceiling of the score is 100% with 5 categories worth 20% each. An optional bonus 15% can be earned with an accountability score, but 100% remains the highest score.<br/>
                     <h6>Attendance</h6>
                     The percentage of hours worked out of the total hours required.<br/>
                     <h6>Adherence</h6>
@@ -506,8 +859,244 @@ export default function UserConsole() {return (
 
                 <li></li>
             </ul>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            {/* ROLE DESCRIPTIONS */}
+            <ul>
+                <li>ROLE DESCRIPTIONS</li>
+                {/* Scholars */}
+                <li>
+                    <h5>SCHOLARS-------------------</h5>
+                </li>
+                {/* Management */}
+                <li>
+                    <h5>MANAGEMENT</h5>
+                    <br/>
+
+
+                    <h5>Community Management</h5>
+                    Management teams responsible for up to 10,000 members<br/><br/>
+                    <h6>Community Attendant</h6>
+                    Leads the community management team, schedules meeting days, processes escalations, refunds<br/><br/>
+                    CASES: feedback channeling, forum actions, bulletin, reported community support & advanced support & members, support actions, community actions, member actions<br/>
+                    HOURS: 20-30/wk; 15 scheduled<br/>
+                    HELP DESK: advanced community support, community support, members; some assessments<br/>
+                    PAY: $15/hr + performance bonus (direct members, 3 community team shares, 1 district team share)<br/>
+                    <h6>Advanced Community Support</h6>
+                    <br/><br/>
+                    CASES: feedback channeling, forum actions, bulletin, reported community support & members, community actions, member actions<br/>
+                    HOURS: 15-25/wk; 10 scheduled<br/>
+                    HELP DESK: community support, members, visitors<br/>
+                    PAY: $15/hr + performance bonus (direct members, 2 community team shares)<br/>
+                    <h6>Community Support</h6>
+                    <br/><br/>
+                    CASES: feedback channeling, forum actions, bulletin, <br/>
+                    HOURS: 10-20/wk; 5 scheduled<br/>
+                    HELP DESK: members, visitors<br/>
+                    PAY: $15/hr + performance bonus (direct members, 1 community team share)<br/>
+
+
+                    <h5>District Management</h5>
+                    Management teams responsible for up to 10,000 attendants<br/><br/>
+                    <h6>District Manager</h6>
+                    <br/><br/>
+                    CASES: <br/>
+                    HOURS: 30-40/wk; 20 scheduled<br/>
+                    HELP DESK: advanced district support, district support, community attendants<br/>
+                    PAY: $15/hr + performance bonus (direct members, 4 district team shares, 1 region team share)<br/>
+                    <h6>Advanced District Support</h6>
+                    <br/><br/>
+                    CASES: <br/>
+                    HOURS: 25-35/wk; 15 scheduled<br/>
+                    HELP DESK: district support, community attendants, advanced community support<br/>
+                    PAY: $15/hr + performance bonus (direct members, 3 district team shares)<br/>
+                    <h6>District Support</h6>
+                    <br/><br/>
+                    CASES: attendant actions, <br/>
+                    HOURS: 20-30/wk; 10 scheduled<br/>
+                    HELP DESK: community attendants, advanced community support, community support<br/>
+                    PAY: $15/hr + performance bonus (direct members, 2 district team share)<br/>
+
+
+                    <h5>Region Management</h5>
+                    Management teams responsible for up to 10,000 managers<br/><br/>
+                    <h6>Region Director</h6>
+                    <br/><br/>
+                    CASES: <br/>
+                    HOURS: 40-50/wk; 25 scheduled<br/>
+                    HELP DESK: advanced region support, region support, district managers<br/>
+                    PAY: $15/hr + performance bonus (direct members, 4 region team shares, 1 academy share)<br/>
+                    <h6>Advanced Region Support</h6>
+                    <br/><br/>
+                    CASES: <br/>
+                    HOURS: 35-45/wk; 25 scheduled<br/>
+                    HELP DESK: region support, district managers, advanced district managers<br/>
+                    PAY: $15/hr + performance bonus (direct members, 3 region team shares)<br/>
+                    <h6>Region Support</h6>
+                    <br/><br/>
+                    CASES: manager actions, attendant actions<br/>
+                    HOURS: 30-40/wk; 20 scheduled<br/>
+                    HELP DESK: district managers, advanced district support, district support<br/>
+                    PAY: $15/hr + performance bonus (direct members, 2 region team share)<br/>
+                </li>
+                {/* Designers */}
+                <li>
+                    <h5>DESIGNERS------------------</h5>
+                    <br/><br/>
+                    <h5>Assessment Engineer</h5>
+                        This position is for the leader(s) of the design department. <br/><br/>
+                        <br/>
+
+                        <h6>TASKS: coordinates the updating process, maintains integrity of personality structures, decision power when department stalls, editor of the manuals, can create macro structures (selves, functions, traits), analyze aggresults</h6>
+                        <h6>CASES: </h6>
+                        <h6>HOURS: 30-40/wk; 25 scheduled</h6>
+                        <h6>HELP DESK: </h6>
+                        <h6>PAY: 5 academy shares</h6>
+                    <h5>Design Leads</h5>
+                        This position is for assistive leadership in the design department.<br/><br/>
+                        <br/>
+
+                        <h6>TASKS: maintains integrity of trait structures for specific functions</h6>
+                        <h6>CASES: </h6>
+                        <h6>HOURS: 25-35/wk; 20 scheduled</h6>
+                        <h6>HELP DESK: </h6>
+                        <h6>PAY: 4 academy shares</h6>
+                    <h5>Advanced Design Support</h5>
+                        This position is for <br/><br/>
+                        TASKS: <br/>
+                        CASES: <br/>
+                        HOURS: 20-30/wk; 15 scheduled<br/>
+                        HELP DESK: assessment support, assessment members<br/>
+                        PAY: 3 academy shares<br/>
+
+
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                    <h5>Design Support</h5>
+                        <br/><br/>
+                        <br/>
+                        <br/>
+                        HOURS: 15-25/wk; 10 scheduled<br/>
+                        HELP DESK: assessment support, assessment members<br/>
+                        PAY: 2 academy shares<br/>
+
+
+                        <h6>TASKS: </h6>
+                        <h6>CASES: </h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                    <h5>Assessment Support</h5>
+                        <br/><br/>
+                        TASKS: training<br/>
+                        CASES: assessment feedback, <br/>
+                        HOURS: 10-20/wk; 5 scheduled<br/>
+                        HELP DESK: assessment members, <br/>
+                        PAY: 1 academy share<br/>
+
+
+                    <br/>
+                </li>
+                {/* Instructors */}
+                <li>
+                    <h5>INSTRUCTORS----------------</h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+                {/* Developers */}
+                <li>
+                    <h5>DEVELOPERS-----------------</h5>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                </li>
+                {/* Creators */}
+                <li>
+                    <h5>CREATORS</h5>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6></h6>
+                    <br/>
+                    <h6>Advanced Creator Support</h6>
+                    <br/>
+                    <h6>Creator Support</h6>
+                    <br/>
+                </li>
+                {/*  */}
+                <li>
+                    <h5></h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+                {/*  */}
+                <li>
+                    <h5></h5>
+                    <h6></h6>
+                    <br/>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>g</li>
+                <li>
+                    <h5></h5>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </li> 
+                <li></li>
+                <li></li>
+            </ul>
+            <br/>
         </div>
-        <div id='userConsoleDesk'>
+        <div id='userConsoleDesk' className='consoleSidebarOpen'>
             <br/>
             Applications<br/>
             <br/>
@@ -540,7 +1129,7 @@ function ConsoleTitle() {return(
 function TeamSchedule() {return(
     <div className=''>
         <img src='' alt=''/>
-        <span>Dave</span>
+        <span></span>
     </div>
 )}
 
@@ -548,7 +1137,7 @@ function TeamSchedule() {return(
 function TeamBdays() {return(
     <div className=''>
         <img src='' alt=''/>
-        <span>Dave</span>
+        <span></span>
     </div>
 )}
 

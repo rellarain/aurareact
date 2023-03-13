@@ -2,7 +2,7 @@ import React from 'react';
 
 
 export default function Navigation() {return (
-    <nav id='navCrop'>
+    <nav id='navCrop' className='navCropClosed'>
         {/* Nav Button
                 
             Navigation Console: 
@@ -80,6 +80,15 @@ function NavigationBody() { return (
             <li></li>
         </ul>
         <ul>
+            <li>OFFICE</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
             <li>SCHOLAR</li>
             <li>Training </li>
             <li>Apprenticeship</li>
@@ -99,8 +108,6 @@ function NavigationBody() { return (
         </ul>
         <ul>
             <li>DESIGNER</li>
-            <li>Engineers</li>
-            {/* manuals, selves, functions, traits */}
             <li>Designer</li>
             {/* subtraits, factors, subfactors */}
             <li>Support</li>
@@ -134,9 +141,7 @@ function NavigationBody() { return (
             <li>Writer</li>
             <li>Translator</li>
             <li>Translator Support</li>
-            <li>Artist</li>
-            <li>Artist Support</li>
-            <li>Liaison</li>
+
         </ul>
         <ul>
             <li>COMMITTEE</li>
@@ -147,15 +152,7 @@ function NavigationBody() { return (
             <li>C-Suite </li>
             <li></li>
         </ul>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+
     </div>
 )}
 

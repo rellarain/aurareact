@@ -17,7 +17,6 @@ function Toolkit() {return (
             <span alt='Training'></span>
             <span alt='X'></span>
             <span alt='X'></span>
-            <span alt='Break Time'></span>
             <span alt='Simulator'></span>
             <span alt='Settings'></span>
         </div>

@@ -12,7 +12,7 @@ export default function Header() {
     
     return (
     <header id="userHeader">
-        <img src="" alt={displayName}/>
+        <img src="" alt={displayName} id="userThumb"/>
         <div id='userName'>{displayName}</div>
         <div id='userID'>
             <span>{regionID}</span>.

@@ -1,53 +1,14 @@
 import React from 'react';
 
 export default function HelpDesk() {return (
-    <div id="helperDesk"> 
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
-        <div className='helperChatWindow'>
-            <section></section>
-            <section></section>
-            <section></section>
-        </div>
+    <div id="helperDesk" className='helperDeskClosed'> 
+
     {/* 
+
+        helperDeskOpen
+        helperDeskClosed
+
+
         User Info: names, pronouns, plan, roles
         Skills: aura, technology
         Training: current, history, goals, progress, grades
