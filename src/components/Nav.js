@@ -2,6 +2,7 @@ import React from 'react';
 
 
 export default function Navigation() {return (
+    // navCropClosed navCropPage navCropOpen navCropTools
     <nav id='navCrop' className='navCropClosed'>
         {/* Nav Button
                 
@@ -51,60 +52,8 @@ function NavigationButton() { return (
 function NavigationBody() { return (
     <div id="navBody">
         <ul>
-            <li>ACADEMY</li>
-        </ul>
-        <ul>
             <li>MEMBER</li>
-            <li>Portfolio</li>
-            <li>Connections</li>
-            <li></li>
-            <li></li>
-            <li>Customize</li>
             <li>Settings</li>
-        </ul>
-        <ul>
-            <li>SOCIAL</li>
-            <li>Community</li>
-            <li>District</li>
-            <li>Region </li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>ASSESSMENT</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>OFFICE</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>SCHOLAR</li>
-            <li>Training </li>
-            <li>Apprenticeship</li>
-            <li>Examination</li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>MANAGEMENT</li>
-            <li>Director </li>
-            <li>Manager</li>
-            <li>Attendant</li>
-            <li>Advanced Support</li>
-            <li>Support </li>
-            <li></li>
         </ul>
         <ul>
             <li>DESIGNER</li>
@@ -116,42 +65,7 @@ function NavigationBody() { return (
             <li>Manual</li>
             <li></li>
         </ul>
-        <ul>
-            <li>EDUCATOR</li>
-            <li>Instructor</li>
-            <li>Instructor Support</li>
-            <li>Scholar Support</li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>DEVELOPER</li>
-            <li>Architects </li>
-            <li>QA </li>
-            <li>QA Support</li>
-            <li>Devs</li>
-            <li>Dev Support </li>
-            <li></li>
-            <li>Liaison</li>
-        </ul>
-        <ul>
-            <li>STUDIOS</li>
-            <li>Editor</li>
-            <li>Writer</li>
-            <li>Translator</li>
-            <li>Translator Support</li>
 
-        </ul>
-        <ul>
-            <li>COMMITTEE</li>
-            <li>Executive </li>
-            <li>Board</li>
-            <li>Panel </li>
-            <li>Committee </li>
-            <li>C-Suite </li>
-            <li></li>
-        </ul>
 
     </div>
 )}

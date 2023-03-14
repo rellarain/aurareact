@@ -56,42 +56,44 @@ table {
 // 3 hues roughly separated by ~120 degrees
 
 // Theme Colors
-$t0: hsl(323, 18%,  4%);
-$t1: hsl(323, 18%, 12%);
-$t2: hsl(323, 18%, 20%);
-$t3: hsl(323, 18%, 28%);
-$t4: hsl(323, 18%, 36%);
-$t5: hsl(323, 18%, 44%);
-$t6: hsl(323, 18%, 52%);
-$t7: hsl(323, 18%, 60%);
-$t8: hsl(323, 18%, 68%);
-$t9: hsl(323, 18%, 76%);
+$t0: hsl(320, 10%,  4%);
+$t1: hsl(320, 10%, 12%);
+$t2: hsl(320, 10%, 20%);
+$t3: hsl(320, 10%, 28%);
+$t4: hsl(320, 10%, 36%);
+$t5: hsl(320, 10%, 44%);
+$t6: hsl(320, 10%, 52%);
+$t7: hsl(320, 10%, 60%);
+$t8: hsl(320, 10%, 68%);
+$t9: hsl(320, 10%, 76%);
 
 // Accent Colors
 
-$a0: hsl(24, 50%,  4%);
-$a1: hsl(24, 50%, 12%);
-$a2: hsl(24, 50%, 20%);
-$a3: hsl(24, 50%, 28%);
-$a4: hsl(24, 50%, 36%);
-$a5: hsl(24, 50%, 44%);
-$a6: hsl(24, 50%, 52%);
-$a7: hsl(24, 50%, 60%);
-$a8: hsl(24, 50%, 68%);
-$a9: hsl(24, 50%, 76%);
+$a0: hsl(320, 27%,  4%);
+$a1: hsl(320, 27%, 12%);
+$a2: hsl(320, 27%, 20%);
+$a3: hsl(320, 27%, 28%);
+$a4: hsl(320, 27%, 36%);
+$a5: hsl(320, 27%, 44%);
+$a6: hsl(320, 27%, 52%);
+$a7: hsl(320, 27%, 60%);
+$a8: hsl(320, 27%, 68%);
+$a9: hsl(320, 27%, 76%);
 
 // Alert Colors
-$at0: hsl(185, 70%,  4%);
-$at1: hsl(185, 70%, 12%);
-$at2: hsl(185, 70%, 20%);
-$at3: hsl(185, 70%, 28%);
-$at4: hsl(185, 70%, 36%);
-$at5: hsl(185, 70%, 44%);
-$at6: hsl(185, 70%, 52%);
-$at7: hsl(185, 70%, 60%);
-$at8: hsl(185, 70%, 68%);
-$at9: hsl(185, 70%, 76%);
+$at0: hsl(320, 70%,  4%);
+$at1: hsl(320, 70%, 12%);
+$at2: hsl(320, 70%, 20%);
+$at3: hsl(320, 70%, 28%);
+$at4: hsl(320, 70%, 36%);
+$at5: hsl(320, 70%, 44%);
+$at6: hsl(320, 70%, 52%);
+$at7: hsl(320, 70%, 60%);
+$at8: hsl(320, 70%, 68%);
+$at9: hsl(320, 70%, 76%);
 
+
+// Favorites: (120 10, 24 27, 120 54)
 
 // Z-Index Guide 
 // 14. 
@@ -110,7 +112,9 @@ $at9: hsl(185, 70%, 76%);
 //  1. Toolkit:
 //  0. Viewport:
 
-
+html {
+    overflow: hidden;
+}
 body {  
     margin: 0;
     padding: 0;
@@ -119,7 +123,7 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $a2;
+    background-color: $at2;
 }
 
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
@@ -258,37 +262,13 @@ body {
         td:nth-child(98) {background-color: $t8;}
         td:nth-child(99) {background-color: $t8;}
         td:nth-child(100) {background-color: $t8;}
-
-        td:nth-child(133) {background-color: $at4;}
-        td:nth-child(134) {background-color: $at4;}
-        td:nth-child(135) {background-color: $at4;}
-        td:nth-child(136) {background-color: $at4;}
-        td:nth-child(137) {background-color: $at4;}
-        td:nth-child(138) {background-color: $at4;}
-        td:nth-child(139) {background-color: $at4;}
-        td:nth-child(140) {background-color: $at4;}
-        td:nth-child(141) {background-color: $at4;}
-        td:nth-child(142) {background-color: $at4;}
-        td:nth-child(143) {background-color: $at4;}
-        td:nth-child(144) {background-color: $at4;}
         
         // 10 hour shift: 6h40m work (64), 3h20m break (32)
     }
 }
 
 
-// Closed
-.navCropClosed {
-    width: 30px;
-    height: 30px;
-    transition: height 1s, width 1s 1s;
-} 
-// Nav Tool
-.navCropPage {
-    width: 300px;
-    height: 30px;
-    transition: height 1s, width 1s;
-}
+
 // Navigation Panel
 .navCropOpen {
     width: 300px;
@@ -318,7 +298,7 @@ body {
     }
     #navButton {
         position: fixed;
-        background-color: $a2;
+        background-color: $at2;
         right: 9px;
         top: 9px;
         width: 22px;
@@ -331,8 +311,8 @@ body {
         border: none;
         transition: background .4s, box-shadow .4s;
         &:hover {
-            background-color: $a4;
-            box-shadow: 0 0 8px 2px $a9;
+            background-color: $at4;
+            box-shadow: 0 0 8px 2px $at9;
         }
     }
     #navPage {
@@ -436,13 +416,26 @@ body {
     }
 
 }
+// Closed
+.navCropClosed {
+    width: 30px;
+    height: 30px;
+    transition: height 1s, width 1s 1s;
+} 
+// Nav Tool
+.navCropPage {
+    width: 300px;
+    height: 30px;
+    transition: height 1s, width 1s;
+    right: 5px;
+}
+
+
 
 
 #userDash {
-    // width: calc(100vw - 330px);
-    // width: 100%;
 
-    background: $t8;
+    background: $a8;
     position: fixed;
     top: 48px;
     right: 0;
@@ -457,6 +450,7 @@ body {
 .userDashMax {
     width: 100%;
 }
+
 
 
 #helpScreen {
@@ -521,6 +515,7 @@ body {
 }
 
 
+
 #userConsole {
     bottom: 20px;
     // bottom: -100%;
@@ -546,7 +541,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: calc(20% - 10px);
+        width: 70%;
         border-radius: 4px;
         background-color: $at5;
         height: 8px; transition: width 1s;
@@ -592,12 +587,11 @@ body {
     }
     #userConsoleSidebar {
         display: block;
-        height: calc(100% - 108px);
-        // width: 240px;
+        height: calc(100% - 113px);
         padding: 5px;
         position: absolute;
         left: 15px;
-        bottom: 40px;
+        bottom: 5px;
         border-radius: 4px;
         background-color: $t4;
         color: $t9;
@@ -659,16 +653,10 @@ body {
         }
     }
     #userConsoleHelp {
-        // Closed
-        height: 20px;
 
-        // Open
-        // height: calc(100% - 68px);
-
-        transition: height 1s, width 1s;
+        top: 60px;
+        transition: height 1s, width 1s, left 1s;
         position: absolute;
-        left: 15px;
-        bottom: 5px;
         // width: 240px;
         background-color: $a8;
         border-radius: 4px;
@@ -677,33 +665,35 @@ body {
         padding: 5px;
         cursor: default;
         display: grid;
-        grid-template-rows: calc(100% - 20px) 30px;
-        grid-template-areas: "content" "button";
+        grid-template-rows: 40px calc(100% - 40px);
+        grid-template-areas: "button" "content";
         #userConsoleHelpContent {
             grid-area: content;
             overflow-y: scroll;
             &::-webkit-scrollbar {display: none;}
             overflow-x: hidden;
-            padding-bottom: 10px;
         }
         #userConsoleHelpButton {
-            background-color: $a4;
+            background-color: $a3;
             grid-area: button;
             position: absolute;
-            // width: 240px;
-            height: 20px;
+            width: 60px;
+            height: 15px;
+            right: 0;
+            top: 0;
+            padding: 4px;
             cursor: pointer;
             display: grid;
             border-radius: 4px;
             box-shadow: 0 0 0 5px $a8;
             transition: background 1s, width 1s;
-            grid-template-columns: 20px 235px;
+            grid-template-columns: 20px 40px;
             grid-template-areas: "? help";
 
             &:hover {background-color: $a5;}
             span {
                 font-weight: 700;
-                line-height: 20px;
+                line-height: 15px;
             }
             span:nth-child(1) {
                 text-align: center;
@@ -717,6 +707,13 @@ body {
                 letter-spacing: 1px;
             }
         }
+    }
+    .consoleHelpClosed {
+        width: 68px;
+        height: 23px;
+    }
+    .consoleHelpOpen {
+        height: calc(100% - 73px);
     }
     #userConsoleClose {
         top: 23px;
@@ -733,7 +730,7 @@ body {
         }
     }
 }
-.userConsoleMax {
+.userConsoleWOHD {
     width: calc(100% - 40px);
 }
 
@@ -741,26 +738,24 @@ body {
 
 // ADMIN --------------------------------------------------------------------------------------------------------------------------------
 #helperDesk {
-
-
+   
     display: grid;
     position: absolute;
-    top: 48px;
+    right: 10px;
     z-index: 5;   
     height: calc(100vh - 58px);
-    background-color: $a6;
+    background-color: $t9;
     box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
     border-radius: 0 0 4px 4px;
-    transition: right 1s, width 1s;
+    transition: top 1.5s, width 1s;
 }
 .helperDeskOpen {
-    right: 10px;
-
+    top: 48px;
 }
 .helperDeskClosed {
-    right: -500px;
-    display: none;
+    top: -100%;
 }
+
 #sidebar {
     position: absolute;
     display: block;
@@ -772,18 +767,18 @@ body {
     overflow: hidden;
 
     #toolkit {
-        height: calc(100% - 20px);
+        height: calc(100% - 51px);
         // height: 78px;
 
 
         display: grid;
         // display: none;
         position: absolute;
-        background-color: $a8;
+        background-color: $a7;
         // width: 310px;
-        top: 10px;
+        bottom: 10px;
         border-radius: 4px;
-        overflow: hidden;
+        overflow-x: hidden;
         left: 10px;
         grid-template-rows: 40px 30px 8px auto;
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
@@ -845,7 +840,106 @@ body {
         }
         #toolkitBody {
             grid-area: TKpanel;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: calc(100% - 5px);
+            ul {
+                width: calc(100% - 20px);
+                padding: 5px;
+                background-color: $a3;
+                margin: 5px;
+                border-radius: 4px;
+                li:nth-child(1) {
+                    background-color: $a1;
+                    margin: 0;
+                    color: $a9;
+                    padding: 10px;
+                    font-weight: 800;
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    line-height: 22px;
+                }
+                li {
+                    background-color: $t7;
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: 600;
+                    color: $t0;
+                    padding: 12px;
+                    margin-top: 10px;
+                    border-radius: 4px;
+                    letter-spacing: 1px;
+                    h3 {
+                        appearance: none;
+                        font-size: 18px;
+                        padding: 10px;
+                        border-radius: 4px;
+                        color: $t0;
+                        font-weight: 600;
+                        letter-spacing: 2.5px;
+                        line-height: 20px;
+                        vertical-align: middle;
+                        margin: 5px 0 5px 0;
+                        font-weight: 800;
+                        background-color: $t5;
+                    }
+                    h4 {
+                        appearance: none;
+                        font-size: 14px;
+                        padding: 8px;
+                        background-color: $t3;
+                        border-radius: 4px;
+                        color: white;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        line-height: 16px;
+                        vertical-align: middle;
+                        margin: 5px 0 5px 0;
+                    }
+                    h5 {
+                        appearance: none;
+                        font-size: 12px;
+                        padding: 6px;
+                        background-color: $t1;
+                        border-radius: 4px;
+                        color: white;
+                        font-weight: 600;
+                        letter-spacing: 1.5px;
+                        line-height: 14px;
+                        vertical-align: middle;
+                        margin: 5px 0 5px 0;
+                    }
+                    h6 {
+                        appearance: none;
+                        font-size: 12px;
+                        padding: 4px;
+                        background-color: $t9;
+                        border-radius: 4px;
+                        color: $t1;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        line-height: 14px;
+                        vertical-align: middle;
+                        margin: 5px 0 5px 0;
+                    }
+                }
+            }
 
+            &::-webkit-scrollbar {
+                width: 20px;
+                overflow-x: visible;
+                background-color: $a5;
+                margin: 5px;
+                cursor: pointer;
+            }
+            &::-webkit-scrollbar-button {
+                background-color: $a4;
+                height: 0;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $a3;
+                transition: background 1s;
+            }        
         }
     }
 }
@@ -854,16 +948,20 @@ body {
 
 
 // KEYFRAMES ----------------------------------------------------------------------------------------------------------------------------
+
 // Narrow Smartphone - Red
-@media only screen and (min-width: 100px) {
+@media only screen and (min-width: 10px) {
     // Indicator
     #userThumb {background: red;}
 
 
     // Nav Responsive
-    .navCropOpen, .navCropPage {
+    .navCropOpen {
         width: calc(100vw - 10px);
         
+    }
+    .navCropPage {
+        width: calc(100vw - 10px);
     }
     #navPanel {
         width: calc(100vw - 10px);
@@ -884,12 +982,15 @@ body {
     #userConsoleSidebar {
         width: calc(100% - 40px);
     }
-    #userConsoleHelpButton {
-        width: 100%;
-    }
-    #userConsoleHelp {
+
+    .consoleHelpClosed {
+        left: 15px;
+    } 
+    .consoleHelpOpen {
         width: calc(100% - 40px);
+        left: 15px;
     }
+
 
     // Sidebar Responsive - UNFINISHED
     .userDashMini {
@@ -903,8 +1004,8 @@ body {
     #helperDesk {
         width: calc(100vw - 20px);
     }
-    .userConsoleMini {
-        width: calc(100% - 40px);
+    .userConsoleWHD {
+        width: calc(100% - 55px);
     }
 }
 
@@ -914,6 +1015,9 @@ body {
     #userThumb {background: orange;}
 
     // Nav Responsive
+    .navCropOpen {
+        width: 300px;
+    }
     #navPanel {
         width: 300px;
         grid-template-columns: 270px 30px;
@@ -921,7 +1025,12 @@ body {
     #navBody {
         width: 295px;
     }
-    #navPage {width: 261px}
+    #navPage {
+        width: 261px;
+    }
+    .navCropPage {
+        width: 300px;
+    }
 
     // Console Responsive
     .consoleSidebarOpen {
@@ -930,17 +1039,26 @@ body {
     #userConsoleSidebar {
         width: 240px;
     }
-    #userConsoleHelpButton {width: 240px;}
-    #userConsoleHelp {width: 240px;}
+    .consoleHelpClosed {
+        left: 187px;
+    }
+    .consoleHelpOpen {
+        width: 240px;
+        left: 15px;
+    }
     
     // Sidebar Responsive
-    .userDashMini {width: calc(100vw - 300px);}
-    #toolkit {width: 280px;}
+    .userDashMini {
+        width: calc(100vw - 300px);
+    }
+    #toolkit {
+        width: 280px;
+    }
 
     
     // Helper Desk Responsive - 1 Chat
     #helperDesk {
-        width: 320px;
+        width: 300px;
     }
 }
 
@@ -949,15 +1067,17 @@ body {
     // Indicator
     #userThumb {background: yellow;}
 
-
-
     // Console Responsive
-    .userDashMini {width: calc(100vw - 400px);}
-    #toolkit {width: 380px;}
+    .userDashMini {
+        width: calc(100vw - 400px);
+    }
+    #toolkit {
+        width: 380px;
+    }
 
     // Helper Desk Responsive - 1 Chat
     #helperDesk {
-        width: 400px;
+        width: 385px;
     }
 }
 
@@ -981,15 +1101,7 @@ body {
     }
 
 
-    // Console Responsive
-    .consoleSidebarOpen {
-        width: calc(100% - 480px);
-    }
-    #userConsoleSidebar {
-        width: 440px;
-    }
-    #userConsoleHelpButton {width: 440px;}
-    #userConsoleHelp {width: 440px;}
+
 
 
 }
@@ -1000,8 +1112,22 @@ body {
     #userThumb {background: blue;}
 
 
-    .userConsoleMini {
-        width: calc(100% - 450px);
+    // Console Responsive
+    .userConsoleWHD {
+        width: calc(100% - 435px);
+    }
+    .consoleSidebarOpen {
+        width: calc(100% - 480px);
+    }
+    #userConsoleSidebar {
+        width: 440px;
+    }
+    .consoleHelpClosed {
+        left: 387px;
+    }
+    .consoleHelpOpen {
+        width: 440px;
+        left: 15px;
     }
 }
 
@@ -1024,8 +1150,12 @@ body {
     }
 
     // Sidebar Responsive
-    .userDashMini {width: calc(100vw - 500px);}
-    #toolkit {width: 480px;}
+    .userDashMini {
+        width: calc(100vw - 500px);
+    }
+    #toolkit {
+        width: 480px;
+    }
 
 }
 
@@ -1042,15 +1172,39 @@ body {
     #userConsoleSidebar {
         width: 640px;
     }
-    #userConsoleHelpButton {width: 640px;}
-    #userConsoleHelp {width: 640px;}
+    .consoleHelpClosed {
+        left: 587px;
+    }
+    .consoleHelpOpen {
+        width: 640px;
+        left: 15px;
+    }
 
     // Sidebar Responsive
-    .userDashMini {width: calc(100vw - 600px);}
-    #toolkit {width: 580px;}
+    .userDashMini {
+        width: calc(100vw - 600px);
+    }
+    #toolkit {
+        width: 580px;
+    }
 
 
 
+
+}
+
+// 4K Ultra Wide Desktop - White
+@media only screen and (min-width: 2240px) {
+    // Indicator
+    #userThumb {background-color: white;}
+
+    // Help Desk Responsivity
+    .userConsoleWHD {
+        width: calc(100% - 585px);
+    }
+    #helperDesk {
+        width: 535px;
+    }
 
 }
 

@@ -1,13 +1,10 @@
 import React from 'react';
 
 export default function HelpDesk() {return (
+    // helperDeskOpen helperDeskClosed
     <div id="helperDesk" className='helperDeskClosed'> 
 
     {/* 
-
-        helperDeskOpen
-        helperDeskClosed
-
 
         User Info: names, pronouns, plan, roles
         Skills: aura, technology
