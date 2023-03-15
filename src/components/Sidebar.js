@@ -24,103 +24,327 @@ function Toolkit() {return (
         <div id='toolkitProgress'><span id='toolkitProgressBar'></span></div>
         <div id='toolkitBody'>
 
+            {/* TO-DO LIST */}
             <ul>
-                <li>To-Do List</li>
                 <li>
-                    <h5>Draft Console's Basic Layout</h5>
-                    <br/>
-                    <h6>Portfolio</h6>
-                    Desk: profile (bio, picture), results ()<br/>
-                    Help: interpreters ()<br/>                    
-                    <br/>
-                    <h6>Connections</h6>
-                    Title: Connections <br/>
-                    Sidebar: Groups (# of users, % access, group name), add group <br/>
-                    Desk: <br/>
-                    Help: <br/>                    
-                    <br/>
-                    <h6>Management</h6>
-                    Progress: achievement (shows percentage of assigned work load)<br/>
-                    Title: support/attendant/manager/director<br/>
-                    Sidebar: links (), department (active), queues (users in queue, cases in queue), <br/>
-                    Desk: forum (), bulletin (news, upcoming, ), members (), manage (support, attendants, managers), feedback processing ()<br/>
-                    Help: <br/>                    
-                    <br/>
-
-
-                    {/* 
-
-
-                    <h6>Assessments</h6>
-                    Progress: <br/>
-                    Title: <br/>
-                    Sidebar: <br/>
-                    Desk: <br/>
-                    Help: <br/>                    
-                    <br/>
-                    <h6>Training</h6>
-                    Progress: <br/>
-                    Title: <br/>
-                    Sidebar: <br/>
-                    Desk: <br/>
-                    Help: <br/>                    
-                    <br/>
-                    <h6>Break Time</h6>
-                    Progress: <br/>
-                    Title: <br/>
-                    Sidebar: <br/>
-                    Desk: <br/>
-                    Help: <br/>                                    
-                    <br/>
-                    <h6>Designer</h6>
-                    Progress: <br/>
-                    Title: <br/>
-                    Sidebar: <br/>
-                    Desk: <br/>
-                    Help: <br/>                    
-                    <br/>
-                    <h6>Instructor</h6>
-                    Progress: <br/>
-                    Title: <br/>
-                    Sidebar: <br/>
-                    Desk: <br/>
-                    Help: <br/>                    
-                    <br/>
-                    <h6>Studios</h6>
-                    Progress: <br/>
-                    Title: <br/>
-                    Sidebar: <br/>
-                    Desk: <br/>
-                    Help: <br/>                    
-                    <br/>
-                    <h6>Developer</h6>
-                    Progress: <br/>
-                    Title: <br/>
-                    Sidebar: <br/>
-                    Desk: <br/>
-                    Help: <br/>                    
-                    <br/>
-                    <h6>Committee</h6>
-                    <br/>
-                    <br/>
-                    <h6>Feedback Processing</h6>
-                    <br/>
-                    <br/>
-                    <br/>
-                    
-                    */}
+                    <h3>TO - DO LIST</h3>
+                    + FRONT-END <br/>
+                    + BACK-END<br/>
+                    + FRONT-TO-BACK API<br/>
+                    + BACK-TO-FRONT API<br/>
                 </li>
+                <li>
+                    <h3>FRONT - END</h3>
+                    <h4>VISITOR</h4>
+                    <h5>Login                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Academy Information
+                        
+                        <h6>
+                            About<br/>
+                            + <br/>
+                            + <br/>
+                            Aggresults<br/>
+                            + <br/>
+                            + <br/>
+                            Roster<br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Application
+                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h4>MEMBER</h4>
+                    <h5>Header
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Navigation
+                        <h6>
+                            Links: <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            Notifications: <br/>
+                            + <br/>
+                            + <br/>
+                            Settings: <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Portfolio Console ($2)
+                        <h6>
+                            Profile: <br/>
+                            + <br/>
+                            + <br/>
+                            Results: <br/>
+                            + <br/>
+                            + <br/>
+                            Voice: <br/>
+                            + <br/>
+                            + <br/>
+                            Connections Roster: <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Social Console
+                        <h6>
+                            Connections: <br/>
+                            + <br/>
+                            + <br/>
+                            Explore: <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Community Console ($4)
+                        <h6>
+                            Forum: <br/>
+                            + <br/>
+                            + <br/>
+                            Events: <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h4>ASSESSMENTS ($6)</h4>
+                    <h5>Title 
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Title
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Title
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Title
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Title
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h4>SCHOLAR ($8)</h4>
+                    <h5>
+                        Library Console
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>
+                        Training Console
+                        <h6>
+                            Library: <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Apprenticeship Consol
+                        e
+                        <h6>
+                            Sandbox: <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Examination
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h4>ADMIN ($10)</h4>
+                    <h5>Below are the front-end elements of each component.</h5>
+                    <h5>Toolkit
+                        <h6>
+                            Agenda<br/>
+                            + <br/>
+                            + <br/>
+                            Tracking<br/>
+                            + <br/>
+                            + <br/>
+                            Library<br/>
+                            + <br/>
+                            + <br/>
+                            Training<br/>
+                            + <br/>
+                            + <br/>
+                            Team<br/>
+                            + <br/>
+                            + <br/>
+                            <br/>
+                            + <br/>
+                            + <br/>
+                            Settings<br/>
+                            + <br/>
+                            + <br/>
+                            Help Desk Lite<br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Help Desk Console                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Breaktime Console                        
+                        <h6>
+                            Breakroom:<br/>
+                            + <br/>
+                            Pastimes:<br/>
+                            + <br/>
+                            Self-Care: <br/>
+                            + <br/>
+                            Practice: <br/>
+                            + <br/>
+                            Project: <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Management Console                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Design Console                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Academy Console                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Developer Console                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Creator Console                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Committee Console                        
+                        <h6>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                            + <br/>
+                        </h6>
+                    </h5>
+                </li>
+                <li>
+                    <h3>FRONT - TO - BACK</h3>
 
+                </li>
+                <li>
+                    <h3>BACK - END</h3>
+
+                </li>
+                <li>
+                    <h3>BACK - TO - FRONT</h3>
+                </li>
             </ul>
             <br/>
 
-            {/* BASIC COMPONENTS */}
+            {/* VISITOR COMPONENTS */}
             <ul>
-                <li>BASIC COMPONENTS</li>
+                <li>
+                    <h3>VISITOR COMPONENTS</h3>
+                    + Login<br/>
+                    + Academy Information<br/>
+                    + Application<br/>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                </li>
                 <li>
                     <h3>Header</h3>
-                    <h4>Visitor Header</h4>
-                    <br/>
                     <h4>User Header</h4>
                     <h6>Picture</h6>
                     square thumbnail of active user<br/>
@@ -141,13 +365,6 @@ function Toolkit() {return (
                     <br/>
                     For employees, accent time is for worktime and alert is for breaktime<br/>
                     <br/>
-                </li>
-                <li>
-                    <h3>NAVIGATION</h3>
-                    <h5></h5>
-                </li>
-                <li>
-                    <h3>HELP SCREEN</h3>
                 </li>
                 {/* Console */}
                 <li>
@@ -181,16 +398,12 @@ function Toolkit() {return (
                             + Console Title: the display name of the user<br/>
                             + Head Buttons: <br/>
                             + Sidebar Buttons: edit (if you are viewing your own account), help, <br/>
-                            + Help: interpretations, portfolio assistance, technical issues<br/>
+                            + Help: interpretations, portfolio tool assistance, technical issues<br/>
                             + Sidebar: full picture (), banner (if scholar/employee), biography, basics, interactions (connect, block)<br/>
                             + Desk: <br/>
                         </h6>
                         <h5>Connection Console</h5>
-                        <h6></h6>
-                        <h5></h5>
-                        <h6></h6>
-                        <h5></h5>
-                        <h6></h6>
+                        <h6>Groups: (# of users, % access, group name), add group, header, desk, help</h6>
                     <h4>Scholar Consoles</h4>
                         <h5>Library</h5>
                             <h6>
@@ -233,84 +446,7 @@ function Toolkit() {return (
                                 + Desk: <br/>
                             </h6>
                     <h4>Admin Consoles</h4>
-                    <h6>
-                        Admin Consoles are accessible from the same component. The Head Buttons along the top of the desk designate all the roles assigned to that user. <br/>
-                        <br/>
-                    </h6>
-                        <h5>Management Console</h5>
-                        <h6>
-                            + Progress Meter: <br/>
-                            + Console Title: <br/>
-                            + Head Button: <br/>
-                            + Sidebar Buttons: <br/>
-                            + Help: <br/>
-                            + Sidebar: links to different pages, such as metrics (), activity (), <br/>
-                            + Desk: <br/>
-                        </h6>
-                        <h5>Designer Console</h5>
-                        <h6>
-                            + Progress Meter: completion of development stage/task<br/>
-                            + Console Title: <br/>
-                            + Head Button: <br/>
-                            + Sidebar Buttons: <br/>
-                            + Help: <br/>
-                            + Sidebar:<br/>
-                            + Desk: <br/>
-                        </h6>
-                        <h5>Academic Console</h5>
-                        <h6>
-                            + Progress Meter: <br/>
-                            + Console Title: <br/>
-                            + Head Buttons: <br/>
-                            + Sidebar Buttons: <br/>
-                            + Help: <br/>
-                            + Sidebar:<br/>
-                            + Desk: <br/>
-                        </h6>
-                        <h5></h5>
-                        <h6>
-                            + Progress Meter: <br/>
-                            + Console Title: <br/>
-                            + Head Buttons: <br/>
-                            + Sidebar Buttons: <br/>
-                            + Help: <br/>
-                            + Sidebar:<br/>
-                            + Desk: <br/>
-                        </h6>
-                        <h5></h5>
-                        <h6>
-                            + Progress Meter: <br/>
-                            + Console Title: <br/>
-                            + Head Buttons: <br/>
-                            + Sidebar Buttons: <br/>
-                            + Help: <br/>
-                            + Sidebar:<br/>
-                            + Desk: <br/>
-                        </h6>
-                        <h5></h5>
-                        <h6>
-                            + Progress Meter: <br/>
-                            + Console Title: <br/>
-                            + Head Buttons: <br/>
-                            + Sidebar Buttons: <br/>
-                            + Help: <br/>
-                            + Sidebar:<br/>
-                            + Desk: <br/>
-                        </h6>
-                    <h4></h4>
-                    <br/>
-                    <br/>
-                    <h6>Title</h6>
-                    Console Name: <br/>
-                    Progress Meter: <br/>
-                    Close: <br/>
-                    <br/>
-                    <h6>Desk</h6>
-                    <br/>
-                    <br/>
-                    <h6>Sidebar</h6>
-                    <br/>
-                    <br/>
+
                     <h6>Help</h6>
                     FAQ (common questions, policies, rules), tutorials (guided steps, follow along), feedback (), help desk (chat with an available expert on this tool/page/assessment)<br/>
                     <br/>
@@ -330,87 +466,49 @@ function Toolkit() {return (
 
             {/* MEMBER COMPONENTS */}
             <ul>
-                <li>MEMBER COMPONENTS</li>
+                <li>
+                    <h3>MEMBER COMPONENTS</h3>
+                    + Header <br/>
+                    + Navigation<br/>
+                    + Portfolio Console<br/>
+                    + Social Console<br/>
+                    + Community Console<br/>
+                    + Help Screen<br/>
+                </li>
                 <li>These elements are limited to users with Aura Academy accounts.</li>
-                {/* Portfolio */}
                 <li>
-                    <h5>Portfolio Console</h5>
-                    <br/>
-                    <h6>Profile (Sidebar): for the user who opens their own portfolio, the sidebar becomes the account editor for customization and profile settings</h6>
-                    Name: <br/>
-                    Role: <br/>
-                    Biography: <br/>
-                    <br/>
-                    <h6>Results</h6>
-                    <br/>
-                    <h6>Training</h6>
-                    Certifications:<br/>
-                    <br/>
+                    <h3>Header</h3>
                     <h6></h6>
-                    <br/>
                 </li>
-                {/* Connections */}
                 <li>
-                    <h5>Connections Console</h5>
-                    <h6>Groups</h6>
-                    <br/>
+                    <h3>Navigation</h3>
+                    <h6></h6>
                 </li>
-                {/* Social */}
                 <li>
-                    <h5>Community Console</h5>
-                    <h6>Metaconsole</h6>
-                    Leadership: <br/>
-                    Tags: <br/>
-                    Population: number of people in community<br/>
-                    Roster: listed with thumbnails<br/>
-                    <br/>
-                    Calendar:<br/>
-                    + Dates: deadlines, holidays, birthdays<br/>
-                    <h6>Bulletin</h6>
-                    News: Academy, Regional, District, Community<br/>
-                    Changes: policy, tools, features, etc.<br/>
-                    Reminders: <br/>
-                    <br/>
-                    <h6>Forum</h6>
-                    Discussions:<br/>
-                    Polls: <br/>
-                    <h6>Aggreport</h6>
-                    Frequency Maps: <br/>
-                    Analytics: <br/>
-                    Reflections: relating to the user's data<br/>
-                    <br/>
-                    <br/>
+                    <h3>Portfolio Console</h3>
+                    <h6>Profile (Sidebar; Name, Role, Biography), Results, Training</h6>
                 </li>
+                <li>
+                    <h3>Social Console</h3>
+                    <h6></h6>
+                </li>
+                <li>
+                    <h3>Community Console</h3>
+                    <h6>Sidebar (leadership team, tags, population, roster), Calendar (dates, deadlines, holidays, birthdays), Bulletin (news, changes in policy, changes in tools, reminders), Forum (discussions, polls), Aggreport (frequency maps, analytics, reflections to user's profile)</h6>
+                </li>
+                <li>
+                    <h3>Help Screen</h3>
+                    <h6></h6>
+                </li>
+            </ul>
+
+
+
+            <ul>
+                <li>MEMBER COMPONENTS</li>
                 {/* Applications */}
                 <li>
                     <h3>APPLICATIONS</h3>
-                    <h6></h6>
-                    <h4>Scholarship</h4>
-                    <h6>
-                        Members need to apply to become a Aura.Academy Scholar. 
-                         
-                    </h6>
-                    <h5>Library</h5>
-                    <h6>
-                        Prerequisites: <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        Application: <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
-                    <h5>Training</h5>
-                    <h6>
-                        Course Content: <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
                     <h4>Employment</h4>
                     <h6>
                         Prerequisites are automatically checked for in user accounts, and if the information is missing, they cannot apply for that role<br/><br/>
@@ -454,250 +552,194 @@ function Toolkit() {return (
                         + Teaching Experience: <br/>
                         + Educational Support Experience: <br/>
                     </h6>
-                    <h6>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
-                    <h6>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
-                    <h6>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
-                    <h6>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>                    
-                    <h6>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
-                    <br/>
                 </li>
-                <li>
-                    <h5>Lists to be made into their own things: </h5>
-                    <h6></h6>
-                    <br/>
-                </li>
-
             </ul>
-
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
 
 
             {/* TESTING COMPONENTS */}
             <ul>
-                <li>TESTING COMPONENTS</li>
                 <li>
-                    <h5>Introduction</h5>
-                    <br/>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5></h5>
-                    <br/>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5></h5>
-                    <br/>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <br/>
-                </li>
-            </ul>  
-            <br/>  
-            <br/>
-
-
-            {/* OFFICE COMPONENTS */}
-            <ul>
-                <li>OFFICE COMPONENTS</li>
-                {/* Dashboard */}
-                <li>
-                    <h5>Dashboard</h5>
-                    This is what appears when no other screen is active.<br/>
-                    <h6>WorkDay</h6>
-                    <br/>
-                    <h6>WorkPlace</h6>
-                    News: <br/>
-                    Message Board: <br/>
-                    + Channels: <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                </li>
-                {/* Training */}
-                <li>
-                    <h5>Training</h5>
-                    <br/>
-                    <h6>Assignments</h6>
-                    Quizzes: small tests over resources<br/>
-                    Discussion: responses to a prompt with a paragraph or less<br/>
-                    Essay: responses to a prompt with multiple paragraphs<br/>
-                    <br/>
-                    <h6>Resources</h6>
-                    Reading Assignments: <br/>
-                    Comprehension Check: <br/>
-                    Articles: <br/>
-                    Annotations: <br/>
-                    <br/>
-                    <h6>Projects</h6>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                </li>
-                {/* Office Clock */}
-                <li>
-                    <h5>Office Clock: </h5>
-                    Accrual: for every 2 average worktime intervals, 1 break interval is earned; all breaktime must be used by week's end; if accrued breaktime reaches maximum work hours, the office will be locked until the next week<br/>
-
-                    <h5>WorkTime </h5>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-                    <h6></h6>
-                    <br/>
-
-                    <h5>BreakTime </h5>
-                    Autofill: accrued breaktime fills in for missed scheduled worktime<br/>
-                    <br/>
-                    <br/>
-                    <h6>BreakRoom</h6>
-                    Chat: <br/>
-                    Current Activities: <br/>
-                    <br/>
-                    <h6>Pastimes</h6>
-                    <br/>
-                    <h6>Self-Care</h6>
-                    <br/>
-                    <h6>Practice</h6>
-                    <br/>
-                    <h6>Project</h6>
-                    <br/>
-
-
-
-                    
-                </li>
-                {/* WorkDay */}
-                <li>
-                    <h5>WorkDay</h5>
-                    <h6></h6>
-                    <br/>
-                    <h5></h5>
-                    <h6>Actions: number of actions submitted in a day</h6>
-                    <h6>Contribution: expected percentage of assigned pools completed based on number of people working each pool</h6>
-                    <h5>WorkWeek</h5>
-                    <h6>Breakdown: </h6>
-                    <h6>Seasonal: </h6>
-                    <h6>Annual: </h6>
-                    <h6></h6>
-                </li>
-                {/* WorkPlace */}
-                <li>
-                    <h5>WorkPlace</h5>
-                    <h6></h6>
-                    <br/>
-                </li>
-
-                <li>
-                    <h5></h5>
-                    <h6></h6>
-                    <br/>
-                </li>
-                <li>
-                    <h5></h5>
-                    <h6></h6>
-                    <br/>
+                    <h3>TESTING COMPONENTS</h3>
+                    + Introduction<br/>
+                    + <br/>
+                    + <br/>
+                    + Results<br/>
+                    + Feedback<br/>
                 </li>
             </ul>
 
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            {/* SCHOLAR COMPONENTS */}
+            <ul>
+                <li>
+                    <h3>SCHOLAR COMPONENTS</h3>
+                    + Library: <br/>
+                    + Training: course content<br/>
+                    + Apprenticeship: <br/>
+                    + Examination: <br/>
+                    + Application: employment (checks for prerequisite training and documents)<br/>
+                </li>
+            </ul>
+
+            {/* OFFICE COMPONENTS */}
+            <ul>
+                <li>
+                    <h3>OFFICE COMPONENTS</h3>
+                    + Dashboard<br/>
+                    + Toolkit<br/>
+                    + Help Desk Console<br/>
+                </li>
+                <li>
+                    <h3>Dashboard</h3>
+                    <h4></h4>
+                </li>
+                <li>
+                    <h3>Toolkit</h3>
+                    <h4>Agenda</h4>
+                    <h4>Tracking</h4>
+                    <h5>Tracking is used to monitor your performance score.</h5>
+                        <h5> Achievement (20%)
+                            <h6>
+                                + <br/>
+                                + <br/>
+                                + <br/>
+                            </h6>
+                        </h5>
+                        <h5> Activity (20%)
+                            <h6>
+                                Score:<br/>
+                                + <br/>
+                                + <br/>
+                                Worktime:<br/>
+                                + <br/>
+                                + <br/>
+                                Breaktime:<br/>
+                                + <br/>
+                                + <br/>
+                            </h6>
+                        </h5>
+                        <h5> Adequacy (20%)
+                            <h6>
+                                + <br/>
+                                + <br/>
+                                + <br/>
+                            </h6>
+                        </h5>
+                        <h5> Adherence (20%)
+                            <h6>
+                                + <br/>
+                                + <br/>
+                                + <br/>
+                            </h6>
+                        </h5>
+                        <h5> Attendance (20%)
+                            <h6>
+                                + <br/>
+                                + <br/>
+                                + <br/>
+                            </h6>
+                        </h5>
+                        <h5> Accountability (15%)
+                            <h6>
+                                + <br/>
+                                + <br/>
+                                + <br/>
+                            </h6>
+                        </h5>
+                    <h4>Library</h4>
+                        <h5>Articles</h5>
+                        <h5>Annotations</h5>
+                        <h5></h5>
+                    <h4>Training</h4>
+                        <h5>Assignments: projects, </h5>
+                        <h5>Assessments: comprehension, application</h5>
+                        <h5>Discussions: </h5>
+                        <h5>Essays: </h5>
+                        <h5></h5>
+                        <h5></h5>
+                    <h4>Team</h4>
+                    <h5>Leadership (schedules, basic information, roles), Team (roster, schedules, basic information, stacks), statuses (online, busy, help desk, break), team performance (achievement, case submissions)</h5>
+                    <h4></h4>
+                    <h4>Settings</h4>
+                        <h5>Breaktime: autofill absences (y/n), accountability (y/n)</h5>
+                        <h5></h5>
+                        <h5></h5>
+                        <h5></h5>
+                    <h4>Help Desk Lite</h4>
+                    <h5>Only available for leadership roles</h5>
+                    <h5></h5>
+
+                </li>
+                <li>
+                    <h3>Help Desk Console</h3>
+                    <h4></h4>
+
+                </li>
+            </ul>
 
             {/* ROLE COMPONENTS */}
+            <ul>
+                <li>
+                    <h3>MANAGEMENT COMPONENTS</h3>
+                    + Roles in Management<br/>
+                    + <br/>
+                    + <br/>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>DESIGNER COMPONENTS</h3>
+                    + Roles in Design<br/>
+                    + <br/>
+                    + <br/>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>ACADEMIC COMPONENTS</h3>
+                    + Roles in Academics<br/>
+                    + <br/>
+                    + <br/>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>DEVELOPER COMPONENTS</h3>
+                    + Roles in Development<br/>
+                    + <br/>
+                    + <br/>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>CREATOR COMPONENTS</h3>
+                    + Roles in Creative<br/>
+                    + <br/>
+                    + <br/>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>COMMITTEE COMPONENTS</h3>
+                    + Roles in Committee<br/>
+                    + <br/>
+                    + <br/>
+                </li>
+            </ul>
+
             <ul>
                 <li>ROLE COMPONENTS</li>
                 {/* Management Consoles */}
                 <li>
                     <h3>MANAGEMENT</h3>
-                    <h4>Management</h4>
-                    <h5></h5>
-                    <h5></h5>
-                    <h5></h5>
-                    <h4>Role Tasks and Tools</h4>
-                    <h5></h5>
-                    <h6></h6>
-                    <h6></h6>
-                    <h4>Role Tasks and Tools</h4>
-                    <h5></h5>
-                    <h5></h5>
-                    <h5></h5>
-                    <h5></h5>
+
                     <h5>Team</h5>
                         <h6>
-                            + Leadership: schedule stack, basic information, roles<br/>
-                            + Team Members: schedule stack, basic information, roles <br/>
-                            + Activity: status (online, busy, help desk, break), team performance ( both percent and counted)<br/>
                             + Assignments: projects(), tasks ()<br/>
-                            + <br/>
-                            + <br/>
                             + Queues: status (claimed, channeled, unclaimed, pending, dispute, complete), feedback, reports<br/>
                             + Calendar: schedule stack (you, team, leadership), week/month, <br/>
                         </h6>                    
@@ -705,82 +747,20 @@ function Toolkit() {return (
                         <h6>
                             + Memos: updates, reminders <br/>
                             + Bulletin: discussion, polls, birthdays, special occasions<br/> 
-                            + <br/>
-                            + <br/>
-                            + <br/>
-                            + <br/>
-                            + <br/>
-                            + <br/>
                         </h6>
-                        <br/>
                 </li>
                 {/* Designer Consoles */}
                 <li>
                     <h5>DESIGNERS<br/></h5>
                     Some of the tools for these positions include:
                     <h6>Introduction Editor</h6>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
                     + Warnings: <br/>
                     + Further Reading: <br/>
                     <h6>Assessment Editor</h6>
-                    <br/>
-                    <br/>
                     <h6>Results Editor</h6>
-                    <br/>
                     <h6>Assessment Editor</h6>
-                    <br/>
-                    <h5></h5>
-                    <br/>
-                    <h5></h5>
-                    <br/>
-                    <br/>
-                    <h5></h5>
-                    <br/>
-                    <h6></h6>
-                    <br/>
                 </li>
-                {/* Developer Consoles */}
-                <li>
-                    <h5>DEVELOPERS-------------------</h5>
-                    <h6></h6>
-                    <h6></h6>
-                    <h6></h6>
-                    <h6></h6>
-                    <h6></h6>
-                    <h6></h6>
-                    <h6></h6>
-                    <h5>Architects</h5>
-                    <h5>Devs</h5>
-                    <h5>Dev Support</h5>
-                    <h5>QA</h5>
-                    <h5>QA Support</h5>
-                    <h5>Developer Liaison</h5>
-                    <br/>
-                </li>
-                <li>
-                    <h5></h5>
-                    <h6></h6>
-                    <br/>
-                </li>
-                <li>
-                    <h5></h5>
-                    <h6></h6>
-                    <br/>
-                </li>
-                <li>
-                    <h5></h5>
-                    <h6></h6>
-                    <br/>
-                </li>
-
             </ul>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             {/* Work Day */}
             <ul>
                 <li>Work Day</li>
@@ -848,21 +828,9 @@ function Toolkit() {return (
                     <br/>
                 </li>
             </ul>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+
             {/* Subscription Revenue */}
+
             <ul>
                 <li>REVENUE</li>
                 <li>
@@ -921,26 +889,18 @@ function Toolkit() {return (
             </ul>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             {/* ROLE DESCRIPTIONS */}
             <ul>
-                <li>ROLE DESCRIPTIONS</li>
-                <br/>
-                {/* Scholars */}
                 <li>
-                    <h3>SCHOLARS</h3>
-                    <h5>Library</h5>
-                    <h5>Training</h5>
-                    <h5>Apprenticeship</h5>
-                    <h5>Examination</h5>
+                    <h3>ROLE DESCRIPTIONS</h3>
+                    + <br/>
+                    + <br/>
+                    + <br/>
                 </li>
+            </ul>
+
+            <ul>
+                <li>ROLE DESCRIPTIONS</li>
                 <br/>
                 {/* Management */}
                 <li>
@@ -1046,17 +1006,17 @@ function Toolkit() {return (
                         <br/>
                         <h6>TASKS: coordinates the updating process, maintains integrity of personality structures, decision power when department stalls, editor of the manuals, can create macro structures (selves, functions, traits), analyze aggresults</h6>
                         <h6>CASES: </h6>
-                        <h6>HOURS: 30-40/wk; 25 scheduled</h6>
+                        <h6>HOURS: 35-45/wk; 30 scheduled</h6>
                         <h6>HELP DESK: </h6>
-                        <h6>PAY: 5 academy shares</h6>
+                        <h6>PAY: 7 academy shares</h6>
                     <h5>Engineer Support</h5>
                         <br/>
                         <br/>
                         <h6>TASKS: </h6>
                         <h6>CASES: </h6>
-                        <h6>HOURS: </h6>
+                        <h6>HOURS: 30-40/wk; 25 scheduled</h6>
                         <h6>HELP DESK: </h6>
-                        <h6>PAY: </h6>
+                        <h6>PAY: 6 academy shares</h6>
 
 
                     <h4>Design Team</h4>
@@ -1068,7 +1028,7 @@ function Toolkit() {return (
                         <h6>CASES: </h6>
                         <h6>HOURS: 25-35/wk; 20 scheduled</h6>
                         <h6>HELP DESK: </h6>
-                        <h6>PAY: 4 academy shares</h6>
+                        <h6>PAY: 5 academy shares</h6>
                     <h5>Advanced Design Support</h5>
                         This position is for <br/>
                         <br/>
@@ -1076,7 +1036,7 @@ function Toolkit() {return (
                         <h6>CASES: </h6>
                         <h6>HOURS: 20-30/wk; 15 scheduled</h6>
                         <h6>HELP DESK: assessment support, assessment members</h6>
-                        <h6>PAY: 3 academy shares</h6>
+                        <h6>PAY: 4 academy shares</h6>
                     <h5>Design Support</h5>
                         <br/>
                         <br/>
@@ -1084,7 +1044,7 @@ function Toolkit() {return (
                         <h6>CASES: </h6>
                         <h6>HOURS: 15-25/wk; 10 scheduled</h6>
                         <h6>HELP DESK: assessment support, assessment members</h6>
-                        <h6>PAY: 2 academy shares</h6>
+                        <h6>PAY: 3 academy shares</h6>
 
 
                     <h4>Assessment Support</h4>
@@ -1095,7 +1055,7 @@ function Toolkit() {return (
                         <h6>CASES: feedback channeling, </h6>
                         <h6>HOURS: 10-20/wk; 5 scheduled</h6>
                         <h6>HELP DESK: assessment assistance, results assistance</h6>
-                        <h6>PAY: </h6>
+                        <h6>PAY: 2 academy shares</h6>
                         <br/>
                     <h5>Assessment Support</h5>
                         <br/><br/>
@@ -1247,26 +1207,8 @@ function Toolkit() {return (
                     <h6></h6>
                     <br/>
                 </li>
-                {/*  */}
-                <li>
-                    <h5></h5>
-                    <h6></h6>
-                    <br/>
-                </li>
 
-            </ul>
 
-            <ul>
-                <li>g</li>
-                <li>
-                    <h5></h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li> 
-                <li></li>
-                <li></li>
             </ul>
             <br/>
 

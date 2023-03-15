@@ -133,12 +133,12 @@ body {
     top: 0;
     right: 0;
     width: 100%;
-    height: 48px;
+    height: 50px;
     z-index: 9;
     box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: 40px auto;
-    grid-template-rows: 20px 20px 8px;
+    grid-template-rows: 20px 20px 10px;
     grid-template-areas:  "thumbnail userName" "thumbnail userID" "userProgress userProgress";
 
     img {
@@ -850,17 +850,17 @@ body {
                 margin: 5px;
                 border-radius: 4px;
                 li:nth-child(1) {
-                    background-color: $a1;
+                    background-color: $at1;
                     margin: 0;
-                    color: $a9;
+                    color: $at9;
                     padding: 10px;
                     font-weight: 800;
-                    font-size: 20px;
-                    letter-spacing: 4px;
-                    line-height: 22px;
+                    font-size: 16px;
+                    letter-spacing: 1.5px;
+                    line-height: 20px;
                 }
                 li {
-                    background-color: $t7;
+                    background-color: $at8;
                     font-size: 12px;
                     line-height: 14px;
                     font-weight: 600;
@@ -874,20 +874,20 @@ body {
                         font-size: 18px;
                         padding: 10px;
                         border-radius: 4px;
-                        color: $t0;
+                        color: white;
                         font-weight: 600;
                         letter-spacing: 2.5px;
                         line-height: 20px;
                         vertical-align: middle;
                         margin: 5px 0 5px 0;
                         font-weight: 800;
-                        background-color: $t5;
+                        background-color: $at5;
                     }
                     h4 {
                         appearance: none;
                         font-size: 14px;
                         padding: 8px;
-                        background-color: $t3;
+                        background-color: $at1;
                         border-radius: 4px;
                         color: white;
                         font-weight: 600;
@@ -900,7 +900,7 @@ body {
                         appearance: none;
                         font-size: 12px;
                         padding: 6px;
-                        background-color: $t1;
+                        background-color: $at3;
                         border-radius: 4px;
                         color: white;
                         font-weight: 600;
@@ -913,9 +913,9 @@ body {
                         appearance: none;
                         font-size: 12px;
                         padding: 4px;
-                        background-color: $t9;
+                        background-color: white;
                         border-radius: 4px;
-                        color: $t1;
+                        color: $t0;
                         font-weight: 600;
                         letter-spacing: 1px;
                         line-height: 14px;

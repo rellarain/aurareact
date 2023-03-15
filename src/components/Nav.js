@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Navigation() {return (
     // navCropClosed navCropPage navCropOpen navCropTools
-    <nav id='navCrop' className='navCropClosed'>
+    <nav id='navCrop' className='navCropPage'>
         {/* Nav Button
                 
             Navigation Console: 
@@ -29,7 +29,7 @@ function NavigationPanel() { return (
 
 function NavigationPage() { return (
     <div id="navPage" placeholder='Search'>
-        Social / 1600.0000.0000.0000
+        Office
         {/* Page Tool
                 
             Text-Input:
@@ -65,7 +65,7 @@ function NavigationBody() { return (
             <li>Manual</li>
             <li></li>
         </ul>
-
+        
 
     </div>
 )}

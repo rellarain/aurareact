@@ -4,14 +4,12 @@ export default function UserConsole() {return (
     // userConsoleWOHD userConsoleWHD
     <div id='userConsole' className='userConsoleWOHD'>
         <div id='userConsoleProgress'></div>
-        <ConsoleTitle/>
         <div id='userConsoleClose'></div>
         <div id='userConsoleSidebar'>
-            <TeamSchedule/>
-            <TeamBdays/>
+
         </div>
         {/* consoleSidebarOpen consoleSidebarClosed */}
-        <div id='userConsoleDesk' className='consoleSidebarOpen'>
+        <div id='userConsoleDesk' className='consoleSidebarClosed'>
             <br/>
             Applications<br/>
             <br/>
@@ -35,27 +33,6 @@ export default function UserConsole() {return (
     </div>
 )}
 
-
-function ConsoleTitle() {return(
-    <div id='userConsoleTitle'>
-        <span>Console</span>
-    </div>
-)}
-
-function TeamSchedule() {return(
-    <div className=''>
-        <img src='' alt=''/>
-        <span></span>
-    </div>
-)}
-
-
-function TeamBdays() {return(
-    <div className=''>
-        <img src='' alt=''/>
-        <span></span>
-    </div>
-)}
 
 function ConsoleHelp() {return(
     //  consoleHelpOpen consoleHelpClosed
@@ -88,3 +65,34 @@ function ConsoleHelp() {return(
         </div>
     </div>
 )}
+
+// To-Do List: 
+// - Create separate JS files for each level of user (visitorConsoles, memberConsoles, scholarConsoles, adminConsoles)
+// - Create styling framework that works for all consoles
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
