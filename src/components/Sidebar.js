@@ -15,10 +15,10 @@ function Toolkit() {return (
             <span alt='Tracking'></span>
             <span alt='Library'></span>
             <span alt='Training'></span>
+            <span alt='Team'></span>
             <span alt='X'></span>
-            <span alt='X'></span>
-            <span alt='Simulator'></span>
-            <span alt='Settings'></span>
+            <span alt='Office Settings'></span>
+            <span alt='Help Desk Lite'></span>
         </div>
         <div id='toolkitTitle'>Toolkit</div>
         <div id='toolkitProgress'><span id='toolkitProgressBar'></span></div>
@@ -346,24 +346,12 @@ function Toolkit() {return (
                 <li>
                     <h3>Header</h3>
                     <h4>User Header</h4>
-                    <h6>Picture</h6>
-                    square thumbnail of active user<br/>
-                    <br/>
-                    <h6>Display Name</h6>
-                    Brings up Portfolio/Profile component<br/>
-                    <br/>
                     <h6>User ID</h6>
                     Set of links that bring up collective pages<br/>
                     +  Academy Page: first 4; academy bulletin, list of regions starting with your own<br/>
                     +  Region Page: second 4; region bulletin, list of districts starting with your own<br/>
                     +  District Page: third 4; district bulletin, list of communities starting with your own<br/>
                     +  Community Page: end 4; community bulletin, list of members starting with you<br/>
-                    <br/>
-                    <h6>Clock</h6>
-                    Shows current time with a white square; connects to selected time zone<br/>
-                    Shows active time, or time spent using tools, with accent squares<br/>
-                    <br/>
-                    For employees, accent time is for worktime and alert is for breaktime<br/>
                     <br/>
                 </li>
                 {/* Console */}
@@ -454,12 +442,6 @@ function Toolkit() {return (
                     <br/>
                     <br/>
                 </li>
-                <li>
-                    <h5></h5>
-                </li>
-                <li>
-                    <h5></h5>
-                </li>
             </ul>
             <br/>
             <br/>
@@ -478,7 +460,25 @@ function Toolkit() {return (
                 <li>These elements are limited to users with Aura Academy accounts.</li>
                 <li>
                     <h3>Header</h3>
-                    <h6></h6>
+                    <h4>Thumbnail <br/> square image of active user</h4>
+                    <h4>Full Name <br/> activates the portfolio console of the active user, which can be used to edit one's information</h4>
+                    <h4>User ID </h4>
+                    <h4>Clock</h4>
+                    <h5>Current Time (White Square)
+                        <h6>
+                        + <br/>
+                        + <br/>
+                        </h6>
+                    </h5>
+                    <h5>Scheduled Time (Theme Color)</h5>
+                    <h5>Active Time (Accent Color)</h5>
+                    <h5>Down Time (WHITE)</h5>
+                    <h6>
+                        Down Time indicates times that the website will be inactive or inaccessible to users for one of the following reasons:<br/>
+                        + Site Maintenance: <br/>
+                        + <br/>
+                        + <br/>
+                    </h6>
                 </li>
                 <li>
                     <h3>Navigation</h3>
@@ -503,57 +503,6 @@ function Toolkit() {return (
             </ul>
 
 
-
-            <ul>
-                <li>MEMBER COMPONENTS</li>
-                {/* Applications */}
-                <li>
-                    <h3>APPLICATIONS</h3>
-                    <h4>Employment</h4>
-                    <h6>
-                        Prerequisites are automatically checked for in user accounts, and if the information is missing, they cannot apply for that role<br/><br/>
-                        Prerequisites:<br/>
-                        + Trained to interpret 10 traits<br/>
-                        + Trained to use Aura.Academy tools<br/>
-                        + Trained on Aura.Academy code of conduct<br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
-
-                    <h5>Role-Specific Prerequisites</h5>
-                    <h6>
-                        DESIGNERS<br/>
-                        Assessment Support<br/>
-                        + Trained on all traits for two functions<br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        Design Team<br/>
-                        + Trained on all traits for four functions<br/>
-                        + <br/>
-                        + <br/>
-                        + <br/>
-                        Designer Leadership<br/>
-                        + Trained on all available traits and functions<br/>
-                        + University Degree in Psychology, Mathematics, and/or relevant field to assessment topic<br/>
-                        + <br/>
-                        + <br/>
-                    </h6>
-                    <h6>
-                        ACADEMICS<br/><br/>
-                        Educational Support: <br/>
-                        + Higher Education Degree: associates, undergrad, graduate<br/>
-                        + Studies Portfolio: with Aura.Academy tools, create a portfolio representing fields of interest you have pursued<br/>
-                        + Recommendation: you must be recommended for training by Educational Leadership<br/><br/>
-                        Educational Leadership: <br/>
-                        + University Degree: undergrad, graduate<br/>
-                        + CV/Resume: <br/>
-                        + Teaching Experience: <br/>
-                        + Educational Support Experience: <br/>
-                    </h6>
-                </li>
-            </ul>
 
 
             {/* TESTING COMPONENTS */}
@@ -586,7 +535,7 @@ function Toolkit() {return (
                     <h3>OFFICE COMPONENTS</h3>
                     + Dashboard<br/>
                     + Toolkit<br/>
-                    + Help Desk Console<br/>
+                    + Admin Footer: Help Desk, Breaktime, Toolkit Toggle<br/>
                 </li>
                 <li>
                     <h3>Dashboard</h3>
@@ -596,52 +545,70 @@ function Toolkit() {return (
                     <h3>Toolkit</h3>
                     <h4>Agenda</h4>
                     <h4>Tracking</h4>
-                    <h5>Tracking is used to monitor your performance score.</h5>
-                        <h5> Achievement (20%)
+                    <h5>Tracking is used to monitor your performance score. Each score is created weekly, and recorded for a year. Monthly averages are stored for 3 years, and yearly averages are stored for 10 years.<br/>
+                        The maximum performance score is 100%. Five scores are worth 20% with an optional bonus 15%.
+                        </h5>
+                        <h5> ACHIEVEMENT (20%) 
                             <h6>
+                                The percentage of one's assigned work that was completed in one day.<br/><br/> 
+                                SCORE: X/Y<br/>
+                                + Completed Work (X): the amount of work (cases, helped users, etc.) that was completed in that day's shift<br/>
+                                + Allotted Workshare (Y): cumulative amount of each equal portion of work in a user's assigned pools<br/>
                                 + <br/>
                                 + <br/>
                                 + <br/>
                             </h6>
                         </h5>
-                        <h5> Activity (20%)
+                        <h5> ACTIVITY (20%)
                             <h6>
-                                Score:<br/>
-                                + <br/>
-                                + <br/>
-                                Worktime:<br/>
-                                + <br/>
-                                + <br/>
-                                Breaktime:<br/>
-                                + <br/>
-                                + <br/>
+                                The quantity of action points earned in a day.<br/><br/> 
+                                SCORE: X/2<br/>
+                                + Total Action Points: <br/>
+                                <br/>
+                                Action Points: points are earned per interval for the queue <br/>
+                                + 3: more than the average range of actions submitted (for this queue)<br/>
+                                + 2: average range of actions submitted (for this queue)<br/>
+                                + 1: less than the average range of actions submitted (for this queue)<br/>
+                                + 0: inactive, no actions submitted<br/>
                             </h6>
                         </h5>
                         <h5> Adequacy (20%)
                             <h6>
-                                + <br/>
-                                + <br/>
-                                + <br/>
+                                SCORE: X/Y<br/>
+                                + Cumulative Score (X): the sum of each scored action that week <br/>
+                                + Total Number of Scored Actions (Y): the number of actions scored in a week, which should be 3-7 total, for all roles; up to 3 can come from disputes, the rest are randomly generated<br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                Rubrics used for scoring are available in role manuals.<br/>
                             </h6>
                         </h5>
-                        <h5> Adherence (20%)
+                        <h5> ADHERENCE (20%)
                             <h6>
-                                + <br/>
-                                + <br/>
-                                + <br/>
+                                SCORE: X/Y<br/>
+                                + Worked Scheduled Time (X): the number of work and break intervals that fall in the user's scheduled worktime<br/>
+                                + Scheduled Time (Y): the number of time intervals the user has scheduled themselves to work<br/>
                             </h6>
                         </h5>
-                        <h5> Attendance (20%)
+                        <h5> ATTENDANCE (20%)
                             <h6>
-                                + <br/>
-                                + <br/>
-                                + <br/>
+                                SCORE: X/Y<br/>
+                                + Worked Time Intervals (X): a user's cumulative number of worktime and breaktime intervals for the week<br/>
+                                + Minimum Worktime Intervals (Y): the minimum of the user's expected worktime based on work roles<br/>
                             </h6>
                         </h5>
                         <h5> Accountability (15%)
                             <h6>
-                                + <br/>
-                                + <br/>
+                                SCORE: X/Y<br/>
+                                + Completed Break Activities (X): the number of scheduled break activities completed that week<br/>
+                                + Planned Break Activities (Y): the number of scheduled break activities planned that week<br/>
+                            </h6>
+                        </h5>
+                        <h5>Income
+                            <h6>
+                                <br/>
+                                + Performance Score Bonus: 30% of revenue from a user's direct district is multiplied by the user's monthly performance score <br/>
+                                + Team Share: portion of the revenue from the user's team (community, district, region)<br/>
                                 + <br/>
                             </h6>
                         </h5>
@@ -683,6 +650,12 @@ function Toolkit() {return (
                     + Roles in Management<br/>
                     + <br/>
                     + <br/>
+                    + <br/>
+                    + <br/>
+                    + <br/>
+                </li>
+                <li>
+                    <h3></h3>
                 </li>
             </ul>
 
@@ -726,7 +699,11 @@ function Toolkit() {return (
                 <li>
                     <h3>COMMITTEE COMPONENTS</h3>
                     + Roles in Committee<br/>
-                    + <br/>
+                    + C-Suite: Founder, Executive<br/>
+                    + Appointment: <br/>
+                    + Committee<br/>
+                    + Panel<br/>
+                    + Board<br/>
                     + <br/>
                 </li>
             </ul>
@@ -761,73 +738,6 @@ function Toolkit() {return (
                     <h6>Assessment Editor</h6>
                 </li>
             </ul>
-            {/* Work Day */}
-            <ul>
-                <li>Work Day</li>
-                <li>
-                    <h5>Clock</h5>
-                    A strip of boxes on the header that indicate time spent working that day.
-                    <h6>Worktime</h6>
-                    intervals where work actions were submitted<br/>
-                    ACCENT COLOR: dark for more than average, medium for average, light for less than average
-                    <h6>Breaktime</h6>
-                    intervals where no work activity was submitted (optional: intervals where break activity was submitted)<br/>
-                    ALERT COLOR: dark for multiple break actions, medium for one break action, light for no break action
-                    <h6>Upcoming</h6>
-                    intervals where the user is scheduled to work later in the day<br/>
-                    LIGHT THEME COLOR
-                    <h6>Missed</h6>
-                    intervals where the user was absent during scheduled worktime earlier in the day<br/>
-                    MEDIUM THEME COLOR
-                    <h6>Unscheduled</h6>
-                    intervals where the user submitted no action and was not scheduled to work<br/>
-                    DARK THEME COLOR
-                </li>
-                <li>
-                    <h5>Beginning</h5>
-                    Schedule: <br/>
-                    Goals: case #, pool % <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li> 
-                <li>
-                    <h5>Worktime</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>Breaktime</h5>
-                    -Accrual: break time is earned from work time; see Performance Bonus section<br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>Meetings</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5>Closing</h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-                <li>
-                    <h5></h5>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </li>
-            </ul>
 
             {/* Subscription Revenue */}
 
@@ -835,28 +745,6 @@ function Toolkit() {return (
                 <li>REVENUE</li>
                 <li>
                     <h5>PERFORMANCE BONUS: 0-30%  </h5>
-                    The performance bonus is calculated from a general productivity score. The ceiling of the score is 100% with 5 categories worth 20% each. An optional bonus 15% can be earned with an accountability score, but 100% remains the highest score.<br/>
-                    <h6>Attendance</h6>
-                    The percentage of hours worked out of the total hours required.<br/>
-                    <h6>Adherence</h6>
-                    The percentage of scheduled hours worked out of the total scheduled hours.<br/>
-                    <h6>Activity</h6>
-                    The performance score of work activity based on prior performance.<br/>
-                    (actual day's score)/(average day score)<br/>
-                    3: more than average number of actions<br/>
-                    2: standard range of actions <br/>
-                    1: less than average number of actions<br/>
-                    0: inactivity<br/>
-                    <h6>Achievement</h6>
-                    The percentage of work processed relative to equal portions with team.<br/>
-                    (actual workshare)/(day's expected workshare)<br/>
-                    actual work share = number of processed cases in each queue<br/>
-                    expected work share = (number of cases in queue)/(number of people in queue)<br/>
-                    <h6>Adequacy</h6>
-                    The quality score of work reviewed by supervisor using an available rubric.<br/>
-                    (reviewed work can be disputes, rewards, or random)<br/>
-                    <h6>Accountability</h6>
-                    The percentage of scheduled break activities that were completed. <br/>
                     <h5>COMMUNITY SHARE: 25%</h5>
                     The cumulative value of a community's 25% revenue is divided into portioned shares for employees in that region.<br/>
                     <h6>SHARES</h6>
@@ -893,9 +781,154 @@ function Toolkit() {return (
             <ul>
                 <li>
                     <h3>ROLE DESCRIPTIONS</h3>
+                    + Management<br/>
                     + <br/>
                     + <br/>
                     + <br/>
+                    + <br/>
+                    + <br/>
+                    + <br/>
+                </li>
+                <li>
+                    <h3>Management</h3>
+                    <h4>Community Management</h4>
+                    <h5>Community Attendant
+                        <h6>
+                            + HOURS: 20-30/wk, 5 scheduled; 6h40m-10h breaktime, 13h20m-20h worktime<br/>
+                            + PAY:  $15/hr + performance bonus(direct members, 3 community team shares, 1 district share)<br/>
+                        </h6>
+                        <h6>
+                            + TASKS: <br/>
+                            + CASES: <br/>
+                            + HELP DESK QUEUES: <br/>
+                        </h6>
+                    </h5>
+                    <h5>Advanced Community Support
+                        <h6>
+                            + HOURS: 15-20/wk, 10 scheduled; 5h-6h40m breaktime, 10h-13h20m worktime <br/>
+                            + PAY: $15/hr + performance bonus(direct members, 2 community team shares)<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>Community Support
+                        <h6>
+                            + HOURS: 10-15/wk, 5 scheduled; 3h20m-5h breaktime, 6h40m-10h worktime <br/>
+                            + PAY: $15/hr + performance bonus(direct members, 1 community team share)<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h4>District Management</h4>
+                    <h5>District Manager
+                        <h6>
+                            + HOURS: 30-40/wk, # scheduled; h-h breaktime, h-h worktime <br/>
+                            + PAY: $15/hr + performance bonus(direct members, )<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>Advanced District Support
+                        <h6>
+                            + HOURS: 25-35/wk, # scheduled; h-h breaktime, h-h worktime<br/>
+                            + PAY: $15/hr + performance bonus(direct members, )<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>District Support
+                        <h6>
+                            + HOURS: 20-30/wk, 5 scheduled; 6h40m-10h breaktime, 13h20m-20h worktime<br/>
+                            + PAY: $15/hr + performance bonus(direct members, )<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h4>Region Management</h4>
+                    <h5>Region Director
+                        <h6>
+                            + HOURS: 40-50/wk, # scheduled; h-h breaktime, h-h worktime<br/>
+                            + PAY: $15/hr + performance bonus(direct members, )<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>Advanced Region Support
+                        <h6>
+                            + HOURS: 35-45/wk, # scheduled; h-h breaktime, h-h worktime<br/>
+                            + PAY: $15/hr + performance bonus(direct members, )<br/>
+                            + <br/>
+                        </h6>
+                        <h6>
+                            + TASKS: <br/>
+                            + CASES: <br/>
+                            + HELP DESK QUEUES: <br/>
+                        </h6>
+                    </h5>
+                    <h5>Region Support
+                        <h6>
+                            + HOURS: 30-40/wk, # scheduled; h-h breaktime, h-h worktime<br/>
+                            + PAY: $15/hr + performance bonus(direct members, )<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                </li>
+                <li>
+                    <h3></h3>
+                    <br/>
+                    <h5>Role
+                        <h6>
+                            + HOURS: /wk, # scheduled; #h #m breaktime, #h #m worktime<br/>
+                            + PAY: $15/hr + performance bonus()<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                </li>
+                <li>
+                    <h3></h3>
+                    <br/>
+                </li>
+                <li>
+                    <h3></h3>
+                    <br/>
+                </li>
+                <li>
+                    <h3></h3>
+                    <br/>
+                </li>
+                <li>
+                    <h3></h3>
+                    <br/>
+                </li>
+                <li>
+                    <h3></h3>
+                    <br/>
                 </li>
             </ul>
 

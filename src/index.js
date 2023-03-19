@@ -8,8 +8,8 @@ import Header from "./components/Header";
 import Dashboard from "./components/Dash";
 import Navigation from "./components/Nav";
 import Sidebar from "./components/Sidebar";
-import HelpDesk from "./components/HelpDesk";
 import HelpScreen from "./components/HelpScreen";
+import AdminFooter from "./components/AdminF"
 
 
 
@@ -23,9 +23,9 @@ ReactDom.createRoot(document.getElementById('root')).render(
         <Header />
         <Navigation />
         <Sidebar />
-        <HelpDesk />
         <Dashboard />
         <HelpScreen />
+        <AdminFooter/>
     </div>
 )
 

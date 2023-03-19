@@ -1,3 +1,5 @@
+@use "sass:math";
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,42 +57,69 @@ table {
 // Triadic:
 // 3 hues roughly separated by ~120 degrees
 
-// Theme Colors
-$t0: hsl(320, 10%,  4%);
-$t1: hsl(320, 10%, 12%);
-$t2: hsl(320, 10%, 20%);
-$t3: hsl(320, 10%, 28%);
-$t4: hsl(320, 10%, 36%);
-$t5: hsl(320, 10%, 44%);
-$t6: hsl(320, 10%, 52%);
-$t7: hsl(320, 10%, 60%);
-$t8: hsl(320, 10%, 68%);
-$t9: hsl(320, 10%, 76%);
 
-// Accent Colors
 
-$a0: hsl(320, 27%,  4%);
-$a1: hsl(320, 27%, 12%);
-$a2: hsl(320, 27%, 20%);
-$a3: hsl(320, 27%, 28%);
-$a4: hsl(320, 27%, 36%);
-$a5: hsl(320, 27%, 44%);
-$a6: hsl(320, 27%, 52%);
-$a7: hsl(320, 27%, 60%);
-$a8: hsl(320, 27%, 68%);
-$a9: hsl(320, 27%, 76%);
+$themehue:   5;
+$accenthue:  330;
+$alerthue:   30;
 
-// Alert Colors
-$at0: hsl(320, 70%,  4%);
-$at1: hsl(320, 70%, 12%);
-$at2: hsl(320, 70%, 20%);
-$at3: hsl(320, 70%, 28%);
-$at4: hsl(320, 70%, 36%);
-$at5: hsl(320, 70%, 44%);
-$at6: hsl(320, 70%, 52%);
-$at7: hsl(320, 70%, 60%);
-$at8: hsl(320, 70%, 68%);
-$at9: hsl(320, 70%, 76%);
+
+$themesat:  10%; 
+$accentsat: 35%; //must be between 15-70%
+$alertsat:  60%; //must be 25% more than accent 
+
+
+// Lightness Calculations - must be between 0-20
+$LV0: calc(12% +  0%);
+$LV1: calc(12% +  8%);
+$LV2: calc(12% + 16%);
+$LV3: calc(12% + 24%);
+$LV4: calc(12% + 32%);
+$LV5: calc(12% + 40%);
+$LV6: calc(12% + 48%);
+$LV7: calc(12% + 56%);
+$LV8: calc(12% + 64%);
+$LV9: calc(12% + 72%);
+
+
+// Theme Shades
+
+$t0: hsl($themehue, $themesat, $LV0);
+$t1: hsl($themehue, $themesat, $LV1);
+$t2: hsl($themehue, $themesat, $LV2);
+$t3: hsl($themehue, $themesat, $LV3);
+$t4: hsl($themehue, $themesat, $LV4);
+$t5: hsl($themehue, $themesat, $LV5);
+$t6: hsl($themehue, $themesat, $LV6);
+$t7: hsl($themehue, $themesat, $LV7);
+$t8: hsl($themehue, $themesat, $LV8);
+$t9: hsl($themehue, $themesat, $LV9);
+
+
+
+// Accent Shades
+$a0: hsl($accenthue, $accentsat, $LV0);
+$a1: hsl($accenthue, $accentsat, $LV1);
+$a2: hsl($accenthue, $accentsat, $LV2);
+$a3: hsl($accenthue, $accentsat, $LV3);
+$a4: hsl($accenthue, $accentsat, $LV4);
+$a5: hsl($accenthue, $accentsat, $LV5);
+$a6: hsl($accenthue, $accentsat, $LV6);
+$a7: hsl($accenthue, $accentsat, $LV7);
+$a8: hsl($accenthue, $accentsat, $LV8);
+$a9: hsl($accenthue, $accentsat, $LV9);
+
+// Alert Shades
+$at0: hsl($alerthue, $alertsat, $LV0);
+$at1: hsl($alerthue, $alertsat, $LV1);
+$at2: hsl($alerthue, $alertsat, $LV2);
+$at3: hsl($alerthue, $alertsat, $LV3);
+$at4: hsl($alerthue, $alertsat, $LV4);
+$at5: hsl($alerthue, $alertsat, $LV5);
+$at6: hsl($alerthue, $alertsat, $LV6);
+$at7: hsl($alerthue, $alertsat, $LV7);
+$at8: hsl($alerthue, $alertsat, $LV8);
+$at9: hsl($alerthue, $alertsat, $LV9);
 
 
 // Favorites: (120 10, 24 27, 120 54)
@@ -123,12 +152,12 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $at2;
+    background-color: $at1;
 }
 
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
 #userHeader {
-    background: $t4;
+    background: $t3;
     position: fixed;
     top: 0;
     right: 0;
@@ -139,7 +168,7 @@ body {
     display: grid;
     grid-template-columns: 40px auto;
     grid-template-rows: 20px 20px 10px;
-    grid-template-areas:  "thumbnail userName" "thumbnail userID" "userProgress userProgress";
+    grid-template-areas:  "thumbnail userName" "thumbnail userID" "userClock userClock";
 
     img {
         height: 40px;
@@ -154,7 +183,7 @@ body {
         line-height: 16px;
         margin: 4px 0 0 5px;
         font-weight: 600;
-        color: $t1;
+        color: $t0;
         width: max-content;
         cursor: pointer;
         letter-spacing: 1px;
@@ -171,7 +200,7 @@ body {
         width: max-content;
         font-weight: 600;
         margin: 3px 0 3px 10px;
-        color: $t2;
+        color: $t1;
         span {
             cursor: pointer;
             margin: 0 2px;
@@ -183,37 +212,41 @@ body {
             }
         }
     }
-    #userProgress {
-        grid-area: userProgress;
-        background-color: $t2;
+    #userClock {
+        grid-area: userClock;
+        background-color: $t1;
         width: 100%;
+        transition: boxShadow 1s;
+        box-shadow: none;
 
-        .progressNow {box-shadow: inset 0 0 0 2px white;}
+        .clockNow {box-shadow: inset 0 0 0 2px white;}
 
-        // 2- THEME(base color, progress bar)
-        // 5- THEME(missed scheduled time)     
-        // 8- THEME(future scheduled time)
+        // 1- THEME(base color, progress bar)
+        // 4- THEME(missed scheduled time)
+        // 7- THEME(future scheduled time)
 
-        // 4- ACCENT(more than average work actions, +3)     
-        // 6- ACCENT(average work actions, +2)      
+        // 4- ACCENT(more than average work actions, +3)
+        // 6- ACCENT(average work actions, +2)
         // 8- ACCENT(less than average work actions, +1)
 
         // 4- ALERT(no break action)
-        // 6- ALERT(multiple break actions)     
-        // 8- ALERT(one break action)      
+        // 6- ALERT(multiple break actions)
+        // 8- ALERT(one break action)
 
-        td:nth-child(34) {background-color: $t6;}
-        td:nth-child(35) {background-color: $t6;}
-        td:nth-child(36) {background-color: $t6;}
+        td:nth-child(32) {background-color: $t4;}
+        td:nth-child(33) {background-color: $t4;}
+        td:nth-child(34) {background-color: $t4;}
+        td:nth-child(35) {background-color: $t4;}
+        td:nth-child(36) {background-color: $t4;}
         td:nth-child(37) {background-color: $a6;}
         td:nth-child(38) {background-color: $a4;}
         td:nth-child(39) {background-color: $a6;}
         td:nth-child(40) {background-color: $a6;}
         td:nth-child(41) {background-color: $a8;}
         td:nth-child(42) {background-color: $at6;}
-        td:nth-child(43) {background-color: $at6;}
+        td:nth-child(43) {background-color: $at4;}
         td:nth-child(44) {background-color: $at6;}
-        td:nth-child(45) {background-color: $at6;}
+        td:nth-child(45) {background-color: $at4;}
 
         td:nth-child(49) {background-color: $a6;}
         td:nth-child(50) {background-color: $a6;}
@@ -236,9 +269,12 @@ body {
         td:nth-child(67) {background-color: $a4;}
 
         td:nth-child(70) {background-color: $at8;}
-        td:nth-child(71) {background-color: $at8;}
-        td:nth-child(72) {background-color: $at8;}
-        td:nth-child(73) {background-color: $at8;}
+        td:nth-child(71) {background-color: $at4;}
+        td:nth-child(72) {background-color: $at4;}
+        td:nth-child(73) {background-color: $at6;}
+        td:nth-child(74) {background-color: $at6;}
+        td:nth-child(75) {background-color: $at8;}
+        td:nth-child(76) {background-color: $at8;}
 
         td:nth-child(79) {background-color: $at8;}
         td:nth-child(80) {background-color: $at8;}
@@ -253,15 +289,22 @@ body {
         td:nth-child(89) {background-color: $a4;}
         td:nth-child(90) {background-color: $a4;}
         td:nth-child(91) {background-color: $a4;}
-        td:nth-child(92) {background-color: $t8;}
-        td:nth-child(93) {background-color: $t8;}
-        td:nth-child(94) {background-color: $t8;}
-        td:nth-child(95) {background-color: $t8;}
-        td:nth-child(96) {background-color: $t8;}
-        td:nth-child(97) {background-color: $t8;}
-        td:nth-child(98) {background-color: $t8;}
-        td:nth-child(99) {background-color: $t8;}
-        td:nth-child(100) {background-color: $t8;}
+        td:nth-child(92) {background-color: $t7;}
+        td:nth-child(93) {background-color: $t7;}
+        td:nth-child(94) {background-color: $t7;}
+        td:nth-child(95) {background-color: $t7;}
+        td:nth-child(96) {background-color: $t7;}
+        td:nth-child(97) {background-color: $t7;}
+        td:nth-child(98) {background-color: $t7;}
+        td:nth-child(99) {background-color: $t7;}
+        td:nth-child(100) {background-color: $t7;}
+
+        td:nth-child(115) {background-color: $t7;}
+        td:nth-child(116) {background-color: $t7;}
+        td:nth-child(117) {background-color: $t7;}
+        td:nth-child(118) {background-color: $t7;}
+        td:nth-child(119) {background-color: $t7;}
+        td:nth-child(120) {background-color: $t7;}
         
         // 10 hour shift: 6h40m work (64), 3h20m break (32)
     }
@@ -517,17 +560,15 @@ body {
 
 
 #userConsole {
-    bottom: 20px;
-    // bottom: -100%;
 
 
-        
+    width: calc(100% - 40px);
     display: block;
     position: absolute;
     overflow: hidden;
-    height: calc(100% - 80px); 
+    height: calc(100% - 95px); 
     border-radius: 5px;
-    transition: bottom 1s, background 1s, box-shadow 1s, width 1s;
+    transition: top 1s, background 1s, box-shadow 1s, width 1s;
     left: 10px;
     font-size: 14px;
     z-index: 4;
@@ -730,36 +771,19 @@ body {
         }
     }
 }
-.userConsoleWOHD {
-    width: calc(100% - 40px);
-}
+.userConsoleOpen {top: 15px;}
+.userConsoleClosed {top: -150vh;}
+
 
 
 
 // ADMIN --------------------------------------------------------------------------------------------------------------------------------
-#helperDesk {
-   
-    display: grid;
-    position: absolute;
-    right: 10px;
-    z-index: 5;   
-    height: calc(100vh - 58px);
-    background-color: $t9;
-    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-    border-radius: 0 0 4px 4px;
-    transition: top 1.5s, width 1s;
-}
-.helperDeskOpen {
-    top: 48px;
-}
-.helperDeskClosed {
-    top: -100%;
-}
 
 #sidebar {
     position: absolute;
     display: block;
     height: calc(100vh - 48px);
+    height: 100vh;
     width: 100%;
     top: 48px;
     left: 0;
@@ -767,7 +791,7 @@ body {
     overflow: hidden;
 
     #toolkit {
-        height: calc(100% - 51px);
+        height: calc(100% - 113px);
         // height: 78px;
 
 
@@ -776,7 +800,7 @@ body {
         position: absolute;
         background-color: $a7;
         // width: 310px;
-        bottom: 10px;
+        top: 15px;
         border-radius: 4px;
         overflow-x: hidden;
         left: 10px;
@@ -858,9 +882,10 @@ body {
                     font-size: 16px;
                     letter-spacing: 1.5px;
                     line-height: 20px;
+                    h3 {background: $at5;}
                 }
                 li {
-                    background-color: $at8;
+                    background-color: $a8;
                     font-size: 12px;
                     line-height: 14px;
                     font-weight: 600;
@@ -881,13 +906,13 @@ body {
                         vertical-align: middle;
                         margin: 5px 0 5px 0;
                         font-weight: 800;
-                        background-color: $at5;
+                        background-color: $a5;
                     }
                     h4 {
                         appearance: none;
                         font-size: 14px;
                         padding: 8px;
-                        background-color: $at1;
+                        background-color: $a1;
                         border-radius: 4px;
                         color: white;
                         font-weight: 600;
@@ -900,7 +925,7 @@ body {
                         appearance: none;
                         font-size: 12px;
                         padding: 6px;
-                        background-color: $at3;
+                        background-color: $a3;
                         border-radius: 4px;
                         color: white;
                         font-weight: 600;
@@ -944,12 +969,244 @@ body {
     }
 }
 
+#adminFooter {
+    width: 100vw;
+    display: grid;
+    background: $a2;
+    z-index: 4;
+    left: 0;
+    position: absolute;
+    transition: bottom 1s, height 1s;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: 40px calc(100% - 40px);
+    cursor: pointer;
+    grid-template-areas: "tktoggle breaktimer helpdeskanchor" "breaktimeconsole breaktimeconsole breaktimeconsole";
+
+    #TKtoggle {
+        grid-area: tktoggle;
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 5px;
+        background-color: $a8;
+        cursor: pointer;
+        border-radius: 4px;
+        #TKtoggleButton {
+            display: block;
+            transition: height 1s, width 1s, background .75s, margin 1s;
+            border-radius: 4px;
+        }
+        .TKtoggleOpen {
+            height: 14px;
+            width: 14px;
+            background: $a4;
+            margin: 8px;
+            &:hover {
+                background: $a6;
+            } 
+        }
+        .TKtoggleClosed {
+            height: 22px;
+            width: 22px;
+            background: $a1;
+            margin: 4px;
+            &:hover {
+                background: $a3;
+            }
+        }
+        .TKtoggleNone {
+            height: 0;
+            width: 0;
+            margin: 15px;
+        }
+    }
+    #breakTimeHead {
+        grid-area: breaktimer;
+        display: grid; 
+        position: absolute;
+        width: calc(100vw - 80px);
+        height: 40px;
+        #breakTimer {
+            width: calc(100vw - 100px);
+            margin: 10px 10px 10px 7.5px;
+            height: 20px;
+            // background: violet;
+            display: block;
+            position: relative;
+            grid-auto-columns: 10px;
+            grid-template-rows: 10px;
+            overflow: hidden;
+            span {
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                margin: 5px 2.5px 5px 2.5px;
+                background: $at6;
+                top:0;
+            }
+        }
+    }
+    #helpDeskAnchor {
+        grid-area: helpdeskanchor;
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 5px;
+        background-color: $at8;
+        border-radius: 4px;
+        position: relative;
+        #helpDeskConsole {
+            border-radius: 4px;
+            position: absolute;
+            transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
+        }
+        .helpDeskOpen {
+            height: calc(100vh - 66px);
+            width: calc(100vw - 16px);
+            right: 3px;
+            bottom: 3px;
+            background-color: $a5;
+            box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
+            cursor: default;
+        }
+        .helpDeskClosed {
+            width: 22px;
+            height: 22px;
+            right: 4px;
+            bottom: 4px;
+            background-color: $at3;
+            &:hover {
+                background-color: $at5;
+            }
+        }
+        .helpDeskNone {
+            height: 0;
+            width: 0;
+            right: 15px;
+            bottom: 15px;
+        }
+    }
+    #breakTimeConsole {
+        grid-area: breaktimeconsole;
+        background: $a1;
+        display: grid;
+        cursor: default;
+        position: relative;
+        grid-template-rows: 40px calc(100vh - 135px);
+        grid-template-areas: "head" "content";
+        #breakTimeHeader {
+            width: 100vw;
+            height: 40px;
+            grid-area: head;
+            display: grid;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $a2;
+            grid-template-rows: 30px 10px;
+            grid-template-areas: "head" "weekProgress";
+            span:nth-child(1) {
+                grid-area: head;
+                font-size: 22px;
+                line-height: 30px;
+                text-indent: 40px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                color: $a9;
+            }
+            span:nth-child(2) {
+                grid-area: weekProgress;
+                background-color: $a0;
+            }
+        }
+        div:nth-child(2) {
+            overflow-y: scroll;
+            overflow-x: none;
+            grid-area: content;
+            padding: 5px;
+            width: calc(100vw - 15px);
+
+
+            &::-webkit-scrollbar {
+                width: 20px;
+                overflow-x: visible;
+                background-color: $a3;
+                margin: 5px;
+                cursor: pointer;
+            }
+            &::-webkit-scrollbar-button {
+                background-color: $a4;
+                height: 0;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $a3;
+                transition: background 1s;
+            }    
+        }
+    }
+}
+.inOffice {bottom: 0;}
+.outOffice {bottom: -100px;}
+.breakTimeOpen {height: calc(100vh - 55px);}
+.breakTimeClosed {height: 40px;}
+
+
+#adminDashCrop {
+    height: calc(100vh - 123px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    right: 15px;
+    top: 20px;
+    background-color: $a7;
+    position: absolute;
+    border-radius: 4px;
+    display: block;
+    transition: width 1s;
+    &::-webkit-scrollbar {display: none;}
+    #adminDashboard {
+        border-radius: 4px;
+        z-index: 3;
+        display: flex;
+        width: 100%;
+
+        flex-flow: column wrap;
+        align-content: flex-end;
+    
+    
+        span:last-child {
+            margin-bottom: 5px;
+        }
+        span {
+            margin: 5px 5px 0 5px;
+            // width: 290px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        span:nth-child(1)  {height: 200px; background: $a1; margin-top: 5px;}
+        span:nth-child(2)  {height: 300px; background: $a3;}
+        span:nth-child(3)  {height: 400px; background: $a2;}
+        span:nth-child(4)  {height: 300px; background: $a5;}
+        span:nth-child(5)  {height: 500px; background: $a3;}
+        span:nth-child(6)  {height: 200px; background: $a5;}
+        span:nth-child(7)  {height: 400px; background: $a2;}
+        span:nth-child(8)  {height: 700px; background: $a4;}
+        span:nth-child(9)  {height: 400px; background: $a3;}
+        span:nth-child(10) {height: 700px; background: $a5;}
+    }
+}
+.adminDashClosed {width: 0px;}
+
 
 
 
 // KEYFRAMES ----------------------------------------------------------------------------------------------------------------------------
 
-// Narrow Smartphone - Red
+
+
+//         DEVICE KEYFRAMES---------------------------------------------------------------------------------------------------------------------------
+
+// Narrow Smartphone - Red (Nav, Console, Sidebar)
 @media only screen and (min-width: 10px) {
     // Indicator
     #userThumb {background: red;}
@@ -982,7 +1239,6 @@ body {
     #userConsoleSidebar {
         width: calc(100% - 40px);
     }
-
     .consoleHelpClosed {
         left: 15px;
     } 
@@ -995,21 +1251,21 @@ body {
     // Sidebar Responsive - UNFINISHED
     .userDashMini {
         width: calc(100vw - 330px);
+        width: 0;
     }
     #toolkit {
         width: calc(100vw - 20px);
     }
 
-    // Helper Desk Responsive - 1 Chat
-    #helperDesk {
-        width: calc(100vw - 20px);
-    }
-    .userConsoleWHD {
-        width: calc(100% - 55px);
+    // Admin Dashboard Responsive
+    .adminDashOpen {width: calc(100% - 30px);}
+    #adminDashboard {
+        
+        span {width: calc(100% - 10px)}
     }
 }
 
-// Wide Smartphone - Orange
+// Wide Smartphone - Orange (Nav, Console)
 @media only screen and (min-width: 320px) {
     // Indicator
     #userThumb {background: orange;}
@@ -1046,23 +1302,19 @@ body {
         width: 240px;
         left: 15px;
     }
-    
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 300px);
+
+    // Admin Dashboard Responsive
+    .adminDashOpen {
+        width: 310px;
     }
-    #toolkit {
-        width: 280px;
+    #adminDashboard {
+
+        span {width: 300px; }
     }
 
-    
-    // Helper Desk Responsive - 1 Chat
-    #helperDesk {
-        width: 300px;
-    }
 }
 
-// Tablet - Yellow
+// Narrow Tablet - Yellow (Console, Sidebar)
 @media only screen and (min-width: 640px) {
     // Indicator
     #userThumb {background: yellow;}
@@ -1075,13 +1327,19 @@ body {
         width: 380px;
     }
 
-    // Helper Desk Responsive - 1 Chat
-    #helperDesk {
-        width: 385px;
+
+    // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 350px);
     }
+    #toolkit {
+        width: 330px;
+    }
+
+
 }
 
-// Narrow Laptop - Green
+// Wide Tablet - Green (Nav, Sidebar)
 @media only screen and (min-width: 960px) {
     // Indicator
     #userThumb {background: green;}
@@ -1102,15 +1360,52 @@ body {
 
 
 
+    // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 450px);
+    }
+    #toolkit {
+        width: 430px;
+    }
+
 
 
 }
 
-// Wide Laptop - Blue
+// Narrow Laptop - Blue (Sidebar)
 @media only screen and (min-width: 1280px) {
     // Indicator
     #userThumb {background: blue;}
 
+
+
+
+    // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 500px);
+    }
+    #toolkit {
+        width: 480px;
+    }
+}
+
+// Wide Laptop - Purple (Nav, Console, Sidebar)
+@media only screen and (min-width: 1600px) {
+    // Indicator
+    #userThumb {background: rgb(104, 61, 204);}
+
+    // Nav Responsive
+    .navCropOpen {
+        width: 700px;
+        height: calc(100% - 10px);
+    }
+    #navPanel {
+        width: 700px; 
+        grid-template-columns: 670px 30px;
+    }
+    #navBody {
+        width: 695px;
+    }
 
     // Console Responsive
     .userConsoleWHD {
@@ -1129,37 +1424,19 @@ body {
         width: 440px;
         left: 15px;
     }
-}
 
-// 4K Narrow Desktop - Purple
-@media only screen and (min-width: 1600px) {
-    // Indicator
-    #userThumb {background: rgb(104, 61, 204);}
-
-    // Nav Responsive
-    .navCropOpen {
-        width: 700px;
-        height: calc(100% - 10px);
-    }
-    #navPanel {
-        width: 700px; 
-        grid-template-columns: 670px 30px;
-    }
-    #navBody {
-        width: 695px;
-    }
 
     // Sidebar Responsive
     .userDashMini {
-        width: calc(100vw - 500px);
+        width: calc(100vw - 600px);
     }
     #toolkit {
-        width: 480px;
+        width: 580px;
     }
 
 }
 
-// 4K Wide Desktop - Violet
+// 4K Narrow Desktop - Pink (Console, Sidebar)
 @media only screen and (min-width: 1920px) {
     // Indicator
     #userThumb {background: violet;}
@@ -1182,10 +1459,10 @@ body {
 
     // Sidebar Responsive
     .userDashMini {
-        width: calc(100vw - 600px);
+        width: calc(100vw - 700px);
     }
     #toolkit {
-        width: 580px;
+        width: 680px;
     }
 
 
@@ -1193,20 +1470,23 @@ body {
 
 }
 
-// 4K Ultra Wide Desktop - White
+// 4K Wide Desktop - White (Sidebar)
 @media only screen and (min-width: 2240px) {
     // Indicator
     #userThumb {background-color: white;}
 
-    // Help Desk Responsivity
-    .userConsoleWHD {
-        width: calc(100% - 585px);
+
+    // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 800px);
     }
-    #helperDesk {
-        width: 535px;
+    #toolkit {
+        width: 780px;
     }
 
 }
+
+
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 // To Do List:

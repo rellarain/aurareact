@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function UserConsole() {return (
-    // userConsoleWOHD userConsoleWHD
-    <div id='userConsole' className='userConsoleWOHD'>
+    <div id='userConsole' className='userConsoleClosed'>
+        {/* userConsoleOpen userConsoleClosed */}
         <div id='userConsoleProgress'></div>
         <div id='userConsoleClose'></div>
         <div id='userConsoleSidebar'>
