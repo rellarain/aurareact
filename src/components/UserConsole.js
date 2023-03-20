@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function UserConsole() {return (
-    <div id='userConsole' className='userConsoleClosed'>
+    <div id='userConsole' className='userConsoleOpen'>
         {/* userConsoleOpen userConsoleClosed */}
         <div id='userConsoleProgress'></div>
         <div id='userConsoleClose'></div>
@@ -9,7 +9,7 @@ export default function UserConsole() {return (
 
         </div>
         {/* consoleSidebarOpen consoleSidebarClosed */}
-        <div id='userConsoleDesk' className='consoleSidebarClosed'>
+        <div id='userConsoleDesk' className='consoleSidebarOpen'>
             <br/>
             Applications<br/>
             <br/>
@@ -36,7 +36,7 @@ export default function UserConsole() {return (
 
 function ConsoleHelp() {return(
     //  consoleHelpOpen consoleHelpClosed
-    <div id='userConsoleHelp' className='consoleHelpClosed'>
+    <div id='userConsoleHelp' className='consoleHelpOpen'>
         <div id='userConsoleHelpButton'>
             <span>?</span>
             <span>Help</span>

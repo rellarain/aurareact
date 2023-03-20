@@ -1,6 +1,20 @@
 import React from 'react';
 
-export default function AdminFooter() {return (
+export default function Admin() {return (
+    <div>
+        <HelpDesk/>
+        <AdminDash />
+        <AdminFooter />
+        
+    </div>
+)}
+
+
+
+
+
+
+function AdminFooter() {return (
     <div id= "adminFooter" className='inOffice breakTimeClosed'>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
         <div id='TKtoggle'>
@@ -29,7 +43,6 @@ export default function AdminFooter() {return (
             </div>
         </div>
         <div id='helpDeskAnchor'>
-            <HelpDesk/>
         </div>
         <div id='breakTimeConsole'>
             
@@ -48,9 +61,39 @@ export default function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskClosed'>
-        {/* helpDeskOpen helpDeskClosed helpDeskNone */}
-
+    <div id='helpDeskConsole' className='helpDeskOpen'>
+        {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
+        <div id='helpDeskContent'>
+            <section id='helpDeskHeader'></section>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div></div>
     </div>
 )}
 
+
+function AdminDash() {return(
+    <div id='adminDashCrop' className='adminDashClosed'>
+        {/* adminDashOpen adminDashClosed */}
+        <div id="adminDashboard">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+)}

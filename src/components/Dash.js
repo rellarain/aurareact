@@ -1,34 +1,15 @@
 import React from 'react';
+import HelpDesk from './Admin';
 import UserConsole from './UserConsole';
 
 export default function Dashboard() {return (
-    <main id="userDash" className='userDashMax'>
+    <main id="userDash" className='userDashMini'>
         {/* userDashMax userDashMini */}
         <UserConsole />
-        <AdminDash />
-
+        <HelpDesk />
     </main>
 )}
 
 
 
 
-
-function AdminDash() {return(
-    <div id='adminDashCrop' className='adminDashClosed'>
-        {/* adminDashOpen adminDashClosed */}
-        <div id="adminDashboard">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-    </div>
-)}
