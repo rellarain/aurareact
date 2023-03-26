@@ -9,7 +9,7 @@ export default function UserConsole() {return (
 
         </div>
         {/* consoleSidebarOpen consoleSidebarClosed */}
-        <div id='userConsoleDesk' className='consoleSidebarOpen'>
+        <div id='userConsoleDesk' className='consoleSidebarClosed'>
             <br/>
             Applications<br/>
             <br/>
@@ -36,7 +36,7 @@ export default function UserConsole() {return (
 
 function ConsoleHelp() {return(
     //  consoleHelpOpen consoleHelpClosed
-    <div id='userConsoleHelp' className='consoleHelpOpen'>
+    <div id='userConsoleHelp' className='consoleHelpClosed'>
         <div id='userConsoleHelpButton'>
             <span>?</span>
             <span>Help</span>

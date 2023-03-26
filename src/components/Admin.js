@@ -61,7 +61,7 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskOpen'>
+    <div id='helpDeskConsole' className='helpDeskClosed'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div id='helpDeskContent'>
             <section id='helpDeskHeader'></section>

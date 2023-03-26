@@ -59,27 +59,27 @@ table {
 
 
 
-$themehue:   340;
-$accenthue:  340;
-$alerthue:   340;
+$themehue:   305;
+$accenthue:  330;
+$alerthue:   345;
 
 
-$themesat:  10%; 
-$accentsat: 25%; //must be 15% more than theme
-$alertsat:  40%; //must be 15% more than accent 
+$themesat:  12%; 
+$accentsat: 30%; //must be 15% more than theme
+$alertsat:  60%; //must be 15% more than accent 
 
 
 // Lightness Calculations - must be between 0-20
-$LV0: calc(7% +  0%);
-$LV1: calc(7% +  8%);
-$LV2: calc(7% + 16%);
-$LV3: calc(7% + 24%);
-$LV4: calc(7% + 32%);
-$LV5: calc(7% + 40%);
-$LV6: calc(7% + 48%);
-$LV7: calc(7% + 56%);
-$LV8: calc(7% + 64%);
-$LV9: calc(7% + 72%);
+$LV0: calc(2% +  0%);
+$LV1: calc(2% +  8%);
+$LV2: calc(2% + 16%);
+$LV3: calc(2% + 24%);
+$LV4: calc(2% + 32%);
+$LV5: calc(2% + 40%);
+$LV6: calc(2% + 48%);
+$LV7: calc(2% + 56%);
+$LV8: calc(2% + 64%);
+$LV9: calc(2% + 72%);
 
 
 // Theme Shades
