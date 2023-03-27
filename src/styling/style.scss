@@ -59,27 +59,28 @@ table {
 
 
 
-$themehue:   0;
-$accenthue:  20;
-$alerthue:   40;
+$themehue:   300;
+$accenthue:  330;
+$alerthue:   315;
 
 
-$themesat:  15%; 
-$accentsat: 30%; //must be 15% more than theme
-$alertsat:  60%; //must be 15% more than accent 
+$themesat:  10%; // 0-65%
+$accentsat: 30%; // must be 15% more than theme
+$alertsat:  50%; // must be 20% more than accent 
 
 
-// Lightness Calculations - must be between 0-20
-$LV0: calc(2% +  0%);
-$LV1: calc(2% +  8%);
-$LV2: calc(2% + 16%);
-$LV3: calc(2% + 24%);
-$LV4: calc(2% + 32%);
-$LV5: calc(2% + 40%);
-$LV6: calc(2% + 48%);
-$LV7: calc(2% + 56%);
-$LV8: calc(2% + 64%);
-$LV9: calc(2% + 72%);
+// Lightness Calculations - must be between 0-30
+$LV0: calc(0% +  0%);
+$LV1: calc(0% +  7%);
+$LV2: calc(0% + 14%);
+$LV3: calc(0% + 21%);
+$LV4: calc(0% + 28%);
+$LV5: calc(0% + 35%);
+$LV6: calc(0% + 42%);
+$LV7: calc(0% + 49%);
+$LV8: calc(0% + 56%);
+$LV9: calc(0% + 63%);
+$LVX: calc(0% + 70%);
 
 
 // Theme Shades
@@ -94,6 +95,7 @@ $t6: hsl($themehue, $themesat, $LV6);
 $t7: hsl($themehue, $themesat, $LV7);
 $t8: hsl($themehue, $themesat, $LV8);
 $t9: hsl($themehue, $themesat, $LV9);
+$tX: hsl($themehue, $themesat, $LVX);
 
 
 
@@ -108,6 +110,7 @@ $a6: hsl($accenthue, $accentsat, $LV6);
 $a7: hsl($accenthue, $accentsat, $LV7);
 $a8: hsl($accenthue, $accentsat, $LV8);
 $a9: hsl($accenthue, $accentsat, $LV9);
+$aX: hsl($accenthue, $accentsat, $LVX);
 
 // Alert Shades
 $at0: hsl($alerthue, $alertsat, $LV0);
@@ -120,6 +123,7 @@ $at6: hsl($alerthue, $alertsat, $LV6);
 $at7: hsl($alerthue, $alertsat, $LV7);
 $at8: hsl($alerthue, $alertsat, $LV8);
 $at9: hsl($alerthue, $alertsat, $LV9);
+$atX: hsl($alerthue, $alertsat, $LVX);
 
 
 // Favorites: (120 10, 24 27, 120 54)
@@ -156,8 +160,9 @@ body {
 }
 
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
+
 #userHeader {
-    background: $t3;
+    background: $t4;
     position: fixed;
     top: 0;
     right: 0;
@@ -183,15 +188,15 @@ body {
         line-height: 16px;
         margin: 4px 0 0 5px;
         font-weight: 600;
-        color: $t0;
+        color: $t8;
         width: max-content;
         cursor: pointer;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         text-shadow: none;
         transition: color .4s, text-shadow .4s;
         &:hover {
-            color: $t9;
-            text-shadow: 0 0 3px $t2;
+            color: white;
+            text-shadow: 0 0 3px $t0;
         }
     }
     #userID {
@@ -200,21 +205,21 @@ body {
         width: max-content;
         font-weight: 600;
         margin: 3px 0 3px 10px;
-        color: $t1;
+        color: $t0;
         span {
             cursor: pointer;
             margin: 0 2px;
             transition: color .4s, text-shadow .4s;
             &:hover {
                 color: $t7;
-                text-shadow: 0 0 2px $t2;
+                text-shadow: 0 0 2px $t0;
 
             }
         }
     }
     #userClock {
         grid-area: userClock;
-        background-color: $t1;
+        background-color: $t0;
         width: 100%;
         transition: boxShadow 1s;
         box-shadow: none;
@@ -222,7 +227,7 @@ body {
         .clockNow {box-shadow: inset 0 0 0 2px white;}
 
         // 1- THEME(base color, progress bar)
-        // 4- THEME(missed scheduled time)
+        // 2- THEME(missed scheduled time)
         // 7- THEME(future scheduled time)
 
         // 4- ACCENT(more than average work actions, +3)
@@ -233,11 +238,11 @@ body {
         // 6- ALERT(multiple break actions)
         // 8- ALERT(one break action)
 
-        td:nth-child(32) {background-color: $t4;}
-        td:nth-child(33) {background-color: $t4;}
-        td:nth-child(34) {background-color: $t4;}
-        td:nth-child(35) {background-color: $t4;}
-        td:nth-child(36) {background-color: $t4;}
+        td:nth-child(32) {background-color: $t2;}
+        td:nth-child(33) {background-color: $t2;}
+        td:nth-child(34) {background-color: $t2;}
+        td:nth-child(35) {background-color: $t2;}
+        td:nth-child(36) {background-color: $t2;}
         td:nth-child(37) {background-color: $a6;}
         td:nth-child(38) {background-color: $a4;}
         td:nth-child(39) {background-color: $a6;}
@@ -459,12 +464,14 @@ body {
     }
 
 }
+
 // Closed
 .navCropClosed {
     width: 30px;
     height: 30px;
     transition: height 1s, width 1s 1s;
 } 
+
 // Nav Tool
 .navCropPage {
     width: 300px;
@@ -472,7 +479,6 @@ body {
     transition: height 1s, width 1s;
     right: 5px;
 }
-
 
 
 
@@ -493,8 +499,6 @@ body {
 .userDashMax {
     width: 100%;
 }
-
-
 
 
 
@@ -805,7 +809,7 @@ body {
             grid-area: TKpanel;
             overflow-y: scroll;
             overflow-x: hidden;
-            width: calc(100% - 5px);
+            width: 100%;
             ul {
                 width: calc(100% - 20px);
                 padding: 5px;
@@ -890,7 +894,7 @@ body {
             }
 
             &::-webkit-scrollbar {
-                width: 20px;
+                width: 15px;
                 overflow-x: visible;
                 background-color: $a5;
                 margin: 5px;
@@ -901,7 +905,7 @@ body {
                 height: 0;
             }
             &::-webkit-scrollbar-thumb {
-                background-color: $a3;
+                background-color: $aX;
                 transition: background 1s;
             }        
         }
@@ -1020,7 +1024,6 @@ body {
             #helpDeskContent {
                 grid-area: content;
                 display: grid;
-                margin: 10px;
                 background-color: $at3;
                 overflow: hidden;
                 grid-template-rows: 40px calc(100% - 40px);
@@ -1118,11 +1121,6 @@ body {
 
 
 
-
-
-
-
-
 #adminDashCrop {
     height: calc(100vh - 123px);
     overflow-x: hidden;
@@ -1174,10 +1172,9 @@ body {
 // VIEWPORT DEPENDENT DESIGN ----------------------------------------------------------------------------------------------------------------------------
 
 
-
 // DEVICE VIEWPORT WIDTH ---------------------------------------------------------------------------------------------------------------------------
 
-// Micro Screen - Dark Pink (Nav, Console, Sidebar, Help Desk)
+// Micro Screen - Black (Nav, Console, Sidebar, Admin, Help Desk)
 @media only screen and (min-width: 10px) {
     // Indicator
     #userThumb {background: black;}
@@ -1255,28 +1252,14 @@ body {
     }
 }
 
-// Narrow Smartphone - Red (Nav, Console)
+// Narrow Smartphone - Red (Nav, Admin) -------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 150px) {
     // Indicator
     #userThumb {background: hsl(0, 100%, 27%);}
 
-    // Nav Responsive
-    .navCropOpen {
-        width: 300px;
-    }
-    #navPanel {
-        width: 300px;
-        grid-template-columns: 270px 30px;
-    }
-    #navBody {
-        width: 295px;
-    }
-    #navPage {
-        width: 261px;
-    }
-    .navCropPage {
-        width: 300px;
-    }
+
+
+
 
     // Console Responsive
     .consoleSidebarOpen {
@@ -1311,19 +1294,32 @@ body {
 
 }
 
-// Wide Smartphone - Yellow ()
+// Wide Smartphone - Yellow (Nav)
 @media only screen and (min-width: 450px) {
     // Indicator
     #userThumb {background: hsl(55, 100%, 27%);}
 
-
-
-
-
+    // Navigation
+    .navCropPage {
+        width: 300px;
+    }
+    #navPage {
+        width: 261px;
+    }
+    .navCropOpen {
+        width: 300px;
+    }
+    #navPanel {
+        width: 300px;
+        grid-template-columns: 270px 30px;
+    }
+    #navBody {
+        width: 295px;
+    }
 
 }
 
-// Narrow Tablet - Green (Console, Sidebar)
+// Narrow Tablet - Green (Sidebar) --------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 650px) {
     // Indicator
     #userThumb {background: hsl(90, 100%, 27%);}
@@ -1344,7 +1340,7 @@ body {
 
 }
 
-// Medium Tablet - Teal (Nav, Sidebar)
+// Medium Tablet - Teal (Nav)
 @media only screen and (min-width: 850px) {
     // Indicator
     #userThumb {background: hsl(175, 100%, 27%);}
@@ -1381,7 +1377,7 @@ body {
 
 }
 
-// Narrow Laptop - Purple (Sidebar)
+// Narrow Laptop - Purple (Sidebar) -------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1300px) {
     // Indicator
     #userThumb {background: hsl(270, 100%, 27%);}
@@ -1389,19 +1385,19 @@ body {
 
     // Sidebar Responsive
     .userDashMini {
-        width: calc(100vw - 450px);
+        width: calc(100vw - 420px);
     }
     #toolkit {
-        width: 430px;
+        width: 400px;
     }
     .helpDeskOpenSB {
-        width: calc(100vw - 466px);
+        width: calc(100vw - 436px);
     }
 
 
 }
 
-// Medium Laptop - Pink (Nav, Console, Sidebar)
+// Medium Laptop - Pink (Nav)
 @media only screen and (min-width: 1550px) {
     // Indicator
     #userThumb {background: hsl(300, 100%, 27%);}
@@ -1419,20 +1415,10 @@ body {
         width: 695px;
     }
 
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 500px);
-    }
-    #toolkit {
-        width: 480px;
-    }
-    .helpDeskOpenSB {
-        width: calc(100vw - 516px);
-    }
 
 }
 
-// Wide Laptop - Raspberry (Console, Sidebar)
+// Wide Laptop - Raspberry (Console)
 @media only screen and (min-width: 1800px) {
     // Indicator
     #userThumb {background: hsl(335, 100%, 27%);}
@@ -1457,23 +1443,12 @@ body {
     }
 
 
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 600px);
-    }
-    #toolkit {
-        width: 580px;
-    }
-    .helpDeskOpenSB {
-        width: calc(100vw - 616px);
-    }
-
 
 
 
 }
 
-// Narrow Desktop - White ()
+// Narrow Desktop - White (Console, Sidebar) -----------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 2000px) {
     // Indicator
     #userThumb {background-color: white;}
@@ -1495,19 +1470,19 @@ body {
 
     // Sidebar Responsive
     .userDashMini {
-        width: calc(100vw - 700px);
+        width: calc(100vw - 570px);
     }
     #toolkit {
-        width: 680px;
+        width: 550PX;
     }
     .helpDeskOpenSB {
-        width: calc(100vw - 716px);
+        width: calc(100vw - 586px);
     }
 
 
 }
 
-// Medium Desktop - Gray (Sidebar)
+// Medium Desktop - Gray ()
 @media only screen and (min-width: 2300px) {
     // Indicator
     #userThumb {background: rgb(102, 102, 102);}
@@ -1516,7 +1491,7 @@ body {
 
 }
 
-// Wide Desktop - Black ()
+// Wide Desktop - Black (Sidebar)
 @media only screen and (min-width: 2600px) {
     // Indicator
     #userThumb {background: black;}
@@ -1524,15 +1499,14 @@ body {
 
     // Sidebar Responsive
     .userDashMini {
-        width: calc(100vw - 800px);
+        width: calc(100vw - 670px);
     }
     #toolkit {
-        width: 780px;
+        width: 650PX;
     }
     .helpDeskOpenSB {
-        width: calc(100vw - 816px);
-    }    
-
+        width: calc(100vw - 686px);
+    }
 }
 
 

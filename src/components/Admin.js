@@ -59,7 +59,7 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskOpenSB'>
+    <div id='helpDeskConsole' className='helpDeskClosed'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskHeader'></section>
@@ -190,11 +190,10 @@ function Toolkit() {return (
                 <li>
                     <h3>MEMBER COMPONENTS</h3>
                     + Header <br/>
-                    + Navigation: links, notifications, settings<br/>
-                    + Portfolio Console: profile, results, voice, connections roster<br/>
+                    + Navigation<br/>
+                    + Portfolio Console<br/>
                     + Social Console<br/>
-                    + Community Console: forum, events<br/>
-                    + Help Screen<br/>
+                    + Community Console<br/>
                     <h6>
                         To-Do List: <br/>
                         + <br/>
@@ -226,11 +225,14 @@ function Toolkit() {return (
                 </li>
                 <li>
                     <h3>Navigation</h3>
-                    <h6></h6>
+                    <h4>Links</h4>
+                    <h4>Notifications</h4>
+                    <h4>Settings</h4>
+                    <h4></h4>
                 </li>
                 <li>
                     <h3>Portfolio Console</h3>
-                    <h6>Profile (Sidebar; Name, Role, Biography), Results, Training</h6>
+                    <h6>Profile (Sidebar; Name, Role, Biography), Results, Voice (), Connections ()</h6>
                 </li>
                 <li>
                     <h3>Social Console</h3>
@@ -386,8 +388,14 @@ function Toolkit() {return (
                         <h5>Essays: </h5>
                         <h5></h5>
                         <h5></h5>
-                    <h4>Team</h4>
+                    <h4>Team: , queues (), calendar ()</h4>
                     <h5>Leadership (schedules, basic information, roles), Team (roster, schedules, basic information, stacks), statuses (online, busy, help desk, break), team performance (achievement, case submissions)</h5>
+                    <h5>assignments (projects, tasks)</h5>
+                    <h5>Queues: status (claimed, channeled, unclaimed, pending, dispute, complete), feedback, reports</h5>
+                    <h5>Calendar: schedule stack (you, team, leadership), week/month,</h5>
+                    <h5>Memos: updates, reminders</h5>
+                    <h5>Bulletin: discussion, polls, birthdays, special occasions</h5>
+                    <h5></h5>
                     <h4></h4>
                     <h4>Settings</h4>
                         <h5>Breaktime: autofill absences (y/n), accountability (y/n)</h5>
@@ -438,52 +446,51 @@ function Toolkit() {return (
                     <h3>MANAGEMENT ROLES</h3>
 
 
+                    <h4>REGION MANAGEMENT</h4>
 
-                    <h4>COMMUNITY MANAGEMENT</h4>
-
-                    <h5>COMMUNITY ATTENDANT
+                    <h5>REGION DIRECTOR
                         <h6>
-                            + HOURS: 20-30/wk, 15 scheduled minimum<br/>
-                                ++ Worktime: 13h20m-20h<br/>
-                                ++ Breaktime: 6h40m-10h <br/>
+                            + HOURS: 50-60/wk, 35 scheduled minimum<br/>
+                                ++ Worktime: 33h20m-40h<br/>
+                                ++ Breaktime: 16h40m-20h<br/>
                                 <br/>
-                            + PAY:  $15/hr (Salary: $23,400) + performance bonus (direct members, 3 community team shares, 1 district share)<br/>
-                        </h6>
-                        <h6>
-                            + TASKS: <br/>
-                            + CASES: <br/>
-                            + HELP DESK QUEUES: <br/>
-                        </h6>
-                    </h5>
-                    <h5>ADVANCED COMMUNITY SUPPORT
-                        <h6>
-                            + HOURS: 15-25/wk, 10 scheduled minimum<br/>
-                                ++ Worktime: 10h-16h40m<br/>
-                                ++ Breaktime: 5h-8h20m<br/>
-                                <br/>
-                            + PAY: $15/hr (Salary: $19,500) + performance bonus (direct members, 2 community team shares)<br/>
+                            + PAY: $15/hr (Salary: $46,800) + performance bonus (direct members, 4 region shares, 1 academy(management) share)<br/>
                         </h6>
                         <h6>
                             + TASKS:<br/>
                             + CASES:<br/>
-                            + HELP DESK QUEUES:<br/>
+                            + HELP DESK QUEUES: region directors, advanced region support, region support<br/>
                         </h6>
                     </h5>
-                    <h5>COMMUNITY SUPPORT
+                    <h5>ADVANCED REGION SUPPORT
                         <h6>
-                            + HOURS: 10-20/wk, 5 scheduled minimum <br/>
-                                ++ Worktime: 6h40m-10h<br/>
-                                ++ Breaktime: 3h20m-5h<br/>
+                            + HOURS: 45-55/wk, 30 scheduled minimum<br/>
+                                ++ Worktime: 30h-36h40m<br/>
+                                ++ Breaktime: 15h-18h20m<br/>
                                 <br/>
-                            + PAY: $15/hr (Salary: $15,600) + performance bonus (direct members, 1 community team share)<br/>
+                            + PAY: $15/hr (Salary: $42,900) + performance bonus (direct members, 3 region shares)<br/>
+                            + <br/>
                         </h6>
                         <h6>
                             + TASKS: <br/>
                             + CASES: <br/>
-                            + HELP DESK QUEUES: <br/>
+                            + HELP DESK QUEUES: region support, district manager, advanced district support<br/>
                         </h6>
                     </h5>
-
+                    <h5>REGION SUPPORT
+                        <h6>
+                            + HOURS: 40-50/wk, 25 scheduled minimum<br/>
+                                ++ Worktime: 26h40m-33h20m<br/>
+                                ++ Breaktime: 13h20m-16h40m<br/>
+                                <br/>
+                            + PAY: $15/hr (Salary: $39,000) + performance bonus (direct members, 2 region shares)<br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES: district manager, advanced district support, district support<br/>
+                        </h6>
+                    </h5>
 
 
                     <h4>DISTRICT MANAGEMENT</h4>
@@ -499,7 +506,7 @@ function Toolkit() {return (
                         <h6>
                             + TASKS:<br/>
                             + CASES:<br/>
-                            + HELP DESK QUEUES:<br/>
+                            + HELP DESK QUEUES: advanced district support, district support, community attendant<br/>
                         </h6>
                     </h5>
                     <h5>ADVANCED DISTRICT SUPPORT
@@ -513,7 +520,7 @@ function Toolkit() {return (
                         <h6>
                             + TASKS:<br/>
                             + CASES:<br/>
-                            + HELP DESK QUEUES:<br/>
+                            + HELP DESK QUEUES: district support, community attendant, advanced community support<br/>
                         </h6>
                     </h5>
                     <h5>DISTRICT SUPPORT
@@ -527,57 +534,56 @@ function Toolkit() {return (
                         <h6>
                             + TASKS:<br/>
                             + CASES:<br/>
-                            + HELP DESK QUEUES:<br/>
+                            + HELP DESK QUEUES: community attendant, advanced community support, community support<br/>
                         </h6>
                     </h5>
 
 
+                    <h4>COMMUNITY MANAGEMENT</h4>
 
-                    <h4>REGION MANAGEMENT</h4>
-
-                    <h5>REGION DIRECTOR
+                    <h5>COMMUNITY ATTENDANT
                         <h6>
-                            + HOURS: 50-60/wk, 35 scheduled minimum<br/>
-                                ++ Worktime: 33h20m-40h<br/>
-                                ++ Breaktime: 16h40m-20h<br/>
+                            + HOURS: 20-30/wk, 15 scheduled minimum<br/>
+                                ++ Worktime: 13h20m-20h<br/>
+                                ++ Breaktime: 6h40m-10h <br/>
                                 <br/>
-                            + PAY: $15/hr (Salary: $46,800) + performance bonus (direct members, 4 region shares, 1 academy(management) share)<br/>
+                            + PAY:  $15/hr (Salary: $23,400) + performance bonus (direct members, 3 community team shares, 1 district share)<br/>
+                        </h6>
+                        <h6>
+                            + TASKS: schedules team meetings, processes escalations, processes community refunds,  <br/>
+                            + CASES: feedback channeling, forum actions, bulletin, reported community support & advanced support & members, support actions, community actions, member actions <br/>
+                            + HELP DESK QUEUES: advanced community support, community support, members<br/>
+                        </h6>
+                    </h5>
+                    <h5>ADVANCED COMMUNITY SUPPORT
+                        <h6>
+                            + HOURS: 15-25/wk, 10 scheduled minimum<br/>
+                                ++ Worktime: 10h-16h40m<br/>
+                                ++ Breaktime: 5h-8h20m<br/>
+                                <br/>
+                            + PAY: $15/hr (Salary: $19,500) + performance bonus (direct members, 2 community team shares)<br/>
                         </h6>
                         <h6>
                             + TASKS:<br/>
-                            + CASES:<br/>
-                            + HELP DESK QUEUES:<br/>
+                            + CASES: feedback channeling, forum actions, bulletin, reported community support & members, community actions, member actions<br/>
+                            + HELP DESK QUEUES: community support, members, visitors<br/>
                         </h6>
                     </h5>
-                    <h5>ADVANCED REGION SUPPORT
+                    <h5>COMMUNITY SUPPORT
                         <h6>
-                            + HOURS: 45-55/wk, 30 scheduled minimum<br/>
-                                ++ Worktime: 30h-36h40m<br/>
-                                ++ Breaktime: 15h-18h20m<br/>
+                            + HOURS: 10-20/wk, 5 scheduled minimum <br/>
+                                ++ Worktime: 6h40m-10h<br/>
+                                ++ Breaktime: 3h20m-5h<br/>
                                 <br/>
-                            + PAY: $15/hr (Salary: $42,900) + performance bonus (direct members, 3 region shares)<br/>
-                            + <br/>
+                            + PAY: $15/hr (Salary: $15,600) + performance bonus (direct members, 1 community team share)<br/>
                         </h6>
                         <h6>
-                            + TASKS: <br/>
+                            + TASKS: feedback channeling, forum actions, bulletin, <br/>
                             + CASES: <br/>
-                            + HELP DESK QUEUES: <br/>
+                            + HELP DESK QUEUES: members, visitors<br/>
                         </h6>
                     </h5>
-                    <h5>REGION SUPPORT
-                        <h6>
-                            + HOURS: 40-50/wk, 25 scheduled minimum<br/>
-                                ++ Worktime: 26h40m-33h20m<br/>
-                                ++ Breaktime: 13h20m-16h40m<br/>
-                                <br/>
-                            + PAY: $15/hr (Salary: $39,000) + performance bonus (direct members, 2 region shares)<br/>
-                        </h6>
-                        <h6>
-                            + TASKS:<br/>
-                            + CASES:<br/>
-                            + HELP DESK QUEUES:<br/>
-                        </h6>
-                    </h5>
+
                 </li>
             </ul>
 
@@ -598,9 +604,10 @@ function Toolkit() {return (
                 <li>
                     <h3>DESIGNER ROLES</h3>
 
+
                     <h4>DESIGN LEADERSHIP</h4>
 
-                    <h5> LEAD ASSESSMENT ENGINEER
+                    <h5> LEAD ASSESSMENT ARCHITECTS
                         <h6>
                             + HOURS: 40-50/wk, 35 scheduled minimum<br/>
                                 ++ Worktime: hm-hm<br/>
@@ -612,12 +619,12 @@ function Toolkit() {return (
                             + REQUIREMENTS: <br/>
                         </h6>
                         <h6>
-                            + TASKS: maintained training (), <br/>
+                            + TASKS: maintained training (), coordinates the updating process, maintains integrity of personality structures, decision power when department stalls, editor of the manuals, can create macro structures (selves, functions, traits), analyze aggresults<br/>
                             + CASES: <br/>
                             + HELP DESK QUEUES: lead assessment engineers, assessment engineers, assessment engineer support<br/>
                         </h6>
                     </h5>
-                    <h5> ASSESSMENT ENGINEER
+                    <h5> ASSESSMENT ARCHITECTS
                         <h6>
                             + HOURS: 35-45/wk, 30 scheduled minimum<br/>
                                 ++ Worktime: hm-hm<br/>
@@ -629,12 +636,12 @@ function Toolkit() {return (
                             + REQUIREMENTS: <br/>
                         </h6>
                         <h6>
-                            + TASKS:<br/>
+                            + TASKS: maintain conceptual integrity of trait/function structures<br/>
                             + CASES:<br/>
                             + HELP DESK QUEUES: assessment engineer support, design coordinators<br/>
                         </h6>
                     </h5>
-                    <h5> ASSESSMENT ENGINEER SUPPORT
+                    <h5> ASSESSMENT ARCHITECT SUPPORT
                         <h6>
                             + HOURS: 30-40/wk, 25 scheduled minimum<br/>
                                 ++ Worktime: hm-hm<br/>
@@ -910,9 +917,10 @@ function Toolkit() {return (
                     </h6>
                 </li>
                 <li>
-                    <h3></h3>
+                    <h3>DEVELOPER ROLES</h3>
+
                     <h4>ARCHITECTS</h4>
-                    <h5>
+                    <h5>LEAD ENGINEERS
                         <h6>
                             + HOURS: X-X/wk, X scheduled minimum<br/>
                                 ++ Worktime: hm-hm<br/>
@@ -929,7 +937,7 @@ function Toolkit() {return (
                             + HELP DESK QUEUES:<br/>
                         </h6>
                     </h5>
-                    <h5>
+                    <h5>ADVANCED ENGINEER SUPPORT 
                         <h6>
                             + HOURS: X-X/wk, X scheduled minimum<br/>
                                 ++ Worktime: hm-hm<br/>
@@ -946,7 +954,7 @@ function Toolkit() {return (
                             + HELP DESK QUEUES:<br/>
                         </h6>
                     </h5>
-                    <h5>
+                    <h5>ENGINEER SUPPORT
                         <h6>
                             + HOURS: X-X/wk, X scheduled minimum<br/>
                                 ++ Worktime: hm-hm<br/>
@@ -963,9 +971,96 @@ function Toolkit() {return (
                             + HELP DESK QUEUES:<br/>
                         </h6>
                     </h5>
+
                     <h4>DEVELOPER</h4>
+                    <h5>LEAD DEVELOPERS
+                        <h6>
+                            + HOURS: X-X/wk, X scheduled minimum<br/>
+                                ++ Worktime: hm-hm<br/>
+                                ++ Breaktime: hm-hm<br/>
+                                <br/>
+                            + PAY: performance bonus ()<br/>
+                        </h6>
+                        <h6>
+                            + REQUIREMENTS: <br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>ADVANCED DEVELOPER SUPPORT
+                        <h6>
+                            + HOURS: X-X/wk, X scheduled minimum<br/>
+                                ++ Worktime: hm-hm<br/>
+                                ++ Breaktime: hm-hm<br/>
+                                <br/>
+                            + PAY: performance bonus ()<br/>
+                        </h6>
+                        <h6>
+                            + REQUIREMENTS: <br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>DEVELOPER SUPPORT
+                        <h6>
+                            + HOURS: X-X/wk, X scheduled minimum<br/>
+                                ++ Worktime: hm-hm<br/>
+                                ++ Breaktime: hm-hm<br/>
+                                <br/>
+                            + PAY: performance bonus ()<br/>
+                        </h6>
+                        <h6>
+                            + REQUIREMENTS: <br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+
                     <h4>QUALITY ASSURANCE</h4>
-                    <h5>
+                    <h5>QUALITY ASSURANCE LEAD
+                        <h6>
+                            + HOURS: X-X/wk, X scheduled minimum<br/>
+                                ++ Worktime: hm-hm<br/>
+                                ++ Breaktime: hm-hm<br/>
+                                <br/>
+                            + PAY: performance bonus ()<br/>
+                        </h6>
+                        <h6>
+                            + REQUIREMENTS: <br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>QA ADVANCED SUPPORT
+                        <h6>
+                            + HOURS: X-X/wk, X scheduled minimum<br/>
+                                ++ Worktime: hm-hm<br/>
+                                ++ Breaktime: hm-hm<br/>
+                                <br/>
+                            + PAY: performance bonus ()<br/>
+                        </h6>
+                        <h6>
+                            + REQUIREMENTS: <br/>
+                        </h6>
+                        <h6>
+                            + TASKS:<br/>
+                            + CASES:<br/>
+                            + HELP DESK QUEUES:<br/>
+                        </h6>
+                    </h5>
+                    <h5>QA SUPPORT
                         <h6>
                             + HOURS: X-X/wk, X scheduled minimum<br/>
                                 ++ Worktime: hm-hm<br/>
@@ -993,6 +1088,12 @@ function Toolkit() {return (
                     + Roles in Creative<br/>
                     + <br/>
                     + <br/>
+                    <h6>
+                        To-Do List: <br/>
+                        + <br/>
+                        + <br/>
+                        + <br/>
+                    </h6>
                 </li>
                 <li>
                     <h3>CREATOR ROLES</h3>
@@ -1220,22 +1321,6 @@ function Toolkit() {return (
 
             <ul>
                 <li>ROLE COMPONENTS</li>
-                {/* Management Consoles */}
-                <li>
-                    <h3>MANAGEMENT</h3>
-
-                    <h5>Team</h5>
-                        <h6>
-                            + Assignments: projects(), tasks ()<br/>
-                            + Queues: status (claimed, channeled, unclaimed, pending, dispute, complete), feedback, reports<br/>
-                            + Calendar: schedule stack (you, team, leadership), week/month, <br/>
-                        </h6>                    
-                    <h5>Department</h5>
-                        <h6>
-                            + Memos: updates, reminders <br/>
-                            + Bulletin: discussion, polls, birthdays, special occasions<br/> 
-                        </h6>
-                </li>
                 {/* Designer Consoles */}
                 <li>
                     <h5>DESIGNERS<br/></h5>
@@ -1250,106 +1335,6 @@ function Toolkit() {return (
             </ul>
 
 
-            <ul>
-                <li>ROLE DESCRIPTIONS</li>
-                <br/>
-                {/* Management */}
-                <li>
-                    <h3>MANAGEMENT</h3>
-
-                    <h5>Community Attendant</h5>
-                    Leads the community management team, schedules meeting days, processes escalations, refunds<br/><br/>
-                    <h6>CASES: feedback channeling, forum actions, bulletin, reported community support & advanced support & members, support actions, community actions, member actions</h6>
-                    <h6>HELP DESK: advanced community support, community support, members; some assessments</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 3 community team shares, 1 district team share)</h6>
-
-                    <h5>Advanced Community Support</h5>
-                    <h6>CASES: feedback channeling, forum actions, bulletin, reported community support & members, community actions, member actions</h6>
-                    <h6>HELP DESK: community support, members, visitors</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 2 community team shares)</h6>
-
-                    <h5>Community Support</h5>
-                    <h6>CASES: feedback channeling, forum actions, bulletin, </h6>
-                    <h6>HELP DESK: members, visitors</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 1 community team share)</h6>
-
-                    <h4>District Management</h4>
-                    Management teams responsible for up to 10,000 attendants<br/><br/>
-
-                    <h5>District Manager</h5>
-                    <h6>HELP DESK: advanced district support, district support, community attendants</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 4 district team shares, 1 region team share)</h6>
-
-                    
-                    <h5>Advanced District Support</h5>
-                    <h6>HELP DESK: district support, community attendants, advanced community support</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 3 district team shares)</h6>
-
-                    <h5>District Support</h5>
-                    <h6>CASES: attendant actions, </h6>
-                    <h6>HELP DESK: community attendants, advanced community support, community support</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 2 district team share)</h6>
-
-                    <h4>Region Management</h4>
-                    Management teams responsible for up to 10,000 managers<br/><br/>
-
-                    <h5>Region Director</h5>
-                    <h6>HELP DESK: advanced region support, region support, district managers</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 4 region team shares, 1 academy share)</h6>
-
-                    <h5>Advanced Region Support</h5>
-                    <h6>HELP DESK: region support, district managers, advanced district managers</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 3 region team shares)</h6>
-
-                    <h5>Region Support</h5>
-                    <h6>CASES: manager actions, attendant actions</h6>
-                    <h6>HELP DESK: district managers, advanced district support, district support</h6>
-                    <h6>PAY: $15/hr + performance bonus (direct members, 2 region team share)</h6>
-                </li>
-                <br/>
-                {/* Designers */}
-                <li>
-                    <h3>DESIGNERS</h3>
-                    <h4>Designer Leadership</h4>
-                    <h5>Assessment Engineer</h5>
-                        This position is for the leader(s) of the design department. <br/>
-                        <h6>TASKS: coordinates the updating process, maintains integrity of personality structures, decision power when department stalls, editor of the manuals, can create macro structures (selves, functions, traits), analyze aggresults</h6>
-                    <h5>Engineer Support</h5>
-                    <h4>Design Team</h4>
-                    <h5>Design Coordinators</h5>
-                        This position is for assistive leadership in the design department.<br/>
-                        <h6>TASKS: maintains integrity of trait structures for specific functions</h6>
-                    <h5>Advanced Design Support</h5>
-                        This position is for <br/>
-                        <h6>HELP DESK: assessment support, assessment members</h6>
-                    <h5>Design Support</h5>
-                        <h6>HELP DESK: assessment support, assessment members</h6>
-                    <h4>Assessment Support</h4>
-                    <h5>Advanced Assessment Support</h5>
-                        <br/><br/>
-                        <h6>CASES: feedback channeling, </h6>
-                        <h6>HELP DESK: assessment assistance, results assistance</h6>
-                    <h5>Assessment Support</h5>
-                </li>
-                <br/>
-                {/* Developers */}
-                <li>
-                    <h3>DEVELOPERS</h3>
-                    <h4>Development Leadership</h4>
-                    <h5>Development Architects</h5>
-                    <h5>Development Coordinators</h5>
-                    <h4>Quality Assurance (QA)</h4>
-                    <h5>QA Team Member</h5>
-                    <h5>QA Support</h5>
-                    <h4>Developers</h4>
-                    <h5>Dev Team Member</h5>
-                    <h5>Advanced Developer Support</h5>
-                    <h5>Developer Support</h5>
-                </li>
-
-
-            </ul>
-            <br/>
 
         </div>
 
