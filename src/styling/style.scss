@@ -59,12 +59,12 @@ table {
 
 
 
-$themehue:   305;
-$accenthue:  330;
-$alerthue:   345;
+$themehue:   0;
+$accenthue:  20;
+$alerthue:   40;
 
 
-$themesat:  12%; 
+$themesat:  15%; 
 $accentsat: 30%; //must be 15% more than theme
 $alertsat:  60%; //must be 15% more than accent 
 
@@ -997,42 +997,95 @@ body {
         background-color: $at8;
         border-radius: 4px;
         position: relative;
+
+        #helpDeskConsole {
+
+            z-index: 5;
+            border-radius: 4px;
+            overflow: hidden;
+            position: absolute;
+            transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
+
+            display: grid;
+            grid-template-rows: 40px calc(100% - 64px) 24px;
+            grid-template-areas: "header" "content" "button";
+
+            #helpDeskHeader {
+                background-color: $at2;
+                grid-area: header;
+                margin: 0;
+                width: 100%;
+                height: 40px;
+            }
+            #helpDeskContent {
+                grid-area: content;
+                display: grid;
+                margin: 10px;
+                background-color: $at3;
+                overflow: hidden;
+                grid-template-rows: 40px calc(100% - 40px);
+
+            }
+            div:nth-child(1) {
+                grid-area: button;
+            }
+        }
+        .helpDeskOpen {
+            height: calc(100vh - 66px);
+            width: calc(100vw - 16px);
+            right: 3px;
+            bottom: 3px;
+            background-color: $at4;
+            box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
+            cursor: default;
+        }
+        .helpDeskOpenSB {
+            height: calc(100vh - 66px);
+            right: 3px;
+            bottom: 3px;
+            background-color: $at4;
+            box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
+            cursor: default;
+        }
+        .helpDeskClosed {
+            width: 22px;
+            height: 22px;
+            right: 4px;
+            bottom: 4px;
+            background-color: $at3;
+            &:hover {
+                background-color: $at5;
+            }
+        }
+        .helpDeskNone {
+            height: 0;
+            width: 0;
+            right: 15px;
+            bottom: 15px;
+        }
+
+
         
     }
     #breakTimeConsole {
         grid-area: breaktimeconsole;
-        background: $a1;
+        background: $a2;
         display: grid;
         cursor: default;
         position: relative;
-        grid-template-rows: 40px calc(100vh - 135px);
+        grid-template-rows: 10px calc(100vh - 95px);
         grid-template-areas: "head" "content";
-        #breakTimeHeader {
+        #breakTimeWeek {
             width: 100vw;
-            height: 40px;
+            height: 10px;
             grid-area: head;
             display: grid;
             position: absolute;
             top: 0;
             left: 0;
-            background: $a2;
-            grid-template-rows: 30px 10px;
-            grid-template-areas: "head" "weekProgress";
-            span:nth-child(1) {
-                grid-area: head;
-                font-size: 22px;
-                line-height: 30px;
-                text-indent: 40px;
-                font-weight: 600;
-                letter-spacing: 3px;
-                color: $a9;
-            }
-            span:nth-child(2) {
-                grid-area: weekProgress;
-                background-color: $a0;
-            }
+            background: $a0;
         }
-        div:nth-child(2) {
+        #breakTimeContent {
             overflow-y: scroll;
             overflow-x: none;
             grid-area: content;
@@ -1060,95 +1113,12 @@ body {
 }
 .inOffice {bottom: 0;}
 .outOffice {bottom: -100px;}
-.breakTimeOpen {height: calc(100vh - 50px);}
+.breakTimeOpen {height: calc(100vh - 55px);}
 .breakTimeClosed {height: 40px;}
 
 
 
-#helpDeskConsole {
 
-    z-index: 5;
-    border-radius: 4px;
-    overflow: hidden;
-    position: absolute;
-    transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
-
-    display: grid;
-    grid-template-rows: calc(100% - 24px) 24px;
-    grid-template-areas: "content" "button";
-
-    #helpDeskContent {
-        grid-area: content;
-        display: grid;
-        margin: 10px;
-        overflow: none;
-        background-color: black;
-        overflow-x: hidden;
-        overflow-y: auto;
-        #helpDeskHeader {
-            background-color: purple;
-            grid-area: header;
-            margin: 0;
-            width: 100px;
-            height: 100px;
-        }
-        #helpDeskChats {
-            margin: 5px;
-            display: inline-block;
-            position: relative;
-            transition: transform 1s;
-            grid-area: chats;
-            
-            div {
-                background-color: yellow;
-                width: 100px;
-                height: 100px;
-                margin: 5px;
-                display: inline-block;
-                position: relative;
-            }
-        }
-
-    }
-    div:nth-child(2) {
-        grid-area: button;
-    }
-
-
-}
-.helpDeskOpen {
-    height: calc(100% - 66px);
-    width: calc(100% - 14px);
-    right: 7px;
-    bottom: 7px;
-    background-color: $at4;
-    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-    cursor: default;
-}
-.helpDeskOpenSB {
-    height: calc(100% - 64px);
-    right: 7px;
-    bottom: 7px;
-    background-color: $at4;
-    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-    cursor: default;
-}
-.helpDeskClosed {
-    width: 22px;
-    height: 22px;
-    right: 9px;
-    bottom: 9px;
-    background-color: $at3;
-    &:hover {
-        background-color: $at5;
-    }
-}
-.helpDeskNone {
-    height: 0;
-    width: 0;
-    right: 15px;
-    bottom: 15px;
-}
 
 
 
@@ -1158,16 +1128,16 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     right: 15px;
-    top: 20px;
+    top: 65px;
     background-color: $a7;
-    position: absolute;
+    position: fixed;
     border-radius: 4px;
     display: block;
     transition: width 1s;
+    z-index: 3;
     &::-webkit-scrollbar {display: none;}
     #adminDashboard {
         border-radius: 4px;
-        z-index: 3;
         display: flex;
         width: 100%;
 
@@ -1207,10 +1177,10 @@ body {
 
 // DEVICE VIEWPORT WIDTH ---------------------------------------------------------------------------------------------------------------------------
 
-// Narrow Smartphone - Red (Nav, Console, Sidebar, Help Desk)
+// Micro Screen - Dark Pink (Nav, Console, Sidebar, Help Desk)
 @media only screen and (min-width: 10px) {
     // Indicator
-    #userThumb {background: red;}
+    #userThumb {background: black;}
 
 
     // Nav Responsive
@@ -1285,10 +1255,10 @@ body {
     }
 }
 
-// Wide Smartphone - Orange (Nav, Console)
-@media only screen and (min-width: 320px) {
+// Narrow Smartphone - Red (Nav, Console)
+@media only screen and (min-width: 150px) {
     // Indicator
-    #userThumb {background: orange;}
+    #userThumb {background: hsl(0, 100%, 27%);}
 
     // Nav Responsive
     .navCropOpen {
@@ -1334,38 +1304,50 @@ body {
 
 }
 
-// Narrow Tablet - Yellow (Console, Sidebar)
-@media only screen and (min-width: 640px) {
+// Medium Smartphone - Orange ()
+@media only screen and (min-width: 300px) {
     // Indicator
-    #userThumb {background: yellow;}
+    #userThumb {background: hsl(35, 100%, 27%);}
 
-    // Console Responsive
-    .userDashMini {
-        width: calc(100vw - 400px);
-    }
-    #toolkit {
-        width: 380px;
-    }
+}
+
+// Wide Smartphone - Yellow ()
+@media only screen and (min-width: 450px) {
+    // Indicator
+    #userThumb {background: hsl(55, 100%, 27%);}
 
 
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 350px);
-    }
-    #toolkit {
-        width: 330px;
-    }
-    .helpDeskOpenSB {
-        width: calc(100vw - 366px);
-    }
+
+
 
 
 }
 
-// Wide Tablet - Green (Nav, Sidebar)
-@media only screen and (min-width: 960px) {
+// Narrow Tablet - Green (Console, Sidebar)
+@media only screen and (min-width: 650px) {
     // Indicator
-    #userThumb {background: green;}
+    #userThumb {background: hsl(90, 100%, 27%);}
+
+
+    // Sidebar & Dash Responsive
+    .userDashMini {
+        width: calc(100vw - 320px);
+    }
+    #toolkit {
+        width: 300px;
+    }
+    .helpDeskOpenSB {
+        width: calc(100vw - 336px);
+    }
+
+
+
+}
+
+// Medium Tablet - Teal (Nav, Sidebar)
+@media only screen and (min-width: 850px) {
+    // Indicator
+    #userThumb {background: hsl(175, 100%, 27%);}
 
 
     // Nav Responsive
@@ -1383,6 +1365,28 @@ body {
 
 
 
+
+
+
+}
+
+// Wide Tablet - Blue ()
+@media only screen and (min-width: 1050px) {
+    // Indicator
+    #userThumb {background: hsl(215, 100%, 27%);}
+
+
+
+
+
+}
+
+// Narrow Laptop - Purple (Sidebar)
+@media only screen and (min-width: 1300px) {
+    // Indicator
+    #userThumb {background: hsl(270, 100%, 27%);}
+
+
     // Sidebar Responsive
     .userDashMini {
         width: calc(100vw - 450px);
@@ -1397,30 +1401,10 @@ body {
 
 }
 
-// Narrow Laptop - Blue (Sidebar)
-@media only screen and (min-width: 1280px) {
+// Medium Laptop - Pink (Nav, Console, Sidebar)
+@media only screen and (min-width: 1550px) {
     // Indicator
-    #userThumb {background: blue;}
-
-
-
-
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 500px);
-    }
-    #toolkit {
-        width: 480px;
-    }
-    .helpDeskOpenSB {
-        width: calc(100vw - 516px);
-    }
-}
-
-// Wide Laptop - Purple (Nav, Console, Sidebar)
-@media only screen and (min-width: 1600px) {
-    // Indicator
-    #userThumb {background: rgb(104, 61, 204);}
+    #userThumb {background: hsl(300, 100%, 27%);}
 
     // Nav Responsive
     .navCropOpen {
@@ -1434,6 +1418,25 @@ body {
     #navBody {
         width: 695px;
     }
+
+    // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 500px);
+    }
+    #toolkit {
+        width: 480px;
+    }
+    .helpDeskOpenSB {
+        width: calc(100vw - 516px);
+    }
+
+}
+
+// Wide Laptop - Raspberry (Console, Sidebar)
+@media only screen and (min-width: 1800px) {
+    // Indicator
+    #userThumb {background: hsl(335, 100%, 27%);}
+
 
     // Console Responsive
     .userConsoleWHD {
@@ -1465,13 +1468,15 @@ body {
         width: calc(100vw - 616px);
     }
 
+
+
+
 }
 
-// 4K Narrow Desktop - Pink (Console, Sidebar)
-@media only screen and (min-width: 1920px) {
+// Narrow Desktop - White ()
+@media only screen and (min-width: 2000px) {
     // Indicator
-    #userThumb {background: violet;}
-
+    #userThumb {background-color: white;}
 
     // Console Responsive
     .consoleSidebarOpen {
@@ -1500,14 +1505,21 @@ body {
     }
 
 
+}
+
+// Medium Desktop - Gray (Sidebar)
+@media only screen and (min-width: 2300px) {
+    // Indicator
+    #userThumb {background: rgb(102, 102, 102);}
+
 
 
 }
 
-// 4K Wide Desktop - White (Sidebar)
-@media only screen and (min-width: 2240px) {
+// Wide Desktop - Black ()
+@media only screen and (min-width: 2600px) {
     // Indicator
-    #userThumb {background-color: white;}
+    #userThumb {background: black;}
 
 
     // Sidebar Responsive
@@ -1519,9 +1531,35 @@ body {
     }
     .helpDeskOpenSB {
         width: calc(100vw - 816px);
-    }
+    }    
 
 }
+
+
+
+
+
+// DEVICE VIEWPORT HEIGHT -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+// DEVICE VIEWPORT HEIGHT AND WIDTH -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
