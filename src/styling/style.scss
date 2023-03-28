@@ -61,7 +61,7 @@ table {
 
 $themehue:   300;
 $accenthue:  330;
-$alerthue:   315;
+$alerthue:   40;
 
 
 $themesat:  10%; // 0-65%
@@ -70,17 +70,17 @@ $alertsat:  50%; // must be 20% more than accent
 
 
 // Lightness Calculations - must be between 0-30
-$LV0: calc(0% +  0%);
-$LV1: calc(0% +  7%);
-$LV2: calc(0% + 14%);
-$LV3: calc(0% + 21%);
-$LV4: calc(0% + 28%);
-$LV5: calc(0% + 35%);
-$LV6: calc(0% + 42%);
-$LV7: calc(0% + 49%);
-$LV8: calc(0% + 56%);
-$LV9: calc(0% + 63%);
-$LVX: calc(0% + 70%);
+$LV0: calc(14% +  0%);
+$LV1: calc(14% +  7%);
+$LV2: calc(14% + 14%);
+$LV3: calc(14% + 21%);
+$LV4: calc(14% + 28%);
+$LV5: calc(14% + 35%);
+$LV6: calc(14% + 42%);
+$LV7: calc(14% + 49%);
+$LV8: calc(14% + 56%);
+$LV9: calc(14% + 63%);
+$LVX: calc(14% + 70%);
 
 
 // Theme Shades
@@ -162,7 +162,7 @@ body {
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
 
 #userHeader {
-    background: $t4;
+    background: $t3;
     position: fixed;
     top: 0;
     right: 0;
@@ -188,7 +188,7 @@ body {
         line-height: 16px;
         margin: 4px 0 0 5px;
         font-weight: 600;
-        color: $t8;
+        color: $t9;
         width: max-content;
         cursor: pointer;
         letter-spacing: 1.5px;
@@ -227,7 +227,7 @@ body {
         .clockNow {box-shadow: inset 0 0 0 2px white;}
 
         // 1- THEME(base color, progress bar)
-        // 2- THEME(missed scheduled time)
+        // 5- THEME(missed scheduled time)
         // 7- THEME(future scheduled time)
 
         // 4- ACCENT(more than average work actions, +3)
@@ -238,11 +238,11 @@ body {
         // 6- ALERT(multiple break actions)
         // 8- ALERT(one break action)
 
-        td:nth-child(32) {background-color: $t2;}
-        td:nth-child(33) {background-color: $t2;}
-        td:nth-child(34) {background-color: $t2;}
-        td:nth-child(35) {background-color: $t2;}
-        td:nth-child(36) {background-color: $t2;}
+        td:nth-child(32) {background-color: $t6;}
+        td:nth-child(33) {background-color: $t6;}
+        td:nth-child(34) {background-color: $t6;}
+        td:nth-child(35) {background-color: $t6;}
+        td:nth-child(36) {background-color: $t6;}
         td:nth-child(37) {background-color: $a6;}
         td:nth-child(38) {background-color: $a4;}
         td:nth-child(39) {background-color: $a6;}
@@ -294,22 +294,22 @@ body {
         td:nth-child(89) {background-color: $a4;}
         td:nth-child(90) {background-color: $a4;}
         td:nth-child(91) {background-color: $a4;}
-        td:nth-child(92) {background-color: $t7;}
-        td:nth-child(93) {background-color: $t7;}
-        td:nth-child(94) {background-color: $t7;}
-        td:nth-child(95) {background-color: $t7;}
-        td:nth-child(96) {background-color: $t7;}
-        td:nth-child(97) {background-color: $t7;}
-        td:nth-child(98) {background-color: $t7;}
-        td:nth-child(99) {background-color: $t7;}
-        td:nth-child(100) {background-color: $t7;}
+        td:nth-child(92) {background-color: $t8;}
+        td:nth-child(93) {background-color: $t8;}
+        td:nth-child(94) {background-color: $t8;}
+        td:nth-child(95) {background-color: $t8;}
+        td:nth-child(96) {background-color: $t8;}
+        td:nth-child(97) {background-color: $t8;}
+        td:nth-child(98) {background-color: $t8;}
+        td:nth-child(99) {background-color: $t8;}
+        td:nth-child(100) {background-color: $t8;}
 
-        td:nth-child(115) {background-color: $t7;}
-        td:nth-child(116) {background-color: $t7;}
-        td:nth-child(117) {background-color: $t7;}
-        td:nth-child(118) {background-color: $t7;}
-        td:nth-child(119) {background-color: $t7;}
-        td:nth-child(120) {background-color: $t7;}
+        td:nth-child(115) {background-color: $t8;}
+        td:nth-child(116) {background-color: $t8;}
+        td:nth-child(117) {background-color: $t8;}
+        td:nth-child(118) {background-color: $t8;}
+        td:nth-child(119) {background-color: $t8;}
+        td:nth-child(120) {background-color: $t8;}
         
         // 10 hour shift: 6h40m work (64), 3h20m break (32)
     }
