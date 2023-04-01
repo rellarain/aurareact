@@ -557,7 +557,6 @@ function Toolkit() {return (
             </li>
 
             <li>
-
                 <h3>DESIGNER ROLES</h3>
 
 
@@ -710,6 +709,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: results users, assessment users<br/>
                     </h6>
                 </h5>
+
             </li>
             <li>
                 <h3>DESIGNER TOOLS</h3>
@@ -1292,6 +1292,18 @@ function Toolkit() {return (
                     + <br/>
                     + <br/>
                 </h6>
+            </li>
+            <li>
+                <h5>
+                    REVENUE BREAKDOWN
+                    <h6>
+                        + Community (30-55%): supports community staff<br/>
+                        + Performance (0-25%): <br/>
+                        + Academy (20%): supports academy roles in all departments; designers (5%), academics (5%), developers (5%), creators (5%)<br/>
+                        + District (15%): <br/>
+                        + Region (10%): <br/>
+                    </h6>
+                </h5>
             </li>
         </ul>
 

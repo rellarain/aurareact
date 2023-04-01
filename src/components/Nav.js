@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Navigation() {return (
     // navCropClosed navCropPage navCropOpen navCropTools
-    <nav id='navCrop' className='navCropPage'>
+    <nav id='navCrop' className='navCropClosed'>
         {/* Nav Button
                 
             Navigation Console: 
