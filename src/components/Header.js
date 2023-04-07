@@ -26,7 +26,7 @@ export default function Header() {
         </div>
         <table id='userClock'>
             <tr>
-                <td alt="12:00 - 12:10 AM"></td>
+                <td alt="12:00 - 12:10 AM" id='temporaryHeightIndicator'></td>
                 <td alt="12:10 - 12:20 AM"></td>
                 <td alt="12:20 - 12:30 AM"></td>
                 <td alt="12:30 - 12:30 AM"></td>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Admin() {return (
-    <div>
+    <div className=''>
         <AdminDash />
         <AdminFooter />
         <Sidebar />
@@ -59,11 +59,11 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskClosed'>
+    <div id='helpDeskConsole' className='helpDeskOpenSB'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
-        <section id='helpDeskHeader'></section>
-        <div id='helpDeskContent'>
+        <section id='helpDeskChats'></section>
+        <div id='helpDeskForm'>
 
         </div>
     </div>
@@ -380,6 +380,7 @@ function Toolkit() {return (
         </ul>
 
         {/* MANAGEMENT COMPONENTS */}
+
         <ul>
             <li>
                 <h3>MANAGEMENT COMPONENTS</h3>
@@ -402,7 +403,7 @@ function Toolkit() {return (
 
                 <h4>REGION MANAGEMENT</h4>
 
-                <h5>REGION DIRECTOR
+                <h5>REGION DIRECTOR [1600-0000-0000-0000]
                     <h6>
                         + HOURS: 50-60/wk, 35 scheduled minimum<br/>
                             ++ Worktime: 33h20m-40h<br/>
@@ -416,7 +417,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: region directors, advanced region support, region support<br/>
                     </h6>
                 </h5>
-                <h5>ADVANCED REGION SUPPORT
+                <h5>ADVANCED REGION SUPPORT [1600-9000-0000-0000]
                     <h6>
                         + HOURS: 45-55/wk, 30 scheduled minimum<br/>
                             ++ Worktime: 30h-36h40m<br/>
@@ -431,7 +432,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: region support, district manager, advanced district support<br/>
                     </h6>
                 </h5>
-                <h5>REGION SUPPORT
+                <h5>REGION SUPPORT [1600-1000-0000-0000]
                     <h6>
                         + HOURS: 40-50/wk, 25 scheduled minimum<br/>
                             ++ Worktime: 26h40m-33h20m<br/>
@@ -449,7 +450,7 @@ function Toolkit() {return (
 
                 <h4>DISTRICT MANAGEMENT</h4>
 
-                <h5>DISTRICT MANAGER
+                <h5>DISTRICT MANAGER [1600-1234-0000-0000]
                     <h6>
                         + HOURS: 35-45/wk, 25 scheduled minimum <br/>
                             ++ Worktime: 23h20m-30h<br/>
@@ -463,7 +464,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: advanced district support, district support, community attendant<br/>
                     </h6>
                 </h5>
-                <h5>ADVANCED DISTRICT SUPPORT
+                <h5>ADVANCED DISTRICT SUPPORT [1600-1234-9000-0000]
                     <h6>
                         + HOURS: 30-40/wk, 20 scheduled minimum<br/>
                             ++ Worktime: 20h-26h40m<br/>
@@ -477,7 +478,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: district support, community attendant, advanced community support<br/>
                     </h6>
                 </h5>
-                <h5>DISTRICT SUPPORT
+                <h5>DISTRICT SUPPORT [1600-1234-1000-0000]
                     <h6>
                         + HOURS: 25-35/wk, 15 scheduled minimum<br/>
                             ++ Worktime: 16h40m-23h20m<br/>
@@ -495,7 +496,7 @@ function Toolkit() {return (
 
                 <h4>COMMUNITY MANAGEMENT</h4>
 
-                <h5>COMMUNITY ATTENDANT
+                <h5>COMMUNITY ATTENDANT [1600-1234-1234-0000]
                     <h6>
                         + HOURS: 20-30/wk, 15 scheduled minimum<br/>
                             ++ Worktime: 13h20m-20h<br/>
@@ -509,7 +510,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: advanced community support, community support, members<br/>
                     </h6>
                 </h5>
-                <h5>ADVANCED COMMUNITY SUPPORT
+                <h5>ADVANCED COMMUNITY SUPPORT [1600-1234-1234-9000]
                     <h6>
                         + HOURS: 15-25/wk, 10 scheduled minimum<br/>
                             ++ Worktime: 10h-16h40m<br/>
@@ -523,7 +524,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: community support, members, visitors<br/>
                     </h6>
                 </h5>
-                <h5>COMMUNITY SUPPORT
+                <h5>COMMUNITY SUPPORT [1600-1234-1234-1000]
                     <h6>
                         + HOURS: 10-20/wk, 5 scheduled minimum <br/>
                             ++ Worktime: 6h40m-10h<br/>
@@ -542,7 +543,6 @@ function Toolkit() {return (
         </ul>
 
         {/* DESIGNER COMPONENTS */}
-
         <ul>
             <li>
                 <h3>DESIGNER COMPONENTS</h3>
@@ -561,12 +561,11 @@ function Toolkit() {return (
 
 
                 <h4>DESIGN LEADERSHIP</h4>
-
                 <h5>
                     LEAD ASSESSMENT ARCHITECTS
 
                     <h6>
-                        + HOURS: 40-50/wk, 35 scheduled minimum<br/>
+                        + HOURS: 35-45/wk, 30 scheduled minimum<br/>
                         ++ Worktime: hm-hm<br/>
                         ++ Breaktime: hm-hm<br/>
                         <br/>
@@ -578,25 +577,7 @@ function Toolkit() {return (
                     <h6>
                         + TASKS: maintained training (), coordinates the updating process, maintains integrity of personality structures, decision power when department stalls, editor of the manuals, can create macro structures (selves, functions, traits), analyze aggresults<br/>
                         + CASES: <br/>
-                        + HELP DESK QUEUES: lead assessment engineers, assessment engineers, assessment engineer support<br/>
-                    </h6>
-                </h5>
-
-                <h5> ASSESSMENT ARCHITECTS
-                    <h6>
-                        + HOURS: 35-45/wk, 30 scheduled minimum<br/>
-                            ++ Worktime: hm-hm<br/>
-                            ++ Breaktime: hm-hm<br/>
-                            <br/>
-                        + PAY: performance bonus ()<br/>
-                    </h6>
-                    <h6>
-                        + REQUIREMENTS: <br/>
-                    </h6>
-                    <h6>
-                        + TASKS: maintain conceptual integrity of trait/function structures<br/>
-                        + CASES:<br/>
-                        + HELP DESK QUEUES: assessment engineer support, design coordinators<br/>
+                        + HELP DESK QUEUES: lead assessment engineers, assessment engineer support, design coordinators<br/>
                     </h6>
                 </h5>
                 <h5> ASSESSMENT ARCHITECT SUPPORT
@@ -711,6 +692,7 @@ function Toolkit() {return (
                 </h5>
 
             </li>
+
             <li>
                 <h3>DESIGNER TOOLS</h3>
 
@@ -895,10 +877,10 @@ function Toolkit() {return (
             <li>
                 <h3>DEVELOPER ROLES</h3>
 
-                <h4>ARCHITECTS</h4>
+                <h4>ENGINEERS</h4>
                 <h5>LEAD ENGINEERS
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 35-45/wk, 30 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -908,31 +890,14 @@ function Toolkit() {return (
                         + REQUIREMENTS: <br/>
                     </h6>
                     <h6>
-                        + TASKS:<br/>
-                        + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
-                    </h6>
-                </h5>
-                <h5>ADVANCED ENGINEER SUPPORT 
-                    <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
-                            ++ Worktime: hm-hm<br/>
-                            ++ Breaktime: hm-hm<br/>
-                            <br/>
-                        + PAY: performance bonus ()<br/>
-                    </h6>
-                    <h6>
-                        + REQUIREMENTS: <br/>
-                    </h6>
-                    <h6>
-                        + TASKS:<br/>
-                        + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + TASKS: monitors development progress, sets development goals<br/>
+                        + CASES: user reports (engineer support, lead developers, advanced developer support, QA leads, advanced QA support)<br/>
+                        + HELP DESK QUEUES: lead engineers, engineer support, lead developers<br/>
                     </h6>
                 </h5>
                 <h5>ENGINEER SUPPORT
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 30-40/wk, 25 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -943,15 +908,15 @@ function Toolkit() {return (
                     </h6>
                     <h6>
                         + TASKS:<br/>
-                        + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + CASES: user reports (advanced developer support, developer support, advanced QA support, QA support)<br/>
+                        + HELP DESK QUEUES: lead developers, advanced developer support, QA leads, advanced QA support<br/>
                     </h6>
                 </h5>
 
                 <h4>DEVELOPER</h4>
                 <h5>LEAD DEVELOPERS
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 25-35/wk, 20 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -963,12 +928,12 @@ function Toolkit() {return (
                     <h6>
                         + TASKS:<br/>
                         + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + HELP DESK QUEUES: lead developers, advanced developer support, developer support<br/>
                     </h6>
                 </h5>
                 <h5>ADVANCED DEVELOPER SUPPORT
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 20-30/wk, 15 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -980,12 +945,12 @@ function Toolkit() {return (
                     <h6>
                         + TASKS:<br/>
                         + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + HELP DESK QUEUES: developer support, members (tech assistance)<br/>
                     </h6>
                 </h5>
                 <h5>DEVELOPER SUPPORT
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 10-20/wk, 5 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -996,15 +961,15 @@ function Toolkit() {return (
                     </h6>
                     <h6>
                         + TASKS:<br/>
-                        + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + CASES: website bugs, system errors, typos<br/>
+                        + HELP DESK QUEUES: members (tech assistance)<br/>
                     </h6>
                 </h5>
 
                 <h4>QUALITY ASSURANCE</h4>
                 <h5>QUALITY ASSURANCE LEAD
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 20-30/wk, 15 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -1014,14 +979,14 @@ function Toolkit() {return (
                         + REQUIREMENTS: <br/>
                     </h6>
                     <h6>
-                        + TASKS:<br/>
+                        + TASKS: unit testing code (), checking accessibility metrics ()<br/>
                         + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + HELP DESK QUEUES: quality assurance leads, advanced QA support, QA support<br/>
                     </h6>
                 </h5>
-                <h5>QA ADVANCED SUPPORT
+                <h5>ADVANCED QUALITY ASSURANCE SUPPORT
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 10-20/wk, 5 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -1033,12 +998,12 @@ function Toolkit() {return (
                     <h6>
                         + TASKS:<br/>
                         + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + HELP DESK QUEUES: QA support, members (tech issues, accessibility issues)<br/>
                     </h6>
                 </h5>
-                <h5>QA SUPPORT
+                <h5>QUALITY ASSURANCE SUPPORT
                     <h6>
-                        + HOURS: X-X/wk, X scheduled minimum<br/>
+                        + HOURS: 5-15/wk, 5 scheduled minimum<br/>
                             ++ Worktime: hm-hm<br/>
                             ++ Breaktime: hm-hm<br/>
                             <br/>
@@ -1050,11 +1015,10 @@ function Toolkit() {return (
                     <h6>
                         + TASKS:<br/>
                         + CASES:<br/>
-                        + HELP DESK QUEUES:<br/>
+                        + HELP DESK QUEUES: members (tech issues, accessibility issues)<br/>
                     </h6>
                 </h5>
             </li>
-
         </ul>
 
         {/* CREATOR COMPONENTS */}
@@ -1298,7 +1262,7 @@ function Toolkit() {return (
                     REVENUE BREAKDOWN
                     <h6>
                         + Community (30-55%): supports community staff<br/>
-                        + Performance (0-25%): <br/>
+                        + Performance (0-25%): additional income based on grades related to work performance; a user's monthly grade (in percent) multiplied by 25% of the direct revenue of members serviced by the user equals the value of the income bonus<br/>
                         + Academy (20%): supports academy roles in all departments; designers (5%), academics (5%), developers (5%), creators (5%)<br/>
                         + District (15%): <br/>
                         + Region (10%): <br/>

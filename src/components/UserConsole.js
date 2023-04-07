@@ -6,7 +6,8 @@ export default function UserConsole() {return (
         <div id='userConsoleProgress'></div>
         <div id='userConsoleClose'></div>
         <div id='userConsoleSidebar'>
-
+            <div></div>
+            <div></div>
         </div>
         {/* consoleSidebarOpen consoleSidebarClosed */}
         <div id='userConsoleDesk' className='consoleSidebarOpen'>
