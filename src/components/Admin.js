@@ -14,7 +14,7 @@ export default function Admin() {return (
 
 
 function AdminFooter() {return (
-    <div id= "adminFooter" className='inOffice breakTimeClosed'>
+    <div id= "adminFooter" className='outOffice breakTimeClosed'>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
         <div id='TKtoggle'>
             <div id='TKtoggleButton' className='TKtoggleClosed'>
@@ -59,7 +59,7 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskOpenSB'>
+    <div id='helpDeskConsole' className='helpDeskClosed'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskChats'></section>

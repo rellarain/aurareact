@@ -662,12 +662,11 @@ body {
   display: block;
   position: absolute;
   overflow: hidden;
-  height: calc(100% - 95px);
   border-radius: 5px;
-  -webkit-transition: top 1s, background 1s, width 1s, -webkit-box-shadow 1s;
-  transition: top 1s, background 1s, width 1s, -webkit-box-shadow 1s;
-  transition: top 1s, background 1s, box-shadow 1s, width 1s;
-  transition: top 1s, background 1s, box-shadow 1s, width 1s, -webkit-box-shadow 1s;
+  -webkit-transition: top 1s, background 1s, width 1s, height 1s, -webkit-box-shadow 1s;
+  transition: top 1s, background 1s, width 1s, height 1s, -webkit-box-shadow 1s;
+  transition: top 1s, background 1s, box-shadow 1s, width 1s, height 1s;
+  transition: top 1s, background 1s, box-shadow 1s, width 1s, height 1s, -webkit-box-shadow 1s;
   left: 10px;
   font-size: 14px;
   z-index: 4;
@@ -885,6 +884,14 @@ body {
 
 .userConsoleClosed {
   top: -150vh;
+}
+
+.userConsoleState {
+  height: calc(100% - 55px);
+}
+
+.adminConsoleState {
+  height: calc(100% - 95px);
 }
 
 #sidebar {
