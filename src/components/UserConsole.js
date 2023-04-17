@@ -14,7 +14,7 @@ export default function UserConsole() {
                     <br/>
                     <hr></hr>
                     MEMBER<br/><br/>
-                    Portfolio: portrait (), basic info (name, gender, age), interactions () <br/>
+                    Portfolio: portrait (), basic info (namegit , gender, age), interactions () <br/>
                     Connections: <br/>
                     <br/>
                     <hr></hr>
