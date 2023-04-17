@@ -14,7 +14,7 @@ export default function Admin() {return (
 
 
 function AdminFooter() {return (
-    <div id= "adminFooter" className='outOffice breakTimeClosed'>
+    <div id= "adminFooter" className='inOffice breakTimeClosed'>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
         <div id='TKtoggle'>
             <div id='TKtoggleButton' className='TKtoggleClosed'>
@@ -59,7 +59,7 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskClosed'>
+    <div id='helpDeskConsole' className='helpDeskOpenSB'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskChats'></section>
@@ -142,6 +142,7 @@ function Toolkit() {return (
                     + <br/>
                 </h6>
             </li>
+
             <li>These elements are limited to users with Aura Academy accounts.</li>
             <li>
                 <h3>Header</h3>
@@ -169,8 +170,18 @@ function Toolkit() {return (
                 <h3>Navigation</h3>
                 <h4>Links</h4>
                 <h4>Notifications</h4>
+                <h4>Shortcuts</h4>
                 <h4>Settings</h4>
-                <h4></h4>
+                <h5>Customization
+                    <h6>
+                        + Theme: color (brightness, saturation, hue), pattern<br/>
+                        + Accent: color (saturaiton, hue), pattern<br/>
+                        + Alert: color (saturation, hue), pattern<br/>
+                        + Portrait: <br/>
+                        + <br/>
+                        + <br/>
+                    </h6>
+                </h5>
             </li>
             <li>
                 <h3>Portfolio Console</h3>
@@ -262,83 +273,82 @@ function Toolkit() {return (
                 <h3>Toolkit</h3>
                 <h4>Agenda</h4>
                 <h4>Tracking</h4>
-                <h5>Tracking is used to monitor your performance score. Each score is created weekly, and recorded for a year. Monthly averages are stored for 3 years, and yearly averages are stored for 10 years.<br/>
-                    The maximum performance score is 100%. Five scores are worth 20% with an optional bonus 15%.
-                    </h5>
-                    <h5> ACHIEVEMENT (20%) 
-                        <h6>
-                            The percentage of one's assigned work that was completed in one day.<br/><br/> 
-                            SCORE: X/Y<br/>
-                            + Completed Work (X): the amount of work (cases, helped users, etc.) that was completed in that day's shift<br/>
-                            + Allotted Workshare (Y): cumulative amount of each equal portion of work in a user's assigned pools<br/>
-                            + <br/>
-                            + <br/>
-                            + <br/>
-                        </h6>
-                    </h5>
-                    <h5> ACTIVITY (20%)
-                        <h6>
-                            The quantity of action points earned in a day.<br/><br/> 
-                            SCORE: X/2<br/>
-                            + Total Action Points: <br/>
-                            <br/>
-                            Action Points: points are earned per interval for the queue <br/>
-                            + 3: more than the average range of actions submitted (for this queue)<br/>
-                            + 2: average range of actions submitted (for this queue)<br/>
-                            + 1: less than the average range of actions submitted (for this queue)<br/>
-                            + 0: inactive, no actions submitted<br/>
-                        </h6>
-                    </h5>
-                    <h5> ADEQUACY (20%)
-                        <h6>
-                            SCORE: X/Y<br/>
-                            + Cumulative Score (X): the sum of each scored action that week <br/>
-                            + Total Number of Scored Actions (Y): the number of actions scored in a week, which should be 3-7 total, for all roles; up to 3 can come from disputes, the rest are randomly generated<br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                            Rubrics used for scoring are available in role manuals.<br/>
-                        </h6>
-                    </h5>
-                    <h5> ADHERENCE (20%)
-                        <h6>
-                            SCORE: X/Y<br/>
-                            + Worked Scheduled Time (X): the number of work and break intervals that fall in the user's scheduled worktime<br/>
-                            + Scheduled Time (Y): the number of time intervals the user has scheduled themselves to work<br/>
-                        </h6>
-                    </h5>
-                    <h5> ATTENDANCE (20%)
-                        <h6>
-                            SCORE: X/Y<br/>
-                            + Worked Time Intervals (X): a user's cumulative number of worktime and breaktime intervals for the week<br/>
-                            + Minimum Worktime Intervals (Y): the minimum of the user's expected worktime based on work roles<br/>
-                        </h6>
-                    </h5>
-                    <h5> ACCOUNTABILITY (15%)
-                        <h6>
-                            SCORE: X/Y<br/>
-                            + Completed Break Activities (X): the number of scheduled break activities completed that week<br/>
-                            + Planned Break Activities (Y): the number of scheduled break activities planned that week<br/>
-                        </h6>
-                    </h5>
-                    <h5>INCOME
-                        <h6>
-                            + Salary: <br/>
-                            <br/>
-                            + Performance Score Bonus: 30% of revenue from a user's direct district is multiplied by the user's monthly performance score <br/>
-                            + Team Share: portion of the revenue from the user's team (community, district, region)<br/>
-                        </h6>
-                    </h5>
+                <h5>
+                    Tracking is used to monitor your performance score. Each score is created weekly, and recorded for a year. Monthly averages are stored for 3 years, and yearly averages are stored for 10 years.<br/>The maximum performance score is 100%. Five scores are worth 20% with an optional bonus 15%.
+                </h5>
+
+                <h5> ACHIEVEMENT (20%) 
+                    <h6>
+                        The percentage of one's assigned work that was completed in one day.<br/><br/> 
+                        SCORE: X/Y<br/>
+                        + Completed Work (X): the amount of work (cases, helped users, etc.) that was completed in that day's shift<br/>
+                        + Allotted Workshare (Y): cumulative amount of each equal portion of work in a user's assigned pools<br/>
+                        <br/>
+                        + <br/>
+                    </h6>
+                </h5>
+
+                <h5> ACTIVITY (20%)
+                    <h6>
+                        The quantity of action points earned in a day.<br/><br/> 
+                        SCORE: X/2<br/>
+                        + Total Action Points: <br/>
+                        <br/>
+                        Action Points: points are earned per interval for the queue <br/>
+                        + 3: more than the average range of actions submitted (for this queue)<br/>
+                        + 2: average range of actions submitted (for this queue)<br/>
+                        + 1: less than the average range of actions submitted (for this queue)<br/>
+                        + 0: inactive, no actions submitted<br/>
+                    </h6>
+                </h5>
+                <h5> ADEQUACY (20%)
+                    <h6>
+                        SCORE: X/Y<br/>
+                        + Cumulative Score (X): the sum of each scored action that week <br/>
+                        + Total Number of Scored Actions (Y): the number of actions scored in a week, which should be 3-7 total, for all roles; up to 3 can come from disputes, the rest are randomly generated<br/>
+                        <br/>
+                        Rubrics used for scoring are available in role manuals.<br/>
+                    </h6>
+                </h5>
+                <h5> ADHERENCE (20%)
+                    <h6>
+                        SCORE: X/Y<br/>
+                        + Worked Scheduled Time (X): the number of work and break intervals that fall in the user's scheduled worktime<br/>
+                        + Scheduled Time (Y): the number of time intervals the user has scheduled themselves to work<br/>
+                    </h6>
+                </h5>
+                <h5> ATTENDANCE (20%)
+                    <h6>
+                        SCORE: X/Y<br/>
+                        + Worked Time Intervals (X): a user's cumulative number of worktime and breaktime intervals for the week<br/>
+                        + Minimum Worktime Intervals (Y): the minimum of the user's expected worktime based on work roles<br/>
+                    </h6>
+                </h5>
+                <h5> ACCOMPLISHMENT (15%)
+                    <h6>
+                        SCORE: X/Y<br/>
+                        + Completed Break Activities (X): the number of scheduled break activities completed that week<br/>
+                        + Planned Break Activities (Y): the number of scheduled break activities planned that week<br/>
+                    </h6>
+                </h5>
+                <h5>INCOME
+                    <h6>
+                        + Salary: <br/>
+                        <br/>
+                        + Performance Score Bonus: 30% of revenue from a user's direct district is multiplied by the user's monthly performance score <br/>
+                        + Team Share: portion of the revenue from the user's team (community, district, region)<br/>
+                    </h6>
+                </h5>
                 <h4>Library</h4>
-                    <h5>Articles</h5>
-                    <h5>Annotations</h5>
+                <h5>Articles</h5>
+                <h5>Annotations</h5>
                 <h4>Training</h4>
-                    <h5>Assignments: projects, </h5>
-                    <h5>Assessments: comprehension, application</h5>
-                    <h5>Discussions: </h5>
-                    <h5>Essays: </h5>
+                <h5>Assignments: projects, </h5>
+                <h5>Assessments: comprehension, application</h5>
+                <h5>Discussions: </h5>
+                <h5>Essays: </h5>
                 <h4>Team: , queues (), calendar ()</h4>
-                    <h5>Leadership
+                <h5>Leadership
                     <h6>
                         + <br/>
                         + <br/>
@@ -346,27 +356,52 @@ function Toolkit() {return (
                         + <br/>
                         + <br/>
                     </h6>
-                        schedules, basic information, roles), Team (roster, schedules, basic information, stacks), statuses (online, busy, help desk, break), team performance (achievement, case submissions)</h5>
-                    <h5>assignments (projects, tasks)</h5>
-                    <h5>Queues: status (claimed, channeled, unclaimed, pending, dispute, complete), feedback, reports</h5>
-                    <h5>Calendar: schedule stack (you, team, leadership), week/month,</h5>
-                    <h5>Memos: updates, reminders</h5>
-                    <h5>Bulletin: discussion, polls, birthdays, special occasions</h5>
-                    <h5></h5>
+                    schedules, basic information, roles), Team (roster, schedules, basic information, stacks), statuses (online, busy, help desk, break), team performance (achievement, case submissions)
+                </h5>
+                <h5>assignments (projects, tasks)</h5>
+                <h5>Queues: status (claimed, channeled, unclaimed, pending, dispute, complete), feedback, reports</h5>
+                <h5>Calendar: schedule stack (you, team, leadership), week/month,</h5>
+                <h5>Memos: updates, reminders</h5>
+                <h5>Bulletin: discussion, polls, birthdays, special occasions</h5>
+                <h5></h5>
                 <h4></h4>
                 <h4>Settings</h4>
-                    <h5>Breaktime: autofill absences (y/n), accountability (y/n)</h5>
+                    <h5>Breaktime: autofill absences (y/n), accomplishment score (y/n)</h5>
                 <h4>Help Desk Lite</h4>
                     <h5>Only available for leadership roles</h5>
-                    <h5></h5>
+                <h5></h5>
 
             </li>
             <li>
                 <h3>Help Desk Console </h3>
+                <h4>chat window</h4>
+                <h5></h5>
+                <h4>form</h4>
+                <h5></h5>
+                <h4>help desk users</h4>
+                <h5>Queues: </h5>
+                <h5></h5>
             </li>
             <li>
                 <h3>Breaktime </h3>
                 <h4>breakroom</h4>
+                <h5>Chat</h5>
+                <h5>Activity<br/>The detail lines are optional.
+                    <h6>
+                        PASTIMES: shows what people are doing just to pass the time<br/>
+                        + General: TV, film, video, book, music, nothing, play<br/>
+                        + Detail: media title (), <br/>
+                        SELF-CARE: <br/>
+                        + General: cosmetics, hygeine, tidying, cleaning, laundry<br/>
+                        + <br/>
+                        PRACTICE: <br/>
+                        + <br/>
+                        + <br/>
+                        PROJECT: <br/>
+                        + <br/>
+                        + <br/>
+                    </h6>
+                </h5>
                 <h4>pastimes</h4>
                 <h4>self-care</h4>
                 <h4>practice</h4>
@@ -380,7 +415,6 @@ function Toolkit() {return (
         </ul>
 
         {/* MANAGEMENT COMPONENTS */}
-
         <ul>
             <li>
                 <h3>MANAGEMENT COMPONENTS</h3>
@@ -1204,7 +1238,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: artist support, artists<br/>
                     </h6>
                 </h5>
-                <h5>ARTIST SUPPORT
+                <h5>CREATOR SUPPORT
                     <h6>
                         + HOURS: 20-30/wk, 15 scheduled minimum<br/>
                             ++ Worktime: 13h20m-20h<br/>
@@ -1221,7 +1255,7 @@ function Toolkit() {return (
                         + HELP DESK QUEUES: artists, general employees<br/>
                     </h6>
                 </h5>
-                <h5>ARTISTS
+                <h5>MEDIA CREATORS
                     <h6>
                         + HOURS: 15-25/wk, 10 scheduled minimum<br/>
                             ++ Worktime: 10h-16h40m<br/>

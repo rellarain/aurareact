@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Navigation() {return (
     // navCropClosed navCropPage navCropOpen navCropTools
-    <nav id='navCrop' className='navCropClosed'>
+    <nav id='navCrop' className='navCropOpen'>
         {/* Nav Button
                 
             Navigation Console: 
@@ -51,19 +51,36 @@ function NavigationButton() { return (
 
 function NavigationBody() { return (
     <div id="navBody">
+        
         <ul>
-            <li>MEMBER</li>
-            <li>Settings</li>
+            <li>Banner</li>
+            <li>Animated Scene</li>
+            <li>Notifications</li>
+            <li>Reminders</li>
+            <li>Requests</li>
+            <li></li>
         </ul>
         <ul>
-            <li>DESIGNER</li>
-            <li>Designer</li>
-            {/* subtraits, factors, subfactors */}
-            <li>Support</li>
-            {/* items, feedback */}
-            <li>Analytics</li>
-            <li>Manual</li>
+            <li>Links Panel</li>
+            <li>Connections</li>
+            <li>Community</li>
+            <li>Assessments</li>
+            <li>Scholar</li>
             <li></li>
+            <li></li>
+
+        </ul>
+        <ul>
+            <li>Shortcuts</li>
+            <li>+</li>
+
+        </ul>
+        <ul>
+            <li>Settings</li>
+            <li>Customize</li>
+        </ul>
+        <ul>
+            <li>Sign Out</li>
         </ul>
         
 

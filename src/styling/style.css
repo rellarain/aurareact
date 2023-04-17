@@ -639,7 +639,7 @@ body {
 }
 
 #userDash {
-  background: hsl(320, 30%, calc(14% + 63%));
+  background: hsl(340, 10%, calc(14% + 56%));
   position: fixed;
   top: 48px;
   right: 0;
@@ -758,22 +758,28 @@ body {
 
 #userConsole #userConsoleSidebar div {
   width: calc(100% - 10px);
-  width: 100%;
   display: block;
   position: relative;
   padding: 0;
   border-radius: 4px;
+  color: white;
+  padding: 5px;
 }
 
 #userConsole #userConsoleSidebar div:nth-child(1) {
   background-color: hsl(320, 30%, calc(14% + 49%));
-  height: 150px;
+  height: 140px;
 }
 
 #userConsole #userConsoleSidebar div:nth-child(2) {
   background-color: hsl(320, 30%, calc(14% + 14%));
-  height: calc(100% - 155px);
+  height: calc(100% - 165px);
   margin-top: 5px;
+  overflow-y: scroll;
+}
+
+#userConsole #userConsoleSidebar div:nth-child(2)::-webkit-scrollbar {
+  display: none;
 }
 
 #userConsole #userConsoleHelp {
@@ -1221,7 +1227,7 @@ body {
   width: 10px;
   display: inline-block;
   margin: 5px 2.5px 5px 2.5px;
-  background: hsl(320, 30%, calc(14% + 49%));
+  background: hsl(40, 50%, calc(14% + 49%));
   top: 0;
 }
 
@@ -1792,10 +1798,19 @@ body {
 
 @media only screen and (min-height: 10px) and (min-width: 10px) {
   #helpDeskChats {
-    height: calc(100% - 345px);
+    height: calc(100% - 195px);
   }
   #helpDeskForm {
-    height: 300px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-height: 500px) and (min-width: 10px) {
+  #helpDeskChats {
+    height: calc(100% - 295px);
+  }
+  #helpDeskForm {
+    height: 250px;
   }
 }
 
@@ -1818,6 +1833,15 @@ body {
 }
 
 @media only screen and (min-height: 10px) and (min-width: 1050px) {
+  #helpDeskChats {
+    height: calc(100% - 34px);
+  }
+  #helpDeskForm {
+    height: calc(100% - 34px);
+  }
+}
+
+@media only screen and (min-height: 400px) and (min-width: 1050px) {
   #helpDeskChats {
     height: calc(100% - 34px);
   }
