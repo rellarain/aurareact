@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "aurareact - d build",
+    "deploy": "aurareact -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
