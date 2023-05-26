@@ -13,49 +13,58 @@ export default function UserConsole() {
                     Console Sidebar Requirements
                     <br/>
                     <hr></hr>
-                    MEMBER<br/><br/>
-                    Portfolio: portrait (), basic info (namegit , gender, age), interactions () <br/>
-                    Connections: <br/>
+                    USER - MEMBER<br/><br/>
+                    Portfolio: portrait (), basic info (name, gender, age), interactions () <br/>
+                    Connections: groups (), access ()<br/>
+                    Account: subscription (payment method, status, plan), reports (engagement, coverage, recency, consistency)<br/>
+                    <br/>
+                    <br/>
                     <br/>
                     <hr></hr>
-                    COMMUNITY<br/><br/>
-                    Roster: <br/>
+                    <br/>
+                    USER - COMMUNITY<br/><br/>
+                    Roster: community (), district (), region (), academy () <br/>
+                    Forum: discussions (), <br/>
+                    Bulletin: community (), district (), region (), academy ()<br/>
+                    Aggreports: community (), district (), region (), academy () <br/>
+                    <br/>
+                    <br/>
+                    ADMIN - MANAGEMENT <br/><br/>
+                    Members: manage (), applications (), reports ()<br/>
+                    Volunteers: manage (), applications (), reports ()<br/>
                     Forum: <br/>
                     Bulletin: <br/>
+                    Feedback: <br/>
                     <br/>
                     <hr></hr>
-                    ASSESSMENTS<br/><br/>
+                    USER - ASSESSMENTS<br/><br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    ADMIN - DESIGNERS <br/><br/>
                     <br/>
                     <br/>
                     <br/>
                     <hr></hr>
-                    SCHOLAR<br/><br/>
+                    USER - SCHOLAR<br/><br/>
                     Library: reading progress<br/>
-                    Training: course progress, grades, upcoming assignments<br/>
+                    Training: course progress, grades, upcoming assignments, ongoing assignments<br/>
                     Examination: <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    ADMIN - ACADEMICS <br/><br/>
                     <br/>
                     <br/>
                     <br/>
                     <hr></hr>
                     ADMIN<br/><br/>
                     <br/>
-                    MANAGEMENT <br/><br/>
+                    ADMIN - DEVELOPERS <br/><br/>
                     <br/>
                     <br/>
                     <br/>
-                    DESIGNERS <br/><br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    ACADEMICS <br/><br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    DEVELOPERS <br/><br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    CREATOR <br/><br/>
+                    ADMIN - CREATOR <br/><br/>
                     Translators: <br/>
                     Translators: <br/>
                     Translators: <br/>
@@ -67,68 +76,93 @@ export default function UserConsole() {
                     Artist Support: <br/>
                     Media Creators: <br/>
                     <br/>
-                    COMMITTEE <br/><br/>
+                    ADMIN - COMMITTEE <br/><br/>
                     <br/>
                     <br/>
                     <br/>
                 </div>
             </div>
             {/* consoleSidebarOpen consoleSidebarClosed */}
-            <div id='userConsoleDesk' className='consoleSidebarOpen'>
+            <div id='userConsoleDesk' className='consoleSidebarClosed'>
                 <br/>
                 Console Desk Requirements
                 <br/>
                 <hr></hr>
-                VISITOR<br/><br/>
+                USER - VISITOR<br/><br/>
                 Academy Console: <br/>
                 <br/>
                 <br/>
+                <br/>
+                <br/>
+                <br/>
                 <hr></hr>
-                MEMBER<br/><br/>
+                USER - MEMBER<br/><br/>
                 Portfolio: profile (), results (), voice ()<br/>
                 Connections: <br/>
                 <br/>
                 <br/>
-                <hr></hr>
-                COMMUNITY<br/><br/>
                 <br/>
                 <br/>
+                <br/>
                 <hr></hr>
-                ASSESSMENTS<br/><br/>
+                USER - COMMUNITY<br/><br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                ADMIN - MANAGEMENT <br/><br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <hr></hr>
+                USER - ASSESSMENTS<br/><br/>
                 Header: instructions (), step progress bar (), <br/>
                 <br/>
                 <br/>
+                ADMIN - DESIGNERS <br/><br/>
+                <br/>
+                <br/>
+                <br/>
                 <hr></hr>
-                SCHOLAR<br/><br/>
+                USER - SCHOLAR<br/><br/>
                 Library: article content (title, footnotes, definitions, images), insights (information related to the active user) <br/>
                 Training: lessons (), observations (), sandbox (prepared cases with expected responses, open response assessment, ), <br/>
                 Examination: <br/>
                 <br/>
                 <br/>
                 <br/>
+                ADMIN - ACADEMICS <br/><br/>
+                Rubrics: <br/>
+                Sandbox: <br/>
+                Feedback: <br/>
+                Lessons: <br/>
+                Grading: <br/>
+                <br/>
+                <br/>
                 <hr></hr>
                 ADMIN<br/><br/>
                 <br/>
-                MANAGEMENT <br/><br/>
-                <br/>
-                <br/>
-                DESIGNERS <br/><br/>
+                ADMIN - DEVELOPERS <br/><br/>
                 <br/>
                 <br/>
                 <br/>
-                ACADEMICS <br/><br/>
                 <br/>
                 <br/>
                 <br/>
-                DEVELOPERS <br/><br/>
+                ADMIN - CREATOR <br/><br/>
                 <br/>
                 <br/>
                 <br/>
-                CREATOR <br/><br/>
                 <br/>
                 <br/>
                 <br/>
-                COMMITTEE <br/><br/>
+                ADMIN - COMMITTEE <br/><br/>
+                <br/>
+                <br/>
+                <br/>
                 <br/>
                 <br/>
                 <br/>

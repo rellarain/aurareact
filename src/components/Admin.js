@@ -59,7 +59,7 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskOpenSB'>
+    <div id='helpDeskConsole' className='helpDeskClosed'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskChats'></section>
@@ -446,6 +446,9 @@ function Toolkit() {return (
                         + PAY: $15/hr (Salary: $46,800) + performance bonus (direct members, 4 region shares, 1 academy(management) share)<br/>
                     </h6>
                     <h6>
+                        + REQUIREMENTS: 2 additional roles, trained on all assessments and tools, <br/>
+                    </h6>
+                    <h6>
                         + TASKS:<br/>
                         + CASES:<br/>
                         + HELP DESK QUEUES: region directors, advanced region support, region support<br/>
@@ -461,6 +464,9 @@ function Toolkit() {return (
                         + <br/>
                     </h6>
                     <h6>
+                        + REQUIREMENTS: <br/>
+                    </h6>
+                    <h6>
                         + TASKS: <br/>
                         + CASES: <br/>
                         + HELP DESK QUEUES: region support, district manager, advanced district support<br/>
@@ -473,6 +479,9 @@ function Toolkit() {return (
                             ++ Breaktime: 13h20m-16h40m<br/>
                             <br/>
                         + PAY: $15/hr (Salary: $39,000) + performance bonus (direct members, 2 region shares)<br/>
+                    </h6>
+                    <h6>
+                        + REQUIREMENTS: <br/>
                     </h6>
                     <h6>
                         + TASKS:<br/>
@@ -493,6 +502,9 @@ function Toolkit() {return (
                         + PAY: $15/hr (Salary: $35,100) + performance bonus (direct members, 4 district shares, 1 region share)<br/>
                     </h6>
                     <h6>
+                        + REQUIREMENTS: <br/>
+                    </h6>
+                    <h6>
                         + TASKS:<br/>
                         + CASES:<br/>
                         + HELP DESK QUEUES: advanced district support, district support, community attendant<br/>
@@ -507,6 +519,9 @@ function Toolkit() {return (
                         + PAY: $15/hr (Salary: $31,200) + performance bonus (direct members, 3 district shares)<br/>
                     </h6>
                     <h6>
+                        + REQUIREMENTS: <br/>
+                    </h6>
+                    <h6>
                         + TASKS:<br/>
                         + CASES:<br/>
                         + HELP DESK QUEUES: district support, community attendant, advanced community support<br/>
@@ -519,6 +534,9 @@ function Toolkit() {return (
                             ++ Breaktime: 8h20m-11h40m<br/>
                             <br/>
                         + PAY: $15/hr (Salary: $27,300) + performance bonus (direct members, 2 district shares)<br/>
+                    </h6>
+                    <h6>
+                        + REQUIREMENTS: <br/>
                     </h6>
                     <h6>
                         + TASKS:<br/>
