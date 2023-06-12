@@ -88,36 +88,6 @@ export default function UserConsole() {
                 Console Desk Requirements
                 <br/>
                 <hr></hr>
-                USER - VISITOR<br/><br/>
-                Academy Console: <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <hr></hr>
-                USER - MEMBER<br/><br/>
-                Portfolio: profile (), results (), voice ()<br/>
-                Connections: <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <hr></hr>
-                USER - COMMUNITY<br/><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                ADMIN - MANAGEMENT <br/><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <hr></hr>
                 USER - ASSESSMENTS<br/><br/>
                 Header: instructions (), step progress bar (), <br/>
                 <br/>
@@ -143,29 +113,6 @@ export default function UserConsole() {
                 <br/>
                 <br/>
                 <hr></hr>
-                ADMIN<br/><br/>
-                <br/>
-                ADMIN - DEVELOPERS <br/><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                ADMIN - CREATOR <br/><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                ADMIN - COMMITTEE <br/><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
             </div>
             <ConsoleHelp />
 

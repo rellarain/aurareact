@@ -784,88 +784,6 @@ body {
             overflow-y: scroll;
             overflow-x: hidden;
             width: 100%;
-            ul {
-                width: calc(100% - 20px);
-                padding: 5px;
-                background-color: $a3;
-                margin: 5px;
-                border-radius: 4px;
-                li:nth-child(1) {
-                    background-color: $at1;
-                    margin: 0;
-                    color: $at9;
-                    padding: 10px;
-                    font-weight: 800;
-                    font-size: 16px;
-                    letter-spacing: 1.5px;
-                    line-height: 20px;
-                    h3 {background: $at5;}
-                }
-                li {
-                    background-color: $a8;
-                    font-size: 12px;
-                    line-height: 14px;
-                    font-weight: 600;
-                    color: $t0;
-                    padding: 12px;
-                    margin-top: 10px;
-                    border-radius: 4px;
-                    letter-spacing: 1px;
-                    h3 {
-                        appearance: none;
-                        font-size: 18px;
-                        padding: 10px;
-                        border-radius: 4px;
-                        color: white;
-                        font-weight: 600;
-                        letter-spacing: 2.5px;
-                        line-height: 20px;
-                        vertical-align: middle;
-                        margin: 5px 0 5px 0;
-                        font-weight: 800;
-                        background-color: $a5;
-                    }
-                    h4 {
-                        appearance: none;
-                        font-size: 14px;
-                        padding: 8px;
-                        background-color: $a1;
-                        border-radius: 4px;
-                        color: white;
-                        font-weight: 600;
-                        letter-spacing: 2px;
-                        line-height: 16px;
-                        vertical-align: middle;
-                        margin: 5px 0 5px 0;
-                    }
-                    h5 {
-                        appearance: none;
-                        font-size: 12px;
-                        padding: 6px;
-                        background-color: $a3;
-                        border-radius: 4px;
-                        color: white;
-                        font-weight: 600;
-                        letter-spacing: 1.5px;
-                        line-height: 14px;
-                        vertical-align: middle;
-                        margin: 5px 0 5px 0;
-                    }
-                    h6 {
-                        appearance: none;
-                        font-size: 12px;
-                        padding: 4px;
-                        background-color: white;
-                        border-radius: 4px;
-                        color: $t0;
-                        font-weight: 600;
-                        letter-spacing: 1px;
-                        line-height: 14px;
-                        vertical-align: middle;
-                        margin: 5px 0 5px 0;
-                    }
-                }
-            }
 
             &::-webkit-scrollbar {
                 width: 15px;
@@ -1657,7 +1575,6 @@ body {
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 // To Do List:
-// - help desk as a flex box for chats
 // 
 // 
 // 
