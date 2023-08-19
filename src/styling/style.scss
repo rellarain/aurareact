@@ -688,8 +688,8 @@ body {
 }
 .userConsoleOpen {top: 15px;}
 .userConsoleClosed {top: -150vh;}
-.userConsoleState {height: calc(100% - 55px);}
-.adminConsoleState {height: calc(100% - 95px);}
+.userConsoleState {height: calc(100% - 65px);}
+.adminConsoleState {height: calc(100% - 105px);}
 
 
 
@@ -708,7 +708,7 @@ body {
     overflow: hidden;
 
     #toolkit {
-        height: calc(100% - 113px);
+        height: calc(100% - 124px);
         // height: 78px;
 
 
@@ -816,10 +816,14 @@ body {
     transition: bottom 1s, height 1s;
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
     grid-template-columns: 40px auto 40px;
-    grid-template-rows: 40px calc(100% - 40px);
+    grid-template-rows: 10px 40px calc(100% - 50px);
     cursor: pointer;
-    grid-template-areas: "tktoggle breaktimer helpdeskanchor" "breaktimeconsole breaktimeconsole breaktimeconsole";
-
+    grid-template-areas: "workWeek workWeek workWeek" "tktoggle breaktimer helpdeskanchor" "breaktimeconsole breaktimeconsole breaktimeconsole";
+    
+    #workWeekTimer {
+        grid-area: workWeek;
+        background-color: $a4;
+    }
     #TKtoggle {
         grid-area: tktoggle;
         width: 30px;
@@ -991,6 +995,21 @@ body {
             padding: 5px;
             width: calc(100vw - 15px);
 
+            ul {
+                display: block;
+                background-color: white;
+                width: 500px;
+                height: 100%;
+                color: black;
+                li {
+                    height: auto;
+                    width: auto;
+                    padding: 5px;
+                    margin: 10px;
+                    background: pink;
+                }
+            }
+
 
             &::-webkit-scrollbar {
                 width: 20px;
@@ -1013,7 +1032,7 @@ body {
 .inOffice {bottom: 0;}
 .outOffice {bottom: -100px;}
 .breakTimeOpen {height: calc(100vh - 55px);}
-.breakTimeClosed {height: 40px;}
+.breakTimeClosed {height: 50px;}
 
 
 
@@ -1146,7 +1165,7 @@ body {
 }
 
 // Narrow Smartphone - Red (Console, Admin) -------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 150px) {
+@media only screen and (min-width: 200px) {
     // Indicator
     #userThumb {background: hsl(0, 100%, 27%);}
 
@@ -1181,14 +1200,14 @@ body {
 }
 
 // Medium Smartphone - Orange ()
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 400px) {
     // Indicator
     #userThumb {background: hsl(35, 100%, 27%);}
 
 }
 
 // Wide Smartphone - Yellow (Nav)
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 600px) {
     // Indicator
     #userThumb {background: hsl(55, 100%, 27%);}
 
@@ -1213,7 +1232,7 @@ body {
 }
 
 // Narrow Tablet - Green (Sidebar) --------------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 800px) {
     // Indicator
     #userThumb {background: hsl(90, 100%, 27%);}
 
@@ -1234,7 +1253,7 @@ body {
 }
 
 // Medium Tablet - Teal (Nav)
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1000px) {
     // Indicator
     #userThumb {background: hsl(175, 100%, 27%);}
 
@@ -1260,7 +1279,7 @@ body {
 }
 
 // Wide Tablet - Blue (HelpDesk, Console)
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1200px) {
     // Indicator
     #userThumb {background: hsl(215, 100%, 27%);}
 
@@ -1294,7 +1313,7 @@ body {
 }
 
 // Narrow Laptop - Purple (Sidebar) -------------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
     // Indicator
     #userThumb {background: hsl(270, 100%, 27%);}
 
@@ -1314,7 +1333,7 @@ body {
 }
 
 // Medium Laptop - Pink (Nav, Console)
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1800px) {
     // Indicator
     #userThumb {background: hsl(290, 100%, 27%);}
 
@@ -1350,7 +1369,7 @@ body {
 }
 
 // Wide Laptop - Raspberry ()
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2200px) {
     // Indicator
     #userThumb {background: hsl(335, 100%, 27%);}
 
@@ -1364,7 +1383,7 @@ body {
 }
 
 // Narrow Desktop - White (Console, Sidebar) -----------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2600px) {
     // Indicator
     #userThumb {background-color: white;}
 
@@ -1398,7 +1417,7 @@ body {
 }
 
 // Medium Desktop - Gray ()
-@media only screen and (min-width: 2300px) {
+@media only screen and (min-width: 3000px) {
     // Indicator
     #userThumb {background: rgb(102, 102, 102);}
 
@@ -1407,7 +1426,7 @@ body {
 }
 
 // Wide Desktop - Black (Sidebar)
-@media only screen and (min-width: 2600px) {
+@media only screen and (min-width: 3400px) {
     // Indicator
     #userThumb {background: black;}
 
@@ -1424,7 +1443,14 @@ body {
     }
 }
 
+// Ultrawide Desktop - Brown (Sidebar)
+@media only screen and (min-width: 3800px) {
+    // Indicator
+    #userThumb {background: rgb(95, 73, 1);}
 
+
+
+}
 
 
 
@@ -1464,7 +1490,14 @@ body {
     
 
 }
+// Ultratall Screens - Purple ()
+@media only screen and (min-height: 1600px) {
+    // Indicator 
+    #temporaryHeightIndicator {background-color: purple;}
 
+    
+
+}
 
 
 

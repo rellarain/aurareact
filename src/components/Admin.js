@@ -13,6 +13,7 @@ export default function Admin() {return (
 function AdminFooter() {return (
     <div id= "adminFooter" className='inOffice breakTimeClosed'>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
+        <div id="workWeekTimer"></div>
         <div id='TKtoggle'>
             <div id='TKtoggleButton' className='TKtoggleClosed'>
                 {/* TKtoggleOpen TKtoggleClosed TKtoggleNone */}
@@ -47,7 +48,30 @@ function AdminFooter() {return (
                 {/* BreakTime Header: says how much worktime is left for the week, how much time is left on today's schedule, accumulated breaktime (units and time), how much breaktime is left in the week */}
             </div>
             <div id='breakTimeContent'>
-
+                <ul>
+                    <li>WORKCYCLE: shows monthly activity and performance</li>
+                    <li>Activity: monthly total count of actions submitted by queue</li>
+                    <li>Timecard: total monthly worktime (cumulative time in office/expected time in office); doesn't distinguish worktime and breaktime</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>WORKWEEK: shows weekly activity and performance </li>
+                    <li>Activity: weekly total count of actions submitted by queue</li>
+                    <li>Timecard: total monthly worktime (cumulative time in office/expected time in office); distinguishes worktime and breaktime </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>WORKDAY: shows weekly activity and performance </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
 
             </div>
         </div>
@@ -56,7 +80,7 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskOpenSB'>
+    <div id='helpDeskConsole' className='helpDeskClosed'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskChats'></section>
