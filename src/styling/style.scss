@@ -59,13 +59,13 @@ table {
 
 
 
-$themehue:   340;
-$accenthue:  320;
+$themehue:   120;
+$accenthue:  20;
 $alerthue:   40;
 
 
-$themesat:  10%; // 0-65%
-$accentsat: 30%; // must be 15% more than theme
+$themesat:  5%; // 0-65%
+$accentsat: 20%; // must be 15% more than theme
 $alertsat:  50%; // must be 20% more than accent 
 
 
@@ -1333,7 +1333,7 @@ body {
 }
 
 // Medium Laptop - Pink (Nav, Console)
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1600px) {
     // Indicator
     #userThumb {background: hsl(290, 100%, 27%);}
 
@@ -1369,7 +1369,7 @@ body {
 }
 
 // Wide Laptop - Raspberry ()
-@media only screen and (min-width: 2200px) {
+@media only screen and (min-width: 1800px) {
     // Indicator
     #userThumb {background: hsl(335, 100%, 27%);}
 
@@ -1383,7 +1383,7 @@ body {
 }
 
 // Narrow Desktop - White (Console, Sidebar) -----------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 2600px) {
+@media only screen and (min-width: 2000px) {
     // Indicator
     #userThumb {background-color: white;}
 
@@ -1417,7 +1417,7 @@ body {
 }
 
 // Medium Desktop - Gray ()
-@media only screen and (min-width: 3000px) {
+@media only screen and (min-width: 2200px) {
     // Indicator
     #userThumb {background: rgb(102, 102, 102);}
 
@@ -1426,7 +1426,7 @@ body {
 }
 
 // Wide Desktop - Black (Sidebar)
-@media only screen and (min-width: 3400px) {
+@media only screen and (min-width: 2400px) {
     // Indicator
     #userThumb {background: black;}
 
@@ -1444,7 +1444,7 @@ body {
 }
 
 // Ultrawide Desktop - Brown (Sidebar)
-@media only screen and (min-width: 3800px) {
+@media only screen and (min-width: 2600px) {
     // Indicator
     #userThumb {background: rgb(95, 73, 1);}
 

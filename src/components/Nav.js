@@ -80,6 +80,9 @@ function NavigationBody() { return (
             <li>Customize</li>
         </ul>
         <ul>
+            <li>Help Desk</li>
+        </ul>
+        <ul>
             <li>Sign Out</li>
         </ul>
         
