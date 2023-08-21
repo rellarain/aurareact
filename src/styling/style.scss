@@ -59,28 +59,28 @@ table {
 
 
 
-$themehue:   120;
-$accenthue:  20;
-$alerthue:   40;
+$themehue:   300;
+$accenthue:  330;
+$alerthue:   210;
 
 
-$themesat:  5%; // 0-65%
-$accentsat: 20%; // must be 15% more than theme
+$themesat:  15%; // 0-65%
+$accentsat: 30%; // must be 15% more than theme
 $alertsat:  50%; // must be 20% more than accent 
 
 
 // Lightness Calculations - must be between 0-30
-$LV0: calc(14% +  0%);
-$LV1: calc(14% +  7%);
-$LV2: calc(14% + 14%);
-$LV3: calc(14% + 21%);
-$LV4: calc(14% + 28%);
-$LV5: calc(14% + 35%);
-$LV6: calc(14% + 42%);
-$LV7: calc(14% + 49%);
-$LV8: calc(14% + 56%);
-$LV9: calc(14% + 63%);
-$LVX: calc(14% + 70%);
+$LV0: calc(12% +  0%);
+$LV1: calc(12% +  7%);
+$LV2: calc(12% + 14%);
+$LV3: calc(12% + 21%);
+$LV4: calc(12% + 28%);
+$LV5: calc(12% + 35%);
+$LV6: calc(12% + 42%);
+$LV7: calc(12% + 49%);
+$LV8: calc(12% + 56%);
+$LV9: calc(12% + 63%);
+$LVX: calc(12% + 70%);
 
 
 // Theme Shades
@@ -188,7 +188,7 @@ body {
         line-height: 16px;
         margin: 4px 0 0 5px;
         font-weight: 600;
-        color: $t9;
+        color: $t8;
         width: max-content;
         cursor: pointer;
         letter-spacing: 1.5px;
@@ -211,7 +211,7 @@ body {
             margin: 0 2px;
             transition: color .4s, text-shadow .4s;
             &:hover {
-                color: $t7;
+                color: $t9;
                 text-shadow: 0 0 2px $t0;
 
             }
@@ -481,7 +481,7 @@ body {
 }
 
 
-//Dashboard
+// Main Screen
 #userDash {
 
     background: $t8;
@@ -500,16 +500,41 @@ body {
     width: 100%;
 }
 
+// Dashboard 
+#userDashboard {
+    height: calc(100vh - 137px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    right: 15px;
+    top: 20px;
+    background-color: $t6;
+    position: absolute;
+    border-radius: 4px;
+    display: block;
+    transition: width 1s;
+    z-index: 3;
+    &::-webkit-scrollbar {display: none;}
+
+    p {
+        background-color: $a2;
+        color: $aX;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+}
+
 
 // Console
 #userConsole {
 
 
-    width: calc(100% - 40px);
     display: block;
     position: absolute;
     overflow: hidden;
-     
     border-radius: 5px;
     transition: top 1s, background 1s, box-shadow 1s, width 1s, height 1s;
     left: 10px;
@@ -546,39 +571,40 @@ body {
     }
     #userConsoleDesk {
         
-        height: calc(100% - 63px);
+        height: calc(100% - 103px);
         display: block;
         position: absolute;
         right: 0;
         padding: 5px;
-        box-shadow: inset 0 0 0 5px $t6;
+        box-shadow: inset 0 0 0 5px $t4;
         bottom: 0;
         transition: width 1s, background .4s, box-shadow .4s, height 1s;
-        background-color: $t6;
-        border-radius: 4px;
+        background-color: $t4;
+        border-radius: 8px;
         cursor: default;
         overflow-x: hidden;
         overflow-y: scroll;
         z-index: 5;
         &::-webkit-scrollbar {display: none;}
-        &:hover {
-            background-color: $t9;
-            box-shadow: inset 0 0 0 5px $t9;
-        }
+
+
+
+        color: $t0;
+        font-weight: 500;
     }
 
     .consoleSidebarClosed {
-        width: calc(100% - 25px);
+        width: calc(100% - 30px);
     }
     #userConsoleSidebar {
         display: block;
         height: calc(100% - 113px);
         padding: 5px;
         position: absolute;
-        left: 15px;
+        left: 20px;
         bottom: 5px;
         border-radius: 4px;
-        background-color: $a4;
+        background-color: $t1;
         cursor: default;
         overflow: hidden;
         transition: width 1s;
@@ -587,17 +613,16 @@ body {
             width: calc(100% - 10px);
             display: block;
             position: relative;
-            padding: 0;
             border-radius: 4px;
             color:white; 
             padding: 5px;
         }
         div:nth-child(1) {
-            background-color: $a7;
+            background-color: $t3;
             height: 140px;
         }
         div:nth-child(2) {
-            background-color: $a2;
+            background-color: $t2;
             height: calc(100% - 165px);
             margin-top: 5px;
             overflow-y: scroll;
@@ -608,74 +633,12 @@ body {
         
     }
 
-    #userConsoleHelp {
 
-        top: 60px;
-        transition: height 1s, width 1s, left 1s;
-        position: absolute;
-        // width: 240px;
-        background-color: $a8;
-        border-radius: 4px;
-        z-index: inherit;
-        overflow: hidden;
-        padding: 5px;
-        cursor: default;
-        display: grid;
-        grid-template-rows: 40px calc(100% - 40px);
-        grid-template-areas: "button" "content";
-        #userConsoleHelpContent {
-            grid-area: content;
-            overflow-y: scroll;
-            &::-webkit-scrollbar {display: none;}
-            overflow-x: hidden;
-        }
-        #userConsoleHelpButton {
-            background-color: $a3;
-            grid-area: button;
-            position: absolute;
-            width: 60px;
-            height: 15px;
-            right: 0;
-            top: 0;
-            padding: 4px;
-            cursor: pointer;
-            display: grid;
-            border-radius: 4px;
-            box-shadow: 0 0 0 5px $a8;
-            transition: background 1s, width 1s;
-            grid-template-columns: 20px 40px;
-            grid-template-areas: "? help";
-
-            &:hover {background-color: $a5;}
-            span {
-                font-weight: 700;
-                line-height: 15px;
-            }
-            span:nth-child(1) {
-                text-align: center;
-                font-size: 18px;
-                color: $a7;
-            }
-            span:nth-child(2) {
-                text-align: left;
-                color: $a9;
-                font-size: 14px;
-                letter-spacing: 1px;
-            }
-        }
-    }
-    .consoleHelpClosed {
-        width: 68px;
-        height: 23px;
-    }
-    .consoleHelpOpen {
-        height: calc(100% - 73px);
-    }
     #userConsoleClose {
-        top: 23px;
-        right: 10px;
-        height: 25px;
-        width: 25px;
+        top: 13px;
+        right: 0px;
+        height: 24px;
+        width: 24px;
         position: absolute;
         background-color: $a5;
         cursor: pointer;
@@ -689,7 +652,9 @@ body {
 .userConsoleOpen {top: 15px;}
 .userConsoleClosed {top: -150vh;}
 .userConsoleState {height: calc(100% - 65px);}
-.adminConsoleState {height: calc(100% - 105px);}
+.adminConsoleState {height: calc(100% - 109px);}
+.consoleWithDash {width: calc(100% - 340px);}
+.consoleWithoutDash {width: calc(100% - 40px);}
 
 
 
@@ -708,7 +673,7 @@ body {
     overflow: hidden;
 
     #toolkit {
-        height: calc(100% - 124px);
+        height: calc(100% - 127px);
         // height: 78px;
 
 
@@ -809,20 +774,31 @@ body {
 #adminFooter {
     width: 100vw;
     display: grid;
-    background: $a2;
+    background: $a1;
     z-index: 4;
     left: 0;
     position: absolute;
     transition: bottom 1s, height 1s;
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
     grid-template-columns: 40px auto 40px;
-    grid-template-rows: 10px 40px calc(100% - 50px);
+    grid-template-rows: 14px 40px calc(100% - 54px);
     cursor: pointer;
     grid-template-areas: "workWeek workWeek workWeek" "tktoggle breaktimer helpdeskanchor" "breaktimeconsole breaktimeconsole breaktimeconsole";
     
     #workWeekTimer {
         grid-area: workWeek;
-        background-color: $a4;
+        background-color: $a3;
+        span {
+            line-height: 14px;
+            vertical-align: bottom;
+            height: 10px;
+            width: 10px;
+            display: inline-block;
+            margin: 0 0 4px 3px;
+            position: relative;
+            background-color: $at6;
+            border-radius: 2px;
+        }
     }
     #TKtoggle {
         grid-area: tktoggle;
@@ -972,22 +948,12 @@ body {
     }
     #breakTimeConsole {
         grid-area: breaktimeconsole;
-        background: $a2;
+        background: $a0;
         display: grid;
         cursor: default;
         position: relative;
-        grid-template-rows: 10px calc(100vh - 95px);
+        height: 100%;
         grid-template-areas: "head" "content";
-        #breakTimeWeek {
-            width: 100vw;
-            height: 10px;
-            grid-area: head;
-            display: grid;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: $a0;
-        }
         #breakTimeContent {
             overflow-y: scroll;
             overflow-x: none;
@@ -1032,54 +998,10 @@ body {
 .inOffice {bottom: 0;}
 .outOffice {bottom: -100px;}
 .breakTimeOpen {height: calc(100vh - 55px);}
-.breakTimeClosed {height: 50px;}
+.breakTimeClosed {height: 54px;}
 
 
 
-#adminDashCrop {
-    height: calc(100vh - 123px);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    right: 15px;
-    top: 65px;
-    background-color: $a7;
-    position: fixed;
-    border-radius: 4px;
-    display: block;
-    transition: width 1s;
-    z-index: 3;
-    &::-webkit-scrollbar {display: none;}
-    #adminDashboard {
-        border-radius: 4px;
-        display: flex;
-        width: 100%;
-
-        flex-flow: column wrap;
-        align-content: flex-end;
-    
-    
-        span:last-child {
-            margin-bottom: 5px;
-        }
-        span {
-            margin: 5px 5px 0 5px;
-            // width: 290px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        span:nth-child(1)  {height: 200px; background: $a1; margin-top: 5px;}
-        span:nth-child(2)  {height: 300px; background: $a3;}
-        span:nth-child(3)  {height: 400px; background: $a2;}
-        span:nth-child(4)  {height: 300px; background: $a5;}
-        span:nth-child(5)  {height: 500px; background: $a3;}
-        span:nth-child(6)  {height: 200px; background: $a5;}
-        span:nth-child(7)  {height: 400px; background: $a2;}
-        span:nth-child(8)  {height: 700px; background: $a4;}
-        span:nth-child(9)  {height: 400px; background: $a3;}
-        span:nth-child(10) {height: 700px; background: $a5;}
-    }
-}
-.adminDashClosed {width: 0px;}
 
 
 
@@ -1089,10 +1011,11 @@ body {
 
 // DEVICE VIEWPORT WIDTH ---------------------------------------------------------------------------------------------------------------------------
 
-// Micro Screen - Black (Nav, Console, Sidebar, Admin, Help Desk)
+
+// Narrow Smartphone - Red (Nav, Console, Sidebar, Admin, Help Desk) [Needs: console (desk, sidebar), toolkit, dashboard, navigation, breaktime, edit account]
 @media only screen and (min-width: 10px) {
     // Indicator
-    #userThumb {background: black;}
+    #userThumb {background: rgb(255, 0, 0);}
 
 
     // Nav Responsive
@@ -1120,14 +1043,10 @@ body {
         width: calc(100% - 280px);
     }
     #userConsoleSidebar {
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
     }
-    .consoleHelpClosed {
-        left: 15px;
-    } 
-    .consoleHelpOpen {
+    .consoleWithDash {
         width: calc(100% - 40px);
-        left: 15px;
     }
 
 
@@ -1143,14 +1062,6 @@ body {
         width: calc(100vw - 16px);
     }
 
-    // Admin Dashboard Responsive
-    .adminDashOpen {
-        width: calc(100% - 30px);
-    }
-    #adminDashboard {
-        
-        span {width: calc(100% - 10px)}
-    }
 
 
     // Help Desk Responsive
@@ -1160,128 +1071,130 @@ body {
     }
     #helpDeskForm {
         height: 400px;
-        width: calc(100% - 20px);
+        width: calc(100% - 55px);
+    }
+
+    // Dashboard
+    #userDashboard {
+        width: calc(100% - 30px);
     }
 }
 
-// Narrow Smartphone - Red (Console, Admin) -------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 200px) {
+// Wide Smartphone - Orange (Console, Admin) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] -------------------------------------------------------------------------------------------------------------------------
+@media only screen and (min-width: 300px) {
     // Indicator
-    #userThumb {background: hsl(0, 100%, 27%);}
-
-
-
+    #userThumb {background: hsl(32, 100%, 50%);}
 
 
     // Console Responsive
     .consoleSidebarOpen {
-        width: calc(100% - 280px);
+        width: calc(100% - 315px);
     }
     #userConsoleSidebar {
-        width: 240px;
-    }
-    .consoleHelpClosed {
-        left: 187px;
-    }
-    .consoleHelpOpen {
-        width: 240px;
-        left: 15px;
+        width: 270px;
     }
 
-    // Admin Dashboard Responsive
-    .adminDashOpen {
-        width: 310px;
-    }
-    #adminDashboard {
-
-        span {width: 300px; }
+    // Dashboard
+    #userDashboard {
+        width: 300px;
     }
 
 }
 
-// Medium Smartphone - Orange ()
-@media only screen and (min-width: 400px) {
-    // Indicator
-    #userThumb {background: hsl(35, 100%, 27%);}
-
-}
-
-// Wide Smartphone - Yellow (Nav)
+// Narrow Tablet - Yellow (Nav, ) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
 @media only screen and (min-width: 600px) {
     // Indicator
-    #userThumb {background: hsl(55, 100%, 27%);}
-
+    #userThumb {background: hsl(49, 100%, 49%);}
+    
     // Navigation
     .navCropPage {
-        width: 300px;
+        width: 600px;
     }
     #navPage {
-        width: 261px;
+        width: 561px;
     }
     .navCropOpen {
-        width: 300px;
+        width: 600px;
     }
     #navPanel {
-        width: 300px;
-        grid-template-columns: 270px 30px;
+        width: 600px;
+        grid-template-columns: 570px 30px;
     }
     #navBody {
-        width: 295px;
+        width: 595px;
+    }
+        // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 300px);
+    }
+    #toolkit {
+        width: 280px;
+    }
+}
+
+// Wide Tablet - Green (Sidebar) [Needs: breaktime, edit account]
+@media only screen and (min-width: 900px) {
+    // Indicator
+    #userThumb {background: hsl(123, 100%, 36%);}
+
+
+
+
+    // Help Desk Responsive
+    #helpDeskChats {
+        width: calc(100% - 360px);
+    }
+    #helpDeskForm {
+        width: 300px;
+    }
+
+
+}
+
+// Narrow Laptop - Blue () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] --------------------------------------------------------------------------------------------------------------------------------
+@media only screen and (min-width: 1200px) {
+    // Indicator
+    #userThumb {background: hsl(199, 100%, 35%);}
+
+
+    // Sidebar Responsive
+    .helpDeskOpenSB {
+        width: calc(100vw - 316px);
+    }
+
+    // Console Responsive 
+    .consoleWithDash {
+        width: calc(100% - 360px);
     }
 
 }
 
-// Narrow Tablet - Green (Sidebar) --------------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 800px) {
+// Wide Laptop - Purple () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+@media only screen and (min-width: 1500px) {
     // Indicator
-    #userThumb {background: hsl(90, 100%, 27%);}
+    #userThumb {background: hsl(263, 84%, 38%);}
+
+
 
 
     // Sidebar Responsive
     .userDashMini {
-        width: calc(100vw - 320px);
+        width: calc(100vw - 600px);
     }
     #toolkit {
-        width: 300px;
+        width: 580px;
     }
     .helpDeskOpenSB {
-        width: calc(100vw - 336px);
+        width: calc(100vw - 616px);
     }
-
 
 
 }
 
-// Medium Tablet - Teal (Nav)
-@media only screen and (min-width: 1000px) {
+// Narrow Desktop - Pink (HelpDesk, Console) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+@media only screen and (min-width: 1800px) {
     // Indicator
-    #userThumb {background: hsl(175, 100%, 27%);}
-
-
-    // Nav Responsive
-    .navCropOpen {
-        width: 500px;
-        height: calc(100% - 10px);
-    }
-    #navPanel {
-        width: 500px; 
-        grid-template-columns: 470px 30px;
-    }
-    #navBody {
-        width: 495px;
-    }
-
-
-
-
-
-
-}
-
-// Wide Tablet - Blue (HelpDesk, Console)
-@media only screen and (min-width: 1200px) {
-    // Indicator
-    #userThumb {background: hsl(215, 100%, 27%);}
+    #userThumb {background: hsl(318, 79%, 39%);}
 
 
 
@@ -1292,169 +1205,101 @@ body {
     }
     #helpDeskForm {
         height: calc(100% - 34px);
-        width: 390px;
+        width: 360px;
     }
 
-    // Console Responsive
-    .consoleSidebarOpen {
-        width: calc(100% - 380px);
-    }
-    #userConsoleSidebar {
-        width: 340px;
-    }
-    .consoleHelpClosed {
-        left: 287px;
-    }
-    .consoleHelpOpen {
-        width: 340px;
-        left: 15px;
-    }
+
+
 
 }
 
-// Narrow Laptop - Purple (Sidebar) -------------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 1400px) {
+// Wide Desktop - White () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] -------------------------------------------------------------------------------------------------------------------------------
+@media only screen and (min-width: 2100px) {
     // Indicator
-    #userThumb {background: hsl(270, 100%, 27%);}
-
-
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 420px);
-    }
-    #toolkit {
-        width: 400px;
-    }
-    .helpDeskOpenSB {
-        width: calc(100vw - 436px);
-    }
-
-
-}
-
-// Medium Laptop - Pink (Nav, Console)
-@media only screen and (min-width: 1600px) {
-    // Indicator
-    #userThumb {background: hsl(290, 100%, 27%);}
-
-    // Nav Responsive
-    .navCropOpen {
-        width: 700px;
-        height: calc(100% - 10px);
-    }
-    #navPanel {
-        width: 700px; 
-        grid-template-columns: 670px 30px;
-    }
-    #navBody {
-        width: 695px;
-    }
-
-    // Console Responsive
-
-    .consoleSidebarOpen {
-        width: calc(100% - 480px);
-    }
-    #userConsoleSidebar {
-        width: 440px;
-    }
-    .consoleHelpClosed {
-        left: 387px;
-    }
-    .consoleHelpOpen {
-        width: 440px;
-        left: 15px;
-    }
-
-}
-
-// Wide Laptop - Raspberry ()
-@media only screen and (min-width: 1800px) {
-    // Indicator
-    #userThumb {background: hsl(335, 100%, 27%);}
-
-
-
-
+    #userThumb {background: hsl(0, 0%, 100%);}
 
 
 
 
 }
 
-// Narrow Desktop - White (Console, Sidebar) -----------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 2000px) {
-    // Indicator
-    #userThumb {background-color: white;}
-
-    // Console Responsive
-    .consoleSidebarOpen {
-        width: calc(100% - 580px);
-    }
-    #userConsoleSidebar {
-        width: 540px;
-    }
-    .consoleHelpClosed {
-        left: 487px;
-    }
-    .consoleHelpOpen {
-        width: 540px;
-        left: 15px;
-    }
-
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 570px);
-    }
-    #toolkit {
-        width: 550PX;
-    }
-    .helpDeskOpenSB {
-        width: calc(100vw - 586px);
-    }
-
-
-}
-
-// Medium Desktop - Gray ()
-@media only screen and (min-width: 2200px) {
-    // Indicator
-    #userThumb {background: rgb(102, 102, 102);}
-
-
-
-}
-
-// Wide Desktop - Black (Sidebar)
+// Narrow Ultrawide - Light Gray (Console) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
 @media only screen and (min-width: 2400px) {
     // Indicator
-    #userThumb {background: black;}
+    #userThumb {background: hsl(0, 0%, 66%);}
 
 
+
+    // Console Responsive
+    .consoleSidebarOpen {
+        width: calc(100% - 615px);
+    }
+    #userConsoleSidebar {
+        width: 570px;
+    }
+
+    
+}
+
+// Medium Ultrawide - Dark Gray () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+@media only screen and (min-width: 2700px) {
+    // Indicator
+    #userThumb {background: hsl(0, 0%, 33%);}
+    
     // Sidebar Responsive
     .userDashMini {
-        width: calc(100vw - 670px);
+        width: calc(100vw - 900px);
     }
     #toolkit {
-        width: 650PX;
+        width: 880px;
     }
     .helpDeskOpenSB {
-        width: calc(100vw - 686px);
+        width: calc(100vw - 916px);
     }
+    
+    
+    
+
+
+
+
 }
 
-// Ultrawide Desktop - Brown (Sidebar)
-@media only screen and (min-width: 2600px) {
+// Wide Ultrawide - Black (Sidebar) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] -----------------------------------------------------------------------------------------------------------------------------
+@media only screen and (min-width: 3000px) {
     // Indicator
-    #userThumb {background: rgb(95, 73, 1);}
-
+    #userThumb {background-color: rgb(0, 0, 0);}
 
 
 }
+
 
 
 
 // DEVICE VIEWPORT HEIGHT -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Console
+//    InOffice
+// 
+// 
+// 
+// 
+//    OutOffice
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
 
 
 // Indicators
@@ -1528,7 +1373,7 @@ body {
     }
 
 }
-@media only screen and (min-height: 500px) and (min-width: 10px) {
+@media only screen and (min-height: 400px) and (min-width: 10px) {
 
     #helpDeskChats {
         height: calc(100% - 295px);
@@ -1558,7 +1403,7 @@ body {
 }
 
 
-@media only screen and (min-height: 10px) and (min-width: 1050px) {
+@media only screen and (min-height: 10px) and (min-width: 900px) {
 
     #helpDeskChats {
         height: calc(100% - 34px);
@@ -1568,7 +1413,7 @@ body {
     }
 
 }
-@media only screen and (min-height: 400px) and (min-width: 1050px) {
+@media only screen and (min-height: 400px) and (min-width: 900px) {
 
     #helpDeskChats {
         height: calc(100% - 34px);
@@ -1578,7 +1423,7 @@ body {
     }
 
 }
-@media only screen and (min-height: 800px) and (min-width: 1050px) {
+@media only screen and (min-height: 800px) and (min-width: 900px) {
 
     #helpDeskChats {
         height: calc(100% - 34px);
@@ -1587,7 +1432,7 @@ body {
         height: calc(100% - 34px);
     }    
 }
-@media only screen and (min-height: 1200px) and (min-width: 1050px) {
+@media only screen and (min-height: 1200px) and (min-width: 900px) {
 
     #helpDeskChats {
         height: calc(100% - 34px);

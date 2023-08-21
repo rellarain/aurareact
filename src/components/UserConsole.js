@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function UserConsole() {
     return (
-        <div id='userConsole' className='adminConsoleState userConsoleOpen'>
-            {/* adminConsoleState userConsoleState     userConsoleOpen userConsoleClosed */}
+        <div id='userConsole' className='adminConsoleState userConsoleOpen consoleWithDash'>
+            {/* adminConsoleState userConsoleState     userConsoleOpen userConsoleClosed       consoleWithDash consoleWithoutDash*/}
             <div id='userConsoleProgress'></div>
             <div id='userConsoleClose'></div>
             <div id='userConsoleSidebar'>
@@ -114,7 +114,6 @@ export default function UserConsole() {
                 <br/>
                 <hr></hr>
             </div>
-            <ConsoleHelp />
 
 
         </div>
@@ -122,39 +121,7 @@ export default function UserConsole() {
 }
 
 
-function ConsoleHelp() {
-    return (
-        //  consoleHelpOpen consoleHelpClosed
-        <div id='userConsoleHelp' className='consoleHelpClosed'>
-            <div id='userConsoleHelpButton'>
-                <span>?</span>
-                <span>Help</span>
-            </div>
-            <div id='userConsoleHelpContent'>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-            </div>
-        </div>
-    )
-}
+
 
 // To-Do List:
 // - Create separate JS files for each level of user (visitorConsoles, memberConsoles, scholarConsoles, adminConsoles)

@@ -2,9 +2,8 @@ import React from 'react';
 
 export default function Admin() {return (
     <div className=''>
-        <AdminDash />
-        <AdminFooter />
         <Sidebar />
+        <AdminFooter />
     </div>
 )}
 
@@ -13,7 +12,16 @@ export default function Admin() {return (
 function AdminFooter() {return (
     <div id= "adminFooter" className='inOffice breakTimeClosed'>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
-        <div id="workWeekTimer"></div>
+        <div id="workWeekTimer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div id='TKtoggle'>
             <div id='TKtoggleButton' className='TKtoggleClosed'>
                 {/* TKtoggleOpen TKtoggleClosed TKtoggleNone */}
@@ -21,20 +29,7 @@ function AdminFooter() {return (
         </div>
         <div id='breakTimeHead'>
             <div id='breakTimer'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+           
 
 
             </div>
@@ -44,9 +39,7 @@ function AdminFooter() {return (
         </div>
         <div id='breakTimeConsole'>
             
-            <div id='breakTimeWeek'>
-                {/* BreakTime Header: says how much worktime is left for the week, how much time is left on today's schedule, accumulated breaktime (units and time), how much breaktime is left in the week */}
-            </div>
+
             <div id='breakTimeContent'>
                 <ul>
                     <li>WORKCYCLE: shows monthly activity and performance</li>
@@ -91,24 +84,6 @@ function HelpDesk() {return (
 )}
 
 
-function AdminDash() {return(
-    <div id='adminDashCrop' className='adminDashClosed'>
-        {/* adminDashOpen adminDashClosed */}
-        <div id="adminDashboard">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-    </div>
-)}
 
 function Sidebar() {return (
     <div id="sidebar">
