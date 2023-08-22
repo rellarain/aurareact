@@ -59,9 +59,9 @@ table {
 
 
 
-$themehue:   300;
-$accenthue:  330;
-$alerthue:   210;
+$themehue:   320;
+$accenthue:  20;
+$alerthue:   335;
 
 
 $themesat:  15%; // 0-65%
@@ -516,14 +516,19 @@ body {
     &::-webkit-scrollbar {display: none;}
 
     p {
-        background-color: $a2;
-        color: $aX;
+        background-color: $at3;
+        color: $atX;
         font-weight: 500;
         font-size: 12px;
         letter-spacing: 1px;
         margin: 5px;
         padding: 5px;
         border-radius: 4px;
+        &:nth-child(1) {background-color: $t3; color: $tX;}
+        &:nth-child(3) {background-color: $t3; color: $tX;}
+        &:nth-child(4) {background-color: $a3; color: $aX;}
+        &:nth-child(5) {background-color: $a3; color: $aX;}
+        &:nth-child(6) {background-color: $a3; color: $aX;}
     }
 }
 
@@ -787,7 +792,7 @@ body {
     
     #workWeekTimer {
         grid-area: workWeek;
-        background-color: $a3;
+        background-color: $at8;
         span {
             line-height: 14px;
             vertical-align: bottom;
@@ -796,7 +801,7 @@ body {
             display: inline-block;
             margin: 0 0 4px 3px;
             position: relative;
-            background-color: $at6;
+            background-color: $at3;
             border-radius: 2px;
         }
     }
@@ -870,7 +875,7 @@ body {
         height: 30px;
         display: block;
         margin: 5px;
-        background-color: $at8;
+        background-color: $at9;
         border-radius: 4px;
         position: relative;
 
@@ -1012,7 +1017,7 @@ body {
 // DEVICE VIEWPORT WIDTH ---------------------------------------------------------------------------------------------------------------------------
 
 
-// Narrow Smartphone - Red (Nav, Console, Sidebar, Admin, Help Desk) [Needs: console (desk, sidebar), toolkit, dashboard, navigation, breaktime, edit account]
+// Narrow Smartphone - Red (Nav, Console, Sidebar, Admin, Help Desk) [Needs: breaktime, edit account]
 @media only screen and (min-width: 10px) {
     // Indicator
     #userThumb {background: rgb(255, 0, 0);}
@@ -1080,7 +1085,7 @@ body {
     }
 }
 
-// Wide Smartphone - Orange (Console, Admin) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] -------------------------------------------------------------------------------------------------------------------------
+// Wide Smartphone - Orange (Console, Admin) [Needs: breaktime, edit account] -------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 300px) {
     // Indicator
     #userThumb {background: hsl(32, 100%, 50%);}
@@ -1094,14 +1099,11 @@ body {
         width: 270px;
     }
 
-    // Dashboard
-    #userDashboard {
-        width: 300px;
-    }
+
 
 }
 
-// Narrow Tablet - Yellow (Nav, ) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+// Narrow Tablet - Yellow (Nav, ) [Needs: breaktime, edit account]
 @media only screen and (min-width: 600px) {
     // Indicator
     #userThumb {background: hsl(49, 100%, 49%);}
@@ -1123,13 +1125,16 @@ body {
     #navBody {
         width: 595px;
     }
-        // Sidebar Responsive
+
+    // Sidebar Responsive
     .userDashMini {
         width: calc(100vw - 300px);
     }
     #toolkit {
         width: 280px;
     }
+
+
 }
 
 // Wide Tablet - Green (Sidebar) [Needs: breaktime, edit account]
@@ -1148,10 +1153,13 @@ body {
         width: 300px;
     }
 
-
+    // Dashboard
+    #userDashboard {
+        width: 300px;
+    }
 }
 
-// Narrow Laptop - Blue () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] --------------------------------------------------------------------------------------------------------------------------------
+// Narrow Laptop - Blue () [Needs: breaktime, edit account] --------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1200px) {
     // Indicator
     #userThumb {background: hsl(199, 100%, 35%);}
@@ -1169,7 +1177,7 @@ body {
 
 }
 
-// Wide Laptop - Purple () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+// Wide Laptop - Purple () [Needs: breaktime, edit account]
 @media only screen and (min-width: 1500px) {
     // Indicator
     #userThumb {background: hsl(263, 84%, 38%);}
@@ -1191,7 +1199,7 @@ body {
 
 }
 
-// Narrow Desktop - Pink (HelpDesk, Console) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+// Narrow Desktop - Pink (HelpDesk, Console) [Needs: breaktime, edit account]
 @media only screen and (min-width: 1800px) {
     // Indicator
     #userThumb {background: hsl(318, 79%, 39%);}
@@ -1213,7 +1221,7 @@ body {
 
 }
 
-// Wide Desktop - White () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] -------------------------------------------------------------------------------------------------------------------------------
+// Wide Desktop - White () [Needs: breaktime, edit account] -------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 2100px) {
     // Indicator
     #userThumb {background: hsl(0, 0%, 100%);}
@@ -1223,7 +1231,7 @@ body {
 
 }
 
-// Narrow Ultrawide - Light Gray (Console) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+// Narrow Ultrawide - Light Gray (Console) [Needs: breaktime, edit account]
 @media only screen and (min-width: 2400px) {
     // Indicator
     #userThumb {background: hsl(0, 0%, 66%);}
@@ -1241,7 +1249,7 @@ body {
     
 }
 
-// Medium Ultrawide - Dark Gray () [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account]
+// Medium Ultrawide - Dark Gray () [Needs: breaktime, edit account]
 @media only screen and (min-width: 2700px) {
     // Indicator
     #userThumb {background: hsl(0, 0%, 33%);}
@@ -1265,7 +1273,7 @@ body {
 
 }
 
-// Wide Ultrawide - Black (Sidebar) [Needs: console (desk, sidebar), toolkit, dashboard, breaktime, edit account] -----------------------------------------------------------------------------------------------------------------------------
+// Wide Ultrawide - Black (Sidebar) [Needs: breaktime, edit account] -----------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 3000px) {
     // Indicator
     #userThumb {background-color: rgb(0, 0, 0);}

@@ -21,6 +21,18 @@ function AdminFooter() {return (
             <span></span>
             <span></span>
             <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div id='TKtoggle'>
             <div id='TKtoggleButton' className='TKtoggleClosed'>
@@ -73,7 +85,7 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskClosed'>
+    <div id='helpDeskConsole' className='helpDeskOpenSB'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskChats'></section>

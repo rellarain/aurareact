@@ -83,7 +83,7 @@ export default function UserConsole() {
                 </div>
             </div>
             {/* consoleSidebarOpen consoleSidebarClosed */}
-            <div id='userConsoleDesk' className='consoleSidebarOpen'>
+            <div id='userConsoleDesk' className='consoleSidebarClosed'>
                 <br/>
                 Console Desk Requirements
                 <br/>
