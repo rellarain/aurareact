@@ -35,57 +35,28 @@ function AdminFooter() {return (
             <span></span>
         </div>
         <div id='TKtoggle'>
-            <div id='TKtoggleButton' className='TKtoggleClosed'>
+            <div id='TKtoggleButton' className='TKtoggleOpen'>
                 {/* TKtoggleOpen TKtoggleClosed TKtoggleNone */}
             </div>
         </div>
-        <div id='breakTimeHead'>
-            <div id='breakTimer'>
-           
-
-
-            </div>
+        <div id='breakTimeHeader'>
+            BreakTime
         </div>
         <div id='helpDeskAnchor'>
             <HelpDesk/>
         </div>
         <div id='breakTimeConsole'>
             
+            <div id="breakTimeConsoleMenu"></div>
+            <div id="breakTimeConsoleDesk"></div>
 
-            <div id='breakTimeContent'>
-                <ul>
-                    <li>WORKCYCLE: shows monthly activity and performance</li>
-                    <li>Activity: monthly total count of actions submitted by queue</li>
-                    <li>Timecard: total monthly worktime (cumulative time in office/expected time in office); doesn't distinguish worktime and breaktime</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li>WORKWEEK: shows weekly activity and performance </li>
-                    <li>Activity: weekly total count of actions submitted by queue</li>
-                    <li>Timecard: total monthly worktime (cumulative time in office/expected time in office); distinguishes worktime and breaktime </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li>WORKDAY: shows weekly activity and performance </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-            </div>
         </div>
 
     </div>
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskOpenSB'>
+    <div id='helpDeskConsole' className='helpDeskClosed'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskChats'></section>
@@ -108,7 +79,7 @@ function Toolkit() {return (
     <div id="toolkit">
         <div id='toolkitHead'>
             <span alt='Agenda' className='openTab'></span>
-            <span alt='Tracking'></span>
+            <span alt='X'></span>
             <span alt='Library'></span>
             <span alt='Training'></span>
             <span alt='Team'></span>
@@ -116,7 +87,7 @@ function Toolkit() {return (
             <span alt='Office Settings'></span>
             <span alt='Help Desk Lite'></span>
         </div>
-        <div id='toolkitTitle'>Toolkit</div>
+        <div id='toolkitTitle'>Agenda</div>
         <div id='toolkitProgress'><span id='toolkitProgressBar'></span></div>
         <div id='toolkitBody'>
 
@@ -127,3 +98,37 @@ function Toolkit() {return (
         </div>
     </div>
 )}
+
+
+// Toolkit Navigation
+// 
+// Tabbing: after closing all open tabs, the clicked tab will switch the toolkit content and title; clicking the current open tab closes the toolbar
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// Functionality: 
+// - Breaktime Toggle: change class from breakTimeOpen -> breakTimeClosed or breakTimeClosed -> breakTimeOpen 
+// - Toolkit Toggle: change class from userDashMini -> userDashMax or userDashMax -> userDashMini
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 

@@ -11,7 +11,11 @@ export default function Header() {
     
     
     return (
-    <header id="userHeader">
+        <header id="userHeader" >
+        <div id='accountConsole' className='accountConsoleClosed'>
+            {/* // accountConsoleOpen accountConsoleClosed */}
+            <div></div>
+        </div>
         <img src="" alt="" id="userThumb"/>
         <div id='userName'>{displayName}</div>
         <div id='userID'>
