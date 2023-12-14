@@ -34,13 +34,13 @@ function AdminFooter() {return (
             <span></span>
             <span></span>
         </div>
+        <div id='breakTimeHeader'>
+            BREAKTIME
+        </div>
         <div id='TKtoggle'>
-            <div id='TKtoggleButton' className='TKtoggleOpen'>
+            <div id='TKtoggleButton' className='TKtoggleClosed'>
                 {/* TKtoggleOpen TKtoggleClosed TKtoggleNone */}
             </div>
-        </div>
-        <div id='breakTimeHeader'>
-            BreakTime
         </div>
         <div id='helpDeskAnchor'>
             <HelpDesk/>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function UserConsole() {
     return (
-        <div id='userConsole' className='adminConsoleState userConsoleOpen consoleWithDash'>
+        <div id='userConsole' className='adminConsoleState userConsoleClosed consoleWithDash'>
             {/* adminConsoleState userConsoleState     userConsoleOpen userConsoleClosed       consoleWithDash consoleWithoutDash*/}
             <div id='userConsoleProgress'></div>
             <div id='userConsoleClose'></div>
@@ -16,8 +16,7 @@ export default function UserConsole() {
             {/* consoleSidebarOpen consoleSidebarClosed */}
             <div id='userConsoleDesk' className='consoleSidebarClosed'>
 
-
-            </div>
+                </div>
 
 
         </div>

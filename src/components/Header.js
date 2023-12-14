@@ -14,7 +14,17 @@ export default function Header() {
         <header id="userHeader" >
         <div id='accountConsole' className='accountConsoleClosed'>
             {/* // accountConsoleOpen accountConsoleClosed */}
-            <div></div>
+            <div>
+                {/* Name: nickname, firstname, middlename, lastname, suffix */}
+                {/* Color: theme hue, theme sat, accent hue, accent sat, alert hue, alert sat, brightness */}
+                {/* Biography: */}
+                {/* Images: */}
+                {/* Privacy: name, subscription/role, images, biography, tags, results, voice,  [id and colors are always public]*/}
+                {/* Tags:  */}
+                {/* Subscription:  */}
+                {/* Organization: RegionID, DistrictID, CommunityID, ClusterID */}
+                {/* Role:  */}
+            </div>
         </div>
         <img src="" alt="" id="userThumb"/>
         <div id='userName'>{displayName}</div>

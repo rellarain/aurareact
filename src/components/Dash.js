@@ -2,7 +2,7 @@ import React from 'react';
 import UserConsole from './UserConsole';
 
 export default function Dashboard() {return (
-    <main id="userDash" className='userDashMini'>
+    <main id="userDash" className='userDashMax'>
         {/* userDashMax userDashMini */}
         <UserConsole />
         <UserDashboard />
@@ -19,7 +19,7 @@ function UserDashboard() {
     
     return (
     <div id="userDashboard" >
-        <p>{weekday}, {month} {monthday}, {year} <br/> {time} </p>
+        <p>{weekday}, {month} {monthday}, {year} <br/> ~{time} </p>
         <p>NOTICES <br/> organizational changes, individual changes, academy changes</p>
         <p>PERFORMANCE <br/><br/> WORKDAY (today's date)<br/> achievement, activity, adherence, attendance <br/><br/>  WORKWEEK (last 2-7 days in month)<br/> achievement, activity, adherence, attendance, accomplishment <br/><br/>  WORKCYCLE (average daily score of month) <br/> achievement, activity, adequacy, adherence, attendance, accomplishment</p>
         <p>REQUESTS <br/> </p>
