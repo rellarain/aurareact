@@ -59,14 +59,14 @@ table {
 
 
 
-$themehue:   30;
-$accenthue:  30;
-$alerthue:   30;
+$themehue:   280;
+$accenthue:  330;
+$alerthue:   200;
 
 
-$themesat:  5%; // 0-75%
-$accentsat: 20%; // must be 10% more than theme
-$alertsat:  55%; // must be 15% more than accent 
+$themesat:  20%; // 0-75%
+$accentsat: 30%; // must be 10% more than theme
+$alertsat:  45%; // must be 15% more than accent 
 
 
 // Lightness Calculations - must be between 0-30
@@ -156,7 +156,7 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $at3;
+    background-color: $a3;
 }
 
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
@@ -534,10 +534,11 @@ body {
     height: calc(100vh - 137px);
     overflow-x: hidden;
     overflow-y: scroll;
+    width: calc(100% - 30px);
     right: 0px;
     top: 5px;
     margin: 15px;
-    background-color: $t3;
+    background-color: $t8;
     position: absolute;
     border-radius: 4px;
     display: block;
@@ -552,7 +553,7 @@ body {
         margin: 5px;
         padding: 5px;
         border-radius: 4px;
-        &:nth-child(1) {color: $t8; text-align: right; font-weight: 700;}
+        &:nth-child(1) {color: $t4; text-align: right; font-weight: 700;}
         &:nth-child(2) {background-color: $at5; color: $atX;}
         &:nth-child(3) {background-color: $a5; color: $aX;}
         &:nth-child(4) {background-color: $at5; color: $atX;}
@@ -579,20 +580,11 @@ body {
     font-size: 14px;
     z-index: 4;
     cursor: pointer;
-    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-    border: 5px solid $t1;
-    padding: 5px;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
+    // border: 5px solid $t1;
     background-color: $t1;
+    width: calc(100% - 20px);
 
-    #userConsoleProgress {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        border-radius: 4px;
-        background-color: $at5;
-        height: 8px; transition: width 1s;
-    }
     #userConsoleTitle {
         display: grid;
         width: calc(100% - 20px);
@@ -609,16 +601,16 @@ body {
     }
     #userConsoleDesk {
         
-        height: calc(100% - 103px);
+        height: calc(100% - 108px);
         display: block;
         position: absolute;
-        right: 0;
+        right: 5px;
         padding: 5px;
-        box-shadow: inset 0 0 0 5px $t4;
-        bottom: 0;
+        box-shadow: inset 0 0 0 5px $t8;
+        bottom: 5px;
         transition: width 1s, background .4s, box-shadow .4s, height 1s;
-        background-color: $t4;
-        border-radius: 8px;
+        background-color: $t8;
+        border-radius: 4px;
         cursor: default;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -631,18 +623,68 @@ body {
         font-weight: 500;
     }
 
+    #userConsoleHead {
+        width: 100%;
+        height: 93px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-rows: 40px 40px 8px;
+        grid-template-columns: calc(100% - 40px) 40px;
+        grid-template-areas: "consoleTabs consoleTabs" "consoleHeader consoleClose" "consoleProgressBar consoleProgressBar";
+        div:nth-child(1) {
+            grid-area: consoleTabs;
+            background-color: $t6;
+            cursor: default;
+            overflow: hidden;
+        }
+        div:nth-child(2) {
+            grid-area: consoleHeader;
+            line-height: 30px;
+            margin: 5px 0 5px 5px;
+            border-radius: 4px;
+            width: max-content;
+            padding: 0 10px 0 10px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            font-size: 18px;
+            height: 30px;
+            color: $t0;
+            background-color: $t8;
+            cursor: default;
+        }
+        div:nth-child(3) {
+            grid-area: consoleClose;
+            width: 30px;
+            height: 30px;
+            background-color: $a5;
+            margin: 5px;
+            border-radius: 4px;
+        }
+        div:nth-child(4) {
+            grid-area: consoleProgressBar;
+            background-color: $a7;
+            width: calc(100% - 10px);
+            margin: 0 5px 0 5px;
+            height: 8px;
+            border-radius: 4px;
+            cursor: default;
+        }
+    }
+
     .consoleSidebarClosed {
-        width: calc(100% - 30px);
+        width: calc(100% - 40px);
     }
     #userConsoleSidebar {
         display: block;
-        height: calc(100% - 113px);
+        height: calc(100% - 118px);
         padding: 5px;
         position: absolute;
-        left: 20px;
-        bottom: 5px;
+        left: 30px;
+        bottom: 10px;
         border-radius: 4px;
-        background-color: $t1;
+        background-color: $t5;
         cursor: default;
         overflow: hidden;
         transition: width 1s;
@@ -656,11 +698,11 @@ body {
             padding: 5px;
         }
         div:nth-child(1) {
-            background-color: $t3;
+            background-color: $t4;
             height: 140px;
         }
         div:nth-child(2) {
-            background-color: $t2;
+            // background-color: $t2;
             height: calc(100% - 165px);
             margin-top: 5px;
             overflow-y: scroll;
@@ -672,27 +714,11 @@ body {
     }
 
 
-    #userConsoleClose {
-        top: 13px;
-        right: 0px;
-        height: 24px;
-        width: 24px;
-        position: absolute;
-        background-color: $a5;
-        cursor: pointer;
-        border-radius: 4px;
-        transition: background 1s;
-        &:hover {
-            background-color: $a7;
-        }
-    }
 }
 .userConsoleOpen {top: 15px;}
 .userConsoleClosed {top: -150vh;}
 .userConsoleState {height: calc(100% - 65px);}
-.adminConsoleState {height: calc(100% - 109px);}
-.consoleWithDash {width: calc(100% - 340px);}
-.consoleWithoutDash {width: calc(100% - 40px);}
+.adminConsoleState {height: calc(100% - 89px);}
 
 
 
@@ -756,7 +782,7 @@ body {
                 width: 30px;
                 transition: background .4s;
                 &:hover {
-                    background-color: $a3;
+                    background-color: $a5;
                 }
             }
         }
@@ -826,7 +852,7 @@ body {
     
     #workWeekTimer {
         grid-area: workWeek;
-        background-color: $at8;
+        background-color: $atX;
         overflow: hidden;
         span {
             line-height: 14px;
@@ -836,7 +862,7 @@ body {
             display: inline-block;
             margin: 0 0 4px 3px;
             position: relative;
-            background-color: $at4;
+            background-color: $at6;
             border-radius: 2px;
         }
     }
@@ -856,6 +882,7 @@ body {
             display: block;
             transition: height 1s, width 1s, background .75s, margin 1s;
             border-radius: 4px;
+            cursor: pointer;
         }
         .TKtoggleOpen {
             height: 14px;
@@ -903,8 +930,7 @@ body {
         width: 30px;
         height: 30px;
         display: block;
-        // margin: 5px;
-        background-color: $a9;
+        background-color: $at9;
         border-radius: 4px;
         position: absolute;
         transition: width .5s;
@@ -920,7 +946,7 @@ body {
             overflow: hidden;
             position: absolute;
             transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
-
+            cursor: pointer;
             display: block;
 
             #helpDeskChats {
@@ -990,14 +1016,14 @@ body {
     }
     #breakTimeConsole {
         grid-area: breaktimeconsole;
-        background: $a0;
+        background: $a1;
         display: block;
         cursor: default;
         position: relative;
         height: 100%;
         width: 100%;
         #breakTimeConsoleDesk {
-            background-color: $a2;
+            background-color: $a3;
             display: block;
             border-radius: 4px;
             bottom: 10px;
@@ -1006,7 +1032,7 @@ body {
             transition: height 1s, width .5s;
         }
         #breakTimeConsoleMenu {
-            background-color: $a4;
+            background-color: $a5;
             display: block;
             top: 10px;
             left: 10px;
@@ -1019,7 +1045,7 @@ body {
 }
 .inOffice {bottom: 0;}
 .outOffice {bottom: -100px;}
-.breakTimeOpen {height: calc(100vh - 55px);background: $a5;}
+.breakTimeOpen {height: calc(100vh - 50px);background: $a5;}
 .breakTimeClosed {height: 54px;background: $a0;}
 
 
@@ -1065,7 +1091,7 @@ body {
         width: calc(100% - 265px);
     }
     #userConsoleSidebar {
-        width: calc(100% - 40px);
+        width: calc(100% - 65px);
     }
     .consoleWithDash {
         width: calc(100% - 40px);
@@ -1098,11 +1124,6 @@ body {
 
 
 
-    // Dashboard
-    #userDashboard {
-        max-width: 300px;
-    }
-
     // BreakTime Responsive
     #breakTimeConsoleDesk {
         width: calc(100% - 20px);
@@ -1123,10 +1144,10 @@ body {
 
     // Console Responsive
     .consoleSidebarOpen {
-        width: calc(100% - 310px);
+        width: calc(100% - 315px);
     }
     #userConsoleSidebar {
-        width: 270px;
+        width: 250px;
     }
 
     // Breaktime
@@ -1207,8 +1228,14 @@ body {
         width: 300px;
     }
     // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 600px);
+    }
+    #toolkit {
+        width: 580px;
+    }
     .helpDeskOpenSB {
-        width: calc(100vw - 316px);
+        width: calc(100vw - 616px);
     }
 
     // Console Responsive 
@@ -1236,16 +1263,13 @@ body {
     // Indicator
     #userThumb {background: hsl(206, 70%, 60%);}
 
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 600px);
+    // Console Responsive
+    .consoleSidebarOpen {
+        width: calc(100% - 610px);
     }
-    #toolkit {
-        width: 580px;
-    }
-    .helpDeskOpenSB {
-        width: calc(100vw - 616px);
-    }
+    #userConsoleSidebar {
+        width: 545px;
+    } 
 
     // Help Desk Responsive
     #helpDeskChats {
@@ -1274,13 +1298,7 @@ body {
     // Indicator
     #userThumb {background: hsl(272, 70%, 60%);}
 
-    // Console Responsive
-    .consoleSidebarOpen {
-        width: calc(100% - 610px);
-    }
-    #userConsoleSidebar {
-        width: 570px;
-    } 
+
     
 }
 

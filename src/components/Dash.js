@@ -20,14 +20,14 @@ function UserDashboard() {
     return (
     <div id="userDashboard" >
         <p>{weekday}, {month} {monthday}, {year} <br/> ~{time} </p>
-        <p>NOTICES <br/> organizational changes, individual changes, academy changes</p>
+        {/* <p>NOTICES <br/> organizational changes, individual changes, academy changes</p>
         <p>PERFORMANCE <br/><br/> WORKDAY (today's date)<br/> achievement, activity, adherence, attendance <br/><br/>  WORKWEEK (last 2-7 days in month)<br/> achievement, activity, adherence, attendance, accomplishment <br/><br/>  WORKCYCLE (average daily score of month) <br/> achievement, activity, adequacy, adherence, attendance, accomplishment</p>
         <p>REQUESTS <br/> </p>
         <p></p>
         <p></p>
         <section>
             
-        </section>
+        </section> */}
     </div>
 )}
 
