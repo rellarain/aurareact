@@ -10,7 +10,8 @@ import Navigation from "./components/Nav";
 import Admin from "./components/Admin";
 
 ReactDom.createRoot(document.getElementById('root')).render(
-    <div>
+    <div id='rootDash' className=''>
+        {/* rootDashVisitor rootDashMember rootDashScholar rootDashAdmin */}
         <Admin />
         <Header />
         <Navigation />

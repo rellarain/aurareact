@@ -59,9 +59,9 @@ table {
 
 
 
-$themehue:   280;
-$accenthue:  330;
-$alerthue:   200;
+$themehue:   110;
+$accenthue:  310;
+$alerthue:   210;
 
 
 $themesat:  20%; // 0-75%
@@ -69,18 +69,20 @@ $accentsat: 30%; // must be 10% more than theme
 $alertsat:  45%; // must be 15% more than accent 
 
 
+$baseBright: 8%;
+
 // Lightness Calculations - must be between 0-30
-$LV0: calc(5% +  0%);
-$LV1: calc(5% +  7%);
-$LV2: calc(5% + 14%);
-$LV3: calc(5% + 21%);
-$LV4: calc(5% + 28%);
-$LV5: calc(5% + 35%);
-$LV6: calc(5% + 42%);
-$LV7: calc(5% + 49%);
-$LV8: calc(5% + 56%);
-$LV9: calc(5% + 63%);
-$LVX: calc(5% + 70%);
+$LV0: calc($baseBright +  0%);
+$LV1: calc($baseBright +  7%);
+$LV2: calc($baseBright + 14%);
+$LV3: calc($baseBright + 21%);
+$LV4: calc($baseBright + 28%);
+$LV5: calc($baseBright + 35%);
+$LV6: calc($baseBright + 42%);
+$LV7: calc($baseBright + 49%);
+$LV8: calc($baseBright + 56%);
+$LV9: calc($baseBright + 63%);
+$LVX: calc($baseBright + 70%);
 
 
 // Theme Shades
@@ -100,17 +102,34 @@ $tX: hsl($themehue, $themesat, $LVX);
 
 
 // Accent Shades
-$a0: hsl($accenthue, $accentsat, $LV0);
-$a1: hsl($accenthue, $accentsat, $LV1);
-$a2: hsl($accenthue, $accentsat, $LV2);
-$a3: hsl($accenthue, $accentsat, $LV3);
-$a4: hsl($accenthue, $accentsat, $LV4);
-$a5: hsl($accenthue, $accentsat, $LV5);
-$a6: hsl($accenthue, $accentsat, $LV6);
-$a7: hsl($accenthue, $accentsat, $LV7);
-$a8: hsl($accenthue, $accentsat, $LV8);
-$a9: hsl($accenthue, $accentsat, $LV9);
-$aX: hsl($accenthue, $accentsat, $LVX);
+$a0: hsl($accenthue, $accentsat, $LV0); 
+$a1: hsl($accenthue, $accentsat, $LV1); 
+$a2: hsl($accenthue, $accentsat, $LV2); 
+$a3: hsl($accenthue, $accentsat, $LV3); 
+$a4: hsl($accenthue, $accentsat, $LV4); 
+$a5: hsl($accenthue, $accentsat, $LV5); 
+$a6: hsl($accenthue, $accentsat, $LV6); 
+$a7: hsl($accenthue, $accentsat, $LV7); 
+$a8: hsl($accenthue, $accentsat, $LV8); 
+$a9: hsl($accenthue, $accentsat, $LV9); 
+$aX: hsl($accenthue, $accentsat, $LVX); 
+
+
+
+// Assessment Shades
+$TA0: hsl(110, $accentsat, $LV0); $TG0: hsl(5, $accentsat, $LV0); $TS0: hsl(230, $accentsat, $LV0); $TL0: hsl(300, $accentsat, $LV0); $TX0: hsl(30, $accentsat, $LV0); 
+$TA1: hsl(110, $accentsat, $LV1); $TG1: hsl(5, $accentsat, $LV1); $TS1: hsl(230, $accentsat, $LV1); $TL1: hsl(300, $accentsat, $LV1); $TX1: hsl(30, $accentsat, $LV1); 
+$TA2: hsl(110, $accentsat, $LV2); $TG2: hsl(5, $accentsat, $LV2); $TS2: hsl(230, $accentsat, $LV2); $TL2: hsl(300, $accentsat, $LV2); $TX2: hsl(30, $accentsat, $LV2); 
+$TA3: hsl(110, $accentsat, $LV3); $TG3: hsl(5, $accentsat, $LV3); $TS3: hsl(230, $accentsat, $LV3); $TL3: hsl(300, $accentsat, $LV3); $TX3: hsl(30, $accentsat, $LV3); 
+$TA4: hsl(110, $accentsat, $LV4); $TG4: hsl(5, $accentsat, $LV4); $TS4: hsl(230, $accentsat, $LV4); $TL4: hsl(300, $accentsat, $LV4); $TX4: hsl(30, $accentsat, $LV4); 
+$TA5: hsl(110, $accentsat, $LV5); $TG5: hsl(5, $accentsat, $LV5); $TS5: hsl(230, $accentsat, $LV5); $TL5: hsl(300, $accentsat, $LV5); $TX5: hsl(30, $accentsat, $LV5); 
+$TA6: hsl(110, $accentsat, $LV6); $TG6: hsl(5, $accentsat, $LV6); $TS6: hsl(230, $accentsat, $LV6); $TL6: hsl(300, $accentsat, $LV6); $TX6: hsl(30, $accentsat, $LV6); 
+$TA7: hsl(110, $accentsat, $LV7); $TG7: hsl(5, $accentsat, $LV7); $TS7: hsl(230, $accentsat, $LV7); $TL7: hsl(300, $accentsat, $LV7); $TX7: hsl(30, $accentsat, $LV7); 
+$TA8: hsl(110, $accentsat, $LV8); $TG8: hsl(5, $accentsat, $LV8); $TS8: hsl(230, $accentsat, $LV8); $TL8: hsl(300, $accentsat, $LV8); $TX8: hsl(30, $accentsat, $LV8); 
+$TA9: hsl(110, $accentsat, $LV9); $TG9: hsl(5, $accentsat, $LV9); $TS9: hsl(230, $accentsat, $LV9); $TL9: hsl(300, $accentsat, $LV9); $TX9: hsl(30, $accentsat, $LV9); 
+$TAX: hsl(110, $accentsat, $LVX); $TGX: hsl(5, $accentsat, $LVX); $TSX: hsl(230, $accentsat, $LVX); $TLX: hsl(300, $accentsat, $LVX); $TXX: hsl(30, $accentsat, $LVX); 
+
+
 
 // Alert Shades
 $at0: hsl($alerthue, $alertsat, $LV0);
@@ -159,6 +178,22 @@ body {
     background-color: $a3;
 }
 
+.rootDashVisitor {
+    
+}
+.rootDashMember {
+    
+}
+.rootDashScholar {
+    
+}
+.rootDashAdmin {
+    
+}
+
+.nightMode {}
+.dayMode {}
+
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
 
 #userHeader {
@@ -193,6 +228,7 @@ body {
             border-radius: 8px;
             background-color: $t2;
             transition: height 1.25s;
+            overflow: hidden;
         }
 
     }
@@ -349,7 +385,7 @@ body {
 
 // Navigation Panel
 .navCropOpen {
-    width: 300px;
+    width: calc(100% - 10px);
     height: calc(100% - 10px);
     transition: height 1s 1s, width 1s;
 }
@@ -635,36 +671,64 @@ body {
         grid-template-areas: "consoleTabs consoleTabs" "consoleHeader consoleClose" "consoleProgressBar consoleProgressBar";
         div:nth-child(1) {
             grid-area: consoleTabs;
-            background-color: $t6;
+            background-color: $t7;
             cursor: default;
             overflow: hidden;
+            display: flex;
+            .userConsoleTabObject {
+                
+                background-color: $t3;
+                height: 30px;
+                display: flex;
+                width: min-content;
+                margin: 10px 0 0 10px;
+                border-radius: 4px 4px 0 0;
+                padding: 0 10px 0 10px;
+                cursor: pointer;
+                span {
+                    line-height: 30px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+                span:nth-child(1) {
+                    // background-color: blue;
+                    color: $t9;
+                    
+                }
+                span:nth-child(2) {
+                    // background-color: yellow;
+                    color: white;
+                    padding: 0 0 0 10px;
+                }
+            }
         }
         div:nth-child(2) {
             grid-area: consoleHeader;
-            line-height: 30px;
-            margin: 5px 0 5px 5px;
+            line-height: 26px;
+            margin: 7px 0 0 5px;
             border-radius: 4px;
             width: max-content;
-            padding: 0 10px 0 10px;
+            padding: 0 8px 0 8px;
             font-weight: 800;
             letter-spacing: 4px;
             font-size: 18px;
-            height: 30px;
+            height: 26px;
             color: $t0;
-            background-color: $t8;
+            background-color: $t9;
             cursor: default;
         }
         div:nth-child(3) {
             grid-area: consoleClose;
             width: 30px;
             height: 30px;
-            background-color: $a5;
+            background-color: $at5;
             margin: 5px;
             border-radius: 4px;
         }
         div:nth-child(4) {
             grid-area: consoleProgressBar;
-            background-color: $a7;
+            background-color: $at7;
             width: calc(100% - 10px);
             margin: 0 5px 0 5px;
             height: 8px;
@@ -1163,22 +1227,22 @@ body {
     #userThumb {background: hsl(30, 70%, 60%);}
     
     // Navigation
-    .navCropPage {
-        width: 600px;
-    }
-    #navPage {
-        width: 561px;
-    }
-    .navCropOpen {
-        width: 600px;
-    }
-    #navPanel {
-        width: 600px;
-        grid-template-columns: 570px 30px;
-    }
-    #navBody {
-        width: 595px;
-    }
+    // .navCropPage {
+    //     width: 600px;
+    // }
+    // #navPage {
+    //     width: 561px;
+    // }
+    // .navCropOpen {
+    //     width: 600px;
+    // }
+    // #navPanel {
+    //     width: 600px;
+    //     grid-template-columns: 570px 30px;
+    // }
+    // #navBody {
+    //     width: 595px;
+    // }
 
 
 
@@ -1193,7 +1257,13 @@ body {
     }
 
 
-
+    // Sidebar Responsive
+    .userDashMini {
+        width: calc(100vw - 300px);
+    }
+    #toolkit {
+        width: 280px;
+    }
 
 }
 
@@ -1204,13 +1274,7 @@ body {
 
 
 
-    // Sidebar Responsive
-    .userDashMini {
-        width: calc(100vw - 300px);
-    }
-    #toolkit {
-        width: 280px;
-    }
+
 
 
 }
@@ -1227,6 +1291,7 @@ body {
     #helpDeskForm {
         width: 300px;
     }
+
     // Sidebar Responsive
     .userDashMini {
         width: calc(100vw - 600px);
@@ -1242,7 +1307,12 @@ body {
     .consoleWithDash {
         width: calc(100% - 360px);
     }
-
+    .consoleSidebarOpen {
+        width: calc(100% - 415px);
+    }
+    #userConsoleSidebar {
+        width: 350px;
+    } 
 }
 
 // Wide Laptop - Dark Green (Sidebar) [Accountability: ]
@@ -1263,13 +1333,6 @@ body {
     // Indicator
     #userThumb {background: hsl(206, 70%, 60%);}
 
-    // Console Responsive
-    .consoleSidebarOpen {
-        width: calc(100% - 610px);
-    }
-    #userConsoleSidebar {
-        width: 545px;
-    } 
 
     // Help Desk Responsive
     #helpDeskChats {

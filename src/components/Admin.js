@@ -10,7 +10,7 @@ export default function Admin() {return (
 
 
 function AdminFooter() {return (
-    <div id= "adminFooter" className='inOffice breakTimeOpen'>
+    <div id= "adminFooter" className='inOffice breakTimeClosed'>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
         <div id="workWeekTimer">
             <span></span>
