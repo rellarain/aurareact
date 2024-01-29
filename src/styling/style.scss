@@ -57,19 +57,22 @@ table {
 // Triadic:
 // 3 hues roughly separated by ~120 degrees
 
+// Changeables
+
+$baseBright: 0%;
+
+$themehue:   0;
+$accenthue:  320;
+$alerthue:   30;
+
+$themesat:  10%; // 0-50%
+$accentsat: 35%; // ~20-90%, must be 20% more than theme
+$alertsat:  45%; // ~30-100%, must be 30% more than accent 
 
 
-$themehue:   110;
-$accenthue:  310;
-$alerthue:   210;
 
 
-$themesat:  20%; // 0-75%
-$accentsat: 30%; // must be 10% more than theme
-$alertsat:  45%; // must be 15% more than accent 
 
-
-$baseBright: 8%;
 
 // Lightness Calculations - must be between 0-30
 $LV0: calc($baseBright +  0%);
@@ -84,6 +87,10 @@ $LV8: calc($baseBright + 56%);
 $LV9: calc($baseBright + 63%);
 $LVX: calc($baseBright + 70%);
 
+// Desaturation Calculations 
+$themeupsat:  calc($themesat + 5%);
+$accentdesat: calc($accentsat - 15%); 
+$alertdesat:   calc($alertsat - 25%);
 
 // Theme Shades
 
@@ -99,50 +106,86 @@ $t8: hsl($themehue, $themesat, $LV8);
 $t9: hsl($themehue, $themesat, $LV9);
 $tX: hsl($themehue, $themesat, $LVX);
 
+$tu0: hsl($themehue, $themeupsat, $LV0);
+$tu1: hsl($themehue, $themeupsat, $LV1);
+$tu2: hsl($themehue, $themeupsat, $LV2);
+$tu3: hsl($themehue, $themeupsat, $LV3);
+$tu4: hsl($themehue, $themeupsat, $LV4);
+$tu5: hsl($themehue, $themeupsat, $LV5);
+$tu6: hsl($themehue, $themeupsat, $LV6);
+$tu7: hsl($themehue, $themeupsat, $LV7);
+$tu8: hsl($themehue, $themeupsat, $LV8);
+$tu9: hsl($themehue, $themeupsat, $LV9);
+$tuX: hsl($themehue, $themeupsat, $LVX);
+
 
 
 // Accent Shades
-$a0: hsl($accenthue, $accentsat, $LV0); 
-$a1: hsl($accenthue, $accentsat, $LV1); 
-$a2: hsl($accenthue, $accentsat, $LV2); 
-$a3: hsl($accenthue, $accentsat, $LV3); 
-$a4: hsl($accenthue, $accentsat, $LV4); 
-$a5: hsl($accenthue, $accentsat, $LV5); 
-$a6: hsl($accenthue, $accentsat, $LV6); 
-$a7: hsl($accenthue, $accentsat, $LV7); 
-$a8: hsl($accenthue, $accentsat, $LV8); 
-$a9: hsl($accenthue, $accentsat, $LV9); 
-$aX: hsl($accenthue, $accentsat, $LVX); 
+$as0: hsl($accenthue, $accentsat, $LV0); 
+$as1: hsl($accenthue, $accentsat, $LV1); 
+$as2: hsl($accenthue, $accentsat, $LV2); 
+$as3: hsl($accenthue, $accentsat, $LV3); 
+$as4: hsl($accenthue, $accentsat, $LV4); 
+$as5: hsl($accenthue, $accentsat, $LV5); 
+$as6: hsl($accenthue, $accentsat, $LV6); 
+$as7: hsl($accenthue, $accentsat, $LV7); 
+$as8: hsl($accenthue, $accentsat, $LV8); 
+$as9: hsl($accenthue, $accentsat, $LV9); 
+$asX: hsl($accenthue, $accentsat, $LVX); 
+
+$ad0: hsl($accenthue, $accentdesat, $LV0); 
+$ad1: hsl($accenthue, $accentdesat, $LV1); 
+$ad2: hsl($accenthue, $accentdesat, $LV2); 
+$ad3: hsl($accenthue, $accentdesat, $LV3); 
+$ad4: hsl($accenthue, $accentdesat, $LV4); 
+$ad5: hsl($accenthue, $accentdesat, $LV5); 
+$ad6: hsl($accenthue, $accentdesat, $LV6); 
+$ad7: hsl($accenthue, $accentdesat, $LV7); 
+$ad8: hsl($accenthue, $accentdesat, $LV8); 
+$ad9: hsl($accenthue, $accentdesat, $LV9); 
+$adX: hsl($accenthue, $accentdesat, $LVX); 
 
 
 
 // Assessment Shades
-$TA0: hsl(110, $accentsat, $LV0); $TG0: hsl(5, $accentsat, $LV0); $TS0: hsl(230, $accentsat, $LV0); $TL0: hsl(300, $accentsat, $LV0); $TX0: hsl(30, $accentsat, $LV0); 
-$TA1: hsl(110, $accentsat, $LV1); $TG1: hsl(5, $accentsat, $LV1); $TS1: hsl(230, $accentsat, $LV1); $TL1: hsl(300, $accentsat, $LV1); $TX1: hsl(30, $accentsat, $LV1); 
-$TA2: hsl(110, $accentsat, $LV2); $TG2: hsl(5, $accentsat, $LV2); $TS2: hsl(230, $accentsat, $LV2); $TL2: hsl(300, $accentsat, $LV2); $TX2: hsl(30, $accentsat, $LV2); 
-$TA3: hsl(110, $accentsat, $LV3); $TG3: hsl(5, $accentsat, $LV3); $TS3: hsl(230, $accentsat, $LV3); $TL3: hsl(300, $accentsat, $LV3); $TX3: hsl(30, $accentsat, $LV3); 
-$TA4: hsl(110, $accentsat, $LV4); $TG4: hsl(5, $accentsat, $LV4); $TS4: hsl(230, $accentsat, $LV4); $TL4: hsl(300, $accentsat, $LV4); $TX4: hsl(30, $accentsat, $LV4); 
-$TA5: hsl(110, $accentsat, $LV5); $TG5: hsl(5, $accentsat, $LV5); $TS5: hsl(230, $accentsat, $LV5); $TL5: hsl(300, $accentsat, $LV5); $TX5: hsl(30, $accentsat, $LV5); 
-$TA6: hsl(110, $accentsat, $LV6); $TG6: hsl(5, $accentsat, $LV6); $TS6: hsl(230, $accentsat, $LV6); $TL6: hsl(300, $accentsat, $LV6); $TX6: hsl(30, $accentsat, $LV6); 
-$TA7: hsl(110, $accentsat, $LV7); $TG7: hsl(5, $accentsat, $LV7); $TS7: hsl(230, $accentsat, $LV7); $TL7: hsl(300, $accentsat, $LV7); $TX7: hsl(30, $accentsat, $LV7); 
-$TA8: hsl(110, $accentsat, $LV8); $TG8: hsl(5, $accentsat, $LV8); $TS8: hsl(230, $accentsat, $LV8); $TL8: hsl(300, $accentsat, $LV8); $TX8: hsl(30, $accentsat, $LV8); 
-$TA9: hsl(110, $accentsat, $LV9); $TG9: hsl(5, $accentsat, $LV9); $TS9: hsl(230, $accentsat, $LV9); $TL9: hsl(300, $accentsat, $LV9); $TX9: hsl(30, $accentsat, $LV9); 
-$TAX: hsl(110, $accentsat, $LVX); $TGX: hsl(5, $accentsat, $LVX); $TSX: hsl(230, $accentsat, $LVX); $TLX: hsl(300, $accentsat, $LVX); $TXX: hsl(30, $accentsat, $LVX); 
+$TTA0: hsl(110, $accentsat, $LV0); $TTG0: hsl(5, $accentsat, $LV0); $TTS0: hsl(230, $accentsat, $LV0); $TTL0: hsl(300, $accentsat, $LV0); $TTX0: hsl(30, $accentsat, $LV0); 
+$TTA1: hsl(110, $accentsat, $LV1); $TTG1: hsl(5, $accentsat, $LV1); $TTS1: hsl(230, $accentsat, $LV1); $TTL1: hsl(300, $accentsat, $LV1); $TTX1: hsl(30, $accentsat, $LV1); 
+$TTA2: hsl(110, $accentsat, $LV2); $TTG2: hsl(5, $accentsat, $LV2); $TTS2: hsl(230, $accentsat, $LV2); $TTL2: hsl(300, $accentsat, $LV2); $TTX2: hsl(30, $accentsat, $LV2); 
+$TTA3: hsl(110, $accentsat, $LV3); $TTG3: hsl(5, $accentsat, $LV3); $TTS3: hsl(230, $accentsat, $LV3); $TTL3: hsl(300, $accentsat, $LV3); $TTX3: hsl(30, $accentsat, $LV3); 
+$TTA4: hsl(110, $accentsat, $LV4); $TTG4: hsl(5, $accentsat, $LV4); $TTS4: hsl(230, $accentsat, $LV4); $TTL4: hsl(300, $accentsat, $LV4); $TTX4: hsl(30, $accentsat, $LV4); 
+$TTA5: hsl(110, $accentsat, $LV5); $TTG5: hsl(5, $accentsat, $LV5); $TTS5: hsl(230, $accentsat, $LV5); $TTL5: hsl(300, $accentsat, $LV5); $TTX5: hsl(30, $accentsat, $LV5); 
+$TTA6: hsl(110, $accentsat, $LV6); $TTG6: hsl(5, $accentsat, $LV6); $TTS6: hsl(230, $accentsat, $LV6); $TTL6: hsl(300, $accentsat, $LV6); $TTX6: hsl(30, $accentsat, $LV6); 
+$TTA7: hsl(110, $accentsat, $LV7); $TTG7: hsl(5, $accentsat, $LV7); $TTS7: hsl(230, $accentsat, $LV7); $TTL7: hsl(300, $accentsat, $LV7); $TTX7: hsl(30, $accentsat, $LV7); 
+$TTA8: hsl(110, $accentsat, $LV8); $TTG8: hsl(5, $accentsat, $LV8); $TTS8: hsl(230, $accentsat, $LV8); $TTL8: hsl(300, $accentsat, $LV8); $TTX8: hsl(30, $accentsat, $LV8); 
+$TTA9: hsl(110, $accentsat, $LV9); $TTG9: hsl(5, $accentsat, $LV9); $TTS9: hsl(230, $accentsat, $LV9); $TTL9: hsl(300, $accentsat, $LV9); $TTX9: hsl(30, $accentsat, $LV9); 
+$TTAX: hsl(110, $accentsat, $LVX); $TTGX: hsl(5, $accentsat, $LVX); $TTSX: hsl(230, $accentsat, $LVX); $TTLX: hsl(300, $accentsat, $LVX); $TTXX: hsl(30, $accentsat, $LVX); 
 
 
 
-// Alert Shades
-$at0: hsl($alerthue, $alertsat, $LV0);
-$at1: hsl($alerthue, $alertsat, $LV1);
-$at2: hsl($alerthue, $alertsat, $LV2);
-$at3: hsl($alerthue, $alertsat, $LV3);
-$at4: hsl($alerthue, $alertsat, $LV4);
-$at5: hsl($alerthue, $alertsat, $LV5);
-$at6: hsl($alerthue, $alertsat, $LV6);
-$at7: hsl($alerthue, $alertsat, $LV7);
-$at8: hsl($alerthue, $alertsat, $LV8);
-$at9: hsl($alerthue, $alertsat, $LV9);
-$atX: hsl($alerthue, $alertsat, $LVX);
+// Alert Shades: Saturated and Desaturated
+$ats0: hsl($alerthue, $alertsat, $LV0);
+$ats1: hsl($alerthue, $alertsat, $LV1);
+$ats2: hsl($alerthue, $alertsat, $LV2);
+$ats3: hsl($alerthue, $alertsat, $LV3);
+$ats4: hsl($alerthue, $alertsat, $LV4);
+$ats5: hsl($alerthue, $alertsat, $LV5);
+$ats6: hsl($alerthue, $alertsat, $LV6);
+$ats7: hsl($alerthue, $alertsat, $LV7);
+$ats8: hsl($alerthue, $alertsat, $LV8);
+$ats9: hsl($alerthue, $alertsat, $LV9);
+$atsX: hsl($alerthue, $alertsat, $LVX);
+
+$atd0: hsl($alerthue, $alertdesat, $LV0);
+$atd1: hsl($alerthue, $alertdesat, $LV1);
+$atd2: hsl($alerthue, $alertdesat, $LV2);
+$atd3: hsl($alerthue, $alertdesat, $LV3);
+$atd4: hsl($alerthue, $alertdesat, $LV4);
+$atd5: hsl($alerthue, $alertdesat, $LV5);
+$atd6: hsl($alerthue, $alertdesat, $LV6);
+$atd7: hsl($alerthue, $alertdesat, $LV7);
+$atd8: hsl($alerthue, $alertdesat, $LV8);
+$atd9: hsl($alerthue, $alertdesat, $LV9);
+$atdX: hsl($alerthue, $alertdesat, $LVX);
 
 
 // Favorites: (120 10, 24 27, 120 54)
@@ -175,7 +218,7 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $a3;
+    background-color: $ad2;
 }
 
 .rootDashVisitor {
@@ -235,7 +278,7 @@ body {
     img {
         height: 40px;
         width: 40px;
-        // background: $a8;
+        // background: $as8;
         grid-area: thumbnail;
         overflow: hidden;
         cursor: pointer;
@@ -296,62 +339,62 @@ body {
         // 6- ALERT(multiple break actions)
         // 8- ALERT(one break action)
 
-        td:nth-child(32) {background-color: $t6;}
-        td:nth-child(33) {background-color: $t6;}
-        td:nth-child(34) {background-color: $t6;}
-        td:nth-child(35) {background-color: $t6;}
-        td:nth-child(36) {background-color: $t6;}
-        td:nth-child(37) {background-color: $a6;}
-        td:nth-child(38) {background-color: $a4;}
-        td:nth-child(39) {background-color: $a6;}
-        td:nth-child(40) {background-color: $a6;}
-        td:nth-child(41) {background-color: $a8;}
-        td:nth-child(42) {background-color: $at6;}
-        td:nth-child(43) {background-color: $at4;}
-        td:nth-child(44) {background-color: $at6;}
-        td:nth-child(45) {background-color: $at4;}
+        td:nth-child(32) {background-color: $t8;}
+        td:nth-child(33) {background-color: $t8;}
+        td:nth-child(34) {background-color: $t8;}
+        td:nth-child(35) {background-color: $t8;}
+        td:nth-child(36) {background-color: $t8;}
+        td:nth-child(37) {background-color: $as6;}
+        td:nth-child(38) {background-color: $as4;}
+        td:nth-child(39) {background-color: $as6;}
+        td:nth-child(40) {background-color: $as6;}
+        td:nth-child(41) {background-color: $as8;}
+        td:nth-child(42) {background-color: $ats6;}
+        td:nth-child(43) {background-color: $ats4;}
+        td:nth-child(44) {background-color: $ats6;}
+        td:nth-child(45) {background-color: $ats4;}
 
-        td:nth-child(49) {background-color: $a6;}
-        td:nth-child(50) {background-color: $a6;}
-        td:nth-child(51) {background-color: $a8;}
-        td:nth-child(52) {background-color: $a8;}
-        td:nth-child(53) {background-color: $a8;}
-        td:nth-child(54) {background-color: $a8;}
-        td:nth-child(55) {background-color: $a4;}
-        td:nth-child(56) {background-color: $a4;}
-        td:nth-child(57) {background-color: $a4;}
-        td:nth-child(58) {background-color: $a4;}
-        td:nth-child(59) {background-color: $a6;}
-        td:nth-child(60) {background-color: $at6;}
-        td:nth-child(61) {background-color: $a6;}
-        td:nth-child(62) {background-color: $a4;}
-        td:nth-child(63) {background-color: $a6;}
-        td:nth-child(64) {background-color: $a8;}
-        td:nth-child(65) {background-color: $a8;}
-        td:nth-child(66) {background-color: $a6;}
-        td:nth-child(67) {background-color: $a4;}
+        td:nth-child(49) {background-color: $as6;}
+        td:nth-child(50) {background-color: $as6;}
+        td:nth-child(51) {background-color: $as8;}
+        td:nth-child(52) {background-color: $as8;}
+        td:nth-child(53) {background-color: $as8;}
+        td:nth-child(54) {background-color: $as8;}
+        td:nth-child(55) {background-color: $as4;}
+        td:nth-child(56) {background-color: $as4;}
+        td:nth-child(57) {background-color: $as4;}
+        td:nth-child(58) {background-color: $as4;}
+        td:nth-child(59) {background-color: $as6;}
+        td:nth-child(60) {background-color: $ats6;}
+        td:nth-child(61) {background-color: $as6;}
+        td:nth-child(62) {background-color: $as4;}
+        td:nth-child(63) {background-color: $as6;}
+        td:nth-child(64) {background-color: $as8;}
+        td:nth-child(65) {background-color: $as8;}
+        td:nth-child(66) {background-color: $as6;}
+        td:nth-child(67) {background-color: $as4;}
 
-        td:nth-child(70) {background-color: $at8;}
-        td:nth-child(71) {background-color: $at4;}
-        td:nth-child(72) {background-color: $at4;}
-        td:nth-child(73) {background-color: $at6;}
-        td:nth-child(74) {background-color: $at6;}
-        td:nth-child(75) {background-color: $at8;}
-        td:nth-child(76) {background-color: $at8;}
+        td:nth-child(70) {background-color: $ats8;}
+        td:nth-child(71) {background-color: $ats4;}
+        td:nth-child(72) {background-color: $ats4;}
+        td:nth-child(73) {background-color: $ats6;}
+        td:nth-child(74) {background-color: $ats6;}
+        td:nth-child(75) {background-color: $ats8;}
+        td:nth-child(76) {background-color: $ats8;}
 
-        td:nth-child(79) {background-color: $at8;}
-        td:nth-child(80) {background-color: $at8;}
-        td:nth-child(81) {background-color: $at8;}
-        td:nth-child(82) {background-color: $a6;}
-        td:nth-child(83) {background-color: $a6;}
-        td:nth-child(84) {background-color: $a8;}
-        td:nth-child(85) {background-color: $a8;}
-        td:nth-child(86) {background-color: $a6;}
-        td:nth-child(87) {background-color: $a6;}
-        td:nth-child(88) {background-color: $a8;}
-        td:nth-child(89) {background-color: $a4;}
-        td:nth-child(90) {background-color: $a4;}
-        td:nth-child(91) {background-color: $a4;}
+        td:nth-child(79) {background-color: $ats8;}
+        td:nth-child(80) {background-color: $ats8;}
+        td:nth-child(81) {background-color: $ats8;}
+        td:nth-child(82) {background-color: $as6;}
+        td:nth-child(83) {background-color: $as6;}
+        td:nth-child(84) {background-color: $as8;}
+        td:nth-child(85) {background-color: $as8;}
+        td:nth-child(86) {background-color: $as6;}
+        td:nth-child(87) {background-color: $as6;}
+        td:nth-child(88) {background-color: $as8;}
+        td:nth-child(89) {background-color: $as4;}
+        td:nth-child(90) {background-color: $as4;}
+        td:nth-child(91) {background-color: $as4;}
         td:nth-child(92) {background-color: $t8;}
         td:nth-child(93) {background-color: $t8;}
         td:nth-child(94) {background-color: $t8;}
@@ -399,7 +442,7 @@ body {
     z-index: 12;
 
     #navPanel {
-        background: $a7;
+        background: $as7;
         height: calc(100vh - 10px);
         display: grid;
         grid-template-rows: 30px auto;
@@ -407,11 +450,11 @@ body {
         z-index: 7;
         transition: background 1s, width 1s;
         overflow: hidden;
-        &:hover {background-color: $a8;}
+        &:hover {background-color: $as8;}
     }
     #navButton {
         position: fixed;
-        background-color: $a2;
+        background-color: $as2;
         right: 9px;
         top: 9px;
         width: 22px;
@@ -424,8 +467,8 @@ body {
         border: none;
         transition: background .4s, box-shadow .4s;
         &:hover {
-            background-color: $a3;
-            box-shadow: 0 0 8px 2px $at9;
+            background-color: $as3;
+            box-shadow: 0 0 8px 2px $ats9;
         }
     }
     #navPage {
@@ -435,14 +478,14 @@ body {
         line-height: 22px;
         vertical-align: middle;
         padding: 0 0 0 5px;
-        background-color: $a3;
+        background-color: $as3;
         border-radius: 4px;
         border: none;
         position: absolute;
         right: 30px;
         // width: 261px;
         z-index: 7;
-        color: $a9;
+        color: $as9;
         letter-spacing: 1px;
         font-size: 14px;
         font-weight: 600;
@@ -463,7 +506,7 @@ body {
             // height: 30px;
 
             appearance: none;
-            background-color: $a4;
+            background-color: $as4;
             display: block;
             width: calc(100% - 20px);
             margin-left: 5px;
@@ -473,7 +516,7 @@ body {
             padding: 5px;
             overflow: clip;
             transition: background 1s, height 1s;
-            &:hover {background-color: $a5;}
+            &:hover {background-color: $as5;}
             li {
                 width: calc(100% - 20px);
                 margin: 5px 5px 5px 10px;
@@ -481,23 +524,23 @@ body {
                 border-radius: 4px;
                 font-size: 14px;
                 line-height: 20px;
-                background-color: $a3;
+                background-color: $as3;
                 font-weight: 700;
-                color: $a8;
+                color: $as8;
                 vertical-align: middle;
                 cursor: pointer;
                 letter-spacing: 1px;
                 transition: background 1s, color 1s;
-                &:hover {background-color: $a2; color: $a9;}
+                &:hover {background-color: $as2; color: $as9;}
                 &:first-child {
                     width: calc(100% - 10px);
-                    background-color: $a2;
-                    color: $a8;
+                    background-color: $as2;
+                    color: $as8;
                     margin: 0;
                     font-weight: 8px;
                     letter-spacing: 2px;
                     transition: background 1s, color 1s;
-                    &:hover {background-color: $a1; color: $a9;}
+                    &:hover {background-color: $as1; color: $as9;}
                 }
                 &:last-child {
                     margin-bottom: 0;
@@ -512,16 +555,16 @@ body {
             border-radius: 4px;
             width: 15px;
             overflow-x: visible;
-            background-color: $a5;
+            background-color: $as5;
             cursor: pointer;
         }
         &::-webkit-scrollbar-button {
-            background-color: $a4;
+            background-color: $as4;
             border-radius: 4px 4px 0 0 ;
             height: 0;
         }
         &::-webkit-scrollbar-thumb {
-            background-color: $a3;
+            background-color: $as3;
             border-radius: 4px;
             transition: background 1s;
         }
@@ -590,9 +633,9 @@ body {
         padding: 5px;
         border-radius: 4px;
         &:nth-child(1) {color: $t4; text-align: right; font-weight: 700;}
-        &:nth-child(2) {background-color: $at5; color: $atX;}
-        &:nth-child(3) {background-color: $a5; color: $aX;}
-        &:nth-child(4) {background-color: $at5; color: $atX;}
+        &:nth-child(2) {background-color: $ats5; color: $atsX;}
+        &:nth-child(3) {background-color: $as5; color: $asX;}
+        &:nth-child(4) {background-color: $ats5; color: $atsX;}
         &:nth-child(5) {background-color: $t5; color: $tX;}
         &:nth-child(6) {background-color: $t5; color: $tX;}
     }
@@ -618,7 +661,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
     // border: 5px solid $t1;
-    background-color: $t1;
+    background-color: $tu2;
     width: calc(100% - 20px);
 
     #userConsoleTitle {
@@ -642,10 +685,10 @@ body {
         position: absolute;
         right: 5px;
         padding: 5px;
-        box-shadow: inset 0 0 0 5px $t8;
+        box-shadow: inset 0 0 0 5px $tu9;
         bottom: 5px;
         transition: width 1s, background .4s, box-shadow .4s, height 1s;
-        background-color: $t8;
+        background-color: $tu9;
         border-radius: 4px;
         cursor: default;
         overflow-x: hidden;
@@ -666,9 +709,9 @@ body {
         top: 0;
         left: 0;
         display: grid;
-        grid-template-rows: 40px 40px 8px;
+        grid-template-rows: 40px 10px 40px;
         grid-template-columns: calc(100% - 40px) 40px;
-        grid-template-areas: "consoleTabs consoleTabs" "consoleHeader consoleClose" "consoleProgressBar consoleProgressBar";
+        grid-template-areas: "consoleTabs consoleTabs" "consoleProgressBar consoleProgressBar" "consoleHeader consoleRefresh" ;
         div:nth-child(1) {
             grid-area: consoleTabs;
             background-color: $t7;
@@ -677,14 +720,16 @@ body {
             display: flex;
             .userConsoleTabObject {
                 
-                background-color: $t3;
+                background-color: $t0;
                 height: 30px;
                 display: flex;
-                width: min-content;
+                width: max-content;
                 margin: 10px 0 0 10px;
                 border-radius: 4px 4px 0 0;
                 padding: 0 10px 0 10px;
+                box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
                 cursor: pointer;
+
                 span {
                     line-height: 30px;
                     font-size: 16px;
@@ -693,14 +738,19 @@ body {
                 }
                 span:nth-child(1) {
                     // background-color: blue;
-                    color: $t9;
+                    color: $t5;
                     
                 }
                 span:nth-child(2) {
                     // background-color: yellow;
-                    color: white;
+                    color: $t8;
                     padding: 0 0 0 10px;
                 }
+            }
+            .userConsoleTabActive {
+                background-color: $tu2;
+                span:nth-child(1) {color: $tu7}
+                span:nth-child(2) {color: $tuX}
             }
         }
         div:nth-child(2) {
@@ -710,29 +760,34 @@ body {
             border-radius: 4px;
             width: max-content;
             padding: 0 8px 0 8px;
-            font-weight: 800;
-            letter-spacing: 4px;
-            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 16px;
             height: 26px;
-            color: $t0;
-            background-color: $t9;
+            color: $tu4;
+            // background-color: $tu9;
             cursor: default;
         }
         div:nth-child(3) {
-            grid-area: consoleClose;
+            grid-area: consoleRefresh;
             width: 30px;
             height: 30px;
-            background-color: $at5;
-            margin: 5px;
+            background-color: $tu5;
+            // margin: 5px;
+            right: 5px;
+            position: absolute;
+            top: 5px;
             border-radius: 4px;
+            transition: width .5s;
+            &:hover {
+                width: 100px;
+            }
         }
         div:nth-child(4) {
             grid-area: consoleProgressBar;
-            background-color: $at7;
-            width: calc(100% - 10px);
-            margin: 0 5px 0 5px;
+            background-color: $ats7;
+            width: 100%;
             height: 8px;
-            border-radius: 4px;
             cursor: default;
         }
     }
@@ -748,31 +803,26 @@ body {
         left: 30px;
         bottom: 10px;
         border-radius: 4px;
-        background-color: $t5;
+        background-color: $tu4;
         cursor: default;
         overflow: hidden;
         transition: width 1s;
 
         div {
-            width: calc(100% - 10px);
             display: block;
             position: relative;
             border-radius: 4px;
             color:white; 
             padding: 5px;
+            height: 140px;
+            background-color: $tu8;
+            margin-top: 5px;
         }
         div:nth-child(1) {
-            background-color: $t4;
-            height: 140px;
         }
-        div:nth-child(2) {
-            // background-color: $t2;
-            height: calc(100% - 165px);
-            margin-top: 5px;
-            overflow-y: scroll;
-            &::-webkit-scrollbar {
-                display: none;
-            }
+        div:first-child {
+            background-color: $tu8;
+            margin-top: 0px;
         }
         
     }
@@ -783,6 +833,7 @@ body {
 .userConsoleClosed {top: -150vh;}
 .userConsoleState {height: calc(100% - 65px);}
 .adminConsoleState {height: calc(100% - 89px);}
+
 
 
 
@@ -808,19 +859,19 @@ body {
         display: grid;
         // display: none;
         position: absolute;
-        background-color: $a7;
+        background-color: $ad9;
         // width: 310px;
         top: 15px;
         border-radius: 4px;
         overflow: hidden;
         left: 10px;
-        grid-template-rows: 40px 30px 8px auto;
+        grid-template-rows: 40px 40px 16px auto;
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
         transition: height .75s, width 1s;
         grid-template-areas: "TKtabs" "TKtitle" "TKprogress" "TKpanel";
         #toolkitHead {
             grid-area: TKtabs;
-            background-color: $a8;
+            background-color: $ad8;
             overflow: hidden;
             padding: 5px 0 0 5px;
             display: flex;
@@ -828,7 +879,7 @@ body {
                 height: 35px;
                 width: 30px;
                 display: inline-block;
-                background-color: $a3;
+                background-color: $ad3;
                 position: relative;
                 bottom: -5px;
                 margin-right: 4px;
@@ -837,40 +888,52 @@ body {
                 transition: background .4s;
                 cursor: pointer;
                 &:hover {
-                    background-color: $a4;
+                    background-color: $as4;
                 }
             }
             .openTab {
-                background-color: $a5;
+                background-color: $ad5;
                 bottom: 0;
                 width: 30px;
                 transition: background .4s;
                 &:hover {
-                    background-color: $a5;
+                    background-color: $ad5;
                 }
             }
         }
         #toolkitTitle {
             grid-area: TKtitle;
-            background-color: $a5;
-            line-height: 30px;
-            padding: 0 0 0 5px;
-            font-size: 16px;
-            color: white;
-            font-weight: 600;
-            letter-spacing: 1px;
+            background-color: $ad5;
+            input {
+                grid-area: input;
+                padding: 5px;
+                text-transform: uppercase;
+                font-size: 18px;
+                color: $as3;
+                font-weight: 600;
+                letter-spacing: 1px;
+                background-color: $as9;
+                border: none;
+                height: 20px;
+                width: calc(100% - 20px);
+                margin: 5px;
+                // text-align: right;
+                border-radius: 4px;
+            }
         }
         #toolkitProgress {
             grid-area: TKprogress;
-            background-color: $a3;
+            background-color: $ad3;
             #toolkitProgressBar {
                 position: absolute;
                 display: block;
                 height: 8px;
                 left: 0;
                 width: 45%;
-                background-color: $at8;
+                background-color: $as7;
                 transition: width .5s;
+                margin: 4px;
+                border-radius: 4px;
             }
         }
         #toolkitBody {
@@ -882,16 +945,16 @@ body {
             &::-webkit-scrollbar {
                 width: 15px;
                 overflow-x: visible;
-                background-color: $a5;
+                background-color: $as5;
                 margin: 5px;
                 cursor: pointer;
             }
             &::-webkit-scrollbar-button {
-                background-color: $a4;
+                background-color: $as4;
                 height: 0;
             }
             &::-webkit-scrollbar-thumb {
-                background-color: $aX;
+                background-color: $asX;
                 transition: background 1s;
             }        
         }
@@ -903,7 +966,7 @@ body {
 #adminFooter {
     width: 100vw;
     display: grid;
-    // background: $a1;
+    // background: $as1;
     z-index: 4;
     left: 0;
     position: absolute;
@@ -916,7 +979,7 @@ body {
     
     #workWeekTimer {
         grid-area: workWeek;
-        background-color: $atX;
+        background-color: $adX;
         overflow: hidden;
         span {
             line-height: 14px;
@@ -926,7 +989,7 @@ body {
             display: inline-block;
             margin: 0 0 4px 3px;
             position: relative;
-            background-color: $at6;
+            background-color: $as5;
             border-radius: 2px;
         }
     }
@@ -939,7 +1002,7 @@ body {
         left: 5px;
         top: 5px;
         cursor: default;
-        background-color: $a8;
+        background-color: $ad8;
         transition: width .5s;
         border-radius: 4px;
         #TKtoggleButton {
@@ -951,19 +1014,19 @@ body {
         .TKtoggleOpen {
             height: 14px;
             width: 14px;
-            background: $a4;
+            background: $as4;
             margin: 8px;
             &:hover {
-                background: $a6;
+                background: $as6;
             } 
         }
         .TKtoggleClosed {
             height: 22px;
             width: 22px;
-            background: $a2;
+            background: $ad2;
             margin: 4px;
             &:hover {
-                background: $a4;
+                background: $ad4;
             }
         }
         .TKtoggleNone {
@@ -981,7 +1044,7 @@ body {
         position: absolute;
         width: calc(100vw - 80px);
         height: 40px;
-        color: $a5;
+        color: $ad5;
         overflow: hidden;
         line-height: 40px;
         text-align: center;
@@ -994,7 +1057,7 @@ body {
         width: 30px;
         height: 30px;
         display: block;
-        background-color: $at9;
+        background-color: $ats9;
         border-radius: 4px;
         position: absolute;
         transition: width .5s;
@@ -1015,7 +1078,7 @@ body {
 
             #helpDeskChats {
                 transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
-                background-color: $at3;
+                background-color: $ats3;
                 display: block;
                 overflow: hidden;
                 position: absolute;
@@ -1028,7 +1091,7 @@ body {
                 transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
                 display: block;
                 border-radius: 4px;
-                background-color: $at6;
+                background-color: $ats6;
                 overflow: hidden;
                 position: absolute;
                 bottom: 24px;
@@ -1043,7 +1106,7 @@ body {
             width: calc(100vw - 16px);
             right: 3px;
             bottom: 3px;
-            background-color: $at4;
+            background-color: $ats4;
             box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
             cursor: default;
         }
@@ -1051,7 +1114,7 @@ body {
             height: calc(100vh - 66px);
             right: 3px;
             bottom: 3px;
-            background-color: $at4;
+            background-color: $ats4;
             box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
             cursor: default;
         }
@@ -1060,9 +1123,9 @@ body {
             height: 22px;
             right: 4px;
             bottom: 4px;
-            background-color: $at3;
+            background-color: $ats3;
             &:hover {
-                background-color: $at5;
+                background-color: $ats5;
             }
         }
         .helpDeskNone {
@@ -1080,14 +1143,14 @@ body {
     }
     #breakTimeConsole {
         grid-area: breaktimeconsole;
-        background: $a1;
+        background: $ad1;
         display: block;
         cursor: default;
         position: relative;
         height: 100%;
         width: 100%;
         #breakTimeConsoleDesk {
-            background-color: $a3;
+            background-color: $ad3;
             display: block;
             border-radius: 4px;
             bottom: 10px;
@@ -1096,7 +1159,7 @@ body {
             transition: height 1s, width .5s;
         }
         #breakTimeConsoleMenu {
-            background-color: $a5;
+            background-color: $as4;
             display: block;
             top: 10px;
             left: 10px;
@@ -1109,8 +1172,8 @@ body {
 }
 .inOffice {bottom: 0;}
 .outOffice {bottom: -100px;}
-.breakTimeOpen {height: calc(100vh - 50px);background: $a5;}
-.breakTimeClosed {height: 54px;background: $a0;}
+.breakTimeOpen {height: calc(100vh - 50px);background: $as5;}
+.breakTimeClosed {height: 54px;background: $ad2;}
 
 
 
@@ -1156,6 +1219,7 @@ body {
     }
     #userConsoleSidebar {
         width: calc(100% - 65px);
+        div {width: 100%;}
     }
     .consoleWithDash {
         width: calc(100% - 40px);
@@ -1210,15 +1274,18 @@ body {
     .consoleSidebarOpen {
         width: calc(100% - 315px);
     }
+    // Console Responsive
     #userConsoleSidebar {
-        width: 250px;
+        width: 300px;
+        div {width: calc(100% - 50px);}
     }
-
+    
+    
     // Breaktime
     #breakTimeConsoleMenu {
         width: 280px;
     }
-
+    
 }
 
 // Narrow Tablet - Light Orange (Nav, Sidebar, Breaktime) [Accountability: ] -------------------------------------------------------------------------------------------------------------------------
@@ -1243,8 +1310,12 @@ body {
     // #navBody {
     //     width: 595px;
     // }
-
-
+        
+    // Console Responsive
+    #userConsoleSidebar {
+        width: 300px;
+        div {width: calc(100% - 50px);}
+    }
 
     // BreakTime Responsive
     #breakTimeConsoleDesk {
@@ -1311,7 +1382,7 @@ body {
         width: calc(100% - 415px);
     }
     #userConsoleSidebar {
-        width: 350px;
+        width: 400px;
     } 
 }
 

@@ -87,7 +87,9 @@ function Toolkit() {return (
             <span alt='Office Settings'></span>
             <span alt='Help Desk Lite'></span>
         </div>
-        <div id='toolkitTitle'>Agenda</div>
+        <div id='toolkitTitle'>
+            <input type='text'></input>
+        </div>
         <div id='toolkitProgress'><span id='toolkitProgressBar'></span></div>
         <div id='toolkitBody'>
 

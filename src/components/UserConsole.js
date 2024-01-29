@@ -6,29 +6,29 @@ export default function UserConsole() {
             {/* adminConsoleState userConsoleState     userConsoleOpen userConsoleClosed       consoleWithDash consoleWithoutDash*/}
             <div id="userConsoleHead">
                 <div>
-                    <span className='userConsoleTabObject'>
-                        <span>Period</span>
+                    <span className='userConsoleTabObject userConsoleTabActive'>
+                        <span>Console Title</span>
                         <span>1235</span>
 
                     </span>
                     <span className='userConsoleTabObject'>
-                        <span>Pooky</span>
+                        <span>Console Title</span>
                         <span>112225</span>
                     </span>
                     <span className='userConsoleTabObject'>
-                        <span></span>
+                        <span>Console Title</span>
                         <span>12045</span>
                     </span>
                     <span className='userConsoleTabObject'>
-                        <span></span>
+                        <span>Console Title</span>
                         <span>45</span>
                     </span>
                     <span className='userConsoleTabObject'>
-                        <span></span>
+                        <span>Console Title</span>
                         <span>62</span>
                     </span>
                     <span className='userConsoleTabObject'>
-                        <span></span>
+                        <span>Consoleboop Title </span>
                         <span></span>
                     </span>
                     <span className='userConsoleTabObject'>
@@ -40,12 +40,15 @@ export default function UserConsole() {
                         <span></span>
                     </span>
                 </div>
-                <div>DESIGNER CONSOLE</div>
+                <div> </div>
                 <div></div>
                 <div></div>
             </div>
             <div id='userConsoleSidebar'>
-                <div></div>
+                <div><br/></div>
+                <div><br/></div>
+                <div><br/></div>
+                <div><br/></div>
                 <div>
                     <br/>
 
@@ -54,7 +57,7 @@ export default function UserConsole() {
             {/* consoleSidebarOpen consoleSidebarClosed */}
             <div id='userConsoleDesk' className='consoleSidebarOpen'>
 
-                </div>
+            </div>
 
 
         </div>
