@@ -59,15 +59,15 @@ table {
 
 // Changeables
 
-$baseBright: 0%;
+$baseBright: 5%; // 0-30%
 
-$themehue:   0;
+$themehue:   330;
 $accenthue:  320;
 $alerthue:   30;
 
 $themesat:  10%; // 0-50%
 $accentsat: 35%; // ~20-90%, must be 20% more than theme
-$alertsat:  45%; // ~30-100%, must be 30% more than accent 
+$alertsat:  65%; // ~50-100%, must be 30% more than accent 
 
 
 
@@ -89,8 +89,8 @@ $LVX: calc($baseBright + 70%);
 
 // Desaturation Calculations 
 $themeupsat:  calc($themesat + 5%);
-$accentdesat: calc($accentsat - 15%); 
-$alertdesat:   calc($alertsat - 25%);
+$accentdesat: calc($accentsat - 10%); 
+$alertdesat:   calc($alertsat - 20%);
 
 // Theme Shades
 
@@ -221,16 +221,16 @@ body {
     background-color: $ad2;
 }
 
-.rootDashVisitor {
+.dashTypeVisitor {
     
 }
-.rootDashMember {
+.dashTypeMember {
     
 }
-.rootDashScholar {
+.dashTypeScholar {
     
 }
-.rootDashAdmin {
+.dashTypeAdmin {
     
 }
 
@@ -709,7 +709,7 @@ body {
         top: 0;
         left: 0;
         display: grid;
-        grid-template-rows: 40px 10px 40px;
+        grid-template-rows: 40px 16px 40px;
         grid-template-columns: calc(100% - 40px) 40px;
         grid-template-areas: "consoleTabs consoleTabs" "consoleProgressBar consoleProgressBar" "consoleHeader consoleRefresh" ;
         div:nth-child(1) {
@@ -776,19 +776,30 @@ body {
             // margin: 5px;
             right: 5px;
             position: absolute;
-            top: 5px;
+            top: 2.5px;
             border-radius: 4px;
             transition: width .5s;
             &:hover {
-                width: 100px;
+                width: 300px;
             }
         }
         div:nth-child(4) {
             grid-area: consoleProgressBar;
-            background-color: $ats7;
-            width: 100%;
-            height: 8px;
+            background-color: $t4;
+            width: calc(100% - 8px);
+            margin: 4px;
+            border-radius: 4px;
+            height: 10px;
             cursor: default;
+            span {
+                height: 6px;
+                border-radius: 4px;
+                display: block;
+                margin: 2px;
+                width: 30%;
+                transition: width .5s;
+                background-color: $ats8;
+            }
         }
     }
 
@@ -989,7 +1000,7 @@ body {
             display: inline-block;
             margin: 0 0 4px 3px;
             position: relative;
-            background-color: $as5;
+            background-color: $as6;
             border-radius: 2px;
         }
     }
@@ -1057,7 +1068,7 @@ body {
         width: 30px;
         height: 30px;
         display: block;
-        background-color: $ats9;
+        background-color: $ad9;
         border-radius: 4px;
         position: absolute;
         transition: width .5s;
@@ -1078,24 +1089,24 @@ body {
 
             #helpDeskChats {
                 transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
-                background-color: $ats3;
+                background-color: $atd3;
                 display: block;
                 overflow: hidden;
                 position: absolute;
                 border-radius: 4px;
                 margin: 0;               
-                top: 10px;
-                left: 10px;
+                bottom: 24px;
+                right: 10px;
             }
-            #helpDeskForm {
+            #helpDeskSidebar {
                 transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
                 display: block;
                 border-radius: 4px;
-                background-color: $ats6;
+                background-color: $atd6;
                 overflow: hidden;
                 position: absolute;
-                bottom: 24px;
-                right: 10px;
+                top: 10px;
+                left: 10px;
             }
             div:nth-child(1) {
                 grid-area: button;
@@ -1106,7 +1117,7 @@ body {
             width: calc(100vw - 16px);
             right: 3px;
             bottom: 3px;
-            background-color: $ats4;
+            background-color: $atd4;
             box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
             cursor: default;
         }
@@ -1114,7 +1125,7 @@ body {
             height: calc(100vh - 66px);
             right: 3px;
             bottom: 3px;
-            background-color: $ats4;
+            background-color: $atd4;
             box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
             cursor: default;
         }
@@ -1135,9 +1146,9 @@ body {
             bottom: 15px;
         }
 
-        &:hover {
-            width: 200px;
-        }
+        // &:hover {
+        //     width: 200px;
+        // }
 
         
     }
@@ -1188,7 +1199,7 @@ body {
 
 
 // Narrow Smartphone - Light Red (Nav, Console, Sidebar, Admin, Help Desk, Breaktime, Dashboard, Account) -------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 10px) {
+@media only screen and (min-width: 0px) {
     // Indicator
     #userThumb {background: hsl(0, 70%, 60%);}
 
@@ -1239,19 +1250,6 @@ body {
     }
 
 
-
-    // Help Desk Responsive
-    #helpDeskChats {
-        height: calc(100% - 445px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskForm {
-        height: 400px;
-        width: calc(100% - 55px);
-    }
-
-
-
     // BreakTime Responsive
     #breakTimeConsoleDesk {
         width: calc(100% - 20px);
@@ -1263,7 +1261,6 @@ body {
     }
 
 }
-
 // Wide Smartphone - Dark Red (Console, Breaktime) [Accountability: ]
 @media only screen and (min-width: 300px) {
     // Indicator
@@ -1287,7 +1284,6 @@ body {
     }
     
 }
-
 // Narrow Tablet - Light Orange (Nav, Sidebar, Breaktime) [Accountability: ] -------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 600px) {
     // Indicator
@@ -1337,7 +1333,6 @@ body {
     }
 
 }
-
 // Wide Tablet - Dark Orange () [Accountability: ]
 @media only screen and (min-width: 900px) {
     // Indicator
@@ -1349,19 +1344,10 @@ body {
 
 
 }
-
 // Narrow Laptop - Light Green (Console, Help Desk, Sidebar) [Accountability: ] --------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1200px) {
     // Indicator
     #userThumb {background: hsl(102, 70%, 60%);}
-
-    // Help Desk Responsive
-    #helpDeskChats {
-        width: calc(100% - 360px);
-    }
-    #helpDeskForm {
-        width: 300px;
-    }
 
     // Sidebar Responsive
     .userDashMini {
@@ -1385,7 +1371,6 @@ body {
         width: 400px;
     } 
 }
-
 // Wide Laptop - Dark Green (Sidebar) [Accountability: ]
 @media only screen and (min-width: 1500px) {
     // Indicator
@@ -1398,25 +1383,14 @@ body {
 
 
 }
-
 // Narrow Desktop - Light Blue (HelpDesk) [Accountability: ] -------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1800px) {
     // Indicator
     #userThumb {background: hsl(206, 70%, 60%);}
 
 
-    // Help Desk Responsive
-    #helpDeskChats {
-        height: calc(100% - 34px);
-        width: calc(100% - 420px);
-    }
-    #helpDeskForm {
-        height: calc(100% - 34px);
-        width: 360px;
-    }
 
 }
-
 // Wide Desktop - Dark Blue () [Accountability: ]
 @media only screen and (min-width: 2100px) {
     // Indicator
@@ -1426,7 +1400,6 @@ body {
 
 
 }
-
 // Narrow Ultrawide - Light Purple (Console Sidebar) -----------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 2400px) {
     // Indicator
@@ -1435,7 +1408,6 @@ body {
 
     
 }
-
 // Medium Ultrawide - Dark Purple (Toolkit)
 @media only screen and (min-width: 2700px) {
     // Indicator
@@ -1454,7 +1426,6 @@ body {
         width: calc(100vw - 916px);
     }
 }
-
 // Wide Ultrawide - Black (Toolkit)
 @media only screen and (min-width: 3000px) {
     // Indicator
@@ -1483,38 +1454,56 @@ body {
 // Minimum Height - Red ()
 @media only screen and (min-height: 10px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: red;}
+    #temporaryHeightIndicator {background-color: hsl(0, 70%, 50%);}
 
 
+
+
+}
+// Mini Screens - Orange ()
+@media only screen and (min-height: 300px) {
+    // Indicator 
+    #temporaryHeightIndicator {background-color: hsl(30, 70%, 50%);}
 
 
 }
 // Short Screens - Yellow ()
-@media only screen and (min-height: 400px) {
+@media only screen and (min-height: 600px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: yellow;}
+    #temporaryHeightIndicator {background-color: hsl(60, 70%, 50%);}
 
 
 }
 // Medium Screens - Green ()
-@media only screen and (min-height: 800px) {
+@media only screen and (min-height: 900px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: green;}
+    #temporaryHeightIndicator {background-color: hsl(120, 70%, 50%);}
 
+    
 
 }
 // Tall Screens - Blue ()
 @media only screen and (min-height: 1200px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: blue;}
+    #temporaryHeightIndicator {background-color: hsl(200, 70%, 50%);}
 
     
 
 }
+
 // Ultratall Screens - Purple ()
-@media only screen and (min-height: 1600px) {
+@media only screen and (min-height: 1500px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: purple;}
+    #temporaryHeightIndicator {background-color: hsl(300, 70%, 30%);}
+
+    
+
+}
+
+// Portrait Desktop Screens - White ()
+@media only screen and (min-height: 1800px) {
+    // Indicator 
+    #temporaryHeightIndicator {background-color: white;}
 
     
 
@@ -1542,83 +1531,87 @@ body {
 @media only screen and (min-height: 10px) and (min-width: 10px) {
 
     #helpDeskChats {
-        height: calc(100% - 195px);
+        height: calc(100% - 85px);
+        width: calc(100% - 20px);
     }
-    #helpDeskForm {
-        height: 150px;
+    #helpDeskSidebar {
+        width: calc(100% - 20px);
     }
-
-}
-@media only screen and (min-height: 400px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 295px);
-    }
-    #helpDeskForm {
-        height: 250px;
-    }
-
-}
-@media only screen and (min-height: 800px) and (min-width: 10px) {
+    .helpDeskSidebarOpen {height: calc(100% - 34px);}
+    .helpDeskSidebarClosed {height: 40px;}
+} // Small Red and Big 
+@media only screen and (min-height: 300px) and (min-width: 10px) {
 
     #helpDeskChats {
-        height: calc(100% - 445px);
+        height: calc(100% - 85px);
+        width: calc(100% - 20px);
     }
-    #helpDeskForm {
-        height: 400px;
-    }    
-}
+    #helpDeskSidebar {
+        width: calc(100% - 20px);
+    }
+    .helpDeskSidebarOpen {height: calc(100% - 34px);}
+    .helpDeskSidebarClosed {height: 40px;}
+} // Small Orange and Big 
+@media only screen and (min-height: 600px) and (min-width: 10px) {
+
+    #helpDeskChats {
+        height: calc(100% - 85px);
+        width: calc(100% - 20px);
+    }
+    #helpDeskSidebar {
+        width: calc(100% - 20px);
+    }
+    .helpDeskSidebarOpen {height: calc(100% - 34px);}
+    .helpDeskSidebarClosed {height: 40px;}
+} // Small Yellow and Big 
+@media only screen and (min-height: 900px) and (min-width: 10px) {
+
+    #helpDeskChats {
+        height: calc(100% - 85px);
+        width: calc(100% - 20px);
+    }
+    #helpDeskSidebar {
+        width: calc(100% - 20px);
+    }
+    .helpDeskSidebarOpen {height: calc(100% - 34px);}
+    .helpDeskSidebarClosed {height: 40px;}
+} // Small Green and Big 
 @media only screen and (min-height: 1200px) and (min-width: 10px) {
 
     #helpDeskChats {
-        height: calc(100% - 545px);
+        height: calc(100% - 85px);
+        width: calc(100% - 20px);
     }
-    #helpDeskForm {
-        height: 500px;
-    }    
-}
-
-
-@media only screen and (min-height: 10px) and (min-width: 1200px) {
+    #helpDeskSidebar {
+        width: calc(100% - 20px);
+    }
+    .helpDeskSidebarOpen {height: calc(100% - 34px);}
+    .helpDeskSidebarClosed {height: 40px;}
+} // Small Blue and Big 
+@media only screen and (min-height: 1500px) and (min-width: 10px) {
 
     #helpDeskChats {
-        height: calc(100% - 34px);
+        height: calc(100% - 85px);
+        width: calc(100% - 20px);
     }
-    #helpDeskForm {
-        height: calc(100% - 34px);
+    #helpDeskSidebar {
+        width: calc(100% - 20px);
     }
-
-}
-@media only screen and (min-height: 400px) and (min-width: 1200px) {
+    .helpDeskSidebarOpen {height: calc(100% - 34px);}
+    .helpDeskSidebarClosed {height: 40px;}
+} // Small Purple and Big 
+@media only screen and (min-height: 1800px) and (min-width: 10px) {
 
     #helpDeskChats {
-        height: calc(100% - 34px);
+        height: calc(100% - 85px);
+        width: calc(100% - 20px);
     }
-    #helpDeskForm {
-        height: calc(100% - 34px);
+    #helpDeskSidebar {
+        width: calc(100% - 20px);
     }
-
-}
-@media only screen and (min-height: 800px) and (min-width: 1200px) {
-
-    #helpDeskChats {
-        height: calc(100% - 34px);
-    }
-    #helpDeskForm {
-        height: calc(100% - 34px);
-    }    
-}
-@media only screen and (min-height: 1200px) and (min-width: 1200px) {
-
-    #helpDeskChats {
-        height: calc(100% - 34px);
-    }
-    #helpDeskForm {
-        height: calc(100% - 34px);
-    }    
-}
-
-
+    .helpDeskSidebarOpen {height: calc(100% - 34px);}
+    .helpDeskSidebarClosed {height: 40px;}
+} // Small White and Big 
 
 
 

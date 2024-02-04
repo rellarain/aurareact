@@ -56,12 +56,15 @@ function AdminFooter() {return (
 )}
 
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskClosed'>
+    <div id='helpDeskConsole' className='helpDeskOpen'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
-        <section id='helpDeskChats'></section>
-        <div id='helpDeskForm'>
-
+        <section id='helpDeskChats'>
+            this is where I need to put the user specific content that is generated when selecting different conversation tabs
+        </section>
+        <div id='helpDeskSidebar' className='helpDeskSidebarClosed'>
+        {/* helpDeskSidebarOpen helpDeskSidebarClosed */}
+            this is where I need to put the tools for the admin (link creator, assisted forms, )
         </div>
     </div>
 )}

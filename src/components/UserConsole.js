@@ -40,19 +40,16 @@ export default function UserConsole() {
                         <span></span>
                     </span>
                 </div>
-                <div> </div>
                 <div></div>
                 <div></div>
+                <div> <span></span> </div>
             </div>
             <div id='userConsoleSidebar'>
                 <div><br/></div>
                 <div><br/></div>
                 <div><br/></div>
                 <div><br/></div>
-                <div>
-                    <br/>
-
-                </div>
+                <div><br/></div>
             </div>
             {/* consoleSidebarOpen consoleSidebarClosed */}
             <div id='userConsoleDesk' className='consoleSidebarOpen'>
