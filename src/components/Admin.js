@@ -1,7 +1,9 @@
 import React from 'react';
+import useState from 'react';
+
 
 export default function Admin() {return (
-    <div className=''>
+    <div>
         <Sidebar />
         <AdminFooter />
     </div>
@@ -9,7 +11,17 @@ export default function Admin() {return (
 
 
 
-function AdminFooter() {return (
+function AdminFooter() {
+    
+    // const [isActive, setActive] = useState("false");
+    // const ToggleClass = () => {
+    //     setActive(!isActive);
+    // };
+    
+    
+
+    
+    return (
     <div id= "adminFooter" className='inOffice breakTimeClosed'>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
         <div id="workWeekTimer">
@@ -38,9 +50,7 @@ function AdminFooter() {return (
             BREAKTIME
         </div>
         <div id='TKtoggle'>
-            <div id='TKtoggleButton' className='TKtoggleClosed'>
-                {/* TKtoggleOpen TKtoggleClosed TKtoggleNone */}
-            </div>
+            <TKToggleButton />
         </div>
         <div id='helpDeskAnchor'>
             <HelpDesk/>
@@ -55,8 +65,14 @@ function AdminFooter() {return (
     </div>
 )}
 
+function TKToggleButton() { return (<div id='TKtoggleButton' className='TKtoggleClosed'>
+    {/* TKtoggleOpen TKtoggleClosed TKtoggleNone {isActive ? "TKtoggleOpen" : "TKtoggleClosed"} */}
+
+    </div>
+    )}
+
 function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskOpen'>
+    <div id='helpDeskConsole' className='helpDeskClosed'>
         {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
         <div></div>
         <section id='helpDeskChats'>
