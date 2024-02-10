@@ -1,5 +1,5 @@
 import React from 'react';
-import useState from 'react';
+import {useState} from 'react';
 import ReactDom from 'react-dom/client';
 import './styling/style.css';
 
@@ -14,7 +14,7 @@ import Scholar from "./components/Scholar";
 ReactDom.createRoot(document.getElementById('root')).render(
     <div id='rootDash' className='nightMode'>
         {/* rootDashVisitor rootDashMember rootDashScholar rootDashAdmin */}
-        {/* dayMode lightMode */}
+        {/* dayMode nightMode */}
         <Admin />
         <Scholar />
         <Header />

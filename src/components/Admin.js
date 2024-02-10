@@ -1,5 +1,4 @@
-import React from 'react';
-import useState from 'react';
+import React, { useState } from 'react';
 
 
 export default function Admin() {return (
@@ -13,16 +12,18 @@ export default function Admin() {return (
 
 function AdminFooter() {
     
-    // const [isActive, setActive] = useState("false");
-    // const ToggleClass = () => {
-    //     setActive(!isActive);
-    // };
-    
+   
+    const [BTConsoleClosed, setBTConsoleClosed] = useState(true);
+
+    function handleBTConsoleClosed() {
+        setBTConsoleClosed(!BTConsoleClosed);
+        // alert("it worked!");
+    }
     
 
     
     return (
-    <div id= "adminFooter" className='inOffice breakTimeClosed'>
+    <div id= "adminFooter" className={BTConsoleClosed ? "breakTimeClosed" : "breakTimeOpen"}>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
         <div id="workWeekTimer">
             <span></span>
@@ -46,44 +47,21 @@ function AdminFooter() {
             <span></span>
             <span></span>
         </div>
-        <div id='breakTimeHeader'>
+        <div id='breakTimeHeader' onClick={handleBTConsoleClosed}>
             BREAKTIME
-        </div>
-        <div id='TKtoggle'>
-            <TKToggleButton />
-        </div>
-        <div id='helpDeskAnchor'>
-            <HelpDesk/>
         </div>
         <div id='breakTimeConsole'>
             
-            <div id="breakTimeConsoleMenu"></div>
-            <div id="breakTimeConsoleDesk"></div>
+            <div id="breakTimeConsoleMenu">need to add a header that closes the breaktime console and displays the time, used breaktime, earned breaktime, and unearned breaktime</div>
+            <div id="breakTimeConsoleDesk">need to add a messenger component that displays active users on team and in connections, task lists for ongoing projects outside of work, </div>
 
         </div>
 
     </div>
 )}
 
-function TKToggleButton() { return (<div id='TKtoggleButton' className='TKtoggleClosed'>
-    {/* TKtoggleOpen TKtoggleClosed TKtoggleNone {isActive ? "TKtoggleOpen" : "TKtoggleClosed"} */}
 
-    </div>
-    )}
 
-function HelpDesk() {return (
-    <div id='helpDeskConsole' className='helpDeskClosed'>
-        {/* helpDeskOpen helpDeskOpenSB helpDeskClosed helpDeskNone */}
-        <div></div>
-        <section id='helpDeskChats'>
-            this is where I need to put the user specific content that is generated when selecting different conversation tabs
-        </section>
-        <div id='helpDeskSidebar' className='helpDeskSidebarClosed'>
-        {/* helpDeskSidebarOpen helpDeskSidebarClosed */}
-            this is where I need to put the tools for the admin (link creator, assisted forms, )
-        </div>
-    </div>
-)}
 
 
 
@@ -111,7 +89,7 @@ function Toolkit() {return (
         </div>
         <div id='toolkitProgress'><span id='toolkitProgressBar'></span></div>
         <div id='toolkitBody'>
-
+            this is going to be turned into help desk so it can run alongside any other academy tasks; moving all training/resources to a scholar console
 
 
 

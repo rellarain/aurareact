@@ -61,8 +61,8 @@ table {
 
 $baseBright: 20%; // 0-30%
 
-$themehue:   330;
-$accenthue:  320;
+$themehue:   20;
+$accenthue:  240;
 $alerthue:   30;
 
 $themesat:  10%; // 0-50%
@@ -235,6 +235,8 @@ body {
 
 
 // COLOR MODE SETTINGS
+// Night Mode: text should always be lighter than the background
+// Day Mode: text should always be darker than the background
 
 
 .nightMode {
@@ -275,7 +277,6 @@ body {
             background-color: $as4;
             &:hover {
                 background-color: $as6;
-                box-shadow: 0 0 8px 2px $atsX;
             }
         }
         #navPage {
@@ -319,10 +320,10 @@ body {
         p {color: $t5;}
     }
     #userConsole {
-        background-color: $t1;
+        background-color: $tu1;
         box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
 
-        #userConsoleDesk {background-color: $t4;box-shadow: inset 0 0 0 5px $t4;}
+        #userConsoleDesk {background-color: $t4; box-shadow: inset 0 0 0 5px $t4;}
         #userConsoleHead {
             background-color: $t4;
             #userConsoleTitle {color: $t2;}
@@ -334,9 +335,9 @@ body {
                     span:nth-child(2) {color: $t8;}
                 }
                 .userConsoleTabActive {
-                    background-color: $t1;
-                    span:nth-child(1) {color: $t6}
-                    span:nth-child(2) {color: $t9}
+                    background-color: $tu1;
+                    span:nth-child(1) {color: $tu6}
+                    span:nth-child(2) {color: $tu9}
                 }
             }
             div:nth-child(3) {background-color: $t2;}
@@ -344,22 +345,28 @@ body {
         }
         #userConsoleSidebar {
             background-color: $t0;
-            div {
-                color: $t9; 
-                background-color: $t2;
+            ul {
+                background-color: $t2; 
+                li {
+                    background-color: $tu1; 
+                    color: $tu8;
+                    span {background-color: $tu6; color: $tu0;}
+                    span:first-child {background-color: $t4; color: $t0;}
+                }
+                li:first-child {background-color: $t0; color: $t8;}
             }
             &::-webkit-scrollbar {background-color: $t0;}
-            &::-webkit-scrollbar-thumb {background-color: $t4; border-color: $t0;}
+            &::-webkit-scrollbar-thumb {background-color: $tu3; border-color: $t0;}
         }
     }
     #sidebar {
-        background-color: $ad0;
+        background-color: $atd0;
         #toolkit {
             background-color: $ad4;
             box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
             #toolkitHead {
                 background-color: $ad5;
-                span {background-color: $ad2; &:hover {background-color: $ad3;}}
+                span {background-color: $ad2; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.492); &:hover {background-color: $ad3;}}
                 .openTab {background-color: $ad1; &:hover {background-color: $ad1;}}
             }
             #toolkitTitle {
@@ -382,9 +389,9 @@ body {
     #adminFooter {
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
         #workWeekTimer {
-            background-color: $ad4;
+            background-color: $atd4;
             span {
-                background-color: $as1;
+                background-color: $ats1;
             }
         }
         #TKtoggle {
@@ -403,10 +410,10 @@ body {
             }
         }
         #breakTimeHeader {
-            color: $ad4;
+            color: $atd4;
         }
         #helpDeskAnchor {
-            background-color: $ad9;
+            background-color: $atd9;
             #helpDeskConsole {
                 #helpDeskChats {
                     background-color: $atd3;
@@ -431,18 +438,18 @@ body {
             }
         }
         #breakTimeConsole {
-            background: $ad0;
+            background: $atd0;
             #breakTimeConsoleDesk {
-                background-color: $ad3;
+                background-color: $atd3;
             }
             #breakTimeConsoleMenu {
-                background-color: $as5;
+                background-color: $ats5;
             }
     
         }
     }
-    .breakTimeOpen {background: $ad4;}
-    .breakTimeClosed {background: $ad1;}
+    .breakTimeOpen {background: $atd4;}
+    .breakTimeClosed {background: $atd1;}
 }
 
 
@@ -484,7 +491,6 @@ body {
             background-color: $as2;
             &:hover {
                 background-color: $as3;
-                box-shadow: 0 0 8px 2px $ats9;
             }
         }
         #navPage {
@@ -567,6 +573,7 @@ body {
             &::-webkit-scrollbar {background-color: tu4;}
             &::-webkit-scrollbar-thumb {background-color: $tu1; border-color: $tu4;}
         }
+        
     }
     #sidebar {
         background-color: $ad2;
@@ -976,7 +983,6 @@ body {
     right: 5px;
 }
 
-
 // Main Screen
 #userDash {
     position: fixed;
@@ -1036,6 +1042,7 @@ body {
     z-index: 4;
     cursor: pointer;
     width: calc(100% - 20px);
+    height: calc(100% - 89px);
 
     #userConsoleDesk {
         
@@ -1168,6 +1175,43 @@ body {
         div:first-child {
             margin-top: 0px;
         }
+        ul {
+            appearance: none;
+            margin: 5px 0 5px 0;
+            padding: 2.5px;
+            border-radius: 4px;
+            width: calc(100% - 5px);
+            li {
+                appearance: none;
+                margin: 5px;
+                padding: 5px;
+                letter-spacing: 1px;
+                border-radius: 4px;
+                font-size: 16px;
+                span {
+                    padding: 5px;
+                    font-size: 16px;
+                    width: calc(100% - 10px);
+                    border-radius: 4px;
+                    display: block;
+                    margin-top: 5px;
+                    
+                }
+                span:first-child {
+                    text-transform: uppercase; 
+                    font-weight: 600;
+                    margin-top: 0;
+                }
+            }
+            li:first-child {
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 24px;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+            
+        }
         &::-webkit-scrollbar {appearance: none; width: 15px; }
         &::-webkit-scrollbar-thumb {overflow: hidden; border-radius: 10px; border-width: 5px; border-style: solid;}
     }
@@ -1175,9 +1219,10 @@ body {
 
 }
 .userConsoleOpen {top: 15px;}
-.userConsoleClosed {top: -150vh;}
-.userConsoleState {height: calc(100% - 65px);}
-.adminConsoleState {height: calc(100% - 89px);}
+// .userConsoleClosed {top: -150vh;}
+.userConsoleClosed {top: 80vh;}
+// .userConsoleState {height: calc(100% - 65px);}
+// .adminConsoleState {height: calc(100% - 89px);}
 
 // SCHOLAR --------------------------------------------------------------------------------------------------------------------------------
 #sidebar {
@@ -1289,7 +1334,7 @@ body {
     grid-template-rows: 14px 40px calc(100% - 54px);
     cursor: pointer;
     grid-template-areas: "workWeek workWeek workWeek" "tktoggle breaktimeheader helpdeskanchor" "breaktimeconsole breaktimeconsole breaktimeconsole";
-    
+    bottom: 0;
     #workWeekTimer {
         grid-area: workWeek;
         overflow: hidden;
@@ -1438,8 +1483,10 @@ body {
             position: absolute;
             right: 10px;
             transition: height 1s, width .5s;
+            overflow: hidden;
         }
         #breakTimeConsoleMenu {
+            overflow: hidden;
             display: block;
             top: 10px;
             left: 10px;
@@ -1450,9 +1497,9 @@ body {
 
     }
 }
-.inOffice {bottom: 0;}
-.outOffice {bottom: -100px;}
-.breakTimeOpen {height: calc(100vh - 50px);}
+// .inOffice {}
+// .outOffice {bottom: -100px;}
+.breakTimeOpen {height: calc(100vh - 55px);}
 .breakTimeClosed {height: 54px;}
 
 

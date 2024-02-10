@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Header() {
     
@@ -8,25 +8,32 @@ export default function Header() {
     const communityID = "0000";
     const clusterID = "0000";
     
+    const [accountConsoleClosed, setAccountConsoleClosed] = useState(true);
+
+    function handleAccountConsoleClosed() {
+        setAccountConsoleClosed(!accountConsoleClosed);
+        // alert("it worked!");
+    }
     
     
     return (
-        <header id="userHeader" >
-        <div id='accountConsole' className='accountConsoleClosed'>
+        <header id="userHeader">
+        <div id='accountConsole' className={accountConsoleClosed ? "accountConsoleClosed" : "accountConsoleOpen"}>
             {/* // accountConsoleOpen accountConsoleClosed */}
             <div>
+                {/* Subscription:  */}
+                {/* Role: */}
+                {/* Organization: RegionID, DistrictID, CommunityID, ClusterID */}
+                {/* Privacy: name, subscription/role, images, biography, tags, results, voice,  [id and colors are always public]*/}
                 {/* Name: nickname, firstname, middlename, lastname, suffix */}
                 {/* Color: theme hue, theme sat, accent hue, accent sat, alert hue, alert sat, brightness */}
                 {/* Biography: */}
                 {/* Images: */}
-                {/* Privacy: name, subscription/role, images, biography, tags, results, voice,  [id and colors are always public]*/}
+                {/* Animations: animation speed, animation types (flashes, gradients, glows) */}
                 {/* Tags:  */}
-                {/* Subscription:  */}
-                {/* Organization: RegionID, DistrictID, CommunityID, ClusterID */}
-                {/* Role:  */}
             </div>
         </div>
-        <img src="" alt="" id="userThumb"/>
+        <img src="" alt="" id="userThumb" onClick={handleAccountConsoleClosed} />
         <div id='userName'>{displayName}</div>
         <div id='userID'>
             <span>{regionID}</span>.

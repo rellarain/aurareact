@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
-export default function Navigation() {return (
+export default function Navigation() {
+    
+    const [navClosed, setNavClosed] = useState(true);
+
+    function handleNavClosed() {
+        setNavClosed(!navClosed);
+        // alert("it worked!");
+    }
+    
+    
+    return (
     // navCropClosed navCropPage navCropOpen navCropTools
-    <nav id='navCrop' className='navCropClosed'>
+    <nav id='navCrop' className={navClosed ? "navCropClosed" : "navCropOpen"}>
         {/* Nav Button
                 
             Navigation Console: 
@@ -12,7 +22,7 @@ export default function Navigation() {return (
 
         */}
         <NavigationPanel />
-        <NavigationButton />
+        <button id="navButton" onClick={handleNavClosed} ></button>
 
     </nav>
 )}
@@ -45,10 +55,6 @@ function NavigationPage() { return (
 )}
 
 
-function NavigationButton() { return (
-    <button id="navButton" >
-    </button>
-)}
 
 function NavigationBody() { return (
     <div id="navBody">

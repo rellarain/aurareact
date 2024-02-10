@@ -64,202 +64,217 @@ body {
 }
 
 .nightMode #userHeader {
-  background: hsl(330, 10%, 34%);
+  background: hsl(20, 10%, 34%);
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
 }
 .nightMode #userHeader #accountConsole div {
-  background-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 10%, 20%);
 }
 .nightMode #userHeader #userName {
-  color: hsl(330, 10%, 62%);
+  color: hsl(20, 10%, 62%);
 }
 .nightMode #userHeader #userName:hover {
-  color: hsl(330, 10%, 83%);
-  text-shadow: 0 0 3px hsl(330, 10%, 20%);
+  color: hsl(20, 10%, 83%);
+  text-shadow: 0 0 3px hsl(20, 10%, 20%);
 }
 .nightMode #userHeader #userID {
-  color: hsl(330, 10%, 20%);
+  color: hsl(20, 10%, 20%);
 }
 .nightMode #userHeader #userID span:hover {
-  color: hsl(330, 10%, 62%);
-  text-shadow: 0 0 2px hsl(330, 10%, 20%);
+  color: hsl(20, 10%, 62%);
+  text-shadow: 0 0 2px hsl(20, 10%, 20%);
 }
 .nightMode #userHeader #userClock {
-  background-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 10%, 20%);
 }
 .nightMode #navCrop #navPanel {
-  background: hsl(330, 10%, 20%);
+  background: hsl(20, 10%, 20%);
 }
 .nightMode #navCrop #navButton {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 .nightMode #navCrop #navButton:hover {
-  background-color: hsl(320, 35%, 62%);
-  box-shadow: 0 0 8px 2px hsl(30, 65%, 90%);
+  background-color: hsl(240, 35%, 62%);
 }
 .nightMode #navCrop #navPage {
-  background-color: hsl(320, 35%, 41%);
-  color: hsl(320, 35%, 83%);
+  background-color: hsl(240, 35%, 41%);
+  color: hsl(240, 35%, 83%);
 }
 .nightMode #navCrop #navBody ul {
-  background-color: hsl(320, 35%, 20%);
+  background-color: hsl(240, 35%, 20%);
 }
 .nightMode #navCrop #navBody ul li {
-  color: hsl(320, 35%, 76%);
-  background-color: hsl(320, 35%, 41%);
+  color: hsl(240, 35%, 76%);
+  background-color: hsl(240, 35%, 41%);
 }
 .nightMode #navCrop #navBody ul li:first-child {
-  background-color: hsl(320, 35%, 34%);
-  color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 34%);
+  color: hsl(240, 35%, 76%);
 }
 .nightMode #navCrop #navBody::-webkit-scrollbar {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(240, 35%, 55%);
 }
 .nightMode #navCrop #navBody::-webkit-scrollbar-button {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 .nightMode #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 35%, 41%);
+  background-color: hsl(240, 35%, 41%);
 }
 .nightMode #userDash {
-  background: hsl(330, 10%, 34%);
+  background: hsl(20, 10%, 34%);
   box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
 }
 .nightMode #userDashboard {
-  background-color: hsl(330, 10%, 27%);
+  background-color: hsl(20, 10%, 27%);
 }
 .nightMode #userDashboard p {
-  color: hsl(330, 10%, 55%);
+  color: hsl(20, 10%, 55%);
 }
 .nightMode #userConsole {
-  background-color: hsl(330, 10%, 27%);
+  background-color: hsl(20, 15%, 27%);
   box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
 }
 .nightMode #userConsole #userConsoleDesk {
-  background-color: hsl(330, 10%, 48%);
-  box-shadow: inset 0 0 0 5px hsl(330, 10%, 48%);
+  background-color: hsl(20, 10%, 48%);
+  box-shadow: inset 0 0 0 5px hsl(20, 10%, 48%);
 }
 .nightMode #userConsole #userConsoleHead {
-  background-color: hsl(330, 10%, 48%);
+  background-color: hsl(20, 10%, 48%);
 }
 .nightMode #userConsole #userConsoleHead #userConsoleTitle {
-  color: hsl(330, 10%, 34%);
+  color: hsl(20, 10%, 34%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject {
-  background-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 10%, 20%);
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject span:nth-child(1) {
-  color: hsl(330, 10%, 55%);
+  color: hsl(20, 10%, 55%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject span:nth-child(2) {
-  color: hsl(330, 10%, 76%);
+  color: hsl(20, 10%, 76%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive {
-  background-color: hsl(330, 10%, 27%);
+  background-color: hsl(20, 15%, 27%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive span:nth-child(1) {
-  color: hsl(330, 10%, 62%);
+  color: hsl(20, 15%, 62%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive span:nth-child(2) {
-  color: hsl(330, 10%, 83%);
+  color: hsl(20, 15%, 83%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(3) {
-  background-color: hsl(330, 10%, 34%);
+  background-color: hsl(20, 10%, 34%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(4) {
-  background-color: hsl(330, 10%, 34%);
+  background-color: hsl(20, 10%, 34%);
 }
 .nightMode #userConsole #userConsoleHead div:nth-child(4) span {
   background-color: hsl(30, 65%, 48%);
 }
 .nightMode #userConsole #userConsoleSidebar {
-  background-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 10%, 20%);
 }
-.nightMode #userConsole #userConsoleSidebar div {
-  color: hsl(330, 10%, 83%);
-  background-color: hsl(330, 10%, 34%);
+.nightMode #userConsole #userConsoleSidebar ul {
+  background-color: hsl(20, 10%, 34%);
+}
+.nightMode #userConsole #userConsoleSidebar ul li {
+  background-color: hsl(20, 15%, 27%);
+  color: hsl(20, 15%, 76%);
+}
+.nightMode #userConsole #userConsoleSidebar ul li span {
+  background-color: hsl(20, 15%, 62%);
+  color: hsl(20, 15%, 20%);
+}
+.nightMode #userConsole #userConsoleSidebar ul li span:first-child {
+  background-color: hsl(20, 10%, 48%);
+  color: hsl(20, 10%, 20%);
+}
+.nightMode #userConsole #userConsoleSidebar ul li:first-child {
+  background-color: hsl(20, 10%, 20%);
+  color: hsl(20, 10%, 76%);
 }
 .nightMode #userConsole #userConsoleSidebar::-webkit-scrollbar {
-  background-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 10%, 20%);
 }
 .nightMode #userConsole #userConsoleSidebar::-webkit-scrollbar-thumb {
-  background-color: hsl(330, 10%, 48%);
-  border-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 15%, 41%);
+  border-color: hsl(20, 10%, 20%);
 }
 .nightMode #sidebar {
-  background-color: hsl(320, 25%, 20%);
+  background-color: hsl(30, 45%, 20%);
 }
 .nightMode #sidebar #toolkit {
-  background-color: hsl(320, 25%, 48%);
+  background-color: hsl(240, 25%, 48%);
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
 }
 .nightMode #sidebar #toolkit #toolkitHead {
-  background-color: hsl(320, 25%, 55%);
+  background-color: hsl(240, 25%, 55%);
 }
 .nightMode #sidebar #toolkit #toolkitHead span {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(240, 25%, 34%);
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.492);
 }
 .nightMode #sidebar #toolkit #toolkitHead span:hover {
-  background-color: hsl(320, 25%, 41%);
+  background-color: hsl(240, 25%, 41%);
 }
 .nightMode #sidebar #toolkit #toolkitHead .openTab {
-  background-color: hsl(320, 25%, 27%);
+  background-color: hsl(240, 25%, 27%);
 }
 .nightMode #sidebar #toolkit #toolkitHead .openTab:hover {
-  background-color: hsl(320, 25%, 27%);
+  background-color: hsl(240, 25%, 27%);
 }
 .nightMode #sidebar #toolkit #toolkitTitle {
-  background-color: hsl(320, 25%, 27%);
+  background-color: hsl(240, 25%, 27%);
 }
 .nightMode #sidebar #toolkit #toolkitTitle input {
-  color: hsl(320, 25%, 20%);
-  background-color: hsl(320, 25%, 55%);
+  color: hsl(240, 25%, 20%);
+  background-color: hsl(240, 25%, 55%);
 }
 .nightMode #sidebar #toolkit #toolkitProgress {
-  background-color: hsl(320, 25%, 20%);
+  background-color: hsl(240, 25%, 20%);
 }
 .nightMode #sidebar #toolkit #toolkitProgress #toolkitProgressBar {
   background-color: hsl(30, 65%, 48%);
 }
 .nightMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar {
-  background-color: hsl(320, 35%, 34%);
+  background-color: hsl(240, 35%, 34%);
 }
 .nightMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar-button {
-  background-color: hsl(320, 35%, 27%);
+  background-color: hsl(240, 35%, 27%);
 }
 .nightMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 35%, 69%);
+  background-color: hsl(240, 35%, 69%);
 }
 .nightMode #adminFooter {
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
 }
 .nightMode #adminFooter #workWeekTimer {
-  background-color: hsl(320, 25%, 48%);
+  background-color: hsl(30, 45%, 48%);
 }
 .nightMode #adminFooter #workWeekTimer span {
-  background-color: hsl(320, 35%, 27%);
+  background-color: hsl(30, 65%, 27%);
 }
 .nightMode #adminFooter #TKtoggle {
-  background-color: hsl(320, 25%, 76%);
+  background-color: hsl(240, 25%, 76%);
 }
 .nightMode #adminFooter #TKtoggle .TKtoggleOpen {
-  background: hsl(320, 35%, 48%);
+  background: hsl(240, 35%, 48%);
 }
 .nightMode #adminFooter #TKtoggle .TKtoggleOpen:hover {
-  background: hsl(320, 35%, 62%);
+  background: hsl(240, 35%, 62%);
 }
 .nightMode #adminFooter #TKtoggle .TKtoggleClosed {
-  background: hsl(320, 25%, 34%);
+  background: hsl(240, 25%, 34%);
 }
 .nightMode #adminFooter #TKtoggle .TKtoggleClosed:hover {
-  background: hsl(320, 25%, 48%);
+  background: hsl(240, 25%, 48%);
 }
 .nightMode #adminFooter #breakTimeHeader {
-  color: hsl(320, 25%, 48%);
+  color: hsl(30, 45%, 48%);
 }
 .nightMode #adminFooter #helpDeskAnchor {
-  background-color: hsl(320, 25%, 83%);
+  background-color: hsl(30, 45%, 83%);
 }
 .nightMode #adminFooter #helpDeskAnchor #helpDeskConsole #helpDeskChats {
   background-color: hsl(30, 45%, 41%);
@@ -282,221 +297,220 @@ body {
   background-color: hsl(30, 65%, 55%);
 }
 .nightMode #adminFooter #breakTimeConsole {
-  background: hsl(320, 25%, 20%);
+  background: hsl(30, 45%, 20%);
 }
 .nightMode #adminFooter #breakTimeConsole #breakTimeConsoleDesk {
-  background-color: hsl(320, 25%, 41%);
+  background-color: hsl(30, 45%, 41%);
 }
 .nightMode #adminFooter #breakTimeConsole #breakTimeConsoleMenu {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(30, 65%, 55%);
 }
 .nightMode .breakTimeOpen {
-  background: hsl(320, 25%, 48%);
+  background: hsl(30, 45%, 48%);
 }
 .nightMode .breakTimeClosed {
-  background: hsl(320, 25%, 27%);
+  background: hsl(30, 45%, 27%);
 }
 
 .dayMode #userHeader {
-  background: hsl(330, 10%, 48%);
+  background: hsl(20, 10%, 48%);
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
 }
 .dayMode #userHeader #accountConsole div {
-  background-color: hsl(330, 10%, 34%);
+  background-color: hsl(20, 10%, 34%);
 }
 .dayMode #userHeader #userName {
-  color: hsl(330, 10%, 76%);
+  color: hsl(20, 10%, 76%);
 }
 .dayMode #userHeader #userName:hover {
   color: white;
-  text-shadow: 0 0 3px hsl(330, 10%, 20%);
+  text-shadow: 0 0 3px hsl(20, 10%, 20%);
 }
 .dayMode #userHeader #userID {
-  color: hsl(330, 10%, 20%);
+  color: hsl(20, 10%, 20%);
 }
 .dayMode #userHeader #userID span:hover {
-  color: hsl(330, 10%, 83%);
-  text-shadow: 0 0 2px hsl(330, 10%, 20%);
+  color: hsl(20, 10%, 83%);
+  text-shadow: 0 0 2px hsl(20, 10%, 20%);
 }
 .dayMode #userHeader #userClock {
-  background-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 10%, 20%);
 }
 .dayMode #navCrop #navPanel {
-  background: hsl(320, 35%, 69%);
+  background: hsl(240, 35%, 69%);
 }
 .dayMode #navCrop #navButton {
-  background-color: hsl(320, 35%, 34%);
+  background-color: hsl(240, 35%, 34%);
 }
 .dayMode #navCrop #navButton:hover {
-  background-color: hsl(320, 35%, 41%);
-  box-shadow: 0 0 8px 2px hsl(30, 65%, 83%);
+  background-color: hsl(240, 35%, 41%);
 }
 .dayMode #navCrop #navPage {
-  background-color: hsl(320, 35%, 41%);
-  color: hsl(320, 35%, 83%);
+  background-color: hsl(240, 35%, 41%);
+  color: hsl(240, 35%, 83%);
 }
 .dayMode #navCrop #navBody ul {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 .dayMode #navCrop #navBody ul li {
-  color: hsl(320, 35%, 76%);
-  background-color: hsl(320, 35%, 41%);
+  color: hsl(240, 35%, 76%);
+  background-color: hsl(240, 35%, 41%);
 }
 .dayMode #navCrop #navBody ul li:first-child {
-  background-color: hsl(320, 35%, 34%);
-  color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 34%);
+  color: hsl(240, 35%, 76%);
 }
 .dayMode #navCrop #navBody::-webkit-scrollbar {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(240, 35%, 55%);
 }
 .dayMode #navCrop #navBody::-webkit-scrollbar-button {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 .dayMode #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 35%, 41%);
+  background-color: hsl(240, 35%, 41%);
 }
 .dayMode #userDash {
-  background: hsl(330, 10%, 90%);
+  background: hsl(20, 10%, 90%);
   box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #userDashboard {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 .dayMode #userDashboard p {
-  color: hsl(330, 10%, 48%);
+  color: hsl(20, 10%, 48%);
 }
 .dayMode #userConsole {
-  background-color: hsl(330, 15%, 34%);
+  background-color: hsl(20, 15%, 34%);
   box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
 }
 .dayMode #userConsole #userConsoleDesk {
-  background-color: hsl(330, 15%, 83%);
-  box-shadow: inset 0 0 0 5px hsl(330, 15%, 83%);
+  background-color: hsl(20, 15%, 83%);
+  box-shadow: inset 0 0 0 5px hsl(20, 15%, 83%);
 }
 .dayMode #userConsole #userConsoleHead {
-  background-color: hsl(330, 10%, 55%);
+  background-color: hsl(20, 10%, 55%);
 }
 .dayMode #userConsole #userConsoleHead #userConsoleTitle {
-  color: hsl(330, 10%, 41%);
+  color: hsl(20, 10%, 41%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject {
-  background-color: hsl(330, 10%, 20%);
+  background-color: hsl(20, 10%, 20%);
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject span:nth-child(1) {
-  color: hsl(330, 10%, 55%);
+  color: hsl(20, 10%, 55%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject span:nth-child(2) {
-  color: hsl(330, 10%, 76%);
+  color: hsl(20, 10%, 76%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive {
-  background-color: hsl(330, 15%, 34%);
+  background-color: hsl(20, 15%, 34%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive span:nth-child(1) {
-  color: hsl(330, 15%, 69%);
+  color: hsl(20, 15%, 69%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive span:nth-child(2) {
-  color: hsl(330, 15%, 90%);
+  color: hsl(20, 15%, 90%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(3) {
-  background-color: hsl(330, 10%, 41%);
+  background-color: hsl(20, 10%, 41%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(4) {
-  background-color: hsl(330, 10%, 41%);
+  background-color: hsl(20, 10%, 41%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(4) span {
   background-color: hsl(30, 65%, 62%);
 }
 .dayMode #userConsole #userConsoleSidebar {
-  background-color: hsl(330, 15%, 48%);
+  background-color: hsl(20, 15%, 48%);
 }
 .dayMode #userConsole #userConsoleSidebar div {
-  color: hsl(330, 15%, 27%);
-  background-color: hsl(330, 15%, 76%);
+  color: hsl(20, 15%, 27%);
+  background-color: hsl(20, 15%, 76%);
 }
 .dayMode #userConsole #userConsoleSidebar div:first-child {
-  background-color: hsl(330, 15%, 76%);
+  background-color: hsl(20, 15%, 76%);
 }
 .dayMode #userConsole #userConsoleSidebar::-webkit-scrollbar {
   background-color: tu4;
 }
 .dayMode #userConsole #userConsoleSidebar::-webkit-scrollbar-thumb {
-  background-color: hsl(330, 15%, 27%);
-  border-color: hsl(330, 15%, 48%);
+  background-color: hsl(20, 15%, 27%);
+  border-color: hsl(20, 15%, 48%);
 }
 .dayMode #sidebar {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(240, 25%, 34%);
 }
 .dayMode #sidebar #toolkit {
-  background-color: hsl(320, 25%, 83%);
+  background-color: hsl(240, 25%, 83%);
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #sidebar #toolkit #toolkitHead {
-  background-color: hsl(320, 25%, 76%);
+  background-color: hsl(240, 25%, 76%);
 }
 .dayMode #sidebar #toolkit #toolkitHead span {
-  background-color: hsl(320, 25%, 41%);
+  background-color: hsl(240, 25%, 41%);
 }
 .dayMode #sidebar #toolkit #toolkitHead span:hover {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 .dayMode #sidebar #toolkit #toolkitHead .openTab {
-  background-color: hsl(320, 25%, 55%);
+  background-color: hsl(240, 25%, 55%);
 }
 .dayMode #sidebar #toolkit #toolkitHead .openTab:hover {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(240, 35%, 55%);
 }
 .dayMode #sidebar #toolkit #toolkitTitle {
-  background-color: hsl(320, 25%, 55%);
+  background-color: hsl(240, 25%, 55%);
 }
 .dayMode #sidebar #toolkit #toolkitTitle input {
-  color: hsl(320, 35%, 41%);
-  background-color: hsl(320, 35%, 83%);
+  color: hsl(240, 35%, 41%);
+  background-color: hsl(240, 35%, 83%);
 }
 .dayMode #sidebar #toolkit #toolkitProgress {
-  background-color: hsl(320, 25%, 41%);
+  background-color: hsl(240, 25%, 41%);
 }
 .dayMode #sidebar #toolkit #toolkitProgress #toolkitProgressBar {
   background-color: hsl(30, 65%, 69%);
 }
 .dayMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(240, 35%, 55%);
 }
 .dayMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar-button {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 .dayMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 35%, 90%);
+  background-color: hsl(240, 35%, 90%);
 }
 .dayMode #adminFooter {
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #adminFooter #workWeekTimer {
-  background-color: hsl(320, 25%, 90%);
+  background-color: hsl(240, 25%, 90%);
 }
 .dayMode #adminFooter #workWeekTimer span {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 .dayMode #adminFooter #TKtoggle {
-  background-color: hsl(320, 25%, 76%);
+  background-color: hsl(240, 25%, 76%);
 }
 .dayMode #adminFooter #TKtoggle .TKtoggleOpen {
-  background: hsl(320, 35%, 48%);
+  background: hsl(240, 35%, 48%);
 }
 .dayMode #adminFooter #TKtoggle .TKtoggleOpen:hover {
-  background: hsl(320, 35%, 62%);
+  background: hsl(240, 35%, 62%);
 }
 .dayMode #adminFooter #TKtoggle .TKtoggleClosed {
-  background: hsl(320, 25%, 34%);
+  background: hsl(240, 25%, 34%);
 }
 .dayMode #adminFooter #TKtoggle .TKtoggleClosed:hover {
-  background: hsl(320, 25%, 48%);
+  background: hsl(240, 25%, 48%);
 }
 .dayMode #adminFooter #breakTimeHeader {
-  color: hsl(320, 25%, 55%);
+  color: hsl(240, 25%, 55%);
 }
 .dayMode #adminFooter #helpDeskAnchor {
-  background-color: hsl(320, 25%, 83%);
+  background-color: hsl(240, 25%, 83%);
 }
 .dayMode #adminFooter #helpDeskAnchor #helpDeskConsole #helpDeskChats {
   background-color: hsl(30, 45%, 41%);
@@ -519,19 +533,19 @@ body {
   background-color: hsl(30, 65%, 55%);
 }
 .dayMode #adminFooter #breakTimeConsole {
-  background: hsl(320, 25%, 27%);
+  background: hsl(240, 25%, 27%);
 }
 .dayMode #adminFooter #breakTimeConsole #breakTimeConsoleDesk {
-  background-color: hsl(320, 25%, 41%);
+  background-color: hsl(240, 25%, 41%);
 }
 .dayMode #adminFooter #breakTimeConsole #breakTimeConsoleMenu {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 .dayMode .breakTimeOpen {
-  background: hsl(320, 35%, 55%);
+  background: hsl(240, 35%, 55%);
 }
 .dayMode .breakTimeClosed {
-  background: hsl(320, 25%, 34%);
+  background: hsl(240, 25%, 34%);
 }
 
 #userHeader {
@@ -603,34 +617,34 @@ body {
   transition: boxShadow 1s;
 }
 #userHeader #userClock td:nth-child(32) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(33) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(34) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(35) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(36) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(37) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(38) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(39) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(40) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(41) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(42) {
   background-color: hsl(30, 65%, 62%);
@@ -645,61 +659,61 @@ body {
   background-color: hsl(30, 65%, 48%);
 }
 #userHeader #userClock td:nth-child(49) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(50) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(51) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(52) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(53) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(54) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(55) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(56) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(57) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(58) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(59) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(60) {
   background-color: hsl(30, 65%, 62%);
 }
 #userHeader #userClock td:nth-child(61) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(62) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(63) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(64) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(65) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(66) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(67) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(70) {
   background-color: hsl(30, 65%, 76%);
@@ -732,76 +746,76 @@ body {
   background-color: hsl(30, 65%, 76%);
 }
 #userHeader #userClock td:nth-child(82) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(83) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(84) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(85) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(86) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(87) {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(240, 35%, 62%);
 }
 #userHeader #userClock td:nth-child(88) {
-  background-color: hsl(320, 35%, 76%);
+  background-color: hsl(240, 35%, 76%);
 }
 #userHeader #userClock td:nth-child(89) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(90) {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(240, 35%, 48%);
 }
 #userHeader #userClock td:nth-child(92) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(93) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(94) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(95) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(96) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(97) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(98) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(99) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(100) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(115) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(116) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(117) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(118) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(119) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock td:nth-child(120) {
-  background-color: hsl(330, 10%, 76%);
+  background-color: hsl(20, 10%, 76%);
 }
 #userHeader #userClock .clockNow {
   background-color: white;
@@ -1000,6 +1014,7 @@ body {
   z-index: 4;
   cursor: pointer;
   width: calc(100% - 20px);
+  height: calc(100% - 89px);
 }
 #userConsole #userConsoleDesk {
   height: calc(100% - 108px);
@@ -1128,6 +1143,45 @@ body {
 #userConsole #userConsoleSidebar div:first-child {
   margin-top: 0px;
 }
+#userConsole #userConsoleSidebar ul {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 5px 0 5px 0;
+  padding: 2.5px;
+  border-radius: 4px;
+  width: calc(100% - 5px);
+}
+#userConsole #userConsoleSidebar ul li {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 5px;
+  padding: 5px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+#userConsole #userConsoleSidebar ul li span {
+  padding: 5px;
+  font-size: 16px;
+  width: calc(100% - 10px);
+  border-radius: 4px;
+  display: block;
+  margin-top: 5px;
+}
+#userConsole #userConsoleSidebar ul li span:first-child {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0;
+}
+#userConsole #userConsoleSidebar ul li:first-child {
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
 #userConsole #userConsoleSidebar::-webkit-scrollbar {
   -webkit-appearance: none;
           appearance: none;
@@ -1145,15 +1199,7 @@ body {
 }
 
 .userConsoleClosed {
-  top: -150vh;
-}
-
-.userConsoleState {
-  height: calc(100% - 65px);
-}
-
-.adminConsoleState {
-  height: calc(100% - 89px);
+  top: 80vh;
 }
 
 #sidebar {
@@ -1261,6 +1307,7 @@ body {
   grid-template-rows: 14px 40px calc(100% - 54px);
   cursor: pointer;
   grid-template-areas: "workWeek workWeek workWeek" "tktoggle breaktimeheader helpdeskanchor" "breaktimeconsole breaktimeconsole breaktimeconsole";
+  bottom: 0;
 }
 #adminFooter #workWeekTimer {
   grid-area: workWeek;
@@ -1409,8 +1456,10 @@ body {
   position: absolute;
   right: 10px;
   transition: height 1s, width 0.5s;
+  overflow: hidden;
 }
 #adminFooter #breakTimeConsole #breakTimeConsoleMenu {
+  overflow: hidden;
   display: block;
   top: 10px;
   left: 10px;
@@ -1419,16 +1468,8 @@ body {
   transition: height 1s, width 0.5s;
 }
 
-.inOffice {
-  bottom: 0;
-}
-
-.outOffice {
-  bottom: -100px;
-}
-
 .breakTimeOpen {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 55px);
 }
 
 .breakTimeClosed {

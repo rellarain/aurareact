@@ -1,32 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import UserConsole from './UserConsole';
 
 export default function Dashboard() {
-    
-
-    
-    return (
-    <main id="userDash" className='userDashMax'>
-        {/* userDashMax userDashMini */}
-        <UserConsole />
-        <UserDashboard />
-    </main>
-)}
-
-function UserDashboard() { 
-    const month = "January";
-    const monthday = "1";
-    const year = "2023";
     const time = "8:00";
     const today = new Date();
+    const [toolkitConsoleState, setToolkitConsoleState] = useState(true);
 
+    function handleSetToolkitConsoleState() {
+        setToolkitConsoleState(!toolkitConsoleState);
+        // alert("it worked!");
+    }
     function formatDate(date) {
         return new Intl.DateTimeFormat('en-us', {weekday: 'long', month: 'long', day: '2-digit', year:'numeric'}).format(date);
     }
-   
 
+
+
+    
     return (
-    <div id="userDashboard" >
+    <main id="userDash" className={toolkitConsoleState ? "userDashMax" : "userDashMini"}>
+        {/* userDashMax userDashMini */}
+        <UserConsole />
+        {/* <UserDashboard/> */}
+        <div id="userDashboard" onClick={handleSetToolkitConsoleState} >
         <p>{formatDate(today)} <br/> ~{time} </p>
         {/* <p>NOTICES <br/> organizational changes, individual changes, academy changes</p>
         <p>PERFORMANCE <br/><br/> WORKDAY (today's date)<br/> achievement, activity, adherence, attendance <br/><br/>  WORKWEEK (last 2-7 days in month)<br/> achievement, activity, adherence, attendance, accomplishment <br/><br/>  WORKCYCLE (average daily score of month) <br/> achievement, activity, adequacy, adherence, attendance, accomplishment</p>
@@ -37,6 +33,15 @@ function UserDashboard() {
             
         </section> */}
     </div>
+    </main>
 )}
+
+// function UserDashboard() { 
+    
+   
+
+//     return (
+    
+// )}
 
 
