@@ -46,6 +46,14 @@ export default function Header() {
             {/* community link: community info and member list */}
         </div>
         <table id='userClock'>
+            {/* 
+                To-Do List for Work Clock: 
+                - Change coloring method to make updates from the dashboard activity log more simple
+                - 
+                - 
+                - 
+                - 
+            */}
             <tr>
                 <td alt="12:00 - 12:10 AM" id='temporaryHeightIndicator'></td>
                 <td alt="12:10 - 12:20 AM"></td>

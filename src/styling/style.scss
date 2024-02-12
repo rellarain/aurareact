@@ -59,19 +59,24 @@ table {
 
 // Changeables
 
-$baseBright: 20%; // 0-30%
+$baseBright: 30%; // 0-30%
 
-$themehue:   20;
-$accenthue:  240;
-$alerthue:   30;
+$themehue:  310;
+$accenthue: 330;
+$alerthue:  20;
 
-$themesat:  10%; // 0-50%
-$accentsat: 35%; // ~20-90%, must be 20% more than theme
-$alertsat:  65%; // ~50-100%, must be 30% more than accent 
-
-
+$themesat:  8%; // 0-20%
+$accentsat: 20%; // 0-20%
+$alertsat:  10%; // 0-20% 
 
 
+// Saturation Calculations
+$themesatcalc:  calc($themesat); 
+$accentsatcalc: calc($themesat + 15% + $accentsat); 
+$alertsatcalc:  calc($themesat + $accentsat + 25% + $alertsat); 
+$themeupsat:  calc($themesatcalc + 5%);
+$accentdesat: calc($accentsatcalc - 10%); 
+$alertdesat:  calc($alertsatcalc - 20%);
 
 
 // Lightness Calculations - must be between 0-30
@@ -87,24 +92,19 @@ $LV8: calc($baseBright + 56%);
 $LV9: calc($baseBright + 63%);
 $LVX: calc($baseBright + 70%);
 
-// Desaturation Calculations 
-$themeupsat:  calc($themesat + 5%);
-$accentdesat: calc($accentsat - 10%); 
-$alertdesat:   calc($alertsat - 20%);
 
 // Theme Shades
-
-$t0: hsl($themehue, $themesat, $LV0);
-$t1: hsl($themehue, $themesat, $LV1);
-$t2: hsl($themehue, $themesat, $LV2);
-$t3: hsl($themehue, $themesat, $LV3);
-$t4: hsl($themehue, $themesat, $LV4);
-$t5: hsl($themehue, $themesat, $LV5);
-$t6: hsl($themehue, $themesat, $LV6);
-$t7: hsl($themehue, $themesat, $LV7);
-$t8: hsl($themehue, $themesat, $LV8);
-$t9: hsl($themehue, $themesat, $LV9);
-$tX: hsl($themehue, $themesat, $LVX);
+$t0: hsl($themehue, $themesatcalc, $LV0);
+$t1: hsl($themehue, $themesatcalc, $LV1);
+$t2: hsl($themehue, $themesatcalc, $LV2);
+$t3: hsl($themehue, $themesatcalc, $LV3);
+$t4: hsl($themehue, $themesatcalc, $LV4);
+$t5: hsl($themehue, $themesatcalc, $LV5);
+$t6: hsl($themehue, $themesatcalc, $LV6);
+$t7: hsl($themehue, $themesatcalc, $LV7);
+$t8: hsl($themehue, $themesatcalc, $LV8);
+$t9: hsl($themehue, $themesatcalc, $LV9);
+$tX: hsl($themehue, $themesatcalc, $LVX);
 
 $tu0: hsl($themehue, $themeupsat, $LV0);
 $tu1: hsl($themehue, $themeupsat, $LV1);
@@ -121,17 +121,17 @@ $tuX: hsl($themehue, $themeupsat, $LVX);
 
 
 // Accent Shades
-$as0: hsl($accenthue, $accentsat, $LV0); 
-$as1: hsl($accenthue, $accentsat, $LV1); 
-$as2: hsl($accenthue, $accentsat, $LV2); 
-$as3: hsl($accenthue, $accentsat, $LV3); 
-$as4: hsl($accenthue, $accentsat, $LV4); 
-$as5: hsl($accenthue, $accentsat, $LV5); 
-$as6: hsl($accenthue, $accentsat, $LV6); 
-$as7: hsl($accenthue, $accentsat, $LV7); 
-$as8: hsl($accenthue, $accentsat, $LV8); 
-$as9: hsl($accenthue, $accentsat, $LV9); 
-$asX: hsl($accenthue, $accentsat, $LVX); 
+$as0: hsl($accenthue, $accentsatcalc, $LV0); 
+$as1: hsl($accenthue, $accentsatcalc, $LV1); 
+$as2: hsl($accenthue, $accentsatcalc, $LV2); 
+$as3: hsl($accenthue, $accentsatcalc, $LV3); 
+$as4: hsl($accenthue, $accentsatcalc, $LV4); 
+$as5: hsl($accenthue, $accentsatcalc, $LV5); 
+$as6: hsl($accenthue, $accentsatcalc, $LV6); 
+$as7: hsl($accenthue, $accentsatcalc, $LV7); 
+$as8: hsl($accenthue, $accentsatcalc, $LV8); 
+$as9: hsl($accenthue, $accentsatcalc, $LV9); 
+$asX: hsl($accenthue, $accentsatcalc, $LVX); 
 
 $ad0: hsl($accenthue, $accentdesat, $LV0); 
 $ad1: hsl($accenthue, $accentdesat, $LV1); 
@@ -148,32 +148,32 @@ $adX: hsl($accenthue, $accentdesat, $LVX);
 
 
 // Assessment Shades
-$TTA0: hsl(110, $accentsat, $LV0); $TTG0: hsl(5, $accentsat, $LV0); $TTS0: hsl(230, $accentsat, $LV0); $TTL0: hsl(300, $accentsat, $LV0); $TTX0: hsl(30, $accentsat, $LV0); 
-$TTA1: hsl(110, $accentsat, $LV1); $TTG1: hsl(5, $accentsat, $LV1); $TTS1: hsl(230, $accentsat, $LV1); $TTL1: hsl(300, $accentsat, $LV1); $TTX1: hsl(30, $accentsat, $LV1); 
-$TTA2: hsl(110, $accentsat, $LV2); $TTG2: hsl(5, $accentsat, $LV2); $TTS2: hsl(230, $accentsat, $LV2); $TTL2: hsl(300, $accentsat, $LV2); $TTX2: hsl(30, $accentsat, $LV2); 
-$TTA3: hsl(110, $accentsat, $LV3); $TTG3: hsl(5, $accentsat, $LV3); $TTS3: hsl(230, $accentsat, $LV3); $TTL3: hsl(300, $accentsat, $LV3); $TTX3: hsl(30, $accentsat, $LV3); 
-$TTA4: hsl(110, $accentsat, $LV4); $TTG4: hsl(5, $accentsat, $LV4); $TTS4: hsl(230, $accentsat, $LV4); $TTL4: hsl(300, $accentsat, $LV4); $TTX4: hsl(30, $accentsat, $LV4); 
-$TTA5: hsl(110, $accentsat, $LV5); $TTG5: hsl(5, $accentsat, $LV5); $TTS5: hsl(230, $accentsat, $LV5); $TTL5: hsl(300, $accentsat, $LV5); $TTX5: hsl(30, $accentsat, $LV5); 
-$TTA6: hsl(110, $accentsat, $LV6); $TTG6: hsl(5, $accentsat, $LV6); $TTS6: hsl(230, $accentsat, $LV6); $TTL6: hsl(300, $accentsat, $LV6); $TTX6: hsl(30, $accentsat, $LV6); 
-$TTA7: hsl(110, $accentsat, $LV7); $TTG7: hsl(5, $accentsat, $LV7); $TTS7: hsl(230, $accentsat, $LV7); $TTL7: hsl(300, $accentsat, $LV7); $TTX7: hsl(30, $accentsat, $LV7); 
-$TTA8: hsl(110, $accentsat, $LV8); $TTG8: hsl(5, $accentsat, $LV8); $TTS8: hsl(230, $accentsat, $LV8); $TTL8: hsl(300, $accentsat, $LV8); $TTX8: hsl(30, $accentsat, $LV8); 
-$TTA9: hsl(110, $accentsat, $LV9); $TTG9: hsl(5, $accentsat, $LV9); $TTS9: hsl(230, $accentsat, $LV9); $TTL9: hsl(300, $accentsat, $LV9); $TTX9: hsl(30, $accentsat, $LV9); 
-$TTAX: hsl(110, $accentsat, $LVX); $TTGX: hsl(5, $accentsat, $LVX); $TTSX: hsl(230, $accentsat, $LVX); $TTLX: hsl(300, $accentsat, $LVX); $TTXX: hsl(30, $accentsat, $LVX); 
+$TTA0: hsl(110, $accentsatcalc, $LV0); $TTG0: hsl(5, $accentsatcalc, $LV0); $TTS0: hsl(230, $accentsatcalc, $LV0); $TTL0: hsl(300, $accentsatcalc, $LV0); $TTX0: hsl(30, $accentsatcalc, $LV0); 
+$TTA1: hsl(110, $accentsatcalc, $LV1); $TTG1: hsl(5, $accentsatcalc, $LV1); $TTS1: hsl(230, $accentsatcalc, $LV1); $TTL1: hsl(300, $accentsatcalc, $LV1); $TTX1: hsl(30, $accentsatcalc, $LV1); 
+$TTA2: hsl(110, $accentsatcalc, $LV2); $TTG2: hsl(5, $accentsatcalc, $LV2); $TTS2: hsl(230, $accentsatcalc, $LV2); $TTL2: hsl(300, $accentsatcalc, $LV2); $TTX2: hsl(30, $accentsatcalc, $LV2); 
+$TTA3: hsl(110, $accentsatcalc, $LV3); $TTG3: hsl(5, $accentsatcalc, $LV3); $TTS3: hsl(230, $accentsatcalc, $LV3); $TTL3: hsl(300, $accentsatcalc, $LV3); $TTX3: hsl(30, $accentsatcalc, $LV3); 
+$TTA4: hsl(110, $accentsatcalc, $LV4); $TTG4: hsl(5, $accentsatcalc, $LV4); $TTS4: hsl(230, $accentsatcalc, $LV4); $TTL4: hsl(300, $accentsatcalc, $LV4); $TTX4: hsl(30, $accentsatcalc, $LV4); 
+$TTA5: hsl(110, $accentsatcalc, $LV5); $TTG5: hsl(5, $accentsatcalc, $LV5); $TTS5: hsl(230, $accentsatcalc, $LV5); $TTL5: hsl(300, $accentsatcalc, $LV5); $TTX5: hsl(30, $accentsatcalc, $LV5); 
+$TTA6: hsl(110, $accentsatcalc, $LV6); $TTG6: hsl(5, $accentsatcalc, $LV6); $TTS6: hsl(230, $accentsatcalc, $LV6); $TTL6: hsl(300, $accentsatcalc, $LV6); $TTX6: hsl(30, $accentsatcalc, $LV6); 
+$TTA7: hsl(110, $accentsatcalc, $LV7); $TTG7: hsl(5, $accentsatcalc, $LV7); $TTS7: hsl(230, $accentsatcalc, $LV7); $TTL7: hsl(300, $accentsatcalc, $LV7); $TTX7: hsl(30, $accentsatcalc, $LV7); 
+$TTA8: hsl(110, $accentsatcalc, $LV8); $TTG8: hsl(5, $accentsatcalc, $LV8); $TTS8: hsl(230, $accentsatcalc, $LV8); $TTL8: hsl(300, $accentsatcalc, $LV8); $TTX8: hsl(30, $accentsatcalc, $LV8); 
+$TTA9: hsl(110, $accentsatcalc, $LV9); $TTG9: hsl(5, $accentsatcalc, $LV9); $TTS9: hsl(230, $accentsatcalc, $LV9); $TTL9: hsl(300, $accentsatcalc, $LV9); $TTX9: hsl(30, $accentsatcalc, $LV9); 
+$TTAX: hsl(110, $accentsatcalc, $LVX); $TTGX: hsl(5, $accentsatcalc, $LVX); $TTSX: hsl(230, $accentsatcalc, $LVX); $TTLX: hsl(300, $accentsatcalc, $LVX); $TTXX: hsl(30, $accentsatcalc, $LVX); 
 
 
 
 // Alert Shades: Saturated and Desaturated
-$ats0: hsl($alerthue, $alertsat, $LV0);
-$ats1: hsl($alerthue, $alertsat, $LV1);
-$ats2: hsl($alerthue, $alertsat, $LV2);
-$ats3: hsl($alerthue, $alertsat, $LV3);
-$ats4: hsl($alerthue, $alertsat, $LV4);
-$ats5: hsl($alerthue, $alertsat, $LV5);
-$ats6: hsl($alerthue, $alertsat, $LV6);
-$ats7: hsl($alerthue, $alertsat, $LV7);
-$ats8: hsl($alerthue, $alertsat, $LV8);
-$ats9: hsl($alerthue, $alertsat, $LV9);
-$atsX: hsl($alerthue, $alertsat, $LVX);
+$ats0: hsl($alerthue, $alertsatcalc, $LV0);
+$ats1: hsl($alerthue, $alertsatcalc, $LV1);
+$ats2: hsl($alerthue, $alertsatcalc, $LV2);
+$ats3: hsl($alerthue, $alertsatcalc, $LV3);
+$ats4: hsl($alerthue, $alertsatcalc, $LV4);
+$ats5: hsl($alerthue, $alertsatcalc, $LV5);
+$ats6: hsl($alerthue, $alertsatcalc, $LV6);
+$ats7: hsl($alerthue, $alertsatcalc, $LV7);
+$ats8: hsl($alerthue, $alertsatcalc, $LV8);
+$ats9: hsl($alerthue, $alertsatcalc, $LV9);
+$atsX: hsl($alerthue, $alertsatcalc, $LVX);
 
 $atd0: hsl($alerthue, $alertdesat, $LV0);
 $atd1: hsl($alerthue, $alertdesat, $LV1);
@@ -218,20 +218,44 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
+    background-color: $atd0;
 }
 
-.dashTypeVisitor {
-    // ONLY RENDER ACADEMY CONSOLE, LOGIN, AND APPLY
-}
-.dashTypeMember {
-    // RENDER HEADER AND NAVIGATION
-}
-.dashTypeScholar {
-    // RENDER SIDEBAR
-}
-.dashTypeAdmin {
-    // RENDER ADMIN FOOTER
-}
+.rootDashVisitor {
+    
+    #userHeader {display: none; top: -90px;}
+    #navCrop {top: -90px;}
+
+}// ONLY RENDER ACADEMY CONSOLE, LOGIN, AND APPLY
+.rootDashBasic {
+    
+    #userHeader {display: grid; top: 0;}
+    #navCrop {top: 5px;}
+
+}// RENDER HEADER, NAVIGATION ()
+.rootDashMember {
+    
+    #userHeader {display: grid; top: 0;}
+    #navCrop {top: 5px;}
+
+}// RENDER NAVIGATION (Social), 
+.rootDashAssess {
+    
+    #userHeader {display: grid; top: 0;}
+    #navCrop {top: 5px;}
+
+}// RENDER NAVIGATION (Assessment), 
+.rootDashScholar {
+    
+    #userHeader {display: grid; top: 0;}
+    #navCrop {top: 5px;}
+
+}// RENDER NAVIGATION (Scholar), BREAKTIME
+.rootDashAdmin {
+    
+    #userHeader {display: grid; top: 0;}
+    #navCrop {top: 5px;}
+}// RENDER NAVIGATION (Office), 
 
 
 // COLOR MODE SETTINGS
@@ -240,6 +264,7 @@ body {
 
 
 .nightMode {
+    transition: background 1s, color 1s;
     #userHeader {
         background: $t2;
         box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
@@ -271,7 +296,7 @@ body {
     }
     #navCrop {
         #navPanel {
-            background: $t0;
+            background: $ad0;
         }
         #navButton {
             background-color: $as4;
@@ -323,7 +348,7 @@ body {
         background-color: $tu1;
         box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
 
-        #userConsoleDesk {background-color: $t4; box-shadow: inset 0 0 0 5px $t4;}
+        #userConsoleDesk {background-color: $tu4; box-shadow: inset 0 0 0 5px $tu4;}
         #userConsoleHead {
             background-color: $t4;
             #userConsoleTitle {color: $t2;}
@@ -344,19 +369,26 @@ body {
             div:nth-child(4) {background-color: $t2; span {background-color: $ats4;}}
         }
         #userConsoleSidebar {
-            background-color: $t0;
-            ul {
-                background-color: $t2; 
-                li {
-                    background-color: $tu1; 
-                    color: $tu8;
-                    span {background-color: $tu6; color: $tu0;}
-                    span:first-child {background-color: $t4; color: $t0;}
-                }
-                li:first-child {background-color: $t0; color: $t8;}
+            background-color: $tu0;
+            #userConsoleHelp {
+                background-color: $ad4;
             }
-            &::-webkit-scrollbar {background-color: $t0;}
-            &::-webkit-scrollbar-thumb {background-color: $tu3; border-color: $t0;}
+            #consoleSidebarContent {
+                background-color: $tu1;
+
+                ul {
+                    background-color: $tu2; 
+                    li {
+                        background-color: $tu1; 
+                        color: $tu8;
+                        span {background-color: $tu6; color: $tu0;}
+                        span:first-child {background-color: $tu4; color: $tu0;}
+                    }
+                    li:first-child {background-color: $tu0; color: $tu8;}
+                }
+                &::-webkit-scrollbar {background-color: $tu1;}
+                &::-webkit-scrollbar-thumb {background-color: $tu5; border-color: $tu1;}
+            }
         }
     }
     #sidebar {
@@ -454,6 +486,7 @@ body {
 
 
 .dayMode {
+    transition: background 1s, color 1s;
     #userHeader {
         background: $t4;
         box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
@@ -673,12 +706,10 @@ body {
 // Header
 #userHeader {
     position: fixed;
-    top: 0;
     right: 0;
     width: 100%;
     z-index: 11;
-    display: grid;
-    transition: height 1s;
+    transition: height 1s, position .1s 1s;
     grid-template-columns: 40px auto;
     grid-template-rows: auto 20px 20px 10px;
     grid-template-areas: "accountConsole accountConsole" "thumbnail userName" "thumbnail userID" "userClock userClock";
@@ -705,8 +736,11 @@ body {
 
     }
     img {
-        height: 40px;
-        width: 40px;
+        appearance: none;
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+        border-radius: 4px;
         grid-area: thumbnail;
         overflow: hidden;
         cursor: pointer;
@@ -714,7 +748,7 @@ body {
     #userName {
         transition: color .4s, text-shadow .4s;
         letter-spacing: 1.5px;
-        margin: 4px 0 0 5px;
+        margin: 6px 0 0 0;
         grid-area: userName;
         width: max-content;
         line-height: 16px;
@@ -728,7 +762,7 @@ body {
         font-size: 14px;
         width: max-content;
         font-weight: 600;
-        margin: 3px 0 3px 10px;
+        margin: 2px 0 3px 0;
         
         span {
             cursor: pointer;
@@ -736,37 +770,57 @@ body {
             transition: color .4s, text-shadow .4s;
 
         }
+        span:first-child {
+            margin: 0 2px 0 0;
+        }
     }
     #userClock {
         grid-area: userClock;
         width: 100%;
         transition: boxShadow 1s;
 
+        // NIGHT COLORING METHOD 
 
-        // NEED TO COME UP WITH COLORING CONVENTION THAT ALLOWS DAY AND NIGHT MODE
+        // DESATURATED THEME: work clock structure
+        // t0: base color, the progress bar
+        // t8: missed scheduled time
+        // tX: future scheduled time
 
-        // 1- THEME(base color, progress bar)
-        // 5- THEME(missed scheduled time)
-        // 7- THEME(future scheduled time)
+        // SATURATED THEME: member level activity
+        // tu4: assessment activities (catalog, processing, results) 
+        // tu6: social activities (voice, community, district, region) 
+        // tu8: basic activities (portfolio, connections, academy info, account) 
 
-        // 4- ACCENT(more than average work actions, +3)
-        // 6- ACCENT(average work actions, +2)
-        // 8- ACCENT(less than average work actions, +1)
+        // DESATURATED ACCENT: scholar level activity
+        // ad3: training (project, apprentice) 
+        // ad5: evaluation (evaluation) 
+        // ad7: learning (library, course) 
 
-        // 4- ALERT(no break action)
-        // 6- ALERT(multiple break actions)
-        // 8- ALERT(one break action)
+        // SATURATED ACCENT: admin level activity  
+        // as4: high activity (more than average actions submitted, +3) 
+        // as6: medium activity (average range of actions submitted, +2) 
+        // as8: low activity (less than average actions submitted, +1) 
+
+        // DESATURATED ALERT: nonspecific break activity
+        // atd3: backdated break (used retroactively from earned breaktime after missed scheduled time)
+        // atd5: inactivity (automatically used when no work has been submitted and there is available breaktime)
+        // atd7: scheduled break (used on remaining scheduled time when the maximum amount of worktime has been reached)
+
+        // SATURATED ALERT: acountability break activity
+        // ats4: high break activity (multiple break activities completed)
+        // ats6: medium break activity (one break activity completed)
+        // ats8: low break activity (pastime activity)
 
         td:nth-child(32) {background-color: $t8;}
         td:nth-child(33) {background-color: $t8;}
-        td:nth-child(34) {background-color: $t8;}
-        td:nth-child(35) {background-color: $t8;}
-        td:nth-child(36) {background-color: $t8;}
-        td:nth-child(37) {background-color: $as6;}
-        td:nth-child(38) {background-color: $as4;}
-        td:nth-child(39) {background-color: $as6;}
-        td:nth-child(40) {background-color: $as6;}
-        td:nth-child(41) {background-color: $as8;}
+        td:nth-child(34) {background-color: $tu6;}
+        td:nth-child(35) {background-color: $tu6;}
+        td:nth-child(36) {background-color: $tu6;}
+        td:nth-child(37) {background-color: $ad5;}
+        td:nth-child(38) {background-color: $ad3;}
+        td:nth-child(39) {background-color: $ad5;}
+        td:nth-child(40) {background-color: $ad5;}
+        td:nth-child(41) {background-color: $ad7;}
         td:nth-child(42) {background-color: $ats6;}
         td:nth-child(43) {background-color: $ats4;}
         td:nth-child(44) {background-color: $ats6;}
@@ -786,11 +840,11 @@ body {
         td:nth-child(60) {background-color: $ats6;}
         td:nth-child(61) {background-color: $as6;}
         td:nth-child(62) {background-color: $as4;}
-        td:nth-child(63) {background-color: $as6;}
-        td:nth-child(64) {background-color: $as8;}
-        td:nth-child(65) {background-color: $as8;}
-        td:nth-child(66) {background-color: $as6;}
-        td:nth-child(67) {background-color: $as4;}
+        td:nth-child(63) {background-color: $ad5;}
+        td:nth-child(64) {background-color: $ad7;}
+        td:nth-child(65) {background-color: $ad7;}
+        td:nth-child(66) {background-color: $ad5;}
+        td:nth-child(67) {background-color: $ad3;}
 
         td:nth-child(70) {background-color: $ats8;}
         td:nth-child(71) {background-color: $ats4;}
@@ -812,25 +866,25 @@ body {
         td:nth-child(88) {background-color: $as8;}
         td:nth-child(89) {background-color: $as4;}
         td:nth-child(90) {background-color: $as4;}
-        // td:nth-child(91) {background-color: $as4;}
-        td:nth-child(92) {background-color: $t8;}
-        td:nth-child(93) {background-color: $t8;}
-        td:nth-child(94) {background-color: $t8;}
-        td:nth-child(95) {background-color: $t8;}
-        td:nth-child(96) {background-color: $t8;}
-        td:nth-child(97) {background-color: $t8;}
-        td:nth-child(98) {background-color: $t8;}
-        td:nth-child(99) {background-color: $t8;}
-        td:nth-child(100) {background-color: $t8;}
+        td:nth-child(91) {background-color: $as4;}
+        td:nth-child(92) {background-color: $tX;}
+        td:nth-child(93) {background-color: $tX;}
+        td:nth-child(94) {background-color: $tX;}
+        td:nth-child(95) {background-color: $tX;}
+        td:nth-child(96) {background-color: $tX;}
+        td:nth-child(97) {background-color: $tX;}
+        td:nth-child(98) {background-color: $tX;}
+        td:nth-child(99) {background-color: $tX;}
+        td:nth-child(100) {background-color: $tX;}
 
-        td:nth-child(115) {background-color: $t8;}
-        td:nth-child(116) {background-color: $t8;}
-        td:nth-child(117) {background-color: $t8;}
-        td:nth-child(118) {background-color: $t8;}
-        td:nth-child(119) {background-color: $t8;}
-        td:nth-child(120) {background-color: $t8;}
+        td:nth-child(115) {background-color: $tX;}
+        td:nth-child(116) {background-color: $tX;}
+        td:nth-child(117) {background-color: $tX;}
+        td:nth-child(118) {background-color: $tX;}
+        td:nth-child(119) {background-color: $tX;}
+        td:nth-child(120) {background-color: $tX;}
 
-        .clockNow {background-color: white;}
+        // .clockNow {background-color: white;}
 
         // 10 hour shift: 6h40m work (64), 3h20m break (32)
     }
@@ -855,7 +909,7 @@ body {
     overflow: clip;
     border-radius: 5px;
     position: fixed;
-    top: 5px;
+    
     right: 5px;
     z-index: 12;
 
@@ -986,9 +1040,9 @@ body {
 // Main Screen
 #userDash {
     position: fixed;
-    top: 48px;
+    top: 0;
     right: 0;
-    height: calc(100vh - 38px);
+    height: calc(100vh);
     margin: 0;
     z-index: 2;
     overflow: hidden;
@@ -1007,7 +1061,7 @@ body {
     overflow-y: scroll;
     width: calc(100% - 30px);
     right: 0px;
-    top: 5px;
+    top: 53px;
     margin: 15px;
     position: absolute;
     border-radius: 4px;
@@ -1042,11 +1096,11 @@ body {
     z-index: 4;
     cursor: pointer;
     width: calc(100% - 20px);
-    height: calc(100% - 89px);
+    height: calc(100vh - 130px);
 
     #userConsoleDesk {
         
-        height: calc(100% - 108px);
+        height: calc(100% - 145px);
         display: block;
         position: absolute;
         right: 5px;
@@ -1063,14 +1117,15 @@ body {
 
     #userConsoleHead {
         width: 100%;
-        height: 86px;
+        height: 116px;
         position: absolute;
         top: 0;
         left: 0;
+        overflow: hidden;
         display: grid;
-        grid-template-rows: 16px 30px 40px;
+        grid-template-rows: 16px 30px 30px 40px;
         grid-template-columns: calc(100% - 40px) 40px;
-        grid-template-areas: "consoleProgressBar consoleProgressBar" "consoleTitle consoleRefresh" "consoleTabs consoleTabs";
+        grid-template-areas: "consoleProgressBar consoleProgressBar" "consoleTitle consoleRefresh" "consoleTitle consoleTime" "consoleTabs consoleTabs";
         #userConsoleTitle {
             grid-area: consoleTitle;
             width: calc(100% - 5px);
@@ -1097,7 +1152,7 @@ body {
             .userConsoleTabObject {
                 height: 30px;
                 display: flex;
-                margin: 10px 0 0 10px;
+                margin: 10px 5px 0 5px;
                 border-radius: 4px 4px 0 0;
                 padding: 0 10px 0 10px;
                 cursor: pointer;
@@ -1108,18 +1163,23 @@ body {
                     font-size: 16px;
                     font-weight: 600;
                     letter-spacing: 1px;
+                
                 }
                 span:nth-child(2) {
                     padding: 0 0 0 10px;
                 }
+                &:first-child {
+                    margin-left: 10px;
+                }
             }
             .userConsoleTabActive {
-                margin: 5px 0 0 10px;
+                margin: 5px 5px 0 5px;
                 height: 35px;
             }
         }
         div:nth-child(3) {
             grid-area: consoleRefresh;
+            width: calc(100% - 10px);
             width: 30px;
             height: 30px;
             right: 5px;
@@ -1153,7 +1213,7 @@ body {
     }
     #userConsoleSidebar {
         display: block;
-        height: calc(100% - 118px);
+        height: calc(100% - 155px);
         padding: 5px;
         position: absolute;
         left: 30px;
@@ -1161,66 +1221,96 @@ body {
         border-radius: 4px 0 0 4px;
         cursor: default;
         transition: width 1s;
-        overflow-x: hidden;
-        overflow-y: auto;
+        overflow: hidden;
 
-        div {
-            display: block;
-            position: relative;
+
+
+        #userConsoleHelp {
+            overflow: hidden;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            transition: height 1s, width 1s;
             border-radius: 4px;
-            padding: 5px;
-            height: 140px;
-            margin-top: 5px;
-        }
-        div:first-child {
-            margin-top: 0px;
-        }
-        ul {
-            appearance: none;
-            margin: 5px 0 5px 0;
-            padding: 2.5px;
-            border-radius: 4px;
-            width: calc(100% - 5px);
-            li {
-                appearance: none;
-                margin: 5px;
-                padding: 5px;
-                letter-spacing: 1px;
-                border-radius: 4px;
-                font-size: 16px;
-                span {
-                    padding: 5px;
-                    font-size: 16px;
-                    width: calc(100% - 10px);
-                    border-radius: 4px;
-                    display: block;
-                    margin-top: 5px;
-                    
-                }
-                span:first-child {
-                    text-transform: uppercase; 
-                    font-weight: 600;
-                    margin-top: 0;
-                }
-            }
-            li:first-child {
-                font-weight: 600;
-                text-transform: uppercase;
-                line-height: 24px;
-                font-size: 18px;
-                letter-spacing: 2px;
-            }
             
         }
-        &::-webkit-scrollbar {appearance: none; width: 15px; }
-        &::-webkit-scrollbar-thumb {overflow: hidden; border-radius: 10px; border-width: 5px; border-style: solid;}
+        #consoleSidebarContent {
+            position: absolute;
+            bottom: 5px;
+            transition: height 1s, width 1s;
+            left: 5px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            width: calc(100% - 15px);
+            padding: 5px 0 5px 5px;
+            border-radius: 4px;
+
+            ul {
+                appearance: none;
+                margin: 5px 0 5px 0;
+                padding: 2.5px;
+                border-radius: 4px;
+                width: calc(100% - 5px);
+                li {
+                    appearance: none;
+                    margin: 5px;
+                    padding: 5px;
+                    letter-spacing: 1px;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    span {
+                        padding: 5px;
+                        font-size: 16px;
+                        width: calc(100% - 10px);
+                        border-radius: 4px;
+                        display: block;
+                        margin-top: 5px;
+                        b {font-weight: 600; text-transform: uppercase;}
+                        
+                    }
+                    span:first-child {
+                        text-transform: uppercase; 
+                        font-weight: 600;
+                        margin-top: 0;
+                    }
+                }
+                li:first-child {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    line-height: 24px;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                }
+                
+            }
+            &::-webkit-scrollbar {appearance: none; width: 15px; border-radius: 4px;}
+            &::-webkit-scrollbar-thumb {overflow: hidden; border-radius: 10px; border-width: 5px; border-style: solid;}
+        }
+        
+    }
+    .consoleHelpToolOpen {
+        #userConsoleHelp {
+            width: calc(100% - 10px);
+            height: calc(50% - 15px);
+        }
+        #consoleSidebarContent {
+            height: calc(50% - 10px);
+        }
+    }
+    .consoleHelpToolClosed {
+        #userConsoleHelp {
+            width: 30px;
+            height: 30px;
+        }
+        #consoleSidebarContent {
+            height: calc(100% - 55px);
+        }
     }
 
-
 }
-.userConsoleOpen {top: 15px;}
-// .userConsoleClosed {top: -150vh;}
-.userConsoleClosed {top: 80vh;}
+.userConsoleOpen {top: 65px;}
+.userConsoleClosed {top: -150vh;}
+// .userConsoleClosed {top: 80vh;}
 // .userConsoleState {height: calc(100% - 65px);}
 // .adminConsoleState {height: calc(100% - 89px);}
 
@@ -1330,10 +1420,10 @@ body {
     left: 0;
     position: absolute;
     transition: bottom 1s, height 1s, background 1s;
-    grid-template-columns: 40px auto 40px;
-    grid-template-rows: 14px 40px calc(100% - 54px);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 14px 36px calc(100% - 50px);
     cursor: pointer;
-    grid-template-areas: "workWeek workWeek workWeek" "tktoggle breaktimeheader helpdeskanchor" "breaktimeconsole breaktimeconsole breaktimeconsole";
+    grid-template-areas: "workWeek workWeek" "breaktimeheader breaktimeheader" "breaktimeconsole breaktimeconsole";
     bottom: 0;
     #workWeekTimer {
         grid-area: workWeek;
@@ -1389,10 +1479,10 @@ body {
         grid-area: breaktimeheader;
         display: grid; 
         position: absolute;
-        width: calc(100vw - 80px);
+        width: 100%;
         height: 40px;
         overflow: hidden;
-        line-height: 40px;
+        line-height: 36px;
         text-align: center;
         font-size: 15px;
         font-weight: 700;
@@ -1500,7 +1590,7 @@ body {
 // .inOffice {}
 // .outOffice {bottom: -100px;}
 .breakTimeOpen {height: calc(100vh - 55px);}
-.breakTimeClosed {height: 54px;}
+.breakTimeClosed {height: 50px;}
 
 
 
@@ -1522,7 +1612,7 @@ body {
 
     // Nav Responsive
     .navCropOpen {
-        width: calc(100vw - 10px);
+        width: 300px;
         
     }
     .navCropPage {

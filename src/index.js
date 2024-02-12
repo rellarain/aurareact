@@ -12,14 +12,14 @@ import Admin from "./components/Admin";
 import Scholar from "./components/Scholar";
 
 ReactDom.createRoot(document.getElementById('root')).render(
-    <div id='rootDash' className='nightMode'>
-        {/* rootDashVisitor rootDashMember rootDashScholar rootDashAdmin */}
+    <div id='rootDash' className='nightMode rootDashMember'>
+        {/* rootDashVisitor rootDashBasic rootDashMember rootDashAssess rootDashScholar rootDashAdmin */}
         {/* dayMode nightMode */}
-        <Admin />
-        <Scholar />
+        <Dashboard />
         <Header />
         <Navigation />
-        <Dashboard />
+        <Scholar />
+        <Admin />
     </div>
 )
 
