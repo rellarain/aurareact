@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function UserConsole() {
 
-    const consoleTitle = "Console Title";
+    const consoleTitle = "Designer";
 
     const [consoleClosed, setConsoleClosed] = useState(false);
     const [consoleHelpClosed, setConsoleHelpClosed] = useState(true);
@@ -71,12 +71,33 @@ export default function UserConsole() {
                 <div onClick={handleConsoleClosed}></div>
                 <div> <span></span> </div>
             </div>
+            
             <div id='userConsoleSidebar' className={consoleHelpClosed ? "consoleHelpToolClosed" : "consoleHelpToolOpen"}>
-                {/* consoleHelpToolClosed consoleHelpToolOpen */}
-                <section id='userConsoleHelp' onClick={handleConsoleHelpClosed}>
-
-                </section>  
                 <ConsoleSidebarContent />
+                {/* consoleHelpToolClosed consoleHelpToolOpen */}
+                <section id='userConsoleHelp' >
+                    <section>
+                        <button onClick={handleConsoleHelpClosed}>?</button>
+                        <div>{consoleTitle} Help</div>
+                        <div></div>
+                        <ConsoleHelpDesk/>
+                        {/* 
+                            CONSOLE HELP TOOL TO-DO LIST:
+                            - design console feedback component
+                            - design console FAQ component
+                            - design console help desk component
+                            - 
+                            - 
+                            - 
+                            - 
+                            - 
+                            - 
+                            - 
+                        
+                        */}
+                    </section>
+                </section>  
+                
 
             </div>
             {/* consoleSidebarOpen consoleSidebarClosed */}
@@ -94,7 +115,14 @@ export default function UserConsole() {
             - make an area in the header for updates or schedule reminders
             - save button on the console
             - help desk toggle for admin consoles
-            
+            - refresh button that updates console (queue quantities)
+
+            ACTIVITY INDICATOR
+            - next to help tool on sidebar
+            - displays activity level for current time interval when closed
+            - 
+            -
+            -
             
             
             
@@ -105,12 +133,31 @@ export default function UserConsole() {
     )
 }
 
+function ConsoleHelpDesk() {
+    
+    const [consoleHelpDeskClosed, setConsoleHelpDeskClosed] = useState(true);
 
+    function handleConsoleHelpDeskClosed() {
+        setConsoleHelpDeskClosed(!consoleHelpDeskClosed);
+        // alert("it worked!");
+    }
+    
+    return(
+        <div className={consoleHelpDeskClosed ? "consoleHelpDeskClosed" : "consoleHelpDeskOpen"} onClick={handleConsoleHelpDeskClosed}>
+
+        </div>
+    )
+}
 
 function ConsoleSidebarContent() {return(
     <section id='consoleSidebarContent'>
         <ul>
-            <li>Community Console</li>
+            <li>
+                <span>Community Console</span>
+                <span>Sidebar: </span>
+                <span>Desk: </span>
+                <span></span>
+            </li>
             <li>
                 <span>Community Info Tab</span>
                 <span>Sidebar: community metrics ()</span>
@@ -137,7 +184,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>District Console</li>
+            <li>
+                <span>District Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>District Info Tab</span>
                 <span>Sidebar: wide cards of community summaries</span>
@@ -163,7 +214,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Region Console</li>
+            <li>
+                <span>Region Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Region Info Tab</span>
                 <span>Sidebar: wide cards of district summaries</span>
@@ -186,7 +241,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Academy Console</li>
+            <li>
+                <span>Academy Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Academy Info Tab</span>
                 <span>Sidebar: wide cards of region summaries</span>
@@ -213,7 +272,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Assessment Console</li>
+            <li>
+                <span>Assessment Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Assessment Processing Tabs</span>
                 <span>Sidebar: steps (survey, )</span>
@@ -226,7 +289,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Scholar Console</li>
+            <li>
+                <span>Scholar Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Library Tab (Learning)</span>
                 <span>Sidebar: topic navigation, reading list</span>
@@ -259,7 +326,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Management Console</li>
+            <li>
+                <span>Management Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Collective Management Tab</span>
                 <span>Sidebar: collective metrics (engagement, occupancy, revenue, activity) for all managed levels (academy, region/region cluster, district/district cluster, community/community cluster)</span>
@@ -298,7 +369,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Designer Console</li>
+            <li>
+                <span>Designer Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Design Department Tab</span>
                 <span>Sidebar:  </span>
@@ -331,12 +406,16 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Educator Console</li>
+            <li>
+                <span>Educator Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Educator Department Tab</span>
                 <span>Sidebar: department performance </span>
                 <span>
-                    SUBPAGE
+                    <b>Blank</b>
                     <br/> Sidebar: 
                     <br/> Desk:
                 </span>
@@ -483,7 +562,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Creator Console</li>
+            <li>
+                <span>Creator Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Creator Department Tab</span>
                 <span>Sidebar: department performance, project schedule/progress,  </span>
@@ -561,7 +644,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Developer Console</li>
+            <li>
+                <span>Developer Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span>Developer Department Tab</span>
                 <span>Sidebar: department performance </span>
@@ -576,7 +663,11 @@ function ConsoleSidebarContent() {return(
             </li>
         </ul>
         <ul>
-            <li>Committee Console</li>
+            <li>
+                <span>Committee Console</span>
+                <span></span>
+                <span></span>
+            </li>
             <li>
                 <span></span>
                 <span></span>

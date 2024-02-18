@@ -67,35 +67,32 @@ function AdminFooter() {
 
 function Sidebar() {return (
     <div id="sidebar">
-        <Toolkit />
+        <HelpConsole />
     </div>
 )}
 
 
-function Toolkit() {return (
-    <div id="toolkit">
-        <div id='toolkitHead'>
-            <span alt='Agenda' className='openTab'></span>
-            <span alt='X'></span>
-            <span alt='Library'></span>
-            <span alt='Training'></span>
-            <span alt='Team'></span>
-            <span alt='X'></span>
-            <span alt='Office Settings'></span>
-            <span alt='Help Desk Lite'></span>
-        </div>
-        <div id='toolkitTitle'>
-            <input type='text'></input>
-        </div>
-        <div id='toolkitProgress'><span id='toolkitProgressBar'></span></div>
-        <div id='toolkitBody'>
-            this is going to be turned into help desk so it can run alongside any other academy tasks; moving all training/resources to a scholar console
+function HelpConsole() {return (
+    <main id='helpDeskConsole'>
+        Help Desk To-Do:
+        <br/> - full screen mode: widens sidebar, creates individual components for oldest chats
+        <br/> - mini screen mode: narrows sidebar, removes individual chats and creates chat heads on header
+        <br/> - individual component: only shows one user information, removed when closed 
+        <br/> - multi-component: on mini screen or final component for full screen; shows a header of all minimized/newest chats along the top, only shows one user's info
+        <br/> - 
+        <br/> - 
+        <br/> - 
+        <br/> - 
+        <br/> - 
+        <br/> - 
+        <br/> - 
+        <br/> - 
+        <br/> - 
+        <br/> - 
 
 
-
-
-        </div>
-    </div>
+        
+    </main>
 )}
 
 

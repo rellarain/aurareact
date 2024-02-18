@@ -22,17 +22,19 @@ export default function Dashboard() {
         {/* userDashMax userDashMini */}
         <UserConsole />
         {/* <UserDashboard/> */}
-        <div id="userDashboard" onClick={handleSetToolkitConsoleState} >
-        <p>{formatDate(today)} <br/> ~{time} </p>
-        {/* <p>NOTICES <br/> organizational changes, individual changes, academy changes</p>
-        <p>PERFORMANCE <br/><br/> WORKDAY (today's date)<br/> achievement, activity, adherence, attendance <br/><br/>  WORKWEEK (last 2-7 days in month)<br/> achievement, activity, adherence, attendance, accomplishment <br/><br/>  WORKCYCLE (average daily score of month) <br/> achievement, activity, adequacy, adherence, attendance, accomplishment</p>
-        <p>REQUESTS <br/> </p>
-        <p>feedback status</p>
-        <p>SIGN OUT</p>
-        <section>
-            
-        </section> */}
-    </div>
+        <div id="userDashboard" >
+            <p>{formatDate(today)} <br/> {time} </p>
+            <button onClick={handleSetToolkitConsoleState}></button>
+            <section></section>
+            {/* <p>NOTICES <br/> organizational changes, individual changes, academy changes</p>
+            <p>PERFORMANCE <br/><br/> WORKDAY (today's date)<br/> achievement, activity, adherence, attendance <br/><br/>  WORKWEEK (last 2-7 days in month)<br/> achievement, activity, adherence, attendance, accomplishment <br/><br/>  WORKCYCLE (average daily score of month) <br/> achievement, activity, adequacy, adherence, attendance, accomplishment</p>
+            <p>REQUESTS <br/> </p>
+            <p>feedback status</p>
+            <p>SIGN OUT</p>
+            <section>
+                
+            </section> */}
+        </div>
     </main>
 )}
 

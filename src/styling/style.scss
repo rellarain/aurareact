@@ -59,11 +59,11 @@ table {
 
 // Changeables
 
-$baseBright: 30%; // 0-30%
+$baseBright: 10%; // 0-30%
 
-$themehue:  310;
+$themehue:  20;
 $accenthue: 330;
-$alerthue:  20;
+$alerthue:  210;
 
 $themesat:  8%; // 0-20%
 $accentsat: 20%; // 0-20%
@@ -267,10 +267,11 @@ body {
     transition: background 1s, color 1s;
     #userHeader {
         background: $t2;
-        box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.342);
         #accountConsole {
-            div {
-                background-color: $t0;
+            section {
+                box-shadow: inset 0 0 6px 4px rgba(0, 0, 0, 0.5);
+                background-color: $tu1;
             }
         }
         #userName {
@@ -337,12 +338,14 @@ body {
 
     }
     #userDash {
-        background: $t2;
+        background: $t3;
         box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
     }
     #userDashboard {
-        background-color: $t1;
-        p {color: $t5;}
+        // background-color: $as1;
+        p {color: $tu7; background-color: $tu1;}
+        section {background-color: $t2;}
+        button {background-color: $t2;}
     }
     #userConsole {
         background-color: $tu1;
@@ -351,7 +354,7 @@ body {
         #userConsoleDesk {background-color: $tu4; box-shadow: inset 0 0 0 5px $tu4;}
         #userConsoleHead {
             background-color: $t4;
-            #userConsoleTitle {color: $t2;}
+            #userConsoleTitle {color: $t1;}
             div:nth-child(2) {
                 .userConsoleTabObject {
                     background-color: $t0;
@@ -366,12 +369,18 @@ body {
                 }
             }
             div:nth-child(3) {background-color: $t2;}
-            div:nth-child(4) {background-color: $t2; span {background-color: $ats4;}}
+            div:nth-child(4) {background-color: $t2; span {background-color: $ats7;}}
         }
         #userConsoleSidebar {
             background-color: $tu0;
             #userConsoleHelp {
                 background-color: $ad4;
+                section {
+                    button {background-color: $as1; color: $asX;}
+                    div:nth-child(2) {color: $ad0;}
+                    div:nth-child(3) {}
+                    div:nth-child(4) {background-color: $as7;}
+                }
             }
             #consoleSidebarContent {
                 background-color: $tu1;
@@ -384,7 +393,12 @@ body {
                         span {background-color: $tu6; color: $tu0;}
                         span:first-child {background-color: $tu4; color: $tu0;}
                     }
-                    li:first-child {background-color: $tu0; color: $tu8;}
+                    li:first-child {
+                        background-color: $tu0; 
+                        color: $tu8;
+                        span {background-color: $tu5; color: $tu0;}
+                        span:first-child {background-color: $tu0; color: $tuX;}
+                    }
                 }
                 &::-webkit-scrollbar {background-color: $tu1;}
                 &::-webkit-scrollbar-thumb {background-color: $tu5; border-color: $tu1;}
@@ -724,14 +738,26 @@ body {
         grid-template-rows: 40px calc(100vh - 90px);
         grid-template-areas: "accountConsoleBuffer" "accountConsoleContent";
         
-        div {
+        section {
             grid-area: accountConsoleContent;
+            display: grid;
             width: calc(100vw - 20px);
-            height: calc(100% - 15px);
+            height: calc(100% - 10px);
             margin: 5px 10px 10px 10px;
             border-radius: 8px;
             transition: height 1.25s;
             overflow: hidden;
+            grid-template-rows: 50px auto;
+            grid-template-areas: "accountConsoleHead" "accountConsoleBody";
+
+            div:nth-child(1) {
+                grid-area: accountConsoleHead;
+                // background-color: $tu3;
+            }
+            div:nth-child(2) {
+                grid-area: accountConsoleBody;
+                // background-color: red;
+            }
         }
 
     }
@@ -899,142 +925,44 @@ body {
 }
 
 // Navigation 
-.navCropOpen {
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    transition: height 1s 1s, width 1s;
-}
 #navCrop {
-
-    overflow: clip;
-    border-radius: 5px;
+    display: flex;
     position: fixed;
-    
-    right: 5px;
+    transition: width 1s;
+    padding-left: 4px;
+    width: max-content;
+    // width: 26px;
+
+    height: 30px;
     z-index: 12;
-
-    #navPanel {
-        height: calc(100vh - 10px);
-        display: grid;
-        grid-template-rows: 30px auto;
-        grid-template-areas: "navPage navButton" "navBody navBody";
-        z-index: 7;
-        transition: background 1s, width 1s;
-        overflow: hidden;
-    }
-    #navButton {
-        position: fixed;
-        right: 9px;
-        top: 9px;
-        width: 22px;
-        height: 22px;
-        grid-area: navButton;
-        z-index: 9;
-        display: block;
-        cursor: pointer;
-        border-radius: 4px;
-        border: none;
-        transition: background .4s, box-shadow .4s;
-
-    }
-    #navPage {
-        // Responsive: width
-        top: 4px;
-        grid-area: navPage;
-        height: 22px;
-        line-height: 22px;
-        vertical-align: middle;
-        padding: 0 0 0 5px;
-        border-radius: 4px;
-        border: none;
-        position: absolute;
-        right: 30px;
-        z-index: 7;
-        letter-spacing: 1px;
-        font-size: 14px;
-        font-weight: 600;
-        transition: background .4s, top .5s, width 1s;
-        cursor: default;
-        overflow: hidden;
-    }
-    #navBody {
-        grid-area: navBody;
-        height: calc(100% - 5px);
-        overflow-y: scroll;
-        overflow-x: hidden;
-        padding: 0;
-        right: 0;
-        transition: width 1s;
-
-        ul {
-            // height: 30px;
-
-            appearance: none;
-            display: block;
-            width: calc(100% - 20px);
-            margin-left: 5px;
-            border-radius: 4px;
-            background-position-x: right;
-            margin-bottom: 5px;
-            padding: 5px;
-            overflow: clip;
-            transition: background 1s, height 1s;
-            li {
-                width: calc(100% - 20px);
-                margin: 5px 5px 5px 10px;
-                padding: 5px;
-                border-radius: 4px;
-                font-size: 14px;
-                line-height: 20px;
-                font-weight: 700;
-                vertical-align: middle;
-                cursor: pointer;
-                letter-spacing: 1px;
-                transition: background 1s, color 1s;
-                &:first-child {
-                    width: calc(100% - 10px);
-                    margin: 0;
-                    font-weight: 8px;
-                    letter-spacing: 2px;
-                    transition: background 1s, color 1s;
-                }
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-        ul:last-child {
-            margin-bottom: 0;
-        }
-
-        &::-webkit-scrollbar {
-            border-radius: 4px;
-            width: 15px;
-            overflow-x: visible;
-            cursor: pointer;
-        }
-        &::-webkit-scrollbar-button {
-            border-radius: 4px 4px 0 0 ;
-            height: 0;
-        }
-        &::-webkit-scrollbar-thumb {
-            border-radius: 4px;
-            transition: background 1s;
-        }
-
-    }
-
-}
-.navCropClosed {
-    width: 30px;
-    height: 30px;
-    transition: height 1s, width 1s 1s;
-} 
-.navCropPage {
-    width: 300px;
-    height: 30px;
-    transition: height 1s, width 1s;
+    top: 5px;
     right: 5px;
+    border-radius: 4px;
+    background-color: $tu5;
+    span {
+        min-width: 16px;
+        border-radius: 4px;
+        height: 16px;
+        display: block;
+        margin: 4px 4px 4px 0;
+        background-color: $tu2;
+        padding: 3px;
+        font-size: 14px;
+        line-height: 16px;
+        // font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $tu8;
+    }
+    span:first-child {
+        background-color: $as3;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    span:last-child {
+        margin-right: 30px;
+    }
 }
 
 // Main Screen
@@ -1056,29 +984,57 @@ body {
 
 // Dashboard 
 #userDashboard {
-    height: calc(100vh - 137px);
+    height: calc(100vh - 120px);
     overflow-x: hidden;
     overflow-y: scroll;
     width: calc(100% - 30px);
     right: 0px;
-    top: 53px;
+    top: 40px;
     margin: 15px;
     position: absolute;
     border-radius: 4px;
-    display: block;
+    display: grid;
     transition: width 1s;
     z-index: 3;
     &::-webkit-scrollbar {display: none;}
 
-    p {
-        font-weight: 500;
-        font-size: 12px;
-        letter-spacing: 1px;
-        margin: 5px;
-        padding: 5px;
-        text-align: right;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 40px auto;
+    grid-template-areas: "helpDeskConsoleButton dateTime" "dashboardConsole dashboardConsole";
+
+    button {
+        grid-area: helpDeskConsoleButton;
+        transition: width 1s;
+        height: 30px;
+        width: 30px;
+        margin: 5px 0 0 0;
+        border: none;
         border-radius: 4px;
+        &:hover {
+            width: 300px;
+        }
+    }
+    p {
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        margin: 4px 4px 4px auto;
+        padding: 3px;
+        line-height: 13px;
+        text-align: right;
+        text-transform: uppercase;
+        border-radius: 4px;
+        grid-area: dateTime;
         
+        // width: max-content;
+        
+    }
+    section {
+        grid-area: dashboardConsole;
+        border-radius: 4px;
+        width: calc(100% - 20px);
+        height: calc(100% - 10px);
+        margin: 5px 10px 10px 10px;
     }
 
 }
@@ -1096,11 +1052,11 @@ body {
     z-index: 4;
     cursor: pointer;
     width: calc(100% - 20px);
-    height: calc(100vh - 130px);
+    height: calc(100vh - 160px);
 
     #userConsoleDesk {
         
-        height: calc(100% - 145px);
+        height: calc(100% - 120px);
         display: block;
         position: absolute;
         right: 5px;
@@ -1117,15 +1073,15 @@ body {
 
     #userConsoleHead {
         width: 100%;
-        height: 116px;
+        height: 91px;
         position: absolute;
         top: 0;
         left: 0;
         overflow: hidden;
         display: grid;
-        grid-template-rows: 16px 30px 30px 40px;
+        grid-template-rows: 16px 35px 40px;
         grid-template-columns: calc(100% - 40px) 40px;
-        grid-template-areas: "consoleProgressBar consoleProgressBar" "consoleTitle consoleRefresh" "consoleTitle consoleTime" "consoleTabs consoleTabs";
+        grid-template-areas: "consoleProgressBar consoleProgressBar" "consoleTitle consoleRefresh" "consoleTabs consoleTabs";
         #userConsoleTitle {
             grid-area: consoleTitle;
             width: calc(100% - 5px);
@@ -1134,7 +1090,7 @@ body {
             position: absolute;
             height: 35px;
             padding: 0;
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 800;
             line-height: 35px;
             letter-spacing: 3px;
@@ -1180,8 +1136,8 @@ body {
         div:nth-child(3) {
             grid-area: consoleRefresh;
             width: calc(100% - 10px);
-            width: 30px;
-            height: 30px;
+            width: 28px;
+            height: 28px;
             right: 5px;
             position: absolute;
             top: 1.25px;
@@ -1197,10 +1153,10 @@ body {
             height: 10px;
             cursor: default;
             span {
-                height: 6px;
+                height: 4px;
                 border-radius: 4px;
                 display: block;
-                margin: 2px;
+                margin: 3px;
                 width: 30%;
                 transition: width .5s;
                 
@@ -1213,7 +1169,7 @@ body {
     }
     #userConsoleSidebar {
         display: block;
-        height: calc(100% - 155px);
+        height: calc(100% - 130px);
         padding: 5px;
         position: absolute;
         left: 30px;
@@ -1232,6 +1188,66 @@ body {
             left: 5px;
             transition: height 1s, width 1s;
             border-radius: 4px;
+
+            section {
+                // background-color: red;
+                // height: 300px;
+                display: grid;
+                transition: height 1s, width 1s;
+
+                grid-template-columns: 30px auto;
+                grid-template-rows: 30px auto;
+                grid-template-areas: "helpToolClose helpToolTitle" "helpToolHelper helpToolMain";
+
+                button {
+                    grid-area: helpToolClose;
+                    border: none;
+                    border-radius: 4px;
+                    width: 22px;
+                    height: 22px;
+                    margin: 4px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                div:nth-child(2) {
+                    grid-area: helpToolTitle;
+                    line-height: 30px;
+                    text-align: right;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+
+                }
+                div:nth-child(3) {
+                    grid-area: helpToolMain;
+                    // background-color: blue;
+                    width: 100%;
+                    width: calc(100% - 5px);
+                    height: calc(100% - 5px);
+                    margin: 0;
+                }
+                div:nth-child(4) {
+                    grid-area: helpToolHelper;
+                    transition: height 1s, width 1s, margin 1s;
+                    border-radius: 4px;
+                    position: relative;
+                    margin: 0 4px 4px 4px;
+
+                }
+                .consoleHelpDeskOpen {
+                    // width: calc(100% - 8px);
+                    // height: calc(100% - 8px);
+                }
+                .consoleHelpDeskClosed {
+                    width: 22px;
+                    height: 22px;
+                    // margin: calc(100% - 4px) 4px 4px 4px;
+                    
+                }
+
+            }
             
         }
         #consoleSidebarContent {
@@ -1275,11 +1291,29 @@ body {
                     }
                 }
                 li:first-child {
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    line-height: 24px;
-                    font-size: 18px;
-                    letter-spacing: 2px;
+                    
+                    
+                    span {
+                        padding: 5px;
+                        font-size: 16px;
+                        width: calc(100% - 10px);
+                        border-radius: 4px;
+                        display: block;
+                        margin-top: 5px;
+                        b {font-weight: 600; text-transform: uppercase;}
+                        
+                    }
+                    span:first-child {
+                        text-transform: uppercase; 
+                        font-weight: 600;
+                        margin-top: 0;
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 24px;
+                    }
+
                 }
                 
             }
@@ -1291,11 +1325,8 @@ body {
     .consoleHelpToolOpen {
         #userConsoleHelp {
             width: calc(100% - 10px);
-            height: calc(50% - 15px);
         }
-        #consoleSidebarContent {
-            height: calc(50% - 10px);
-        }
+        // sidebar is height responsive
     }
     .consoleHelpToolClosed {
         #userConsoleHelp {
@@ -1308,7 +1339,7 @@ body {
     }
 
 }
-.userConsoleOpen {top: 65px;}
+.userConsoleOpen {top: 98px;}
 .userConsoleClosed {top: -150vh;}
 // .userConsoleClosed {top: 80vh;}
 // .userConsoleState {height: calc(100% - 65px);}
@@ -1325,90 +1356,16 @@ body {
     z-index: 1;
     overflow: hidden;
 
-    #toolkit {
-        height: calc(100% - 127px);
+    #helpDeskConsole {
         display: grid;
         position: absolute;
-        top: 15px;
+        // width: calc(100% - 20px);
+        height: calc(100% - 125px);
+        margin: 15px 10px;
+        transition: width 1s;
+        background-color: $ad3;
         border-radius: 4px;
-        overflow: hidden;
-        left: 10px;
-        grid-template-rows: 40px 40px 16px auto;
-        transition: height .75s, width 1s;
-        grid-template-areas: "TKtabs" "TKtitle" "TKprogress" "TKpanel";
-        #toolkitHead {
-            grid-area: TKtabs;
-            overflow: hidden;
-            padding: 5px 0 0 5px;
-            display: flex;
-            span {
-                height: 35px;
-                width: 30px;
-                display: inline-block;
-                position: relative;
-                bottom: -5px;
-                margin-right: 4px;
-                border-radius: 4px 4px 0 0;
-                overflow: hidden;
-                transition: background .4s;
-                cursor: pointer;
-            }
-            .openTab {
-                bottom: 0;
-                width: 30px;
-                transition: background .4s;
-            }
-        }
-        #toolkitTitle {
-            grid-area: TKtitle;
-            
-            input {
-                grid-area: input;
-                padding: 5px;
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: 600;
-                letter-spacing: 1px;
-                border: none;
-                height: 20px;
-                width: calc(100% - 20px);
-                margin: 5px;
-                border-radius: 4px;
-            }
-        }
-        #toolkitProgress {
-            grid-area: TKprogress;
-            
-            #toolkitProgressBar {
-                position: absolute;
-                display: block;
-                height: 8px;
-                left: 0;
-                width: 45%;
-                transition: width .5s;
-                margin: 4px;
-                border-radius: 4px;
-            }
-        }
-        #toolkitBody {
-            grid-area: TKpanel;
-            overflow-y: auto;
-            overflow-x: hidden;
-            width: 100%;
-
-            &::-webkit-scrollbar {
-                width: 15px;
-                overflow-x: visible;
-                margin: 5px;
-                cursor: pointer;
-            }
-            &::-webkit-scrollbar-button {
-                height: 0;
-            }
-            &::-webkit-scrollbar-thumb {
-                transition: background 1s;
-            }        
-        }
+        color: white;
     }
 }
 
@@ -1596,38 +1553,22 @@ body {
 
 
 
-
-
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
 // VIEWPORT DEPENDENT DESIGN ----------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
 // DEVICE VIEWPORT WIDTH ---------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Narrow Smartphone - Light Red (Nav, Console, Sidebar, Admin, Help Desk, Breaktime, Dashboard, Account) -------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 0px) {
     // Indicator
     #userThumb {background: hsl(0, 70%, 60%);}
-
-
-    // Nav Responsive
-    .navCropOpen {
-        width: 300px;
-        
-    }
-    .navCropPage {
-        width: calc(100vw - 10px);
-    }
-    #navPanel {
-        width: calc(100vw - 10px);
-        grid-template-columns: calc(100vw - 30px) 30px;
-    }
-    #navBody {
-        width: calc(100vw - 15px);
-    }
-    #navPage {
-        width: calc(100vw - 50px);
-    }
 
 
     // Console Responsive
@@ -1641,6 +1582,16 @@ body {
     .consoleWithDash {
         width: calc(100% - 40px);
     }
+    #userConsoleHelp {
+        section {
+            width: calc(100vw - 75px);
+
+        }
+        .consoleHelpDeskOpen {
+            width: calc(100vw - 83px);
+        }
+    }
+    
 
 
     // Sidebar Responsive - UNFINISHED
@@ -1648,7 +1599,7 @@ body {
         width: calc(100vw - 330px);
         width: 0;
     }
-    #toolkit {
+    #helpDeskConsole {
         width: calc(100vw - 20px);
     }
     .helpDeskOpenSB {
@@ -1680,6 +1631,16 @@ body {
     #userConsoleSidebar {
         width: 260px;
     }
+    #userConsoleHelp {
+        section {
+            width: 260px;
+            
+        }
+        .consoleHelpDeskOpen {
+            width: 252px;
+        }
+
+    }
     
     
     // Breaktime
@@ -1692,25 +1653,7 @@ body {
 @media only screen and (min-width: 600px) {
     // Indicator
     #userThumb {background: hsl(30, 70%, 60%);}
-    
-    // Navigation
-    // .navCropPage {
-    //     width: 600px;
-    // }
-    // #navPage {
-    //     width: 561px;
-    // }
-    // .navCropOpen {
-    //     width: 600px;
-    // }
-    // #navPanel {
-    //     width: 600px;
-    //     grid-template-columns: 570px 30px;
-    // }
-    // #navBody {
-    //     width: 595px;
-    // }
-        
+            
 
     // BreakTime Responsive
     #breakTimeConsoleDesk {
@@ -1727,7 +1670,7 @@ body {
     .userDashMini {
         width: calc(100vw - 300px);
     }
-    #toolkit {
+    #helpDeskConsole {
         width: 280px;
     }
 
@@ -1752,7 +1695,7 @@ body {
     .userDashMini {
         width: calc(100vw - 600px);
     }
-    #toolkit {
+    #helpDeskConsole {
         width: 580px;
     }
     .helpDeskOpenSB {
@@ -1769,6 +1712,16 @@ body {
     #userConsoleSidebar {
         width: 360px;
     } 
+    #userConsoleHelp {
+        section {
+            width: 360px;
+            
+        }
+        .consoleHelpDeskOpen {
+            width: 352px;
+        }
+
+    }
 }
 // Wide Laptop - Dark Green (Sidebar) [Accountability: ]
 @media only screen and (min-width: 1500px) {
@@ -1818,7 +1771,7 @@ body {
     .userDashMini {
         width: calc(100vw - 900px);
     }
-    #toolkit {
+    #helpDeskConsole {
         width: 880px;
     }
     .helpDeskOpenSB {
@@ -1847,36 +1800,90 @@ body {
 
 
 
-
-// Height Indicators
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
+// DEVICE VIEWPORT HEIGHT ---------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Minimum Height - Red ()
 @media only screen and (min-height: 10px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(0, 70%, 50%);}
 
+    // Console Responsivity
+    .consoleHelpToolOpen {
+        #userConsoleHelp {
+            height: calc(100% - 10px);
+        }
+        #consoleSidebarContent {
+            height: calc(100% - 55px);
+        }
+    }
+    #userConsoleHelp {
+        section {
+            height: calc(100vh - 285px);
+        }
+    
+    }
+    .consoleHelpDeskOpen {
+        height: calc(100% - 4px);
+    }
+    .consoleHelpDeskClosed {
+        margin-top: 100px;
+        
+    }
 
-
-
+    
+    
 }
 // Mini Screens - Orange ()
 @media only screen and (min-height: 300px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(30, 70%, 50%);}
-
-
+    
+    
 }
 // Short Screens - Yellow ()
 @media only screen and (min-height: 600px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(60, 70%, 50%);}
-
+    
+    // Console Responsivity
+    .consoleHelpToolOpen {
+        #userConsoleHelp {
+            height: 200px;
+        }
+        #consoleSidebarContent {
+            height: calc(100% - 225px);
+        }
+    }
+    #userConsoleHelp {
+        section {
+            height: 200px;
+        }
+    
+    }
 
 }
 // Medium Screens - Green ()
 @media only screen and (min-height: 900px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(120, 70%, 50%);}
+
+    // Console Responsivity
+    .consoleHelpToolOpen {
+        #userConsoleHelp {
+            height: 350px;
+        }
+        #consoleSidebarContent {
+            height: calc(100% - 375px);
+        }
+    }
+    #userConsoleHelp {
+        section {
+            height: 350px;
+        }
+    
+    }
 
     
 
@@ -1886,6 +1893,21 @@ body {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(200, 70%, 50%);}
 
+        // Console Responsivity
+        .consoleHelpToolOpen {
+            #userConsoleHelp {
+                height: 500px;
+            }
+            #consoleSidebarContent {
+                height: calc(100% - 525px);
+            }
+        }
+        #userConsoleHelp {
+            section {
+                height: 500px;
+            }
+        
+        }
     
 
 }
