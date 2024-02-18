@@ -52,6 +52,40 @@ function AdminFooter() {
         </div>
         <div id='breakTimeConsole'>
             
+            <div id="breakTimeConsoleHead">
+                <section>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </section>
+                <section>Breaktime</section>
+                <section>
+                    <span className='breakTabActive'></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </section>
+                <section></section>
+                <button onClick={handleBTConsoleClosed}></button>
+            </div>
             <div id="breakTimeConsoleMenu">need to add a header that closes the breaktime console and displays the time, used breaktime, earned breaktime, and unearned breaktime</div>
             <div id="breakTimeConsoleDesk">need to add a messenger component that displays active users on team and in connections, task lists for ongoing projects outside of work, </div>
 

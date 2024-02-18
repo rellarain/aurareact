@@ -354,37 +354,17 @@ body {
 .nightMode #adminFooter #breakTimeHeader {
   color: hsl(210, 43%, 38%);
 }
-.nightMode #adminFooter #helpDeskAnchor {
-  background-color: hsl(210, 43%, 73%);
-}
-.nightMode #adminFooter #helpDeskAnchor #helpDeskConsole #helpDeskChats {
-  background-color: hsl(210, 43%, 31%);
-}
-.nightMode #adminFooter #helpDeskAnchor #helpDeskConsole #helpDeskSidebar {
-  background-color: hsl(210, 43%, 52%);
-}
-.nightMode #adminFooter #helpDeskAnchor .helpDeskOpen {
-  background-color: hsl(210, 43%, 38%);
-  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-}
-.nightMode #adminFooter #helpDeskAnchor .helpDeskOpenSB {
-  background-color: hsl(210, 43%, 38%);
-  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-}
-.nightMode #adminFooter #helpDeskAnchor .helpDeskClosed {
-  background-color: hsl(210, 63%, 31%);
-}
-.nightMode #adminFooter #helpDeskAnchor .helpDeskClosed:hover {
-  background-color: hsl(210, 63%, 45%);
-}
 .nightMode #adminFooter #breakTimeConsole {
   background: hsl(210, 43%, 10%);
 }
+.nightMode #adminFooter #breakTimeConsole #breakTimeConsoleHead {
+  background-color: hsl(210, 43%, 59%);
+}
 .nightMode #adminFooter #breakTimeConsole #breakTimeConsoleDesk {
-  background-color: hsl(210, 43%, 31%);
+  background-color: hsl(210, 43%, 38%);
 }
 .nightMode #adminFooter #breakTimeConsole #breakTimeConsoleMenu {
-  background-color: hsl(210, 63%, 45%);
+  background-color: hsl(210, 43%, 24%);
 }
 .nightMode .breakTimeOpen {
   background: hsl(210, 43%, 38%);
@@ -1365,42 +1345,6 @@ body {
   position: relative;
   border-radius: 2px;
 }
-#adminFooter #TKtoggle {
-  grid-area: tktoggle;
-  width: 30px;
-  position: absolute;
-  height: 30px;
-  display: block;
-  left: 5px;
-  top: 5px;
-  cursor: default;
-  transition: width 0.5s;
-  border-radius: 4px;
-}
-#adminFooter #TKtoggle #TKtoggleButton {
-  display: block;
-  transition: height 1s, width 1s, background 0.75s, margin 1s;
-  border-radius: 4px;
-  cursor: pointer;
-}
-#adminFooter #TKtoggle .TKtoggleOpen {
-  height: 14px;
-  width: 14px;
-  margin: 8px;
-}
-#adminFooter #TKtoggle .TKtoggleClosed {
-  height: 22px;
-  width: 22px;
-  margin: 4px;
-}
-#adminFooter #TKtoggle .TKtoggleNone {
-  height: 0;
-  width: 0;
-  margin: 15px;
-}
-#adminFooter #TKtoggle:hover {
-  width: 200px;
-}
 #adminFooter #breakTimeHeader {
   grid-area: breaktimeheader;
   display: grid;
@@ -1414,104 +1358,106 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
 }
-#adminFooter #helpDeskAnchor {
-  grid-area: helpdeskanchor;
-  width: 30px;
-  height: 30px;
-  display: block;
-  border-radius: 4px;
-  position: absolute;
-  transition: width 0.5s;
-  right: 5px;
-  cursor: default;
-  top: 5px;
-}
-#adminFooter #helpDeskAnchor #helpDeskConsole {
-  z-index: 5;
-  border-radius: 4px;
-  overflow: hidden;
-  position: absolute;
-  transition: width 1s, height 1s, bottom 1s, right 1s, background 0.75s, boxShadow 1s;
-  cursor: pointer;
-  display: block;
-}
-#adminFooter #helpDeskAnchor #helpDeskConsole #helpDeskChats {
-  transition: width 1s, height 1s, bottom 1s, right 1s, background 0.75s, boxShadow 1s;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  border-radius: 4px;
-  margin: 0;
-  bottom: 24px;
-  right: 10px;
-}
-#adminFooter #helpDeskAnchor #helpDeskConsole #helpDeskSidebar {
-  transition: width 1s, height 1s, bottom 1s, right 1s, background 0.75s, boxShadow 1s;
-  display: block;
-  border-radius: 4px;
-  overflow: hidden;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-#adminFooter #helpDeskAnchor #helpDeskConsole div:nth-child(1) {
-  grid-area: button;
-}
-#adminFooter #helpDeskAnchor .helpDeskOpen {
-  height: calc(100vh - 66px);
-  width: calc(100vw - 16px);
-  right: 3px;
-  bottom: 3px;
-  cursor: default;
-}
-#adminFooter #helpDeskAnchor .helpDeskOpenSB {
-  height: calc(100vh - 66px);
-  right: 3px;
-  bottom: 3px;
-  background-color: hsl(210, 43%, 38%);
-  cursor: default;
-}
-#adminFooter #helpDeskAnchor .helpDeskClosed {
-  width: 22px;
-  height: 22px;
-  right: 4px;
-  bottom: 4px;
-}
-#adminFooter #helpDeskAnchor .helpDeskNone {
-  height: 0;
-  width: 0;
-  right: 15px;
-  bottom: 15px;
-}
 #adminFooter #breakTimeConsole {
   grid-area: breaktimeconsole;
-  display: block;
+  display: grid;
   cursor: default;
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  grid-template-rows: 140px auto;
+  grid-template-areas: "breakTimeHead" "breakTimeBody";
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead {
+  grid-area: breakTimeHead;
+  height: 120px;
+  margin: 10px calc(50% - 300px);
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 4px;
+  display: grid;
+  grid-template-rows: 15px 30px 30px 45px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "breakTimeBank breakTimeBank" "breakTimeTitle breakTimeClose" "breakTimeTabs breakTimeTabs" "breakTimeActivity breakTimeActivity";
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead section:nth-child(1) {
+  grid-area: breakTimeBank;
+  display: flex;
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead section:nth-child(1) span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 0 0 5px;
+  background-color: hsl(210, 63%, 38%);
+  border-radius: 3px;
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead section:nth-child(2) {
+  grid-area: breakTimeTitle;
+  line-height: 25px;
+  font-size: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-indent: 5px;
+  color: hsl(210, 43%, 38%);
+  letter-spacing: 2px;
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead section:nth-child(3) {
+  grid-area: breakTimeTabs;
+  display: flex;
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead section:nth-child(3) span {
+  height: 25px;
+  width: 100px;
+  background-color: hsl(210, 43%, 38%);
+  margin-left: 5px;
+  margin-top: auto;
+  transition: height 1s, background 1s, color 1s;
+  border-radius: 4px 4px 0 0;
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead section:nth-child(3) .breakTabActive {
+  height: 30px;
+  background-color: hsl(210, 63%, 38%);
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead section:nth-child(4) {
+  grid-area: breakTimeActivity;
+  background-color: gray;
+}
+#adminFooter #breakTimeConsole #breakTimeConsoleHead button {
+  grid-area: breakTimeClose;
+  background-color: hsl(210, 43%, 45%);
+  width: 25px;
+  height: 25px;
+  position: relative;
+  margin: 5px 5px 0 auto;
+  border: none;
+  border-radius: 4px;
 }
 #adminFooter #breakTimeConsole #breakTimeConsoleDesk {
+  grid-area: breakTimeBody;
   display: block;
   border-radius: 4px;
-  bottom: 10px;
   position: absolute;
+  bottom: 10px;
   right: 10px;
+  width: calc(100vw - 320px);
   transition: height 1s, width 0.5s;
   overflow: hidden;
 }
 #adminFooter #breakTimeConsole #breakTimeConsoleMenu {
+  top: 0;
+  left: 10px;
+  grid-area: breakTimeBody;
   overflow: hidden;
   display: block;
-  top: 10px;
-  left: 10px;
   position: absolute;
+  width: 290px;
   border-radius: 4px;
   transition: height 1s, width 0.5s;
 }
 
 .breakTimeOpen {
-  height: calc(100vh - 55px);
+  height: 100vh;
 }
 
 .breakTimeClosed {

@@ -458,38 +458,17 @@ body {
         #breakTimeHeader {
             color: $atd4;
         }
-        #helpDeskAnchor {
-            background-color: $atd9;
-            #helpDeskConsole {
-                #helpDeskChats {
-                    background-color: $atd3;
-                }
-                #helpDeskSidebar {
-                    background-color: $atd6;
-                }
-            }
-            .helpDeskOpen {
-                background-color: $atd4;
-                box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-            }
-            .helpDeskOpenSB {
-                background-color: $atd4;
-                box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
-            }
-            .helpDeskClosed {
-                background-color: $ats3;
-                &:hover {
-                    background-color: $ats5;
-                }
-            }
-        }
+
         #breakTimeConsole {
             background: $atd0;
+            #breakTimeConsoleHead {
+                background-color: $atd7;
+            }
             #breakTimeConsoleDesk {
-                background-color: $atd3;
+                background-color: $atd4;
             }
             #breakTimeConsoleMenu {
-                background-color: $ats5;
+                background-color: $atd2;
             }
     
         }
@@ -497,7 +476,6 @@ body {
     .breakTimeOpen {background: $atd4;}
     .breakTimeClosed {background: $atd1;}
 }
-
 
 .dayMode {
     transition: background 1s, color 1s;
@@ -1396,42 +1374,6 @@ body {
             border-radius: 2px;
         }
     }
-    #TKtoggle {
-        grid-area: tktoggle;
-        width: 30px;
-        position: absolute;
-        height: 30px;
-        display: block;
-        left: 5px;
-        top: 5px;
-        cursor: default;
-        transition: width .5s;
-        border-radius: 4px;
-        #TKtoggleButton {
-            display: block;
-            transition: height 1s, width 1s, background .75s, margin 1s;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .TKtoggleOpen {
-            height: 14px;
-            width: 14px;
-            margin: 8px;
-        }
-        .TKtoggleClosed {
-            height: 22px;
-            width: 22px;
-            margin: 4px;
-        }
-        .TKtoggleNone {
-            height: 0;
-            width: 0;
-            margin: 15px;
-        }
-        &:hover {
-            width: 200px;
-        }
-    }
     #breakTimeHeader {
         grid-area: breaktimeheader;
         display: grid; 
@@ -1445,99 +1387,99 @@ body {
         font-weight: 700;
         letter-spacing: 2px;
     }
-    #helpDeskAnchor {
-        grid-area: helpdeskanchor;
-        width: 30px;
-        height: 30px;
-        display: block;
-        border-radius: 4px;
-        position: absolute;
-        transition: width .5s;
-        right: 5px;
-        cursor: default;
-        top: 5px;
-        #helpDeskConsole {
-            z-index: 5;
-            border-radius: 4px;
-            overflow: hidden;
-            position: absolute;
-            transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
-            cursor: pointer;
-            display: block;
-
-            #helpDeskChats {
-                transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
-                display: block;
-                overflow: hidden;
-                position: absolute;
-                border-radius: 4px;
-                margin: 0;               
-                bottom: 24px;
-                right: 10px;
-            }
-            #helpDeskSidebar {
-                transition: width 1s, height 1s, bottom 1s, right 1s, background .75s, boxShadow 1s;
-                display: block;
-                border-radius: 4px;
-                overflow: hidden;
-                position: absolute;
-                top: 10px;
-                left: 10px;
-            }
-            div:nth-child(1) {
-                grid-area: button;
-            }
-        }
-        .helpDeskOpen {
-            height: calc(100vh - 66px);
-            width: calc(100vw - 16px);
-            right: 3px;
-            bottom: 3px;
-            cursor: default;
-        }
-        .helpDeskOpenSB {
-            height: calc(100vh - 66px);
-            right: 3px;
-            bottom: 3px;
-            background-color: $atd4;
-            cursor: default;
-        }
-        .helpDeskClosed {
-            width: 22px;
-            height: 22px;
-            right: 4px;
-            bottom: 4px;
-        }
-        .helpDeskNone {
-            height: 0;
-            width: 0;
-            right: 15px;
-            bottom: 15px;
-        }
-       
-    }
     #breakTimeConsole {
         grid-area: breaktimeconsole;
-        display: block;
+        display: grid;
         cursor: default;
         position: relative;
         height: 100%;
-        width: 100%;
+        width: 100vw;
+        // grid-template-columns: 300px auto;
+        grid-template-rows: 140px auto;
+        grid-template-areas: "breakTimeHead" "breakTimeBody";
+        #breakTimeConsoleHead {
+            grid-area: breakTimeHead;
+            height: 120px;
+            margin: 10px calc(50% - 300px);
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 4px;
+            display: grid;
+            grid-template-rows: 15px 30px 30px 45px;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "breakTimeBank breakTimeBank" "breakTimeTitle breakTimeClose" "breakTimeTabs breakTimeTabs" "breakTimeActivity breakTimeActivity";
+            section:nth-child(1) {
+                grid-area: breakTimeBank;
+                display: flex;
+                span {
+                    width: 10px;
+                    height: 10px;
+                    margin: 5px 0 0 5px;
+                    background-color: $ats4;
+                    border-radius: 3px;
+                }
+            }
+            section:nth-child(2) {
+                grid-area: breakTimeTitle;
+                // background-color: blue;
+                line-height: 25px;
+                font-size: 20px;
+                margin-top: 5px;
+                text-transform: uppercase;
+                font-weight: 800;
+                text-indent: 5px;
+                color: $atd4;
+                letter-spacing: 2px;
+            }
+            section:nth-child(3) {
+                grid-area: breakTimeTabs;
+                display: flex;
+                
+                span {
+                    height: 25px;
+                    width: 100px;
+                    background-color: $atd4;
+                    margin-left: 5px;
+                    margin-top: auto;
+                    transition: height 1s, background 1s, color 1s;
+                    border-radius: 4px 4px 0 0;
+                }
+                .breakTabActive {height: 30px; background-color: $ats4;}
+            }
+            section:nth-child(4) {
+                grid-area: breakTimeActivity;
+                background-color: gray;
+            }
+            button {
+                grid-area: breakTimeClose;
+                background-color: $atd5;
+                width: 25px;
+                height: 25px;
+                position: relative;
+                margin: 5px 5px 0 auto;
+                border: none;
+                border-radius: 4px;
+            }
+        }
         #breakTimeConsoleDesk {
+            grid-area: breakTimeBody;
             display: block;
             border-radius: 4px;
-            bottom: 10px;
             position: absolute;
+            bottom: 10px;
             right: 10px;
+            width: calc(100vw - 320px);
             transition: height 1s, width .5s;
             overflow: hidden;
         }
         #breakTimeConsoleMenu {
+            top: 0;
+            left: 10px;
+            grid-area: breakTimeBody;
             overflow: hidden;
             display: block;
-            top: 10px;
-            left: 10px;
             position: absolute;
+            width: 290px;
             border-radius: 4px;
             transition: height 1s, width .5s;
         }
@@ -1546,7 +1488,7 @@ body {
 }
 // .inOffice {}
 // .outOffice {bottom: -100px;}
-.breakTimeOpen {height: calc(100vh - 55px);}
+.breakTimeOpen {height: 100vh;}
 .breakTimeClosed {height: 50px;}
 
 
