@@ -197,14 +197,14 @@ $atdX: hsl($alerthue, $alertdesat, $LVX);
 // 11. Header:
 // 10. 
 //  9. 
-//  8. Screens: help screen
-//  5. Help Desk: 
-//  7. Dash Popup:
-//  6. Dash Barrier:
-//  4. Consoles:
-//  3. Dash Content:
-//  2. Dashboard:
-//  1. Toolkit:
+//  8. Help Desk: 
+//  5. Dash Popup:
+//  7. Dash Barrier:
+//  6. Consoles:
+//  4. Dash Content:
+//  3. Dashboard:
+//  2. Help Desk Console: 
+//  1. Sidebar:
 //  0. Viewport:
 
 html {
@@ -355,21 +355,34 @@ body {
         #userConsoleHead {
             background-color: $t4;
             #userConsoleTitle {color: $t1;}
-            div:nth-child(2) {
-                .userConsoleTabObject {
-                    background-color: $t0;
-                    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
-                    span:nth-child(1) {color: $t5;}
-                    span:nth-child(2) {color: $t8;}
-                }
+            div:nth-child(1) {
                 .userConsoleTabActive {
                     background-color: $tu1;
-                    span:nth-child(1) {color: $tu6}
                     span:nth-child(2) {color: $tu9}
                 }
+                .userConsoleTabInactive {
+                    background-color: $t0;
+                    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
+                    span:nth-child(2) {color: $t8;}
+                }
             }
-            div:nth-child(3) {background-color: $t2;}
-            div:nth-child(4) {background-color: $t2; span {background-color: $ats7;}}
+            div:nth-child(2) {background-color: $t2;}
+            div:nth-child(3) {background-color: $t2; span {background-color: $ats7;}}
+            section {
+                background-color: $tu1;
+                .userConsoleSubpageActive {
+                    background-color: $as5;
+                    
+                    span:nth-child(1) {color: $asX;}
+                    span:nth-child(2) {color: $as8;}
+                }
+                .userConsoleSubpageInactive {
+                    background-color: $tu3;
+                    
+                    span:nth-child(1) {color: $tu8;}
+                    span:nth-child(2) {color: $tu6;}
+                }
+            }
         }
         #userConsoleSidebar {
             background-color: $tu0;
@@ -390,13 +403,13 @@ body {
                     li {
                         background-color: $tu1; 
                         color: $tu8;
-                        span {background-color: $tu6; color: $tu0;}
-                        span:first-child {background-color: $tu4; color: $tu0;}
+                        span {background-color: $tu8; color: $tu0;}
+                        span:first-child {background-color: $tu1; color: $tu8;}
                     }
                     li:first-child {
                         background-color: $tu0; 
                         color: $tu8;
-                        span {background-color: $tu5; color: $tu0;}
+                        span {background-color: $tu6; color: $tu0;}
                         span:first-child {background-color: $tu0; color: $tuX;}
                     }
                 }
@@ -440,34 +453,16 @@ body {
                 background-color: $ats1;
             }
         }
-        #TKtoggle {
-            background-color: $ad8;
-            .TKtoggleOpen {
-                background: $as4;
-                &:hover {
-                    background: $as6;
-                } 
-            }
-            .TKtoggleClosed {
-                background: $ad2;
-                &:hover {
-                    background: $ad4;
-                }
-            }
-        }
         #breakTimeHeader {
             color: $atd4;
         }
 
         #breakTimeConsole {
             background: $atd0;
-            #breakTimeConsoleHead {
+            #breakTimeConsoleDesk {
                 background-color: $atd7;
             }
-            #breakTimeConsoleDesk {
-                background-color: $atd4;
-            }
-            #breakTimeConsoleMenu {
+            #breakTimeConsoleLog {
                 background-color: $atd2;
             }
     
@@ -908,8 +903,8 @@ body {
     position: fixed;
     transition: width 1s;
     padding-left: 4px;
-    width: max-content;
-    // width: 26px;
+    
+    
 
     height: 30px;
     z-index: 12;
@@ -917,31 +912,48 @@ body {
     right: 5px;
     border-radius: 4px;
     background-color: $tu5;
-    span {
-        min-width: 16px;
-        border-radius: 4px;
-        height: 16px;
-        display: block;
-        margin: 4px 4px 4px 0;
-        background-color: $tu2;
-        padding: 3px;
-        font-size: 14px;
-        line-height: 16px;
-        // font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: $tu8;
-    }
-    span:first-child {
-        background-color: $as3;
+    overflow: hidden;
+    section {
+        display: flex;
         position: absolute;
-        top: 0px;
-        right: 0px;
+        right: 0;
+        span {
+            min-width: 16px;
+            border-radius: 4px;
+            height: 16px;
+            display: block;
+            margin: 4px 4px 4px 0;
+            background-color: $tu2;
+            padding: 3px;
+            font-size: 14px;
+            line-height: 16px;
+            // font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $tu8;
+        }
+        button {
+            background-color: $as3;
+            position: absolute;
+            margin: 4px 4px 4px 0;
+            top: 0px;
+            right: 0px;
+            border: none;
+            border-radius: 4px;
+            padding: 3px;
+            height: 22px;
+            width: 22px;
+            display: block;
+            
+        }
+        span:last-child {
+            margin-right: 30px;
+        }
     }
-    span:last-child {
-        margin-right: 30px;
+
     }
-}
+.navConsoleClosed {width: 26px;}
+.navConsoleOpen {width: 500px;}
 
 // Main Screen
 #userDash {
@@ -962,7 +974,7 @@ body {
 
 // Dashboard 
 #userDashboard {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 115px);
     overflow-x: hidden;
     overflow-y: scroll;
     width: calc(100% - 30px);
@@ -1048,70 +1060,65 @@ body {
         z-index: 5;
         &::-webkit-scrollbar {display: none;}
     }
-
     #userConsoleHead {
         width: 100%;
-        height: 91px;
+        height: 96px;
         position: absolute;
         top: 0;
         left: 0;
         overflow: hidden;
         display: grid;
-        grid-template-rows: 16px 35px 40px;
+        grid-template-rows: 16px 40px 40px;
         grid-template-columns: calc(100% - 40px) 40px;
-        grid-template-areas: "consoleProgressBar consoleProgressBar" "consoleTitle consoleRefresh" "consoleTabs consoleTabs";
-        #userConsoleTitle {
-            grid-area: consoleTitle;
-            width: calc(100% - 5px);
-            top: 0;
-            right: 0;
-            position: absolute;
-            height: 35px;
-            padding: 0;
-            font-size: 24px;
-            font-weight: 800;
-            line-height: 35px;
-            letter-spacing: 3px;
-            border-radius: 4px;
-            overflow: hidden;
-            text-transform: uppercase;
-        }
-        div:nth-child(2) {
+        grid-template-areas: "consoleProgressBar consoleProgressBar" "consoleTabs consoleRefresh" "consoleSubpages consoleSubpages";
+        div:nth-child(1) {
             grid-area: consoleTabs;
             cursor: default;
             overflow: hidden;
             display: flex;
             width: max-content;
             
-            .userConsoleTabObject {
+            button {
+                border: none;
                 height: 30px;
-                display: flex;
-                margin: 10px 5px 0 5px;
+                display: grid;
+                margin: auto 5px 0 5px;
                 border-radius: 4px 4px 0 0;
-                padding: 0 10px 0 10px;
+                padding: 0;
                 cursor: pointer;
                 transition: height .5s, background .5s, margin .5s, color .5s;
+                grid-template-columns: 30px auto;
+                grid-template-areas: "consoleTabIcon consoleTabTitle";
                 
+                img {
+                    grid-area: consoleTabIcon;
+                    height: 22px;
+                    width: 22px;
+                    margin: 4px;
+                    background-color: $t5;
+                }
                 span {
                     line-height: 30px;
                     font-size: 16px;
                     font-weight: 600;
                     letter-spacing: 1px;
-                
-                }
-                span:nth-child(2) {
-                    padding: 0 0 0 10px;
+                    grid-area: consoleTabTitle;
+                    padding: 0 10px 0 5px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
                 }
                 &:first-child {
                     margin-left: 10px;
                 }
             }
             .userConsoleTabActive {
-                margin: 5px 5px 0 5px;
                 height: 35px;
             }
+            .userConsoleTabInactive {
+                height: 30px;
+            }
         }
-        div:nth-child(3) {
+        div:nth-child(2) {
             grid-area: consoleRefresh;
             width: calc(100% - 10px);
             width: 28px;
@@ -1122,7 +1129,7 @@ body {
             border-radius: 4px;
             transition: width .5s;
         }
-        div:nth-child(4) {
+        div:nth-child(3) {
             grid-area: consoleProgressBar;
             
             width: calc(100% - 8px);
@@ -1140,8 +1147,47 @@ body {
                 
             }
         }
+        section {
+            grid-area: consoleSubpages;
+            display: flex;
+            width: auto;
+            height: 40px;
+            overflow: hidden;
+            padding-left: 5px;
+            button {
+                cursor: default;
+                overflow: hidden;
+                width: max-content;
+                border: none;
+                height: 30px;
+                margin: 10px 5px;
+                display: flex;
+                border-radius: 4px;
+                padding: 0px 5px;
+                cursor: pointer;
+                transition: height .5s, background .5s, margin .5s, color .5s;
+                
+                span {
+                    line-height: 22px;
+                    // text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    padding: 4px;
+                    transition:  height .5s, background .5s, margin .5s, color .5s;
+                }
+                span:nth-child(1) {
+                    grid-area: consoleSubpageTitle;
+                    letter-spacing: 1px;
+                }
+                span:nth-child(2) {
+                    grid-area: consoleSubpageQuantity;
+                }
+            
+                    
+            }
+        }
     }
-
     .consoleSidebarClosed {
         width: calc(100% - 40px);
     }
@@ -1328,7 +1374,7 @@ body {
     position: absolute;
     display: block;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     top: 48px;
     left: 0;
     z-index: 1;
@@ -1338,7 +1384,7 @@ body {
         display: grid;
         position: absolute;
         // width: calc(100% - 20px);
-        height: calc(100% - 125px);
+        height: calc(100vh - 125px);
         margin: 15px 10px;
         transition: width 1s;
         background-color: $ad3;
@@ -1355,7 +1401,7 @@ body {
     left: 0;
     position: absolute;
     transition: bottom 1s, height 1s, background 1s;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: 14px 36px calc(100% - 50px);
     cursor: pointer;
     grid-template-areas: "workWeek workWeek" "breaktimeheader breaktimeheader" "breaktimeconsole breaktimeconsole";
@@ -1389,23 +1435,22 @@ body {
     }
     #breakTimeConsole {
         grid-area: breaktimeconsole;
-        display: grid;
+        display: block;
         cursor: default;
         position: relative;
-        height: 100%;
+        height: calc(100vh - 50px);
         width: 100vw;
-        // grid-template-columns: 300px auto;
-        grid-template-rows: 140px auto;
-        grid-template-areas: "breakTimeHead" "breakTimeBody";
-        #breakTimeConsoleHead {
-            grid-area: breakTimeHead;
-            height: 120px;
-            margin: 10px calc(50% - 300px);
-            max-width: 600px;
+        #breakTimeConsoleDesk {
+            transition: height 1s, width 1s;
+            // margin: 10px calc(50% - 300px);
+            // max-width: 600px;
             overflow: hidden;
             border-radius: 4px;
             display: grid;
-            grid-template-rows: 15px 30px 30px 45px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            grid-template-rows: 15px 35px 50px auto;
             grid-template-columns: 50% 50%;
             grid-template-areas: "breakTimeBank breakTimeBank" "breakTimeTitle breakTimeClose" "breakTimeTabs breakTimeTabs" "breakTimeActivity breakTimeActivity";
             section:nth-child(1) {
@@ -1421,34 +1466,42 @@ body {
             }
             section:nth-child(2) {
                 grid-area: breakTimeTitle;
-                // background-color: blue;
-                line-height: 25px;
-                font-size: 20px;
-                margin-top: 5px;
+                background-color: $atd3;
+                line-height: 20px;
+                width: max-content;
+                font-size: 18px;
+                margin: 5px auto 0 10px;
                 text-transform: uppercase;
-                font-weight: 800;
-                text-indent: 5px;
-                color: $atd4;
+                font-weight: 600;
+                padding: 5px 10px;
+                color: $atdX;
                 letter-spacing: 2px;
+                border-radius: 4px 4px 0 0;
             }
             section:nth-child(3) {
                 grid-area: breakTimeTabs;
                 display: flex;
-                
+                background-color: $atd3;
                 span {
                     height: 25px;
-                    width: 100px;
-                    background-color: $atd4;
-                    margin-left: 5px;
-                    margin-top: auto;
+                    width: max-content;
+                    background-color: $atd1;
+                    margin: 10px 5px;
                     transition: height 1s, background 1s, color 1s;
-                    border-radius: 4px 4px 0 0;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    letter-spacing: 2px;
+                    // text-transform: uppercase;
+                    line-height: 25px;
+                    padding: 4px 8px 4px 8px;
+                    color: $atd8;
                 }
-                .breakTabActive {height: 30px; background-color: $ats4;}
+                .breakTabActive {background-color: $ats5;color: $atsX;}
             }
             section:nth-child(4) {
                 grid-area: breakTimeActivity;
-                background-color: gray;
+                background-color: $atd3;
             }
             button {
                 grid-area: breakTimeClose;
@@ -1461,29 +1514,17 @@ body {
                 border-radius: 4px;
             }
         }
-        #breakTimeConsoleDesk {
-            grid-area: breakTimeBody;
-            display: block;
-            border-radius: 4px;
-            position: absolute;
+        #breakTimeConsoleLog {
             bottom: 10px;
             right: 10px;
-            width: calc(100vw - 320px);
-            transition: height 1s, width .5s;
-            overflow: hidden;
-        }
-        #breakTimeConsoleMenu {
-            top: 0;
-            left: 10px;
-            grid-area: breakTimeBody;
             overflow: hidden;
             display: block;
             position: absolute;
-            width: 290px;
+            // width: 290px;
             border-radius: 4px;
-            transition: height 1s, width .5s;
+            transition: height 1s, width 1s;
         }
-
+        
     }
 }
 // .inOffice {}
@@ -1500,6 +1541,52 @@ body {
 // VIEWPORT DEPENDENT DESIGN ----------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+// DEVICE VIEWPORT HEIGHT AND WIDTH -------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Micro Screens - Red (BreakTime) ----------------------------------------------------------------------------------------------------
+@media only screen and (min-height: 10px) and (min-width: 10px) {
+
+    // BreakTime Responsive
+    #breakTimeConsoleDesk {
+        height: calc(100vh - 70px);
+    }
+    #breakTimeConsoleLog {
+        height: calc(100vh - 70px); 
+    }
+
+} // Small Red and Big Red
+@media only screen and (min-height: 300px) and (min-width: 10px) {
+
+
+} // Small Orange and Big Red
+@media only screen and (min-height: 600px) and (min-width: 10px) {
+
+    // BreakTime Responsive
+    #breakTimeConsoleDesk {
+        height: calc(65vh - 70px);
+    }
+    #breakTimeConsoleLog {
+        height: calc(35vh - 10px); 
+    }
+    
+} // Small Yellow and Big Red
+@media only screen and (min-height: 900px) and (min-width: 10px) {
+
+} // Small Green and Big Red
+@media only screen and (min-height: 1200px) and (min-width: 10px) {
+
+} // Small Blue and Big Red
+@media only screen and (min-height: 1500px) and (min-width: 10px) {
+
+} // Small Purple and Big Red
+@media only screen and (min-height: 1800px) and (min-width: 10px) {
+
+} // Small White and Big Red
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1521,9 +1608,6 @@ body {
         width: calc(100% - 55px);
         div {width: calc(100% - 5px);}
     }
-    .consoleWithDash {
-        width: calc(100% - 40px);
-    }
     #userConsoleHelp {
         section {
             width: calc(100vw - 75px);
@@ -1541,9 +1625,6 @@ body {
         width: calc(100vw - 330px);
         width: 0;
     }
-    #helpDeskConsole {
-        width: calc(100vw - 20px);
-    }
     .helpDeskOpenSB {
         width: calc(100vw - 16px);
     }
@@ -1551,16 +1632,16 @@ body {
 
     // BreakTime Responsive
     #breakTimeConsoleDesk {
-        width: calc(100% - 20px);
-        height: calc(100% - 110px); 
+        width: calc(100vw - 20px);
+        // height: calc(50vh - 80px); 
     }
-    #breakTimeConsoleMenu {
-        width: calc(100% - 20px);
-        height: 80px; 
+    #breakTimeConsoleLog {
+        width: calc(100vw - 20px);
+        // height: 50vh; 
     }
 
 }
-// Wide Smartphone - Dark Red (Console, Breaktime) [Accountability: ]
+// Wide Smartphone - Dark Red (Console, Breaktime)
 @media only screen and (min-width: 300px) {
     // Indicator
     #userThumb {background: hsl(0, 70%, 30%);}
@@ -1585,13 +1666,11 @@ body {
     }
     
     
-    // Breaktime
-    #breakTimeConsoleMenu {
-        width: 280px;
-    }
+
+    
     
 }
-// Narrow Tablet - Light Orange (Nav, Sidebar, Breaktime) [Accountability: ] -------------------------------------------------------------------------------------------------------------------------
+// Narrow Tablet - Light Orange (Nav, Sidebar, Breaktime) -------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 600px) {
     // Indicator
     #userThumb {background: hsl(30, 70%, 60%);}
@@ -1599,12 +1678,12 @@ body {
 
     // BreakTime Responsive
     #breakTimeConsoleDesk {
-        width: calc(100% - 310px); 
-        height: calc(100% - 20px); 
+        width: calc(100vw - 310px); 
+        height: calc(100vh - 70px);
     }
-    #breakTimeConsoleMenu {
+    #breakTimeConsoleLog {
         width: 280px;
-        height: calc(100% - 20px); 
+        height: calc(100vh - 70px); 
     }
 
 
@@ -1617,18 +1696,26 @@ body {
     }
 
 }
-// Wide Tablet - Dark Orange () [Accountability: ]
+// Wide Tablet - Dark Orange ()
 @media only screen and (min-width: 900px) {
     // Indicator
     #userThumb {background: hsl(30, 70%, 30%);}
 
 
-
+    // BreakTime Responsive
+    #breakTimeConsoleDesk {
+        width: calc(100vw - 310px); 
+        // height: calc(100vh - 70px);
+    }
+    #breakTimeConsoleLog {
+        width: 280px;
+        // height: calc(100vh - 70px); 
+    }
 
 
 
 }
-// Narrow Laptop - Light Green (Console, Help Desk, Sidebar) [Accountability: ] --------------------------------------------------------------------------------------------------------------------------------
+// Narrow Laptop - Light Green (Console, Help Desk, Sidebar) --------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1200px) {
     // Indicator
     #userThumb {background: hsl(102, 70%, 60%);}
@@ -1664,6 +1751,16 @@ body {
         }
 
     }
+
+    // BreakTime Responsive
+    #breakTimeConsoleDesk {
+        width: calc(100vw - 610px); 
+        // height: calc(100vh - 70px);
+    }
+    #breakTimeConsoleLog {
+        width: 580px;
+        // height: calc(100vh - 70px); 
+    }
 }
 // Wide Laptop - Dark Green (Sidebar) [Accountability: ]
 @media only screen and (min-width: 1500px) {
@@ -1677,7 +1774,7 @@ body {
 
 
 }
-// Narrow Desktop - Light Blue (HelpDesk) [Accountability: ] -------------------------------------------------------------------------------------------------------------------------------
+// Narrow Desktop - Light Blue (HelpDesk) -------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1800px) {
     // Indicator
     #userThumb {background: hsl(206, 70%, 60%);}
@@ -1685,7 +1782,7 @@ body {
 
 
 }
-// Wide Desktop - Dark Blue () [Accountability: ]
+// Wide Desktop - Dark Blue ()
 @media only screen and (min-width: 2100px) {
     // Indicator
     #userThumb {background: hsl(206, 70%, 30%);}
@@ -1702,7 +1799,7 @@ body {
 
     
 }
-// Medium Ultrawide - Dark Purple (Toolkit)
+// Medium Ultrawide - Dark Purple (Toolkit) 
 @media only screen and (min-width: 2700px) {
     // Indicator
     #userThumb {background: hsl(272, 70%, 30%);}
@@ -1720,7 +1817,7 @@ body {
         width: calc(100vw - 916px);
     }
 }
-// Wide Ultrawide - Black (Toolkit)
+// Wide Ultrawide - Black (Toolkit) 
 @media only screen and (min-width: 3000px) {
     // Indicator
     #userThumb {background-color: rgb(0, 0, 0);}
@@ -1736,10 +1833,6 @@ body {
         width: calc(100vw - 1216px);
     }
 }
-
-
-
-
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1774,7 +1867,7 @@ body {
         
     }
 
-    
+
     
 }
 // Mini Screens - Orange ()
@@ -1879,100 +1972,6 @@ body {
 
 
 
-
-
-
-// DEVICE VIEWPORT HEIGHT AND WIDTH -------------------------------------------------------------------------------------------------------------------------
-
-
-
-// Help Desk Responsive
-
-
-@media only screen and (min-height: 10px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 85px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskSidebar {
-        width: calc(100% - 20px);
-    }
-    .helpDeskSidebarOpen {height: calc(100% - 34px);}
-    .helpDeskSidebarClosed {height: 40px;}
-} // Small Red and Big 
-@media only screen and (min-height: 300px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 85px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskSidebar {
-        width: calc(100% - 20px);
-    }
-    .helpDeskSidebarOpen {height: calc(100% - 34px);}
-    .helpDeskSidebarClosed {height: 40px;}
-} // Small Orange and Big 
-@media only screen and (min-height: 600px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 85px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskSidebar {
-        width: calc(100% - 20px);
-    }
-    .helpDeskSidebarOpen {height: calc(100% - 34px);}
-    .helpDeskSidebarClosed {height: 40px;}
-} // Small Yellow and Big 
-@media only screen and (min-height: 900px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 85px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskSidebar {
-        width: calc(100% - 20px);
-    }
-    .helpDeskSidebarOpen {height: calc(100% - 34px);}
-    .helpDeskSidebarClosed {height: 40px;}
-} // Small Green and Big 
-@media only screen and (min-height: 1200px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 85px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskSidebar {
-        width: calc(100% - 20px);
-    }
-    .helpDeskSidebarOpen {height: calc(100% - 34px);}
-    .helpDeskSidebarClosed {height: 40px;}
-} // Small Blue and Big 
-@media only screen and (min-height: 1500px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 85px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskSidebar {
-        width: calc(100% - 20px);
-    }
-    .helpDeskSidebarOpen {height: calc(100% - 34px);}
-    .helpDeskSidebarClosed {height: 40px;}
-} // Small Purple and Big 
-@media only screen and (min-height: 1800px) and (min-width: 10px) {
-
-    #helpDeskChats {
-        height: calc(100% - 85px);
-        width: calc(100% - 20px);
-    }
-    #helpDeskSidebar {
-        width: calc(100% - 20px);
-    }
-    .helpDeskSidebarOpen {height: calc(100% - 34px);}
-    .helpDeskSidebarClosed {height: 40px;}
-} // Small White and Big 
 
 
 

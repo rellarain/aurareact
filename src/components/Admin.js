@@ -51,8 +51,9 @@ function AdminFooter() {
             BREAKTIME
         </div>
         <div id='breakTimeConsole'>
-            
-            <div id="breakTimeConsoleHead">
+
+            <div id="breakTimeConsoleLog">need to add a header that closes the breaktime console and displays the time, used breaktime, earned breaktime, and unearned breaktime</div>
+            <div id="breakTimeConsoleDesk">
                 <section>
                     <span></span>
                     <span></span>
@@ -77,17 +78,15 @@ function AdminFooter() {
                 </section>
                 <section>Breaktime</section>
                 <section>
-                    <span className='breakTabActive'></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span className='breakTabActive'>Pastime</span>
+                    <span>Hobby</span>
+                    <span>Project</span>
+                    <span>Practice</span>
+                    <span>Self-Care</span>
                 </section>
-                <section></section>
+                <section>need to add a messenger component that displays active users on team and in connections, task lists for ongoing projects outside of work, </section>
                 <button onClick={handleBTConsoleClosed}></button>
             </div>
-            <div id="breakTimeConsoleMenu">need to add a header that closes the breaktime console and displays the time, used breaktime, earned breaktime, and unearned breaktime</div>
-            <div id="breakTimeConsoleDesk">need to add a messenger component that displays active users on team and in connections, task lists for ongoing projects outside of work, </div>
 
         </div>
 

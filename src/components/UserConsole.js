@@ -7,15 +7,10 @@ export default function UserConsole() {
     const [consoleClosed, setConsoleClosed] = useState(false);
     const [consoleHelpClosed, setConsoleHelpClosed] = useState(true);
     const [consoleSidebarClosed, setConsoleSidebarClosed] = useState(true);
-    const [consoleTabActive, setConsoleTabActive] = useState(true);
 
     function handleConsoleClosed() {
         setConsoleClosed(!consoleClosed);
         // alert("it worked!");
-    }
-
-    function handleConsoleTabClick() {
-        setConsoleTabActive(!consoleTabActive)
     }
 
     function handleConsoleSidebarClosed() {
@@ -32,44 +27,22 @@ export default function UserConsole() {
     return (
         <div id='userConsole' className={consoleClosed ? "userConsoleClosed" : "userConsoleOpen"} >
             <div id="userConsoleHead">
-                <div id='userConsoleTitle'>{consoleTitle}</div>
                 <div>
-                    <span className='userConsoleTabObject userConsoleTabActive'>
-                        <span>Tab Title</span>
-                        <span>1235</span>
-
-                    </span>
-                    <span className='userConsoleTabObject'>
-                        <span>Tab Title</span>
-                        <span>112225</span>
-                    </span>
-                    <span className='userConsoleTabObject'>
-                        <span>Tab Title</span>
-                        <span>12045</span>
-                    </span>
-                    <span className='userConsoleTabObject'>
-                        <span>Tab Title</span>
-                        <span>45</span>
-                    </span>
-                    <span className='userConsoleTabObject'>
-                        <span>Tab Title</span>
-                        <span>62</span>
-                    </span>
-                    <span className='userConsoleTabObject'>
-                        <span>Tab Title </span>
-                        <span></span>
-                    </span>
-                    <span className='userConsoleTabObject'>
-                        <span></span>
-                        <span></span>
-                    </span>
-                    <span className='userConsoleTabObject'>
-                        <span></span>
-                        <span></span>
-                    </span>
+                    <ConsoleTab/>
+                    <ConsoleTab/>
+                    <ConsoleTab/>
+                    <ConsoleTab/>
+                    <ConsoleTab/>
+                    <ConsoleTab/>
                 </div>
                 <div onClick={handleConsoleClosed}></div>
                 <div> <span></span> </div>
+                <section>
+                    <ConsoleSubpage />
+                    <ConsoleSubpage />
+                    <ConsoleSubpage />
+                    <ConsoleSubpage />
+                </section>
             </div>
             
             <div id='userConsoleSidebar' className={consoleHelpClosed ? "consoleHelpToolClosed" : "consoleHelpToolOpen"}>
@@ -102,27 +75,34 @@ export default function UserConsole() {
             </div>
             {/* consoleSidebarOpen consoleSidebarClosed */}
             <div id='userConsoleDesk' onClick={handleConsoleSidebarClosed} className={consoleSidebarClosed ? "consoleSidebarClosed" : "consoleSidebarOpen"}>
+                To-Do List for Console: 
+                <br/>- write tabs as components that can be replicated with props
+                <br/>- write tabActive toggle that makes corresponding sidebar content appear and disappear
+                <br/>- add time and date in the header
+                <br/>- add an activity indicator on the console so the user knows how they are performing in each time interval
+                <br/>- make a button/indicator for sidebar open or closed
+                <br/>- make an area in the header for updates or schedule reminders
+                <br/>- save button on the console
+                <br/>- help desk toggle for admin consoles
+                <br/>- refresh button that updates console (queue quantities)
+
+                <br/><br/>ACTIVITY INDICATOR
+                <br/>- next to help tool on sidebar
+                <br/>- displays activity level for current time interval when closed
+                <br/>- 
+                <br/>- 
+                <br/><br/><br/><br/><br/>
+                <br/>-
+                <br/>-
+                <br/>-
+                <br/>-
+                <br/>-
+                <br/>-
 
             </div>
 
             {/* 
-            To-Do List for Console: 
-            - write tabs as components that can be replicated with props
-            - write tabActive toggle that makes corresponding sidebar content appear and disappear
-            - add time and date in the header
-            - add an activity indicator on the console so the user knows how they are performing in each time interval
-            - make a button/indicator for sidebar open or closed
-            - make an area in the header for updates or schedule reminders
-            - save button on the console
-            - help desk toggle for admin consoles
-            - refresh button that updates console (queue quantities)
-
-            ACTIVITY INDICATOR
-            - next to help tool on sidebar
-            - displays activity level for current time interval when closed
-            - 
-            -
-            -
+            
             
             
             
@@ -153,256 +133,473 @@ function ConsoleSidebarContent() {return(
     <section id='consoleSidebarContent'>
         <ul>
             <li>
-                <span>Community Console</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Account Console</span>(One Tab, One Page)
+                <span>
+                    <b>Account Tab</b>
+                    <br/><b></b>: 
+                </span>
+                <span>
+                    <b>Connections Tab</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Customize Tab</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Voice Tab</b> (Social Only)
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Admin Tab</b> (Scholar/Admin Only)
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Community Info Tab</span>
-                <span>Sidebar: community metrics ()</span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Roster Tab</span>
-                <span>Sidebar: management team, </span>
-                <span>Desk: profile cards, </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Forum Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Bulletin Tab</span>
-                <span>Sidebar: notices/updates/news </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <span>District Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>District Info Tab</span>
-                <span>Sidebar: wide cards of community summaries</span>
-                <span>Desk: management team, </span>
-            </li>
-            <li>
-                <span>Roster Tab</span>
-                <span>Sidebar: statistics, </span>
-                <span>Desk: profile cards, </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Forum Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Bulletin Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Subpage/Task Option</span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
         </ul>
         <ul>
             <li>
-                <span>Region Console</span>
-                <span></span>
-                <span></span>
+                <span>Collective Consoles </span> (One Tab, Multi-Page)
+                <span>
+                    <b>Collective Details Tab </b>
+                    <br/><b>Sidebar</b>: sub-collective widecards (), management team ()
+                    <br/><b>Desk</b>: collective metrics (statistics, engagement, occupancy, etc.)
+                </span>
+                <span>
+                    <b>Roster Tab</b>
+                    <br/><b>Sidebar</b>: filters ()
+                    <br/><b>Desk</b>: profile gallery ()
+                </span>
+                <span>
+                    <b>Forum Tab</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Bulletin Tab</b>
+                    <br/><b>Sidebar</b>: notices, updates, news
+                    <br/><b>Desk</b>: 
+                </span>
             </li>
             <li>
-                <span>Region Info Tab</span>
-                <span>Sidebar: wide cards of district summaries</span>
-                <span>Desk: management team, </span>
+                <span>Community Subpage</span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Roster Tab</span>
-                <span>Sidebar: statistics, </span>
-                <span>Desk: profile cards, </span>
+                <span>District Subpage</span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Forum Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
+                <span>Region Subpage</span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Bulletin Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <span>Academy Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Academy Info Tab</span>
-                <span>Sidebar: wide cards of region summaries</span>
-                <span>Desk: management team, </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Roster Tab</span>
-                <span>Sidebar: statistics, </span>
-                <span>Desk: profile cards, </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Forum Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Bulletin Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <span>Assessment Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Assessment Processing Tabs</span>
-                <span>Sidebar: steps (survey, )</span>
-                <span>Desk: </span>
-            </li>
-            <li>
-                <span>Add Assessment Tab (Catalog) </span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <span>Scholar Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Library Tab (Learning)</span>
-                <span>Sidebar: topic navigation, reading list</span>
-                <span>Desk: current active topic </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Course Tab (Learning)</span>
-                <span>Sidebar: to-do list (reading, activities, discussions)</span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Project Tab (Training)</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Evaluation Tab (Evaluation)</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Apprentice Tab (Training, Evaluation)</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Academy Subpage</span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
         </ul>
         <ul>
             <li>
-                <span>Management Console</span>
-                <span></span>
-                <span></span>
+                <span>Assessment Consoles</span> (One Tab, One Page)
+                <span>
+                    <b>Assessment Processing Tab</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>New Assessment/Catalog Tab</b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Collective Management Tab</span>
-                <span>Sidebar: collective metrics (engagement, occupancy, revenue, activity) for all managed levels (academy, region/region cluster, district/district cluster, community/community cluster)</span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Introduction Step Subpage</span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Support Management Tab</span>
-                <span>Sidebar: direct reports' widecards with today's performance scores </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Feedback Processing Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: feedback bank (complete = alert desat, assigned incomplete = accent desat, team incomplete = theme desat), feedback processing form ()</span>
-                <span></span>
-            </li>
-            <li>
-                <span>Forum Management Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Bulletin Management Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span>Member Management Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Survey Step Subpage</span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
         </ul>
         <ul>
             <li>
-                <span>Designer Console</span>
-                <span></span>
-                <span></span>
+                <span>Scholar Consoles</span> (One Tab, Multi-Page)
+                <span>
+                    <b>Assessment</b> (Designers)
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Management</b> (Leaders)
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Education</b> (Educators)
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Creation</b> (Creators)
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Development</b> (Developers)
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Design Department Tab</span>
-                <span>Sidebar:  </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Learning Subpages</span> Library, Courses, Lessons
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span>Support Management Tab</span>
-                <span>Sidebar: direct reports' widecards with today's performance scores </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Application Subpages</span> Projects, Practice, Discussion 
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <span>Admin Console</span> (Multi-Tab, One Page)
+                <span>
+                    <b>Collective Management</b>
+                    <br/><b></b>
+                    <br/>
+                </span>
+                <span>
+                    <b>Designers</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Educators</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Creators</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Developers</b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span> Assessment Editor Tab</span>
-                <span>Sidebar: assessment navigation</span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Department Performance Subpage</span>
+                <span>
+                    <b>Management Department</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Design Department</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Creator Department</b>
+                    <br/><b>Sidebar</b>: project progress (stages, due dates), 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Education Department</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Developer Department</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
             </li>
             <li>
-                <span> Manual Editor Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Team Performance Subpage</span>
+                <span>
+                    <b>Subpage/Task Option</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
             </li>
             <li>
-                <span> Feedback Processing Tab</span>
-                <span>Sidebar: </span>
-                <span>Desk: </span>
-                <span></span>
+                <span>Support Management Subpage</span> Performance
+                <span>
+                    <b>Subpage/Task Option</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+            </li>
+            <li>
+                <span>User Management Subpage</span>
+                <span>
+                    <b>Subpage/Task Option</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/>
+                    <br/>
+                </span>
+            </li>
+            <li>
+                <span>Feedback Processing Subpage</span>complete = alert desat, assigned incomplete = accent desat, team incomplete = theme desat
+                <span>
+                    <b>General/MGMT Feedback</b>
+                    <br/><b>Sidebar</b>: feedback bank ()
+                    <br/><b>Desk</b>: processing form ()
+                </span>
+                <span>
+                    <b>Assessment Feedback</b>
+                    <br/><b>Sidebar</b>: ordered by assessment, then ordered by element (manual, processing, results)
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Content Feedback</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Development Feedback</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Education Feedback</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+            </li>
+            <li>
+                <span>Collective Management</span> Management Only
+                <span>
+                    <b>Community Management</b>
+                    <br/><b>Sidebar</b>: community metrics (engagement, occupancy, revenue, activity)
+                    <br/><b>Desk</b>:
+                </span>
+                <span>
+                    <b>District Management</b>
+                    <br/><b>Sidebar</b>: district metrics (engagement, occupancy, revenue, activity)
+                    <br/><b>Desk</b>:
+                </span>
+                <span>
+                    <b>Region Management</b>
+                    <br/><b>Sidebar</b>: region metrics (engagement, occupancy, revenue, activity)
+                    <br/><b>Desk</b>:
+                </span>
+            </li>
+            <li>
+                <span>Assessment Management</span> Designers Only
+                <span>
+                    <b>Manual Management</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Assessment Management</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Results Management</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+            </li>
+            <li>
+                <span>Curriculum Management</span> Educators Only
+                <span>
+                    <b>Library MGMT Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Course MGMT Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Lesson MGMT Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Projects MGMT Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Practice MGMT Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Discussion MGMT Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+            </li>
+            <li>
+                <span>Content Management</span> Creators Only
+                <span>
+                    <b>Editorial MGMT Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Writing Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Translation Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Studio Subpage</b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+
+            </li>
+            <li>
+                <span>Development/Tech Management</span> Developers Only
+                <span>
+                    <b>Subpage/Task Option</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b></b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+            </li>
+            <li>
+                <span>Committee Management</span>
+                <span>
+                    <b>Subpage/Task Option</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b></b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b></b>
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                </span>
             </li>
         </ul>
         <ul>
@@ -563,107 +760,6 @@ function ConsoleSidebarContent() {return(
         </ul>
         <ul>
             <li>
-                <span>Creator Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Creator Department Tab</span>
-                <span>Sidebar: department performance, project schedule/progress,  </span>
-                <span>Desk: </span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-            </li>
-            <li>
-                <span>Editor Tab</span>
-                <span></span>
-                <span></span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-            </li>
-            <li>
-                <span>Writer Tab</span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Translator Tab</span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Artist Tab</span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    SUBPAGE
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span></span>
-                <span></span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <span>Developer Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Developer Department Tab</span>
-                <span>Sidebar: department performance </span>
-                <span>Desk: </span>
-                <span></span>
-            </li>
-            <li>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </li>
-        </ul>
-        <ul>
-            <li>
                 <span>Committee Console</span>
                 <span></span>
                 <span></span>
@@ -678,11 +774,49 @@ function ConsoleSidebarContent() {return(
     </section>
 )}
 
+function ConsoleTab() {
+    
+    const consoleTitle = "Designer";
+
+    const [consoleTabActive, setConsoleTabActive] = useState(true);
+    function handleConsoleTabClick() {
+        setConsoleTabActive(!consoleTabActive);
+    }
+
+    
+    return (
+        <button className={consoleTabActive ? "userConsoleTabInactive" : "userConsoleTabActive"} onClick={handleConsoleTabClick}>
+            <img></img>
+            <span>{consoleTitle}</span>
+
+        </button>
+    )
+}
+
+function ConsoleSubpage() {
+    
+    const consoleSubpageTitle = "Queue";
+    const consoleSubpageQuantity = "100";
+
+    const [consoleSubpageActive, setConsoleSubpageActive] = useState(false);
+    function handleConsoleSubpageClick() {
+        setConsoleSubpageActive(!consoleSubpageActive);
+    }
+
+    
+    return (
+        <button className={consoleSubpageActive ? "userConsoleSubpageActive" : "userConsoleSubpageInactive"} onClick={handleConsoleSubpageClick}>
+            <span>{consoleSubpageTitle}</span>
+            <span>{consoleSubpageQuantity}</span>
+
+        </button>
+    )
+}
 
 
 
 // To-Do List:
-// - Create separate JS files for each level of user (visitorConsoles, memberConsoles, scholarConsoles, adminConsoles)
+// <br/>- Create separate JS files for each level of user (visitorConsoles, memberConsoles, scholarConsoles, adminConsoles)
 // - Create styling framework that works for all consoles
 //
 //
