@@ -4,13 +4,13 @@ import React, { useState } from 'react';
 export default function Admin() {return (
     <div>
         <Sidebar />
-        <AdminFooter />
+        <BreakTimeFooter />
     </div>
 )}
 
 
 
-function AdminFooter() {
+function BreakTimeFooter() {
     
    
     const [BTConsoleClosed, setBTConsoleClosed] = useState(true);
@@ -23,7 +23,7 @@ function AdminFooter() {
 
     
     return (
-    <div id= "adminFooter" className={BTConsoleClosed ? "breakTimeClosed" : "breakTimeOpen"}>
+    <div id= "breakTimeFooter" className={BTConsoleClosed ? "breakTimeClosed" : "breakTimeOpen"}>
         {/* inOffice outOffice  */} {/* breakTimeOpen breakTimeClosed */}
         <div id="workWeekTimer">
             <span></span>
@@ -75,14 +75,42 @@ function AdminFooter() {
                     <span></span>
                     <span></span>
                     <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </section>
                 <section>Breaktime</section>
                 <section>
-                    <span className='breakTabActive'>Pastime</span>
-                    <span>Hobby</span>
-                    <span>Project</span>
-                    <span>Practice</span>
-                    <span>Self-Care</span>
+                    <BreakConsoleTab breakConsoleTitle="Pastime" />
+                    <BreakConsoleTab breakConsoleTitle="Hobby" />
+                    <BreakConsoleTab breakConsoleTitle="Project" />
+                    <BreakConsoleTab breakConsoleTitle="Practice" />
+                    <BreakConsoleTab breakConsoleTitle="Self-Care" />
                 </section>
                 <section>need to add a messenger component that displays active users on team and in connections, task lists for ongoing projects outside of work, </section>
                 <button onClick={handleBTConsoleClosed}></button>
@@ -128,6 +156,22 @@ function HelpConsole() {return (
     </main>
 )}
 
+function BreakConsoleTab({breakConsoleTitle}) {
+    
+    // const breakConsoleTitle = "Designer";
+
+    const [breakConsoleTabActive, setBreakConsoleTabActive] = useState(true);
+    function handleBreakConsoleTabClick() {
+        setBreakConsoleTabActive(!breakConsoleTabActive);
+    }
+
+    
+    return (
+        <button className={breakConsoleTabActive ? "userBreakConsoleTabInactive" : "userBreakConsoleTabActive"} onClick={handleBreakConsoleTabClick}>
+            {breakConsoleTitle}
+        </button>
+    )
+}
 
 // Toolkit Navigation
 // 

@@ -61,9 +61,9 @@ table {
 
 $baseBright: 10%; // 0-30%
 
-$themehue:  20;
-$accenthue: 330;
-$alerthue:  210;
+$themehue:  320;
+$accenthue: 210;
+$alerthue:  30;
 
 $themesat:  8%; // 0-20%
 $accentsat: 20%; // 0-20%
@@ -364,11 +364,14 @@ body {
                     background-color: $t0;
                     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
                     span:nth-child(2) {color: $t8;}
+                    &:hover {
+                        height: 35px;
+                    }
                 }
             }
             div:nth-child(2) {background-color: $t2;}
             div:nth-child(3) {background-color: $t2; span {background-color: $ats7;}}
-            section {
+            section:nth-child(4) {
                 background-color: $tu1;
                 .userConsoleSubpageActive {
                     background-color: $as5;
@@ -381,8 +384,15 @@ body {
                     
                     span:nth-child(1) {color: $tu8;}
                     span:nth-child(2) {color: $tu6;}
+                    &:hover {
+                        background-color: $tu4;
+                        span:nth-child(1) {color: $tu9;}
+                        span:nth-child(2) {color: $tu7;}
+
+                    }
                 }
             }
+            section:nth-child(5) {color: $t1;}
         }
         #userConsoleSidebar {
             background-color: $tu0;
@@ -419,33 +429,10 @@ body {
         }
     }
     #sidebar {
-        background-color: $atd0;
-        #toolkit {
-            background-color: $ad4;
-            box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
-            #toolkitHead {
-                background-color: $ad5;
-                span {background-color: $ad2; box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.492); &:hover {background-color: $ad3;}}
-                .openTab {background-color: $ad1; &:hover {background-color: $ad1;}}
-            }
-            #toolkitTitle {
-                background-color: $ad1;
-                input {color: $ad0;background-color: $ad5;}
-            }
-            #toolkitProgress {background-color: $ad0; #toolkitProgressBar {background-color: $ats4;}}
-            #toolkitBody {
-            &::-webkit-scrollbar {
-                background-color: $as2;
-            }
-            &::-webkit-scrollbar-button {
-                background-color: $as1;
-            }
-            &::-webkit-scrollbar-thumb {
-                background-color: $as7;
-            }}
-        }
+        background-color: $ad0;
+
     }
-    #adminFooter {
+    #breakTimeFooter {
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
         #workWeekTimer {
             background-color: $atd4;
@@ -622,7 +609,7 @@ body {
             }}
         }
     }
-    #adminFooter {
+    #breakTimeFooter {
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
         #workWeekTimer {
             background-color: $adX;
@@ -676,10 +663,10 @@ body {
         #breakTimeConsole {
             background: $ad1;
             #breakTimeConsoleDesk {
-                background-color: $ad3;
+                background-color: $ad2;
             }
             #breakTimeConsoleMenu {
-                background-color: $as4;
+                background-color: $as0;
             }
     
         }
@@ -714,10 +701,10 @@ body {
         section {
             grid-area: accountConsoleContent;
             display: grid;
-            width: calc(100vw - 20px);
-            height: calc(100% - 10px);
-            margin: 5px 10px 10px 10px;
-            border-radius: 8px;
+            width: calc(100vw - 10px);
+            height: 100%;
+            margin: 0 5px;
+            border-radius: 4px;
             transition: height 1.25s;
             overflow: hidden;
             grid-template-rows: 50px auto;
@@ -928,7 +915,7 @@ body {
             font-size: 14px;
             line-height: 16px;
             // font-weight: 600;
-            text-transform: uppercase;
+            // text-transform: uppercase;
             letter-spacing: 1px;
             color: $tu8;
         }
@@ -951,9 +938,9 @@ body {
         }
     }
 
-    }
+}
 .navConsoleClosed {width: 26px;}
-.navConsoleOpen {width: 500px;}
+.navConsoleOpen {width: calc(100vw - 50px);}
 
 // Main Screen
 #userDash {
@@ -1008,8 +995,8 @@ body {
         font-weight: 700;
         font-size: 13px;
         letter-spacing: 1.5px;
-        margin: 4px 4px 4px auto;
-        padding: 3px;
+        margin: 4px 0 4px auto;
+        padding: 3px 9px;
         line-height: 13px;
         text-align: right;
         text-transform: uppercase;
@@ -1042,11 +1029,11 @@ body {
     z-index: 4;
     cursor: pointer;
     width: calc(100% - 20px);
-    height: calc(100vh - 160px);
+    height: calc(100vh - 120px);
 
     #userConsoleDesk {
         
-        height: calc(100% - 120px);
+        height: calc(100% - 149px);
         display: block;
         position: absolute;
         right: 5px;
@@ -1062,15 +1049,15 @@ body {
     }
     #userConsoleHead {
         width: 100%;
-        height: 96px;
+        height: 128px;
         position: absolute;
         top: 0;
         left: 0;
         overflow: hidden;
         display: grid;
-        grid-template-rows: 16px 40px 40px;
+        grid-template-rows: 16px 27px 40px 45px;
         grid-template-columns: calc(100% - 40px) 40px;
-        grid-template-areas: "consoleProgressBar consoleProgressBar" "consoleTabs consoleRefresh" "consoleSubpages consoleSubpages";
+        grid-template-areas: "consoleProgressBar consoleProgressBar" "dateTime consoleRefresh" "consoleTabs consoleRefresh" "consoleSubpages consoleSubpages";
         div:nth-child(1) {
             grid-area: consoleTabs;
             cursor: default;
@@ -1121,11 +1108,11 @@ body {
         div:nth-child(2) {
             grid-area: consoleRefresh;
             width: calc(100% - 10px);
-            width: 28px;
-            height: 28px;
+            width: 24px;
+            height: 24px;
             right: 5px;
             position: absolute;
-            top: 1.25px;
+            top: 3px;
             border-radius: 4px;
             transition: width .5s;
         }
@@ -1147,11 +1134,11 @@ body {
                 
             }
         }
-        section {
+        section:nth-child(4) {
             grid-area: consoleSubpages;
             display: flex;
             width: auto;
-            height: 40px;
+            height: 45px;
             overflow: hidden;
             padding-left: 5px;
             button {
@@ -1187,13 +1174,23 @@ body {
                     
             }
         }
+        section:nth-child(5) {
+            grid-area: dateTime;
+            // background-color: red;
+            line-height: 30px;
+            margin-left: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
     }
     .consoleSidebarClosed {
         width: calc(100% - 40px);
     }
     #userConsoleSidebar {
         display: block;
-        height: calc(100% - 130px);
+        height: calc(100% - 159px);
         padding: 5px;
         position: absolute;
         left: 30px;
@@ -1363,38 +1360,14 @@ body {
     }
 
 }
-.userConsoleOpen {top: 98px;}
+.userConsoleOpen {top: 60px;}
 .userConsoleClosed {top: -150vh;}
 // .userConsoleClosed {top: 80vh;}
 // .userConsoleState {height: calc(100% - 65px);}
 // .adminConsoleState {height: calc(100% - 89px);}
 
 // SCHOLAR --------------------------------------------------------------------------------------------------------------------------------
-#sidebar {
-    position: absolute;
-    display: block;
-    height: 100vh;
-    width: 100vw;
-    top: 48px;
-    left: 0;
-    z-index: 1;
-    overflow: hidden;
-
-    #helpDeskConsole {
-        display: grid;
-        position: absolute;
-        // width: calc(100% - 20px);
-        height: calc(100vh - 125px);
-        margin: 15px 10px;
-        transition: width 1s;
-        background-color: $ad3;
-        border-radius: 4px;
-        color: white;
-    }
-}
-
-// ADMIN --------------------------------------------------------------------------------------------------------------------------------
-#adminFooter {
+#breakTimeFooter {
     width: 100vw;
     display: grid;
     z-index: 4;
@@ -1439,6 +1412,7 @@ body {
         cursor: default;
         position: relative;
         height: calc(100vh - 50px);
+        overflow: hidden;
         width: 100vw;
         #breakTimeConsoleDesk {
             transition: height 1s, width 1s;
@@ -1456,17 +1430,23 @@ body {
             section:nth-child(1) {
                 grid-area: breakTimeBank;
                 display: flex;
+                flex-wrap: wrap;
                 span {
                     width: 10px;
                     height: 10px;
                     margin: 5px 0 0 5px;
-                    background-color: $ats4;
+                    background-color: $ats1;
                     border-radius: 3px;
+                    transition: background 5s 2.5s;
+                    &:hover {
+                        transition: background .1s;
+                        background-color: $atsX;
+                    }
                 }
             }
             section:nth-child(2) {
                 grid-area: breakTimeTitle;
-                background-color: $atd3;
+                background-color: $atd2;
                 line-height: 20px;
                 width: max-content;
                 font-size: 18px;
@@ -1481,37 +1461,43 @@ body {
             section:nth-child(3) {
                 grid-area: breakTimeTabs;
                 display: flex;
-                background-color: $atd3;
-                span {
-                    height: 25px;
+                background-color: $atd2;
+                padding-left: 5px;
+                button {
+                    height: 30px;
                     width: max-content;
                     background-color: $atd1;
                     margin: 10px 5px;
-                    transition: height 1s, background 1s, color 1s;
+                    transition: height .5s, background .5s, color .5s;
                     font-size: 15px;
                     font-weight: 600;
                     border-radius: 4px;
-                    letter-spacing: 2px;
+                    letter-spacing: 1px;
                     // text-transform: uppercase;
-                    line-height: 25px;
-                    padding: 4px 8px 4px 8px;
+                    line-height: 20px;
+                    padding: 5px 10px;
                     color: $atd8;
+                    overflow: hidden;
+
                 }
-                .breakTabActive {background-color: $ats5;color: $atsX;}
+                .userBreakConsoleTabActive {background-color: $atsX; color: $ats2;}
+                .userBreakConsoleTabInactive {background-color: $atd6; color: $atd0; &:hover {background-color: $atd8;color: $atd2;}}
             }
             section:nth-child(4) {
                 grid-area: breakTimeActivity;
-                background-color: $atd3;
+                background-color: $atd2;
             }
             button {
                 grid-area: breakTimeClose;
-                background-color: $atd5;
+                background-color: $atd4;
+                transition: width 1s;
                 width: 25px;
                 height: 25px;
                 position: relative;
                 margin: 5px 5px 0 auto;
                 border: none;
                 border-radius: 4px;
+                &:hover {width: 150px;}
             }
         }
         #breakTimeConsoleLog {
@@ -1527,11 +1513,34 @@ body {
         
     }
 }
-// .inOffice {}
-// .outOffice {bottom: -100px;}
 .breakTimeOpen {height: 100vh;}
 .breakTimeClosed {height: 50px;}
 
+
+// ADMIN --------------------------------------------------------------------------------------------------------------------------------
+
+#sidebar {
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    top: 48px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    #helpDeskConsole {
+        display: grid;
+        position: absolute;
+        // width: calc(100% - 20px);
+        height: calc(100vh - 125px);
+        margin: 15px 10px;
+        transition: width 1s;
+        background-color: $ad3;
+        border-radius: 4px;
+        color: white;
+    }
+}
 
 
 

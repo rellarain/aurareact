@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 export default function UserConsole() {
 
     const consoleTitle = "Designer";
+    const today = new Date();
+
 
     const [consoleClosed, setConsoleClosed] = useState(false);
     const [consoleHelpClosed, setConsoleHelpClosed] = useState(true);
@@ -21,6 +23,10 @@ export default function UserConsole() {
     function handleConsoleHelpClosed() {
         setConsoleHelpClosed(!consoleHelpClosed);
         // alert("it worked!");
+    }
+
+    function formatDate(date) {
+        return new Intl.DateTimeFormat('en-us', {weekday: 'long', month: 'long', day: '2-digit', year:'numeric'}).format(date);
     }
 
 
@@ -43,6 +49,7 @@ export default function UserConsole() {
                     <ConsoleSubpage />
                     <ConsoleSubpage />
                 </section>
+                <section>{formatDate(today)}</section>
             </div>
             
             <div id='userConsoleSidebar' className={consoleHelpClosed ? "consoleHelpToolClosed" : "consoleHelpToolOpen"}>
@@ -139,6 +146,11 @@ function ConsoleSidebarContent() {return(
                     <br/><b></b>: 
                 </span>
                 <span>
+                    <b>Portfolio Tab</b>
+                    <br/>
+                    <br/>
+                </span>
+                <span>
                     <b>Connections Tab</b>
                     <br/>
                     <br/>
@@ -175,7 +187,7 @@ function ConsoleSidebarContent() {return(
         </ul>
         <ul>
             <li>
-                <span>Collective Consoles </span> (One Tab, Multi-Page)
+                <span>Collective Console </span> (One Tab, Multi-Page)
                 <span>
                     <b>Collective Details Tab </b>
                     <br/><b>Sidebar</b>: sub-collective widecards (), management team ()
@@ -252,7 +264,7 @@ function ConsoleSidebarContent() {return(
         </ul>
         <ul>
             <li>
-                <span>Assessment Consoles</span> (One Tab, One Page)
+                <span>Assessment Console</span> (One Tab, One Page)
                 <span>
                     <b>Assessment Processing Tab</b>
                     <br/>
@@ -293,9 +305,14 @@ function ConsoleSidebarContent() {return(
         </ul>
         <ul>
             <li>
-                <span>Scholar Consoles</span> (One Tab, Multi-Page)
+                <span>Scholar Console</span> (One Tab, Multi-Page)
                 <span>
-                    <b>Assessment</b> (Designers)
+                    <b>Assessment</b> (Members)
+                    <br/>
+                    <br/>
+                </span>
+                <span>
+                    <b>Design</b> (Designers)
                     <br/>
                     <br/>
                 </span>
@@ -347,7 +364,6 @@ function ConsoleSidebarContent() {return(
                 </span>
             </li>
         </ul>
-
         <ul>
             <li>
                 <span>Admin Console</span> (Multi-Tab, One Page)
@@ -381,27 +397,42 @@ function ConsoleSidebarContent() {return(
                 <span>Department Performance Subpage</span>
                 <span>
                     <b>Management Department</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Sidebar</b>: department activity (current tasks, performance, scores), 
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Design Department</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Sidebar</b>: department activity (current tasks, performance, scores), 
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
-                    <b>Creator Department</b>
-                    <br/><b>Sidebar</b>: project progress (stages, due dates), 
+                    <b>Creator Department</b> (Editors)
+                    <br/><b>Sidebar</b>: project progress (stages, due dates, tasks), department activity (current tasks, performance, scores), 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Writer Department</b>
+                    <br/><b>Sidebar</b>: project progress (stages, due dates, tasks), 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Translator Department</b>
+                    <br/><b>Sidebar</b>: project progress (stages, due dates, tasks), 
+                    <br/><b>Desk</b>: 
+                </span>
+                <span>
+                    <b>Artists Department</b>
+                    <br/><b>Sidebar</b>: project progress (stages, due dates, tasks), 
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Education Department</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Sidebar</b>: department activity (current tasks, performance, scores), 
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Developer Department</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Sidebar</b>: department activity (current tasks, performance, scores), 
                     <br/><b>Desk</b>: 
                 </span>
             </li>
@@ -426,8 +457,45 @@ function ConsoleSidebarContent() {return(
                     <br/>
                 </span>
                 <span>
-                    <b></b>
+                    <b>Region Support MGMT</b>
+                    <br/><b>Users</b>: 
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
                     <br/>
+                </span>
+                <span>
+                    <b>District Support MGMT</b>
+                    <br/><b>Users</b>: 
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                    <br/>
+                </span>
+                <span>
+                    <b>Community Support MGMT</b>
+                    <br/><b>Users</b>: 
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                    <br/>
+                </span>
+                <span>
+                    <b>Instructor Support MGMT</b>
+                    <br/><b>Users</b>: 
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                    <br/>
+                </span>
+                <span>
+                    <b>Scholar Support MGMT</b>
+                    <br/><b>Users</b>: 
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
+                    <br/>
+                </span>
+                <span>
+                    <b> Support MGMT</b>
+                    <br/><b>Users</b>: 
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: 
                     <br/>
                 </span>
             </li>
@@ -448,26 +516,31 @@ function ConsoleSidebarContent() {return(
                 <span>Feedback Processing Subpage</span>complete = alert desat, assigned incomplete = accent desat, team incomplete = theme desat
                 <span>
                     <b>General/MGMT Feedback</b>
-                    <br/><b>Sidebar</b>: feedback bank ()
-                    <br/><b>Desk</b>: processing form ()
+                    <br/><b>Users</b>: attendants, community support, managers, district support, directors, region support
+                    <br/><b>Sidebar</b>: 
+                    <br/><b>Desk</b>: annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
                 </span>
                 <span>
                     <b>Assessment Feedback</b>
-                    <br/><b>Sidebar</b>: ordered by assessment, then ordered by element (manual, processing, results)
+                    <br/><b>Users</b>: architects, architect support, designers, designer support, assessment support 
+                    <br/><b>Sidebar</b>: ordered by assessment in order of oldest submission date, then ordered by element (manual, processing, results)
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Content Feedback</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Users</b>: editors, editor support, writers, writer support, translators, translator support, art directors, artists
+                    <br/><b>Sidebar</b>: only displays relevant feedback to your roles, in order of submission dates
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Development Feedback</b>
+                    <br/><b>Users</b>: engineers, engineer support, developer, developer support, QA agents, QA support, tech support
                     <br/><b>Sidebar</b>: 
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Education Feedback</b>
+                    <br/><b>Users</b>: administrators, instructors, instructor support, scholar support 
                     <br/><b>Sidebar</b>: 
                     <br/><b>Desk</b>: 
                 </span>
@@ -512,17 +585,17 @@ function ConsoleSidebarContent() {return(
                 <span>Curriculum Management</span> Educators Only
                 <span>
                     <b>Library MGMT Subpage</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Sidebar</b>: annotation progress (), article progress (), topic progress ()
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Course MGMT Subpage</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Sidebar</b>: structure (), 
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
                     <b>Lesson MGMT Subpage</b>
-                    <br/><b>Sidebar</b>: 
+                    <br/><b>Sidebar</b>: structure (), 
                     <br/><b>Desk</b>: 
                 </span>
                 <span>
@@ -600,175 +673,6 @@ function ConsoleSidebarContent() {return(
                     <br/><b>Sidebar</b>: 
                     <br/><b>Desk</b>: 
                 </span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <span>Educator Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span>Educator Department Tab</span>
-                <span>Sidebar: department performance </span>
-                <span>
-                    <b>Blank</b>
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-            </li>
-            <li>
-                <span>Educational Administrator Tab</span>
-                <span>
-                    <b>CURRICULUM MANAGEMENT</b>
-                    <br/> Sidebar: 
-                    <br/> Desk: 
-                </span>
-                <span>
-                    LEAD INSTRUCTOR MANAGEMENT 
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    INSTRUCTOR MANAGEMENT
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    INSTRUCTOR SUPPORT MGMT.
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    SCHOLAR SUPPORT MANAGEMENT
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-            </li>
-            <li>
-                <span>Lead Instructor Tab</span>
-                <span>
-                    MANAGEMENT EVALUATION
-                    <br/> Sidebar: projects (), assessments ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    EDUCATOR EVALUATION
-                    <br/> Sidebar: projects (), assessments ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    CREATOR EVALUATION
-                    <br/> Sidebar: projects (), assessments ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    DESIGNER EVALUATION
-                    <br/> Sidebar: projects (), assessments ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    DEVELOPER EVALUATION
-                    <br/> Sidebar: projects (), assessments ()
-                    <br/> Desk:
-                </span>
-            </li>
-            <li>
-                <span>Instructor Tab</span>
-                <span>
-                    <b>MANAGEMENT TRAINING</b>
-                    <br/> Sidebar: scholar (), apprentice ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>EDUCATOR TRAINING</b>
-                    <br/> Sidebar: scholar (), apprentice ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>CREATOR TRAINING</b>
-                    <br/> Sidebar: scholar (), apprentice ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>DESIGNER TRAINING</b>
-                    <br/> Sidebar: scholar (), apprentice ()
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>DEVELOPER TRAINING</b>
-                    <br/> Sidebar: scholar (), apprentice ()
-                    <br/> Desk:
-                </span>
-            </li>
-            <li>
-                <span>Instructor Support Tab</span>
-                <span>
-                    <b>MANAGEMENT LEARNING</b>
-                    <br/> Sidebar: library (topics, articles, annotations), course (lessons, activities)
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>EDUCATOR LEARNING</b>
-                    <br/> Sidebar: library (topics, articles, annotations), course (lessons, activities)
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>CREATOR LEARNING</b>
-                    <br/> Sidebar: library (topics, articles, annotations), course (lessons, activities)
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>DESIGNER LEARNING</b>
-                    <br/> Sidebar: library (topics, articles, annotations), course (lessons, activities)
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>DEVELOPER LEARNING</b>
-                    <br/> Sidebar: library (topics, articles, annotations), course (lessons, activities)
-                    <br/> Desk:
-                </span>
-            </li>
-            <li>
-                <span>Scholar Support Tab</span>
-                <span>
-                    <b>LIBRARY FEEDBACK</b>
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>COURSE FEEDBACK</b>
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>PROJECT FEEDBACK</b>
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>EVALUATION FEEDBACK</b>
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-                <span>
-                    <b>APPRENTICESHIP FEEDBACK</b>
-                    <br/> Sidebar: 
-                    <br/> Desk:
-                </span>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <span>Committee Console</span>
-                <span></span>
-                <span></span>
-            </li>
-            <li>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
             </li>
         </ul>
     </section>

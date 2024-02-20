@@ -4,7 +4,7 @@ import UserConsole from './UserConsole';
 export default function Dashboard() {
     const time = "8:00";
     const today = new Date();
-    const [toolkitConsoleState, setToolkitConsoleState] = useState(true);
+    const [toolkitConsoleState, setToolkitConsoleState] = useState(false);
 
     function handleSetToolkitConsoleState() {
         setToolkitConsoleState(!toolkitConsoleState);
