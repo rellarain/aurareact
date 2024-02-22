@@ -14,15 +14,43 @@ export default function Navigation() {
     <nav id='navCrop' className={navConsoleClosed ? "navConsoleClosed" : "navConsoleOpen"}>
         <section>
             <button onClick={handleNavConsoleClosed}></button>
-            <span>Help Desk</span> {/* icon:  */}
-            <span>Admin</span> {/* icon:  */}
-            <span>Break</span> {/* icon:  */}
-            <span>Scholar</span> {/* icon:  */}
-            <span>Assessment</span> {/* icon:  */}
-            <span>Social</span> {/* icon:  */}
-            <span></span>
-            <span></span>
-            <span></span>
+            <span>Help Desk</span> 
+            {/* 
+                icon: ?
+
+                
+            */}
+            <span>Admin</span> 
+            {/* 
+                icon: briefcase
+
+                
+            */}
+            <span>Break</span> 
+            {/* 
+                icon: smiley face? heart? 
+
+                
+            */}
+            <span>Scholar</span> 
+            {/* 
+                icon: textbook/journal w/ tabs
+
+                
+            */}
+            <span>Assessment</span> 
+            {/* 
+                icon: report pages
+
+                
+            */}
+            <span>Social</span> 
+            {/* 
+                icon:  
+
+                
+            */}
+
         </section>
     </nav>
 )}

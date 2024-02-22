@@ -33,17 +33,18 @@ export default function UserConsole() {
     return (
         <div id='userConsole' className={consoleClosed ? "userConsoleClosed" : "userConsoleOpen"} >
             <div id="userConsoleHead">
-                <div>
-                    <ConsoleTab/>
-                    <ConsoleTab/>
-                    <ConsoleTab/>
-                    <ConsoleTab/>
-                    <ConsoleTab/>
-                    <ConsoleTab/>
-                </div>
-                <div onClick={handleConsoleClosed}></div>
-                <div> <span></span> </div>
                 <section>
+                    <ConsoleTab consoleTitle="Designer"/>
+                    <ConsoleTab consoleTitle="Manager"/>
+                    <ConsoleTab consoleTitle="Creator of Magical Things"/>
+
+                </section>
+                <section onClick={handleConsoleClosed}></section>
+                <section> <span></span> </section>
+                <section>
+                    <ConsoleSubpage />
+                    <ConsoleSubpage />
+                    <ConsoleSubpage />
                     <ConsoleSubpage />
                     <ConsoleSubpage />
                     <ConsoleSubpage />
@@ -678,9 +679,9 @@ function ConsoleSidebarContent() {return(
     </section>
 )}
 
-function ConsoleTab() {
+function ConsoleTab({consoleTitle}) {
     
-    const consoleTitle = "Designer";
+    // const consoleTitle = "Designer";
 
     const [consoleTabActive, setConsoleTabActive] = useState(true);
     function handleConsoleTabClick() {
