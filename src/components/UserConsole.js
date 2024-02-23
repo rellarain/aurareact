@@ -34,14 +34,32 @@ export default function UserConsole() {
         <div id='userConsole' className={consoleClosed ? "userConsoleClosed" : "userConsoleOpen"} >
             <div id="userConsoleHead">
                 <section>
-                    <ConsoleTab consoleTitle="Designer"/>
+                    <ConsoleTab consoleTitle="Attendant"/>
                     <ConsoleTab consoleTitle="Manager"/>
-                    <ConsoleTab consoleTitle="Creator of Magical Things"/>
+                    <ConsoleTab consoleTitle="Director"/>
+                    <ConsoleTab consoleTitle="Artist"/>
+                    <ConsoleTab consoleTitle="Translator"/>
+                    <ConsoleTab consoleTitle="Writer"/>
+                    <ConsoleTab consoleTitle="Editor"/>
+                    <ConsoleTab consoleTitle="Designer"/>
+                    <ConsoleTab consoleTitle="Architect"/>
+                    <ConsoleTab consoleTitle="Instructors"/>
+                    <ConsoleTab consoleTitle="Educators"/>
+                    <ConsoleTab consoleTitle="QA"/>
+                    <ConsoleTab consoleTitle="Developer"/>
+                    <ConsoleTab consoleTitle="Engineer"/>
+                    <ConsoleTab consoleTitle="Support"/>
+                    {/* Community, District, Region, Content, 
+                    Creator, Assessment, Designer, Scholar, 
+                    Instructor, Educator,  */}
 
                 </section>
                 <section onClick={handleConsoleClosed}></section>
                 <section> <span></span> </section>
                 <section>
+                    <ConsoleSubpage />
+                    <ConsoleSubpage />
+                    <ConsoleSubpage />
                     <ConsoleSubpage />
                     <ConsoleSubpage />
                     <ConsoleSubpage />

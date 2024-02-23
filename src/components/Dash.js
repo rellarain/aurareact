@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UserConsole from './UserConsole';
+import Console from './Console';
 
 export default function Dashboard() {
     const time = "8:00";
@@ -20,8 +21,10 @@ export default function Dashboard() {
     return (
     <main id="userDash" className={toolkitConsoleState ? "userDashMax" : "userDashMini"}>
         {/* userDashMax userDashMini */}
-        <UserConsole />
+        {/* <UserConsole /> */}
         {/* <UserDashboard/> */}
+        <Console />
+
         <div id="userDashboard" >
             <p>{formatDate(today)} <br/> {time} </p>
             <button onClick={handleSetToolkitConsoleState}></button>
