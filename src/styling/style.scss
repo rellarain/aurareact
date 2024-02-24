@@ -1031,6 +1031,7 @@ body {
         grid-template-areas: "header" "body";
         border-radius: 4px;
         box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
+        overflow: hidden;
         
         
         // temporary
@@ -1055,6 +1056,7 @@ body {
                 grid-area: consoleTitle; 
                 font-weight: 700;
                 text-transform: uppercase;
+                line-height: 16px;
                 letter-spacing: 2px;
                 font-size: 16px;
                 // background-color: green;
@@ -1065,8 +1067,10 @@ body {
             section:nth-child(2) {
                 grid-area: consoleDateTime; 
                 text-align: right;
+                line-height: 16px;
                 // background-color: purple;
                 font-weight: 500;
+                font-size: 14px;
                 letter-spacing: 1.25px;
                 span:nth-child(1) {color: $t5;}
                 span:nth-child(2) {color: $t8;}
@@ -1095,7 +1099,7 @@ body {
             // Console Button
             section:nth-child(4) {
                 grid-area: consoleButton; 
-                background-color: $ad7;
+                background-color: $as9;
                 width: 30px;
                 height: 30px;
                 margin-left: 4px;
@@ -1122,7 +1126,7 @@ body {
                 margin-left: 2px;
             }
         }
-        section {
+        div {
             grid-area: body;
             display: block;
             width: 100%;
@@ -1136,7 +1140,7 @@ body {
             }
     
             // Desk
-            section:nth-child(2) {
+            .consoleDesk {
                 top: 4px;
                 right: 4px;
     
@@ -1146,13 +1150,12 @@ body {
             }
     
             // Sidebar 
-            section:nth-child(1) {
+            .consoleSidebar {
                 bottom: 8px;
                 left: 8px;
+                position: absolute;
+                overflow: hidden;
 
-
-    
-    
                 // temporary
                 height: calc(100% - 16px);
                 width: 300px;
@@ -1160,29 +1163,118 @@ body {
     
     
                 // Sidebar Body
-                section:nth-child(1) {
+                .consoleSidebarContent {
                     position: absolute;
                     top: 0;
                     left: 0;
+                    transition: height 1s, width 1s;
+                    width: 100%;
                     display: grid;
-                    grid-template-columns: 30px auto;
+                    grid-template-columns: 28px auto;
+                    overflow: hidden;
                     grid-template-rows: 30px auto;
-                    background-color: red;
-                    
+                    // background-color: red;
+                    grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "consoleSidebarTabs consoleSidebarContent";
+
+                    section {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0;
+                    }
+                    section:nth-child(1) {
+                        grid-area: consoleSidebarTabs;
+                        overflow: hidden;
+                        // background-color: $t1;
+                        border-radius: 4px;
+                        height: calc(100% - 4px);
+                        // margin: 4px;
+                        width: 28px;
+
+                        button {
+                            appearance: none;
+                            width: 20px;
+                            height: 20px;
+                            border: none;
+                            margin: 4px 0 0 4px;
+                            background-color: $tu5;
+                            border-radius: 4px;
+                        }
+                        
+                    }
+                    section:nth-child(2) {
+                        grid-area: consoleSidebarTitle;
+                        // background-color: green;
+                        color: $t8;
+                        line-height: 16px;
+                        // vertical-align: bottom;
+                        // padding-left: 8px;
+                        margin: 12px 4px 0 4px;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        letter-spacing: 2.5px;
+                        width: calc(100% - 8px);
+                        height: 16px;
+                    }
+                    section:nth-child(3) {
+                        grid-area: consoleSidebarContent;
+                        background-color: $t6;
+                        margin-top: 4px;
+                        border-radius: 4px;
+                        width: calc(100% - 4px);
+                        height: calc(100% - 4px);
+                    }
                 }
                 
                 // Console Help
-                section:nth-child(2) {
+                .consoleSidebarHelp {
                     position: absolute;
                     bottom: 0;
-                    left: 0;
-                    background-color: blue;
+                    right: 0;
+                    margin: 4px;
+                    background-color: $as5;
+                    transition: height 1s, width 1s;
+
+                    button {
+                        appearance: none;
+                        width: 18px;
+                        height: 18px;
+                        padding: 0;
+                        line-height: 18px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-radius: 4px;
+                        margin: 4px;
+                        border: none;
+                        color: $asX;
+                        background-color: $as0;
+                    }
 
                 }
+
     
             }
             
     
+        }
+        .consoleHelpOpen {
+            .consoleSidebarContent {
+                height: calc(100% - 300px);
+            }
+            .consoleSidebarHelp {
+                height: 292px;
+                width: 292px;
+            }
+        }
+        .consoleHelpClosed {
+            .consoleSidebarContent {
+                height: calc(100% - 35px);
+            }
+            .consoleSidebarHelp {
+                height: 26px;
+                width: 26px;
+            }
         }
     }
 
@@ -1193,15 +1285,12 @@ body {
                     height: 18px;
                     width: 18px;
                     left: 6px;
-                    top: 6px;
-
-                    
+                    top: 6px;                    
                 }                
             }
         }
-        section {
-            section:nth-child(2) {
-                width: calc(100% - 8px);
+        div {
+            .consoleDesk {
                 width: calc(100% - 320px);
             }
         }
@@ -1215,16 +1304,15 @@ body {
                     height: 22px;
                     width: 22px;
                     left: 4px;
-                    top: 4px;
-
-                    
+                    top: 4px;                    
                 }                
             }
+
+
         }
-        section {
-            section:nth-child(2) {
+        div {
+            .consoleDesk {
                 width: calc(100% - 8px);
-                // width: calc(100% - 316px);
             }
         }
 
