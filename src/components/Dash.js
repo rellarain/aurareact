@@ -12,7 +12,7 @@ export default function Dashboard() {
         // alert("it worked!");
     }
     function formatDate(date) {
-        return new Intl.DateTimeFormat('en-us', {weekday: 'long', month: 'long', day: '2-digit', year:'numeric'}).format(date);
+        return new Intl.DateTimeFormat('en-us', {weekday: 'short', month: 'long', day: '2-digit', year:'numeric'}).format(date);
     }
 
 

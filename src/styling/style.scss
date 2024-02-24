@@ -61,13 +61,13 @@ table {
 
 $baseBright: 20%; // 0-30%
 
-$themehue:  320;
-$accenthue: 210;
+$themehue:  20;
+$accenthue: 320;
 $alerthue:  30;
 
-$themesat:  8%; // 0-20%
-$accentsat: 20%; // 0-20%
-$alertsat:  10%; // 0-20% 
+$themesat:  10%; // 0-20%
+$accentsat: 10%; // 0-20%
+$alertsat:  15%; // 0-20% 
 
 
 // Saturation Calculations
@@ -905,10 +905,10 @@ body {
         display: flex;
         position: absolute;
         right: 0;
-        span {
+        button {
             min-width: 16px;
             border-radius: 4px;
-            height: 16px;
+            height: 22px;
             display: block;
             margin: 4px 4px 4px 0;
             background-color: $tu2;
@@ -919,8 +919,9 @@ body {
             // text-transform: uppercase;
             letter-spacing: 1px;
             color: $tu8;
+            border: none;
         }
-        button {
+        button:first-child {
             background-color: $as3;
             position: absolute;
             margin: 4px 4px 4px 0;
@@ -934,7 +935,7 @@ body {
             display: block;
             
         }
-        span:last-child {
+        button:last-child {
             margin-right: 30px;
         }
     }
@@ -1020,7 +1021,7 @@ body {
 
 // Console
 .console {
-
+    // display: none;
 
     main {
         display: grid;
@@ -1143,10 +1144,35 @@ body {
             .consoleDesk {
                 top: 4px;
                 right: 4px;
-    
+                overflow-x: hidden;
+                overflow-y: auto;
+                
                 // temporary
-                height: calc(100% - 8px);
+                height: calc(100% - 16px);
                 background-color: $t5;
+                border: 4px solid $t5;
+                line-height: 20px;
+                font-size: 16px;
+                color: $t2;
+                b {font-weight: 600; letter-spacing: 1.5px; color: $t0; text-transform: uppercase;}
+                i {font-style: italic;}
+                hr {border: 1px solid $t0;}
+                &::-webkit-scrollbar {
+                    background-color: $t5;
+                    border-radius: 4px;
+                    border-radius: 4px;
+                    width: 10px;
+                    width: 12px;
+                }
+                &::-webkit-scrollbar-button {
+                    background-color: $t2;
+                    border-radius: 4px;
+                    height: 12px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: $tu8;
+                    border-radius: 4px;
+                }
             }
     
             // Sidebar 
@@ -1233,30 +1259,30 @@ body {
                     bottom: 0;
                     right: 0;
                     margin: 4px;
-                    background-color: $as5;
+                    background-color: $as4;
                     transition: height 1s, width 1s;
 
-                    button {
-                        appearance: none;
-                        width: 18px;
-                        height: 18px;
-                        padding: 0;
-                        line-height: 18px;
-                        font-size: 14px;
-                        font-weight: 500;
-                        border-radius: 4px;
-                        margin: 4px;
-                        border: none;
-                        color: $asX;
-                        background-color: $as0;
+                    section {
+                        button {
+                            appearance: none;
+                            width: 18px;
+                            height: 18px;
+                            padding: 0;
+                            line-height: 18px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            border-radius: 4px;
+                            margin: 4px;
+                            border: none;
+                            color: $asX;
+                            background-color: rgba(255, 255, 255, 0);
+                        }
+
                     }
 
-                }
 
-    
+                }
             }
-            
-    
         }
         .consoleHelpOpen {
             .consoleSidebarContent {
@@ -1264,7 +1290,7 @@ body {
             }
             .consoleSidebarHelp {
                 height: 292px;
-                width: 292px;
+                width: calc(100% - 8px);
             }
         }
         .consoleHelpClosed {
@@ -1291,7 +1317,7 @@ body {
         }
         div {
             .consoleDesk {
-                width: calc(100% - 320px);
+                width: calc(100% - 328px);
             }
         }
 
@@ -1312,14 +1338,34 @@ body {
         }
         div {
             .consoleDesk {
-                width: calc(100% - 8px);
+                width: calc(100% - 16px);
             }
         }
 
     }
 
+
+    .active {
+        .userDashboard {
+
+        }
+        .sidebar {
+
+        }
+        .userheader {
+
+        }
+        .breakTime {
+
+        }
+    }
+
+    .inactive {
+
+    }
+
 }
-// Specific to Each Console: active/inactive states (positioning, coloring); z-index, theme sets
+// Specific to Each Console: active/inactive states (positioning, coloring); z-index, theme sets, sidebar width (also viewport dependent)
 // Width Dependent: sidebar width, desk width
 // Height Dependent: sidebar height, desk height
 
@@ -2217,14 +2263,14 @@ body {
 
     
 }
-// Mini Screens - Orange ()
+// Short Phone Screens - Orange ()
 @media only screen and (min-height: 300px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(30, 70%, 50%);}
     
     
 }
-// Short Screens - Yellow ()
+// Long Phone Screens - Yellow ()
 @media only screen and (min-height: 600px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(60, 70%, 50%);}
@@ -2246,7 +2292,7 @@ body {
     }
 
 }
-// Medium Screens - Green ()
+// Short Landscape Desktop Screens - Green ()
 @media only screen and (min-height: 900px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(120, 70%, 50%);}
@@ -2270,7 +2316,7 @@ body {
     
 
 }
-// Tall Screens - Blue ()
+// Long Landscape Desktop Screens - Blue ()
 @media only screen and (min-height: 1200px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(200, 70%, 50%);}
@@ -2293,7 +2339,7 @@ body {
     
 
 }
-// Ultratall Screens - Purple ()
+// Short Portrait Desktop Screens - Purple ()
 @media only screen and (min-height: 1500px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(300, 70%, 30%);}
@@ -2301,7 +2347,7 @@ body {
     
 
 }
-// Portrait Desktop Screens - White ()
+// Long Portrait Desktop Screens - White ()
 @media only screen and (min-height: 1800px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: white;}
