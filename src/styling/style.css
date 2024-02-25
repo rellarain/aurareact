@@ -931,9 +931,9 @@ body {
 
 #userDash {
   position: fixed;
-  top: 0;
+  top: 50px;
   right: 0;
-  height: 100vh;
+  height: calc(100vh - 50px);
   margin: 0;
   z-index: 2;
   overflow: hidden;
@@ -999,17 +999,14 @@ body {
 .console main {
   display: grid;
   position: absolute;
-  height: calc(100% - 20px);
-  width: calc(100% - 20px);
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
   grid-template-rows: 74px auto;
   grid-template-areas: "header" "body";
   border-radius: 4px;
   box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
   overflow: hidden;
-  top: 60px;
-  width: calc(100% - 20px);
-  height: calc(100% - 121px);
-  left: 10px;
+  margin: 15px;
   background-color: hsl(20, 10%, 20%);
   z-index: 7;
 }
@@ -1107,10 +1104,10 @@ body {
   right: 4px;
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100% - 16px);
   background-color: hsl(20, 10%, 55%);
   border: 4px solid hsl(20, 10%, 55%);
   line-height: 20px;
+  transition: width 1s, height 1s;
   font-size: 16px;
   color: hsl(20, 10%, 34%);
 }
@@ -1147,47 +1144,39 @@ body {
   left: 8px;
   position: absolute;
   overflow: hidden;
-  height: calc(100% - 16px);
-  width: 300px;
+  transition: width 1s, height 1s;
+  display: grid;
+  grid-template-columns: 30px calc(100% - 30px);
+  grid-template-rows: 30px calc(100% - 30px);
+  grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
   background-color: hsl(20, 10%, 34%);
 }
-.console main div .consoleSidebar .consoleSidebarContent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: height 1s, width 1s;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 28px auto;
-  overflow: hidden;
-  grid-template-rows: 30px auto;
-  grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "consoleSidebarTabs consoleSidebarContent";
-}
-.console main div .consoleSidebar .consoleSidebarContent section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-}
-.console main div .consoleSidebar .consoleSidebarContent section:nth-child(1) {
+.console main div .consoleSidebar .consoleSidebarTabs {
   grid-area: consoleSidebarTabs;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   border-radius: 4px;
-  height: calc(100% - 4px);
+  height: 100%;
   width: 28px;
 }
-.console main div .consoleSidebar .consoleSidebarContent section:nth-child(1) button {
+.console main div .consoleSidebar .consoleSidebarTabs::-webkit-scrollbar {
+  display: none;
+}
+.console main div .consoleSidebar .consoleSidebarTabs button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border: none;
   margin: 4px 0 0 4px;
   background-color: hsl(20, 15%, 55%);
   border-radius: 4px;
 }
-.console main div .consoleSidebar .consoleSidebarContent section:nth-child(2) {
+.console main div .consoleSidebar .consoleSidebarTabs button:last-child {
+  margin-bottom: 4px;
+}
+.console main div .consoleSidebar .consoleSidebarTitle {
   grid-area: consoleSidebarTitle;
   color: hsl(20, 10%, 76%);
   line-height: 16px;
@@ -1196,26 +1185,75 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2.5px;
-  width: calc(100% - 8px);
+  width: calc(100% - 38px);
   height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.console main div .consoleSidebar .consoleSidebarContent section:nth-child(3) {
-  grid-area: consoleSidebarContent;
-  background-color: hsl(20, 10%, 62%);
+.console main div .consoleSidebar .consoleSidebarBody {
+  grid-area: consoleSidebarBody;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 30px);
+  overflow: hidden;
   margin-top: 4px;
   border-radius: 4px;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
+  height: calc(100% - 34px);
 }
-.console main div .consoleSidebar .consoleSidebarHelp {
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(20, 10%, 76%);
+  width: calc(100% - 16px);
+  transition: height 1s, width 1s;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 4px solid hsl(20, 10%, 76%);
+  line-height: 18px;
+  transition: width 1s, height 1s;
+  font-size: 14px;
+  color: hsl(20, 10%, 34%);
+}
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: hsl(20, 10%, 20%);
+  text-transform: uppercase;
+}
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent i {
+  font-style: italic;
+}
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(20, 10%, 20%);
+}
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar {
+  background-color: hsl(20, 10%, 76%);
+  border-radius: 4px;
+  border-radius: 4px;
+  width: 10px;
+  width: 12px;
+}
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(20, 10%, 34%);
+  border-radius: 4px;
+  height: 12px;
+}
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 34%);
+  border-radius: 4px;
+}
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 4px;
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(320, 35%, 27%);
   transition: height 1s, width 1s;
 }
-.console main div .consoleSidebar .consoleSidebarHelp section button {
+.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1232,14 +1270,14 @@ body {
   background-color: rgba(255, 255, 255, 0);
 }
 .console main .consoleHelpOpen .consoleSidebarContent {
-  height: calc(100% - 300px);
+  height: calc(50% - 14px);
 }
 .console main .consoleHelpOpen .consoleSidebarHelp {
-  height: 292px;
+  height: calc(50% - 6px);
   width: calc(100% - 8px);
 }
 .console main .consoleHelpClosed .consoleSidebarContent {
-  height: calc(100% - 35px);
+  height: calc(100% - 46px);
 }
 .console main .consoleHelpClosed .consoleSidebarHelp {
   height: 26px;
@@ -1251,17 +1289,11 @@ body {
   left: 6px;
   top: 6px;
 }
-.console .consoleSidebarOpen div .consoleDesk {
-  width: calc(100% - 328px);
-}
 .console .consoleSidebarClosed header section:nth-child(4) button {
   height: 22px;
   width: 22px;
   left: 4px;
   top: 4px;
-}
-.console .consoleSidebarClosed div .consoleDesk {
-  width: calc(100% - 16px);
 }
 #breakTimeFooter {
   width: 100vw;
@@ -1467,20 +1499,21 @@ body {
   #userThumb {
     background: hsl(0, 70%, 60%);
   }
-  .consoleSidebarOpen {
-    width: calc(100% - 280px);
+  .consoleSidebarOpen div .consoleDesk {
+    width: calc(100% - 16px);
+    height: calc(50% - 12px);
   }
-  #userConsoleSidebar {
-    width: calc(100% - 55px);
+  .consoleSidebarOpen div .consoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(50% - 16px);
   }
-  #userConsoleSidebar div {
-    width: calc(100% - 5px);
+  .consoleSidebarClosed div .consoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
   }
-  #userConsoleHelp section {
-    width: calc(100vw - 75px);
-  }
-  #userConsoleHelp .consoleHelpDeskOpen {
-    width: calc(100vw - 83px);
+  .consoleSidebarClosed div .consoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(50% - 16px);
   }
   .userDashMini {
     width: calc(100vw - 330px);
@@ -1500,22 +1533,26 @@ body {
   #userThumb {
     background: hsl(0, 70%, 30%);
   }
-  .consoleSidebarOpen {
-    width: calc(100% - 315px);
-  }
-  #userConsoleSidebar {
-    width: 260px;
-  }
-  #userConsoleHelp section {
-    width: 260px;
-  }
-  #userConsoleHelp .consoleHelpDeskOpen {
-    width: 252px;
-  }
 }
 @media only screen and (min-width: 600px) {
   #userThumb {
     background: hsl(30, 70%, 60%);
+  }
+  .consoleSidebarOpen div .consoleDesk {
+    width: calc(100% - 328px);
+    height: calc(100% - 16px);
+  }
+  .consoleSidebarOpen div .consoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
+  }
+  .consoleSidebarClosed div .consoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .consoleSidebarClosed div .consoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
   }
   #breakTimeConsoleDesk {
     width: calc(100vw - 310px);
@@ -1547,29 +1584,21 @@ body {
   #userThumb {
     background: hsl(102, 70%, 60%);
   }
-  .userDashMini {
-    width: calc(100vw - 600px);
+  .consoleSidebarOpen div .consoleDesk {
+    width: calc(100% - 428px);
+    height: calc(100% - 16px);
   }
-  #helpDeskConsole {
-    width: 580px;
+  .consoleSidebarOpen div .consoleSidebar {
+    width: 400px;
+    height: calc(100% - 16px);
   }
-  .helpDeskOpenSB {
-    width: calc(100vw - 616px);
+  .consoleSidebarClosed div .consoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
   }
-  .consoleWithDash {
-    width: calc(100% - 360px);
-  }
-  .consoleSidebarOpen {
-    width: calc(100% - 415px);
-  }
-  #userConsoleSidebar {
-    width: 360px;
-  }
-  #userConsoleHelp section {
-    width: 360px;
-  }
-  #userConsoleHelp .consoleHelpDeskOpen {
-    width: 352px;
+  .consoleSidebarClosed div .consoleSidebar {
+    width: 400px;
+    height: calc(100% - 16px);
   }
   #breakTimeConsoleDesk {
     width: calc(100vw - 610px);
@@ -1581,6 +1610,22 @@ body {
 @media only screen and (min-width: 1500px) {
   #userThumb {
     background: hsl(102, 70%, 30%);
+  }
+  .consoleSidebarOpen div .consoleDesk {
+    width: calc(100% - 528px);
+    height: calc(100% - 16px);
+  }
+  .consoleSidebarOpen div .consoleSidebar {
+    width: 500px;
+    height: calc(100% - 16px);
+  }
+  .consoleSidebarClosed div .consoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .consoleSidebarClosed div .consoleSidebar {
+    width: 500px;
+    height: calc(100% - 16px);
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -1630,21 +1675,6 @@ body {
   #temporaryHeightIndicator {
     background-color: hsl(0, 70%, 50%);
   }
-  .consoleHelpToolOpen #userConsoleHelp {
-    height: calc(100% - 10px);
-  }
-  .consoleHelpToolOpen #consoleSidebarContent {
-    height: calc(100% - 55px);
-  }
-  #userConsoleHelp section {
-    height: calc(100vh - 285px);
-  }
-  .consoleHelpDeskOpen {
-    height: calc(100% - 4px);
-  }
-  .consoleHelpDeskClosed {
-    margin-top: 100px;
-  }
 }
 @media only screen and (min-height: 300px) {
   #temporaryHeightIndicator {
@@ -1655,28 +1685,10 @@ body {
   #temporaryHeightIndicator {
     background-color: hsl(60, 70%, 50%);
   }
-  .consoleHelpToolOpen #userConsoleHelp {
-    height: 200px;
-  }
-  .consoleHelpToolOpen #consoleSidebarContent {
-    height: calc(100% - 225px);
-  }
-  #userConsoleHelp section {
-    height: 200px;
-  }
 }
 @media only screen and (min-height: 900px) {
   #temporaryHeightIndicator {
     background-color: hsl(120, 70%, 50%);
-  }
-  .consoleHelpToolOpen #userConsoleHelp {
-    height: 350px;
-  }
-  .consoleHelpToolOpen #consoleSidebarContent {
-    height: calc(100% - 375px);
-  }
-  #userConsoleHelp section {
-    height: 350px;
   }
 }
 @media only screen and (min-height: 1200px) {

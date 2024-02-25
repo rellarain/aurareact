@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import UserConsole from './UserConsole';
 import Console from './Console';
 
 export default function Dashboard() {
