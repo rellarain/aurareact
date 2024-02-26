@@ -410,7 +410,6 @@ export default function Console() {
                         <br/> +<b> Activity Feed</b>: view what one's connections or team are doing currently 
                         <br/> +<b> Messenger</b>: 
                         <br/> +<b> </b>: 
-                        <br/> +<b> </b>: 
                         <hr></hr>
                     <b>SOCIAL</b>: for users with social features enabled (Base + $2.00)
                         <br/> <b>Styling</b>: 
@@ -453,136 +452,396 @@ export default function Console() {
                         <br/>
                         <br/> <b>DESK</b>: 
                         <br/>
-                        <br/><b> Attendant Desk</b>: collective metrics (engagement, occupancy, revenue, activity)
-                        <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity)
-                        <br/> +<b> Community Support MGMT</b>: 
-                        <br/> +<b> Member MGMT</b>: 
-                        <br/><b> Manager Desk</b>: 
-                        <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity)
-                        <br/> +<b> District MGMT</b>: collective metrics (engagement, occupancy, revenue, activity)
-                        <br/> +<b> Attendant MGMT</b>: 
-                        <br/> +<b> Community Support MGMT</b>: 
-                        <br/> +<b> District Support MGMT</b>: 
-                        <br/> +<b> Member MGMT</b>: 
-                        <br/><b> Director Desk</b>: 
-                        <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity)
-                        <br/> +<b> District MGMT</b>: collective metrics (engagement, occupancy, revenue, activity)
-                        <br/> +<b> Region MGMT</b>: collective metrics (engagement, occupancy, revenue, activity)
-                        <br/> +<b> Attendant MGMT</b>: 
-                        <br/> +<b> Manager MGMT</b>: 
-                        <br/> +<b> Community Support MGMT</b>: 
-                        <br/> +<b> District Support MGMT</b>: 
-                        <br/> +<b> Region Support MGMT</b>: 
-                        <br/> +<b> Member MGMT</b>: 
-                        <br/>
-                        <br/><b> Designer Desk</b>: 
-                        <br/> +<b> Test Content</b>: 
-                        <br/> +<b> Feedback Sorting</b>: 
-                        <br/> +<b> </b>: 
-                        <br/><b> Architect Desk</b>: 
-                        <br/> +<b> Assessment Support MGMT</b>: 
-                        <br/> +<b> Designer Support MGMT</b>: 
-                        <br/> +<b> Designer MGMT</b>: 
-                        <br/> +<b> Architect Support MGMT</b>: 
-                        <br/> +<b> Assessment MGMT</b>: 
-                        <br/> +<b> Manual MGMT</b>: 
-                        <br/> +<b> Result MGMT</b>: 
-                        <br/>
-                        <br/><b> Instructor Desk</b>: 
-                        <br/> +<b> Sandbox MGMT</b>: 
-                        <br/> +<b> Practice MGMT</b>: 
-                        <br/> +<b> Discussion MGMT</b>: 
-                        <br/> +<b> Project MGMT</b>: 
-                        <br/><b> Administrator Desk</b>: 
-                        <br/> +<b> Library MGMT</b>: 
-                        <br/> +<b> Course MGMT</b>: lessons, readings
-                        <br/> +<b> Rubric MGMT</b>: 
-                        <br/> +<b> Scholar MGMT</b>: 
-                        <br/> +<b> Scholar Support MGMT</b>: 
-                        <br/> +<b> Instructor Support MGMT</b>: 
-                        <br/> +<b> Instructor MGMT</b>: 
-                        <br/> +<b> Administrator Support MGMT</b>: 
-                        <br/>
-                        <br/><b> Developer Desk</b>: 
-                        <br/> +<b> Front-End</b>: 
-                        <br/> +<b> Front-to-Back API</b>: 
-                        <br/> +<b> Back-End</b>: 
-                        <br/> +<b> Back-to-Front API</b>: 
-                        <br/><b> QA Desk</b>: 
-                        <br/> +<b> Adequacy Scoring</b>: 
-                        <br/> +<b> Accessibility</b>: 
-                        <br/> +<b> Bug Testing</b>: 
-                        <br/> +<b> Tech Tutorials</b>: managing instructions for relevant tech activities with other tools 
-                        <br/><b> Engineer Desk</b>: 
-                        <br/> +<b> Project MGMT</b>: 
-                        <br/> +<b> Engineer Support MGMT</b>: 
-                        <br/> +<b> Developer MGMT</b>: 
-                        <br/> +<b> Developer Support MGMT</b>: 
-                        <br/> +<b> QA MGMT</b>: 
-                        <br/> +<b> QA Support MGMT</b>: 
-                        <br/> +<b> Tech Support MGMT</b>: 
-                        <br/>
-                        <br/><b> Artist Desk</b>: 
-                        <br/> +<b> Artist Studio</b>: 
-                        <br/> +<b> Art Review</b>: 
-                        <br/> +<b> </b>: 
-                        <br/><b> Writer Desk</b>: 
-                        <br/> +<b> Writer Studio</b>: 
-                        <br/> +<b> Text Review</b>: 
-                        <br/> +<b> </b>: 
-                        <br/><b> Translator Desk</b>: 
-                        <br/> +<b> Translator Studio</b>: 
-                        <br/> +<b> Translation Review</b>: 
-                        <br/> +<b> </b>: 
-                        <br/><b> Editor Desk</b>: 
-                        <br/> +<b> Editor Studio</b>: 
-                        <br/> +<b> Editor Review</b>: 
-                        <br/> +<b> Editor Support MGMT</b>: 
-                        <br/> +<b> Artist MGMT</b>: 
-                        <br/> +<b> Artist Support MGMT</b>: 
-                        <br/> +<b> Writer MGMT</b>: 
-                        <br/> +<b> Writer Support MGMT</b>: 
-                        <br/> +<b> Translator MGMT</b>: 
-                        <br/> +<b> Translator Support MGMT</b>: 
-                        <br/> +<b> </b>: 
-                        <br/>
-                        <br/><b> Committee Desk</b>: 
-                        <br/> +<b> Architect MGMT</b>: 
-                        <br/> +<b> Administrator MGMT</b>: 
-                        <br/> +<b> Engineer MGMT</b>: 
-                        <br/> +<b> Director MGMT</b>: 
-                        <br/> +<b> Editor MGMT</b>: 
-                        <br/>
-                        <br/><b> Support Desk</b>: 
-                        <br/> +<b> Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
-                        <br/>
-                        <br/> +<b> Community Support</b>: basic (<i>social feature support, forum MGMT, bulletin MGMT</i>), advanced (<i>member MGMT</i>)
-                        <br/> +<b> District Support</b>: basic (<i>social feature support, forum MGMT, bulletin MGMT</i>), advanced (<i>member MGMT, attendant MGMT</i>)
-                        <br/> +<b> Region Support</b>: basic (<i>social feature support, forum MGMT, bulletin MGMT</i>), advanced (<i>member MGMT, attendant MGMT, manager MGMT</i>)
-                        <br/>
-                        <br/> +<b> Assessment Support</b>: basic (<i>assessment, manual</i>), advanced (<i>results</i>)
-                        <br/> +<b> Scholar Support</b>: basic (<i>learning, application</i>), advanced (<i>evaluation</i>)
-                        <br/>
-                        <br/> +<b> Designer Support</b>: basic (<i>test material creation, </i>), advanced (<i></i>)
-                        <br/> +<b> Architect Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/>
-                        <br/> +<b> Instructor Support</b>: basic (<i>annotations</i>), advanced (<i></i>)
-                        <br/> +<b> Administrator Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/>
-                        <br/> +<b> Tech Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/> +<b> QA Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/> +<b> Developer Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/> +<b> Engineer Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/>
-                        <br/> +<b> Artist Support</b>: basic (<i>review</i>), advanced (<i></i>)
-                        <br/> +<b> Writer Support</b>: basic (<i>proofreading, review</i>), advanced (<i></i>)
-                        <br/> +<b> Translator Support</b>: basic (<i>proofreading, review</i>), advanced (<i></i>)
-                        <br/> +<b> Editor Support</b>: basic (<i>review</i>), advanced (<i></i>)
-                        <br/>
-                        <br/> +<b> Committee Support</b>: basic (<i>FAQ, Tutorials, Feedback</i>), advanced (<i></i>)
-                        <br/> +<b> Panel Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/> +<b> Board Support</b>: basic (<i></i>), advanced (<i></i>)
-                        <br/>
+                        <hr></hr>
+                        <hr></hr>
+                            <b> Community Support Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Community Support Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Community Attendant Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Support MGMT</b>: 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                            <br/>
+                        <hr></hr>
+                            <b> District Support Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> District Forum MGMT</b>: 
+                            <br/> +<b> District Bulletin MGMT</b>: 
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Attendant MGMT</b>: 
+                            <br/> +<b> Community Support MGMT</b>: 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced District Support Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> District MGMT</b>: collective metrics (engagement, occupancy, revenue, activity),
+                            <br/> +<b> District Forum MGMT</b>: 
+                            <br/> +<b> District Bulletin MGMT</b>: 
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Attendant MGMT</b>: 
+                            <br/> +<b> Community Support MGMT</b>: 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> District Manager Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> District MGMT</b>: collective metrics (engagement, occupancy, revenue, activity),
+                            <br/> +<b> District Support MGMT</b>: 
+                            <br/> +<b> District Forum MGMT</b>: 
+                            <br/> +<b> District Bulletin MGMT</b>: 
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Attendant MGMT</b>: 
+                            <br/> +<b> Community Support MGMT</b>: 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                            <br/>
+                        <hr></hr>
+                            <b> Region Support Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Region Forum MGMT</b>: 
+                            <br/> +<b> Region Bulletin MGMT</b>: 
+                            <br/> +<b> District MGMT</b>: collective metrics (engagement, occupancy, revenue, activity),
+                            <br/> +<b> District Manager MGMT</b>: 
+                            <br/> +<b> District Support MGMT</b>: 
+                            <br/> +<b> District Forum MGMT</b>: 
+                            <br/> +<b> District Bulletin MGMT</b>: 
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Attendant MGMT</b>: 
+                            <br/> +<b> Community Support MGMT</b>: 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Region Support Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Region MGMT</b>: collective metrics (engagement, occupancy, revenue, activity),
+                            <br/> +<b> Region Forum MGMT</b>: 
+                            <br/> +<b> Region Bulletin MGMT</b>: 
+                            <br/> +<b> District MGMT</b>: collective metrics (engagement, occupancy, revenue, activity),
+                            <br/> +<b> District Manager MGMT</b>: 
+                            <br/> +<b> District Support MGMT</b>: 
+                            <br/> +<b> District Forum MGMT</b>: 
+                            <br/> +<b> District Bulletin MGMT</b>: 
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Attendant MGMT</b>: 
+                            <br/> +<b> Community Support MGMT</b>: 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Region Director Desk (Tab)</b>: 
+                            <br/> +<b> Social Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Region MGMT</b>: collective metrics (engagement, occupancy, revenue, activity),
+                            <br/> +<b> Region Support MGMT</b>: 
+                            <br/> +<b> Region Forum MGMT</b>: 
+                            <br/> +<b> Region Bulletin MGMT</b>: 
+                            <br/> +<b> District MGMT</b>: collective metrics (engagement, occupancy, revenue, activity),
+                            <br/> +<b> District Manager MGMT</b>: 
+                            <br/> +<b> District Support MGMT</b>: 
+                            <br/> +<b> District Forum MGMT</b>: 
+                            <br/> +<b> District Bulletin MGMT</b>: 
+                            <br/> +<b> Community MGMT</b>: collective metrics (engagement, occupancy, revenue, activity), 
+                            <br/> +<b> Community Attendant MGMT</b>: 
+                            <br/> +<b> Community Support MGMT</b>: 
+                            <br/> +<b> Community Forum MGMT</b>: 
+                            <br/> +<b> Community Bulletin MGMT</b>: 
+                            <br/> +<b> Member MGMT</b>: 
+                            <br/> +<b> </b>: 
+                            <br/>
+                        <hr></hr>
+                            <b>Assessment Support Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Assessment Support Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Designer Support Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Manual Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Item Editor</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Designer Support Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Manual Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Item Editor</b>: 
+                            <br/> +<b> Assessment Support MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Designer Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Manual Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Item Editor</b>: 
+                            <br/> +<b> Designer Support MGMT</b>: 
+                            <br/> +<b> Assessment Support MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Architect Support Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Results Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Manual Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Manual Editor</b>: 
+                            <br/> +<b> Item Editor</b>: 
+                            <br/> +<b> Designer MGMT</b>: 
+                            <br/> +<b> Designer Support MGMT</b>: 
+                            <br/> +<b> Assessment Support MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Architect Support Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Results Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Manual Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Results Editor</b>: 
+                            <br/> +<b> Manual Editor</b>: 
+                            <br/> +<b> Item Editor</b>: 
+                            <br/> +<b> Designer MGMT</b>: 
+                            <br/> +<b> Designer Support MGMT</b>: 
+                            <br/> +<b> Assessment Support MGMT</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Architect Desk (Tab)</b>: 
+                            <br/> +<b> Assessment Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Results Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Manual Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Assessment Editor</b>: 
+                            <br/> +<b> Results Editor</b>: 
+                            <br/> +<b> Manual Editor</b>: 
+                            <br/> +<b> Item Editor</b>: 
+                            <br/> +<b> Architect Support MGMT</b>: 
+                            <br/> +<b> Designer MGMT</b>: 
+                            <br/> +<b> Designer Support MGMT</b>: 
+                            <br/> +<b> Assessment Support MGMT</b>: 
+                            <br/> +<b> </b>: 
+                            <br/>
+                        <hr></hr>
+                            <b> Scholar Support Desk (Tab)</b>: 
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Scholar Support Desk (Tab)</b>: 
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Training Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Instructor Support Desk (Tab)</b>: 
+                            <br/> +<b> Annotation Studio</b>: 
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Training Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Scholar Support MGMT</b>: 
+                            <br/> +<b> Scholar MGMT</b>: 
+                            <br/> +<b> Discussion Editor</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Instructor Support Desk (Tab)</b>: 
+                            <br/> +<b> Annotation Studio</b>: 
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Training Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Scholar Support MGMT</b>: 
+                            <br/> +<b> Scholar MGMT</b>: 
+                            <br/> +<b> Applications Editor</b>: sandbox (), practice (), project ()
+                            <br/> +<b> Discussion Editor</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Instructor Desk (Tab)</b>: 
+                            <br/> +<b> Annotation Studio</b>: 
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Training Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Instructor Support MGMT</b>: 
+                            <br/> +<b> Scholar Support MGMT</b>: 
+                            <br/> +<b> Scholar MGMT</b>: 
+                            <br/> +<b> Course Editor</b>: 
+                            <br/> +<b> Applications Editor</b>: sandbox (), practice (), project ()
+                            <br/> +<b> Discussion Editor</b>: 
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Administrator Support Desk (Tab)</b>: 
+                            <br/> +<b> Annotation Studio</b>: 
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Training Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Instructor MGMT</b>: 
+                            <br/> +<b> Instructor Support MGMT</b>: 
+                            <br/> +<b> Scholar Support MGMT</b>: 
+                            <br/> +<b> Scholar MGMT</b>: 
+                            <br/> +<b> Course Editor</b>: 
+                            <br/> +<b> Applications Editor</b>: sandbox (), practice (), project ()
+                            <br/> +<b> Discussion Editor</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Administrator Support Desk (Tab)</b>: 
+                            <br/> +<b> Annotation Studio</b>: 
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Training Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Instructor MGMT</b>: 
+                            <br/> +<b> Instructor Support MGMT</b>: 
+                            <br/> +<b> Scholar Support MGMT</b>: 
+                            <br/> +<b> Scholar MGMT</b>: 
+                            <br/> +<b> Library Editor</b>: 
+                            <br/> +<b> Course Editor</b>: 
+                            <br/> +<b> Applications Editor</b>: sandbox (), practice (), project ()
+                            <br/> +<b> Discussion Editor</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Administrator Desk (Tab)</b>: 
+                            <br/> +<b> Annotation Studio</b>:
+                            <br/> +<b> Library Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Course Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Training Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Administrator Support MGMT</b>: 
+                            <br/> +<b> Instructor MGMT</b>: 
+                            <br/> +<b> Instructor Support MGMT</b>: 
+                            <br/> +<b> Scholar Support MGMT</b>: 
+                            <br/> +<b> Scholar MGMT</b>: 
+                            <br/> +<b> Course Editor</b>: 
+                            <br/> +<b> Library Editor</b>: 
+                            <br/> +<b> Applications Editor</b>: sandbox (), practice (), project ()
+                            <br/> +<b> Discussion Editor</b>: 
+                            <br/> +<b> Rubric Editor</b>: 
+                            <br/> +<b> </b>: 
+                            <br/>
+                        <hr></hr>
+                            <b> Tech Support Desk (Tab)</b>: 
+                            <br/> +<b> General Tech Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Tech Support Desk (Tab)</b>: 
+                            <br/> +<b> General Tech Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Developer Support Desk (Tab)</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Developer Support Desk (Tab)</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Developer Desk (Tab)</b>: 
+                            <br/> +<b> Software Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> QA Support Desk (Tab)</b>: 
+                            <br/> +<b> Accessibility Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Adequacy Scoring</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced QA Support Desk (Tab)</b>: 
+                            <br/> +<b> Accessibility Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Adequacy Scoring</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> QA Desk (Tab)</b>: 
+                            <br/> +<b> Accessibility Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> Adequacy Scoring</b>: 
+                            <br/> +<b> </b>:  
+                        <hr></hr>
+                            <b> Engineer Support Desk (Tab)</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Engineer Support Desk (Tab)</b>: 
+                            <br/> +<b> </b>: 
+                        <br/><b> Engineer Desk (Tab)</b>: 
+                            <br/> +<b> Software Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                            <br/>
+                        <hr></hr>
+                            <b> Artist Support Desk (Tab)</b>: 
+                            <br/> +<b> Art Review</b>: vote (), feedback ()
+                            <br/> +<b> Art Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Artist Support Desk (Tab)</b>: 
+                            <br/> +<b> Artist Studio</b>: 
+                            <br/> +<b> Art Review</b>: vote (), feedback ()
+                            <br/> +<b> Art Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Artist Desk (Tab)</b>: 
+                            <br/> +<b> Artist Studio</b>: 
+                            <br/> +<b> Artist Support MGMT</b>: 
+                            <br/> +<b> Art Review</b>: vote (), feedback ()
+                            <br/> +<b> Art Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Writer Support Desk (Tab)</b>: 
+                            <br/> +<b> Text Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Text Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Writer Support Desk (Tab)</b>: 
+                            <br/> +<b> Writer Studio</b>: 
+                            <br/> +<b> Text Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Text Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Writer Desk (Tab)</b>: 
+                            <br/> +<b> Writer Studio</b>: 
+                            <br/> +<b> Writer Support MGMT</b>: 
+                            <br/> +<b> Text Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Text Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Translator Support Desk (Tab)</b>: fluent speakers who support translators
+                            <br/> +<b> Translation Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Translation Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Translator Support Desk (Tab)</b>: 
+                            <br/> +<b> Translator Studio</b>: 
+                            <br/> +<b> Translation Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Translation Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Translator Desk (Tab)</b>: 
+                            <br/> +<b> Translator Studio</b>: 
+                            <br/> +<b> Translator Support MGMT</b>: 
+                            <br/> +<b> Translation Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Translation Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Editor Support Desk (Tab)</b>: 
+                            <br/> +<b> Writer Support MGMT</b>: 
+                            <br/> +<b> Artist Support MGMT</b>: 
+                            <br/> +<b> Translator Support MGMT</b>: 
+                            <br/> +<b> Collection Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Collection Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Advanced Editor Support Desk (Tab)</b>: 
+                            <br/> +<b> Editor Studio</b>: 
+                            <br/> +<b> Writer Support MGMT</b>: 
+                            <br/> +<b> Artist Support MGMT</b>: 
+                            <br/> +<b> Translator Support MGMT</b>: 
+                            <br/> +<b> Collection Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Collection Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <br/><b> Editor Desk (Tab)</b>: 
+                            <br/> +<b> Editor Studio</b>: 
+                            <br/> +<b> Writer MGMT</b>: 
+                            <br/> +<b> Writer Support MGMT</b>: 
+                            <br/> +<b> Artist MGMT</b>: 
+                            <br/> +<b> Artist Support MGMT</b>: 
+                            <br/> +<b> Translator MGMT</b>: 
+                            <br/> +<b> Translator Support MGMT</b>: 
+                            <br/> +<b> Collection Review</b>: proofread (), vote (), feedback ()
+                            <br/> +<b> Collection Feedback Processing</b>: sort (correction, comment, compliment, criticism, reporting, inquiry), annotate (add details), return (clarify, rejection), channel (escalate, department, subdepartment, category)
+                            <br/> +<b> </b>: 
+                        <hr></hr>
+                            <b> Committee Desk (Tab)</b>: 
+                            <br/> +<b> </b>: 
+                            <br/>
+                            <b> Panel Desk (Tab)</b>: 
+                            <br/> +<b> </b>: 
+                            <br/>
+                            <b> Board Desk (Tab)</b>: 
+                            <br/> +<b> Architect MGMT</b>: 
+                            <br/> +<b> Administrator MGMT</b>: 
+                            <br/> +<b> Engineer MGMT</b>: 
+                            <br/> +<b> Director MGMT</b>: 
+                            <br/> +<b> Editor MGMT</b>: 
+                            <br/> +<b> Academy MGMT</b>: 
+                            <br/> +<b> </b>: 
                         <hr></hr>
                     <b>HELP DESK</b>: for admin;
                         <br/> <b>Styling</b>: the base elements of the console use personal alert and accent, sidebar and desk use user styling of active chat, 
@@ -595,17 +854,11 @@ export default function Console() {
                         <br/>
                         <hr></hr>
                         To-Do List for Console: 
-                        <br/>- write tabs as components that can be replicated with props
                         <br/>- write tabActive toggle that makes corresponding sidebar content appear and disappear
                         <br/>- make an area in the header for updates or schedule reminders
                         <br/>- save button on the console
                         <br/>- help desk toggle for admin consoles
                         <br/> 
-                        Help Desk To-Do:
-                        <br/> - full screen mode: widens sidebar, creates individual components for oldest chats
-                        <br/> - mini screen mode: narrows sidebar, removes individual chats and creates chat heads on header
-                        <br/> - individual component: only shows one user information, removed when closed 
-                        <br/> - multi-component: on mini screen or final component for full screen; shows a header of all minimized/newest chats along the top, only shows one user's info
                 </section>
             </div>
         </main>
