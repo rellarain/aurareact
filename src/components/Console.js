@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 
 export default function Console() {
     // Console Variables
-    const consoleTitle = "Account";
+    const consoleTitle = "assessmentL";
+    // account dashboard social scholar admin helpDesk
+    // assessmentA assessmentG assessmentL assessmentS assessmentX 
     const consoleState = "active";
 
     const consoleClass = "console console" + consoleTitle;
@@ -30,18 +32,32 @@ export default function Console() {
     
     
     return(
-    <div className='console'>
-        {/* consoleSidebarClosed consoleSidebarOpen */}
+    <div className={"console " + consoleTitle + "Console"}>
         <main className={consoleSidebarClosed ? "consoleSidebarClosed" : "consoleSidebarOpen"}>
-            {/*  */}
             <header>
                 <section>{consoleTitle}</section>
                 <section>  <span>{formatDate(today)}</span> <span>{time}</span> </section>
                 <section> <span style={{width: achievementScore + "%"}}></span> </section>
                 <section> <button onClick={handleConsoleSidebarClosed}></button> </section>
-                <section></section>
+                <section>
+                    <button>Bloop</button>
+                    <button>Poop</button>
+                    <button>Butterscotch</button>
+                    <button>xfgfgxvxvx</button>
+                    <button>fxxbvbgvvggvb</button>
+                    <button>bedfszffsdfsf</button>
+                    <button>sxdvfsefx</button>
+                    <button>sdfsdfsdfs</button>
+                    <button>sdvfsdxvxvzdsvf</button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
             </header>
-            {/*  */}
             <div className={consoleHelpClosed ? "consoleHelpClosed" : "consoleHelpOpen"}> 
                 <section className='consoleSidebar'>
                     <section className='consoleSidebarTabs'>

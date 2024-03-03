@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Console from './Console';
+
 
 export default function Header() {
     
@@ -8,52 +10,51 @@ export default function Header() {
     const communityID = "0000";
     const clusterID = "0000";
     
-    const [accountConsoleClosed, setAccountConsoleClosed] = useState(true);
+    const [accountConsoleClosed, setAccountConsoleClosed] = useState(false);
 
-    function handleAccountConsoleClosed() {
+    function handleAccountConsoleClosed(accountConsoleClosed) {
         setAccountConsoleClosed(!accountConsoleClosed);
         // alert("it worked!");
     }
     
     
     return (
-        <header id="userHeader">
-            <div id='accountConsole' className={accountConsoleClosed ? "accountConsoleClosed" : "accountConsoleOpen"}>
+        <header className="userHeader">
+            <section className={accountConsoleClosed ? "userHeaderConsole accountConsoleClosed" : "userHeaderConsole accountConsoleOpen"}>
+                <Console/>
                 {/* // accountConsoleOpen accountConsoleClosed */}
-                <section>
-                    <div></div>
-                    <div></div>
-                    {/* 
-                    
-                    Account Tab: 
-                        Name: nickname, firstname, middlename, lastname, suffix 
-                        Subscription: 
-                        Organization: RegionID, DistrictID, CommunityID, ClusterID 
-                        Biography: 
-                        Tags: 
-                    Admin Tab: 
-                        Breaktime: 
-                        Help Desk:
-                        Schedule: 
-                        Training: 
-                    Connections Tab: 
-                        Groups: 
-                        Privacy: name, subscription/role, images, biography, tags, results, voice,  [id and colors are always public]
-                    Customize Tab: 
-                        Colors: theme hue, theme sat, accent hue, accent sat, alert hue, alert sat, brightness
-                        Images: 
-                        Animations: animation speed, animation types (flashes, gradients, glows) 
-                        Patterns: 
-                    Voice Tab: 
-                        Reactions:
-                        Responses: 
+                {/* 
+                <div></div>
+                <div></div>
+                
+                Account Tab: 
+                    Name: nickname, firstname, middlename, lastname, suffix 
+                    Subscription: 
+                    Organization: RegionID, DistrictID, CommunityID, ClusterID 
+                    Biography: 
+                    Tags: 
+                Admin Tab: 
+                    Breaktime: 
+                    Help Desk:
+                    Schedule: 
+                    Training: 
+                Connections Tab: 
+                    Groups: 
+                    Privacy: name, subscription/role, images, biography, tags, results, voice,  [id and colors are always public]
+                Customize Tab: 
+                    Colors: theme hue, theme sat, accent hue, accent sat, alert hue, alert sat, brightness
+                    Images: 
+                    Animations: animation speed, animation types (flashes, gradients, glows) 
+                    Patterns: 
+                Voice Tab: 
+                    Reactions:
+                    Responses: 
 
-                    */}
-                </section>
-            </div>
-            <img src="" alt="" id="userThumb" onClick={handleAccountConsoleClosed} />
-            <div id='userName'>{displayName}</div>
-            <div id='userID'>
+                */}
+            </section>
+            <img src="" alt="" className="userThumb" onClick={handleAccountConsoleClosed} />
+            <section>{displayName}</section>
+            <section>
                 <span>{regionID}</span>.
                 {/* academy link: academy info and region list */}
                 <span>{districtID}</span>.
@@ -62,8 +63,8 @@ export default function Header() {
                 {/* district link: district info and community list */}
                 <span>{clusterID}</span>
                 {/* community link: community info and member list */}
-            </div>
-            <table id='userClock'>
+            </section>
+            <table className='userClock'>
                 {/* 
                     To-Do List for Work Clock: 
                     - Change coloring method to make updates from the dashboard activity log more simple

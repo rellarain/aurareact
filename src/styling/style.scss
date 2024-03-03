@@ -148,17 +148,41 @@ $adX: hsl($accenthue, $accentdesat, $LVX);
 
 
 // Assessment Shades
-$TTA0: hsl(110, $accentsatcalc, $LV0); $TTG0: hsl(5, $accentsatcalc, $LV0); $TTS0: hsl(230, $accentsatcalc, $LV0); $TTL0: hsl(300, $accentsatcalc, $LV0); $TTX0: hsl(30, $accentsatcalc, $LV0); 
-$TTA1: hsl(110, $accentsatcalc, $LV1); $TTG1: hsl(5, $accentsatcalc, $LV1); $TTS1: hsl(230, $accentsatcalc, $LV1); $TTL1: hsl(300, $accentsatcalc, $LV1); $TTX1: hsl(30, $accentsatcalc, $LV1); 
-$TTA2: hsl(110, $accentsatcalc, $LV2); $TTG2: hsl(5, $accentsatcalc, $LV2); $TTS2: hsl(230, $accentsatcalc, $LV2); $TTL2: hsl(300, $accentsatcalc, $LV2); $TTX2: hsl(30, $accentsatcalc, $LV2); 
-$TTA3: hsl(110, $accentsatcalc, $LV3); $TTG3: hsl(5, $accentsatcalc, $LV3); $TTS3: hsl(230, $accentsatcalc, $LV3); $TTL3: hsl(300, $accentsatcalc, $LV3); $TTX3: hsl(30, $accentsatcalc, $LV3); 
-$TTA4: hsl(110, $accentsatcalc, $LV4); $TTG4: hsl(5, $accentsatcalc, $LV4); $TTS4: hsl(230, $accentsatcalc, $LV4); $TTL4: hsl(300, $accentsatcalc, $LV4); $TTX4: hsl(30, $accentsatcalc, $LV4); 
-$TTA5: hsl(110, $accentsatcalc, $LV5); $TTG5: hsl(5, $accentsatcalc, $LV5); $TTS5: hsl(230, $accentsatcalc, $LV5); $TTL5: hsl(300, $accentsatcalc, $LV5); $TTX5: hsl(30, $accentsatcalc, $LV5); 
-$TTA6: hsl(110, $accentsatcalc, $LV6); $TTG6: hsl(5, $accentsatcalc, $LV6); $TTS6: hsl(230, $accentsatcalc, $LV6); $TTL6: hsl(300, $accentsatcalc, $LV6); $TTX6: hsl(30, $accentsatcalc, $LV6); 
-$TTA7: hsl(110, $accentsatcalc, $LV7); $TTG7: hsl(5, $accentsatcalc, $LV7); $TTS7: hsl(230, $accentsatcalc, $LV7); $TTL7: hsl(300, $accentsatcalc, $LV7); $TTX7: hsl(30, $accentsatcalc, $LV7); 
-$TTA8: hsl(110, $accentsatcalc, $LV8); $TTG8: hsl(5, $accentsatcalc, $LV8); $TTS8: hsl(230, $accentsatcalc, $LV8); $TTL8: hsl(300, $accentsatcalc, $LV8); $TTX8: hsl(30, $accentsatcalc, $LV8); 
-$TTA9: hsl(110, $accentsatcalc, $LV9); $TTG9: hsl(5, $accentsatcalc, $LV9); $TTS9: hsl(230, $accentsatcalc, $LV9); $TTL9: hsl(300, $accentsatcalc, $LV9); $TTX9: hsl(30, $accentsatcalc, $LV9); 
-$TTAX: hsl(110, $accentsatcalc, $LVX); $TTGX: hsl(5, $accentsatcalc, $LVX); $TTSX: hsl(230, $accentsatcalc, $LVX); $TTLX: hsl(300, $accentsatcalc, $LVX); $TTXX: hsl(30, $accentsatcalc, $LVX); 
+$TTAss0: hsl(110, $alertdesat, $LV0); $TTGss0: hsl(5, $alertdesat, $LV0); $TTSss0: hsl(230, $alertdesat, $LV0); $TTLss0: hsl(270, $alertdesat, $LV0); $TTXss0: hsl(30, $alertdesat, $LV0); 
+$TTAss1: hsl(110, $alertdesat, $LV1); $TTGss1: hsl(5, $alertdesat, $LV1); $TTSss1: hsl(230, $alertdesat, $LV1); $TTLss1: hsl(270, $alertdesat, $LV1); $TTXss1: hsl(30, $alertdesat, $LV1); 
+$TTAss2: hsl(110, $alertdesat, $LV2); $TTGss2: hsl(5, $alertdesat, $LV2); $TTSss2: hsl(230, $alertdesat, $LV2); $TTLss2: hsl(270, $alertdesat, $LV2); $TTXss2: hsl(30, $alertdesat, $LV2); 
+$TTAss3: hsl(110, $alertdesat, $LV3); $TTGss3: hsl(5, $alertdesat, $LV3); $TTSss3: hsl(230, $alertdesat, $LV3); $TTLss3: hsl(270, $alertdesat, $LV3); $TTXss3: hsl(30, $alertdesat, $LV3); 
+$TTAss4: hsl(110, $alertdesat, $LV4); $TTGss4: hsl(5, $alertdesat, $LV4); $TTSss4: hsl(230, $alertdesat, $LV4); $TTLss4: hsl(270, $alertdesat, $LV4); $TTXss4: hsl(30, $alertdesat, $LV4); 
+$TTAss5: hsl(110, $alertdesat, $LV5); $TTGss5: hsl(5, $alertdesat, $LV5); $TTSss5: hsl(230, $alertdesat, $LV5); $TTLss5: hsl(270, $alertdesat, $LV5); $TTXss5: hsl(30, $alertdesat, $LV5); 
+$TTAss6: hsl(110, $alertdesat, $LV6); $TTGss6: hsl(5, $alertdesat, $LV6); $TTSss6: hsl(230, $alertdesat, $LV6); $TTLss6: hsl(270, $alertdesat, $LV6); $TTXss6: hsl(30, $alertdesat, $LV6); 
+$TTAss7: hsl(110, $alertdesat, $LV7); $TTGss7: hsl(5, $alertdesat, $LV7); $TTSss7: hsl(230, $alertdesat, $LV7); $TTLss7: hsl(270, $alertdesat, $LV7); $TTXss7: hsl(30, $alertdesat, $LV7); 
+$TTAss8: hsl(110, $alertdesat, $LV8); $TTGss8: hsl(5, $alertdesat, $LV8); $TTSss8: hsl(230, $alertdesat, $LV8); $TTLss8: hsl(270, $alertdesat, $LV8); $TTXss8: hsl(30, $alertdesat, $LV8); 
+$TTAss9: hsl(110, $alertdesat, $LV9); $TTGss9: hsl(5, $alertdesat, $LV9); $TTSss9: hsl(230, $alertdesat, $LV9); $TTLss9: hsl(270, $alertdesat, $LV9); $TTXss9: hsl(30, $alertdesat, $LV9); 
+$TTAssX: hsl(110, $alertdesat, $LVX); $TTGssX: hsl(5, $alertdesat, $LVX); $TTSssX: hsl(230, $alertdesat, $LVX); $TTLssX: hsl(270, $alertdesat, $LVX); $TTXssX: hsl(30, $alertdesat, $LVX); 
+
+$TTAs0: hsl(110, $accentdesat, $LV0); $TTGs0: hsl(5, $accentdesat, $LV0); $TTSs0: hsl(230, $accentdesat, $LV0); $TTLs0: hsl(270, $accentdesat, $LV0); $TTXs0: hsl(30, $accentdesat, $LV0); 
+$TTAs1: hsl(110, $accentdesat, $LV1); $TTGs1: hsl(5, $accentdesat, $LV1); $TTSs1: hsl(230, $accentdesat, $LV1); $TTLs1: hsl(270, $accentdesat, $LV1); $TTXs1: hsl(30, $accentdesat, $LV1); 
+$TTAs2: hsl(110, $accentdesat, $LV2); $TTGs2: hsl(5, $accentdesat, $LV2); $TTSs2: hsl(230, $accentdesat, $LV2); $TTLs2: hsl(270, $accentdesat, $LV2); $TTXs2: hsl(30, $accentdesat, $LV2); 
+$TTAs3: hsl(110, $accentdesat, $LV3); $TTGs3: hsl(5, $accentdesat, $LV3); $TTSs3: hsl(230, $accentdesat, $LV3); $TTLs3: hsl(270, $accentdesat, $LV3); $TTXs3: hsl(30, $accentdesat, $LV3); 
+$TTAs4: hsl(110, $accentdesat, $LV4); $TTGs4: hsl(5, $accentdesat, $LV4); $TTSs4: hsl(230, $accentdesat, $LV4); $TTLs4: hsl(270, $accentdesat, $LV4); $TTXs4: hsl(30, $accentdesat, $LV4); 
+$TTAs5: hsl(110, $accentdesat, $LV5); $TTGs5: hsl(5, $accentdesat, $LV5); $TTSs5: hsl(230, $accentdesat, $LV5); $TTLs5: hsl(270, $accentdesat, $LV5); $TTXs5: hsl(30, $accentdesat, $LV5); 
+$TTAs6: hsl(110, $accentdesat, $LV6); $TTGs6: hsl(5, $accentdesat, $LV6); $TTSs6: hsl(230, $accentdesat, $LV6); $TTLs6: hsl(270, $accentdesat, $LV6); $TTXs6: hsl(30, $accentdesat, $LV6); 
+$TTAs7: hsl(110, $accentdesat, $LV7); $TTGs7: hsl(5, $accentdesat, $LV7); $TTSs7: hsl(230, $accentdesat, $LV7); $TTLs7: hsl(270, $accentdesat, $LV7); $TTXs7: hsl(30, $accentdesat, $LV7); 
+$TTAs8: hsl(110, $accentdesat, $LV8); $TTGs8: hsl(5, $accentdesat, $LV8); $TTSs8: hsl(230, $accentdesat, $LV8); $TTLs8: hsl(270, $accentdesat, $LV8); $TTXs8: hsl(30, $accentdesat, $LV8); 
+$TTAs9: hsl(110, $accentdesat, $LV9); $TTGs9: hsl(5, $accentdesat, $LV9); $TTSs9: hsl(230, $accentdesat, $LV9); $TTLs9: hsl(270, $accentdesat, $LV9); $TTXs9: hsl(30, $accentdesat, $LV9); 
+$TTAsX: hsl(110, $accentdesat, $LVX); $TTGsX: hsl(5, $accentdesat, $LVX); $TTSsX: hsl(230, $accentdesat, $LVX); $TTLsX: hsl(270, $accentdesat, $LVX); $TTXsX: hsl(30, $accentdesat, $LVX); 
+
+$TTAd0: hsl(110, $themeupsat, $LV0); $TTGd0: hsl(5, $themeupsat, $LV0); $TTSd0: hsl(230, $themeupsat, $LV0); $TTLd0: hsl(270, $themeupsat, $LV0); $TTXd0: hsl(30, $themeupsat, $LV0); 
+$TTAd1: hsl(110, $themeupsat, $LV1); $TTGd1: hsl(5, $themeupsat, $LV1); $TTSd1: hsl(230, $themeupsat, $LV1); $TTLd1: hsl(270, $themeupsat, $LV1); $TTXd1: hsl(30, $themeupsat, $LV1); 
+$TTAd2: hsl(110, $themeupsat, $LV2); $TTGd2: hsl(5, $themeupsat, $LV2); $TTSd2: hsl(230, $themeupsat, $LV2); $TTLd2: hsl(270, $themeupsat, $LV2); $TTXd2: hsl(30, $themeupsat, $LV2); 
+$TTAd3: hsl(110, $themeupsat, $LV3); $TTGd3: hsl(5, $themeupsat, $LV3); $TTSd3: hsl(230, $themeupsat, $LV3); $TTLd3: hsl(270, $themeupsat, $LV3); $TTXd3: hsl(30, $themeupsat, $LV3); 
+$TTAd4: hsl(110, $themeupsat, $LV4); $TTGd4: hsl(5, $themeupsat, $LV4); $TTSd4: hsl(230, $themeupsat, $LV4); $TTLd4: hsl(270, $themeupsat, $LV4); $TTXd4: hsl(30, $themeupsat, $LV4); 
+$TTAd5: hsl(110, $themeupsat, $LV5); $TTGd5: hsl(5, $themeupsat, $LV5); $TTSd5: hsl(230, $themeupsat, $LV5); $TTLd5: hsl(270, $themeupsat, $LV5); $TTXd5: hsl(30, $themeupsat, $LV5); 
+$TTAd6: hsl(110, $themeupsat, $LV6); $TTGd6: hsl(5, $themeupsat, $LV6); $TTSd6: hsl(230, $themeupsat, $LV6); $TTLd6: hsl(270, $themeupsat, $LV6); $TTXd6: hsl(30, $themeupsat, $LV6); 
+$TTAd7: hsl(110, $themeupsat, $LV7); $TTGd7: hsl(5, $themeupsat, $LV7); $TTSd7: hsl(230, $themeupsat, $LV7); $TTLd7: hsl(270, $themeupsat, $LV7); $TTXd7: hsl(30, $themeupsat, $LV7); 
+$TTAd8: hsl(110, $themeupsat, $LV8); $TTGd8: hsl(5, $themeupsat, $LV8); $TTSd8: hsl(230, $themeupsat, $LV8); $TTLd8: hsl(270, $themeupsat, $LV8); $TTXd8: hsl(30, $themeupsat, $LV8); 
+$TTAd9: hsl(110, $themeupsat, $LV9); $TTGd9: hsl(5, $themeupsat, $LV9); $TTSd9: hsl(230, $themeupsat, $LV9); $TTLd9: hsl(270, $themeupsat, $LV9); $TTXd9: hsl(30, $themeupsat, $LV9); 
+$TTAdX: hsl(110, $themeupsat, $LVX); $TTGdX: hsl(5, $themeupsat, $LVX); $TTSdX: hsl(230, $themeupsat, $LVX); $TTLdX: hsl(270, $themeupsat, $LVX); $TTXdX: hsl(30, $themeupsat, $LVX); 
 
 
 
@@ -265,199 +289,1196 @@ body {
 
 .nightMode {
     transition: background 1s, color 1s;
-    #userHeader {
+    .userHeader {
         background: $t2;
         box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.342);
-        #accountConsole {
-            section {
-                box-shadow: inset 0 0 6px 4px rgba(0, 0, 0, 0.5);
-                background-color: $tu1;
-            }
+        section:nth-child(3) {
+            color: $t8;
         }
-        #userName {
-            color: $t6;
-            &:hover {
-                color: $t9;
-                text-shadow: 0 0 3px $t0;
-            }
-        }
-        #userID {
-            color: $t0;
+        section:nth-child(4) {
+            color: $t4;
             span {
-                &:hover {
-                    color: $t6;
-                    text-shadow: 0 0 2px $t0;
-    
-                }
+                color: $t5;
             }
         }
-        #userClock {
+        table {
             background-color: $t0;
         }
+        
     }
-    #navCrop {
-        #navPanel {
-            background: $ad0;
-        }
-        #navButton {
-            background-color: $as4;
-            &:hover {
-                background-color: $as6;
-            }
-        }
-        #navPage {
-            background-color: $as3;
-            color: $as9;
 
-        }
-        #navBody {
-            ul {
-                background-color: $as0;
-                li {
-                    color: $as8;
-                    background-color: $as3;
-                    &:first-child {
-                        background-color: $as2;
-                        color: $as8;
-                    }
+
+    .accountConsole {
+        main {
+            background-color: $t0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $t3;
                 }
-            }
-    
-            &::-webkit-scrollbar {
-                background-color: $as5;
-            }
-            &::-webkit-scrollbar-button {
-                background-color: $as4;
-            }
-            &::-webkit-scrollbar-thumb {
-                background-color: $as3;
-            }
-    
-        }
-
-
-    }
-    #userDash {
-        background: $t6;
-        box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
-    }
-    #userDashboard {
-        // background-color: $as1;
-        p {color: $tu7; background-color: $tu1;}
-        section {background-color: $t2;}
-        button {background-color: $t2;}
-    }
-    #userConsole {
-        background-color: $tu1;
-        box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
-
-        #userConsoleDesk {background-color: $tu4; box-shadow: inset 0 0 0 5px $tu4;}
-        #userConsoleHead {
-            background-color: $t4;
-            #userConsoleTitle {color: $t1;}
-            section:nth-child(1) {
-                button {
-                    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
-
-                }
-                .userConsoleTabActive {
-                    background-color: $tu1;
-                    span:nth-child(2) {color: $tu9}
-                }
-                .userConsoleTabInactive {
-                    background-color: $t0;
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $t5;}
                     span:nth-child(2) {color: $t8;}
-                    
                 }
-            }
-            section:nth-child(2) {background-color: $t2;}
-            section:nth-child(3) {background-color: $t2; span {background-color: $ats7;}}
-            section:nth-child(4) {
-                // background-color: $tu1;
-                .userConsoleSubpageActive {
-                    background-color: $as5;
-                    // box-shadow: inset 0 0 5px $asX;
-                    span:nth-child(1) {color: $asX;}
-                    span:nth-child(2) {color: $as8;}
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $t1;
+                    span {
+                        background-color: $tu7;
+                    }
                 }
-                .userConsoleSubpageInactive {
-                    background-color: $tu3;
-                    
-                    span:nth-child(1) {color: $tu8;}
-                    span:nth-child(2) {color: $tu6;}
-                    &:hover {
-                        background-color: $tu4;
-                        span:nth-child(1) {color: $tu9;}
-                        span:nth-child(2) {color: $tu7;}
-
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $t1;           
+                    button {
+                        background-color: $tu6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $t1;
+                    button {
+                        background-color: $tu3;
+                        color: $tuX;                            
                     }
                 }
             }
-            section:nth-child(5) {color: $t0;}
-        }
-        #userConsoleSidebar {
-            background-color: $tu0;
-            #userConsoleHelp {
-                background-color: $ad4;
-                section {
-                    button {background-color: $as1; color: $asX;}
-                    div:nth-child(2) {color: $ad0;}
-                    div:nth-child(3) {}
-                    div:nth-child(4) {background-color: $as7;}
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $t3;
+                    color: $t7;
+                    border: 4px solid $t3;
+                    b {
+                        color: $t0;
+                    }
+                    hr {border: 1px solid $t0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $t0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $tu6;
+                    }
                 }
-            }
-            #consoleSidebarContent {
-                background-color: $tu1;
-
-                ul {
-                    background-color: $tu2; 
-                    li {
-                        background-color: $tu1; 
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $tu2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $tu5;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
                         color: $tu8;
-                        span {background-color: $tu8; color: $tu0;}
-                        span:first-child {background-color: $tu1; color: $tu8;}
-                    }
-                    li:first-child {
-                        background-color: $tu0; 
-                        color: $tu8;
-                        span {background-color: $tu6; color: $tu0;}
-                        span:first-child {background-color: $tu0; color: $tuX;}
-                    }
-                }
-                &::-webkit-scrollbar {background-color: $tu1;}
-                &::-webkit-scrollbar-thumb {background-color: $tu5; border-color: $tu1;}
-            }
-        }
-    }
-    #sidebar {
-        background-color: $ad0;
-
-    }
-    #breakTimeFooter {
-        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
-        #workWeekTimer {
-            background-color: $atd4;
-            span {
-                background-color: $ats1;
-            }
-        }
-        #breakTimeHeader {
-            color: $atd4;
-        }
-
-        #breakTimeConsole {
-            background: $atd0;
-            #breakTimeConsoleDesk {
-                background-color: $atd7;
-            }
-            #breakTimeConsoleLog {
-                background-color: $atd1;
-            }
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $tu4;
+                            border: 4px solid $tu4;
+                            color: $tu1;
+                            b {color: $tu0;}
+                            hr {border: 1px solid $tu0;}
     
+                            &::-webkit-scrollbar-button {
+                                background-color: $tu2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $tu7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $tu0;
+                            section {
+                                button {
+                                    color: $tuX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-    .breakTimeOpen {background: $atd4;}
-    .breakTimeClosed {background: $atd1;}
+    .dashboardConsole {
+        main {
+            background-color: $t0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $t3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $t5;}
+                    span:nth-child(2) {color: $t8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $t1;
+                    span {
+                        background-color: $ats6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $t1;           
+                    button {
+                        background-color: $ats5;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $t1;
+                    button {
+                        background-color: $tu3;
+                        color: $tuX;                            
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $t3;
+                    color: $t7;
+                    border: 4px solid $t3;
+                    b {
+                        color: $t0;
+                    }
+                    hr {border: 1px solid $t0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $t0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $tu6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $atd2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $atd5;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $atd8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $atd4;
+                            border: 4px solid $atd4;
+                            color: $atd1;
+                            b {color: $atd0;}
+                            hr {border: 1px solid $atd0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $atd2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $atd7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $ats0;
+                            section {
+                                button {
+                                    color: $atsX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .socialConsole {
+        main {
+            background-color: $t0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $t3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $t5;}
+                    span:nth-child(2) {color: $t8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $t1;
+                    span {
+                        background-color: $ats6;
+                        background-color: $tu6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $ad2;           
+                    button {
+                        background-color: $ats6;
+                        background-color: $as6;
+                        background-color: $ad6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $t1;
+                    button {
+                        background-color: $tu3;
+                        color: $tuX; 
+
+                        // background-color: $as4;
+                        // color: $asX;                            
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $t3;
+                    color: $t7;
+                    border: 4px solid $t3;
+                    b {
+                        color: $t0;
+                    }
+                    hr {border: 1px solid $t0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $t0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $tu6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $ad2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $ad5;
+                            // background-color: $as7;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $ad8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $ad4;
+                            border: 4px solid $ad4;
+                            color: $ad7;
+                            b {color: $adX;}
+                            hr {border: 1px solid $ad0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $ad2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $ad7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $as0;
+                            section {
+                                button {
+                                    color: $asX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .scholarConsole {
+        main {
+            background-color: $t0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $t3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $t5;}
+                    span:nth-child(2) {color: $t8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $t1;
+                    span {
+                        background-color: $ats6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $t1;           
+                    button {
+                        // Inactive Admin
+                        // background-color: $ats6;
+
+                        // Active Admin
+                        // background-color: $as6;
+
+                        // User
+                        background-color: $tu6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $t1;
+                    button {
+                        // No Open Activities
+                        background-color: $tu3;
+                        color: $tuX; 
+
+                        // Open Activities
+                        // background-color: $ad3;
+                        // color: $adX; 
+
+                        // Overdue Activities
+                        // background-color: $as3;
+                        // color: $asX;                          
+
+                        // Open Tab
+                        // background-color: $atd3;
+                        // color: $atdX; 
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $t3;
+                    color: $t7;
+                    border: 4px solid $t3;
+                    b {
+                        color: $t0;
+                    }
+                    hr {border: 1px solid $t0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $t0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $tu6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $tu2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $tu5;
+                            // background-color: $as7;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $tu8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $tu4;
+                            border: 4px solid $tu4;
+                            color: $tu7;
+                            b {color: $tuX;}
+                            hr {border: 1px solid $tu0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $tu2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $tu7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $ats3;
+                            section {
+                                button {
+                                    color: $atsX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .assessmentAConsole {
+        main {
+            background-color: $TTAd0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $TTAd3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $TTAd5;}
+                    span:nth-child(2) {color: $TTAd8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $TTAd1;
+                    span {
+                        background-color: $TTAss6;
+                        background-color: $TTAs6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $TTAd2;           
+                    button {
+                        background-color: $ats6;
+                        background-color: $TTAss6;
+                        background-color: $TTAs6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $TTAd1;
+                    button {
+                        background-color: $TTAd3;
+                        color: $TTAdX; 
+
+                        // background-color: $TTAss3;
+                        // color: $TTAssX;                            
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $TTAd3;
+                    color: $TTAd7;
+                    border: 4px solid $TTAd3;
+                    b {
+                        color: $TTAd0;
+                    }
+                    hr {border: 1px solid $TTAd0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $TTAd0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $TTAd6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $TTAs2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $TTAs5;
+                            // background-color: $TTAss5;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $TTAs8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $TTAs4;
+                            border: 4px solid $TTAs4;
+                            color: $TTAs7;
+                            b {color: $TTAsX;}
+                            hr {border: 1px solid $TTAs0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $TTAs2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $TTAs7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $TTAss0;
+                            section {
+                                button {
+                                    color: $TTAssX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .assessmentGConsole {
+        main {
+            background-color: $TTGd0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $TTGd3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $TTGd5;}
+                    span:nth-child(2) {color: $TTGd8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $TTGd1;
+                    span {
+                        background-color: $TTGss6;
+                        background-color: $TTGs6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $TTGd2;           
+                    button {
+                        background-color: $ats6;
+                        background-color: $TTGss6;
+                        background-color: $TTGs6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $TTGd1;
+                    button {
+                        background-color: $TTGd3;
+                        color: $TTGdX; 
+
+                        // background-color: $TTGss3;
+                        // color: $TTGssX;                            
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $TTGd3;
+                    color: $TTGd7;
+                    border: 4px solid $TTGd3;
+                    b {
+                        color: $TTGd0;
+                    }
+                    hr {border: 1px solid $TTGd0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $TTGd0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $TTGd6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $TTGs2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $TTGs5;
+                            // background-color: $TTGss5;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $TTGs8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $TTGs4;
+                            border: 4px solid $TTGs4;
+                            color: $TTGs7;
+                            b {color: $TTGsX;}
+                            hr {border: 1px solid $TTGs0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $TTGs2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $TTGs7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $TTGss0;
+                            section {
+                                button {
+                                    color: $TTGssX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .assessmentLConsole {
+        main {
+            background-color: $TTLd0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $TTLd3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $TTLd5;}
+                    span:nth-child(2) {color: $TTLd8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $TTLd1;
+                    span {
+                        background-color: $TTLss6;
+                        background-color: $TTLs6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $TTLd2;           
+                    button {
+                        background-color: $ats6;
+                        background-color: $TTLss6;
+                        background-color: $TTLs6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $TTLd1;
+                    button {
+                        background-color: $TTLd3;
+                        color: $TTLdX; 
+
+                        // background-color: $TTLss3;
+                        // color: $TTLssX;                            
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $TTLd3;
+                    color: $TTLd7;
+                    border: 4px solid $TTLd3;
+                    b {
+                        color: $TTLd0;
+                    }
+                    hr {border: 1px solid $TTLd0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $TTLd0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $TTLd6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $TTLs2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $TTLs5;
+                            // background-color: $TTLss5;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $TTLs8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $TTLs4;
+                            border: 4px solid $TTLs4;
+                            color: $TTLs7;
+                            b {color: $TTLsX;}
+                            hr {border: 1px solid $TTLs0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $TTLs2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $TTLs7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $TTLss0;
+                            section {
+                                button {
+                                    color: $TTLssX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .assessmentSConsole {
+        main {
+            background-color: $TTSd0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $TTSd3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $TTSd5;}
+                    span:nth-child(2) {color: $TTSd8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $TTSd1;
+                    span {
+                        background-color: $TTSss6;
+                        background-color: $TTSs6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $TTSd2;           
+                    button {
+                        background-color: $ats6;
+                        background-color: $TTSss6;
+                        background-color: $TTSs6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $TTSd1;
+                    button {
+                        background-color: $TTSd3;
+                        color: $TTSdX; 
+
+                        // background-color: $TTSss3;
+                        // color: $TTSssX;                            
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $TTSd3;
+                    color: $TTSd7;
+                    border: 4px solid $TTSd3;
+                    b {
+                        color: $TTSd0;
+                    }
+                    hr {border: 1px solid $TTSd0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $TTSd0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $TTSd6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $TTSs2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $TTSs5;
+                            // background-color: $TTSss5;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $TTSs8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $TTSs4;
+                            border: 4px solid $TTSs4;
+                            color: $TTSs7;
+                            b {color: $TTSsX;}
+                            hr {border: 1px solid $TTSs0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $TTSs2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $TTSs7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $TTSss0;
+                            section {
+                                button {
+                                    color: $TTSssX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .assessmentXConsole {
+        main {
+            background-color: $TTXd0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $TTXd3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $TTXd5;}
+                    span:nth-child(2) {color: $TTXd8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $TTXd1;
+                    span {
+                        background-color: $TTXss6;
+                        background-color: $TTXs6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $TTXd2;           
+                    button {
+                        background-color: $ats6;
+                        background-color: $TTXss6;
+                        background-color: $TTXs6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $TTXd1;
+                    button {
+                        background-color: $TTXd3;
+                        color: $TTXdX; 
+
+                        // background-color: $TTXss3;
+                        // color: $TTXssX;                            
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $TTXd3;
+                    color: $TTXd7;
+                    border: 4px solid $TTXd3;
+                    b {
+                        color: $TTXd0;
+                    }
+                    hr {border: 1px solid $TTXd0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $TTXd0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $TTXd6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $TTXs2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $TTXs5;
+                            // background-color: $TTXss5;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $TTXs8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $TTXs4;
+                            border: 4px solid $TTXs4;
+                            color: $TTXs7;
+                            b {color: $TTXsX;}
+                            hr {border: 1px solid $TTXs0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $TTXs2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $TTXs7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $TTXss0;
+                            section {
+                                button {
+                                    color: $TTXssX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .adminConsole {
+        main {
+            background-color: $tu0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $tu3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $tu5;}
+                    span:nth-child(2) {color: $tu8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $tu1;
+                    span {
+                        background-color: $ats6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $tu1;           
+                    button {
+                        // User
+                        background-color: $tu6;
+
+                        // Inactive Admin
+                        background-color: $ats6;
+
+                        // Active Admin
+                        // background-color: $as6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $tu1;
+                    button {
+                        // No Open Activities
+                        background-color: $ad4;
+                        color: $adX; 
+
+                        // Open Activities
+                        // background-color: $as4;
+                        // color: $asX; 
+
+                        // Overdue Activities
+                        // background-color: $atd4;
+                        // color: $atdX;                          
+
+                        // Open Tab
+                        // background-color: $ats4;
+                        // color: $atsX; 
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $tu3;
+                    color: $tu7;
+                    border: 4px solid $tu3;
+                    b {
+                        color: $tu0;
+                    }
+                    hr {border: 1px solid $tu0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $tu0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $tu6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $ad2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $ad5;
+                            // background-color: $ats7;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $ad8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $ad4;
+                            border: 4px solid $ad4;
+                            color: $ad7;
+                            b {color: $adX;}
+                            hr {border: 1px solid $ad0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $ad2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $ad7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $ats3;
+                            section {
+                                button {
+                                    color: $atsX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .helpDeskConsole {
+        main {
+            background-color: $ad0;
+            // border: 4px solid $t0;
+            header {
+                // Title
+                section:nth-child(1) {
+                    color: $ad3;
+                }
+                // Date and Time
+                section:nth-child(2) {
+                    span:nth-child(1) {color: $ad5;}
+                    span:nth-child(2) {color: $ad8;}
+                }
+                // Achievement Progress Bar
+                section:nth-child(3) {
+                    background-color: $ad2;
+                    span {
+                        background-color: $ats6;
+                    }
+                }
+                // Console Button
+                section:nth-child(4) {
+                    background-color: $ad2;           
+                    button {
+
+                        // Active Chats
+                        background-color: $ats7;
+
+                        // No Chats
+                        background-color: $as6;
+                    }
+                }
+                // Console Tabs
+                section:nth-child(5) {
+                    background-color: $ad2;
+                    button {
+
+                        // No New Messages
+                        background-color: $ad3;
+                        color: $adX; 
+
+                        // One New Message
+                        background-color: $as3;
+                        color: $asX;                          
+
+                        // Multiple New Messages
+                        background-color: $atd3;
+                        color: $atdX; 
+
+                        // Open Chat
+                        background-color: $ats3;
+                        color: $atsX; 
+                    }
+                }
+            }
+            div {
+                // Desk
+                .consoleDesk {
+                    background-color: $t3;
+                    color: $t7;
+                    border: 4px solid $t3;
+                    b {
+                        color: $t0;
+                    }
+                    hr {border: 1px solid $t0;}
+                    &::-webkit-scrollbar-button {
+                        background-color: $t0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $tu6;
+                    }
+                }
+        
+                // Sidebar 
+                .consoleSidebar {
+                    background-color: $ad2;
+                    .consoleSidebarTabs {
+                        button {
+                            background-color: $ad5;
+                            // background-color: $ats7;
+                        }
+                        
+                    }
+                    .consoleSidebarTitle {
+                        color: $ad8;
+                    }   
+                    // Sidebar Body
+                    .consoleSidebarBody {                          
+                        .consoleSidebarContent {
+                            background-color: $ad4;
+                            border: 4px solid $ad4;
+                            color: $ad7;
+                            b {color: $adX;}
+                            hr {border: 1px solid $ad0;}
+    
+                            &::-webkit-scrollbar-button {
+                                background-color: $ad2;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $ad7;
+                            }
+                        }       
+                        // Console Help
+                        .consoleSidebarHelp {
+                            background-color: $ats3;
+                            section {
+                                button {
+                                    color: $atsX;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .dayMode {
@@ -679,50 +1700,33 @@ body {
 // MEMBER -------------------------------------------------------------------------------------------------------------------------------
 
 // Header
-#userHeader {
-    position: fixed;
+.userHeader {
+    position: absolute;
     right: 0;
-    width: 100%;
+    width: 100vw;
+    display: grid;
+    height: 100vh;
+    top: calc(-100vh + 50px);
+    top: 0;
     z-index: 11;
-    transition: height 1s, position .1s 1s;
+    transition: height 1s, top 1s;
     grid-template-columns: 40px auto;
-    grid-template-rows: auto 20px 20px 10px;
+    grid-template-rows: calc(100vh - 50px) 20px 20px 10px;
     grid-template-areas: "accountConsole accountConsole" "thumbnail userName" "thumbnail userID" "userClock userClock";
 
-    #accountConsole {
-                
-        transition: height 1.25s;
-        overflow: hidden;
+    // Account Console
+    .userHeaderConsole {
         grid-area: accountConsole;
+        position: absolute;
+        // display: block;
+        // overflow: hidden;
+        top: 28px;
+        left: 0;
+        height: calc(100vh - 80px);
         width: 100%;
-        display: grid;
-        grid-template-rows: 40px calc(100vh - 90px);
-        grid-template-areas: "accountConsoleBuffer" "accountConsoleContent";
-        
-        section {
-            grid-area: accountConsoleContent;
-            display: grid;
-            width: calc(100vw - 10px);
-            height: 100%;
-            margin: 0 5px;
-            border-radius: 4px;
-            transition: height 1.25s;
-            overflow: hidden;
-            grid-template-rows: 50px auto;
-            grid-template-areas: "accountConsoleHead" "accountConsoleBody";
-
-            div:nth-child(1) {
-                grid-area: accountConsoleHead;
-                // background-color: $tu3;
-            }
-            div:nth-child(2) {
-                grid-area: accountConsoleBody;
-                // background-color: red;
-            }
-        }
-
     }
-    img {
+    // Thumbnail
+    .userThumb {
         appearance: none;
         height: 30px;
         width: 30px;
@@ -731,8 +1735,10 @@ body {
         grid-area: thumbnail;
         overflow: hidden;
         cursor: pointer;
+        
     }
-    #userName {
+    // Display Name
+    section:nth-child(3) {
         transition: color .4s, text-shadow .4s;
         letter-spacing: 1.5px;
         margin: 6px 0 0 0;
@@ -744,7 +1750,8 @@ body {
         font-size: 16px;
         cursor: pointer;
     }
-    #userID {
+    // User ID
+    section:nth-child(4) {
         grid-area: userID;
         font-size: 14px;
         width: max-content;
@@ -755,13 +1762,14 @@ body {
             cursor: pointer;
             margin: 0 2px;
             transition: color .4s, text-shadow .4s;
-
+            
         }
         span:first-child {
             margin: 0 2px 0 0;
         }
     }
-    #userClock {
+    // User Clock
+    .userClock {
         grid-area: userClock;
         width: 100%;
         transition: boxShadow 1s;
@@ -876,14 +1884,15 @@ body {
         // 10 hour shift: 6h40m work (64), 3h20m break (32)
     }
 
-    .accountConsoleOpen {
-        height: calc(100vh - 50px);
-    }
-    .accountConsoleClosed {
-        height: 0;
-
-    }
 }
+.accountConsoleOpen {
+    top: 0;
+}
+
+.accountConsoleClosed {
+    top: calc(-100vh + 50px);
+}
+
 
 // Navigation 
 #navCrop {
@@ -1035,13 +2044,7 @@ body {
         overflow: hidden;
         margin: 15px;
         
-        
         // temporary
-        // top: 60px;
-        // width: calc(100% - 20px);
-        // height: calc(100% - 70px);
-        // left: 10px;
-        background-color: $t0;
         z-index: 7;
         header {
             grid-area: header;
@@ -1061,8 +2064,6 @@ body {
                 line-height: 16px;
                 letter-spacing: 2px;
                 font-size: 16px;
-                // background-color: green;
-                color: $t3;
                 padding-left: 2px;
             }
             // Date and Time
@@ -1070,38 +2071,26 @@ body {
                 grid-area: consoleDateTime; 
                 text-align: right;
                 line-height: 16px;
-                // background-color: purple;
                 font-weight: 500;
                 font-size: 14px;
                 letter-spacing: 1.25px;
-                span:nth-child(1) {color: $t5;}
-                span:nth-child(2) {color: $t8;}
             }
             // Achievement Progress Bar
             section:nth-child(3) {
                 grid-area: consoleAchievement; 
-                background-color: $t2;
                 width: calc(100% - 18px);
                 height: 6px;
-                // position: absolute;
                 margin: 4px;
                 padding: 5px;
-                // top: 4px;
                 span {
-                    // width: 90%;
-                    // position: absolute;
                     display: block;
-                    // margin: 4px;
                     height: 6px;
-                    // left: 0;
-                    background-color: $ats6;
                     border-radius: 4px;
                 }
             }
             // Console Button
             section:nth-child(4) {
                 grid-area: consoleButton; 
-                background-color: $as9;
                 width: 30px;
                 height: 30px;
                 margin-left: 4px;
@@ -1115,17 +2104,32 @@ body {
                     border-radius: 4px;
                     // height is based on sidebar
                     
-                    // temporary 
-                    background-color: $ad3;
                 }
             }
             // Console Tabs
             section:nth-child(5) {
                 grid-area: consoleTabs; 
-                background-color: $t3;
                 height: 30px;
                 width: calc(100% - 6px);
                 margin-left: 2px;
+                display: flex;
+                overflow-y: hidden;
+                overflow-x: auto;
+                button {
+                    height: 22px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    border-radius: 4px;
+                    border: none;
+                    margin: 4px 2px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    width: max-content;
+                    
+                    
+                }
+                button:nth-child(1) {margin-left: 4px;}
+                &::-webkit-scrollbar {display: none;}
             }
         }
         div {
@@ -1147,31 +2151,22 @@ body {
                 right: 4px;
                 overflow-x: hidden;
                 overflow-y: auto;
-                
-                // temporary
-                background-color: $t5;
-                border: 4px solid $t5;
                 line-height: 20px;
                 transition: width 1s, height 1s;
                 font-size: 16px;
-                color: $t2;
-                b {font-weight: 600; letter-spacing: 1.5px; color: $t0; text-transform: uppercase;}
+                b {font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;}
                 i {font-style: italic;}
-                hr {border: 1px solid $t0;}
                 &::-webkit-scrollbar {
-                    background-color: $t5;
                     border-radius: 4px;
                     border-radius: 4px;
                     width: 10px;
                     width: 12px;
                 }
                 &::-webkit-scrollbar-button {
-                    background-color: $t2;
                     border-radius: 4px;
                     height: 12px;
                 }
                 &::-webkit-scrollbar-thumb {
-                    background-color: $tu8;
                     border-radius: 4px;
                 }
             }
@@ -1189,19 +2184,13 @@ body {
                 grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
 
 
-                // temporary
-                background-color: $t2;
     
                 .consoleSidebarTabs {
-                    // position: relative;
                     grid-area: consoleSidebarTabs;
                     overflow-x: hidden;
                     overflow-y: auto;
-                    // background-color: $t1;
                     border-radius: 4px;
                     height: 100%;
-                    // margin: 4px;
-                    // background-color: white;
                     width: 28px;
 
                     &::-webkit-scrollbar {display: none;}
@@ -1212,8 +2201,6 @@ body {
                         height: 22px;
                         border: none;
                         margin: 4px 0 0 4px;
-                        background-color: $tu5;
-                        // background-color: aqua;
                         border-radius: 4px;
                         &:last-child {margin-bottom: 4px;}
                     }
@@ -1221,11 +2208,7 @@ body {
                 }
                 .consoleSidebarTitle {
                     grid-area: consoleSidebarTitle;
-                    // background-color: blue;
-                    color: $t8;
                     line-height: 16px;
-                    // vertical-align: bottom;
-                    // padding-left: 8px;
                     margin: 12px 4px 0 4px;
                     font-size: 16px;
                     text-transform: uppercase;
@@ -1246,15 +2229,11 @@ body {
                     right: 0;
                     width:  calc(100% - 30px);
                     overflow: hidden;
-                    // background-color: red;
-                    // background-color: green;
                     margin-top: 4px;
                     border-radius: 4px;
-                    // width: calc(100% - 4px);
                     height: calc(100% - 34px);
                     
                     .consoleSidebarContent {
-                        background-color: $t8;
                         width: calc(100% - 16px);
                         transition: height 1s, width 1s;
                         overflow-x: hidden;
@@ -1262,30 +2241,24 @@ body {
                         position: absolute;
                         top: 4px;
                         left: 4px;
-                        border: 4px solid $t8;
 
                         line-height: 18px;
                         transition: width 1s, height 1s;
                         font-size: 14px;
-                        color: $t2;
-                        b {font-weight: 600; letter-spacing: 1.5px; color: $t0; text-transform: uppercase;}
+                        b {font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;}
                         i {font-style: italic;}
-                        hr {border: 1px solid $t0;}
 
                         &::-webkit-scrollbar {
-                            background-color: $t8;
                             border-radius: 4px;
                             border-radius: 4px;
                             width: 10px;
                             width: 12px;
                         }
                         &::-webkit-scrollbar-button {
-                            background-color: $t2;
                             border-radius: 4px;
                             height: 12px;
                         }
                         &::-webkit-scrollbar-thumb {
-                            background-color: $tu2;
                             border-radius: 4px;
                         }
                     }
@@ -1297,7 +2270,6 @@ body {
                         bottom: 0;
                         right: 0;
                         margin: 4px;
-                        background-color: $as1;
                         transition: height 1s, width 1s;
     
                         section {
@@ -1312,25 +2284,15 @@ body {
                                 border-radius: 4px;
                                 margin: 4px;
                                 border: none;
-                                color: $asX;
                                 background-color: rgba(255, 255, 255, 0);
                             }
-    
                         }
-    
-    
                     }
-
                 }
-                
             }
         }
         .consoleHelpOpen {
-            .consoleSidebarContent {
-                height: calc(50% - 14px);
-            }
             .consoleSidebarHelp {
-                height: calc(50% - 6px);
                 width: calc(100% - 8px);
             }
         }
@@ -2015,7 +2977,7 @@ body {
 // Narrow Smartphone - Light Red (Nav, Console, Sidebar, Admin, Help Desk, Breaktime, Dashboard, Account) -------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 0px) {
     // Indicator
-    #userThumb {background: hsl(0, 70%, 60%);}
+    .userThumb {background: hsl(0, 70%, 60%);}
 
 
     // Console Responsive
@@ -2070,7 +3032,7 @@ body {
 // Wide Smartphone - Dark Red (Console, Breaktime)
 @media only screen and (min-width: 300px) {
     // Indicator
-    #userThumb {background: hsl(0, 70%, 30%);}
+    .userThumb {background: hsl(0, 70%, 30%);}
 
 
 
@@ -2083,7 +3045,7 @@ body {
 // Narrow Tablet - Light Orange (Nav, Sidebar, Breaktime) -------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 600px) {
     // Indicator
-    #userThumb {background: hsl(30, 70%, 60%);}
+    .userThumb {background: hsl(30, 70%, 60%);}
             
 
     // Console Responsive
@@ -2135,7 +3097,7 @@ body {
 // Wide Tablet - Dark Orange ()
 @media only screen and (min-width: 900px) {
     // Indicator
-    #userThumb {background: hsl(30, 70%, 30%);}
+    .userThumb {background: hsl(30, 70%, 30%);}
 
 
     // BreakTime Responsive
@@ -2154,7 +3116,7 @@ body {
 // Narrow Laptop - Light Green (Console, Help Desk, Sidebar) --------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1200px) {
     // Indicator
-    #userThumb {background: hsl(102, 70%, 60%);}
+    .userThumb {background: hsl(102, 70%, 60%);}
 
     // Console Responsive
     .consoleSidebarOpen {
@@ -2195,7 +3157,7 @@ body {
 // Wide Laptop - Dark Green (Sidebar) [Accountability: ]
 @media only screen and (min-width: 1500px) {
     // Indicator
-    #userThumb {background: hsl(102, 70%, 30%);}
+    .userThumb {background: hsl(102, 70%, 30%);}
 
     // Console Responsive
     .consoleSidebarOpen {
@@ -2231,7 +3193,7 @@ body {
 // Narrow Desktop - Light Blue (HelpDesk) -------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1800px) {
     // Indicator
-    #userThumb {background: hsl(206, 70%, 60%);}
+    .userThumb {background: hsl(206, 70%, 60%);}
 
 
 
@@ -2239,7 +3201,7 @@ body {
 // Wide Desktop - Dark Blue ()
 @media only screen and (min-width: 2100px) {
     // Indicator
-    #userThumb {background: hsl(206, 70%, 30%);}
+    .userThumb {background: hsl(206, 70%, 30%);}
 
 
 
@@ -2248,7 +3210,7 @@ body {
 // Narrow Ultrawide - Light Purple (Console Sidebar) -----------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 2400px) {
     // Indicator
-    #userThumb {background: hsl(272, 70%, 60%);}
+    .userThumb {background: hsl(272, 70%, 60%);}
 
 
     
@@ -2256,7 +3218,7 @@ body {
 // Medium Ultrawide - Dark Purple (Toolkit) 
 @media only screen and (min-width: 2700px) {
     // Indicator
-    #userThumb {background: hsl(272, 70%, 30%);}
+    .userThumb {background: hsl(272, 70%, 30%);}
     
 
 
@@ -2274,7 +3236,7 @@ body {
 // Wide Ultrawide - Black (Toolkit) 
 @media only screen and (min-width: 3000px) {
     // Indicator
-    #userThumb {background-color: rgb(0, 0, 0);}
+    .userThumb {background-color: rgb(0, 0, 0);}
 
     // Sidebar Responsive
     .userDashMini {
@@ -2320,6 +3282,15 @@ body {
     //     }
     // }
 
+    .consoleHelpOpen {
+        .consoleSidebarContent {
+            height: calc(30% - 14px);
+        }
+        .consoleSidebarHelp {
+            height: calc(70% - 6px);
+        }
+    }
+
 
     
 }
@@ -2328,7 +3299,15 @@ body {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(30, 70%, 50%);}
     
-    
+    .consoleHelpOpen {
+        .consoleSidebarContent {
+            height: calc(40% - 14px);
+        }
+        .consoleSidebarHelp {
+            height: calc(60% - 6px);
+        }
+    }
+
 }
 // Long Phone Screens - Yellow ()
 @media only screen and (min-height: 600px) {
@@ -2356,6 +3335,15 @@ body {
     //         }
     //     }
     // }
+
+    .consoleHelpOpen {
+        .consoleSidebarContent {
+            height: calc(50% - 14px);
+        }
+        .consoleSidebarHelp {
+            height: calc(50% - 6px);
+        }
+    }
 
 }
 // Short Landscape Desktop Screens - Green ()
@@ -2385,37 +3373,39 @@ body {
     //     }
     // }
 
-    
+    .consoleHelpOpen {
+        .consoleSidebarContent {
+            height: calc(60% - 14px);
+        }
+        .consoleSidebarHelp {
+            height: calc(40% - 6px);
+        }
+    }
+
 
 }
 // Long Landscape Desktop Screens - Blue ()
 @media only screen and (min-height: 1200px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(200, 70%, 50%);}
-
-        // Console Responsivity
-        .consoleHelpToolOpen {
-            #userConsoleHelp {
-                height: 500px;
-            }
-            #consoleSidebarContent {
-                height: calc(100% - 525px);
-            }
-        }
-        #userConsoleHelp {
-            section {
-                height: 500px;
-            }
-        
-        }
     
-
+    
+    
 }
 // Short Portrait Desktop Screens - Purple ()
 @media only screen and (min-height: 1500px) {
     // Indicator 
     #temporaryHeightIndicator {background-color: hsl(300, 70%, 30%);}
+    
 
+    .consoleHelpOpen {
+        .consoleSidebarContent {
+            height: calc(70% - 14px);
+        }
+        .consoleSidebarHelp {
+            height: calc(30% - 6px);
+        }
+    }
     
 
 }

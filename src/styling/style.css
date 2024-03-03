@@ -115,228 +115,927 @@ body {
 .nightMode {
   transition: background 1s, color 1s;
 }
-.nightMode #userHeader {
+.nightMode .userHeader {
   background: hsl(20, 10%, 34%);
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.342);
 }
-.nightMode #userHeader #accountConsole section {
-  box-shadow: inset 0 0 6px 4px rgba(0, 0, 0, 0.5);
-  background-color: hsl(20, 15%, 27%);
-}
-.nightMode #userHeader #userName {
-  color: hsl(20, 10%, 62%);
-}
-.nightMode #userHeader #userName:hover {
-  color: hsl(20, 10%, 83%);
-  text-shadow: 0 0 3px hsl(20, 10%, 20%);
-}
-.nightMode #userHeader #userID {
-  color: hsl(20, 10%, 20%);
-}
-.nightMode #userHeader #userID span:hover {
-  color: hsl(20, 10%, 62%);
-  text-shadow: 0 0 2px hsl(20, 10%, 20%);
-}
-.nightMode #userHeader #userClock {
-  background-color: hsl(20, 10%, 20%);
-}
-.nightMode #navCrop #navPanel {
-  background: hsl(320, 25%, 20%);
-}
-.nightMode #navCrop #navButton {
-  background-color: hsl(320, 35%, 48%);
-}
-.nightMode #navCrop #navButton:hover {
-  background-color: hsl(320, 35%, 62%);
-}
-.nightMode #navCrop #navPage {
-  background-color: hsl(320, 35%, 41%);
-  color: hsl(320, 35%, 83%);
-}
-.nightMode #navCrop #navBody ul {
-  background-color: hsl(320, 35%, 20%);
-}
-.nightMode #navCrop #navBody ul li {
-  color: hsl(320, 35%, 76%);
-  background-color: hsl(320, 35%, 41%);
-}
-.nightMode #navCrop #navBody ul li:first-child {
-  background-color: hsl(320, 35%, 34%);
-  color: hsl(320, 35%, 76%);
-}
-.nightMode #navCrop #navBody::-webkit-scrollbar {
-  background-color: hsl(320, 35%, 55%);
-}
-.nightMode #navCrop #navBody::-webkit-scrollbar-button {
-  background-color: hsl(320, 35%, 48%);
-}
-.nightMode #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 35%, 41%);
-}
-.nightMode #userDash {
-  background: hsl(20, 10%, 62%);
-  box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
-}
-.nightMode #userDashboard p {
-  color: hsl(20, 15%, 69%);
-  background-color: hsl(20, 15%, 27%);
-}
-.nightMode #userDashboard section {
-  background-color: hsl(20, 10%, 34%);
-}
-.nightMode #userDashboard button {
-  background-color: hsl(20, 10%, 34%);
-}
-.nightMode #userConsole {
-  background-color: hsl(20, 15%, 27%);
-  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
-}
-.nightMode #userConsole #userConsoleDesk {
-  background-color: hsl(20, 15%, 48%);
-  box-shadow: inset 0 0 0 5px hsl(20, 15%, 48%);
-}
-.nightMode #userConsole #userConsoleHead {
-  background-color: hsl(20, 10%, 48%);
-}
-.nightMode #userConsole #userConsoleHead #userConsoleTitle {
-  color: hsl(20, 10%, 27%);
-}
-.nightMode #userConsole #userConsoleHead section:nth-child(1) button {
-  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
-}
-.nightMode #userConsole #userConsoleHead section:nth-child(1) .userConsoleTabActive {
-  background-color: hsl(20, 15%, 27%);
-}
-.nightMode #userConsole #userConsoleHead section:nth-child(1) .userConsoleTabActive span:nth-child(2) {
-  color: hsl(20, 15%, 83%);
-}
-.nightMode #userConsole #userConsoleHead section:nth-child(1) .userConsoleTabInactive {
-  background-color: hsl(20, 10%, 20%);
-}
-.nightMode #userConsole #userConsoleHead section:nth-child(1) .userConsoleTabInactive span:nth-child(2) {
+.nightMode .userHeader section:nth-child(3) {
   color: hsl(20, 10%, 76%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(2) {
-  background-color: hsl(20, 10%, 34%);
+.nightMode .userHeader section:nth-child(4) {
+  color: hsl(20, 10%, 48%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(3) {
-  background-color: hsl(20, 10%, 34%);
+.nightMode .userHeader section:nth-child(4) span {
+  color: hsl(20, 10%, 55%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(3) span {
-  background-color: hsl(30, 60%, 69%);
+.nightMode .userHeader table {
+  background-color: hsl(20, 10%, 20%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageActive {
-  background-color: hsl(320, 35%, 55%);
+.nightMode .accountConsole main {
+  background-color: hsl(20, 10%, 20%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageActive span:nth-child(1) {
-  color: hsl(320, 35%, 90%);
+.nightMode .accountConsole main header section:nth-child(1) {
+  color: hsl(20, 10%, 41%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageActive span:nth-child(2) {
-  color: hsl(320, 35%, 76%);
+.nightMode .accountConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(20, 10%, 55%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageInactive {
-  background-color: hsl(20, 15%, 41%);
+.nightMode .accountConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(20, 10%, 76%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageInactive span:nth-child(1) {
-  color: hsl(20, 15%, 76%);
+.nightMode .accountConsole main header section:nth-child(3) {
+  background-color: hsl(20, 10%, 27%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageInactive span:nth-child(2) {
-  color: hsl(20, 15%, 62%);
+.nightMode .accountConsole main header section:nth-child(3) span {
+  background-color: hsl(20, 15%, 69%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageInactive:hover {
-  background-color: hsl(20, 15%, 48%);
+.nightMode .accountConsole main header section:nth-child(4) {
+  background-color: hsl(20, 10%, 27%);
 }
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageInactive:hover span:nth-child(1) {
-  color: hsl(20, 15%, 83%);
-}
-.nightMode #userConsole #userConsoleHead section:nth-child(4) .userConsoleSubpageInactive:hover span:nth-child(2) {
-  color: hsl(20, 15%, 69%);
-}
-.nightMode #userConsole #userConsoleHead section:nth-child(5) {
-  color: hsl(20, 10%, 20%);
-}
-.nightMode #userConsole #userConsoleSidebar {
-  background-color: hsl(20, 15%, 20%);
-}
-.nightMode #userConsole #userConsoleSidebar #userConsoleHelp {
-  background-color: hsl(320, 25%, 48%);
-}
-.nightMode #userConsole #userConsoleSidebar #userConsoleHelp section button {
-  background-color: hsl(320, 35%, 27%);
-  color: hsl(320, 35%, 90%);
-}
-.nightMode #userConsole #userConsoleSidebar #userConsoleHelp section div:nth-child(2) {
-  color: hsl(320, 25%, 20%);
-}
-.nightMode #userConsole #userConsoleSidebar #userConsoleHelp section div:nth-child(4) {
-  background-color: hsl(320, 35%, 69%);
-}
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent {
-  background-color: hsl(20, 15%, 27%);
-}
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent ul {
-  background-color: hsl(20, 15%, 34%);
-}
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent ul li {
-  background-color: hsl(20, 15%, 27%);
-  color: hsl(20, 15%, 76%);
-}
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent ul li span {
-  background-color: hsl(20, 15%, 76%);
-  color: hsl(20, 15%, 20%);
-}
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent ul li span:first-child {
-  background-color: hsl(20, 15%, 27%);
-  color: hsl(20, 15%, 76%);
-}
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent ul li:first-child {
-  background-color: hsl(20, 15%, 20%);
-  color: hsl(20, 15%, 76%);
-}
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent ul li:first-child span {
+.nightMode .accountConsole main header section:nth-child(4) button {
   background-color: hsl(20, 15%, 62%);
-  color: hsl(20, 15%, 20%);
 }
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent ul li:first-child span:first-child {
-  background-color: hsl(20, 15%, 20%);
+.nightMode .accountConsole main header section:nth-child(5) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .accountConsole main header section:nth-child(5) button {
+  background-color: hsl(20, 15%, 41%);
   color: hsl(20, 15%, 90%);
 }
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent::-webkit-scrollbar {
-  background-color: hsl(20, 15%, 27%);
+.nightMode .accountConsole main div .consoleDesk {
+  background-color: hsl(20, 10%, 41%);
+  color: hsl(20, 10%, 69%);
+  border: 4px solid hsl(20, 10%, 41%);
 }
-.nightMode #userConsole #userConsoleSidebar #consoleSidebarContent::-webkit-scrollbar-thumb {
+.nightMode .accountConsole main div .consoleDesk b {
+  color: hsl(20, 10%, 20%);
+}
+.nightMode .accountConsole main div .consoleDesk hr {
+  border: 1px solid hsl(20, 10%, 20%);
+}
+.nightMode .accountConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .accountConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .accountConsole main div .consoleSidebar {
+  background-color: hsl(20, 15%, 34%);
+}
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarTabs button {
   background-color: hsl(20, 15%, 55%);
-  border-color: hsl(20, 15%, 27%);
 }
-.nightMode #sidebar {
-  background-color: hsl(320, 25%, 20%);
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(20, 15%, 76%);
 }
-.nightMode #breakTimeFooter {
-  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(20, 15%, 48%);
+  border: 4px solid hsl(20, 15%, 48%);
+  color: hsl(20, 15%, 27%);
 }
-.nightMode #breakTimeFooter #workWeekTimer {
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(20, 15%, 20%);
+}
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(20, 15%, 20%);
+}
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(20, 15%, 34%);
+}
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 69%);
+}
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(20, 15%, 20%);
+}
+.nightMode .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(20, 15%, 90%);
+}
+.nightMode .dashboardConsole main {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .dashboardConsole main header section:nth-child(1) {
+  color: hsl(20, 10%, 41%);
+}
+.nightMode .dashboardConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(20, 10%, 55%);
+}
+.nightMode .dashboardConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(20, 10%, 76%);
+}
+.nightMode .dashboardConsole main header section:nth-child(3) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .dashboardConsole main header section:nth-child(3) span {
+  background-color: hsl(30, 60%, 62%);
+}
+.nightMode .dashboardConsole main header section:nth-child(4) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .dashboardConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 55%);
+}
+.nightMode .dashboardConsole main header section:nth-child(5) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .dashboardConsole main header section:nth-child(5) button {
+  background-color: hsl(20, 15%, 41%);
+  color: hsl(20, 15%, 90%);
+}
+.nightMode .dashboardConsole main div .consoleDesk {
+  background-color: hsl(20, 10%, 41%);
+  color: hsl(20, 10%, 69%);
+  border: 4px solid hsl(20, 10%, 41%);
+}
+.nightMode .dashboardConsole main div .consoleDesk b {
+  color: hsl(20, 10%, 20%);
+}
+.nightMode .dashboardConsole main div .consoleDesk hr {
+  border: 1px solid hsl(20, 10%, 20%);
+}
+.nightMode .dashboardConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .dashboardConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .dashboardConsole main div .consoleSidebar {
+  background-color: hsl(30, 40%, 34%);
+}
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(30, 40%, 55%);
+}
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(30, 40%, 76%);
+}
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
   background-color: hsl(30, 40%, 48%);
+  border: 4px solid hsl(30, 40%, 48%);
+  color: hsl(30, 40%, 27%);
 }
-.nightMode #breakTimeFooter #workWeekTimer span {
-  background-color: hsl(30, 60%, 27%);
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(30, 40%, 20%);
 }
-.nightMode #breakTimeFooter #breakTimeHeader {
-  color: hsl(30, 40%, 48%);
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(30, 40%, 20%);
 }
-.nightMode #breakTimeFooter #breakTimeConsole {
-  background: hsl(30, 40%, 20%);
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(30, 40%, 34%);
 }
-.nightMode #breakTimeFooter #breakTimeConsole #breakTimeConsoleDesk {
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
   background-color: hsl(30, 40%, 69%);
 }
-.nightMode #breakTimeFooter #breakTimeConsole #breakTimeConsoleLog {
-  background-color: hsl(30, 40%, 27%);
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(30, 60%, 20%);
 }
-.nightMode .breakTimeOpen {
-  background: hsl(30, 40%, 48%);
+.nightMode .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(30, 60%, 90%);
 }
-.nightMode .breakTimeClosed {
-  background: hsl(30, 40%, 27%);
+.nightMode .socialConsole main {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .socialConsole main header section:nth-child(1) {
+  color: hsl(20, 10%, 41%);
+}
+.nightMode .socialConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(20, 10%, 55%);
+}
+.nightMode .socialConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(20, 10%, 76%);
+}
+.nightMode .socialConsole main header section:nth-child(3) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .socialConsole main header section:nth-child(3) span {
+  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .socialConsole main header section:nth-child(4) {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .socialConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(320, 25%, 62%);
+}
+.nightMode .socialConsole main header section:nth-child(5) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .socialConsole main header section:nth-child(5) button {
+  background-color: hsl(20, 15%, 41%);
+  color: hsl(20, 15%, 90%);
+}
+.nightMode .socialConsole main div .consoleDesk {
+  background-color: hsl(20, 10%, 41%);
+  color: hsl(20, 10%, 69%);
+  border: 4px solid hsl(20, 10%, 41%);
+}
+.nightMode .socialConsole main div .consoleDesk b {
+  color: hsl(20, 10%, 20%);
+}
+.nightMode .socialConsole main div .consoleDesk hr {
+  border: 1px solid hsl(20, 10%, 20%);
+}
+.nightMode .socialConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .socialConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .socialConsole main div .consoleSidebar {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(320, 25%, 55%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(320, 25%, 76%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(320, 25%, 48%);
+  border: 4px solid hsl(320, 25%, 48%);
+  color: hsl(320, 25%, 69%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(320, 25%, 90%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(320, 25%, 20%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(320, 25%, 69%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(320, 35%, 20%);
+}
+.nightMode .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(320, 35%, 90%);
+}
+.nightMode .scholarConsole main {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .scholarConsole main header section:nth-child(1) {
+  color: hsl(20, 10%, 41%);
+}
+.nightMode .scholarConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(20, 10%, 55%);
+}
+.nightMode .scholarConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(20, 10%, 76%);
+}
+.nightMode .scholarConsole main header section:nth-child(3) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .scholarConsole main header section:nth-child(3) span {
+  background-color: hsl(30, 60%, 62%);
+}
+.nightMode .scholarConsole main header section:nth-child(4) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .scholarConsole main header section:nth-child(4) button {
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .scholarConsole main header section:nth-child(5) {
+  background-color: hsl(20, 10%, 27%);
+}
+.nightMode .scholarConsole main header section:nth-child(5) button {
+  background-color: hsl(20, 15%, 41%);
+  color: hsl(20, 15%, 90%);
+}
+.nightMode .scholarConsole main div .consoleDesk {
+  background-color: hsl(20, 10%, 41%);
+  color: hsl(20, 10%, 69%);
+  border: 4px solid hsl(20, 10%, 41%);
+}
+.nightMode .scholarConsole main div .consoleDesk b {
+  color: hsl(20, 10%, 20%);
+}
+.nightMode .scholarConsole main div .consoleDesk hr {
+  border: 1px solid hsl(20, 10%, 20%);
+}
+.nightMode .scholarConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .scholarConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .scholarConsole main div .consoleSidebar {
+  background-color: hsl(20, 15%, 34%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(20, 15%, 55%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(20, 15%, 76%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(20, 15%, 48%);
+  border: 4px solid hsl(20, 15%, 48%);
+  color: hsl(20, 15%, 69%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(20, 15%, 90%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(20, 15%, 20%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(20, 15%, 34%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 69%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(30, 60%, 41%);
+}
+.nightMode .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(30, 60%, 90%);
+}
+.nightMode .assessmentAConsole main {
+  background-color: hsl(110, 15%, 20%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(1) {
+  color: hsl(110, 15%, 41%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(110, 15%, 55%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(110, 15%, 76%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(3) {
+  background-color: hsl(110, 15%, 27%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(3) span {
+  background-color: hsl(110, 40%, 62%);
+  background-color: hsl(110, 25%, 62%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(4) {
+  background-color: hsl(110, 15%, 34%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(110, 40%, 62%);
+  background-color: hsl(110, 25%, 62%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(5) {
+  background-color: hsl(110, 15%, 27%);
+}
+.nightMode .assessmentAConsole main header section:nth-child(5) button {
+  background-color: hsl(110, 15%, 41%);
+  color: hsl(110, 15%, 90%);
+}
+.nightMode .assessmentAConsole main div .consoleDesk {
+  background-color: hsl(110, 15%, 41%);
+  color: hsl(110, 15%, 69%);
+  border: 4px solid hsl(110, 15%, 41%);
+}
+.nightMode .assessmentAConsole main div .consoleDesk b {
+  color: hsl(110, 15%, 20%);
+}
+.nightMode .assessmentAConsole main div .consoleDesk hr {
+  border: 1px solid hsl(110, 15%, 20%);
+}
+.nightMode .assessmentAConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(110, 15%, 20%);
+}
+.nightMode .assessmentAConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(110, 15%, 62%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar {
+  background-color: hsl(110, 25%, 34%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(110, 25%, 55%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(110, 25%, 76%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(110, 25%, 48%);
+  border: 4px solid hsl(110, 25%, 48%);
+  color: hsl(110, 25%, 69%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(110, 25%, 90%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(110, 25%, 20%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(110, 25%, 34%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(110, 25%, 69%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(110, 40%, 20%);
+}
+.nightMode .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(110, 40%, 90%);
+}
+.nightMode .assessmentGConsole main {
+  background-color: hsl(5, 15%, 20%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(1) {
+  color: hsl(5, 15%, 41%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(5, 15%, 55%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(5, 15%, 76%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(3) {
+  background-color: hsl(5, 15%, 27%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(3) span {
+  background-color: hsl(5, 40%, 62%);
+  background-color: hsl(5, 25%, 62%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(4) {
+  background-color: hsl(5, 15%, 34%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(5, 40%, 62%);
+  background-color: hsl(5, 25%, 62%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(5) {
+  background-color: hsl(5, 15%, 27%);
+}
+.nightMode .assessmentGConsole main header section:nth-child(5) button {
+  background-color: hsl(5, 15%, 41%);
+  color: hsl(5, 15%, 90%);
+}
+.nightMode .assessmentGConsole main div .consoleDesk {
+  background-color: hsl(5, 15%, 41%);
+  color: hsl(5, 15%, 69%);
+  border: 4px solid hsl(5, 15%, 41%);
+}
+.nightMode .assessmentGConsole main div .consoleDesk b {
+  color: hsl(5, 15%, 20%);
+}
+.nightMode .assessmentGConsole main div .consoleDesk hr {
+  border: 1px solid hsl(5, 15%, 20%);
+}
+.nightMode .assessmentGConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(5, 15%, 20%);
+}
+.nightMode .assessmentGConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(5, 15%, 62%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar {
+  background-color: hsl(5, 25%, 34%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(5, 25%, 55%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(5, 25%, 76%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(5, 25%, 48%);
+  border: 4px solid hsl(5, 25%, 48%);
+  color: hsl(5, 25%, 69%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(5, 25%, 90%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(5, 25%, 20%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(5, 25%, 34%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(5, 25%, 69%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(5, 40%, 20%);
+}
+.nightMode .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(5, 40%, 90%);
+}
+.nightMode .assessmentLConsole main {
+  background-color: hsl(270, 15%, 20%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(1) {
+  color: hsl(270, 15%, 41%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(270, 15%, 55%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(270, 15%, 76%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(3) {
+  background-color: hsl(270, 15%, 27%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(3) span {
+  background-color: hsl(270, 40%, 62%);
+  background-color: hsl(270, 25%, 62%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(4) {
+  background-color: hsl(270, 15%, 34%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(270, 40%, 62%);
+  background-color: hsl(270, 25%, 62%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(5) {
+  background-color: hsl(270, 15%, 27%);
+}
+.nightMode .assessmentLConsole main header section:nth-child(5) button {
+  background-color: hsl(270, 15%, 41%);
+  color: hsl(270, 15%, 90%);
+}
+.nightMode .assessmentLConsole main div .consoleDesk {
+  background-color: hsl(270, 15%, 41%);
+  color: hsl(270, 15%, 69%);
+  border: 4px solid hsl(270, 15%, 41%);
+}
+.nightMode .assessmentLConsole main div .consoleDesk b {
+  color: hsl(270, 15%, 20%);
+}
+.nightMode .assessmentLConsole main div .consoleDesk hr {
+  border: 1px solid hsl(270, 15%, 20%);
+}
+.nightMode .assessmentLConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(270, 15%, 20%);
+}
+.nightMode .assessmentLConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(270, 15%, 62%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar {
+  background-color: hsl(270, 25%, 34%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(270, 25%, 55%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(270, 25%, 76%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(270, 25%, 48%);
+  border: 4px solid hsl(270, 25%, 48%);
+  color: hsl(270, 25%, 69%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(270, 25%, 90%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(270, 25%, 20%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(270, 25%, 34%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(270, 25%, 69%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(270, 40%, 20%);
+}
+.nightMode .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(270, 40%, 90%);
+}
+.nightMode .assessmentSConsole main {
+  background-color: hsl(230, 15%, 20%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(1) {
+  color: hsl(230, 15%, 41%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(230, 15%, 55%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(230, 15%, 76%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(3) {
+  background-color: hsl(230, 15%, 27%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(3) span {
+  background-color: hsl(230, 40%, 62%);
+  background-color: hsl(230, 25%, 62%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(4) {
+  background-color: hsl(230, 15%, 34%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(230, 40%, 62%);
+  background-color: hsl(230, 25%, 62%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(5) {
+  background-color: hsl(230, 15%, 27%);
+}
+.nightMode .assessmentSConsole main header section:nth-child(5) button {
+  background-color: hsl(230, 15%, 41%);
+  color: hsl(230, 15%, 90%);
+}
+.nightMode .assessmentSConsole main div .consoleDesk {
+  background-color: hsl(230, 15%, 41%);
+  color: hsl(230, 15%, 69%);
+  border: 4px solid hsl(230, 15%, 41%);
+}
+.nightMode .assessmentSConsole main div .consoleDesk b {
+  color: hsl(230, 15%, 20%);
+}
+.nightMode .assessmentSConsole main div .consoleDesk hr {
+  border: 1px solid hsl(230, 15%, 20%);
+}
+.nightMode .assessmentSConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(230, 15%, 20%);
+}
+.nightMode .assessmentSConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(230, 15%, 62%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar {
+  background-color: hsl(230, 25%, 34%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(230, 25%, 55%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(230, 25%, 76%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(230, 25%, 48%);
+  border: 4px solid hsl(230, 25%, 48%);
+  color: hsl(230, 25%, 69%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(230, 25%, 90%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(230, 25%, 20%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(230, 25%, 34%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(230, 25%, 69%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(230, 40%, 20%);
+}
+.nightMode .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(230, 40%, 90%);
+}
+.nightMode .assessmentXConsole main {
+  background-color: hsl(30, 15%, 20%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(1) {
+  color: hsl(30, 15%, 41%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(30, 15%, 55%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(30, 15%, 76%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(3) {
+  background-color: hsl(30, 15%, 27%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(3) span {
+  background-color: hsl(30, 40%, 62%);
+  background-color: hsl(30, 25%, 62%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(4) {
+  background-color: hsl(30, 15%, 34%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(30, 40%, 62%);
+  background-color: hsl(30, 25%, 62%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(5) {
+  background-color: hsl(30, 15%, 27%);
+}
+.nightMode .assessmentXConsole main header section:nth-child(5) button {
+  background-color: hsl(30, 15%, 41%);
+  color: hsl(30, 15%, 90%);
+}
+.nightMode .assessmentXConsole main div .consoleDesk {
+  background-color: hsl(30, 15%, 41%);
+  color: hsl(30, 15%, 69%);
+  border: 4px solid hsl(30, 15%, 41%);
+}
+.nightMode .assessmentXConsole main div .consoleDesk b {
+  color: hsl(30, 15%, 20%);
+}
+.nightMode .assessmentXConsole main div .consoleDesk hr {
+  border: 1px solid hsl(30, 15%, 20%);
+}
+.nightMode .assessmentXConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(30, 15%, 20%);
+}
+.nightMode .assessmentXConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 62%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar {
+  background-color: hsl(30, 25%, 34%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(30, 25%, 55%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(30, 25%, 76%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(30, 25%, 48%);
+  border: 4px solid hsl(30, 25%, 48%);
+  color: hsl(30, 25%, 69%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(30, 25%, 90%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(30, 25%, 20%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(30, 25%, 34%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 25%, 69%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(30, 40%, 20%);
+}
+.nightMode .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(30, 40%, 90%);
+}
+.nightMode .adminConsole main {
+  background-color: hsl(20, 15%, 20%);
+}
+.nightMode .adminConsole main header section:nth-child(1) {
+  color: hsl(20, 15%, 41%);
+}
+.nightMode .adminConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(20, 15%, 55%);
+}
+.nightMode .adminConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(20, 15%, 76%);
+}
+.nightMode .adminConsole main header section:nth-child(3) {
+  background-color: hsl(20, 15%, 27%);
+}
+.nightMode .adminConsole main header section:nth-child(3) span {
+  background-color: hsl(30, 60%, 62%);
+}
+.nightMode .adminConsole main header section:nth-child(4) {
+  background-color: hsl(20, 15%, 27%);
+}
+.nightMode .adminConsole main header section:nth-child(4) button {
+  background-color: hsl(20, 15%, 62%);
+  background-color: hsl(30, 60%, 62%);
+}
+.nightMode .adminConsole main header section:nth-child(5) {
+  background-color: hsl(20, 15%, 27%);
+}
+.nightMode .adminConsole main header section:nth-child(5) button {
+  background-color: hsl(320, 25%, 48%);
+  color: hsl(320, 25%, 90%);
+}
+.nightMode .adminConsole main div .consoleDesk {
+  background-color: hsl(20, 15%, 41%);
+  color: hsl(20, 15%, 69%);
+  border: 4px solid hsl(20, 15%, 41%);
+}
+.nightMode .adminConsole main div .consoleDesk b {
+  color: hsl(20, 15%, 20%);
+}
+.nightMode .adminConsole main div .consoleDesk hr {
+  border: 1px solid hsl(20, 15%, 20%);
+}
+.nightMode .adminConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(20, 15%, 20%);
+}
+.nightMode .adminConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .adminConsole main div .consoleSidebar {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(320, 25%, 55%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(320, 25%, 76%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(320, 25%, 48%);
+  border: 4px solid hsl(320, 25%, 48%);
+  color: hsl(320, 25%, 69%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(320, 25%, 90%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(320, 25%, 20%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(320, 25%, 69%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(30, 60%, 41%);
+}
+.nightMode .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(30, 60%, 90%);
+}
+.nightMode .helpDeskConsole main {
+  background-color: hsl(320, 25%, 20%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(1) {
+  color: hsl(320, 25%, 41%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(2) span:nth-child(1) {
+  color: hsl(320, 25%, 55%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(2) span:nth-child(2) {
+  color: hsl(320, 25%, 76%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(3) {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(3) span {
+  background-color: hsl(30, 60%, 62%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(4) {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(4) button {
+  background-color: hsl(30, 60%, 69%);
+  background-color: hsl(320, 35%, 62%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(5) {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .helpDeskConsole main header section:nth-child(5) button {
+  background-color: hsl(320, 25%, 41%);
+  color: hsl(320, 25%, 90%);
+  background-color: hsl(320, 35%, 41%);
+  color: hsl(320, 35%, 90%);
+  background-color: hsl(30, 40%, 41%);
+  color: hsl(30, 40%, 90%);
+  background-color: hsl(30, 60%, 41%);
+  color: hsl(30, 60%, 90%);
+}
+.nightMode .helpDeskConsole main div .consoleDesk {
+  background-color: hsl(20, 10%, 41%);
+  color: hsl(20, 10%, 69%);
+  border: 4px solid hsl(20, 10%, 41%);
+}
+.nightMode .helpDeskConsole main div .consoleDesk b {
+  color: hsl(20, 10%, 20%);
+}
+.nightMode .helpDeskConsole main div .consoleDesk hr {
+  border: 1px solid hsl(20, 10%, 20%);
+}
+.nightMode .helpDeskConsole main div .consoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(20, 10%, 20%);
+}
+.nightMode .helpDeskConsole main div .consoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(20, 15%, 62%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarTabs button {
+  background-color: hsl(320, 25%, 55%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarTitle {
+  color: hsl(320, 25%, 76%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+  background-color: hsl(320, 25%, 48%);
+  border: 4px solid hsl(320, 25%, 48%);
+  color: hsl(320, 25%, 69%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+  color: hsl(320, 25%, 90%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
+  border: 1px solid hsl(320, 25%, 20%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(320, 25%, 34%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(320, 25%, 69%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+  background-color: hsl(30, 60%, 41%);
+}
+.nightMode .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+  color: hsl(30, 60%, 90%);
 }
 
 .dayMode {
@@ -578,44 +1277,29 @@ body {
   background: hsl(320, 25%, 34%);
 }
 
-#userHeader {
-  position: fixed;
+.userHeader {
+  position: absolute;
   right: 0;
-  width: 100%;
+  width: 100vw;
+  display: grid;
+  height: 100vh;
+  top: calc(-100vh + 50px);
+  top: 0;
   z-index: 11;
-  transition: height 1s, position 0.1s 1s;
+  transition: height 1s, top 1s;
   grid-template-columns: 40px auto;
-  grid-template-rows: auto 20px 20px 10px;
+  grid-template-rows: calc(100vh - 50px) 20px 20px 10px;
   grid-template-areas: "accountConsole accountConsole" "thumbnail userName" "thumbnail userID" "userClock userClock";
 }
-#userHeader #accountConsole {
-  transition: height 1.25s;
-  overflow: hidden;
+.userHeader .userHeaderConsole {
   grid-area: accountConsole;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  height: calc(100vh - 80px);
   width: 100%;
-  display: grid;
-  grid-template-rows: 40px calc(100vh - 90px);
-  grid-template-areas: "accountConsoleBuffer" "accountConsoleContent";
 }
-#userHeader #accountConsole section {
-  grid-area: accountConsoleContent;
-  display: grid;
-  width: calc(100vw - 10px);
-  height: 100%;
-  margin: 0 5px;
-  border-radius: 4px;
-  transition: height 1.25s;
-  overflow: hidden;
-  grid-template-rows: 50px auto;
-  grid-template-areas: "accountConsoleHead" "accountConsoleBody";
-}
-#userHeader #accountConsole section div:nth-child(1) {
-  grid-area: accountConsoleHead;
-}
-#userHeader #accountConsole section div:nth-child(2) {
-  grid-area: accountConsoleBody;
-}
-#userHeader img {
+.userHeader .userThumb {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -627,7 +1311,7 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#userHeader #userName {
+.userHeader section:nth-child(3) {
   transition: color 0.4s, text-shadow 0.4s;
   letter-spacing: 1.5px;
   margin: 6px 0 0 0;
@@ -640,7 +1324,7 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-#userHeader #userID {
+.userHeader section:nth-child(4) {
   grid-area: userID;
   font-size: 14px;
   width: -moz-max-content;
@@ -648,228 +1332,230 @@ body {
   font-weight: 600;
   margin: 2px 0 3px 0;
 }
-#userHeader #userID span {
+.userHeader section:nth-child(4) span {
   cursor: pointer;
   margin: 0 2px;
   transition: color 0.4s, text-shadow 0.4s;
 }
-#userHeader #userID span:first-child {
+.userHeader section:nth-child(4) span:first-child {
   margin: 0 2px 0 0;
 }
-#userHeader #userClock {
+.userHeader .userClock {
   grid-area: userClock;
   width: 100%;
   transition: boxShadow 1s;
 }
-#userHeader #userClock td:nth-child(32) {
+.userHeader .userClock td:nth-child(32) {
   background-color: hsl(20, 10%, 76%);
 }
-#userHeader #userClock td:nth-child(33) {
+.userHeader .userClock td:nth-child(33) {
   background-color: hsl(20, 10%, 76%);
 }
-#userHeader #userClock td:nth-child(34) {
+.userHeader .userClock td:nth-child(34) {
   background-color: hsl(20, 15%, 62%);
 }
-#userHeader #userClock td:nth-child(35) {
+.userHeader .userClock td:nth-child(35) {
   background-color: hsl(20, 15%, 62%);
 }
-#userHeader #userClock td:nth-child(36) {
+.userHeader .userClock td:nth-child(36) {
   background-color: hsl(20, 15%, 62%);
 }
-#userHeader #userClock td:nth-child(37) {
+.userHeader .userClock td:nth-child(37) {
   background-color: hsl(320, 25%, 55%);
 }
-#userHeader #userClock td:nth-child(38) {
+.userHeader .userClock td:nth-child(38) {
   background-color: hsl(320, 25%, 41%);
 }
-#userHeader #userClock td:nth-child(39) {
+.userHeader .userClock td:nth-child(39) {
   background-color: hsl(320, 25%, 55%);
 }
-#userHeader #userClock td:nth-child(40) {
+.userHeader .userClock td:nth-child(40) {
   background-color: hsl(320, 25%, 55%);
 }
-#userHeader #userClock td:nth-child(41) {
+.userHeader .userClock td:nth-child(41) {
   background-color: hsl(320, 25%, 69%);
 }
-#userHeader #userClock td:nth-child(42) {
+.userHeader .userClock td:nth-child(42) {
   background-color: hsl(30, 60%, 62%);
 }
-#userHeader #userClock td:nth-child(43) {
+.userHeader .userClock td:nth-child(43) {
   background-color: hsl(30, 60%, 48%);
 }
-#userHeader #userClock td:nth-child(44) {
+.userHeader .userClock td:nth-child(44) {
   background-color: hsl(30, 60%, 62%);
 }
-#userHeader #userClock td:nth-child(45) {
+.userHeader .userClock td:nth-child(45) {
   background-color: hsl(30, 60%, 48%);
 }
-#userHeader #userClock td:nth-child(49) {
+.userHeader .userClock td:nth-child(49) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(50) {
+.userHeader .userClock td:nth-child(50) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(51) {
+.userHeader .userClock td:nth-child(51) {
   background-color: hsl(320, 35%, 76%);
 }
-#userHeader #userClock td:nth-child(52) {
+.userHeader .userClock td:nth-child(52) {
   background-color: hsl(320, 35%, 76%);
 }
-#userHeader #userClock td:nth-child(53) {
+.userHeader .userClock td:nth-child(53) {
   background-color: hsl(320, 35%, 76%);
 }
-#userHeader #userClock td:nth-child(54) {
+.userHeader .userClock td:nth-child(54) {
   background-color: hsl(320, 35%, 76%);
 }
-#userHeader #userClock td:nth-child(55) {
+.userHeader .userClock td:nth-child(55) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(56) {
+.userHeader .userClock td:nth-child(56) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(57) {
+.userHeader .userClock td:nth-child(57) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(58) {
+.userHeader .userClock td:nth-child(58) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(59) {
+.userHeader .userClock td:nth-child(59) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(60) {
+.userHeader .userClock td:nth-child(60) {
   background-color: hsl(30, 60%, 62%);
 }
-#userHeader #userClock td:nth-child(61) {
+.userHeader .userClock td:nth-child(61) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(62) {
+.userHeader .userClock td:nth-child(62) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(63) {
+.userHeader .userClock td:nth-child(63) {
   background-color: hsl(320, 25%, 55%);
 }
-#userHeader #userClock td:nth-child(64) {
+.userHeader .userClock td:nth-child(64) {
   background-color: hsl(320, 25%, 69%);
 }
-#userHeader #userClock td:nth-child(65) {
+.userHeader .userClock td:nth-child(65) {
   background-color: hsl(320, 25%, 69%);
 }
-#userHeader #userClock td:nth-child(66) {
+.userHeader .userClock td:nth-child(66) {
   background-color: hsl(320, 25%, 55%);
 }
-#userHeader #userClock td:nth-child(67) {
+.userHeader .userClock td:nth-child(67) {
   background-color: hsl(320, 25%, 41%);
 }
-#userHeader #userClock td:nth-child(70) {
+.userHeader .userClock td:nth-child(70) {
   background-color: hsl(30, 60%, 76%);
 }
-#userHeader #userClock td:nth-child(71) {
+.userHeader .userClock td:nth-child(71) {
   background-color: hsl(30, 60%, 48%);
 }
-#userHeader #userClock td:nth-child(72) {
+.userHeader .userClock td:nth-child(72) {
   background-color: hsl(30, 60%, 48%);
 }
-#userHeader #userClock td:nth-child(73) {
+.userHeader .userClock td:nth-child(73) {
   background-color: hsl(30, 60%, 62%);
 }
-#userHeader #userClock td:nth-child(74) {
+.userHeader .userClock td:nth-child(74) {
   background-color: hsl(30, 60%, 62%);
 }
-#userHeader #userClock td:nth-child(75) {
+.userHeader .userClock td:nth-child(75) {
   background-color: hsl(30, 60%, 76%);
 }
-#userHeader #userClock td:nth-child(76) {
+.userHeader .userClock td:nth-child(76) {
   background-color: hsl(30, 60%, 76%);
 }
-#userHeader #userClock td:nth-child(79) {
+.userHeader .userClock td:nth-child(79) {
   background-color: hsl(30, 60%, 76%);
 }
-#userHeader #userClock td:nth-child(80) {
+.userHeader .userClock td:nth-child(80) {
   background-color: hsl(30, 60%, 76%);
 }
-#userHeader #userClock td:nth-child(81) {
+.userHeader .userClock td:nth-child(81) {
   background-color: hsl(30, 60%, 76%);
 }
-#userHeader #userClock td:nth-child(82) {
+.userHeader .userClock td:nth-child(82) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(83) {
+.userHeader .userClock td:nth-child(83) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(84) {
+.userHeader .userClock td:nth-child(84) {
   background-color: hsl(320, 35%, 76%);
 }
-#userHeader #userClock td:nth-child(85) {
+.userHeader .userClock td:nth-child(85) {
   background-color: hsl(320, 35%, 76%);
 }
-#userHeader #userClock td:nth-child(86) {
+.userHeader .userClock td:nth-child(86) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(87) {
+.userHeader .userClock td:nth-child(87) {
   background-color: hsl(320, 35%, 62%);
 }
-#userHeader #userClock td:nth-child(88) {
+.userHeader .userClock td:nth-child(88) {
   background-color: hsl(320, 35%, 76%);
 }
-#userHeader #userClock td:nth-child(89) {
+.userHeader .userClock td:nth-child(89) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(90) {
+.userHeader .userClock td:nth-child(90) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(91) {
+.userHeader .userClock td:nth-child(91) {
   background-color: hsl(320, 35%, 48%);
 }
-#userHeader #userClock td:nth-child(92) {
+.userHeader .userClock td:nth-child(92) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(93) {
+.userHeader .userClock td:nth-child(93) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(94) {
+.userHeader .userClock td:nth-child(94) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(95) {
+.userHeader .userClock td:nth-child(95) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(96) {
+.userHeader .userClock td:nth-child(96) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(97) {
+.userHeader .userClock td:nth-child(97) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(98) {
+.userHeader .userClock td:nth-child(98) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(99) {
+.userHeader .userClock td:nth-child(99) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(100) {
+.userHeader .userClock td:nth-child(100) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(115) {
+.userHeader .userClock td:nth-child(115) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(116) {
+.userHeader .userClock td:nth-child(116) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(117) {
+.userHeader .userClock td:nth-child(117) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(118) {
+.userHeader .userClock td:nth-child(118) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(119) {
+.userHeader .userClock td:nth-child(119) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader #userClock td:nth-child(120) {
+.userHeader .userClock td:nth-child(120) {
   background-color: hsl(20, 10%, 90%);
 }
-#userHeader .accountConsoleOpen {
-  height: calc(100vh - 50px);
+
+.accountConsoleOpen {
+  top: 0;
 }
-#userHeader .accountConsoleClosed {
-  height: 0;
+
+.accountConsoleClosed {
+  top: calc(-100vh + 50px);
 }
 
 #navCrop {
@@ -1007,7 +1693,6 @@ body {
   box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
   overflow: hidden;
   margin: 15px;
-  background-color: hsl(20, 10%, 20%);
   z-index: 7;
 }
 .console main header {
@@ -1031,7 +1716,6 @@ body {
   line-height: 16px;
   letter-spacing: 2px;
   font-size: 16px;
-  color: hsl(20, 10%, 41%);
   padding-left: 2px;
 }
 .console main header section:nth-child(2) {
@@ -1042,15 +1726,8 @@ body {
   font-size: 14px;
   letter-spacing: 1.25px;
 }
-.console main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(20, 10%, 55%);
-}
-.console main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(20, 10%, 76%);
-}
 .console main header section:nth-child(3) {
   grid-area: consoleAchievement;
-  background-color: hsl(20, 10%, 34%);
   width: calc(100% - 18px);
   height: 6px;
   margin: 4px;
@@ -1059,12 +1736,10 @@ body {
 .console main header section:nth-child(3) span {
   display: block;
   height: 6px;
-  background-color: hsl(30, 60%, 62%);
   border-radius: 4px;
 }
 .console main header section:nth-child(4) {
   grid-area: consoleButton;
-  background-color: hsl(320, 35%, 83%);
   width: 30px;
   height: 30px;
   margin-left: 4px;
@@ -1078,14 +1753,33 @@ body {
   position: absolute;
   border: none;
   border-radius: 4px;
-  background-color: hsl(320, 25%, 41%);
 }
 .console main header section:nth-child(5) {
   grid-area: consoleTabs;
-  background-color: hsl(20, 10%, 41%);
   height: 30px;
   width: calc(100% - 6px);
   margin-left: 2px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.console main header section:nth-child(5) button {
+  height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 4px;
+  border: none;
+  margin: 4px 2px;
+  font-size: 12px;
+  font-weight: 600;
+  width: -moz-max-content;
+  width: max-content;
+}
+.console main header section:nth-child(5) button:nth-child(1) {
+  margin-left: 4px;
+}
+.console main header section:nth-child(5)::-webkit-scrollbar {
+  display: none;
 }
 .console main div {
   grid-area: body;
@@ -1104,39 +1798,29 @@ body {
   right: 4px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: hsl(20, 10%, 55%);
-  border: 4px solid hsl(20, 10%, 55%);
   line-height: 20px;
   transition: width 1s, height 1s;
   font-size: 16px;
-  color: hsl(20, 10%, 34%);
 }
 .console main div .consoleDesk b {
   font-weight: 600;
   letter-spacing: 1.5px;
-  color: hsl(20, 10%, 20%);
   text-transform: uppercase;
 }
 .console main div .consoleDesk i {
   font-style: italic;
 }
-.console main div .consoleDesk hr {
-  border: 1px solid hsl(20, 10%, 20%);
-}
 .console main div .consoleDesk::-webkit-scrollbar {
-  background-color: hsl(20, 10%, 55%);
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
 .console main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(20, 10%, 34%);
   border-radius: 4px;
   height: 12px;
 }
 .console main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 76%);
   border-radius: 4px;
 }
 .console main div .consoleSidebar {
@@ -1149,7 +1833,6 @@ body {
   grid-template-columns: 30px calc(100% - 30px);
   grid-template-rows: 30px calc(100% - 30px);
   grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
-  background-color: hsl(20, 10%, 34%);
 }
 .console main div .consoleSidebar .consoleSidebarTabs {
   grid-area: consoleSidebarTabs;
@@ -1170,7 +1853,6 @@ body {
   height: 22px;
   border: none;
   margin: 4px 0 0 4px;
-  background-color: hsl(20, 15%, 55%);
   border-radius: 4px;
 }
 .console main div .consoleSidebar .consoleSidebarTabs button:last-child {
@@ -1178,7 +1860,6 @@ body {
 }
 .console main div .consoleSidebar .consoleSidebarTitle {
   grid-area: consoleSidebarTitle;
-  color: hsl(20, 10%, 76%);
   line-height: 16px;
   margin: 12px 4px 0 4px;
   font-size: 16px;
@@ -1203,7 +1884,6 @@ body {
   height: calc(100% - 34px);
 }
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(20, 10%, 76%);
   width: calc(100% - 16px);
   transition: height 1s, width 1s;
   overflow-x: hidden;
@@ -1211,38 +1891,29 @@ body {
   position: absolute;
   top: 4px;
   left: 4px;
-  border: 4px solid hsl(20, 10%, 76%);
   line-height: 18px;
   transition: width 1s, height 1s;
   font-size: 14px;
-  color: hsl(20, 10%, 34%);
 }
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
   font-weight: 600;
   letter-spacing: 1.5px;
-  color: hsl(20, 10%, 20%);
   text-transform: uppercase;
 }
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent i {
   font-style: italic;
 }
-.console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(20, 10%, 20%);
-}
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar {
-  background-color: hsl(20, 10%, 76%);
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(20, 10%, 34%);
   border-radius: 4px;
   height: 12px;
 }
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 34%);
   border-radius: 4px;
 }
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
@@ -1250,7 +1921,6 @@ body {
   bottom: 0;
   right: 0;
   margin: 4px;
-  background-color: hsl(320, 35%, 27%);
   transition: height 1s, width 1s;
 }
 .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
@@ -1266,14 +1936,9 @@ body {
   border-radius: 4px;
   margin: 4px;
   border: none;
-  color: hsl(320, 35%, 90%);
   background-color: rgba(255, 255, 255, 0);
 }
-.console main .consoleHelpOpen .consoleSidebarContent {
-  height: calc(50% - 14px);
-}
 .console main .consoleHelpOpen .consoleSidebarHelp {
-  height: calc(50% - 6px);
   width: calc(100% - 8px);
 }
 .console main .consoleHelpClosed .consoleSidebarContent {
@@ -1496,7 +2161,7 @@ body {
   }
 }
 @media only screen and (min-width: 0px) {
-  #userThumb {
+  .userThumb {
     background: hsl(0, 70%, 60%);
   }
   .consoleSidebarOpen div .consoleDesk {
@@ -1530,12 +2195,12 @@ body {
   }
 }
 @media only screen and (min-width: 300px) {
-  #userThumb {
+  .userThumb {
     background: hsl(0, 70%, 30%);
   }
 }
 @media only screen and (min-width: 600px) {
-  #userThumb {
+  .userThumb {
     background: hsl(30, 70%, 60%);
   }
   .consoleSidebarOpen div .consoleDesk {
@@ -1570,7 +2235,7 @@ body {
   }
 }
 @media only screen and (min-width: 900px) {
-  #userThumb {
+  .userThumb {
     background: hsl(30, 70%, 30%);
   }
   #breakTimeConsoleDesk {
@@ -1581,7 +2246,7 @@ body {
   }
 }
 @media only screen and (min-width: 1200px) {
-  #userThumb {
+  .userThumb {
     background: hsl(102, 70%, 60%);
   }
   .consoleSidebarOpen div .consoleDesk {
@@ -1608,7 +2273,7 @@ body {
   }
 }
 @media only screen and (min-width: 1500px) {
-  #userThumb {
+  .userThumb {
     background: hsl(102, 70%, 30%);
   }
   .consoleSidebarOpen div .consoleDesk {
@@ -1629,22 +2294,22 @@ body {
   }
 }
 @media only screen and (min-width: 1800px) {
-  #userThumb {
+  .userThumb {
     background: hsl(206, 70%, 60%);
   }
 }
 @media only screen and (min-width: 2100px) {
-  #userThumb {
+  .userThumb {
     background: hsl(206, 70%, 30%);
   }
 }
 @media only screen and (min-width: 2400px) {
-  #userThumb {
+  .userThumb {
     background: hsl(272, 70%, 60%);
   }
 }
 @media only screen and (min-width: 2700px) {
-  #userThumb {
+  .userThumb {
     background: hsl(272, 70%, 30%);
   }
   .userDashMini {
@@ -1658,7 +2323,7 @@ body {
   }
 }
 @media only screen and (min-width: 3000px) {
-  #userThumb {
+  .userThumb {
     background-color: rgb(0, 0, 0);
   }
   .userDashMini {
@@ -1675,39 +2340,60 @@ body {
   #temporaryHeightIndicator {
     background-color: hsl(0, 70%, 50%);
   }
+  .consoleHelpOpen .consoleSidebarContent {
+    height: calc(30% - 14px);
+  }
+  .consoleHelpOpen .consoleSidebarHelp {
+    height: calc(70% - 6px);
+  }
 }
 @media only screen and (min-height: 300px) {
   #temporaryHeightIndicator {
     background-color: hsl(30, 70%, 50%);
+  }
+  .consoleHelpOpen .consoleSidebarContent {
+    height: calc(40% - 14px);
+  }
+  .consoleHelpOpen .consoleSidebarHelp {
+    height: calc(60% - 6px);
   }
 }
 @media only screen and (min-height: 600px) {
   #temporaryHeightIndicator {
     background-color: hsl(60, 70%, 50%);
   }
+  .consoleHelpOpen .consoleSidebarContent {
+    height: calc(50% - 14px);
+  }
+  .consoleHelpOpen .consoleSidebarHelp {
+    height: calc(50% - 6px);
+  }
 }
 @media only screen and (min-height: 900px) {
   #temporaryHeightIndicator {
     background-color: hsl(120, 70%, 50%);
+  }
+  .consoleHelpOpen .consoleSidebarContent {
+    height: calc(60% - 14px);
+  }
+  .consoleHelpOpen .consoleSidebarHelp {
+    height: calc(40% - 6px);
   }
 }
 @media only screen and (min-height: 1200px) {
   #temporaryHeightIndicator {
     background-color: hsl(200, 70%, 50%);
   }
-  .consoleHelpToolOpen #userConsoleHelp {
-    height: 500px;
-  }
-  .consoleHelpToolOpen #consoleSidebarContent {
-    height: calc(100% - 525px);
-  }
-  #userConsoleHelp section {
-    height: 500px;
-  }
 }
 @media only screen and (min-height: 1500px) {
   #temporaryHeightIndicator {
     background-color: hsl(300, 70%, 30%);
+  }
+  .consoleHelpOpen .consoleSidebarContent {
+    height: calc(70% - 14px);
+  }
+  .consoleHelpOpen .consoleSidebarHelp {
+    height: calc(30% - 6px);
   }
 }
 @media only screen and (min-height: 1800px) {
