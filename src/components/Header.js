@@ -20,38 +20,6 @@ export default function Header() {
     
     return (
         <header className="userHeader">
-            <section className={accountConsoleClosed ? "userHeaderConsole accountConsoleClosed" : "userHeaderConsole accountConsoleOpen"}>
-                <Console/>
-                {/* // accountConsoleOpen accountConsoleClosed */}
-                {/* 
-                <div></div>
-                <div></div>
-                
-                Account Tab: 
-                    Name: nickname, firstname, middlename, lastname, suffix 
-                    Subscription: 
-                    Organization: RegionID, DistrictID, CommunityID, ClusterID 
-                    Biography: 
-                    Tags: 
-                Admin Tab: 
-                    Breaktime: 
-                    Help Desk:
-                    Schedule: 
-                    Training: 
-                Connections Tab: 
-                    Groups: 
-                    Privacy: name, subscription/role, images, biography, tags, results, voice,  [id and colors are always public]
-                Customize Tab: 
-                    Colors: theme hue, theme sat, accent hue, accent sat, alert hue, alert sat, brightness
-                    Images: 
-                    Animations: animation speed, animation types (flashes, gradients, glows) 
-                    Patterns: 
-                Voice Tab: 
-                    Reactions:
-                    Responses: 
-
-                */}
-            </section>
             <img src="" alt="" className="userThumb" onClick={handleAccountConsoleClosed} />
             <section>{displayName}</section>
             <section>
@@ -221,6 +189,39 @@ export default function Header() {
                     
                 </tr>
             </table>
+            <section>
+                
+                <Console consoleTitle={"account"}/>
+                {/* // accountConsoleOpen accountConsoleClosed */}
+                {/* 
+                <div></div>
+                <div></div>
+                
+                Account Tab: 
+                    Name: nickname, firstname, middlename, lastname, suffix 
+                    Subscription: 
+                    Organization: RegionID, DistrictID, CommunityID, ClusterID 
+                    Biography: 
+                    Tags: 
+                Admin Tab: 
+                    Breaktime: 
+                    Help Desk:
+                    Schedule: 
+                    Training: 
+                Connections Tab: 
+                    Groups: 
+                    Privacy: name, subscription/role, images, biography, tags, results, voice,  [id and colors are always public]
+                Customize Tab: 
+                    Colors: theme hue, theme sat, accent hue, accent sat, alert hue, alert sat, brightness
+                    Images: 
+                    Animations: animation speed, animation types (flashes, gradients, glows) 
+                    Patterns: 
+                Voice Tab: 
+                    Reactions:
+                    Responses: 
+
+                */}
+            </section>
 
         </header>
     )

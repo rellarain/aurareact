@@ -1,51 +1,111 @@
 import React, { useState } from 'react';
 import Console from './Console';
+import Header from './Header';
+
 
 export default function Dashboard() {
-    const time = "8:00";
-    const today = new Date();
-    const [toolkitConsoleState, setToolkitConsoleState] = useState(true);
+    const primaryInterfaceState = "Social";
+    // Inactive Social Assessment Scholar Admin
+    const secondaryInterfaceState = "Open"; 
+    // Open Closed
+    const tertiaryInterfaceState ="Closed";
+    // Open Closed
 
-    function handleSetToolkitConsoleState() {
-        setToolkitConsoleState(!toolkitConsoleState);
-        // alert("it worked!");
+
+    const [tertiaryInterfaceClosed, setTertiaryInterfaceClosed] = useState(true);
+    function handleSetTertiaryInterfaceClosed() {
+        setTertiaryInterfaceClosed(!tertiaryInterfaceClosed);
     }
-    function formatDate(date) {
-        return new Intl.DateTimeFormat('en-us', {weekday: 'short', month: 'long', day: '2-digit', year:'numeric'}).format(date);
-    }
+    
+    // function handlePrimaryInterfaceInactive() {
+    //     let primaryInterfaceState = "Inactive";
+    //     alert("it worked!");
+
+    // }
+    // function handlePrimaryInterfaceSocial() {
+    //     let primaryInterfaceState = "Social";
+
+    // }
+    // function handlePrimaryInterfaceScholar() {
+    //     let primaryInterfaceState = "Scholar";
+
+    // }
+    // function handlePrimaryInterfaceAdmin() {
+    //     let primaryInterfaceState = "Admin";
+
+    // }
+    // function handlePrimaryInterfaceAssessment() {
+    //     let primaryInterfaceState = "Assessment";
+
+    // }
 
 
 
     
     return (
-    <main id="userDash" className={toolkitConsoleState ? "userDashMax" : "userDashMini"}>
-        {/* userDashMax userDashMini */}
-        {/* <UserConsole /> */}
-        {/* <UserDashboard/> */}
-        <Console />
+    <main className={"interfaceContainer " + "primaryInterface" + primaryInterfaceState + " secondaryInterface" + secondaryInterfaceState + " tertiaryInterface" + tertiaryInterfaceState}>
+        {/* "interfaceContainer " + "primaryInterface" + activeConsole + " secondaryInterface" + open/closed + " tertiaryInterface" + open/closed */}
+        <nav>
+            <button>Account</button>
+            <button>Social</button>
+            <button>Assessment</button>
+            <button>Scholar</button>
+            <button>Admin</button>
+            <button>Help Desk</button>
+            <button>Close</button>
+        </nav>
+        <main>
+            {/* <Header/> */}
+            <Header/>
+            <main className='mainscreen'>
+                <section className='secondaryInterface'>
+                    <Console consoleTitle={"helpDesk"}/>
+                </section>
+                <section className='primaryInterface'>
+                    <Console consoleTitle={"dashboard"}/>
+                    <Console consoleTitle={"social"}/>
+                    {/* <Console consoleTitle={"scholar"}/> */}
+                    {/* <Console consoleTitle={"admin"}/> */}
+                    {/* <Console consoleTitle={"assessment"}/> */}
+                </section>
+            </main>
+        </main>
 
-        <div id="userDashboard" >
-            <p>{formatDate(today)} <br/> {time} </p>
-            <button onClick={handleSetToolkitConsoleState}></button>
-            <section></section>
-            {/* <p>NOTICES <br/> organizational changes, individual changes, academy changes</p>
-            <p>PERFORMANCE <br/><br/> WORKDAY (today's date)<br/> achievement, activity, adherence, attendance <br/><br/>  WORKWEEK (last 2-7 days in month)<br/> achievement, activity, adherence, attendance, accomplishment <br/><br/>  WORKCYCLE (average daily score of month) <br/> achievement, activity, adequacy, adherence, attendance, accomplishment</p>
-            <p>REQUESTS <br/> </p>
-            <p>feedback status</p>
-            <p>SIGN OUT</p>
-            <section>
-                
-            </section> */}
-        </div>
+
     </main>
 )}
 
-// function UserDashboard() { 
-    
-   
-
-//     return (
-    
-// )}
 
 
+// NOTES: 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 

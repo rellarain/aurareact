@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
 
-export default function Console() {
+export default function Console({consoleTitle}) {
     // Console Variables
-    const consoleTitle = "assessmentL";
+    // const consoleTitle = "account";
+
     // account dashboard social scholar admin helpDesk
     // assessmentA assessmentG assessmentL assessmentS assessmentX 
     const consoleState = "active";
@@ -384,6 +385,7 @@ export default function Console() {
                                 <br/> <b>Sidebar Tabs</b>: areas of a user's account; controls sidebar content; close Help Desk
                                 <br/> <b>Sidebar Title</b>: user's display name
                                 <br/> <b>Sidebar Content</b>: displays information based on tab
+                                <br/> +<b> Help Desk Queue</b>: users waiting (), helper activity (), help desk schedule (), 
                                 <br/> +<b> Account</b>: engagement (), name (), subscription (), role (), tags (), reports/flags ()
                                 <br/> +<b> Feedback</b>: pending (), closed ()
                                 <br/> +<b> Social</b>: connections (), organization ()
@@ -422,9 +424,13 @@ export default function Console() {
                         <br/> <b>Desk</b>: 
                         <br/> +<b> Activity Log</b>: general totals (all activity), member totals (social, assessment, scholar), role totals (break, MGMT, educator, creator, developer, designer, support),
                         <br/> +<b> Schedule</b>: scheduled work activity (scheduled, remaining, ongoing), scheduled member activity (scheduled, remaining, ongoing), scheduled break activity (scheduled, remaining, ongoing)
-                        <br/> +<b> Workweek</b>: total possible worktime, total used worktime, total earned breaktime, total used breaktime, total missed worktime
+                        <br/> +<b> Workweek</b>: total possible worktime, total used worktime, total earned breaktime, total used breaktime, total remaining breaktime, total missed worktime
                         <br/> +<b> Activity Feed</b>: view what one's connections or team are doing currently 
                         <br/> +<b> Messenger</b>: 
+                        <br/> +<b> Sign Out</b>: 
+                        <br/> +<b> Feedback Status</b>: 
+                        <br/> +<b> </b>: 
+                        <br/> +<b> </b>: 
                         <br/> +<b> </b>: 
                         <hr></hr>
                     <b>SOCIAL</b>: for users with social features enabled (Base + $2.00)
