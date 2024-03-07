@@ -4,9 +4,9 @@ import Header from './Header';
 
 
 export default function Dashboard() {
-    const primaryInterfaceState = "Social";
+    const primaryInterfaceState = "Scholar";
     // Inactive Social Assessment Scholar Admin
-    const secondaryInterfaceState = "Open"; 
+    const secondaryInterfaceState = "Closed"; 
     // Open Closed
     const tertiaryInterfaceState ="Closed";
     // Open Closed

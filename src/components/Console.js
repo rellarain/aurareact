@@ -45,19 +45,8 @@ export default function Console({consoleTitle}) {
                     <button>Poop</button>
                     <button>Butterscotch</button>
                     <button>xfgfgxvxvx</button>
-                    <button>fxxbvbgvvggvb</button>
-                    <button>bedfszffsdfsf</button>
-                    <button>sxdvfsefx</button>
-                    <button>sdfsdfsdfs</button>
-                    <button>sdvfsdxvxvzdsvf</button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
                 </section>
+                <section><button></button></section>
             </header>
             <div className={consoleHelpClosed ? "consoleHelpClosed" : "consoleHelpOpen"}> 
                 <section className='consoleSidebar'>
