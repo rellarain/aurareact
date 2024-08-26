@@ -61,1156 +61,1229 @@ body {
   overflow: hidden;
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: hsl(30, 40%, 20%);
+  background-color: hsl(320, 25%, 30%);
 }
 
 .nightMode {
   transition: background 1s, color 1s;
 }
 .nightMode .interfaceContainer .accountConsole main {
-  background-color: hsl(20, 10%, 20%);
+  background-color: hsl(30, 10%, 30%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(1) {
-  color: hsl(20, 10%, 41%);
+  color: hsl(30, 10%, 51%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(20, 10%, 55%);
+  color: hsl(30, 10%, 65%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(20, 10%, 76%);
+  color: hsl(30, 10%, 86%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(3) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(3) span {
-  background-color: hsl(20, 15%, 69%);
+  background-color: hsl(30, 15%, 79%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(4) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(4) button {
-  background-color: hsl(20, 15%, 62%);
+  background-color: hsl(30, 15%, 72%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(5) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .accountConsole main header section:nth-child(5) button {
-  background-color: hsl(20, 15%, 41%);
-  color: hsl(20, 15%, 90%);
+  background-color: hsl(30, 15%, 51%);
+  color: hsl(30, 15%, 100%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleDesk {
-  background-color: hsl(20, 10%, 34%);
-  color: hsl(20, 10%, 76%);
-  border: 4px solid hsl(20, 10%, 34%);
+.nightMode .interfaceContainer .accountConsole main header section:nth-child(6) {
+  background-color: hsl(30, 10%, 37%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleDesk b {
-  color: hsl(20, 10%, 55%);
+.nightMode .interfaceContainer .accountConsole main header section:nth-child(6) button {
+  background-color: hsl(30, 15%, 65%);
+  color: hsl(30, 15%, 100%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleDesk hr {
-  border: 1px solid hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleDesk {
+  background-color: hsl(30, 10%, 44%);
+  color: hsl(30, 10%, 86%);
+  border: 4px solid hsl(30, 10%, 44%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleDesk b {
+  color: hsl(30, 10%, 65%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 62%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar {
-  background-color: hsl(20, 15%, 34%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(20, 15%, 55%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 72%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(20, 15%, 76%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar {
+  background-color: hsl(30, 15%, 44%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(20, 15%, 48%);
-  border: 4px solid hsl(20, 15%, 48%);
-  color: hsl(20, 15%, 27%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(30, 15%, 65%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(20, 15%, 20%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(30, 15%, 86%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(20, 15%, 20%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(30, 15%, 58%);
+  border: 4px solid hsl(30, 15%, 58%);
+  color: hsl(30, 15%, 37%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(20, 15%, 34%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(30, 15%, 30%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 69%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(30, 15%, 30%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(20, 15%, 20%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(30, 15%, 44%);
 }
-.nightMode .interfaceContainer .accountConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(20, 15%, 90%);
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 79%);
+}
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(30, 15%, 30%);
+}
+.nightMode .interfaceContainer .accountConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(30, 15%, 100%);
 }
 .nightMode .interfaceContainer .dashboardConsole main {
-  background-color: hsl(20, 15%, 41%);
+  background-color: hsl(30, 15%, 51%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(1) {
-  color: hsl(20, 15%, 20%);
+  color: hsl(30, 15%, 30%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(20, 15%, 20%);
+  color: hsl(30, 15%, 30%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(20, 15%, 76%);
+  color: hsl(30, 15%, 86%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(3) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(3) span {
-  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(190, 60%, 72%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(4) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 55%);
+  background-color: hsl(190, 60%, 65%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(5) {
-  background-color: hsl(20, 15%, 27%);
+  background-color: hsl(30, 15%, 37%);
 }
 .nightMode .interfaceContainer .dashboardConsole main header section:nth-child(5) button {
-  background-color: hsl(30, 40%, 62%);
-  color: hsl(30, 40%, 34%);
+  background-color: hsl(190, 40%, 72%);
+  color: hsl(190, 40%, 44%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleDesk {
-  background-color: hsl(20, 15%, 27%);
-  color: hsl(20, 10%, 83%);
-  border: 4px solid hsl(20, 15%, 27%);
+.nightMode .interfaceContainer .dashboardConsole main header section:nth-child(6) {
+  background-color: hsl(30, 10%, 37%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleDesk b {
-  color: hsl(20, 10%, 55%);
+.nightMode .interfaceContainer .dashboardConsole main header section:nth-child(6) button {
+  background-color: hsl(190, 60%, 72%);
+  color: hsl(190, 60%, 30%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleDesk hr {
-  border: 1px solid hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleDesk {
+  background-color: hsl(30, 15%, 37%);
+  color: hsl(30, 10%, 93%);
+  border: 4px solid hsl(30, 15%, 37%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(20, 15%, 41%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleDesk b {
+  color: hsl(30, 10%, 65%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 62%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar {
-  background-color: hsl(30, 40%, 34%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(30, 15%, 51%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(30, 40%, 55%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 72%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(30, 40%, 76%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar {
+  background-color: hsl(190, 40%, 44%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(30, 40%, 48%);
-  border: 4px solid hsl(30, 40%, 48%);
-  color: hsl(30, 40%, 27%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(190, 40%, 65%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(30, 40%, 20%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(190, 40%, 86%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(30, 40%, 20%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(190, 40%, 58%);
+  border: 4px solid hsl(190, 40%, 58%);
+  color: hsl(190, 40%, 37%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(30, 40%, 34%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(190, 40%, 30%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(30, 40%, 69%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(190, 40%, 30%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(30, 60%, 20%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(190, 40%, 44%);
 }
-.nightMode .interfaceContainer .dashboardConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(30, 60%, 90%);
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(190, 40%, 79%);
+}
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(190, 60%, 30%);
+}
+.nightMode .interfaceContainer .dashboardConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(190, 60%, 100%);
 }
 .nightMode .interfaceContainer .socialConsole main {
-  background-color: hsl(20, 10%, 20%);
+  background-color: hsl(30, 10%, 30%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(1) {
-  color: hsl(20, 10%, 41%);
+  color: hsl(30, 10%, 51%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(20, 10%, 55%);
+  color: hsl(30, 10%, 65%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(20, 10%, 76%);
+  color: hsl(30, 10%, 86%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(3) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(3) span {
-  background-color: hsl(30, 60%, 62%);
-  background-color: hsl(20, 15%, 62%);
+  background-color: hsl(190, 60%, 72%);
+  background-color: hsl(30, 15%, 72%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(4) {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(320, 25%, 44%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 62%);
-  background-color: hsl(320, 35%, 62%);
-  background-color: hsl(320, 25%, 62%);
+  background-color: hsl(190, 60%, 72%);
+  background-color: hsl(320, 35%, 72%);
+  background-color: hsl(320, 25%, 72%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(5) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .socialConsole main header section:nth-child(5) button {
-  background-color: hsl(20, 15%, 41%);
-  color: hsl(20, 15%, 90%);
+  background-color: hsl(30, 15%, 51%);
+  color: hsl(30, 15%, 100%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleDesk {
-  background-color: hsl(20, 10%, 41%);
-  color: hsl(20, 10%, 69%);
-  border: 4px solid hsl(20, 10%, 41%);
+.nightMode .interfaceContainer .socialConsole main header section:nth-child(6) {
+  background-color: hsl(30, 10%, 37%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleDesk b {
-  color: hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .socialConsole main header section:nth-child(6) button {
+  background-color: hsl(190, 60%, 65%);
+  color: white;
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleDesk hr {
-  border: 1px solid hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleDesk {
+  background-color: hsl(30, 10%, 51%);
+  color: hsl(30, 10%, 79%);
+  border: 4px solid hsl(30, 10%, 51%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleDesk b {
+  color: hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 62%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar {
-  background-color: hsl(320, 25%, 34%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(320, 25%, 55%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 72%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(320, 25%, 76%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar {
+  background-color: hsl(320, 25%, 44%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(320, 25%, 48%);
-  border: 4px solid hsl(320, 25%, 48%);
-  color: hsl(320, 25%, 69%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(320, 25%, 65%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(320, 25%, 90%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(320, 25%, 86%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(320, 25%, 20%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(320, 25%, 58%);
+  border: 4px solid hsl(320, 25%, 58%);
+  color: hsl(320, 25%, 79%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(320, 25%, 34%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(320, 25%, 100%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 25%, 69%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(320, 25%, 30%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(320, 35%, 20%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(320, 25%, 44%);
 }
-.nightMode .interfaceContainer .socialConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(320, 35%, 90%);
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(320, 25%, 79%);
+}
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(320, 35%, 30%);
+}
+.nightMode .interfaceContainer .socialConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(320, 35%, 100%);
 }
 .nightMode .interfaceContainer .scholarConsole main {
-  background-color: hsl(20, 10%, 20%);
+  background-color: hsl(30, 10%, 30%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(1) {
-  color: hsl(20, 10%, 41%);
+  color: hsl(30, 10%, 51%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(20, 10%, 55%);
+  color: hsl(30, 10%, 65%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(20, 10%, 76%);
+  color: hsl(30, 10%, 86%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(3) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(3) span {
-  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(190, 60%, 72%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(4) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(4) button {
-  background-color: hsl(20, 15%, 62%);
+  background-color: hsl(30, 15%, 72%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(5) {
-  background-color: hsl(20, 10%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .scholarConsole main header section:nth-child(5) button {
-  background-color: hsl(20, 15%, 41%);
-  color: hsl(20, 15%, 90%);
+  background-color: hsl(30, 15%, 51%);
+  color: hsl(30, 15%, 100%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleDesk {
-  background-color: hsl(20, 10%, 41%);
-  color: hsl(20, 10%, 69%);
-  border: 4px solid hsl(20, 10%, 41%);
+.nightMode .interfaceContainer .scholarConsole main header section:nth-child(6) {
+  background-color: hsl(30, 10%, 37%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleDesk b {
-  color: hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .scholarConsole main header section:nth-child(6) button {
+  background-color: hsl(190, 60%, 72%);
+  color: hsl(190, 60%, 30%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleDesk hr {
-  border: 1px solid hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleDesk {
+  background-color: hsl(30, 10%, 51%);
+  color: hsl(30, 10%, 79%);
+  border: 4px solid hsl(30, 10%, 51%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(20, 10%, 20%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleDesk b {
+  color: hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 62%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar {
-  background-color: hsl(20, 15%, 34%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(20, 15%, 55%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 72%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(20, 15%, 76%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar {
+  background-color: hsl(30, 15%, 44%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(20, 15%, 48%);
-  border: 4px solid hsl(20, 15%, 48%);
-  color: hsl(20, 15%, 69%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(30, 15%, 65%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(20, 15%, 90%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(30, 15%, 86%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(20, 15%, 20%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(30, 15%, 58%);
+  border: 4px solid hsl(30, 15%, 58%);
+  color: hsl(30, 15%, 79%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(20, 15%, 34%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(30, 15%, 100%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 69%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(30, 15%, 30%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(30, 60%, 41%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(30, 15%, 44%);
 }
-.nightMode .interfaceContainer .scholarConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(30, 60%, 90%);
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 79%);
+}
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(190, 60%, 51%);
+}
+.nightMode .interfaceContainer .scholarConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(190, 60%, 100%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main {
-  background-color: hsl(110, 15%, 20%);
+  background-color: hsl(110, 10%, 30%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(1) {
-  color: hsl(110, 15%, 41%);
+  color: hsl(110, 10%, 51%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(110, 15%, 55%);
+  color: hsl(110, 10%, 65%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(110, 15%, 76%);
+  color: hsl(110, 10%, 86%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(3) {
-  background-color: hsl(110, 15%, 27%);
+  background-color: hsl(110, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(3) span {
-  background-color: hsl(110, 40%, 62%);
-  background-color: hsl(110, 25%, 62%);
+  background-color: hsl(110, 60%, 72%);
+  background-color: hsl(110, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(4) {
-  background-color: hsl(110, 15%, 34%);
+  background-color: hsl(110, 10%, 44%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 62%);
-  background-color: hsl(110, 40%, 62%);
-  background-color: hsl(110, 25%, 62%);
+  background-color: hsl(190, 60%, 72%);
+  background-color: hsl(110, 60%, 72%);
+  background-color: hsl(110, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(5) {
-  background-color: hsl(110, 15%, 27%);
+  background-color: hsl(110, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(5) button {
-  background-color: hsl(110, 15%, 41%);
-  color: hsl(110, 15%, 90%);
+  background-color: hsl(110, 10%, 51%);
+  color: hsl(110, 10%, 100%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleDesk {
-  background-color: hsl(110, 15%, 41%);
-  color: hsl(110, 15%, 69%);
-  border: 4px solid hsl(110, 15%, 41%);
+.nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(6) {
+  background-color: hsl(110, 10%, 37%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleDesk b {
-  color: hsl(110, 15%, 20%);
+.nightMode .interfaceContainer .assessmentAConsole main header section:nth-child(6) button {
+  background-color: hsl(110, 35%, 58%);
+  color: hsl(110, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleDesk hr {
-  border: 1px solid hsl(110, 15%, 20%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleDesk {
+  background-color: hsl(110, 10%, 51%);
+  color: hsl(110, 10%, 79%);
+  border: 4px solid hsl(110, 10%, 51%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(110, 15%, 20%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleDesk b {
+  color: hsl(110, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(110, 15%, 62%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(110, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar {
-  background-color: hsl(110, 25%, 34%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(110, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(110, 25%, 55%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(110, 10%, 72%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(110, 25%, 76%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar {
+  background-color: hsl(110, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(110, 25%, 48%);
-  border: 4px solid hsl(110, 25%, 48%);
-  color: hsl(110, 25%, 69%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(110, 35%, 65%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(110, 25%, 90%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(110, 35%, 86%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(110, 25%, 20%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(110, 35%, 58%);
+  border: 4px solid hsl(110, 35%, 58%);
+  color: hsl(110, 35%, 79%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(110, 25%, 34%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(110, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(110, 25%, 69%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(110, 35%, 30%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(110, 40%, 20%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(110, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentAConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(110, 40%, 90%);
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(110, 35%, 79%);
+}
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(110, 60%, 30%);
+}
+.nightMode .interfaceContainer .assessmentAConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(110, 60%, 100%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main {
-  background-color: hsl(5, 15%, 20%);
+  background-color: hsl(5, 10%, 30%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(1) {
-  color: hsl(5, 15%, 41%);
+  color: hsl(5, 10%, 51%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(5, 15%, 55%);
+  color: hsl(5, 10%, 65%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(5, 15%, 76%);
+  color: hsl(5, 10%, 86%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(3) {
-  background-color: hsl(5, 15%, 27%);
+  background-color: hsl(5, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(3) span {
-  background-color: hsl(5, 40%, 62%);
-  background-color: hsl(5, 25%, 62%);
+  background-color: hsl(5, 60%, 72%);
+  background-color: hsl(5, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(4) {
-  background-color: hsl(5, 15%, 34%);
+  background-color: hsl(5, 10%, 44%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 62%);
-  background-color: hsl(5, 40%, 62%);
-  background-color: hsl(5, 25%, 62%);
+  background-color: hsl(190, 60%, 72%);
+  background-color: hsl(5, 60%, 72%);
+  background-color: hsl(5, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(5) {
-  background-color: hsl(5, 15%, 27%);
+  background-color: hsl(5, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(5) button {
-  background-color: hsl(5, 15%, 41%);
-  color: hsl(5, 15%, 90%);
+  background-color: hsl(5, 10%, 51%);
+  color: hsl(5, 10%, 100%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleDesk {
-  background-color: hsl(5, 15%, 41%);
-  color: hsl(5, 15%, 69%);
-  border: 4px solid hsl(5, 15%, 41%);
+.nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(6) {
+  background-color: hsl(5, 10%, 37%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleDesk b {
-  color: hsl(5, 15%, 20%);
+.nightMode .interfaceContainer .assessmentGConsole main header section:nth-child(6) button {
+  background-color: hsl(5, 35%, 58%);
+  color: hsl(5, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleDesk hr {
-  border: 1px solid hsl(5, 15%, 20%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleDesk {
+  background-color: hsl(5, 10%, 51%);
+  color: hsl(5, 10%, 79%);
+  border: 4px solid hsl(5, 10%, 51%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(5, 15%, 20%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleDesk b {
+  color: hsl(5, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(5, 15%, 62%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(5, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar {
-  background-color: hsl(5, 25%, 34%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(5, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(5, 25%, 55%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(5, 10%, 72%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(5, 25%, 76%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar {
+  background-color: hsl(5, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(5, 25%, 48%);
-  border: 4px solid hsl(5, 25%, 48%);
-  color: hsl(5, 25%, 69%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(5, 35%, 65%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(5, 25%, 90%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(5, 35%, 86%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(5, 25%, 20%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(5, 35%, 58%);
+  border: 4px solid hsl(5, 35%, 58%);
+  color: hsl(5, 35%, 79%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(5, 25%, 34%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(5, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(5, 25%, 69%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(5, 35%, 30%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(5, 40%, 20%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(5, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentGConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(5, 40%, 90%);
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(5, 35%, 79%);
+}
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(5, 60%, 30%);
+}
+.nightMode .interfaceContainer .assessmentGConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(5, 60%, 100%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main {
-  background-color: hsl(270, 15%, 20%);
+  background-color: hsl(270, 10%, 30%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(1) {
-  color: hsl(270, 15%, 41%);
+  color: hsl(270, 10%, 51%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(270, 15%, 55%);
+  color: hsl(270, 10%, 65%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(270, 15%, 76%);
+  color: hsl(270, 10%, 86%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(3) {
-  background-color: hsl(270, 15%, 27%);
+  background-color: hsl(270, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(3) span {
-  background-color: hsl(270, 40%, 62%);
-  background-color: hsl(270, 25%, 62%);
+  background-color: hsl(270, 60%, 72%);
+  background-color: hsl(270, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(4) {
-  background-color: hsl(270, 15%, 34%);
+  background-color: hsl(270, 10%, 44%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 62%);
-  background-color: hsl(270, 40%, 62%);
-  background-color: hsl(270, 25%, 62%);
+  background-color: hsl(190, 60%, 72%);
+  background-color: hsl(270, 60%, 72%);
+  background-color: hsl(270, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(5) {
-  background-color: hsl(270, 15%, 27%);
+  background-color: hsl(270, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(5) button {
-  background-color: hsl(270, 15%, 41%);
-  color: hsl(270, 15%, 90%);
+  background-color: hsl(270, 10%, 51%);
+  color: hsl(270, 10%, 100%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleDesk {
-  background-color: hsl(270, 15%, 41%);
-  color: hsl(270, 15%, 69%);
-  border: 4px solid hsl(270, 15%, 41%);
+.nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(6) {
+  background-color: hsl(270, 10%, 37%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleDesk b {
-  color: hsl(270, 15%, 20%);
+.nightMode .interfaceContainer .assessmentLConsole main header section:nth-child(6) button {
+  background-color: hsl(270, 35%, 58%);
+  color: hsl(270, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleDesk hr {
-  border: 1px solid hsl(270, 15%, 20%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleDesk {
+  background-color: hsl(270, 10%, 51%);
+  color: hsl(270, 10%, 79%);
+  border: 4px solid hsl(270, 10%, 51%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(270, 15%, 20%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleDesk b {
+  color: hsl(270, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(270, 15%, 62%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(270, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar {
-  background-color: hsl(270, 25%, 34%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(270, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(270, 25%, 55%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(270, 10%, 72%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(270, 25%, 76%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar {
+  background-color: hsl(270, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(270, 25%, 48%);
-  border: 4px solid hsl(270, 25%, 48%);
-  color: hsl(270, 25%, 69%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(270, 35%, 65%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(270, 25%, 90%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(270, 35%, 86%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(270, 25%, 20%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(270, 35%, 58%);
+  border: 4px solid hsl(270, 35%, 58%);
+  color: hsl(270, 35%, 79%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(270, 25%, 34%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(270, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(270, 25%, 69%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(270, 35%, 30%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(270, 40%, 20%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(270, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentLConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(270, 40%, 90%);
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(270, 35%, 79%);
+}
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(270, 60%, 30%);
+}
+.nightMode .interfaceContainer .assessmentLConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(270, 60%, 100%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main {
-  background-color: hsl(230, 15%, 20%);
+  background-color: hsl(230, 10%, 30%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(1) {
-  color: hsl(230, 15%, 41%);
+  color: hsl(230, 10%, 51%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(230, 15%, 55%);
+  color: hsl(230, 10%, 65%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(230, 15%, 76%);
+  color: hsl(230, 10%, 86%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(3) {
-  background-color: hsl(230, 15%, 27%);
+  background-color: hsl(230, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(3) span {
-  background-color: hsl(230, 40%, 62%);
-  background-color: hsl(230, 25%, 62%);
+  background-color: hsl(230, 60%, 72%);
+  background-color: hsl(230, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(4) {
-  background-color: hsl(230, 15%, 34%);
+  background-color: hsl(230, 10%, 44%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 62%);
-  background-color: hsl(230, 40%, 62%);
-  background-color: hsl(230, 25%, 62%);
+  background-color: hsl(190, 60%, 72%);
+  background-color: hsl(230, 60%, 72%);
+  background-color: hsl(230, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(5) {
-  background-color: hsl(230, 15%, 27%);
+  background-color: hsl(230, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(5) button {
-  background-color: hsl(230, 15%, 41%);
-  color: hsl(230, 15%, 90%);
+  background-color: hsl(230, 10%, 51%);
+  color: hsl(230, 10%, 100%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleDesk {
-  background-color: hsl(230, 15%, 41%);
-  color: hsl(230, 15%, 69%);
-  border: 4px solid hsl(230, 15%, 41%);
+.nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(6) {
+  background-color: hsl(230, 10%, 37%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleDesk b {
-  color: hsl(230, 15%, 20%);
+.nightMode .interfaceContainer .assessmentSConsole main header section:nth-child(6) button {
+  background-color: hsl(230, 35%, 58%);
+  color: hsl(230, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleDesk hr {
-  border: 1px solid hsl(230, 15%, 20%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleDesk {
+  background-color: hsl(230, 10%, 51%);
+  color: hsl(230, 10%, 79%);
+  border: 4px solid hsl(230, 10%, 51%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(230, 15%, 20%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleDesk b {
+  color: hsl(230, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(230, 15%, 62%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(230, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar {
-  background-color: hsl(230, 25%, 34%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(230, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(230, 25%, 55%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(230, 10%, 72%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(230, 25%, 76%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar {
+  background-color: hsl(230, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(230, 25%, 48%);
-  border: 4px solid hsl(230, 25%, 48%);
-  color: hsl(230, 25%, 69%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(230, 35%, 65%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(230, 25%, 90%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(230, 35%, 86%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(230, 25%, 20%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(230, 35%, 58%);
+  border: 4px solid hsl(230, 35%, 58%);
+  color: hsl(230, 35%, 79%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(230, 25%, 34%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(230, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(230, 25%, 69%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(230, 35%, 30%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(230, 40%, 20%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(230, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentSConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(230, 40%, 90%);
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(230, 35%, 79%);
+}
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(230, 60%, 30%);
+}
+.nightMode .interfaceContainer .assessmentSConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(230, 60%, 100%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main {
-  background-color: hsl(30, 15%, 20%);
+  background-color: hsl(30, 10%, 30%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(1) {
-  color: hsl(30, 15%, 41%);
+  color: hsl(30, 10%, 51%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(30, 15%, 55%);
+  color: hsl(30, 10%, 65%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(30, 15%, 76%);
+  color: hsl(30, 10%, 86%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(3) {
-  background-color: hsl(30, 15%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(3) span {
-  background-color: hsl(30, 40%, 62%);
-  background-color: hsl(30, 25%, 62%);
+  background-color: hsl(30, 60%, 72%);
+  background-color: hsl(30, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(4) {
-  background-color: hsl(30, 15%, 34%);
+  background-color: hsl(30, 10%, 44%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 62%);
-  background-color: hsl(30, 40%, 62%);
-  background-color: hsl(30, 25%, 62%);
+  background-color: hsl(190, 60%, 72%);
+  background-color: hsl(30, 60%, 72%);
+  background-color: hsl(30, 35%, 72%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(5) {
-  background-color: hsl(30, 15%, 27%);
+  background-color: hsl(30, 10%, 37%);
 }
 .nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(5) button {
-  background-color: hsl(30, 15%, 41%);
-  color: hsl(30, 15%, 90%);
+  background-color: hsl(30, 10%, 51%);
+  color: hsl(30, 10%, 100%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleDesk {
-  background-color: hsl(30, 15%, 41%);
-  color: hsl(30, 15%, 69%);
-  border: 4px solid hsl(30, 15%, 41%);
+.nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(6) {
+  background-color: hsl(30, 10%, 37%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleDesk b {
-  color: hsl(30, 15%, 20%);
+.nightMode .interfaceContainer .assessmentXConsole main header section:nth-child(6) button {
+  background-color: hsl(30, 35%, 58%);
+  color: hsl(30, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleDesk hr {
-  border: 1px solid hsl(30, 15%, 20%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleDesk {
+  background-color: hsl(30, 10%, 51%);
+  color: hsl(30, 10%, 79%);
+  border: 4px solid hsl(30, 10%, 51%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(30, 15%, 20%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleDesk b {
+  color: hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(30, 15%, 62%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar {
-  background-color: hsl(30, 25%, 34%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(30, 10%, 30%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(30, 25%, 55%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 10%, 72%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(30, 25%, 76%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar {
+  background-color: hsl(30, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(30, 25%, 48%);
-  border: 4px solid hsl(30, 25%, 48%);
-  color: hsl(30, 25%, 69%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(30, 35%, 65%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(30, 25%, 90%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(30, 35%, 86%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(30, 25%, 20%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(30, 35%, 58%);
+  border: 4px solid hsl(30, 35%, 58%);
+  color: hsl(30, 35%, 79%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(30, 25%, 34%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(30, 35%, 100%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(30, 25%, 69%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(30, 35%, 30%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(30, 40%, 20%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(30, 35%, 44%);
 }
-.nightMode .interfaceContainer .assessmentXConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(30, 40%, 90%);
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 35%, 79%);
+}
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(30, 60%, 30%);
+}
+.nightMode .interfaceContainer .assessmentXConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(30, 60%, 100%);
 }
 .nightMode .interfaceContainer .adminConsole main {
-  background-color: hsl(20, 15%, 20%);
+  background-color: hsl(30, 15%, 30%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(1) {
-  color: hsl(20, 15%, 41%);
+  color: hsl(30, 15%, 51%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(20, 15%, 55%);
+  color: hsl(30, 15%, 65%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(20, 15%, 76%);
+  color: hsl(30, 15%, 86%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(3) {
-  background-color: hsl(20, 15%, 27%);
+  background-color: hsl(30, 15%, 37%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(3) span {
-  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(190, 60%, 72%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(4) {
-  background-color: hsl(20, 15%, 27%);
+  background-color: hsl(30, 15%, 37%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(4) button {
-  background-color: hsl(20, 15%, 62%);
-  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(30, 15%, 72%);
+  background-color: hsl(190, 60%, 72%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(5) {
-  background-color: hsl(20, 15%, 27%);
+  background-color: hsl(30, 15%, 37%);
 }
 .nightMode .interfaceContainer .adminConsole main header section:nth-child(5) button {
-  background-color: hsl(320, 25%, 48%);
-  color: hsl(320, 25%, 90%);
+  background-color: hsl(320, 25%, 58%);
+  color: hsl(320, 25%, 100%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleDesk {
-  background-color: hsl(20, 15%, 41%);
-  color: hsl(20, 15%, 69%);
-  border: 4px solid hsl(20, 15%, 41%);
+.nightMode .interfaceContainer .adminConsole main header section:nth-child(6) {
+  background-color: hsl(30, 10%, 37%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleDesk b {
-  color: hsl(20, 15%, 20%);
+.nightMode .interfaceContainer .adminConsole main header section:nth-child(6) button {
+  background-color: hsl(190, 60%, 72%);
+  color: hsl(190, 60%, 30%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleDesk hr {
-  border: 1px solid hsl(20, 15%, 20%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleDesk {
+  background-color: hsl(30, 15%, 51%);
+  color: hsl(30, 15%, 79%);
+  border: 4px solid hsl(30, 15%, 51%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(20, 15%, 20%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleDesk b {
+  color: hsl(30, 15%, 30%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 62%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(30, 15%, 30%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar {
-  background-color: hsl(320, 25%, 34%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(30, 15%, 30%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(320, 25%, 55%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(30, 15%, 72%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(320, 25%, 76%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar {
+  background-color: hsl(320, 25%, 44%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(320, 25%, 48%);
-  border: 4px solid hsl(320, 25%, 48%);
-  color: hsl(320, 25%, 69%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(320, 25%, 65%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(320, 25%, 90%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(320, 25%, 86%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(320, 25%, 20%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(320, 25%, 58%);
+  border: 4px solid hsl(320, 25%, 58%);
+  color: hsl(320, 25%, 79%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(320, 25%, 34%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(320, 25%, 100%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 25%, 69%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(320, 25%, 30%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(30, 60%, 41%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(320, 25%, 44%);
 }
-.nightMode .interfaceContainer .adminConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(30, 60%, 90%);
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(320, 25%, 79%);
+}
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(190, 60%, 51%);
+}
+.nightMode .interfaceContainer .adminConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(190, 60%, 100%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main {
-  background-color: hsl(320, 25%, 20%);
+  background-color: hsl(320, 25%, 30%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(1) {
-  color: hsl(320, 25%, 41%);
+  color: hsl(320, 25%, 51%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(2) span:nth-child(1) {
-  color: hsl(320, 25%, 55%);
+  color: hsl(320, 25%, 65%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(2) span:nth-child(2) {
-  color: hsl(320, 25%, 76%);
+  color: hsl(320, 25%, 86%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(3) {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(320, 25%, 44%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(3) span {
-  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(190, 60%, 72%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(4) {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(320, 25%, 44%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(4) button {
-  background-color: hsl(30, 60%, 69%);
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(190, 60%, 79%);
+  background-color: hsl(320, 35%, 72%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(5) {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(320, 25%, 44%);
 }
 .nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(5) button {
-  background-color: hsl(320, 25%, 41%);
-  color: hsl(320, 25%, 90%);
-  background-color: hsl(320, 35%, 41%);
-  color: hsl(320, 35%, 90%);
-  background-color: hsl(30, 40%, 41%);
-  color: hsl(30, 40%, 90%);
-  background-color: hsl(30, 60%, 41%);
-  color: hsl(30, 60%, 90%);
+  background-color: hsl(320, 25%, 30%);
+  color: hsl(320, 25%, 51%);
+  background-color: hsl(190, 40%, 30%);
+  color: hsl(190, 60%, 51%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleDesk {
-  background-color: hsl(320, 25%, 62%);
-  color: hsl(320, 25%, 27%);
-  border: 4px solid hsl(320, 25%, 62%);
+.nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(6) {
+  background-color: hsl(320, 25%, 44%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleDesk b {
-  color: hsl(320, 25%, 20%);
+.nightMode .interfaceContainer .helpDeskConsole main header section:nth-child(6) button {
+  background-color: hsl(190, 60%, 58%);
+  color: hsl(190, 60%, 30%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleDesk hr {
-  border: 1px solid hsl(320, 25%, 20%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleDesk {
+  background-color: hsl(320, 25%, 72%);
+  color: hsl(320, 25%, 37%);
+  border: 4px solid hsl(320, 25%, 72%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleDesk::-webkit-scrollbar-button {
-  background-color: hsl(320, 25%, 20%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleDesk b {
+  color: hsl(320, 25%, 30%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleDesk::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 25%, 90%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleDesk hr {
+  border: 1px solid hsl(320, 25%, 30%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar {
-  background-color: hsl(320, 25%, 34%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
+  background-color: hsl(320, 25%, 30%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarTabs button {
-  background-color: hsl(320, 25%, 55%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
+  background-color: hsl(320, 25%, 100%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarTitle {
-  color: hsl(320, 25%, 76%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar {
+  background-color: hsl(320, 25%, 44%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
-  background-color: hsl(320, 25%, 48%);
-  border: 4px solid hsl(320, 25%, 48%);
-  color: hsl(320, 25%, 69%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
+  background-color: hsl(320, 25%, 65%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
-  color: hsl(320, 25%, 90%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  color: hsl(320, 25%, 86%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent hr {
-  border: 1px solid hsl(320, 25%, 20%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
+  background-color: hsl(320, 25%, 58%);
+  border: 4px solid hsl(320, 25%, 58%);
+  color: hsl(320, 25%, 79%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
-  background-color: hsl(320, 25%, 34%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
+  color: hsl(320, 25%, 100%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 25%, 69%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent hr {
+  border: 1px solid hsl(320, 25%, 30%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
-  background-color: hsl(30, 60%, 41%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
+  background-color: hsl(320, 25%, 44%);
 }
-.nightMode .interfaceContainer .helpDeskConsole main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
-  color: hsl(30, 60%, 90%);
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
+  background-color: hsl(320, 25%, 79%);
+}
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
+  background-color: hsl(190, 60%, 51%);
+}
+.nightMode .interfaceContainer .helpDeskConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
+  color: hsl(190, 60%, 100%);
 }
 
 .dayMode {
   transition: background 1s, color 1s;
 }
 .dayMode #userHeader {
-  background: hsl(20, 10%, 48%);
+  background: hsl(30, 10%, 58%);
   box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
 }
 .dayMode #userHeader #accountConsole div {
-  background-color: hsl(20, 10%, 34%);
+  background-color: hsl(30, 10%, 44%);
 }
 .dayMode #userHeader #userName {
-  color: hsl(20, 10%, 76%);
+  color: hsl(30, 10%, 86%);
 }
 .dayMode #userHeader #userName:hover {
   color: white;
-  text-shadow: 0 0 3px hsl(20, 10%, 20%);
+  text-shadow: 0 0 3px hsl(30, 10%, 30%);
 }
 .dayMode #userHeader #userID {
-  color: hsl(20, 10%, 20%);
+  color: hsl(30, 10%, 30%);
 }
 .dayMode #userHeader #userID span:hover {
-  color: hsl(20, 10%, 83%);
-  text-shadow: 0 0 2px hsl(20, 10%, 20%);
+  color: hsl(30, 10%, 93%);
+  text-shadow: 0 0 2px hsl(30, 10%, 30%);
 }
 .dayMode #userHeader #userClock {
-  background-color: hsl(20, 10%, 20%);
+  background-color: hsl(30, 10%, 30%);
 }
 .dayMode #navCrop #navPanel {
-  background: hsl(320, 35%, 69%);
+  background: hsl(320, 35%, 79%);
 }
 .dayMode #navCrop #navButton {
-  background-color: hsl(320, 35%, 34%);
+  background-color: hsl(320, 35%, 44%);
 }
 .dayMode #navCrop #navButton:hover {
-  background-color: hsl(320, 35%, 41%);
+  background-color: hsl(320, 35%, 51%);
 }
 .dayMode #navCrop #navPage {
-  background-color: hsl(320, 35%, 41%);
-  color: hsl(320, 35%, 83%);
+  background-color: hsl(320, 35%, 51%);
+  color: hsl(320, 35%, 93%);
 }
 .dayMode #navCrop #navBody ul {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(320, 35%, 58%);
 }
 .dayMode #navCrop #navBody ul li {
-  color: hsl(320, 35%, 76%);
-  background-color: hsl(320, 35%, 41%);
+  color: hsl(320, 35%, 86%);
+  background-color: hsl(320, 35%, 51%);
 }
 .dayMode #navCrop #navBody ul li:first-child {
-  background-color: hsl(320, 35%, 34%);
-  color: hsl(320, 35%, 76%);
+  background-color: hsl(320, 35%, 44%);
+  color: hsl(320, 35%, 86%);
 }
 .dayMode #navCrop #navBody::-webkit-scrollbar {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(320, 35%, 65%);
 }
 .dayMode #navCrop #navBody::-webkit-scrollbar-button {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(320, 35%, 58%);
 }
 .dayMode #navCrop #navBody::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 35%, 41%);
+  background-color: hsl(320, 35%, 51%);
 }
 .dayMode #userDash {
-  background: hsl(20, 10%, 90%);
+  background: hsl(30, 10%, 100%);
   box-shadow: -2px 0 4px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #userDashboard {
-  background-color: hsl(20, 10%, 76%);
+  background-color: hsl(30, 10%, 86%);
 }
 .dayMode #userDashboard p {
-  color: hsl(20, 10%, 48%);
+  color: hsl(30, 10%, 58%);
 }
 .dayMode #userConsole {
-  background-color: hsl(20, 15%, 34%);
+  background-color: hsl(30, 15%, 44%);
   box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.492);
 }
 .dayMode #userConsole #userConsoleDesk {
-  background-color: hsl(20, 15%, 83%);
-  box-shadow: inset 0 0 0 5px hsl(20, 15%, 83%);
+  background-color: hsl(30, 15%, 93%);
+  box-shadow: inset 0 0 0 5px hsl(30, 15%, 93%);
 }
 .dayMode #userConsole #userConsoleHead {
-  background-color: hsl(20, 10%, 55%);
+  background-color: hsl(30, 10%, 65%);
 }
 .dayMode #userConsole #userConsoleHead #userConsoleTitle {
-  color: hsl(20, 10%, 41%);
+  color: hsl(30, 10%, 51%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject {
-  background-color: hsl(20, 10%, 20%);
+  background-color: hsl(30, 10%, 30%);
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.492);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject span:nth-child(1) {
-  color: hsl(20, 10%, 55%);
+  color: hsl(30, 10%, 65%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabObject span:nth-child(2) {
-  color: hsl(20, 10%, 76%);
+  color: hsl(30, 10%, 86%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive {
-  background-color: hsl(20, 15%, 34%);
+  background-color: hsl(30, 15%, 44%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive span:nth-child(1) {
-  color: hsl(20, 15%, 69%);
+  color: hsl(30, 15%, 79%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(2) .userConsoleTabActive span:nth-child(2) {
-  color: hsl(20, 15%, 90%);
+  color: hsl(30, 15%, 100%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(3) {
-  background-color: hsl(20, 10%, 41%);
+  background-color: hsl(30, 10%, 51%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(4) {
-  background-color: hsl(20, 10%, 41%);
+  background-color: hsl(30, 10%, 51%);
 }
 .dayMode #userConsole #userConsoleHead div:nth-child(4) span {
-  background-color: hsl(30, 60%, 62%);
+  background-color: hsl(190, 60%, 72%);
 }
 .dayMode #userConsole #userConsoleSidebar {
-  background-color: hsl(20, 15%, 48%);
+  background-color: hsl(30, 15%, 58%);
 }
 .dayMode #userConsole #userConsoleSidebar div {
-  color: hsl(20, 15%, 27%);
-  background-color: hsl(20, 15%, 76%);
+  color: hsl(30, 15%, 37%);
+  background-color: hsl(30, 15%, 86%);
 }
 .dayMode #userConsole #userConsoleSidebar div:first-child {
-  background-color: hsl(20, 15%, 76%);
+  background-color: hsl(30, 15%, 86%);
 }
 .dayMode #userConsole #userConsoleSidebar::-webkit-scrollbar {
   background-color: tu4;
 }
 .dayMode #userConsole #userConsoleSidebar::-webkit-scrollbar-thumb {
-  background-color: hsl(20, 15%, 27%);
-  border-color: hsl(20, 15%, 48%);
+  background-color: hsl(30, 15%, 37%);
+  border-color: hsl(30, 15%, 58%);
 }
 .dayMode #sidebar {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(320, 25%, 44%);
 }
 .dayMode #sidebar #toolkit {
-  background-color: hsl(320, 25%, 83%);
+  background-color: hsl(320, 25%, 93%);
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #sidebar #toolkit #toolkitHead {
-  background-color: hsl(320, 25%, 76%);
+  background-color: hsl(320, 25%, 86%);
 }
 .dayMode #sidebar #toolkit #toolkitHead span {
-  background-color: hsl(320, 25%, 41%);
+  background-color: hsl(320, 25%, 51%);
 }
 .dayMode #sidebar #toolkit #toolkitHead span:hover {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(320, 35%, 58%);
 }
 .dayMode #sidebar #toolkit #toolkitHead .openTab {
-  background-color: hsl(320, 25%, 55%);
+  background-color: hsl(320, 25%, 65%);
 }
 .dayMode #sidebar #toolkit #toolkitHead .openTab:hover {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(320, 35%, 65%);
 }
 .dayMode #sidebar #toolkit #toolkitTitle {
-  background-color: hsl(320, 25%, 55%);
+  background-color: hsl(320, 25%, 65%);
 }
 .dayMode #sidebar #toolkit #toolkitTitle input {
-  color: hsl(320, 35%, 41%);
-  background-color: hsl(320, 35%, 83%);
+  color: hsl(320, 35%, 51%);
+  background-color: hsl(320, 35%, 93%);
 }
 .dayMode #sidebar #toolkit #toolkitProgress {
-  background-color: hsl(320, 25%, 41%);
+  background-color: hsl(320, 25%, 51%);
 }
 .dayMode #sidebar #toolkit #toolkitProgress #toolkitProgressBar {
-  background-color: hsl(30, 60%, 69%);
+  background-color: hsl(190, 60%, 79%);
 }
 .dayMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar {
-  background-color: hsl(320, 35%, 55%);
+  background-color: hsl(320, 35%, 65%);
 }
 .dayMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar-button {
-  background-color: hsl(320, 35%, 48%);
+  background-color: hsl(320, 35%, 58%);
 }
 .dayMode #sidebar #toolkit #toolkitBody::-webkit-scrollbar-thumb {
-  background-color: hsl(320, 35%, 90%);
+  background-color: hsl(320, 35%, 100%);
 }
 .dayMode #breakTimeFooter {
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #breakTimeFooter #workWeekTimer {
-  background-color: hsl(320, 25%, 90%);
+  background-color: hsl(320, 25%, 100%);
 }
 .dayMode #breakTimeFooter #workWeekTimer span {
-  background-color: hsl(320, 35%, 62%);
+  background-color: hsl(320, 35%, 72%);
 }
 .dayMode #breakTimeFooter #TKtoggle {
-  background-color: hsl(320, 25%, 76%);
+  background-color: hsl(320, 25%, 86%);
 }
 .dayMode #breakTimeFooter #TKtoggle .TKtoggleOpen {
-  background: hsl(320, 35%, 48%);
+  background: hsl(320, 35%, 58%);
 }
 .dayMode #breakTimeFooter #TKtoggle .TKtoggleOpen:hover {
-  background: hsl(320, 35%, 62%);
+  background: hsl(320, 35%, 72%);
 }
 .dayMode #breakTimeFooter #TKtoggle .TKtoggleClosed {
-  background: hsl(320, 25%, 34%);
+  background: hsl(320, 25%, 44%);
 }
 .dayMode #breakTimeFooter #TKtoggle .TKtoggleClosed:hover {
-  background: hsl(320, 25%, 48%);
+  background: hsl(320, 25%, 58%);
 }
 .dayMode #breakTimeFooter #breakTimeHeader {
-  color: hsl(320, 25%, 55%);
+  color: hsl(320, 25%, 65%);
 }
 .dayMode #breakTimeFooter #helpDeskAnchor {
-  background-color: hsl(320, 25%, 83%);
+  background-color: hsl(320, 25%, 93%);
 }
 .dayMode #breakTimeFooter #helpDeskAnchor #helpDeskConsole #helpDeskChats {
-  background-color: hsl(30, 40%, 41%);
+  background-color: hsl(190, 40%, 51%);
 }
 .dayMode #breakTimeFooter #helpDeskAnchor #helpDeskConsole #helpDeskSidebar {
-  background-color: hsl(30, 40%, 62%);
+  background-color: hsl(190, 40%, 72%);
 }
 .dayMode #breakTimeFooter #helpDeskAnchor .helpDeskOpen {
-  background-color: hsl(30, 40%, 48%);
+  background-color: hsl(190, 40%, 58%);
   box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #breakTimeFooter #helpDeskAnchor .helpDeskOpenSB {
-  background-color: hsl(30, 40%, 48%);
+  background-color: hsl(190, 40%, 58%);
   box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.4);
 }
 .dayMode #breakTimeFooter #helpDeskAnchor .helpDeskClosed {
-  background-color: hsl(30, 60%, 41%);
+  background-color: hsl(190, 60%, 51%);
 }
 .dayMode #breakTimeFooter #helpDeskAnchor .helpDeskClosed:hover {
-  background-color: hsl(30, 60%, 55%);
+  background-color: hsl(190, 60%, 65%);
 }
 .dayMode #breakTimeFooter #breakTimeConsole {
-  background: hsl(320, 25%, 27%);
+  background: hsl(320, 25%, 37%);
 }
 .dayMode #breakTimeFooter #breakTimeConsole #breakTimeConsoleDesk {
-  background-color: hsl(320, 25%, 34%);
+  background-color: hsl(320, 25%, 44%);
 }
 .dayMode #breakTimeFooter #breakTimeConsole #breakTimeConsoleLog {
-  background-color: hsl(320, 35%, 20%);
+  background-color: hsl(320, 35%, 30%);
 }
 .dayMode .breakTimeOpen {
-  background: hsl(320, 35%, 55%);
+  background: hsl(320, 35%, 65%);
 }
 .dayMode .breakTimeClosed {
-  background: hsl(320, 25%, 34%);
+  background: hsl(320, 25%, 44%);
 }
 
 .interfaceContainer {
@@ -1223,17 +1296,37 @@ body {
   left: 0;
 }
 .interfaceContainer nav {
-  background-color: black;
-  display: block;
+  background-color: rgba(0, 0, 0, 0.28);
+  display: flex;
   position: fixed;
   top: 5px;
   right: 5px;
   height: 30px;
-  width: 300px;
+  width: 40vw;
   z-index: 12;
+  overflow-y: hidden;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+.interfaceContainer nav::-webkit-scrollbar {
+  display: none;
+}
+.interfaceContainer nav button {
+  height: 22px;
+  width: 150px;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.interfaceContainer nav button:first-child {
+  margin-left: 4px;
+}
+.interfaceContainer nav button:last-child {
+  margin-right: 4px;
 }
 .interfaceContainer main {
-  background-color: white;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -1243,9 +1336,10 @@ body {
   z-index: 0;
 }
 .interfaceContainer main .userHeader {
-  background-color: hsl(20, 10%, 41%);
+  background-color: hsl(30, 10%, 51%);
   top: 0;
   left: 0;
+  right: 0;
   width: 100vw;
   z-index: 10;
   position: absolute;
@@ -1262,12 +1356,12 @@ body {
   position: absolute;
   width: 100vw;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole {
   position: absolute;
   transition: left 1s;
   z-index: 11;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main {
   display: grid;
   height: calc(100vh - 105px);
   width: calc(100vw - 30px);
@@ -1278,22 +1372,22 @@ body {
   margin: 40px 15px 15px 15px;
   z-index: 7;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header {
   grid-area: header;
   position: relative;
   display: grid;
   margin: 4px 4px 0 4px;
   grid-template-rows: 16px 24px 30px;
   grid-template-columns: 36px auto 36px;
-  grid-template-areas: "consoleTitle consoleDateTime consoleDateTime" "consoleAchievement consoleAchievement consoleAchievement" "consoleButton consoleTabs consoleClose";
+  grid-template-areas: "oldConsoleTitle oldConsoleDateTime oldConsoleDateTime" "oldConsoleAchievement oldConsoleAchievement oldConsoleAchievement" "oldConsoleButton oldConsoleTabs oldConsoleClose";
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section {
   height: 100%;
   width: 100%;
   border-radius: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(1) {
-  grid-area: consoleTitle;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(1) {
+  grid-area: oldConsoleTitle;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
@@ -1301,34 +1395,34 @@ body {
   font-size: 16px;
   padding-left: 2px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(2) {
-  grid-area: consoleDateTime;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(2) {
+  grid-area: oldConsoleDateTime;
   text-align: right;
   line-height: 16px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1.25px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(3) {
-  grid-area: consoleAchievement;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(3) {
+  grid-area: oldConsoleAchievement;
   width: calc(100% - 18px);
   height: 6px;
   margin: 4px;
   padding: 5px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(3) span {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(3) span {
   display: block;
   height: 6px;
   border-radius: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(4) {
-  grid-area: consoleButton;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(4) {
+  grid-area: oldConsoleButton;
   width: 30px;
   height: 30px;
   margin: 0 0 0 4px;
   position: absolute;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(4) button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(4) button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1337,8 +1431,8 @@ body {
   border: none;
   border-radius: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(5) {
-  grid-area: consoleTabs;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(5) {
+  grid-area: oldConsoleTabs;
   height: 30px;
   width: calc(100% - 6px);
   margin-left: 2px;
@@ -1346,7 +1440,7 @@ body {
   overflow-y: hidden;
   overflow-x: auto;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(5) button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(5) button {
   height: 22px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1358,35 +1452,40 @@ body {
   width: -moz-max-content;
   width: max-content;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(5) button:nth-child(1) {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(5) button:nth-child(1) {
   margin-left: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(5)::-webkit-scrollbar {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(5)::-webkit-scrollbar {
   display: none;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(6) {
-  grid-area: consoleClose;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(6) {
+  grid-area: oldConsoleClose;
   width: 30px;
   height: 30px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main header section:nth-child(6) button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main header section:nth-child(6) button {
   width: 22px;
   height: 22px;
   margin: 4px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div {
   grid-area: body;
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div section {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div section {
   position: absolute;
   border-radius: 4px;
   transition: width 1s;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleDesk {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleDesk {
   top: 4px;
   right: 4px;
   overflow-x: hidden;
@@ -1395,28 +1494,28 @@ body {
   transition: width 1s, height 1s;
   font-size: 16px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleDesk b {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleDesk b {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleDesk i {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleDesk i {
   font-style: italic;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleDesk::-webkit-scrollbar {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleDesk::-webkit-scrollbar {
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleDesk::-webkit-scrollbar-button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
   border-radius: 4px;
   height: 12px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleDesk::-webkit-scrollbar-thumb {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar {
   bottom: 8px;
   left: 8px;
   position: absolute;
@@ -1425,20 +1524,20 @@ body {
   display: grid;
   grid-template-columns: 30px calc(100% - 30px);
   grid-template-rows: 30px calc(100% - 30px);
-  grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
+  grid-template-areas: "oldConsoleSidebarTabs oldConsoleSidebarTitle" "oldConsole SidebarTabs oldConsoleSidebarBody";
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarTabs {
-  grid-area: consoleSidebarTabs;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs {
+  grid-area: oldConsoleSidebarTabs;
   overflow-x: hidden;
   overflow-y: auto;
   border-radius: 4px;
   height: 100%;
   width: 28px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarTabs::-webkit-scrollbar {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs::-webkit-scrollbar {
   display: none;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarTabs button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1448,11 +1547,11 @@ body {
   margin: 4px 0 0 4px;
   border-radius: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarTabs button:last-child {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button:last-child {
   margin-bottom: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarTitle {
-  grid-area: consoleSidebarTitle;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  grid-area: oldConsoleSidebarTitle;
   line-height: 16px;
   margin: 12px 4px 0 4px;
   font-size: 16px;
@@ -1465,8 +1564,8 @@ body {
   top: 0;
   right: 0;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody {
-  grid-area: consoleSidebarBody;
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody {
+  grid-area: oldConsoleSidebarBody;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1476,7 +1575,7 @@ body {
   border-radius: 4px;
   height: calc(100% - 34px);
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
   width: calc(100% - 16px);
   transition: height 1s, width 1s;
   overflow-x: hidden;
@@ -1488,35 +1587,35 @@ body {
   transition: width 1s, height 1s;
   font-size: 14px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent i {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent i {
   font-style: italic;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar {
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
   border-radius: 4px;
   height: 12px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 4px;
   transition: height 1s, width 1s;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1531,23 +1630,23 @@ body {
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main .consoleHelpOpen .consoleSidebarHelp {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main .oldConsoleHelpOpen .oldConsoleSidebarHelp {
   width: calc(100% - 8px);
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main .consoleHelpClosed .consoleSidebarContent {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main .oldConsoleHelpClosed .oldConsoleSidebarContent {
   height: calc(100% - 46px);
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console main .consoleHelpClosed .consoleSidebarHelp {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole main .oldConsoleHelpClosed .oldConsoleSidebarHelp {
   height: 26px;
   width: 26px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console .consoleSidebarOpen header section:nth-child(4) button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole .oldConsoleSidebarOpen header section:nth-child(4) button {
   height: 18px;
   width: 18px;
   left: 6px;
   top: 6px;
 }
-.interfaceContainer main .userHeader section:nth-child(5) .console .consoleSidebarClosed header section:nth-child(4) button {
+.interfaceContainer main .userHeader section:nth-child(5) .oldConsole .oldConsoleSidebarClosed header section:nth-child(4) button {
   height: 22px;
   width: 22px;
   left: 4px;
@@ -1566,11 +1665,11 @@ body {
 }
 .interfaceContainer main .userHeader table:nth-child(4) {
   grid-area: userClock;
-  background-color: hsl(20, 10%, 20%);
+  background-color: hsl(30, 10%, 30%);
 }
 .interfaceContainer main .mainscreen {
   z-index: 1;
-  background-color: hsl(20, 15%, 41%);
+  background-color: hsl(30, 15%, 51%);
   top: 50px;
   left: 0;
   height: calc(100vh - 50px);
@@ -1578,7 +1677,7 @@ body {
 }
 .interfaceContainer main .mainscreen .secondaryInterface {
   height: calc(100vh - 50px);
-  background-color: hsl(320, 25%, 20%);
+  background-color: hsl(320, 25%, 30%);
   box-shadow: inset -4px 0 8px rgba(0, 0, 0, 0.425);
   position: absolute;
   bottom: 0;
@@ -1586,7 +1685,7 @@ body {
   z-index: 2;
   transition: width 1s;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main {
   display: grid;
   height: calc(100% - 30px);
   width: calc(100% - 30px);
@@ -1597,22 +1696,22 @@ body {
   margin: 15px;
   z-index: 7;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header {
   grid-area: header;
   position: relative;
   display: grid;
   margin: 4px 4px 0 4px;
   grid-template-rows: 16px 24px 30px;
   grid-template-columns: 36px auto 36px;
-  grid-template-areas: "consoleTitle consoleDateTime consoleDateTime" "consoleAchievement consoleAchievement consoleAchievement" "consoleButton consoleTabs consoleClose";
+  grid-template-areas: "oldConsoleTitle oldConsoleDateTime oldConsoleDateTime" "oldConsoleAchievement oldConsoleAchievement oldConsoleAchievement" "oldConsoleButton oldConsoleTabs oldConsoleClose";
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section {
   height: 100%;
   width: 100%;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(1) {
-  grid-area: consoleTitle;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(1) {
+  grid-area: oldConsoleTitle;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
@@ -1620,34 +1719,34 @@ body {
   font-size: 16px;
   padding-left: 2px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(2) {
-  grid-area: consoleDateTime;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(2) {
+  grid-area: oldConsoleDateTime;
   text-align: right;
   line-height: 16px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1.25px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(3) {
-  grid-area: consoleAchievement;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(3) {
+  grid-area: oldConsoleAchievement;
   width: calc(100% - 18px);
   height: 6px;
   margin: 4px;
   padding: 5px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(3) span {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(3) span {
   display: block;
   height: 6px;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(4) {
-  grid-area: consoleButton;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(4) {
+  grid-area: oldConsoleButton;
   width: 30px;
   height: 30px;
   margin: 0 0 0 4px;
   position: absolute;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(4) button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(4) button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1656,8 +1755,8 @@ body {
   border: none;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(5) {
-  grid-area: consoleTabs;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(5) {
+  grid-area: oldConsoleTabs;
   height: 30px;
   width: calc(100% - 6px);
   margin-left: 2px;
@@ -1665,7 +1764,7 @@ body {
   overflow-y: hidden;
   overflow-x: auto;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(5) button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(5) button {
   height: 22px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1677,35 +1776,39 @@ body {
   width: -moz-max-content;
   width: max-content;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(5) button:nth-child(1) {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(5) button:nth-child(1) {
   margin-left: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(5)::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(5)::-webkit-scrollbar {
   display: none;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(6) {
-  grid-area: consoleClose;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(6) {
+  grid-area: oldConsoleClose;
   width: 30px;
   height: 30px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main header section:nth-child(6) button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main header section:nth-child(6) button {
   width: 22px;
   height: 22px;
   margin: 4px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div {
   grid-area: body;
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div section {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div section {
   position: absolute;
   border-radius: 4px;
   transition: width 1s;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleDesk {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk {
   top: 4px;
   right: 4px;
   overflow-x: hidden;
@@ -1714,28 +1817,67 @@ body {
   transition: width 1s, height 1s;
   font-size: 16px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleDesk b {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk b {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleDesk i {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk i {
   font-style: italic;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleDesk::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk::-webkit-scrollbar {
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleDesk::-webkit-scrollbar-button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
   border-radius: 4px;
   height: 12px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleDesk::-webkit-scrollbar-thumb {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk .helpDeskChat {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: hsl(320, 35%, 58%);
+  color: white;
+}
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: hsl(110, 35%, 72%);
+  margin: 4px;
+  transition: height 0.75s, width 0.75s;
+}
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk .helpDeskChat .helpDeskChatContent header {
+  background-color: hsl(110, 35%, 44%);
+  border-radius: 4px;
+  margin: 4px;
+  top: 0;
+  left: 0;
+}
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk .helpDeskChat .helpDeskChatContent section {
+  background-color: hsl(110, 35%, 58%);
+  margin: 0 4px 4px 4px;
+  bottom: 0;
+  right: 0;
+}
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+  position: absolute;
+  background-color: hsl(320, 35%, 44%);
+  bottom: 0;
+  right: 0;
+  margin: 4px;
+  transition: height 0.75s, width 0.75s;
+}
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar {
   bottom: 8px;
   left: 8px;
   position: absolute;
@@ -1744,20 +1886,20 @@ body {
   display: grid;
   grid-template-columns: 30px calc(100% - 30px);
   grid-template-rows: 30px calc(100% - 30px);
-  grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
+  grid-template-areas: "oldConsoleSidebarTabs oldConsoleSidebarTitle" "oldConsole SidebarTabs oldConsoleSidebarBody";
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarTabs {
-  grid-area: consoleSidebarTabs;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs {
+  grid-area: oldConsoleSidebarTabs;
   overflow-x: hidden;
   overflow-y: auto;
   border-radius: 4px;
   height: 100%;
   width: 28px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarTabs::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs::-webkit-scrollbar {
   display: none;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarTabs button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1767,11 +1909,11 @@ body {
   margin: 4px 0 0 4px;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarTabs button:last-child {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button:last-child {
   margin-bottom: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarTitle {
-  grid-area: consoleSidebarTitle;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  grid-area: oldConsoleSidebarTitle;
   line-height: 16px;
   margin: 12px 4px 0 4px;
   font-size: 16px;
@@ -1784,8 +1926,8 @@ body {
   top: 0;
   right: 0;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody {
-  grid-area: consoleSidebarBody;
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody {
+  grid-area: oldConsoleSidebarBody;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1795,7 +1937,7 @@ body {
   border-radius: 4px;
   height: calc(100% - 34px);
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
   width: calc(100% - 16px);
   transition: height 1s, width 1s;
   overflow-x: hidden;
@@ -1807,35 +1949,35 @@ body {
   transition: width 1s, height 1s;
   font-size: 14px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent i {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent i {
   font-style: italic;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar {
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
   border-radius: 4px;
   height: 12px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 4px;
   transition: height 1s, width 1s;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1850,23 +1992,23 @@ body {
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main .consoleHelpOpen .consoleSidebarHelp {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main .oldConsoleHelpOpen .oldConsoleSidebarHelp {
   width: calc(100% - 8px);
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main .consoleHelpClosed .consoleSidebarContent {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main .oldConsoleHelpClosed .oldConsoleSidebarContent {
   height: calc(100% - 46px);
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console main .consoleHelpClosed .consoleSidebarHelp {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole main .oldConsoleHelpClosed .oldConsoleSidebarHelp {
   height: 26px;
   width: 26px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console .consoleSidebarOpen header section:nth-child(4) button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole .oldConsoleSidebarOpen header section:nth-child(4) button {
   height: 18px;
   width: 18px;
   left: 6px;
   top: 6px;
 }
-.interfaceContainer main .mainscreen .secondaryInterface .console .consoleSidebarClosed header section:nth-child(4) button {
+.interfaceContainer main .mainscreen .secondaryInterface .oldConsole .oldConsoleSidebarClosed header section:nth-child(4) button {
   height: 22px;
   width: 22px;
   left: 4px;
@@ -1874,16 +2016,17 @@ body {
 }
 .interfaceContainer main .mainscreen .primaryInterface {
   height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 4;
   transition: width 1s;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole {
   transition: top 1s, left 1s, bottom 1s, right 1s;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main {
   position: absolute;
   display: grid;
   height: calc(100% - 30px);
@@ -1895,22 +2038,22 @@ body {
   margin: 15px;
   z-index: 7;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header {
   grid-area: header;
   position: relative;
   display: grid;
   margin: 4px 4px 0 4px;
   grid-template-rows: 16px 24px 30px;
   grid-template-columns: 36px auto 36px;
-  grid-template-areas: "consoleTitle consoleDateTime consoleDateTime" "consoleAchievement consoleAchievement consoleAchievement" "consoleButton consoleTabs consoleClose";
+  grid-template-areas: "oldConsoleTitle oldConsoleDateTime oldConsoleDateTime" "oldConsoleAchievement oldConsoleAchievement oldConsoleAchievement" "oldConsoleButton oldConsoleTabs oldConsoleClose";
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section {
   height: 100%;
   width: 100%;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(1) {
-  grid-area: consoleTitle;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(1) {
+  grid-area: oldConsoleTitle;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
@@ -1918,34 +2061,34 @@ body {
   font-size: 16px;
   padding-left: 2px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(2) {
-  grid-area: consoleDateTime;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(2) {
+  grid-area: oldConsoleDateTime;
   text-align: right;
   line-height: 16px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1.25px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(3) {
-  grid-area: consoleAchievement;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(3) {
+  grid-area: oldConsoleAchievement;
   width: calc(100% - 18px);
   height: 6px;
   margin: 4px;
   padding: 5px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(3) span {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(3) span {
   display: block;
   height: 6px;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(4) {
-  grid-area: consoleButton;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(4) {
+  grid-area: oldConsoleButton;
   width: 30px;
   height: 30px;
   margin: 0 0 0 4px;
   position: absolute;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(4) button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(4) button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1954,8 +2097,8 @@ body {
   border: none;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(5) {
-  grid-area: consoleTabs;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(5) {
+  grid-area: oldConsoleTabs;
   height: 30px;
   width: calc(100% - 6px);
   margin-left: 2px;
@@ -1963,7 +2106,7 @@ body {
   overflow-y: hidden;
   overflow-x: auto;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(5) button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(5) button {
   height: 22px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1975,38 +2118,42 @@ body {
   width: -moz-max-content;
   width: max-content;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(5) button:nth-child(1) {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(5) button:nth-child(1) {
   margin-left: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(5) button:last-child {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(5) button:last-child {
   margin-right: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(5)::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(5)::-webkit-scrollbar {
   display: none;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(6) {
-  grid-area: consoleClose;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(6) {
+  grid-area: oldConsoleClose;
   width: 30px;
   height: 30px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main header section:nth-child(6) button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main header section:nth-child(6) button {
   width: 22px;
   height: 22px;
   margin: 4px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div {
   grid-area: body;
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div section {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div section {
   position: absolute;
   border-radius: 4px;
   transition: width 1s;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleDesk {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleDesk {
   top: 4px;
   right: 4px;
   overflow-x: hidden;
@@ -2015,28 +2162,28 @@ body {
   transition: width 1s, height 1s;
   font-size: 16px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleDesk b {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleDesk b {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleDesk i {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleDesk i {
   font-style: italic;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleDesk::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleDesk::-webkit-scrollbar {
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleDesk::-webkit-scrollbar-button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleDesk::-webkit-scrollbar-button {
   border-radius: 4px;
   height: 12px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleDesk::-webkit-scrollbar-thumb {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleDesk::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar {
   bottom: 8px;
   left: 8px;
   position: absolute;
@@ -2045,20 +2192,20 @@ body {
   display: grid;
   grid-template-columns: 30px calc(100% - 30px);
   grid-template-rows: 30px calc(100% - 30px);
-  grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
+  grid-template-areas: "oldConsoleSidebarTabs oldConsoleSidebarTitle" "oldConsole SidebarTabs oldConsoleSidebarBody";
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarTabs {
-  grid-area: consoleSidebarTabs;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs {
+  grid-area: oldConsoleSidebarTabs;
   overflow-x: hidden;
   overflow-y: auto;
   border-radius: 4px;
   height: 100%;
   width: 28px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarTabs::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs::-webkit-scrollbar {
   display: none;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarTabs button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2068,11 +2215,11 @@ body {
   margin: 4px 0 0 4px;
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarTabs button:last-child {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTabs button:last-child {
   margin-bottom: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarTitle {
-  grid-area: consoleSidebarTitle;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarTitle {
+  grid-area: oldConsoleSidebarTitle;
   line-height: 16px;
   margin: 12px 4px 0 4px;
   font-size: 16px;
@@ -2085,8 +2232,8 @@ body {
   top: 0;
   right: 0;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody {
-  grid-area: consoleSidebarBody;
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody {
+  grid-area: oldConsoleSidebarBody;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2096,7 +2243,7 @@ body {
   border-radius: 4px;
   height: calc(100% - 34px);
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent {
   width: calc(100% - 16px);
   transition: height 1s, width 1s;
   overflow-x: hidden;
@@ -2108,35 +2255,35 @@ body {
   transition: width 1s, height 1s;
   font-size: 14px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent b {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent b {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent i {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent i {
   font-style: italic;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar {
   border-radius: 4px;
   border-radius: 4px;
   width: 10px;
   width: 12px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-button {
   border-radius: 4px;
   height: 12px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarContent::-webkit-scrollbar-thumb {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarContent::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 4px;
   transition: height 1s, width 1s;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main div .consoleSidebar .consoleSidebarBody .consoleSidebarHelp section button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main div .oldConsoleSidebar .oldConsoleSidebarBody .oldConsoleSidebarHelp section button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2151,150 +2298,155 @@ body {
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main .consoleHelpOpen .consoleSidebarHelp {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main .oldConsoleHelpOpen .oldConsoleSidebarHelp {
   width: calc(100% - 8px);
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main .consoleHelpClosed .consoleSidebarContent {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main .oldConsoleHelpClosed .oldConsoleSidebarContent {
   height: calc(100% - 46px);
 }
-.interfaceContainer main .mainscreen .primaryInterface .console main .consoleHelpClosed .consoleSidebarHelp {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole main .oldConsoleHelpClosed .oldConsoleSidebarHelp {
   height: 26px;
   width: 26px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console .consoleSidebarOpen header section:nth-child(4) button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole .oldConsoleSidebarOpen header section:nth-child(4) button {
   height: 18px;
   width: 18px;
   left: 6px;
   top: 6px;
 }
-.interfaceContainer main .mainscreen .primaryInterface .console .consoleSidebarClosed header section:nth-child(4) button {
+.interfaceContainer main .mainscreen .primaryInterface .oldConsole .oldConsoleSidebarClosed header section:nth-child(4) button {
   height: 22px;
   width: 22px;
   left: 4px;
   top: 4px;
 }
-.interfaceContainer.primaryInterfaceInactive .socialConsole {
-  right: -150vw;
+.interfaceContainer main .mainscreen .console {
+  position: absolute;
+  display: grid;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  background-color: white;
+  top: 15px;
+  left: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+  grid-template-rows: 20px 20px 50px 15px auto 15px;
+  grid-template-columns: 15px 40px 1fr 1fr 40px 15px;
+  grid-template-areas: "progress progress progress progress progress progress" "gapL consoleTitle consoleTitle consoleTime consoleTime gapR" "gapL consoleSidebarBtn consoleTabs consoleTabs consoleHelpBtn gapR" "gapL gapT gapT gapT gapT gapR" "gapL consoleSidebarTabs consoleSidebar consoleHelp consoleHelpTabs gapR" "gapL gapB gapB gapB gapB gapR";
 }
-.interfaceContainer.primaryInterfaceInactive .assessmentConsole {
-  top: -150vh;
+.interfaceContainer main .mainscreen .console div {
+  display: grid;
+  width: 100%;
+  height: 100%;
 }
-.interfaceContainer.primaryInterfaceInactive .scholarConsole {
-  top: -150vh;
+.interfaceContainer main .mainscreen .console div:nth-child(1) {
+  grid-area: progress;
+  background-color: red;
 }
-.interfaceContainer.primaryInterfaceInactive .adminConsole {
-  bottom: -150vh;
+.interfaceContainer main .mainscreen .console div:nth-child(2) {
+  grid-area: consoleTitle;
+  background-color: orange;
 }
-.interfaceContainer.primaryInterfaceSocial .socialConsole {
-  right: 0;
+.interfaceContainer main .mainscreen .console div:nth-child(3) {
+  grid-area: consoleTime;
+  background-color: yellow;
 }
-.interfaceContainer.primaryInterfaceSocial .assessmentConsole {
-  top: -150vh;
+.interfaceContainer main .mainscreen .console div:nth-child(4) {
+  grid-area: consoleTabs;
+  background-color: green;
 }
-.interfaceContainer.primaryInterfaceSocial .scholarConsole {
-  top: -150vh;
+.interfaceContainer main .mainscreen .console div:nth-child(5) {
+  grid-area: consoleSidebar;
+  background-color: blue;
 }
-.interfaceContainer.primaryInterfaceSocial .adminConsole {
-  bottom: -150vh;
+.interfaceContainer main .mainscreen .console div:nth-child(6) {
+  grid-area: consoleSidebarTabs;
+  background-color: lightblue;
 }
-.interfaceContainer.primaryInterfaceAssessment .socialConsole {
-  right: -150vw;
+.interfaceContainer main .mainscreen .console div:nth-child(7) {
+  grid-area: consoleHelp;
+  background-color: purple;
 }
-.interfaceContainer.primaryInterfaceAssessment .assessmentConsole {
-  top: 0;
+.interfaceContainer main .mainscreen .console div:nth-child(8) {
+  grid-area: consoleHelpTabs;
+  background-color: indigo;
 }
-.interfaceContainer.primaryInterfaceAssessment .scholarConsole {
-  top: -150vh;
-}
-.interfaceContainer.primaryInterfaceAssessment .adminConsole {
-  bottom: -150vh;
-}
-.interfaceContainer.primaryInterfaceScholar .socialConsole {
-  right: -150vw;
-}
-.interfaceContainer.primaryInterfaceScholar .assessmentConsole {
-  top: -150vh;
-}
-.interfaceContainer.primaryInterfaceScholar .scholarConsole {
-  top: 0;
-}
-.interfaceContainer.primaryInterfaceScholar .adminConsole {
-  bottom: -150vh;
-}
-.interfaceContainer.primaryInterfaceAdmin .socialConsole {
-  right: -150vw;
-}
-.interfaceContainer.primaryInterfaceAdmin .assessmentConsole {
-  top: -150vh;
-}
-.interfaceContainer.primaryInterfaceAdmin .scholarConsole {
-  top: -150vh;
-}
-.interfaceContainer.primaryInterfaceAdmin .adminConsole {
-  bottom: 0;
-}
-.interfaceContainer.secondaryInterfaceClosed main main section:nth-child(1) {
-  width: 0;
-}
-.interfaceContainer.secondaryInterfaceClosed main main section:nth-child(2) {
-  width: 100vw;
-}
-.interfaceContainer.tertiaryInterfaceOpen main .userHeader {
-  height: 100vh;
-  transition: height 1s 1s;
-}
-.interfaceContainer.tertiaryInterfaceOpen main .userHeader section:nth-child(5) {
-  height: calc(100vh - 50px);
-  transition: height 1s 1s;
-}
-.interfaceContainer.tertiaryInterfaceOpen main .userHeader section:nth-child(5) .console {
-  transition: left 1s;
-}
-.interfaceContainer.tertiaryInterfaceClosed main .userHeader {
-  height: 50px;
-  transition: height 1s;
-}
-.interfaceContainer.tertiaryInterfaceClosed main .userHeader section:nth-child(5) {
-  transition: height 1s;
-  height: 0;
-}
-.interfaceContainer.tertiaryInterfaceClosed main .userHeader section:nth-child(5) .console {
-  transition: left 1s 1s;
+.interfaceContainer main .mainscreen .console div:nth-child(9) {
+  display: grid;
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: gray;
+  width: calc(100% - 20px);
+  height: calc(100% - 110px);
 }
 
 @media only screen and (min-width: 0px) {
   .userThumb {
     background: hsl(0, 70%, 60%);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleDesk {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(50% - 12px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleSidebar {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
     width: calc(100% - 16px);
     height: calc(50% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleDesk {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleSidebar {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
     width: calc(100% - 16px);
     height: calc(50% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleDesk {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(50% - 12px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleSidebar {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(100% - 8px);
+    height: calc(100% - 52px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(100% - 8px);
+    height: 40px;
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
     width: calc(100% - 16px);
     height: calc(50% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleDesk {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleSidebar {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(100% - 8px);
+    height: calc(100% - 52px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(100% - 8px);
+    height: 40px;
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(50% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(50% - 12px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(50% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleSidebar {
     width: calc(100% - 16px);
     height: calc(50% - 16px);
   }
@@ -2314,35 +2466,51 @@ body {
   .userThumb {
     background: hsl(30, 70%, 60%);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleDesk {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
     width: calc(100% - 328px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleSidebar {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
     width: 300px;
     height: calc(100% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleDesk {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleSidebar {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
     width: 300px;
     height: calc(100% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleDesk {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleDesk {
     width: calc(100% - 328px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleSidebar {
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleSidebar {
     width: 300px;
     height: calc(100% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleDesk {
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleSidebar {
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleSidebar {
     width: 300px;
     height: calc(100% - 16px);
   }
@@ -2351,106 +2519,105 @@ body {
   .userThumb {
     background: hsl(30, 70%, 30%);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleDesk {
-    width: calc(100% - 16px);
-    height: calc(25% - 12px);
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 328px);
+    height: calc(100% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleSidebar {
-    width: calc(100% - 16px);
-    height: calc(75% - 16px);
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleDesk {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleSidebar {
-    width: calc(100% - 16px);
-    height: calc(75% - 16px);
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
   }
-  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(1) {
-    width: 400px;
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
   }
-  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(2) {
-    width: calc(100vw - 400px);
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
   }
 }
 @media only screen and (min-width: 1200px) {
   .userThumb {
     background: hsl(102, 70%, 60%);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleDesk {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleSidebar {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
     width: 400px;
     height: calc(100% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleDesk {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
     width: calc(100% - 428px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleSidebar {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
     width: 400px;
     height: calc(100% - 16px);
   }
-  .interfaceContainer .consoleSidebarClosed div .consoleDesk {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(60% - 12px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(100% - 8px);
+    height: calc(100% - 52px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(100% - 8px);
+    height: 40px;
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(40% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
     width: calc(100% - 16px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .consoleSidebarClosed div .consoleSidebar {
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(100% - 8px);
+    height: calc(100% - 52px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(100% - 8px);
+    height: 40px;
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(40% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleSidebar {
     width: 400px;
     height: calc(100% - 16px);
   }
-  .interfaceContainer .consoleSidebarOpen div .consoleDesk {
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleDesk {
     width: calc(100% - 428px);
     height: calc(100% - 16px);
   }
-  .interfaceContainer .consoleSidebarOpen div .consoleSidebar {
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleSidebar {
     width: 400px;
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(1) {
-    width: 480px;
-  }
-  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(2) {
-    width: calc(100vw - 480px);
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .userThumb {
-    background: hsl(102, 70%, 30%);
-  }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleDesk {
-    width: calc(100% - 528px);
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer .primaryInterface .consoleSidebarOpen div .consoleSidebar {
-    width: 500px;
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleDesk {
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer .primaryInterface .consoleSidebarClosed div .consoleSidebar {
-    width: 500px;
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleDesk {
-    width: calc(100% - 328px);
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer .secondaryInterface .consoleSidebarOpen div .consoleSidebar {
-    width: 300px;
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleDesk {
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
-  }
-  .interfaceContainer .secondaryInterface .consoleSidebarClosed div .consoleSidebar {
-    width: 300px;
     height: calc(100% - 16px);
   }
   .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(1) {
@@ -2460,31 +2627,148 @@ body {
     width: calc(100vw - 600px);
   }
 }
+@media only screen and (min-width: 1500px) {
+  .userThumb {
+    background: hsl(102, 70%, 30%);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 528px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: 500px;
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: 500px;
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(50% - 12px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(50% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: calc(100% - 16px);
+    height: calc(40% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 528px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: 500px;
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .userHeader .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: 500px;
+    height: calc(100% - 16px);
+  }
+}
 @media only screen and (min-width: 1800px) {
   .userThumb {
     background: hsl(206, 70%, 60%);
   }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 328px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
+  }
   .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(1) {
-    width: 720px;
+    width: 900px;
   }
   .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(2) {
-    width: calc(100vw - 720px);
+    width: calc(100vw - 900px);
   }
 }
 @media only screen and (min-width: 2100px) {
   .userThumb {
     background: hsl(206, 70%, 30%);
   }
-  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(1) {
-    width: 840px;
-  }
-  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(2) {
-    width: calc(100vw - 840px);
-  }
 }
 @media only screen and (min-width: 2400px) {
   .userThumb {
     background: hsl(272, 70%, 60%);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    width: calc(100% - 328px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    width: 300px;
+    height: calc(100% - 16px);
+  }
+  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(1) {
+    width: 1200px;
+  }
+  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(2) {
+    width: calc(100vw - 1200px);
   }
 }
 @media only screen and (min-width: 2700px) {
@@ -2496,69 +2780,445 @@ body {
   .userThumb {
     background-color: rgb(0, 0, 0);
   }
-}
-@media only screen and (min-height: 10px) {
-  #temporaryHeightIndicator {
-    background-color: hsl(0, 70%, 50%);
+  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(1) {
+    width: 1500px;
   }
-  .consoleHelpOpen .consoleSidebarContent {
+  .interfaceContainer.secondaryInterfaceOpen main main section:nth-child(2) {
+    width: calc(100vw - 1500px);
+  }
+}
+@media only screen and (min-height: 0px) {
+  #temporaryHeightIndicator {
+    background: hsl(0, 70%, 60%);
+  }
+  .oldConsoleHelpOpen .oldConsoleSidebarContent {
     height: calc(30% - 14px);
   }
-  .consoleHelpOpen .consoleSidebarHelp {
+  .oldConsoleHelpOpen .oldConsoleSidebarHelp {
     height: calc(70% - 6px);
   }
 }
 @media only screen and (min-height: 300px) {
   #temporaryHeightIndicator {
-    background-color: hsl(30, 70%, 50%);
-  }
-  .consoleHelpOpen .consoleSidebarContent {
-    height: calc(40% - 14px);
-  }
-  .consoleHelpOpen .consoleSidebarHelp {
-    height: calc(60% - 6px);
+    background: hsl(0, 70%, 30%);
   }
 }
 @media only screen and (min-height: 600px) {
   #temporaryHeightIndicator {
-    background-color: hsl(60, 70%, 50%);
+    background: hsl(30, 70%, 60%);
   }
-  .consoleHelpOpen .consoleSidebarContent {
-    height: calc(50% - 14px);
+  .oldConsoleHelpOpen .oldConsoleSidebarContent {
+    height: calc(40% - 14px);
   }
-  .consoleHelpOpen .consoleSidebarHelp {
-    height: calc(50% - 6px);
+  .oldConsoleHelpOpen .oldConsoleSidebarHelp {
+    height: calc(60% - 6px);
   }
 }
 @media only screen and (min-height: 900px) {
   #temporaryHeightIndicator {
-    background-color: hsl(120, 70%, 50%);
+    background: hsl(30, 70%, 30%);
   }
-  .consoleHelpOpen .consoleSidebarContent {
-    height: calc(60% - 14px);
+  .oldConsoleHelpOpen .oldConsoleSidebarContent {
+    height: calc(50% - 14px);
   }
-  .consoleHelpOpen .consoleSidebarHelp {
-    height: calc(40% - 6px);
+  .oldConsoleHelpOpen .oldConsoleSidebarHelp {
+    height: calc(50% - 6px);
   }
 }
 @media only screen and (min-height: 1200px) {
   #temporaryHeightIndicator {
-    background-color: hsl(200, 70%, 50%);
+    background: hsl(102, 70%, 60%);
   }
 }
 @media only screen and (min-height: 1500px) {
   #temporaryHeightIndicator {
-    background-color: hsl(300, 70%, 30%);
+    background: hsl(102, 70%, 30%);
   }
-  .consoleHelpOpen .consoleSidebarContent {
-    height: calc(70% - 14px);
+  .oldConsoleHelpOpen .oldConsoleSidebarContent {
+    height: calc(60% - 14px);
   }
-  .consoleHelpOpen .consoleSidebarHelp {
-    height: calc(30% - 6px);
+  .oldConsoleHelpOpen .oldConsoleSidebarHelp {
+    height: calc(40% - 6px);
   }
 }
 @media only screen and (min-height: 1800px) {
   #temporaryHeightIndicator {
-    background-color: white;
+    background: hsl(206, 70%, 60%);
+  }
+}
+@media only screen and (min-height: 2100px) {
+  #temporaryHeightIndicator {
+    background: hsl(206, 70%, 30%);
+  }
+}
+@media only screen and (min-height: 2400px) {
+  #temporaryHeightIndicator {
+    background: hsl(272, 70%, 60%);
+  }
+}
+@media only screen and (min-height: 2700px) {
+  #temporaryHeightIndicator {
+    background: hsl(272, 70%, 30%);
+  }
+}
+@media only screen and (min-height: 3000px) {
+  #temporaryHeightIndicator {
+    background-color: rgb(0, 0, 0);
+  }
+}
+@media only screen and (min-height: 300px) and (min-width: 300px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 600px) and (min-width: 600px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 900px) and (min-width: 900px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 1200px) and (min-width: 1200px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 1500px) and (min-width: 1500px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent {
+    height: calc(50% - 6px);
+    width: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent header {
+    height: calc(100% - 8px);
+    width: calc(50% - 6px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatContent section {
+    height: calc(100% - 8px);
+    width: calc(50% - 6px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk .helpDeskChat .helpDeskChatTool {
+    height: calc(50% - 6px);
+    width: calc(100% - 8px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 1800px) and (min-width: 1800px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 2100px) and (min-width: 2100px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 2400px) and (min-width: 2400px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 2700px) and (min-width: 2700px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+}
+@media only screen and (min-height: 3000px) and (min-width: 3000px) {
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .primaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleDesk {
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarClosed div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleDesk {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
+  }
+  .interfaceContainer .secondaryInterface .oldConsoleSidebarOpen div .oldConsoleSidebar {
+    height: calc(50% - 14px);
+    width: calc(100% - 16px);
   }
 }/*# sourceMappingURL=style.css.map */

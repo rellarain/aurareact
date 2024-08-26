@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-import Console from './Console';
+import OldConsole from './OldConsole';
 import Header from './Header';
+import Console from './Console';
 
 
 export default function Dashboard() {
     const primaryInterfaceState = "Scholar";
     // Inactive Social Assessment Scholar Admin
-    const secondaryInterfaceState = "Closed"; 
+    const secondaryInterfaceState = "Open"; 
     // Open Closed
     const tertiaryInterfaceState ="Closed";
     // Open Closed
 
 
-    const [tertiaryInterfaceClosed, setTertiaryInterfaceClosed] = useState(true);
-    function handleSetTertiaryInterfaceClosed() {
-        setTertiaryInterfaceClosed(!tertiaryInterfaceClosed);
-    }
+    // const [tertiaryInterfaceClosed, setTertiaryInterfaceClosed] = useState(true);
+    // function handleSetTertiaryInterfaceClosed() {
+    //     setTertiaryInterfaceClosed(!tertiaryInterfaceClosed);
+    // }
     
     // function handlePrimaryInterfaceInactive() {
     //     let primaryInterfaceState = "Inactive";
@@ -44,29 +45,35 @@ export default function Dashboard() {
     
     return (
     <main className={"interfaceContainer " + "primaryInterface" + primaryInterfaceState + " secondaryInterface" + secondaryInterfaceState + " tertiaryInterface" + tertiaryInterfaceState}>
-        {/* "interfaceContainer " + "primaryInterface" + activeConsole + " secondaryInterface" + open/closed + " tertiaryInterface" + open/closed */}
+        {/* "interfaceContainer " + "primaryInterface" + activeOldConsole + " secondaryInterface" + open/closed + " tertiaryInterface" + open/closed */}
         <nav>
             <button>Account</button>
+            <button>BreakTime</button>
             <button>Social</button>
             <button>Assessment</button>
             <button>Scholar</button>
             <button>Admin</button>
-            <button>Help Desk</button>
-            <button>Close</button>
+            <button>HelpDesk</button>
         </nav>
         <main>
             {/* <Header/> */}
             <Header/>
             <main className='mainscreen'>
                 <section className='secondaryInterface'>
-                    <Console consoleTitle={"helpDesk"}/>
+                    {/* <OldConsole oldConsoleTitle={"helpDesk"}/> */}
+                    <Console className='secondaryInterface'/>
                 </section>
                 <section className='primaryInterface'>
-                    <Console consoleTitle={"dashboard"}/>
-                    <Console consoleTitle={"social"}/>
-                    {/* <Console consoleTitle={"scholar"}/> */}
-                    {/* <Console consoleTitle={"admin"}/> */}
-                    {/* <Console consoleTitle={"assessment"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"dashboard"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"social"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"scholar"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"admin"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"assessmentA"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"assessmentG"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"assessmentL"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"assessmentS"}/> */}
+                    {/* <OldConsole oldConsoleTitle={"assessmentX"}/> */}
+                    <Console className='primaryInterface'/>
                 </section>
             </main>
         </main>

@@ -59,11 +59,11 @@ table {
 
 // Changeables
 
-$baseBright: 20%; // 0-30%
+$baseBright: 30%; // 0-30%
 
-$themehue:  20;
+$themehue:  30;
 $accenthue: 320;
-$alerthue:  30;
+$alerthue:  190;
 
 $themesat:  10%; // 0-20%
 $accentsat: 10%; // 0-20%
@@ -148,41 +148,41 @@ $adX: hsl($accenthue, $accentdesat, $LVX);
 
 
 // Assessment Shades
-$TTAss0: hsl(110, $alertdesat, $LV0); $TTGss0: hsl(5, $alertdesat, $LV0); $TTSss0: hsl(230, $alertdesat, $LV0); $TTLss0: hsl(270, $alertdesat, $LV0); $TTXss0: hsl(30, $alertdesat, $LV0); 
-$TTAss1: hsl(110, $alertdesat, $LV1); $TTGss1: hsl(5, $alertdesat, $LV1); $TTSss1: hsl(230, $alertdesat, $LV1); $TTLss1: hsl(270, $alertdesat, $LV1); $TTXss1: hsl(30, $alertdesat, $LV1); 
-$TTAss2: hsl(110, $alertdesat, $LV2); $TTGss2: hsl(5, $alertdesat, $LV2); $TTSss2: hsl(230, $alertdesat, $LV2); $TTLss2: hsl(270, $alertdesat, $LV2); $TTXss2: hsl(30, $alertdesat, $LV2); 
-$TTAss3: hsl(110, $alertdesat, $LV3); $TTGss3: hsl(5, $alertdesat, $LV3); $TTSss3: hsl(230, $alertdesat, $LV3); $TTLss3: hsl(270, $alertdesat, $LV3); $TTXss3: hsl(30, $alertdesat, $LV3); 
-$TTAss4: hsl(110, $alertdesat, $LV4); $TTGss4: hsl(5, $alertdesat, $LV4); $TTSss4: hsl(230, $alertdesat, $LV4); $TTLss4: hsl(270, $alertdesat, $LV4); $TTXss4: hsl(30, $alertdesat, $LV4); 
-$TTAss5: hsl(110, $alertdesat, $LV5); $TTGss5: hsl(5, $alertdesat, $LV5); $TTSss5: hsl(230, $alertdesat, $LV5); $TTLss5: hsl(270, $alertdesat, $LV5); $TTXss5: hsl(30, $alertdesat, $LV5); 
-$TTAss6: hsl(110, $alertdesat, $LV6); $TTGss6: hsl(5, $alertdesat, $LV6); $TTSss6: hsl(230, $alertdesat, $LV6); $TTLss6: hsl(270, $alertdesat, $LV6); $TTXss6: hsl(30, $alertdesat, $LV6); 
-$TTAss7: hsl(110, $alertdesat, $LV7); $TTGss7: hsl(5, $alertdesat, $LV7); $TTSss7: hsl(230, $alertdesat, $LV7); $TTLss7: hsl(270, $alertdesat, $LV7); $TTXss7: hsl(30, $alertdesat, $LV7); 
-$TTAss8: hsl(110, $alertdesat, $LV8); $TTGss8: hsl(5, $alertdesat, $LV8); $TTSss8: hsl(230, $alertdesat, $LV8); $TTLss8: hsl(270, $alertdesat, $LV8); $TTXss8: hsl(30, $alertdesat, $LV8); 
-$TTAss9: hsl(110, $alertdesat, $LV9); $TTGss9: hsl(5, $alertdesat, $LV9); $TTSss9: hsl(230, $alertdesat, $LV9); $TTLss9: hsl(270, $alertdesat, $LV9); $TTXss9: hsl(30, $alertdesat, $LV9); 
-$TTAssX: hsl(110, $alertdesat, $LVX); $TTGssX: hsl(5, $alertdesat, $LVX); $TTSssX: hsl(230, $alertdesat, $LVX); $TTLssX: hsl(270, $alertdesat, $LVX); $TTXssX: hsl(30, $alertdesat, $LVX); 
+$TTAss0: hsl(110, $alertsatcalc, $LV0); $TTGss0: hsl(5, $alertsatcalc, $LV0); $TTSss0: hsl(230, $alertsatcalc, $LV0); $TTLss0: hsl(270, $alertsatcalc, $LV0); $TTXss0: hsl(30, $alertsatcalc, $LV0); 
+$TTAss1: hsl(110, $alertsatcalc, $LV1); $TTGss1: hsl(5, $alertsatcalc, $LV1); $TTSss1: hsl(230, $alertsatcalc, $LV1); $TTLss1: hsl(270, $alertsatcalc, $LV1); $TTXss1: hsl(30, $alertsatcalc, $LV1); 
+$TTAss2: hsl(110, $alertsatcalc, $LV2); $TTGss2: hsl(5, $alertsatcalc, $LV2); $TTSss2: hsl(230, $alertsatcalc, $LV2); $TTLss2: hsl(270, $alertsatcalc, $LV2); $TTXss2: hsl(30, $alertsatcalc, $LV2); 
+$TTAss3: hsl(110, $alertsatcalc, $LV3); $TTGss3: hsl(5, $alertsatcalc, $LV3); $TTSss3: hsl(230, $alertsatcalc, $LV3); $TTLss3: hsl(270, $alertsatcalc, $LV3); $TTXss3: hsl(30, $alertsatcalc, $LV3); 
+$TTAss4: hsl(110, $alertsatcalc, $LV4); $TTGss4: hsl(5, $alertsatcalc, $LV4); $TTSss4: hsl(230, $alertsatcalc, $LV4); $TTLss4: hsl(270, $alertsatcalc, $LV4); $TTXss4: hsl(30, $alertsatcalc, $LV4); 
+$TTAss5: hsl(110, $alertsatcalc, $LV5); $TTGss5: hsl(5, $alertsatcalc, $LV5); $TTSss5: hsl(230, $alertsatcalc, $LV5); $TTLss5: hsl(270, $alertsatcalc, $LV5); $TTXss5: hsl(30, $alertsatcalc, $LV5); 
+$TTAss6: hsl(110, $alertsatcalc, $LV6); $TTGss6: hsl(5, $alertsatcalc, $LV6); $TTSss6: hsl(230, $alertsatcalc, $LV6); $TTLss6: hsl(270, $alertsatcalc, $LV6); $TTXss6: hsl(30, $alertsatcalc, $LV6); 
+$TTAss7: hsl(110, $alertsatcalc, $LV7); $TTGss7: hsl(5, $alertsatcalc, $LV7); $TTSss7: hsl(230, $alertsatcalc, $LV7); $TTLss7: hsl(270, $alertsatcalc, $LV7); $TTXss7: hsl(30, $alertsatcalc, $LV7); 
+$TTAss8: hsl(110, $alertsatcalc, $LV8); $TTGss8: hsl(5, $alertsatcalc, $LV8); $TTSss8: hsl(230, $alertsatcalc, $LV8); $TTLss8: hsl(270, $alertsatcalc, $LV8); $TTXss8: hsl(30, $alertsatcalc, $LV8); 
+$TTAss9: hsl(110, $alertsatcalc, $LV9); $TTGss9: hsl(5, $alertsatcalc, $LV9); $TTSss9: hsl(230, $alertsatcalc, $LV9); $TTLss9: hsl(270, $alertsatcalc, $LV9); $TTXss9: hsl(30, $alertsatcalc, $LV9); 
+$TTAssX: hsl(110, $alertsatcalc, $LVX); $TTGssX: hsl(5, $alertsatcalc, $LVX); $TTSssX: hsl(230, $alertsatcalc, $LVX); $TTLssX: hsl(270, $alertsatcalc, $LVX); $TTXssX: hsl(30, $alertsatcalc, $LVX); 
 
-$TTAs0: hsl(110, $accentdesat, $LV0); $TTGs0: hsl(5, $accentdesat, $LV0); $TTSs0: hsl(230, $accentdesat, $LV0); $TTLs0: hsl(270, $accentdesat, $LV0); $TTXs0: hsl(30, $accentdesat, $LV0); 
-$TTAs1: hsl(110, $accentdesat, $LV1); $TTGs1: hsl(5, $accentdesat, $LV1); $TTSs1: hsl(230, $accentdesat, $LV1); $TTLs1: hsl(270, $accentdesat, $LV1); $TTXs1: hsl(30, $accentdesat, $LV1); 
-$TTAs2: hsl(110, $accentdesat, $LV2); $TTGs2: hsl(5, $accentdesat, $LV2); $TTSs2: hsl(230, $accentdesat, $LV2); $TTLs2: hsl(270, $accentdesat, $LV2); $TTXs2: hsl(30, $accentdesat, $LV2); 
-$TTAs3: hsl(110, $accentdesat, $LV3); $TTGs3: hsl(5, $accentdesat, $LV3); $TTSs3: hsl(230, $accentdesat, $LV3); $TTLs3: hsl(270, $accentdesat, $LV3); $TTXs3: hsl(30, $accentdesat, $LV3); 
-$TTAs4: hsl(110, $accentdesat, $LV4); $TTGs4: hsl(5, $accentdesat, $LV4); $TTSs4: hsl(230, $accentdesat, $LV4); $TTLs4: hsl(270, $accentdesat, $LV4); $TTXs4: hsl(30, $accentdesat, $LV4); 
-$TTAs5: hsl(110, $accentdesat, $LV5); $TTGs5: hsl(5, $accentdesat, $LV5); $TTSs5: hsl(230, $accentdesat, $LV5); $TTLs5: hsl(270, $accentdesat, $LV5); $TTXs5: hsl(30, $accentdesat, $LV5); 
-$TTAs6: hsl(110, $accentdesat, $LV6); $TTGs6: hsl(5, $accentdesat, $LV6); $TTSs6: hsl(230, $accentdesat, $LV6); $TTLs6: hsl(270, $accentdesat, $LV6); $TTXs6: hsl(30, $accentdesat, $LV6); 
-$TTAs7: hsl(110, $accentdesat, $LV7); $TTGs7: hsl(5, $accentdesat, $LV7); $TTSs7: hsl(230, $accentdesat, $LV7); $TTLs7: hsl(270, $accentdesat, $LV7); $TTXs7: hsl(30, $accentdesat, $LV7); 
-$TTAs8: hsl(110, $accentdesat, $LV8); $TTGs8: hsl(5, $accentdesat, $LV8); $TTSs8: hsl(230, $accentdesat, $LV8); $TTLs8: hsl(270, $accentdesat, $LV8); $TTXs8: hsl(30, $accentdesat, $LV8); 
-$TTAs9: hsl(110, $accentdesat, $LV9); $TTGs9: hsl(5, $accentdesat, $LV9); $TTSs9: hsl(230, $accentdesat, $LV9); $TTLs9: hsl(270, $accentdesat, $LV9); $TTXs9: hsl(30, $accentdesat, $LV9); 
-$TTAsX: hsl(110, $accentdesat, $LVX); $TTGsX: hsl(5, $accentdesat, $LVX); $TTSsX: hsl(230, $accentdesat, $LVX); $TTLsX: hsl(270, $accentdesat, $LVX); $TTXsX: hsl(30, $accentdesat, $LVX); 
+$TTAs0: hsl(110, $accentsatcalc, $LV0); $TTGs0: hsl(5, $accentsatcalc, $LV0); $TTSs0: hsl(230, $accentsatcalc, $LV0); $TTLs0: hsl(270, $accentsatcalc, $LV0); $TTXs0: hsl(30, $accentsatcalc, $LV0); 
+$TTAs1: hsl(110, $accentsatcalc, $LV1); $TTGs1: hsl(5, $accentsatcalc, $LV1); $TTSs1: hsl(230, $accentsatcalc, $LV1); $TTLs1: hsl(270, $accentsatcalc, $LV1); $TTXs1: hsl(30, $accentsatcalc, $LV1); 
+$TTAs2: hsl(110, $accentsatcalc, $LV2); $TTGs2: hsl(5, $accentsatcalc, $LV2); $TTSs2: hsl(230, $accentsatcalc, $LV2); $TTLs2: hsl(270, $accentsatcalc, $LV2); $TTXs2: hsl(30, $accentsatcalc, $LV2); 
+$TTAs3: hsl(110, $accentsatcalc, $LV3); $TTGs3: hsl(5, $accentsatcalc, $LV3); $TTSs3: hsl(230, $accentsatcalc, $LV3); $TTLs3: hsl(270, $accentsatcalc, $LV3); $TTXs3: hsl(30, $accentsatcalc, $LV3); 
+$TTAs4: hsl(110, $accentsatcalc, $LV4); $TTGs4: hsl(5, $accentsatcalc, $LV4); $TTSs4: hsl(230, $accentsatcalc, $LV4); $TTLs4: hsl(270, $accentsatcalc, $LV4); $TTXs4: hsl(30, $accentsatcalc, $LV4); 
+$TTAs5: hsl(110, $accentsatcalc, $LV5); $TTGs5: hsl(5, $accentsatcalc, $LV5); $TTSs5: hsl(230, $accentsatcalc, $LV5); $TTLs5: hsl(270, $accentsatcalc, $LV5); $TTXs5: hsl(30, $accentsatcalc, $LV5); 
+$TTAs6: hsl(110, $accentsatcalc, $LV6); $TTGs6: hsl(5, $accentsatcalc, $LV6); $TTSs6: hsl(230, $accentsatcalc, $LV6); $TTLs6: hsl(270, $accentsatcalc, $LV6); $TTXs6: hsl(30, $accentsatcalc, $LV6); 
+$TTAs7: hsl(110, $accentsatcalc, $LV7); $TTGs7: hsl(5, $accentsatcalc, $LV7); $TTSs7: hsl(230, $accentsatcalc, $LV7); $TTLs7: hsl(270, $accentsatcalc, $LV7); $TTXs7: hsl(30, $accentsatcalc, $LV7); 
+$TTAs8: hsl(110, $accentsatcalc, $LV8); $TTGs8: hsl(5, $accentsatcalc, $LV8); $TTSs8: hsl(230, $accentsatcalc, $LV8); $TTLs8: hsl(270, $accentsatcalc, $LV8); $TTXs8: hsl(30, $accentsatcalc, $LV8); 
+$TTAs9: hsl(110, $accentsatcalc, $LV9); $TTGs9: hsl(5, $accentsatcalc, $LV9); $TTSs9: hsl(230, $accentsatcalc, $LV9); $TTLs9: hsl(270, $accentsatcalc, $LV9); $TTXs9: hsl(30, $accentsatcalc, $LV9); 
+$TTAsX: hsl(110, $accentsatcalc, $LVX); $TTGsX: hsl(5, $accentsatcalc, $LVX); $TTSsX: hsl(230, $accentsatcalc, $LVX); $TTLsX: hsl(270, $accentsatcalc, $LVX); $TTXsX: hsl(30, $accentsatcalc, $LVX); 
 
-$TTAd0: hsl(110, $themeupsat, $LV0); $TTGd0: hsl(5, $themeupsat, $LV0); $TTSd0: hsl(230, $themeupsat, $LV0); $TTLd0: hsl(270, $themeupsat, $LV0); $TTXd0: hsl(30, $themeupsat, $LV0); 
-$TTAd1: hsl(110, $themeupsat, $LV1); $TTGd1: hsl(5, $themeupsat, $LV1); $TTSd1: hsl(230, $themeupsat, $LV1); $TTLd1: hsl(270, $themeupsat, $LV1); $TTXd1: hsl(30, $themeupsat, $LV1); 
-$TTAd2: hsl(110, $themeupsat, $LV2); $TTGd2: hsl(5, $themeupsat, $LV2); $TTSd2: hsl(230, $themeupsat, $LV2); $TTLd2: hsl(270, $themeupsat, $LV2); $TTXd2: hsl(30, $themeupsat, $LV2); 
-$TTAd3: hsl(110, $themeupsat, $LV3); $TTGd3: hsl(5, $themeupsat, $LV3); $TTSd3: hsl(230, $themeupsat, $LV3); $TTLd3: hsl(270, $themeupsat, $LV3); $TTXd3: hsl(30, $themeupsat, $LV3); 
-$TTAd4: hsl(110, $themeupsat, $LV4); $TTGd4: hsl(5, $themeupsat, $LV4); $TTSd4: hsl(230, $themeupsat, $LV4); $TTLd4: hsl(270, $themeupsat, $LV4); $TTXd4: hsl(30, $themeupsat, $LV4); 
-$TTAd5: hsl(110, $themeupsat, $LV5); $TTGd5: hsl(5, $themeupsat, $LV5); $TTSd5: hsl(230, $themeupsat, $LV5); $TTLd5: hsl(270, $themeupsat, $LV5); $TTXd5: hsl(30, $themeupsat, $LV5); 
-$TTAd6: hsl(110, $themeupsat, $LV6); $TTGd6: hsl(5, $themeupsat, $LV6); $TTSd6: hsl(230, $themeupsat, $LV6); $TTLd6: hsl(270, $themeupsat, $LV6); $TTXd6: hsl(30, $themeupsat, $LV6); 
-$TTAd7: hsl(110, $themeupsat, $LV7); $TTGd7: hsl(5, $themeupsat, $LV7); $TTSd7: hsl(230, $themeupsat, $LV7); $TTLd7: hsl(270, $themeupsat, $LV7); $TTXd7: hsl(30, $themeupsat, $LV7); 
-$TTAd8: hsl(110, $themeupsat, $LV8); $TTGd8: hsl(5, $themeupsat, $LV8); $TTSd8: hsl(230, $themeupsat, $LV8); $TTLd8: hsl(270, $themeupsat, $LV8); $TTXd8: hsl(30, $themeupsat, $LV8); 
-$TTAd9: hsl(110, $themeupsat, $LV9); $TTGd9: hsl(5, $themeupsat, $LV9); $TTSd9: hsl(230, $themeupsat, $LV9); $TTLd9: hsl(270, $themeupsat, $LV9); $TTXd9: hsl(30, $themeupsat, $LV9); 
-$TTAdX: hsl(110, $themeupsat, $LVX); $TTGdX: hsl(5, $themeupsat, $LVX); $TTSdX: hsl(230, $themeupsat, $LVX); $TTLdX: hsl(270, $themeupsat, $LVX); $TTXdX: hsl(30, $themeupsat, $LVX); 
+$TTAd0: hsl(110, $themesatcalc, $LV0); $TTGd0: hsl(5, $themesatcalc, $LV0); $TTSd0: hsl(230, $themesatcalc, $LV0); $TTLd0: hsl(270, $themesatcalc, $LV0); $TTXd0: hsl(30, $themesatcalc, $LV0); 
+$TTAd1: hsl(110, $themesatcalc, $LV1); $TTGd1: hsl(5, $themesatcalc, $LV1); $TTSd1: hsl(230, $themesatcalc, $LV1); $TTLd1: hsl(270, $themesatcalc, $LV1); $TTXd1: hsl(30, $themesatcalc, $LV1); 
+$TTAd2: hsl(110, $themesatcalc, $LV2); $TTGd2: hsl(5, $themesatcalc, $LV2); $TTSd2: hsl(230, $themesatcalc, $LV2); $TTLd2: hsl(270, $themesatcalc, $LV2); $TTXd2: hsl(30, $themesatcalc, $LV2); 
+$TTAd3: hsl(110, $themesatcalc, $LV3); $TTGd3: hsl(5, $themesatcalc, $LV3); $TTSd3: hsl(230, $themesatcalc, $LV3); $TTLd3: hsl(270, $themesatcalc, $LV3); $TTXd3: hsl(30, $themesatcalc, $LV3); 
+$TTAd4: hsl(110, $themesatcalc, $LV4); $TTGd4: hsl(5, $themesatcalc, $LV4); $TTSd4: hsl(230, $themesatcalc, $LV4); $TTLd4: hsl(270, $themesatcalc, $LV4); $TTXd4: hsl(30, $themesatcalc, $LV4); 
+$TTAd5: hsl(110, $themesatcalc, $LV5); $TTGd5: hsl(5, $themesatcalc, $LV5); $TTSd5: hsl(230, $themesatcalc, $LV5); $TTLd5: hsl(270, $themesatcalc, $LV5); $TTXd5: hsl(30, $themesatcalc, $LV5); 
+$TTAd6: hsl(110, $themesatcalc, $LV6); $TTGd6: hsl(5, $themesatcalc, $LV6); $TTSd6: hsl(230, $themesatcalc, $LV6); $TTLd6: hsl(270, $themesatcalc, $LV6); $TTXd6: hsl(30, $themesatcalc, $LV6); 
+$TTAd7: hsl(110, $themesatcalc, $LV7); $TTGd7: hsl(5, $themesatcalc, $LV7); $TTSd7: hsl(230, $themesatcalc, $LV7); $TTLd7: hsl(270, $themesatcalc, $LV7); $TTXd7: hsl(30, $themesatcalc, $LV7); 
+$TTAd8: hsl(110, $themesatcalc, $LV8); $TTGd8: hsl(5, $themesatcalc, $LV8); $TTSd8: hsl(230, $themesatcalc, $LV8); $TTLd8: hsl(270, $themesatcalc, $LV8); $TTXd8: hsl(30, $themesatcalc, $LV8); 
+$TTAd9: hsl(110, $themesatcalc, $LV9); $TTGd9: hsl(5, $themesatcalc, $LV9); $TTSd9: hsl(230, $themesatcalc, $LV9); $TTLd9: hsl(270, $themesatcalc, $LV9); $TTXd9: hsl(30, $themesatcalc, $LV9); 
+$TTAdX: hsl(110, $themesatcalc, $LVX); $TTGdX: hsl(5, $themesatcalc, $LVX); $TTSdX: hsl(230, $themesatcalc, $LVX); $TTLdX: hsl(270, $themesatcalc, $LVX); $TTXdX: hsl(30, $themesatcalc, $LVX); 
 
 
 
@@ -247,7 +247,7 @@ body {
     overflow: hidden;    
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: $atd0;
+    background-color: $ad0;
 }
 
 .rootDashVisitor {
@@ -324,10 +324,17 @@ body {
                             color: $tuX;                            
                         }
                     }
+                    section:nth-child(6) {
+                        background-color: $t1;
+                        button {
+                            background-color: $tu5;
+                            color: $tuX;
+                        }
+                    }
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $t2;
                         color: $t8;
                         border: 4px solid $t2;
@@ -344,20 +351,20 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $tu2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $tu5;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $tu8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $tu4;
                                 border: 4px solid $tu4;
                                 color: $tu1;
@@ -372,7 +379,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $tu0;
                                 section {
                                     button {
@@ -421,10 +428,19 @@ body {
                             color: $atd2;
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $t1;
+                        button {
+                            background-color: $ats6;
+                            color: $ats0;
+                        }
+
+                    }
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $tu1;
                         color: $t9;
                         border: 4px solid $tu1;
@@ -441,20 +457,20 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $atd2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $atd5;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $atd8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $atd4;
                                 border: 4px solid $atd4;
                                 color: $atd1;
@@ -469,7 +485,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $ats0;
                                 section {
                                     button {
@@ -524,10 +540,19 @@ body {
                             // color: $asX;                            
                         }
                     }
+                    section:nth-child(6) {
+                        background-color: $t1;
+                        button {
+                            background-color: $ats5;
+                            color: white;
+                        }
+
+                    }
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $t3;
                         color: $t7;
                         border: 4px solid $t3;
@@ -544,21 +569,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $ad2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $ad5;
                                 // background-color: $as7;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $ad8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $ad4;
                                 border: 4px solid $ad4;
                                 color: $ad7;
@@ -573,7 +598,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $as0;
                                 section {
                                     button {
@@ -642,10 +667,20 @@ body {
                             // color: $atdX; 
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $t1;
+                        button {
+                            background-color: $ats6;
+                            color: $ats0;
+                        }
+
+                    }
+                    
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $t3;
                         color: $t7;
                         border: 4px solid $t3;
@@ -662,21 +697,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $tu2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $tu5;
                                 // background-color: $as7;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $tu8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $tu4;
                                 border: 4px solid $tu4;
                                 color: $tu7;
@@ -691,7 +726,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $ats3;
                                 section {
                                     button {
@@ -746,10 +781,20 @@ body {
                             // color: $TTAssX;                            
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $TTAd1;
+                        button {
+                            background-color: $TTAs4;
+                            color: $TTAsX;
+                        }
+
+                    }
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $TTAd3;
                         color: $TTAd7;
                         border: 4px solid $TTAd3;
@@ -766,21 +811,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $TTAs2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $TTAs5;
                                 // background-color: $TTAss5;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $TTAs8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $TTAs4;
                                 border: 4px solid $TTAs4;
                                 color: $TTAs7;
@@ -795,7 +840,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $TTAss0;
                                 section {
                                     button {
@@ -850,10 +895,21 @@ body {
                             // color: $TTGssX;                            
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $TTGd1;
+                        button {
+                            background-color: $TTGs4;
+                            color: $TTGsX;
+                        }
+
+                    }
+
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $TTGd3;
                         color: $TTGd7;
                         border: 4px solid $TTGd3;
@@ -870,21 +926,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $TTGs2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $TTGs5;
                                 // background-color: $TTGss5;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $TTGs8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $TTGs4;
                                 border: 4px solid $TTGs4;
                                 color: $TTGs7;
@@ -899,7 +955,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $TTGss0;
                                 section {
                                     button {
@@ -954,10 +1010,22 @@ body {
                             // color: $TTLssX;                            
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $TTLd1;
+                        button {
+                            background-color: $TTLs4;
+                            color: $TTLsX;
+                        }
+
+                    }
+
+
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $TTLd3;
                         color: $TTLd7;
                         border: 4px solid $TTLd3;
@@ -974,21 +1042,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $TTLs2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $TTLs5;
                                 // background-color: $TTLss5;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $TTLs8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $TTLs4;
                                 border: 4px solid $TTLs4;
                                 color: $TTLs7;
@@ -1003,7 +1071,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $TTLss0;
                                 section {
                                     button {
@@ -1058,10 +1126,22 @@ body {
                             // color: $TTSssX;                            
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $TTSd1;
+                        button {
+                            background-color: $TTSs4;
+                            color: $TTSsX;
+                        }
+
+                    }
+
+
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $TTSd3;
                         color: $TTSd7;
                         border: 4px solid $TTSd3;
@@ -1078,21 +1158,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $TTSs2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $TTSs5;
                                 // background-color: $TTSss5;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $TTSs8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $TTSs4;
                                 border: 4px solid $TTSs4;
                                 color: $TTSs7;
@@ -1107,7 +1187,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $TTSss0;
                                 section {
                                     button {
@@ -1162,10 +1242,21 @@ body {
                             // color: $TTXssX;                            
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $TTXd1;
+                        button {
+                            background-color: $TTXs4;
+                            color: $TTXsX;
+                        }
+
+                    }
+
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $TTXd3;
                         color: $TTXd7;
                         border: 4px solid $TTXd3;
@@ -1182,21 +1273,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $TTXs2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $TTXs5;
                                 // background-color: $TTXss5;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $TTXs8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $TTXs4;
                                 border: 4px solid $TTXs4;
                                 color: $TTXs7;
@@ -1211,7 +1302,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $TTXss0;
                                 section {
                                     button {
@@ -1280,10 +1371,20 @@ body {
                             // color: $atsX; 
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $t1;
+                        button {
+                            background-color: $ats6;
+                            color: $ats0;
+                        }
+
+                    }
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $tu3;
                         color: $tu7;
                         border: 4px solid $tu3;
@@ -1300,21 +1401,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $ad2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $ad5;
                                 // background-color: $ats7;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $ad8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $ad4;
                                 border: 4px solid $ad4;
                                 color: $ad7;
@@ -1329,7 +1430,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $ats3;
                                 section {
                                     button {
@@ -1382,26 +1483,36 @@ body {
                         button {
     
                             // No New Messages
-                            background-color: $ad3;
-                            color: $adX; 
+                            background-color: $ad0;
+                            color: $ad3; 
     
                             // One New Message
-                            background-color: $as3;
-                            color: $asX;                          
+                            background-color: $atd0;
+                            color: $ats3;                          
     
                             // Multiple New Messages
-                            background-color: $atd3;
-                            color: $atdX; 
+                            // background-color: $atd3;
+                            // color: $atd0; 
     
                             // Open Chat
-                            background-color: $ats3;
-                            color: $atsX; 
+                            // background-color: $ats3;
+                            // color: $ats0; 
                         }
                     }
+                    // Console Closed
+                    section:nth-child(6) {
+                        background-color: $ad2;
+                        button {
+                            background-color: $ats4;
+                            color: $ats0;
+                        }
+
+                    }
+
                 }
                 div {
                     // Desk
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         background-color: $ad6;
                         color: $ad1;
                         border: 4px solid $ad6;
@@ -1418,21 +1529,21 @@ body {
                     }
             
                     // Sidebar 
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         background-color: $ad2;
-                        .consoleSidebarTabs {
+                        .oldConsoleSidebarTabs {
                             button {
                                 background-color: $ad5;
                                 // background-color: $ats7;
                             }
                             
                         }
-                        .consoleSidebarTitle {
+                        .oldConsoleSidebarTitle {
                             color: $ad8;
                         }   
                         // Sidebar Body
-                        .consoleSidebarBody {                          
-                            .consoleSidebarContent {
+                        .oldConsoleSidebarBody {                          
+                            .oldConsoleSidebarContent {
                                 background-color: $ad4;
                                 border: 4px solid $ad4;
                                 color: $ad7;
@@ -1447,7 +1558,7 @@ body {
                                 }
                             }       
                             // Console Help
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 background-color: $ats3;
                                 section {
                                     button {
@@ -1680,7 +1791,7 @@ body {
     .breakTimeClosed {background: $ad2;}
 }
 
-// MEMBER -------------------------------------------------------------------------------------------------------------------------------
+// User Interface Design -------------------------------------------------------------------------------------------------------------------------------
 
 .interfaceContainer {
     width: 100vw;
@@ -1691,17 +1802,38 @@ body {
     top: 0;
     left: 0;
     nav {
-        background-color: black;
-        display: block;
+        background-color: rgba(0, 0, 0, 0.28);
+        display: flex;
+        
         position: fixed;
+        // justify-content: flex-end;
         top: 5px;
         right: 5px;
         height: 30px;
-        width: 300px;
+        width: 40vw;
         z-index: 12;
+        overflow-y: hidden;
+        overflow-x: auto;
+        border-radius: 4px;
+        &::-webkit-scrollbar {display: none;}
+        
+        button {
+            height: 22px;
+            width: 150px;
+            display: inline-block;
+            margin: 4px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+        }
+        button:first-child {
+            margin-left: 4px;
+        }
+        button:last-child {
+            margin-right: 4px;
+        }
     }
     main {
-        background-color: white;
         position: absolute;
         width: 100vw;
         height: 100vh;
@@ -1714,6 +1846,7 @@ body {
             background-color: $t3;
             top: 0;
             left: 0;
+            right: 0;
             width: 100vw;
             // height: 50px;
             // height: 100vh;
@@ -1733,7 +1866,7 @@ body {
                 width: 100vw;
 
                 // Console
-                .console {
+                .oldConsole {
                     // display: none;
                     position: absolute;
                     transition: left 1s;
@@ -1760,12 +1893,12 @@ body {
                             margin: 4px 4px 0 4px;
                             grid-template-rows: 16px 24px 30px;
                             grid-template-columns: 36px auto 36px;
-                            grid-template-areas: "consoleTitle consoleDateTime consoleDateTime" "consoleAchievement consoleAchievement consoleAchievement" "consoleButton consoleTabs consoleClose";
+                            grid-template-areas: "oldConsoleTitle oldConsoleDateTime oldConsoleDateTime" "oldConsoleAchievement oldConsoleAchievement oldConsoleAchievement" "oldConsoleButton oldConsoleTabs oldConsoleClose";
                     
                             section {height: 100%; width: 100%; border-radius: 4px;}
                             // Title
                             section:nth-child(1) {
-                                grid-area: consoleTitle; 
+                                grid-area: oldConsoleTitle; 
                                 font-weight: 700;
                                 text-transform: uppercase;
                                 line-height: 16px;
@@ -1775,7 +1908,7 @@ body {
                             }
                             // Date and Time
                             section:nth-child(2) {
-                                grid-area: consoleDateTime; 
+                                grid-area: oldConsoleDateTime; 
                                 text-align: right;
                                 line-height: 16px;
                                 font-weight: 500;
@@ -1784,7 +1917,7 @@ body {
                             }
                             // Achievement Progress Bar
                             section:nth-child(3) {
-                                grid-area: consoleAchievement; 
+                                grid-area: oldConsoleAchievement; 
                                 width: calc(100% - 18px);
                                 height: 6px;
                                 margin: 4px;
@@ -1797,7 +1930,7 @@ body {
                             }
                             // Console Button
                             section:nth-child(4) {
-                                grid-area: consoleButton; 
+                                grid-area: oldConsoleButton; 
                                 width: 30px;
                                 height: 30px;
                                 margin: 0 0 0 4px;
@@ -1815,7 +1948,7 @@ body {
                             }
                             // Console Tabs
                             section:nth-child(5) {
-                                grid-area: consoleTabs; 
+                                grid-area: oldConsoleTabs; 
                                 height: 30px;
                                 width: calc(100% - 6px);
                                 margin-left: 2px;
@@ -1840,13 +1973,18 @@ body {
                             }
                             // Console Close
                             section:nth-child(6) {
-                                grid-area: consoleClose;
+                                grid-area: oldConsoleClose;
                                 width: 30px;
                                 height: 30px;
                                 button {
                                     width: 22px;
                                     height: 22px;
                                     margin: 4px;
+                                    border: none;
+                                    border-radius: 4px;
+                                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                                    font-weight: 600;
+                                    cursor: pointer;
                                 }
                             }
 
@@ -1865,7 +2003,7 @@ body {
                             }
                     
                             // Desk
-                            .consoleDesk {
+                            .oldConsoleDesk {
                                 top: 4px;
                                 right: 4px;
                                 overflow-x: hidden;
@@ -1891,7 +2029,7 @@ body {
                             }
                     
                             // Sidebar 
-                            .consoleSidebar {
+                            .oldConsoleSidebar {
                                 bottom: 8px;
                                 left: 8px;
                                 position: absolute;
@@ -1900,12 +2038,12 @@ body {
                                 display: grid;
                                 grid-template-columns: 30px calc(100% - 30px);
                                 grid-template-rows: 30px calc(100% - 30px);
-                                grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
+                                grid-template-areas: "oldConsoleSidebarTabs oldConsoleSidebarTitle" "oldConsole SidebarTabs oldConsoleSidebarBody";
 
 
                     
-                                .consoleSidebarTabs {
-                                    grid-area: consoleSidebarTabs;
+                                .oldConsoleSidebarTabs {
+                                    grid-area: oldConsoleSidebarTabs;
                                     overflow-x: hidden;
                                     overflow-y: auto;
                                     border-radius: 4px;
@@ -1925,8 +2063,8 @@ body {
                                     }
                                     
                                 }
-                                .consoleSidebarTitle {
-                                    grid-area: consoleSidebarTitle;
+                                .oldConsoleSidebarTitle {
+                                    grid-area: oldConsoleSidebarTitle;
                                     line-height: 16px;
                                     margin: 12px 4px 0 4px;
                                     font-size: 16px;
@@ -1941,8 +2079,8 @@ body {
                                 }
                                 
                                 // Sidebar Body
-                                .consoleSidebarBody {
-                                    grid-area: consoleSidebarBody;
+                                .oldConsoleSidebarBody {
+                                    grid-area: oldConsoleSidebarBody;
                                     position: absolute;
                                     bottom: 0;
                                     right: 0;
@@ -1952,7 +2090,7 @@ body {
                                     border-radius: 4px;
                                     height: calc(100% - 34px);
                                     
-                                    .consoleSidebarContent {
+                                    .oldConsoleSidebarContent {
                                         width: calc(100% - 16px);
                                         transition: height 1s, width 1s;
                                         overflow-x: hidden;
@@ -1984,7 +2122,7 @@ body {
 
 
                                     // Console Help
-                                    .consoleSidebarHelp {
+                                    .oldConsoleSidebarHelp {
                                         position: absolute;
                                         bottom: 0;
                                         right: 0;
@@ -2010,23 +2148,23 @@ body {
                                 }
                             }
                         }
-                        .consoleHelpOpen {
-                            .consoleSidebarHelp {
+                        .oldConsoleHelpOpen {
+                            .oldConsoleSidebarHelp {
                                 width: calc(100% - 8px);
                             }
                         }
-                        .consoleHelpClosed {
-                            .consoleSidebarContent {
+                        .oldConsoleHelpClosed {
+                            .oldConsoleSidebarContent {
                                 height: calc(100% - 46px);
                             }
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 height: 26px;
                                 width: 26px;
                             }
                         }
                     }
 
-                    .consoleSidebarOpen {
+                    .oldConsoleSidebarOpen {
                         header {
                             section:nth-child(4) {
                                 button {
@@ -2039,7 +2177,7 @@ body {
                         }
 
                     }
-                    .consoleSidebarClosed {
+                    .oldConsoleSidebarClosed {
                         header {
                             section:nth-child(4) {
                                 button {
@@ -2097,8 +2235,10 @@ body {
                 z-index: 2;
                 transition: width 1s;
                 // Console
-                .console {
+                .oldConsole {
                     // display: none;
+
+
 
 
                     main {
@@ -2121,12 +2261,12 @@ body {
                             margin: 4px 4px 0 4px;
                             grid-template-rows: 16px 24px 30px;
                             grid-template-columns: 36px auto 36px;
-                            grid-template-areas: "consoleTitle consoleDateTime consoleDateTime" "consoleAchievement consoleAchievement consoleAchievement" "consoleButton consoleTabs consoleClose";
+                            grid-template-areas: "oldConsoleTitle oldConsoleDateTime oldConsoleDateTime" "oldConsoleAchievement oldConsoleAchievement oldConsoleAchievement" "oldConsoleButton oldConsoleTabs oldConsoleClose";
                     
                             section {height: 100%; width: 100%; border-radius: 4px;}
                             // Title
                             section:nth-child(1) {
-                                grid-area: consoleTitle; 
+                                grid-area: oldConsoleTitle; 
                                 font-weight: 700;
                                 text-transform: uppercase;
                                 line-height: 16px;
@@ -2136,7 +2276,7 @@ body {
                             }
                             // Date and Time
                             section:nth-child(2) {
-                                grid-area: consoleDateTime; 
+                                grid-area: oldConsoleDateTime; 
                                 text-align: right;
                                 line-height: 16px;
                                 font-weight: 500;
@@ -2145,7 +2285,7 @@ body {
                             }
                             // Achievement Progress Bar
                             section:nth-child(3) {
-                                grid-area: consoleAchievement; 
+                                grid-area: oldConsoleAchievement; 
                                 width: calc(100% - 18px);
                                 height: 6px;
                                 margin: 4px;
@@ -2158,7 +2298,7 @@ body {
                             }
                             // Console Button
                             section:nth-child(4) {
-                                grid-area: consoleButton; 
+                                grid-area: oldConsoleButton; 
                                 width: 30px;
                                 height: 30px;
                                 margin: 0 0 0 4px;
@@ -2176,7 +2316,7 @@ body {
                             }
                             // Console Tabs
                             section:nth-child(5) {
-                                grid-area: consoleTabs; 
+                                grid-area: oldConsoleTabs; 
                                 height: 30px;
                                 width: calc(100% - 6px);
                                 margin-left: 2px;
@@ -2201,13 +2341,17 @@ body {
                             }
                             // Console Close
                             section:nth-child(6) {
-                                grid-area: consoleClose;
+                                grid-area: oldConsoleClose;
                                 width: 30px;
                                 height: 30px;
                                 button {
                                     width: 22px;
                                     height: 22px;
                                     margin: 4px;
+                                    border: none;
+                                    border-radius: 4px;
+                                    font-weight: 600;
+                                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                                 }
                             }
 
@@ -2226,7 +2370,7 @@ body {
                             }
                     
                             // Desk
-                            .consoleDesk {
+                            .oldConsoleDesk {
                                 top: 4px;
                                 right: 4px;
                                 overflow-x: hidden;
@@ -2249,10 +2393,56 @@ body {
                                 &::-webkit-scrollbar-thumb {
                                     border-radius: 4px;
                                 }
+
+                                .helpDeskChat {
+                                    width: calc(100% - 8px);
+                                    height: calc(100% - 8px);
+                                    position: absolute;
+                                    top: 4px;
+                                    left: 4px;
+                                    background-color: $as4;
+                                    color: white;
+
+                                    .helpDeskChatContent {
+                                        position: absolute;
+                                        overflow: hidden;
+                                        top: 0;
+                                        left: 0;
+                                        background-color: $TTAs6;
+                                        margin: 4px;
+                                        transition: height .75s, width .75s;
+
+                                        header {
+                                            background-color: $TTAs2;
+                                            border-radius: 4px;
+                                            // width: calc(100% - 8px);
+                                            margin: 4px;
+                                            // height: 50px;
+                                            top: 0;
+                                            left: 0;
+                                        }
+                                        section {
+                                            background-color: $TTAs4;
+                                            // width: calc(100% - 8px);
+                                            margin: 0 4px 4px 4px;
+                                            // height: calc(100% - 62px);
+                                            bottom: 0;
+                                            right: 0;
+                                        }
+                                    }
+                                    .helpDeskChatTool {
+                                        position: absolute;
+                                        background-color: $as2;
+                                        bottom: 0;
+                                        right: 0;
+                                        margin: 4px;
+                                        transition: height .75s, width .75s;
+                                    }
+                                }
                             }
                     
                             // Sidebar 
-                            .consoleSidebar {
+                            .oldConsoleSidebar {
                                 bottom: 8px;
                                 left: 8px;
                                 position: absolute;
@@ -2261,12 +2451,12 @@ body {
                                 display: grid;
                                 grid-template-columns: 30px calc(100% - 30px);
                                 grid-template-rows: 30px calc(100% - 30px);
-                                grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
+                                grid-template-areas: "oldConsoleSidebarTabs oldConsoleSidebarTitle" "oldConsole SidebarTabs oldConsoleSidebarBody";
 
 
                     
-                                .consoleSidebarTabs {
-                                    grid-area: consoleSidebarTabs;
+                                .oldConsoleSidebarTabs {
+                                    grid-area: oldConsoleSidebarTabs;
                                     overflow-x: hidden;
                                     overflow-y: auto;
                                     border-radius: 4px;
@@ -2286,8 +2476,8 @@ body {
                                     }
                                     
                                 }
-                                .consoleSidebarTitle {
-                                    grid-area: consoleSidebarTitle;
+                                .oldConsoleSidebarTitle {
+                                    grid-area: oldConsoleSidebarTitle;
                                     line-height: 16px;
                                     margin: 12px 4px 0 4px;
                                     font-size: 16px;
@@ -2302,8 +2492,8 @@ body {
                                 }
                                 
                                 // Sidebar Body
-                                .consoleSidebarBody {
-                                    grid-area: consoleSidebarBody;
+                                .oldConsoleSidebarBody {
+                                    grid-area: oldConsoleSidebarBody;
                                     position: absolute;
                                     bottom: 0;
                                     right: 0;
@@ -2313,7 +2503,7 @@ body {
                                     border-radius: 4px;
                                     height: calc(100% - 34px);
                                     
-                                    .consoleSidebarContent {
+                                    .oldConsoleSidebarContent {
                                         width: calc(100% - 16px);
                                         transition: height 1s, width 1s;
                                         overflow-x: hidden;
@@ -2345,7 +2535,7 @@ body {
 
 
                                     // Console Help
-                                    .consoleSidebarHelp {
+                                    .oldConsoleSidebarHelp {
                                         position: absolute;
                                         bottom: 0;
                                         right: 0;
@@ -2371,23 +2561,23 @@ body {
                                 }
                             }
                         }
-                        .consoleHelpOpen {
-                            .consoleSidebarHelp {
+                        .oldConsoleHelpOpen {
+                            .oldConsoleSidebarHelp {
                                 width: calc(100% - 8px);
                             }
                         }
-                        .consoleHelpClosed {
-                            .consoleSidebarContent {
+                        .oldConsoleHelpClosed {
+                            .oldConsoleSidebarContent {
                                 height: calc(100% - 46px);
                             }
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 height: 26px;
                                 width: 26px;
                             }
                         }
                     }
 
-                    .consoleSidebarOpen {
+                    .oldConsoleSidebarOpen {
                         header {
                             section:nth-child(4) {
                                 button {
@@ -2398,9 +2588,8 @@ body {
                                 }                
                             }
                         }
-
                     }
-                    .consoleSidebarClosed {
+                    .oldConsoleSidebarClosed {
                         header {
                             section:nth-child(4) {
                                 button {
@@ -2422,6 +2611,7 @@ body {
             .primaryInterface {
                 // background-color: orange;
                 height: 100%;
+                width: 100%;
                 // background-color: blue;
 
 
@@ -2432,7 +2622,7 @@ body {
                 z-index: 4;
                 transition: width 1s;
                 // Console
-                .console {
+                .oldConsole {
                     // display: none;
                     transition: top 1s, left 1s, bottom 1s, right 1s;
                     // right: 150vw;
@@ -2460,12 +2650,12 @@ body {
                             margin: 4px 4px 0 4px;
                             grid-template-rows: 16px 24px 30px;
                             grid-template-columns: 36px auto 36px;
-                            grid-template-areas: "consoleTitle consoleDateTime consoleDateTime" "consoleAchievement consoleAchievement consoleAchievement" "consoleButton consoleTabs consoleClose";
+                            grid-template-areas: "oldConsoleTitle oldConsoleDateTime oldConsoleDateTime" "oldConsoleAchievement oldConsoleAchievement oldConsoleAchievement" "oldConsoleButton oldConsoleTabs oldConsoleClose";
                     
                             section {height: 100%; width: 100%; border-radius: 4px;}
                             // Title
                             section:nth-child(1) {
-                                grid-area: consoleTitle; 
+                                grid-area: oldConsoleTitle; 
                                 font-weight: 700;
                                 text-transform: uppercase;
                                 line-height: 16px;
@@ -2475,7 +2665,7 @@ body {
                             }
                             // Date and Time
                             section:nth-child(2) {
-                                grid-area: consoleDateTime; 
+                                grid-area: oldConsoleDateTime; 
                                 text-align: right;
                                 line-height: 16px;
                                 font-weight: 500;
@@ -2484,7 +2674,7 @@ body {
                             }
                             // Achievement Progress Bar
                             section:nth-child(3) {
-                                grid-area: consoleAchievement; 
+                                grid-area: oldConsoleAchievement; 
                                 width: calc(100% - 18px);
                                 height: 6px;
                                 margin: 4px;
@@ -2497,7 +2687,7 @@ body {
                             }
                             // Console Button
                             section:nth-child(4) {
-                                grid-area: consoleButton; 
+                                grid-area: oldConsoleButton; 
                                 width: 30px;
                                 height: 30px;
                                 margin: 0 0 0 4px;
@@ -2515,7 +2705,7 @@ body {
                             }
                             // Console Tabs
                             section:nth-child(5) {
-                                grid-area: consoleTabs; 
+                                grid-area: oldConsoleTabs; 
                                 height: 30px;
                                 width: calc(100% - 6px);
                                 margin-left: 2px;
@@ -2541,13 +2731,18 @@ body {
                             }
                             // Console Close
                             section:nth-child(6) {
-                                grid-area: consoleClose;
+                                grid-area: oldConsoleClose;
                                 width: 30px;
                                 height: 30px;
                                 button {
                                     width: 22px;
                                     height: 22px;
                                     margin: 4px;
+                                    border: none;
+                                    border-radius: 4px;
+                                    font-weight: 600;
+                                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
                                 }
                             }
                         }
@@ -2565,7 +2760,7 @@ body {
                             }
                     
                             // Desk
-                            .consoleDesk {
+                            .oldConsoleDesk {
                                 top: 4px;
                                 right: 4px;
                                 overflow-x: hidden;
@@ -2591,7 +2786,7 @@ body {
                             }
                     
                             // Sidebar 
-                            .consoleSidebar {
+                            .oldConsoleSidebar {
                                 bottom: 8px;
                                 left: 8px;
                                 position: absolute;
@@ -2600,12 +2795,12 @@ body {
                                 display: grid;
                                 grid-template-columns: 30px calc(100% - 30px);
                                 grid-template-rows: 30px calc(100% - 30px);
-                                grid-template-areas: "consoleSidebarTabs consoleSidebarTitle" "console SidebarTabs consoleSidebarBody";
+                                grid-template-areas: "oldConsoleSidebarTabs oldConsoleSidebarTitle" "oldConsole SidebarTabs oldConsoleSidebarBody";
 
 
                     
-                                .consoleSidebarTabs {
-                                    grid-area: consoleSidebarTabs;
+                                .oldConsoleSidebarTabs {
+                                    grid-area: oldConsoleSidebarTabs;
                                     overflow-x: hidden;
                                     overflow-y: auto;
                                     border-radius: 4px;
@@ -2625,8 +2820,8 @@ body {
                                     }
                                     
                                 }
-                                .consoleSidebarTitle {
-                                    grid-area: consoleSidebarTitle;
+                                .oldConsoleSidebarTitle {
+                                    grid-area: oldConsoleSidebarTitle;
                                     line-height: 16px;
                                     margin: 12px 4px 0 4px;
                                     font-size: 16px;
@@ -2641,8 +2836,8 @@ body {
                                 }
                                 
                                 // Sidebar Body
-                                .consoleSidebarBody {
-                                    grid-area: consoleSidebarBody;
+                                .oldConsoleSidebarBody {
+                                    grid-area: oldConsoleSidebarBody;
                                     position: absolute;
                                     bottom: 0;
                                     right: 0;
@@ -2652,7 +2847,7 @@ body {
                                     border-radius: 4px;
                                     height: calc(100% - 34px);
                                     
-                                    .consoleSidebarContent {
+                                    .oldConsoleSidebarContent {
                                         width: calc(100% - 16px);
                                         transition: height 1s, width 1s;
                                         overflow-x: hidden;
@@ -2684,7 +2879,7 @@ body {
 
 
                                     // Console Help
-                                    .consoleSidebarHelp {
+                                    .oldConsoleSidebarHelp {
                                         position: absolute;
                                         bottom: 0;
                                         right: 0;
@@ -2710,23 +2905,23 @@ body {
                                 }
                             }
                         }
-                        .consoleHelpOpen {
-                            .consoleSidebarHelp {
+                        .oldConsoleHelpOpen {
+                            .oldConsoleSidebarHelp {
                                 width: calc(100% - 8px);
                             }
                         }
-                        .consoleHelpClosed {
-                            .consoleSidebarContent {
+                        .oldConsoleHelpClosed {
+                            .oldConsoleSidebarContent {
                                 height: calc(100% - 46px);
                             }
-                            .consoleSidebarHelp {
+                            .oldConsoleSidebarHelp {
                                 height: 26px;
                                 width: 26px;
                             }
                         }
                     }
 
-                    .consoleSidebarOpen {
+                    .oldConsoleSidebarOpen {
                         header {
                             section:nth-child(4) {
                                 button {
@@ -2739,7 +2934,7 @@ body {
                         }
 
                     }
-                    .consoleSidebarClosed {
+                    .oldConsoleSidebarClosed {
                         header {
                             section:nth-child(4) {
                                 button {
@@ -2754,137 +2949,212 @@ body {
 
 
                 }
+
             }
-        }
-    }
 
 
 
-    &.primaryInterfaceInactive {
+            .console {
 
-        .socialConsole {
-            right: -150vw;
-        }
-        .assessmentConsole {
-            top: -150vh;
-        }
-        .scholarConsole {
-            top: -150vh;
-        }
-        .adminConsole {
-            bottom: -150vh;
-        }
-        
-    }
-    &.primaryInterfaceSocial {
-        .socialConsole {
-            right: 0;
-        }
-        .assessmentConsole {
-            top: -150vh;
-        }
-        .scholarConsole {
-            top: -150vh;
-        }
-        .adminConsole {
-            bottom: -150vh;
-        }        
-    }
-    &.primaryInterfaceAssessment {
-        .socialConsole {
-            right: -150vw;
-        }
-        .assessmentConsole {
-            top: 0;
-        }
-        .scholarConsole {
-            top: -150vh;
-        }
-        .adminConsole {
-            bottom: -150vh;
-        }
-    }
-    &.primaryInterfaceScholar {
-        .socialConsole {
-            right: -150vw;
-        }
-        .assessmentConsole {
-            top: -150vh;
-        }
-        .scholarConsole {
-            top: 0;
-        }
-        .adminConsole {
-            bottom: -150vh;
-        }        
-    }
-    &.primaryInterfaceAdmin {
-        .socialConsole {
-            right: -150vw;
-        }
-        .assessmentConsole {
-            top: -150vh;
-        }
-        .scholarConsole {
-            top: -150vh;
-        }
-        .adminConsole {
-            bottom: 0;
-        }
-    }
+                    
 
-    &.secondaryInterfaceClosed {
-        main {
-            main {
-                section:nth-child(1) {
-                    width: 0;
-                }
-                section:nth-child(2) {
-                    width: 100vw;
-                }
-            }
-        }
-    }
 
-    &.tertiaryInterfaceOpen {
-        main {
-            .userHeader {
-                // changes height of accountConsole Container
-                // changes transition order of accountConsole closing
-                height: 100vh;
-                transition: height 1s 1s;
-                section:nth-child(5) {
-                    height: calc(100vh - 50px);
-                    transition: height 1s 1s;
-                    .console {
-                        transition: left 1s;
+
+                position: absolute;
+                display: grid;
+                height: calc(100% - 30px);
+                width: calc(100% - 30px);
+                background-color: white;
+                top: 15px;
+                left: 15px;     
+                border-radius: 4px;
+                overflow: hidden;
+                
+                grid-template-rows: 20px 20px 50px 15px auto 15px;
+                grid-template-columns: 15px 40px 1fr 1fr 40px 15px;
+                grid-template-areas: 
+                    "progress progress progress progress progress progress" 
+                    "gapL consoleTitle consoleTitle consoleTime consoleTime gapR" 
+                    "gapL consoleSidebarBtn consoleTabs consoleTabs consoleHelpBtn gapR" 
+                    "gapL gapT gapT gapT gapT gapR" 
+                    "gapL consoleSidebarTabs consoleSidebar consoleHelp consoleHelpTabs gapR" 
+                    "gapL gapB gapB gapB gapB gapR";
+
+
+                div {
+                    display: grid;
+                    width: 100%;
+                    height: 100%;
+                    &:nth-child(1)  {
+                        grid-area: progress;
+                        background-color: red;
+                    }
+                    &:nth-child(2)  {
+                        grid-area: consoleTitle;
+                        background-color: orange;
+                    }
+                    &:nth-child(3)  {
+                        grid-area: consoleTime;
+                        background-color: yellow;
+                    }
+                    &:nth-child(4)  {
+                        grid-area: consoleTabs;
+                        background-color: green;
+                    }
+                    &:nth-child(5)  {
+                        grid-area: consoleSidebar;
+                        background-color: blue;
+                    }
+                    &:nth-child(6)  {
+                        grid-area: consoleSidebarTabs;
+                        background-color: lightblue;
+                    }
+                    &:nth-child(7)  {
+                        grid-area: consoleHelp;
+                        background-color: purple;
+                    }
+                    &:nth-child(8)  {
+                        grid-area: consoleHelpTabs;
+                        background-color: indigo;
+                    }
+                    &:nth-child(9)  {
+                        display: grid;
+                        display: none;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        background-color: gray;
+                        width: calc(100% - 20px);
+                        height: calc(100% - 110px);
                     }
                 }
             }
         }
+        // &.primaryInterfaceInactive {
+    
+        //     .socialConsole {
+        //         right: -150vw;
+        //     }
+        //     .assessmentConsole {
+        //         top: -150vh;
+        //     }
+        //     .scholarConsole {
+        //         top: -150vh;
+        //     }
+        //     .adminConsole {
+        //         bottom: -150vh;
+        //     }
+            
+        // }
+        // &.primaryInterfaceSocial {
+        //     .socialConsole {
+        //         right: 0;
+        //     }
+        //     .assessmentConsole {
+        //         top: -150vh;
+        //     }
+        //     .scholarConsole {
+        //         top: -150vh;
+        //     }
+        //     .adminConsole {
+        //         bottom: -150vh;
+        //     }        
+        // }
+        // &.primaryInterfaceAssessment {
+        //     .socialConsole {
+        //         right: -150vw;
+        //     }
+        //     .assessmentConsole {
+        //         top: 0;
+        //     }
+        //     .scholarConsole {
+        //         top: -150vh;
+        //     }
+        //     .adminConsole {
+        //         bottom: -150vh;
+        //     }
+        // }
+        // &.primaryInterfaceScholar {
+        //     .socialConsole {
+        //         right: -150vw;
+        //     }
+        //     .assessmentConsole {
+        //         top: -150vh;
+        //     }
+        //     .scholarConsole {
+        //         top: 0;
+        //     }
+        //     .adminConsole {
+        //         bottom: -150vh;
+        //     }        
+        // }
+        // &.primaryInterfaceAdmin {
+        //     .socialConsole {
+        //         right: -150vw;
+        //     }
+        //     .assessmentConsole {
+        //         top: -150vh;
+        //     }
+        //     .scholarConsole {
+        //         top: -150vh;
+        //     }
+        //     .adminConsole {
+        //         bottom: 0;
+        //     }
+        // }
+    
+        // &.secondaryInterfaceClosed {
+        //     main {
+        //         main {
+        //             section:nth-child(1) {
+        //                 width: 0;
+        //             }
+        //             section:nth-child(2) {
+        //                 width: 100vw;
+        //             }
+        //         }
+        //     }
+        // }
+    
+        // &.tertiaryInterfaceOpen {
+        //     main {
+        //         .userHeader {
+        //             // changes height of accountConsole Container
+        //             // changes transition order of accountConsole closing
+        //             height: 100vh;
+        //             transition: height 1s 1s;
+        //             section:nth-child(5) {
+        //                 height: calc(100vh - 50px);
+        //                 transition: height 1s 1s;
+        //                 .oldConsole {
+        //                     transition: left 1s;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // &.tertiaryInterfaceClosed {
+        //     main {
+        //         .userHeader {
+        //             // changes height of accountConsole Container
+        //             // changes transition order of accountConsole closing
+        //             height: 50px;
+        //             transition: height 1s;
+        //             section:nth-child(5) {
+        //                 transition: height 1s;
+        //                 height: 0;
+        //                 .oldConsole {
+        //                     transition: left 1s 1s;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
-    &.tertiaryInterfaceClosed {
-        main {
-            .userHeader {
-                // changes height of accountConsole Container
-                // changes transition order of accountConsole closing
-                height: 50px;
-                transition: height 1s;
-                section:nth-child(5) {
-                    transition: height 1s;
-                    height: 0;
-                    .console {
-                        transition: left 1s 1s;
-                    }
-                }
-            }
-        }
-    }
+
+
+
 }
-
-
-
-
 
 
 
@@ -2893,39 +3163,19 @@ body {
 // VIEWPORT DEPENDENT DESIGN ----------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
+// To-Do List for Viewport Styling: 
+// - Secondary UI Expands @ 0, 1200, 2100, 2700, 3000
+// - Viewport height AND width effect the height and width properties of objects
+// - 
+// - 
+// - 
+// - 
+// - 
+// 
+// 
+// 
 
 
-// -------------------------------------------------------------------------------------------------------------------------------------------------------
-// DEVICE VIEWPORT HEIGHT AND WIDTH -------------------------------------------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Micro Screens - Red (BreakTime) ----------------------------------------------------------------------------------------------------
-@media only screen and (min-height: 10px) and (min-width: 10px) {
-
-
-} // Small Red and Big Red
-@media only screen and (min-height: 300px) and (min-width: 10px) {
-
-
-} // Small Orange and Big Red
-@media only screen and (min-height: 600px) and (min-width: 10px) {
-
-
-    
-} // Small Yellow and Big Red
-@media only screen and (min-height: 900px) and (min-width: 10px) {
-
-} // Small Green and Big Red
-@media only screen and (min-height: 1200px) and (min-width: 10px) {
-
-} // Small Blue and Big Red
-@media only screen and (min-height: 1500px) and (min-width: 10px) {
-
-} // Small Purple and Big Red
-@media only screen and (min-height: 1800px) and (min-width: 10px) {
-
-} // Small White and Big Red
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2944,25 +3194,25 @@ body {
 
         .primaryInterface {
             // Console Responsive
-            .consoleSidebarOpen {
+            .oldConsoleSidebarOpen {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
                         height: calc(50% - 12px);
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: calc(100% - 16px);
                         height: calc(50% - 16px);
                     }
                 }
             }
-            .consoleSidebarClosed {
+            .oldConsoleSidebarClosed {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
                         height: calc(100% - 16px);
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: calc(100% - 16px);
                         height: calc(50% - 16px);
                     }
@@ -2971,30 +3221,80 @@ body {
         }
         .secondaryInterface {
             // Console Responsive
-            .consoleSidebarOpen {
+            .oldConsoleSidebarOpen {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(50% - 12px);
+
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(100% - 8px);
+                                height: calc(100% - 52px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(100% - 8px);
+                                height: 40px;
+                            }
+                        }
+                    }
+                    .oldConsoleSidebar {
+                        width: calc(100% - 16px);
+                        height: calc(50% - 16px);
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(100% - 8px);
+                                height: calc(100% - 52px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(100% - 8px);
+                                height: 40px;
+                            }
+                        }
+                    }
+                    .oldConsoleSidebar {
+                        width: calc(100% - 16px);
+                        height: calc(50% - 16px);
+                    }
+                }
+            }
+        }
+        .userHeader {
+            // Console Responsive
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
                         height: calc(50% - 12px);
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: calc(100% - 16px);
                         height: calc(50% - 16px);
                     }
                 }
             }
-            .consoleSidebarClosed {
+            .oldConsoleSidebarClosed {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
                         height: calc(100% - 16px);
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: calc(100% - 16px);
                         height: calc(50% - 16px);
                     }
                 }
             }
+
         }
 
 
@@ -3041,25 +3341,27 @@ body {
     .interfaceContainer {
         .primaryInterface {
             // Console Sidebar Responsive
-            .consoleSidebarOpen {
+            .oldConsoleSidebarOpen {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         width: calc(100% - 328px);
                         height: calc(100% - 16px);
+
+                        
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: 300px;
                         height: calc(100% - 16px);
                     }
                 }
             }
-            .consoleSidebarClosed {
+            .oldConsoleSidebarClosed {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
                         height: calc(100% - 16px);
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: 300px;
                         height: calc(100% - 16px);
                     }
@@ -3068,31 +3370,69 @@ body {
 
         }
         .secondaryInterface {
-            // Console Sidebar Responsive
-            .consoleSidebarOpen {
+            // Console Responsive
+            .oldConsoleSidebarOpen {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 4px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 4px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .userHeader {
+            // Console Sidebar Responsive
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
                         width: calc(100% - 328px);
                         height: calc(100% - 16px);
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: 300px;
                         height: calc(100% - 16px);
                     }
                 }
             }
-            .consoleSidebarClosed {
+            .oldConsoleSidebarClosed {
                 div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
                         height: calc(100% - 16px);
                     }
-                    .consoleSidebar {
+                    .oldConsoleSidebar {
                         width: 300px;
                         height: calc(100% - 16px);
                     }
                 }
             }
+
 
         }
 
@@ -3107,45 +3447,57 @@ body {
 
     // Interface Responsive
     .interfaceContainer {
+
         .secondaryInterface {
-            // Console Responsive
-            .consoleSidebarOpen {
+            // Console Sidebar Responsive
+            .oldConsoleSidebarOpen {
                 div {
-                    .consoleDesk {
-                        width: calc(100% - 16px);
-                        height: calc(25% - 12px);
+                    .oldConsoleDesk {
+                        width: calc(100% - 328px);
+                        height: calc(100% - 16px);
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 4px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+
                     }
-                    .consoleSidebar {
-                        width: calc(100% - 16px);
-                        height: calc(75% - 16px);
-                    }
-                }
-            }
-            .consoleSidebarClosed {
-                div {
-                    .consoleDesk {
-                        width: calc(100% - 16px);
+                    .oldConsoleSidebar {
+                        width: 300px;
                         height: calc(100% - 16px);
                     }
-                    .consoleSidebar {
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
-                        height: calc(75% - 16px);
+                        height: calc(100% - 16px);
+
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 4px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+
+                    }
+                    .oldConsoleSidebar {
+                        width: 300px;
+                        height: calc(100% - 16px);
                     }
                 }
             }
-        }
-        &.secondaryInterfaceOpen {
-            // VIEWPORT WIDTH DEPENDENT
-            main {
-                main {
-                    section:nth-child(1) {
-                        width: 400px;
-                    }
-                    section:nth-child(2) {
-                        width: calc(100vw - 400px);
-                    }
-                }
-            }
+
         }
     }
 
@@ -3161,150 +3513,115 @@ body {
     .interfaceContainer {
         
         .primaryInterface {
-                    // Console Responsive
-        .consoleSidebarClosed {
-            div {
-                .consoleDesk {
-                    width: calc(100% - 16px);
-                    height: calc(100% - 16px);
-
-                }
-                .consoleSidebar {
-                    width: 400px;
-                    height: calc(100% - 16px);
-                }
-            }
-        }
-        .consoleSidebarOpen {
-            div {
-                .consoleDesk {
-                    width: calc(100% - 428px);
-                    height: calc(100% - 16px);
-                }
-                .consoleSidebar {
-                    width: 400px;
-                    height: calc(100% - 16px);
-                }
-            }
-
-        }
-
-        }
-
-
-
-        // Console Responsive
-        .consoleSidebarClosed {
-            div {
-                .consoleDesk {
-                    width: calc(100% - 16px);
-                    height: calc(100% - 16px);
-
-                }
-                .consoleSidebar {
-                    width: 400px;
-                    height: calc(100% - 16px);
-                }
-            }
-        }
-        .consoleSidebarOpen {
-            div {
-                .consoleDesk {
-                    width: calc(100% - 428px);
-                    height: calc(100% - 16px);
-                }
-                .consoleSidebar {
-                    width: 400px;
-                    height: calc(100% - 16px);
-                }
-            }
-
-        }
-
-        &.secondaryInterfaceOpen {
-            // VIEWPORT WIDTH DEPENDENT
-            main {
-                main {
-                    section:nth-child(1) {
-                        width: 480px;
-                    }
-                    section:nth-child(2) {
-                        width: calc(100vw - 480px);
-                    }
-                }
-            }
-        }
-    }
-    
-
-
-}
-// Wide Laptop - Dark Green (Sidebar) [Accountability: ]
-@media only screen and (min-width: 1500px) {
-    // Indicator
-    .userThumb {background: hsl(102, 70%, 30%);}
-
-    
-    // Interface Responsive
-    .interfaceContainer {
-
-
-        .primaryInterface {
             // Console Responsive
-            .consoleSidebarOpen {
+            .oldConsoleSidebarClosed {
                 div {
-                    .consoleDesk {
-                        width: calc(100% - 528px);
-                        height: calc(100% - 16px);
-                    }
-                    .consoleSidebar {
-                        width: 500px;
-                        height: calc(100% - 16px);
-                    }
-                }
-            }
-            .consoleSidebarClosed {
-                div {
-                    .consoleDesk {
+                    .oldConsoleDesk {
                         width: calc(100% - 16px);
                         height: calc(100% - 16px);
+
+                        
                     }
-                    .consoleSidebar {
-                        width: 500px;
+                    .oldConsoleSidebar {
+                        width: 400px;
                         height: calc(100% - 16px);
                     }
                 }
             }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 428px);
+                        height: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {
+                        width: 400px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+
         }
         .secondaryInterface {
-            // Console Sidebar Responsive
-            .consoleSidebarOpen {
+            // Console Responsive
+            .oldConsoleSidebarOpen {
                 div {
-                    .consoleDesk {
-                        width: calc(100% - 328px);
-                        height: calc(100% - 16px);
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(60% - 12px);
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(100% - 8px);
+                                height: calc(100% - 52px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(100% - 8px);
+                                height: 40px;
+                            }
+                        }
+
                     }
-                    .consoleSidebar {
-                        width: 300px;
+                    .oldConsoleSidebar {
+                        width: calc(100% - 16px);
+                        height: calc(40% - 16px);
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(100% - 8px);
+                                height: calc(100% - 52px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(100% - 8px);
+                                height: 40px;
+                            }
+                        }
+
+                    }
+                    .oldConsoleSidebar {
+                        width: calc(100% - 16px);
+                        height: calc(40% - 16px);
+                    }
+                }
+            }
+        }
+        .userHeader {
+            // Console Responsive
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+
+                    }
+                    .oldConsoleSidebar {
+                        width: 400px;
                         height: calc(100% - 16px);
                     }
                 }
             }
-            .consoleSidebarClosed {
+            .oldConsoleSidebarOpen {
                 div {
-                    .consoleDesk {
-                        width: calc(100% - 16px);
+                    .oldConsoleDesk {
+                        width: calc(100% - 428px);
                         height: calc(100% - 16px);
                     }
-                    .consoleSidebar {
-                        width: 300px;
+                    .oldConsoleSidebar {
+                        width: 400px;
                         height: calc(100% - 16px);
                     }
                 }
             }
 
+
         }
-        
+
         &.secondaryInterfaceOpen {
             // VIEWPORT WIDTH DEPENDENT
             main {
@@ -3318,16 +3635,305 @@ body {
                 }
             }
         }
+
+
+
+    }
+    
+
+
+}
+// Wide Laptop - Dark Green (Primary UI, Secondary UI, ) 
+@media only screen and (min-width: 1500px) {
+    // Indicator
+    .userThumb {background: hsl(102, 70%, 30%);}
+
+    
+    // Interface Responsive
+    .interfaceContainer {
+
+
+        .primaryInterface {
+            // Console Responsive
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 528px);
+                        height: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {
+                        width: 500px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {
+                        width: 500px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+        }
+        .secondaryInterface {
+            // Console Responsive
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(50% - 12px);
+
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 4px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+
+                    }
+                    .oldConsoleSidebar {
+                        width: calc(100% - 16px);
+                        height: calc(50% - 16px);
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 4px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+
+
+                    }
+                    .oldConsoleSidebar {
+                        width: calc(100% - 16px);
+                        height: calc(40% - 16px);
+                    }
+                }
+            }
+        }
+
+
+        .userHeader {
+            // Console Responsive
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 528px);
+                        height: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {
+                        width: 500px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {
+                        width: 500px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+
+        }
+        
+
     }
 
 
 
 
 }
-// Narrow Desktop - Light Blue (HelpDesk) -------------------------------------------------------------------------------------------------------------------------------
+// Narrow Desktop - Light Blue (Secondary Interface, ) -------------------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 1800px) {
     // Indicator
     .userThumb {background: hsl(206, 70%, 60%);}
+
+    // Interface Responsive
+    .interfaceContainer {
+
+        .secondaryInterface {
+            // Console Sidebar Responsive
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 328px);
+                        height: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {
+                        width: 300px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {
+                        width: 300px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+
+        }
+
+        &.secondaryInterfaceOpen {
+            // VIEWPORT WIDTH DEPENDENT
+            main {
+                main {
+                    section:nth-child(1) {
+                        width: 900px;
+                    }
+                    section:nth-child(2) {
+                        width: calc(100vw - 900px);
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}
+// Wide Desktop - Dark Blue (Secondary Interface, )
+@media only screen and (min-width: 2100px) {
+    // Indicator
+    .userThumb {background: hsl(206, 70%, 30%);}
+
+    // Interface Responsive
+    .interfaceContainer {
+
+
+
+    }
+    
+
+
+}
+// Narrow Ultrawide - Light Purple () -----------------------------------------------------------------------------------------------------------------------------
+@media only screen and (min-width: 2400px) {
+    // Indicator
+    .userThumb {background: hsl(272, 70%, 60%);}
+
+    // Interface Responsive
+    .interfaceContainer {
+
+        .secondaryInterface {
+            // Console Sidebar Responsive
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 328px);
+                        height: calc(100% - 16px);
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+
+                    }
+                    .oldConsoleSidebar {
+                        width: 300px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        width: calc(100% - 16px);
+                        height: calc(100% - 16px);
+
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                width: calc(50% - 8px);
+                                height: calc(100% - 8px);
+                            }
+                            .helpDeskChatTool {
+                                width: calc(50% - 4px);
+                                height: calc(100% - 8px);
+                            }
+                        }
+
+                    }
+                    .oldConsoleSidebar {
+                        width: 300px;
+                        height: calc(100% - 16px);
+                    }
+                }
+            }
+
+        }
+
+        &.secondaryInterfaceOpen {
+            // VIEWPORT WIDTH DEPENDENT
+            main {
+                main {
+                    section:nth-child(1) {
+                        width: 1200px;
+                    }
+                    section:nth-child(2) {
+                        width: calc(100vw - 1200px);
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+// Medium Ultrawide - Dark Purple () 
+@media only screen and (min-width: 2700px) {
+    // Indicator
+    .userThumb {background: hsl(272, 70%, 30%);}
+    
+    // Interface Responsive
+    .interfaceContainer {
+
+
+    }
+
+
+}
+// Wide Ultrawide - Black () 
+@media only screen and (min-width: 3000px) {
+    // Indicator
+    .userThumb {background-color: rgb(0, 0, 0);}
 
     // Interface Responsive
     .interfaceContainer {
@@ -3337,64 +3943,15 @@ body {
             main {
                 main {
                     section:nth-child(1) {
-                        width: 720px;
+                        width: 1500px;
                     }
                     section:nth-child(2) {
-                        width: calc(100vw - 720px);
+                        width: calc(100vw - 1500px);
                     }
                 }
             }
         }
     }
-
-
-}
-// Wide Desktop - Dark Blue ()
-@media only screen and (min-width: 2100px) {
-    // Indicator
-    .userThumb {background: hsl(206, 70%, 30%);}
-
-        // Interface Responsive
-        .interfaceContainer {
-
-            &.secondaryInterfaceOpen {
-                // VIEWPORT WIDTH DEPENDENT
-                main {
-                    main {
-                        section:nth-child(1) {
-                            width: 840px;
-                        }
-                        section:nth-child(2) {
-                            width: calc(100vw - 840px);
-                        }
-                    }
-                }
-            }
-        }
-    
-
-
-}
-// Narrow Ultrawide - Light Purple (Console Sidebar) -----------------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 2400px) {
-    // Indicator
-    .userThumb {background: hsl(272, 70%, 60%);}
-
-
-    
-}
-// Medium Ultrawide - Dark Purple (Toolkit) 
-@media only screen and (min-width: 2700px) {
-    // Indicator
-    .userThumb {background: hsl(272, 70%, 30%);}
-    
-
-
-}
-// Wide Ultrawide - Black (Toolkit) 
-@media only screen and (min-width: 3000px) {
-    // Indicator
-    .userThumb {background-color: rgb(0, 0, 0);}
 
 }
 
@@ -3403,17 +3960,17 @@ body {
 // DEVICE VIEWPORT HEIGHT ---------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// Minimum Height - Red ()
-@media only screen and (min-height: 10px) {
+// Minimum Height - Light Red (Console Help, )
+@media only screen and (min-height: 0px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: hsl(0, 70%, 50%);}
+    #temporaryHeightIndicator {background: hsl(0, 70%, 60%);}
 
 
-    .consoleHelpOpen {
-        .consoleSidebarContent {
+    .oldConsoleHelpOpen {
+        .oldConsoleSidebarContent {
             height: calc(30% - 14px);
         }
-        .consoleSidebarHelp {
+        .oldConsoleSidebarHelp {
             height: calc(70% - 6px);
         }
     }
@@ -3421,83 +3978,107 @@ body {
 
     
 }
-// Short Phone Screens - Orange ()
+// Landscape Phone Screens - Dark Red (Console Help, )
 @media only screen and (min-height: 300px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: hsl(30, 70%, 50%);}
+    #temporaryHeightIndicator {background: hsl(0, 70%, 30%);}
     
-    .consoleHelpOpen {
-        .consoleSidebarContent {
+
+
+}
+// Portrait Phone Screens - Light Orange (Console Help, )
+@media only screen and (min-height: 600px) {
+    // Indicator 
+    #temporaryHeightIndicator {background: hsl(30, 70%, 60%);}
+    
+    .oldConsoleHelpOpen {
+        .oldConsoleSidebarContent {
             height: calc(40% - 14px);
         }
-        .consoleSidebarHelp {
+        .oldConsoleSidebarHelp {
             height: calc(60% - 6px);
         }
     }
 
-}
-// Long Phone Screens - Yellow ()
-@media only screen and (min-height: 600px) {
-    // Indicator 
-    #temporaryHeightIndicator {background-color: hsl(60, 70%, 50%);}
-    
 
-    .consoleHelpOpen {
-        .consoleSidebarContent {
+}
+// Short Landscape Desktop Screens - Dark Orange (Console Help, )
+@media only screen and (min-height: 900px) {
+    // Indicator 
+    #temporaryHeightIndicator {background: hsl(30, 70%, 30%);}
+
+
+    .oldConsoleHelpOpen {
+        .oldConsoleSidebarContent {
             height: calc(50% - 14px);
         }
-        .consoleSidebarHelp {
+        .oldConsoleSidebarHelp {
             height: calc(50% - 6px);
         }
     }
 
+
 }
-// Short Landscape Desktop Screens - Green ()
-@media only screen and (min-height: 900px) {
+// Long Landscape Desktop Screens - Light Green ()
+@media only screen and (min-height: 1200px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: hsl(120, 70%, 50%);}
-
-
-    .consoleHelpOpen {
-        .consoleSidebarContent {
+    #temporaryHeightIndicator {background: hsl(102, 70%, 60%);}
+    
+    
+    
+}
+// Short Portrait Desktop Screens - Dark Green ()
+@media only screen and (min-height: 1500px) {
+    // Indicator 
+    #temporaryHeightIndicator {background: hsl(102, 70%, 30%);}
+    
+    .oldConsoleHelpOpen {
+        .oldConsoleSidebarContent {
             height: calc(60% - 14px);
         }
-        .consoleSidebarHelp {
+        .oldConsoleSidebarHelp {
             height: calc(40% - 6px);
         }
     }
-
-
-}
-// Long Landscape Desktop Screens - Blue ()
-@media only screen and (min-height: 1200px) {
-    // Indicator 
-    #temporaryHeightIndicator {background-color: hsl(200, 70%, 50%);}
-    
-    
-    
-}
-// Short Portrait Desktop Screens - Purple ()
-@media only screen and (min-height: 1500px) {
-    // Indicator 
-    #temporaryHeightIndicator {background-color: hsl(300, 70%, 30%);}
-    
-
-    .consoleHelpOpen {
-        .consoleSidebarContent {
-            height: calc(70% - 14px);
-        }
-        .consoleSidebarHelp {
-            height: calc(30% - 6px);
-        }
-    }
     
 
 }
-// Long Portrait Desktop Screens - White ()
+// Long Portrait Desktop Screens - Light Blue ()
 @media only screen and (min-height: 1800px) {
     // Indicator 
-    #temporaryHeightIndicator {background-color: white;}
+    #temporaryHeightIndicator {background: hsl(206, 70%, 60%);}
+
+    
+
+}
+// Long Portrait Desktop Screens - Dark Blue ()
+@media only screen and (min-height: 2100px) {
+    // Indicator 
+    #temporaryHeightIndicator {background: hsl(206, 70%, 30%);}
+
+    
+
+}
+// Long Portrait Desktop Screens - Light Purple ()
+@media only screen and (min-height: 2400px) {
+    // Indicator 
+    #temporaryHeightIndicator {background: hsl(272, 70%, 60%);}
+
+    
+
+}
+// Long Portrait Desktop Screens - Dark Purple ()
+@media only screen and (min-height: 2700px) {
+    // Indicator 
+    #temporaryHeightIndicator {background: hsl(272, 70%, 30%);}
+
+    
+
+}
+// Long Portrait Desktop Screens - Black ()
+@media only screen and (min-height: 3000px) {
+    // Indicator 
+    #temporaryHeightIndicator {background-color: rgb(0, 0, 0);}
 
     
 
@@ -3511,10 +4092,770 @@ body {
 
 
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+// DEVICE VIEWPORT HEIGHT AND WIDTH -------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Device Type - Big Color () ----------------------------------------------------------------------------------------------------
+@media only screen and (min-height: 0px) and (min-width: 0px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 0px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 0px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 0px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 0px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 0px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 0px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 0px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 0px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 0px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 0px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 300px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 300px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 300px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 300px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 300px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 300px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 300px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 300px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 300px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 300px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 300px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 600px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 600px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 600px) {
+
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 600px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 600px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 600px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 600px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 600px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 600px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 600px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 600px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 900px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 900px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 900px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 900px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 900px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 900px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 900px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 900px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 900px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 900px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 900px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 1200px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 1200px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 1200px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 1200px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 1200px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+} // Small Blue and TEMPLATE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+@media only screen and (min-height: 1500px) and (min-width: 1200px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 1200px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 1200px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 1200px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 1200px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 1200px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 1500px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 1500px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 1500px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 1500px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 1500px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 1500px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        height: calc(100% - 16px); 
+                        width: calc(100% - 16px);
 
 
 
+                    }
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {
+                        height: calc(50% - 14px); 
+                        width: calc(100% - 16px);
+                    
+                        .helpDeskChat {
+                            .helpDeskChatContent {
+                                height: calc(50% - 6px);
+                                width: calc(100% - 8px);
+                                header {
+                                    height: calc(100% - 8px);
+                                    width: calc(50% - 6px);
+                                }
+                                section {
+                                    height: calc(100% - 8px);
+                                    width: calc(50% - 6px);
+                                }
+                            }
+                            .helpDeskChatTool {
+                                height: calc(50% - 6px);
+                                width: calc(100% - 8px);
 
+                            }
+                        }
+                    }
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 1500px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 1500px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 1500px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 1500px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 1500px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 1800px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 1800px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 1800px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 1800px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 1800px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 1800px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 1800px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 1800px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 1800px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 1800px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 1800px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 2100px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 2100px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 2100px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 2100px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 2100px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 2100px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 2100px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 2100px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 2100px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 2100px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 2100px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 2400px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 2400px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 2400px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 2400px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 2400px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 2400px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 2400px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 2400px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 2400px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 2400px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 2400px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 2700px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 2700px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 2700px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 2700px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 2700px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 2700px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 2700px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 2700px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 2700px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 2700px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 2700px) {
+
+} // Small White and TEMPLATE
+
+
+@media only screen and (min-height: 0px) and (min-width: 3000px) {
+
+
+} // Small Red and TEMPLATE
+@media only screen and (min-height: 300px) and (min-width: 3000px) {
+
+
+} // Small Orange and TEMPLATE
+@media only screen and (min-height: 600px) and (min-width: 3000px) {
+
+
+    
+} // Small Yellow and TEMPLATE
+@media only screen and (min-height: 900px) and (min-width: 3000px) {
+
+} // Small Green and TEMPLATE
+@media only screen and (min-height: 1200px) and (min-width: 3000px) {
+
+} // Small Blue and TEMPLATE
+@media only screen and (min-height: 1500px) and (min-width: 3000px) {
+
+} // Small Purple and TEMPLATE
+@media only screen and (min-height: 1800px) and (min-width: 3000px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2100px) and (min-width: 3000px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2400px) and (min-width: 3000px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 2700px) and (min-width: 3000px) {
+
+} // Small White and TEMPLATE
+@media only screen and (min-height: 3000px) and (min-width: 3000px) {
+    .interfaceContainer {
+        .primaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+        .secondaryInterface {
+            .oldConsoleSidebarClosed {
+                div {
+                    .oldConsoleDesk {
+                        height: calc(100% - 16px); 
+                        width: calc(100% - 16px);
+                    }
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+            .oldConsoleSidebarOpen {
+                div {
+                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
+                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
+                }
+            }
+        }
+    }
+
+} // Small White and TEMPLATE
 
 
 
@@ -3522,7 +4863,7 @@ body {
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 // To Do List:
-// - add 100px to the width of the console sidebar for every interval after light green
+// - add 100px to the width of the oldConsole sidebar for every interval after light green
 // - 
 // - 
 // - 
