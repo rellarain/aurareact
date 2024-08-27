@@ -61,7 +61,7 @@ export default function Dashboard() {
             <main className='mainscreen'>
                 <section className='secondaryInterface'>
                     {/* <OldConsole oldConsoleTitle={"helpDesk"}/> */}
-                    <Console className='secondaryInterface'/>
+                    <Console/>
                 </section>
                 <section className='primaryInterface'>
                     {/* <OldConsole oldConsoleTitle={"dashboard"}/> */}
@@ -73,7 +73,7 @@ export default function Dashboard() {
                     {/* <OldConsole oldConsoleTitle={"assessmentL"}/> */}
                     {/* <OldConsole oldConsoleTitle={"assessmentS"}/> */}
                     {/* <OldConsole oldConsoleTitle={"assessmentX"}/> */}
-                    <Console className='primaryInterface'/>
+                    <Console/>
                 </section>
             </main>
         </main>

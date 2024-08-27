@@ -2330,56 +2330,149 @@ body {
   left: 15px;
   border-radius: 4px;
   overflow: hidden;
-  grid-template-rows: 20px 20px 50px 15px auto 15px;
-  grid-template-columns: 15px 40px 1fr 1fr 40px 15px;
-  grid-template-areas: "progress progress progress progress progress progress" "gapL consoleTitle consoleTitle consoleTime consoleTime gapR" "gapL consoleSidebarBtn consoleTabs consoleTabs consoleHelpBtn gapR" "gapL gapT gapT gapT gapT gapR" "gapL consoleSidebarTabs consoleSidebar consoleHelp consoleHelpTabs gapR" "gapL gapB gapB gapB gapB gapR";
+  grid-template-rows: 105px auto;
+  grid-template-areas: "consoleHeader" "consoleBody";
 }
-.interfaceContainer main .mainscreen .console div {
-  display: grid;
+.interfaceContainer main .mainscreen .console .consoleHeader {
   width: 100%;
-  height: 100%;
-}
-.interfaceContainer main .mainscreen .console div:nth-child(1) {
-  grid-area: progress;
+  grid-area: consoleHeader;
+  position: absolute;
   background-color: red;
+  display: grid;
+  grid-template-rows: 20px 40px 45px;
+  grid-template-columns: 15px 40px 1fr 1fr 40px 15px;
+  grid-template-areas: "gapL progress progress progress progress gapR" "gapL sidebarBtn consoleTitle consoleTime helpBtn gapR" "consoleTabs consoleTabs consoleTabs consoleTabs consoleTabs consoleTabs";
 }
-.interfaceContainer main .mainscreen .console div:nth-child(2) {
+.interfaceContainer main .mainscreen .console .consoleHeader button {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.interfaceContainer main .mainscreen .console .consoleHeader div:nth-child(1) {
+  border-radius: 8px;
+  width: 100%;
+  height: 15px;
+  margin-top: 5px;
+  grid-area: progress;
+  background-color: black;
+}
+.interfaceContainer main .mainscreen .console .consoleHeader button:nth-child(2) {
+  grid-area: sidebarBtn;
+}
+.interfaceContainer main .mainscreen .console .consoleHeader div:nth-child(3) {
   grid-area: consoleTitle;
-  background-color: orange;
+  height: 30px;
+  margin: 5px 0 0 5px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
 }
-.interfaceContainer main .mainscreen .console div:nth-child(3) {
+.interfaceContainer main .mainscreen .console .consoleHeader div:nth-child(4) {
   grid-area: consoleTime;
-  background-color: yellow;
+  text-transform: uppercase;
+  margin: 5px 5px 0 0;
+  height: 30px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
 }
-.interfaceContainer main .mainscreen .console div:nth-child(4) {
+.interfaceContainer main .mainscreen .console .consoleHeader button:nth-child(5) {
+  grid-area: helpBtn;
+}
+.interfaceContainer main .mainscreen .console .consoleHeader div:nth-child(6) {
   grid-area: consoleTabs;
-  background-color: green;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
-.interfaceContainer main .mainscreen .console div:nth-child(5) {
-  grid-area: consoleSidebar;
-  background-color: blue;
+.interfaceContainer main .mainscreen .console .consoleHeader div:nth-child(6) button {
+  border-radius: 4px 4px 0 0;
+  margin: 15px 0 0 10px;
+  height: 30px;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 0 15px;
+  background-color: white;
+  display: inline-block;
+  flex: auto;
+  font-weight: 700;
+  transition: height 0.5s, margin 0.5s;
+  text-transform: uppercase;
 }
-.interfaceContainer main .mainscreen .console div:nth-child(6) {
-  grid-area: consoleSidebarTabs;
-  background-color: lightblue;
+.interfaceContainer main .mainscreen .console .consoleHeader div:nth-child(6) button:hover {
+  height: 45px;
+  margin: 0 0 0 10px;
 }
-.interfaceContainer main .mainscreen .console div:nth-child(7) {
-  grid-area: consoleHelp;
+.interfaceContainer main .mainscreen .console .consoleHeader div:nth-child(6)::-webkit-scrollbar {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 0;
+}
+.interfaceContainer main .mainscreen .console .consoleBody {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 20px;
+  grid-area: consoleBody;
+  position: absolute;
+}
+.interfaceContainer main .mainscreen .console .consoleBody .consoleSidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 350px;
   background-color: purple;
 }
-.interfaceContainer main .mainscreen .console div:nth-child(8) {
-  grid-area: consoleHelpTabs;
-  background-color: indigo;
-}
-.interfaceContainer main .mainscreen .console div:nth-child(9) {
-  display: grid;
-  display: none;
+.interfaceContainer main .mainscreen .console .consoleBody .consoleHelp {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: gray;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 350px;
+  background-color: blue;
+}
+.interfaceContainer main .mainscreen .console .consoleDesk {
+  display: grid;
+  grid-area: consoleBody;
+  background-color: green;
+  position: absolute;
+  height: calc(100% - 20px);
   width: calc(100% - 20px);
-  height: calc(100% - 110px);
+  margin: 10px;
+  border-radius: 4px;
+  grid-template-rows: 20px 40px auto 10px;
+  grid-template-columns: 10px 5fr 4fr 10px;
+  grid-template-areas: "gapL progress progress gapR" "gapL deskBtnsL deskBtnsR gapR" "gapL deskContent deskContent gapR" "gapL deskView deskView gapR";
+}
+.interfaceContainer main .mainscreen .console .consoleDesk section:nth-child(1) {
+  grid-area: progress;
+  background-color: black;
+  height: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.interfaceContainer main .mainscreen .console .consoleDesk section:nth-child(2) {
+  grid-area: deskBtnsL;
+  background-color: blue;
+  height: 30px;
+  margin: 5px 0;
+}
+.interfaceContainer main .mainscreen .console .consoleDesk section:nth-child(3) {
+  grid-area: deskBtnsR;
+  background-color: yellow;
+  height: 30px;
+  margin: 5px 0;
+}
+.interfaceContainer main .mainscreen .console .consoleDesk section:nth-child(4) {
+  grid-area: deskContent;
+  background-color: rgb(234, 234, 234);
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 0px) {
