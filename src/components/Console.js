@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 
 
-export default function Console() {
+export default function Console({consoleTitle}) {
 
+    let sidebarState = "Open";
+    // let sidebarState = "Closed";
+    let helpState = "Open";
+    let deskState = "Open";
 
     return (
-        <main className='console'>
+        <main id={`${consoleTitle}Console`} className={`console consoleSidebar${sidebarState}`}>
             <section className='consoleHeader'>
                 <div></div>
                 <button></button>
-                <div>[CONSOLE TITLE] / [TAB TITLE]</div>
+                <div>{consoleTitle} / [TAB TITLE]</div>
                 <div>this is for the time</div>
                 <button>?</button>
                 <div>

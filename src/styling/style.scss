@@ -2963,7 +2963,7 @@ body {
                 left: 15px;     
                 border-radius: 4px;
                 overflow: hidden;
-                grid-template-rows: 105px auto;
+                grid-template-rows: 115px auto;
                 grid-template-areas: "consoleHeader" "consoleBody";
                 .consoleHeader  {
                     width: 100%;
@@ -2971,7 +2971,7 @@ body {
                     position: absolute;
                     background-color: red;
                     display: grid;
-                    grid-template-rows: 20px 40px 45px;
+                    grid-template-rows: 25px 45px 45px;
                     grid-template-columns: 15px 40px 1fr 1fr 40px 15px;
                     grid-template-areas: 
                         "gapL progress progress progress progress gapR"
@@ -2980,16 +2980,16 @@ body {
                     button {
                         height: 30px;
                         width: 30px;
-                        margin: 5px;
+                        margin: 10px 5px;
                         border: none;
                         border-radius: 4px;
                         cursor: pointer;
                     }
                     div:nth-child(1) {
-                        border-radius: 8px;
+                        border-radius: 4px;
                         width: 100%;
                         height: 15px;
-                        margin-top: 5px;
+                        margin-top: 10px;
                         grid-area: progress;
                         background-color: black;
                     }
@@ -3000,7 +3000,7 @@ body {
                         grid-area: consoleTitle;
                         // background-color: orangered;
                         height: 30px;
-                        margin: 5px 0 0 5px;
+                        margin: 10px 0 0 5px;
                         font-size: 14px;
                         font-weight: 700;
                         letter-spacing: 1px;
@@ -3011,7 +3011,7 @@ body {
                         grid-area: consoleTime;
                         text-transform: uppercase;
                         // background-color: gray;
-                        margin: 5px 5px 0 0;
+                        margin: 10px 5px 0 0;
                         height: 30px;
                         text-align: right;
                         font-size: 14px;
@@ -3028,8 +3028,8 @@ body {
                         overflow-x: auto;
                         button {
                             border-radius: 4px 4px 0 0;
-                            margin: 15px 0 0 10px;
-                            height: 30px;
+                            margin: 10px 0 0 10px;
+                            height: 35px;
                             width: min-content;
                             padding: 0 15px;
                             background-color: white;
@@ -3057,18 +3057,20 @@ body {
                     .consoleSidebar {
                         position: absolute;
                         top: 0;
-                        left: 0;
                         height: 100%;
                         width: 350px;
                         background-color: purple;
+                        transition: left 1s;
                     }
                     .consoleHelp {
                         position: absolute;
                         bottom: 0;
                         right: 0;
+                        // right: -400px;
                         height: 100%;
                         width: 350px;
                         background-color: blue;
+                        transition: right 1s;
                     }
                 }
                 .consoleDesk {
@@ -3081,8 +3083,11 @@ body {
                     width: calc(100% - 20px);
                     margin: 10px;
                     border-radius: 4px;
+                    top: 0;
+                    // top: 100vh;
+                    transition: top 1.5s;
         
-                    grid-template-rows: 20px 40px auto 10px;
+                    grid-template-rows: 25px 40px auto 10px;
                     grid-template-columns: 10px 5fr 4fr 10px;
                     grid-template-areas: 
                         "gapL progress progress gapR"
@@ -3092,28 +3097,40 @@ body {
                     section:nth-child(1) {
                         grid-area: progress;
                         background-color: black;
-                        height: 10px;
+                        width: 100%;
+                        height: 15px;
                         border-radius: 4px;
                         margin-top: 10px;
                     }
                     section:nth-child(2) {
                         grid-area: deskBtnsL;
-                        background-color: blue;
+                        width: 100%;
                         height: 30px;
                         margin: 5px 0;
                     }
                     section:nth-child(3) {
                         grid-area: deskBtnsR;
-                        background-color: yellow;
                         height: 30px;
+                        width: 100%;
                         margin: 5px 0;
                     }
                     section:nth-child(4) {
                         grid-area: deskContent;
                         background-color: rgb(234, 234, 234);
                         border-radius: 4px;
+                        width: 100%;
                         
                     }
+                }
+            }
+            .consoleSidebarOpen {
+                .consoleSidebar {
+                    left: 0;
+                }
+            }
+            .consoleSidebarClosed {
+                .consoleSidebar {
+                    left: -400px;
                 }
             }
         }
@@ -4054,15 +4071,6 @@ body {
     #temporaryHeightIndicator {background: hsl(0, 70%, 60%);}
 
 
-    .oldConsoleHelpOpen {
-        .oldConsoleSidebarContent {
-            height: calc(30% - 14px);
-        }
-        .oldConsoleSidebarHelp {
-            height: calc(70% - 6px);
-        }
-    }
-
 
     
 }
@@ -4079,14 +4087,6 @@ body {
     // Indicator 
     #temporaryHeightIndicator {background: hsl(30, 70%, 60%);}
     
-    .oldConsoleHelpOpen {
-        .oldConsoleSidebarContent {
-            height: calc(40% - 14px);
-        }
-        .oldConsoleSidebarHelp {
-            height: calc(60% - 6px);
-        }
-    }
 
 
 }
@@ -4095,15 +4095,6 @@ body {
     // Indicator 
     #temporaryHeightIndicator {background: hsl(30, 70%, 30%);}
 
-
-    .oldConsoleHelpOpen {
-        .oldConsoleSidebarContent {
-            height: calc(50% - 14px);
-        }
-        .oldConsoleSidebarHelp {
-            height: calc(50% - 6px);
-        }
-    }
 
 
 }
@@ -4120,14 +4111,6 @@ body {
     // Indicator 
     #temporaryHeightIndicator {background: hsl(102, 70%, 30%);}
     
-    .oldConsoleHelpOpen {
-        .oldConsoleSidebarContent {
-            height: calc(60% - 14px);
-        }
-        .oldConsoleSidebarHelp {
-            height: calc(40% - 6px);
-        }
-    }
     
 
 }
@@ -4171,780 +4154,6 @@ body {
     
 
 }
-
-
-
-
-
-
-
-
-
-// -------------------------------------------------------------------------------------------------------------------------------------------------------
-// DEVICE VIEWPORT HEIGHT AND WIDTH -------------------------------------------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Device Type - Big Color () ----------------------------------------------------------------------------------------------------
-@media only screen and (min-height: 0px) and (min-width: 0px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 0px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 0px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 0px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 0px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 0px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 0px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 0px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 0px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 0px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 0px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 300px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 300px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 300px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 300px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 300px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 300px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 300px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 300px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 300px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 300px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 300px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 600px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 600px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 600px) {
-
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 600px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 600px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 600px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 600px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 600px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 600px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 600px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 600px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 900px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 900px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 900px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 900px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 900px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 900px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 900px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 900px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 900px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 900px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 900px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 1200px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 1200px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 1200px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 1200px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 1200px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-} // Small Blue and TEMPLATE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-@media only screen and (min-height: 1500px) and (min-width: 1200px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 1200px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 1200px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 1200px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 1200px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 1200px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 1500px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 1500px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 1500px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 1500px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 1500px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 1500px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {
-                        height: calc(100% - 16px); 
-                        width: calc(100% - 16px);
-
-
-
-                    }
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {
-                        height: calc(50% - 14px); 
-                        width: calc(100% - 16px);
-                    
-                        .helpDeskChat {
-                            .helpDeskChatContent {
-                                height: calc(50% - 6px);
-                                width: calc(100% - 8px);
-                                header {
-                                    height: calc(100% - 8px);
-                                    width: calc(50% - 6px);
-                                }
-                                section {
-                                    height: calc(100% - 8px);
-                                    width: calc(50% - 6px);
-                                }
-                            }
-                            .helpDeskChatTool {
-                                height: calc(50% - 6px);
-                                width: calc(100% - 8px);
-
-                            }
-                        }
-                    }
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 1500px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 1500px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 1500px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 1500px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 1500px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 1800px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 1800px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 1800px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 1800px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 1800px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 1800px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 1800px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 1800px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 1800px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 1800px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 1800px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 2100px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 2100px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 2100px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 2100px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 2100px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 2100px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 2100px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 2100px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 2100px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 2100px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 2100px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 2400px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 2400px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 2400px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 2400px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 2400px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 2400px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 2400px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 2400px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 2400px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 2400px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 2400px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 2700px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 2700px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 2700px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 2700px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 2700px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 2700px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 2700px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 2700px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 2700px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 2700px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 2700px) {
-
-} // Small White and TEMPLATE
-
-
-@media only screen and (min-height: 0px) and (min-width: 3000px) {
-
-
-} // Small Red and TEMPLATE
-@media only screen and (min-height: 300px) and (min-width: 3000px) {
-
-
-} // Small Orange and TEMPLATE
-@media only screen and (min-height: 600px) and (min-width: 3000px) {
-
-
-    
-} // Small Yellow and TEMPLATE
-@media only screen and (min-height: 900px) and (min-width: 3000px) {
-
-} // Small Green and TEMPLATE
-@media only screen and (min-height: 1200px) and (min-width: 3000px) {
-
-} // Small Blue and TEMPLATE
-@media only screen and (min-height: 1500px) and (min-width: 3000px) {
-
-} // Small Purple and TEMPLATE
-@media only screen and (min-height: 1800px) and (min-width: 3000px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2100px) and (min-width: 3000px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2400px) and (min-width: 3000px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 2700px) and (min-width: 3000px) {
-
-} // Small White and TEMPLATE
-@media only screen and (min-height: 3000px) and (min-width: 3000px) {
-    .interfaceContainer {
-        .primaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {height: calc(100% - 16px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-        .secondaryInterface {
-            .oldConsoleSidebarClosed {
-                div {
-                    .oldConsoleDesk {
-                        height: calc(100% - 16px); 
-                        width: calc(100% - 16px);
-                    }
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-            .oldConsoleSidebarOpen {
-                div {
-                    .oldConsoleDesk {height: calc(50% - 14px); width: calc(100% - 16px);}
-                    .oldConsoleSidebar {height:  calc(50% - 14px); width: calc(100% - 16px);}
-                }
-            }
-        }
-    }
-
-} // Small White and TEMPLATE
-
 
 
 
